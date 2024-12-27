@@ -1,9 +1,0 @@
-"0","revamp_example_final_Data <- read.table(file = here(""example_sample_metadata_forR.txt""), header=T,sep=""\t"")
-"
-"2","Warning in file(file, ""rt"") :"
-"2","
- "
-"2"," cannot open file '/Users/zgold/Documents/PMEL/Science/EcoFOCI/example_sample_metadata_forR.txt': No such file or directory
-"
-"2","Error in file(file, ""rt"") : cannot open the connection
-"

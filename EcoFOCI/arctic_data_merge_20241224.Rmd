@@ -22,17 +22,17 @@ revamp_format_run1_4 <- read_excel(here("data","20241218_analysis","sample_metad
 # Load Data
 ```{r}
 
-FinalOME_Merge_DY20_12 <- read.csv(file = here("data","1_SampleCollection","2020_Dyson_CruiseData","2020_Dyson_CruiseData","FinalOME_Merge_DY20-12.csv"), header=T) 
+FinalOME_Merge_DY20_12 <- read.csv(file = here("data","1_SampleCollection","2020_DY20-12_CruiseData","2020_Dyson_CruiseData","FinalOME_Merge_DY20-12.csv"), header=T) 
 
-FinalOME_Merge_NO20_01 <-  read.csv(here("data","1_SampleCollection","2020_Norseman_CruiseData","FinalOME_Merge_NO20-01.csv"), header=T)
+FinalOME_Merge_NO20_01 <-  read.csv(here("data","1_SampleCollection","2020_NO20-01_CruiseData","FinalOME_Merge_NO20-01.csv"), header=T)
 
 
 FinalOME_Merge_SKQ21_12S <- read.csv(file = here("data","1_SampleCollection","2021_SikuliaqDBO_CruiseData","2021_SikuliaqDBO_CruiseData","FinalOME_Merge_SKQ21-12S.csv"), header=T) 
 
 
-FinalOME_Merge_DY22_09 <- read.csv(here("data","1_SampleCollection","2022_EcoFociFallMooring_CruiseData","FinalOME_Merge_DY22-09.csv"), header=T) 
+FinalOME_Merge_DY22_09 <- read.csv(here("data","1_SampleCollection","2022_DY22-09_CruiseData","FinalOME_Merge_DY22-09.csv"), header=T) 
 
-FinalOME_Merge_DY22_06 <- read.csv(here("data","1_SampleCollection","2022_EcoFociSpringMooring_CruiseData","FinalOME_Merge_DY22-06.csv"), header=T)
+FinalOME_Merge_DY22_06 <- read.csv(here("data","1_SampleCollection","2022_DY22-06_CruiseData","FinalOME_Merge_DY22-06.csv"), header=T)
 
 FinalOME_Merge_RC0083 <- read.csv(here("data","1_SampleCollection","2022_GOA-OA_CruiseData","FinalOME_Merge_RC0083.csv"), header=T) 
 

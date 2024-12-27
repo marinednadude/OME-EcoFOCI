@@ -1,7 +1,0 @@
-"0","ctd_Data <- read_excel(here(""CTD_raw_BottleFile_NO20-01.xlsx""))"
-"1","[38;5;232mNew names:
-[36m•[38;5;232m `d18O` -> `d18O...27`
-[36m•[38;5;232m `d18O` -> `d18O...28`[39m
-"
-"0","sample_Data <- read.csv(file = here(""MachineReadable_CruiseSampleMetadata_NO20-01.csv""), header=T,fileEncoding=""UTF-8"")"
-"0",""
