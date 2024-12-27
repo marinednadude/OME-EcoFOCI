@@ -1,0 +1,51 @@
+---
+title: "Arctic Metadata Merging"
+author: "Zack Gold"
+date: "2024-07-01"
+output: html_document
+---
+
+```{r}
+library(tidyverse)
+library(here)
+
+
+```
+
+
+```{r}
+
+SKQ21 <- read.csv(file = here("data","Arctic_cruises","2021_SikuliaqDBO_CruiseData","SKQ21_sample_data_20240627.csv"), header=T)
+
+DY2020 <- read.csv(file = here("data","Arctic_cruises","2020_Dyson_CruiseData","DY2012_sample_data_20240621.csv"), header=T)
+
+DY2206_long <- read.table(here("data","Arctic_cruises","DY2206_long.txt"),sep="\t", header=T) 
+
+DY2209_long <- read.table(here("data","Arctic_cruises","DY2209_long.txt"),sep="\t", header=T) 
+
+DY2306_long <- read.table(here("data","Arctic_cruises","DY2306_long.txt"),sep="\t", header=T) 
+
+Norseman2020_long <- read.table(here("data","Arctic_cruises","Norseman2020_long.txt"),sep="\t", header=T,check.names = F) 
+
+RCGOA2022_long <- read.table(here("data","Arctic_cruises","RCGOA2022_long.txt"),sep="\t", header=T) 
+
+SKQ202312S_long <- read.table(here("data","Arctic_cruises","SKQ202312S_long.txt"),sep="\t", header=T) 
+
+```
+
+
+```{r}
+
+c(colnames(SKQ21), colnames(DY2020), colnames(DY2206_long), colnames(DY2209_long), colnames(Norseman2020_long), colnames(RCGOA2022_long), colnames(SKQ202312S_long)) %>% unique() -> all_unique
+
+
+all_unique %>%  as.tibble() %>% 
+  mutate(., SKQ21 = if_else(value %in% colnames(SKQ21), value, NA),
+         DY2020 = if_else(value %in% colnames(DY2020), value, NA),
+         DY2206_long = if_else(value %in% colnames(DY2206_long), value, NA),
+         DY2209_long = if_else(value %in% colnames(DY2209_long), value, NA),
+         Norseman2020_long = if_else(value %in% colnames(Norseman2020_long), value, NA),
+         RCGOA2022_long = if_else(value %in% colnames(RCGOA2022_long), value, NA),
+         SKQ202312S_long = if_else(value %in% colnames(SKQ202312S_long), value, NA) )
+
+```

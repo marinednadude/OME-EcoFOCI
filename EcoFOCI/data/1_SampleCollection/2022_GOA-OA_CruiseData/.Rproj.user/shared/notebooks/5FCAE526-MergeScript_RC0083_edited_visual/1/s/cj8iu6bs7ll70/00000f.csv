@@ -1,0 +1,15 @@
+"0","ggplot(data = world) +
+    geom_sf() +
+    geom_point(data = to_plot_map, aes(x = Longitude, y = Latitude, colour=Included), size=2, alpha =0.2) +
+    coord_sf(xlim = c(min_lon-2, max_lon+2), ylim = c(min_lat-2, max_lat+2), expand = FALSE) +theme_bw() +xlab(""Longitude"") +ylab(""Latitude"") +
+  geom_text_repel(data = to_plot_map, aes(x = Longitude, y = Latitude, label=Station),size = 2)
+"
+"2","Warning:"
+"2"," [38;5;232mRemoved 4 rows containing missing values or values outside the scale range (`geom_point()`).[39m
+"
+"2","Warning:"
+"2"," [38;5;232mRemoved 4 rows containing missing values or values outside the scale range (`geom_text_repel()`).[39m
+"
+"2","Warning:"
+"2"," ggrepel: 104 unlabeled data points (too many overlaps). Consider increasing max.overlaps
+"

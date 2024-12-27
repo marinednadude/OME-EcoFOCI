@@ -1,0 +1,28 @@
+{
+    "id": "9A464303",
+    "path": "~/Documents/PMEL/Science/EcoFOCI/arctic_data_merge_20241224.Rmd",
+    "project_path": "arctic_data_merge_20241224.Rmd",
+    "type": "r_markdown",
+    "hash": "3760918866",
+    "contents": "",
+    "dirty": false,
+    "created": 1719871218633.0,
+    "source_on_save": false,
+    "relative_order": 1,
+    "properties": {
+        "tempName": "Untitled1",
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "491,80",
+        "scrollLine": "479",
+        "docOutlineVisible": "1"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1735260766,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1735260766107,
+    "read_only": false,
+    "read_only_alternatives": []
+}

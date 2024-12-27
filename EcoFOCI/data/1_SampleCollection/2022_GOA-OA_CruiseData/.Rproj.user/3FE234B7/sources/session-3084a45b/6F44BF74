@@ -1,0 +1,28 @@
+{
+    "id": "6F44BF74",
+    "path": "~/Documents/PMEL/Science/EcoFOCI/data/1_SampleCollection/2022_GOA-OA_CruiseData/MergeScript_RC0083_20241223.Rmd",
+    "project_path": "MergeScript_RC0083_20241223.Rmd",
+    "type": "r_markdown",
+    "hash": "3686117540",
+    "contents": "",
+    "dirty": false,
+    "created": 1732934304879.0,
+    "source_on_save": false,
+    "relative_order": 2,
+    "properties": {
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "249,0",
+        "scrollLine": "232",
+        "docOutlineVisible": "1",
+        "docOutlineSize": "237"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1735257014,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1735257096295,
+    "read_only": false,
+    "read_only_alternatives": []
+}

@@ -1,0 +1,24 @@
+"0",""
+"0","min_lat <- min(QAQCMRE_CruiseSampleMetadata_RC0083$Lat_dec, na.rm = T)"
+"0","max_lat <- max(QAQCMRE_CruiseSampleMetadata_RC0083$Lat_dec, na.rm = T)"
+"0",""
+"0","min_lon <- min(QAQCMRE_CruiseSampleMetadata_RC0083$Lon_dec, na.rm = T)"
+"0","max_lon <- max(QAQCMRE_CruiseSampleMetadata_RC0083$Lon_dec, na.rm = T)"
+"0",""
+"0","world <- ne_countries(scale = ""medium"", returnclass = ""sf"")"
+"0","QAQCMRE_CruiseSampleMetadata_RC0083$Date_UTC %>% as.Date() -> dates"
+"0",""
+"0",""
+"0","ggplot(data = world) +"
+"0","    geom_sf() +"
+"0","    geom_point(data = QAQCMRE_CruiseSampleMetadata_RC0083, aes(x = Lon_dec, y = Lat_dec, colour=as.Date(Date_UTC)), size=2) +"
+"0","    coord_sf(xlim = c(min_lon-1, max_lon+1), ylim = c(min_lat-1, max_lat+1), expand = FALSE) +theme_bw() +xlab(""Longitude"") +ylab(""Latitude"") +"
+"0","  geom_text(data = QAQCMRE_CruiseSampleMetadata_RC0083, aes(x = Lon_dec, y = Lat_dec, label=Station),size = 2, colour=""black"") + scale_color_cmocean(labels=dates, breaks=dates, name =""tempo"", start = 0.1, end=0.5) +labs(colour=""Date"")"
+"2","Warning:"
+"2"," [38;5;232mRemoved 4 rows containing missing values or values outside the scale
+range (`geom_point()`).[39m
+"
+"2","Warning:"
+"2"," [38;5;232mRemoved 4 rows containing missing values or values outside the scale
+range (`geom_text()`).[39m
+"

@@ -1,0 +1,2 @@
+"0","ome_sample_data <- read.csv(file = here(""SKQ202115S_ome_sample_spreadsheet.csv""), header=T,fileEncoding=""UTF-8"") # These are the transcribed hand written notes from PMEL Ocean Molecular Ecology taken on the cruise"
+"0",""

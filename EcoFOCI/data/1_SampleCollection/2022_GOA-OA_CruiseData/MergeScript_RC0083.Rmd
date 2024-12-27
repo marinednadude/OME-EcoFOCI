@@ -1,0 +1,158 @@
+---
+title: "GOA Rachel Carson 2022"
+author: "Zack Gold"
+date: "2024-07-03"
+output: html_document
+---
+
+```{r}
+library(tidyverse)
+library(here)
+library(lubridate)
+library(measurements)
+library(sp)
+library(readr)
+library(oce)
+library(readxl)
+
+```
+
+
+```{r}
+### Identify the list in the directory
+files = dir(path = here("CTD_raw_BottleFile_RC0083"), pattern = ".cnv", full.names = TRUE )
+
+## preallocate the container to store the individual 
+ctd = list()
+
+### Loop the CNV file and create a list of casted CTD
+for (i in 1:length(files)){
+  
+ctd[[i]]  = read.ctd(files[i])%>%
+  ctdTrim(method = "downcast")%>% # select downcast
+  ctdDecimate(p = 1) # align to the same standard pressure
+}
+
+ctd[[1]] %>% 
+  oce::plot(eos = "unesco",
+  useSmoothScatter = FALSE, grid = F,
+  showHemi = FALSE, 
+  drawIsobaths = TRUE)
+```
+
+```{r}
+
+str_remove(files, "/Users/zgold/Documents/PMEL/Science/EcoFOCI/data/1_SampleCollection/2022_GOA-OA_CruiseData/CTD_raw_BottleFile_RC0083/") %>% 
+  str_remove(., ".cnv") -> cast_names
+
+datalist = vector("list", length = length(cast_names))
+
+for (i in 1:length(files)){
+  
+datalist[[i]] = ctd[[i]]@data%>%
+  as_data_frame() %>% 
+  mutate(., Cast= cast_names[i])
+}
+
+ctd.tb = do.call(rbind, datalist)
+```
+
+
+```{r}
+### Identify the list in the directory
+files = dir(path = here("CTD_raw_BottleFile_RC0083"), pattern = ".btl", full.names = TRUE )
+
+## preallocate the container to store the individual 
+ctd = list()
+
+### Loop the CNV file and create a list of casted CTD
+for (i in 1:length(files)){
+  
+ctd[[i]]  = read.ctd.sbe(files[i], btl = T)
+}
+```
+
+```{r}
+
+str_remove(files, "/Users/zgold/Documents/PMEL/Science/EcoFOCI/data/1_SampleCollection/2022_GOA-OA_CruiseData/CTD_raw_BottleFile_RC0083/") %>% 
+  str_remove(., ".btl") -> cast_names
+
+datalist = vector("list", length = length(cast_names))
+
+for (i in 1:length(files)){
+  
+datalist[[i]] = ctd[[i]]@data%>%
+  as_data_frame() %>% 
+  mutate(., Cast= cast_names[i])
+}
+
+ctd_Data = do.call(rbind, datalist)
+```
+
+
+
+```{r}
+
+sample_Data <- read.csv(file = here("MachineReadable_CruiseSampleMetadata_RC0083.csv"), header=T,fileEncoding="UTF-8")
+
+```
+
+```{r}
+ctd_Data %>% 
+  mutate(.,
+         Cast = str_remove(Cast,"RC0083_")) %>% 
+           mutate(., Cast = as.numeric(Cast)) -> ctd_Data
+
+ctd_Data$Cast <- as.character(ctd_Data$Cast)
+ctd_Data$bottle <- as.character(ctd_Data$Bottle)
+```
+
+
+
+```{r}
+sample_Data %>% 
+  mutate(., Combined_date = str_c(Collection_Date_UTC, " ",Collection_Time_UTC)) %>% 
+  mutate(.,  Date_UTC = as.POSIXct(Combined_date, format="%m/%d/%Y %H:%M", tz="UTC"),
+                  Date_UTC = if_else(is.na(Date_UTC), as.POSIXct(Collection_Date_UTC, format="%m/%d/%Y", tz="UTC"), Date_UTC ), 
+         Date_local= format(Date_UTC,tz="US/Alaska")) %>% 
+  mutate(., Lat_dec = as.numeric(Lat)) %>% 
+  mutate(., Lon_dec=as.numeric(Lon)) %>% 
+  mutate(., Cast_No.=as.character(Cast_No.),
+         Rosette_position=as.character(Rosette_position)) %>% 
+  left_join(ctd_Data, by=c("Cast_No."="Cast","Rosette_position"="bottle")) %>% 
+  mutate(., Date_UTC_btl = as.POSIXct(`time`, format="%Y-%m-%d %H:%M:%S", tz="UTC") ) -> GOA_OA_2022_Cruise_sample_data
+
+
+colnames(ctd_Data)[2:47] -> cols_2_keep
+library(rlang)
+
+GOA_OA_2022_Cruise_sample_data %>% 
+  select(Sample_Name, 
+         Biological_Replicate,
+         Technical_Replicate,
+         Negative_control, 
+         Cruise_ID_short, 
+         Cruise_ID_long,
+         Cast_No.,
+         Rosette_position,
+         Field_collection_method,
+         Preservation,
+         Area.within.region,
+         Station,
+         Depth_m,
+         Sample_volume_ml,
+         Personnel_responsible_for_Collecting_Sample,
+         Field_Notes,
+         Date_UTC_notes=Date_UTC,
+         Lat_notes = Lat_dec,
+         Lon_notes=Lon_dec,
+         Latitude,
+         Longitude,
+         Date_UTC_btl,
+         !!!syms(cols_2_keep)) -> GOA_OA_2022_Cruise_sample_data
+
+
+
+readr::write_excel_csv(GOA_OA_2022_Cruise_sample_data, file="FinalOME_Merge_RC0083.csv")
+```
+

@@ -1,0 +1,10 @@
+"0","samples_uc %>% 
+  dplyr::select(Sample_ID) %>% 
+  mutate(., Sample_Name = str_remove(Sample_ID,""RC0083"")) %>% 
+  left_join(GOA_OA_2022_Cruise_sample_data) %>% 
+  mutate(., Depth_bin = case_when( Depth_m < 10 ~""Surface"",
+                                   Depth_m < 100 ~ ""Mid"",
+                                   TRUE ~""Deep"")) -> uc_data
+"
+"1","[38;5;232mJoining with `by = join_by(Sample_Name)`[39m
+"

@@ -1,0 +1,25 @@
+"0","library(sf)
+"
+"2","Warning:"
+"2"," package ‘sf’ was built under R version 4.2.3
+"
+"2","Linking to GEOS 3.11.0, GDAL 3.5.3, PROJ 9.1.0; sf_use_s2() is TRUE
+"
+"0","library(""rnaturalearth"")"
+"2","Warning:"
+"2"," package ‘rnaturalearth’ was built under R version 4.2.3
+"
+"0","library(""rnaturalearthdata"")"
+"2","Warning:"
+"2"," package ‘rnaturalearthdata’ was built under R version 4.2.3
+"
+"2","
+Attaching package: ‘rnaturalearthdata’
+
+"
+"2","The following object is masked from ‘package:rnaturalearth’:
+
+    countries110
+
+"
+"0","library(cmocean)"

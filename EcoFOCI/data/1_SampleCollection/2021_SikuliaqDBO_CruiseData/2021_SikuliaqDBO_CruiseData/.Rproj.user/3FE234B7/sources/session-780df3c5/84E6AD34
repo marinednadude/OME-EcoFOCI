@@ -1,0 +1,27 @@
+{
+    "id": "84E6AD34",
+    "path": "~/Documents/PMEL/Science/EcoFOCI/data/1_SampleCollection/2021_SikuliaqDBO_CruiseData/2021_SikuliaqDBO_CruiseData/MergeScript_SKQ21-12S_20241223.Rmd",
+    "project_path": "MergeScript_SKQ21-12S_20241223.Rmd",
+    "type": "r_markdown",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1732933822364.0,
+    "source_on_save": false,
+    "relative_order": 1,
+    "properties": {
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "130,0",
+        "scrollLine": "124",
+        "docOutlineVisible": "1"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1735241478,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1735241478107,
+    "read_only": false,
+    "read_only_alternatives": []
+}

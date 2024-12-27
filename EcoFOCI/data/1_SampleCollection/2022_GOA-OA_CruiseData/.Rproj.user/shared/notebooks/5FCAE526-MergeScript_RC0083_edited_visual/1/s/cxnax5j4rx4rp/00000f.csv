@@ -1,0 +1,60 @@
+"0","library(tidyverse)"
+"0","library(here)"
+"0","library(lubridate)"
+"0","library(measurements)"
+"0","library(sp)"
+"0","library(readr)"
+"0","library(oce)"
+"0","library(readxl)"
+"0",""
+"0","library(cmocean)"
+"0","library(ggpubr)"
+"0","library(patchwork)"
+"2","Warning:"
+"2"," package ‘patchwork’ was built under R version 4.2.3
+"
+"0","library(tidyverse)"
+"0","library(here)"
+"0","library(lubridate)"
+"0","library(measurements)"
+"0","library(sp)"
+"0","library(readr)"
+"0","library(readxl)"
+"0","library(sf)"
+"2","Warning:"
+"2"," package ‘sf’ was built under R version 4.2.3
+"
+"2","Linking to GEOS 3.11.0, GDAL 3.5.3, PROJ 9.1.0; sf_use_s2() is TRUE
+"
+"0","library(devtools)"
+"2","Loading required package: usethis
+"
+"2","Registered S3 method overwritten by 'htmlwidgets':
+  method           from         
+  print.htmlwidget tools:rstudio
+"
+"0","#devtools::install_github(""katiejolly/nationalparkcolors"")"
+"0","library(nationalparkcolors)"
+"0","library(knitr)"
+"0","library(""rnaturalearth"")"
+"2","Warning:"
+"2"," package ‘rnaturalearth’ was built under R version 4.2.3
+"
+"0","library(""rnaturalearthdata"")"
+"2","Warning:"
+"2"," package ‘rnaturalearthdata’ was built under R version 4.2.3
+"
+"2","
+Attaching package: ‘rnaturalearthdata’
+
+"
+"2","The following object is masked from ‘package:rnaturalearth’:
+
+    countries110
+
+"
+"0","library(""readxl"")"
+"0","library(parzer)"
+"0",""
+"0","world <- ne_countries(scale = ""medium"", returnclass = ""sf"")"
+"0",""

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PAR_BiosphericalLicorChelseaSensor SensorID="42" SB_ConfigCTD_FileVersion="7.26.4.0" >
+  <SerialNumber>70777</SerialNumber>
+  <CalibrationDate>06/24/20</CalibrationDate>
+  <M>1.00000000</M>
+  <B>0.00000000</B>
+  <CalibrationConstant>8403361344.53800010</CalibrationConstant>
+  <Multiplier>1.00000000</Multiplier>
+  <Offset>-0.12272893</Offset>
+</PAR_BiosphericalLicorChelseaSensor>

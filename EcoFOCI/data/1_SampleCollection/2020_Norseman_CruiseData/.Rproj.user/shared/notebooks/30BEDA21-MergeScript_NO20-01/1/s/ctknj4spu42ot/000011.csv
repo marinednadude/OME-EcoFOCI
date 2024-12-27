@@ -1,0 +1,7 @@
+"0",""
+"0","ctd_Data %>% "
+"0"," mutate(., Combined_date = str_c(Month, ""/"",Day,""/"",Year,"" "",Hours,"":"",Minutes,"":"",Seconds)) %>% "
+"0","  mutate(.,  Date_UTC = as.POSIXct(Combined_date, format=""%m/%d/%Y %H:%M:%S"", tz=""UTC""),"
+"0","                  Date_UTC = if_else(is.na(Date_UTC), as.POSIXct(Combined_date, format=""%m/%d/%y"", tz=""UTC""), Date_UTC ), "
+"0","         Date_local= format(Date_UTC,tz=""US/Alaska"")) -> ctd_Data"
+"0","  "

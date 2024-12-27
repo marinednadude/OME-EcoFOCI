@@ -1,0 +1,318 @@
+Attributes {
+ s {
+  time {
+    String _CoordinateAxisType "Time";
+    Float64 actual_range 1.59904746e+9, 1.60097088e+9;
+    String axis "T";
+    String ioos_category "Time";
+    String long_name "Time";
+    String source_name "time_str";
+    String standard_name "time";
+    String time_origin "01-JAN-1970 00:00:00";
+    String time_precision "1970-01-01T00:00:00Z";
+    String units "seconds since 1970-01-01T00:00:00Z";
+  }
+  pressure {
+    String _CoordinateAxisType "Height";
+    Float32 _FillValue 1.0e+35;
+    Float32 actual_range 0.0, 892.0;
+    String axis "Z";
+    Float64 colorBarMaximum 8000.0;
+    Float64 colorBarMinimum -8000.0;
+    String colorBarPalette "TopographyDepth";
+    String ioos_category "Pressure";
+    String long_name "Pressure";
+    Float32 missing_value -9999.0;
+    String standard_name "sea_water_pressure";
+  }
+  latitude {
+    String _CoordinateAxisType "Lat";
+    Float32 _FillValue 1.0e+35;
+    Float32 actual_range 54.76667, 72.5005;
+    String axis "Y";
+    Float64 colorBarMaximum 90.0;
+    Float64 colorBarMinimum -90.0;
+    String ioos_category "Location";
+    String long_name "Latitude";
+    Float32 missing_value -9999.0;
+    String standard_name "latitude";
+    String units "degrees_north";
+  }
+  longitude {
+    String _CoordinateAxisType "Lon";
+    Float32 _FillValue 1.0e+35;
+    Float32 actual_range -177.2747, -152.9888;
+    String axis "X";
+    String ioos_category "Location";
+    String long_name "Longitude";
+    Float32 missing_value -9999.0;
+    String standard_name "longitude";
+    String units "degrees_east";
+  }
+  BTLID {
+    Float32 _FillValue 1.0e+35;
+    Float32 actual_range 1.0, 10.0;
+    Float64 colorBarMaximum 100.0;
+    Float64 colorBarMinimum 0.0;
+    Int32 epic_code 103;
+    String ioos_category "Statistics";
+    String long_name "NISKIN BOTTLE NUMBER";
+    Float32 missing_value -9999.0;
+  }
+  salinity_ch1 {
+    Float32 _FillValue 1.0e+35;
+    Float32 actual_range 24.1575, 34.8727;
+    Float64 colorBarMaximum 37.0;
+    Float64 colorBarMinimum 32.0;
+    String ioos_category "Salinity";
+    Float32 missing_value -9999.0;
+    String standard_name "sea_water_practical_salinity";
+    String units "PSU";
+  }
+  salinity_ch2 {
+    Float32 _FillValue 1.0e+35;
+    Float32 actual_range 24.4527, 34.876;
+    Float64 colorBarMaximum 37.0;
+    Float64 colorBarMinimum 32.0;
+    String ioos_category "Salinity";
+    Float32 missing_value -9999.0;
+    String standard_name "sea_water_practical_salinity";
+    String units "PSU";
+  }
+  sigma_t_ch1 {
+    Float32 _FillValue 1.0e+35;
+    Float32 actual_range 19.28983, 27.99055;
+    Float64 colorBarMaximum 200.0;
+    Float64 colorBarMinimum 0.0;
+    String ioos_category "Unknown";
+    Float32 missing_value -9999.0;
+    String standard_name "sea_water_sigma_t";
+    String units "kg m-3";
+  }
+  sigma_t_ch2 {
+    Float32 _FillValue 1.0e+35;
+    Float32 actual_range 19.52481, 27.9932;
+    Float64 colorBarMaximum 200.0;
+    Float64 colorBarMinimum 0.0;
+    String ioos_category "Unknown";
+    Float32 missing_value -9999.0;
+    String standard_name "sea_water_sigma_t";
+    String units "kg m-3";
+  }
+  chlor_fluorescence {
+    Float32 _FillValue 1.0e+35;
+    Float32 actual_range -0.0327, 14.1638;
+    Float64 colorBarMaximum 30.0;
+    Float64 colorBarMinimum 0.03;
+    String colorBarScale "Log";
+    String epic_key "Fch_906";
+    String ioos_category "Ocean Color";
+    Float32 missing_value -9999.0;
+    String standard_name "concentration_of_chlorophyll_in_sea_water";
+    String units "ugrams/l";
+  }
+  par {
+    Float32 _FillValue 1.0e+35;
+    Float32 actual_range 0.19863, 634.02;
+    String ioos_category "Optical Properties";
+    Float32 missing_value -9999.0;
+    String standard_name "spherical_photosynthetic_irradiance_in_sea_water";
+    String units "umol m-2 s-1";
+  }
+  temperature_ch1 {
+    Float32 _FillValue 1.0e+35;
+    Float32 actual_range -1.6751, 11.8857;
+    String ioos_category "Temperature";
+    Float32 missing_value -9999.0;
+    String standard_name "sea_water_temperature";
+    String units "degree_C";
+  }
+  oxy_percentsat_ch1 {
+    Float32 _FillValue 1.0e+35;
+    Float32 actual_range 67.61419, 160.4073;
+    Float64 colorBarMaximum 100.0;
+    Float64 colorBarMinimum 0.0;
+    String ioos_category "Dissolved O2";
+    Float32 missing_value -9999.0;
+    String units "percent";
+  }
+  oxy_percentsat_ch2 {
+    Float32 _FillValue 1.0e+35;
+    Float32 actual_range 68.07444, 160.9873;
+    Float64 colorBarMaximum 100.0;
+    Float64 colorBarMinimum 0.0;
+    String ioos_category "Dissolved O2";
+    Float32 missing_value -9999.0;
+    String units "percent";
+  }
+  oxy_conc_ch1 {
+    Float32 _FillValue 1.0e+35;
+    Float32 actual_range 217.5055, 573.717;
+    String ioos_category "Dissolved O2";
+    Float32 missing_value -9999.0;
+    String standard_name "moles_of_oxygen_per_unit_mass_in_sea_water";
+    String units "umol/kg";
+  }
+  oxy_conc_ch2 {
+    Float32 _FillValue 1.0e+35;
+    Float32 actual_range 215.6817, 562.2178;
+    String ioos_category "Dissolved O2";
+    Float32 missing_value -9999.0;
+    String standard_name "moles_of_oxygen_per_unit_mass_in_sea_water";
+    String units "umol/kg";
+  }
+  temperature_ch2 {
+    Float32 _FillValue 1.0e+35;
+    Float32 actual_range -1.6744, 11.886;
+    String ioos_category "Temperature";
+    Float32 missing_value -9999.0;
+    String standard_name "sea_water_temperature";
+    String units "degree_C";
+  }
+  Water_Depth {
+    Float32 _FillValue 1.0e+35;
+    Float32 actual_range 35.0, 890.0;
+    String description "estimated seafloor depth at station by ek60 during cast";
+    String ioos_category "Pressure";
+    Float32 missing_value 9999.0;
+    String standard_name "seafloor_depth";
+    String units "dbar";
+  }
+  air_pressure_at_sealevel {
+    Float32 _FillValue 1.0e+35;
+    Float32 actual_range 989.0, 1028.0;
+    Float64 colorBarMaximum 1050.0;
+    Float64 colorBarMinimum 950.0;
+    String ioos_category "Pressure";
+    Float32 missing_value -9999.0;
+    String name "air_pressure_at_sealevel";
+    String units "mbar";
+  }
+  wind_direction {
+    Float32 _FillValue 1.0e+35;
+    Float32 actual_range 0.0, 351.0;
+    Float64 colorBarMaximum 360.0;
+    Float64 colorBarMinimum 0.0;
+    String ioos_category "Wind";
+    String long_name "Wind From Direction";
+    Float32 missing_value -999.0;
+    String standard_name "wind_from_direction";
+    String units "degrees";
+  }
+  wind_speed {
+    Float32 _FillValue 1.0e+35;
+    Float32 actual_range -99.0, 25.0;
+    String ioos_category "Unknown";
+    String long_name "wind speed";
+    Float32 missing_value -99.9;
+    String standard_name "wind_speed";
+    String units "m s-1";
+  }
+  air_temperature {
+    Float32 _FillValue 1.0e+35;
+    Float32 actual_range 0.2, 12.1;
+    Float64 colorBarMaximum 40.0;
+    Float64 colorBarMinimum -10.0;
+    String ioos_category "Temperature";
+    Float32 missing_value -99.9;
+    String standard_name "air_temperature";
+    String units "degree_C";
+  }
+  Station_Name {
+    String description "FOCI station name";
+    String ioos_category "Unknown";
+    String standard_name "foci_station_name";
+  }
+  profile_id {
+    String cf_role "profile_id";
+    String ioos_category "Identifier";
+  }
+  SI {
+    Float32 _FillValue 1.0e+35;
+    Float32 actual_range 0.1, 54.0;
+    Float64 colorBarMaximum 50.0;
+    Float64 colorBarMinimum 0.0;
+    String ioos_category "Dissolved Nutrients";
+    Float32 missing_value -9999.0;
+    String standard_name "mole_concentration_of_silicate_in_sea_water";
+    String units "uM/l";
+  }
+  PO4 {
+    Float32 _FillValue 1.0e+35;
+    Float32 actual_range 0.127, 2.592;
+    Float64 colorBarMaximum 4.0;
+    Float64 colorBarMinimum 0.0;
+    String ioos_category "Dissolved Nutrients";
+    Float32 missing_value -9999.0;
+    String standard_name "mole_concentration_of_phosphate_in_sea_water";
+    String units "uM/l";
+  }
+  NO2 {
+    Float32 _FillValue 1.0e+35;
+    Float32 actual_range 0.0, 0.98;
+    Float64 colorBarMaximum 1.0;
+    Float64 colorBarMinimum 0.0;
+    String ioos_category "Dissolved Nutrients";
+    Float32 missing_value -9999.0;
+    String standard_name "mole_concentration_of_nitrite_in_sea_water";
+    String units "uM/l";
+  }
+  NO3 {
+    Float32 _FillValue 1.0e+35;
+    Float32 actual_range -0.3, 24.7;
+    Float64 colorBarMaximum 50.0;
+    Float64 colorBarMinimum 0.0;
+    String ioos_category "Dissolved Nutrients";
+    Float32 missing_value -9999.0;
+    String standard_name "mole_concentration_of_nitrate_in_sea_water";
+    String units "uM/l";
+  }
+  NH4 {
+    Float32 _FillValue 1.0e+35;
+    Float32 actual_range -0.9, 8.69;
+    Float64 colorBarMaximum 50.0;
+    Float64 colorBarMinimum 0.0;
+    String ioos_category "Dissolved Nutrients";
+    Float32 missing_value -9999.0;
+    String standard_name "mole_concentration_of_ammonium_in_sea_water";
+    String units "uM/l";
+  }
+ }
+  NC_GLOBAL {
+    String cdm_altitude_proxy "pressure";
+    String cdm_data_type "Profile";
+    String cdm_profile_variables "profile_id";
+    String Conventions "COARDS, CF-1.6, ACDD-1.3";
+    Float64 Easternmost_Easting -152.9888;
+    String featureType "Profile";
+    Float64 geospatial_lat_max 72.5005;
+    Float64 geospatial_lat_min 54.76667;
+    String geospatial_lat_units "degrees_north";
+    Float64 geospatial_lon_max -152.9888;
+    Float64 geospatial_lon_min -177.2747;
+    String geospatial_lon_units "degrees_east";
+    String history "2024-12-19T15:48:22Z (local files)
+2024-12-19T15:48:22Z http://ecofoci-field.pmel.noaa.gov:8081/erddap/tabledap/CTD_dy2012_final_merged.das";
+    String infoUrl "https://pmel.noaa.gov/";
+    String institution "NOAA/PMEL - EcoFOCI";
+    String keywords "chlorophyll, concentration, concentration_of_chlorophyll_in_sea_water, conductivity, ctd, data, density, depth, depth2, dissolved, dissolved o2, kg/m**3, latitude, local, m**3, merged, micromoles, micromoles/l, mole, O2, O_65, ocean, ocean color, oceans, OST_62, oxygen, percent, practical, profile, profile_id, psu, S_41, S_42, salinity, Salinity/Density > Salinity, sat, sea, sea_water_practical_salinity, seawater, secondary, sigma, sigma-t, silicate, sonde, source, ST_70, statistics, T2_35, T_28, temperature, time, Tr_904, transmissometry, umol, umol/kg, unit, water";
+    String keywords_vocabulary "GCMD Science Keywords";
+    String license "The data may be used and redistributed for free but is not intended
+for legal use, since it may contain inaccuracies. Neither the data
+Contributor, ERD, NOAA, nor the United States Government, nor any
+of their employees or contractors, makes any warranty, express or
+implied, including warranties of merchantability and fitness for a
+particular purpose, or assumes any legal liability for the accuracy,
+completeness, or usefulness, of this information.";
+    Float64 Northernmost_Northing 72.5005;
+    String sourceUrl "(local files)";
+    Float64 Southernmost_Northing 54.76667;
+    String standard_name_vocabulary "CF Standard Name Table v55";
+    String subsetVariables "profile_id, Station_Name";
+    String summary "CTD Data from DY2012 - Final Merged";
+    String time_coverage_end "2020-09-24T18:08:00Z";
+    String time_coverage_start "2020-09-02T11:51:00Z";
+    String title "CTD Data from DY2012 - Final Merged";
+    Float64 Westernmost_Easting -177.2747;
+  }
+}

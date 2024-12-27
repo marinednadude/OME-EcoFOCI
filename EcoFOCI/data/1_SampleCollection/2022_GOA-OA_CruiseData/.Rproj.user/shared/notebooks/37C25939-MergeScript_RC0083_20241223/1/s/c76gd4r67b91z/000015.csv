@@ -1,0 +1,8 @@
+"0","bottle_carbonate <- read.csv(file= here (""RC0083 w pH Z.Gold 12.06.24.csv""), header=T)"
+"0",""
+"0"," bottle_carbonate %>% "
+"0","   rename_with(.fn = ~ paste0(""btl2_"", .x)) -> bottle2_Data"
+"0",""
+"0","   "
+"0","bottle2_Data$Cast <- as.character(bottle2_Data$btl2_Cast_number)"
+"0","bottle2_Data$bottle <- as.character(bottle2_Data$btl2_Rosette_position)"

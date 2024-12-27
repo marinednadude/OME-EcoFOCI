@@ -1,0 +1,32 @@
+* Sea-Bird SBE 9 Data File:
+* FileName = C:\Data\RC0083ctd\RC0083_036.hdr
+* Software Version Seasave V 7.26.7.107
+* Temperature SN = 2060
+* Conductivity SN = 1084
+* Number of Bytes Per Scan = 31
+* Number of Voltage Words = 4
+* Number of Scans Averaged by the Deck Unit = 1
+* System UpLoad Time = Aug 18 2022 00:22:03
+* NMEA Latitude = 58 06.17 N
+* NMEA Longitude = 135 00.91 W
+* NMEA UTC (Time) = Aug 18 2022  08:22:02
+* Store Lat/Lon Data = Append to Every Scan
+* SBE 11plus V 5.2
+* number of scans to average = 1
+* pressure baud rate = 9600
+* NMEA baud rate = 4800
+* GPIB address = 1
+* advance primary conductivity  0.073 seconds
+* advance secondary conductivity  0.073 seconds
+* delete word 3 from scan
+* delete word 4 from scan
+* autorun on power up is disabled
+* S>
+** Ship: R/V Rachel Carson 
+** Cruise ID: RC0083 
+** Tech: McHugh/Nomura 
+** Chief Scientist: Cross 
+** Station: UCB
+** Cast:  CTD036
+* System UTC = Aug 18 2022 08:22:03
+*END*

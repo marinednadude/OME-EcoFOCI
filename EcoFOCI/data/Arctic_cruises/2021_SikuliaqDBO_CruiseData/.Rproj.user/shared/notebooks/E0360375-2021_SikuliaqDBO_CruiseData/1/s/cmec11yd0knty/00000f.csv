@@ -1,0 +1,7 @@
+"0","ctd_Data <- read.csv(file =here(""CTD_skq202115s_final_btl_8d75_b94b_6d56.csv""), header=T) #This CTD data comes from Shaun Bell and Phyllis Stabeno in EcoFOCI. Confirm these are QA/QC'd fully before publication."
+"0",""
+"0","ctd_Data %>% "
+"0","  slice(1) -> ctd_labels_units #save units from data file"
+"0",""
+"0","ctd_Data %>% "
+"0","  slice(-1) -> ctd_Data #remove units from data file for analyses/merging"

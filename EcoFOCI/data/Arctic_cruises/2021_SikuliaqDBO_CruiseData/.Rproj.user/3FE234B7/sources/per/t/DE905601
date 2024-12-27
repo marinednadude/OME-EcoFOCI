@@ -1,0 +1,28 @@
+{
+    "id": "DE905601",
+    "path": "~/Documents/PMEL/Science/EcoFOCI/data/Arctic_cruises/2021_SikuliaqDBO_CruiseData/2021_SikuliaqDBO_CruiseData.Rmd",
+    "project_path": "2021_SikuliaqDBO_CruiseData.Rmd",
+    "type": "r_markdown",
+    "hash": "1889165213",
+    "contents": "",
+    "dirty": false,
+    "created": 1719002881719.0,
+    "source_on_save": false,
+    "relative_order": 1,
+    "properties": {
+        "tempName": "Untitled1",
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "192,16",
+        "scrollLine": "188",
+        "docOutlineVisible": "1"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1723146580,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1723146580646,
+    "read_only": false,
+    "read_only_alternatives": []
+}

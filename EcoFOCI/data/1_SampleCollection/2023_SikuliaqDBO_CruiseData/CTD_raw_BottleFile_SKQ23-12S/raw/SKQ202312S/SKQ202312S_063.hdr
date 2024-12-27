@@ -1,0 +1,28 @@
+* Sea-Bird SBE 9 Data File:
+* FileName = D:\CTD\SKQ202312S\SKQ202312S_063.hdr
+* Software Version Seasave V 7.26.7.121
+* Temperature SN = 6177
+* Conductivity SN = 0369
+* Number of Bytes Per Scan = 41
+* Number of Voltage Words = 4
+* Number of Scans Averaged by the Deck Unit = 1
+* System UpLoad Time = Sep 28 2023 06:20:39
+* NMEA Latitude = 71 49.84 N
+* NMEA Longitude = 165 58.06 W
+* NMEA UTC (Time) = Sep 28 2023  06:16:57
+* Store Lat/Lon Data = Append to Every Scan
+* SBE 11plus V 5.1b
+* number of scans to average = 1
+* pressure baud rate = 9600
+* NMEA baud rate = 4800
+* GPIB address = 1
+* advance primary conductivity  0.073 seconds
+* advance secondary conductivity  0.073 seconds
+* S>
+** Ship: R/V Sikuliaq 
+** Station Number: 063
+** Station Name: IC1
+** Bottom Depth: 44
+** Operator: SD
+* System UTC = Sep 28 2023 06:20:39
+*END*

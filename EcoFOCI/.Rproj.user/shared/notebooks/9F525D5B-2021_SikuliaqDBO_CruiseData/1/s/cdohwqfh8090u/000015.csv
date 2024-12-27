@@ -1,0 +1,10 @@
+"0","
+SKQ21_18Sv9_89_data  %>% 
+  head() %>% 
+  pivot_longer(cols=`JV243.2_18Sv9_89_GoldZachary_S075168.1`:`JV243.2_18Sv9_89_GoldZachary_S075551.1`, names_to = ""Sample"", values_to = ""nReads"") %>% 
+  separate(Sample, into=c(""Batch"",""Run"",""Marker"",""PI"",""SampleId"", sep=""_""))
+"
+"2","Warning:"
+"2"," [38;5;232mExpected 6 pieces. Additional pieces discarded in 2250 rows [1, 2, 3, 4, 5,
+6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, ...].[39m
+"

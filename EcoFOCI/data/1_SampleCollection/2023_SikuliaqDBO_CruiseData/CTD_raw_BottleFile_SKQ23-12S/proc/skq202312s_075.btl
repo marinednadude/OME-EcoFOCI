@@ -1,0 +1,313 @@
+* Sea-Bird SBE 9 Data File:
+* FileName = D:\CTD\SKQ202312S\SKQ202312S_075.hex
+* Software Version Seasave V 7.26.7.121
+* Temperature SN = 6177
+* Conductivity SN = 0369
+* Number of Bytes Per Scan = 41
+* Number of Voltage Words = 4
+* Number of Scans Averaged by the Deck Unit = 1
+* System UpLoad Time = Oct 02 2023 05:44:09
+* NMEA Latitude = 68 14.82 N
+* NMEA Longitude = 167 07.33 W
+* NMEA UTC (Time) = Oct 02 2023  05:40:29
+* Store Lat/Lon Data = Append to Every Scan
+* SBE 11plus V 5.1b
+* number of scans to average = 1
+* pressure baud rate = 9600
+* NMEA baud rate = 4800
+* GPIB address = 1
+* advance primary conductivity  0.073 seconds
+* advance secondary conductivity  0.073 seconds
+* S>
+** Ship: R/V Sikuliaq
+** Station Number: 075
+** Station Name: DBO3.3
+** Bottom Depth: 43
+** Operator: SD
+* System UTC = Oct 02 2023 05:44:09
+# interval = seconds: 0.0416667
+# start_time = Oct 02 2023 05:44:07 [NMEA time, first data scan]
+# <Sensors count="13" >
+#   <sensor Channel="1" >
+#     <!-- Frequency 0, Temperature -->
+#     <TemperatureSensor SensorID="55" >
+#       <SerialNumber>6177</SerialNumber>
+#       <CalibrationDate>16-Jan-22</CalibrationDate>
+#       <UseG_J>1</UseG_J>
+#       <A>0.00000000e+000</A>
+#       <B>0.00000000e+000</B>
+#       <C>0.00000000e+000</C>
+#       <D>0.00000000e+000</D>
+#       <F0_Old>0.000</F0_Old>
+#       <G>4.35445246e-003</G>
+#       <H>6.37891881e-004</H>
+#       <I>2.25568033e-005</I>
+#       <J>2.14205519e-006</J>
+#       <F0>1000.000</F0>
+#       <Slope>1.00000000</Slope>
+#       <Offset>0.0000</Offset>
+#     </TemperatureSensor>
+#   </sensor>
+#   <sensor Channel="2" >
+#     <!-- Frequency 1, Conductivity -->
+#     <ConductivitySensor SensorID="3" >
+#       <SerialNumber>0369</SerialNumber>
+#       <CalibrationDate>21-Jan-22</CalibrationDate>
+#       <UseG_J>1</UseG_J>
+#       <!-- Cell const and series R are applicable only for wide range sensors. -->
+#       <SeriesR>0.0000</SeriesR>
+#       <CellConst>2000.0000</CellConst>
+#       <ConductivityType>0</ConductivityType>
+#       <Coefficients equation="0" >
+#         <A>0.00000000e+000</A>
+#         <B>0.00000000e+000</B>
+#         <C>0.00000000e+000</C>
+#         <D>0.00000000e+000</D>
+#         <M>0.0</M>
+#         <CPcor>-9.57000000e-008</CPcor>
+#       </Coefficients>
+#       <Coefficients equation="1" >
+#         <G>-4.27508521e+000</G>
+#         <H>5.35486639e-001</H>
+#         <I>-2.10747157e-003</I>
+#         <J>1.49783814e-004</J>
+#         <CPcor>-9.57000000e-008</CPcor>
+#         <CTcor>3.2500e-006</CTcor>
+#         <!-- WBOTC not applicable unless ConductivityType = 1. -->
+#         <WBOTC>0.00000000e+000</WBOTC>
+#       </Coefficients>
+#       <Slope>1.00000000</Slope>
+#       <Offset>0.00000</Offset>
+#     </ConductivitySensor>
+#   </sensor>
+#   <sensor Channel="3" >
+#     <!-- Frequency 2, Pressure, Digiquartz with TC -->
+#     <PressureSensor SensorID="45" >
+#       <SerialNumber>0533</SerialNumber>
+#       <CalibrationDate>27-Sep-19</CalibrationDate>
+#       <C1>-4.829347e+004</C1>
+#       <C2>-2.633120e-001</C2>
+#       <C3>1.442460e-002</C3>
+#       <D1>3.981300e-002</D1>
+#       <D2>0.000000e+000</D2>
+#       <T1>2.994228e+001</T1>
+#       <T2>-3.397543e-004</T2>
+#       <T3>4.042180e-006</T3>
+#       <T4>2.046070e-009</T4>
+#       <Slope>0.99993024</Slope>
+#       <Offset>-1.00000</Offset>
+#       <T5>0.000000e+000</T5>
+#       <AD590M>1.289075e-002</AD590M>
+#       <AD590B>-8.823864e+000</AD590B>
+#     </PressureSensor>
+#   </sensor>
+#   <sensor Channel="4" >
+#     <!-- Frequency 3, Temperature, 2 -->
+#     <TemperatureSensor SensorID="55" >
+#       <SerialNumber>5773</SerialNumber>
+#       <CalibrationDate>13-Jan-22</CalibrationDate>
+#       <UseG_J>1</UseG_J>
+#       <A>0.00000000e+000</A>
+#       <B>0.00000000e+000</B>
+#       <C>0.00000000e+000</C>
+#       <D>0.00000000e+000</D>
+#       <F0_Old>0.000</F0_Old>
+#       <G>4.35229577e-003</G>
+#       <H>6.29952237e-004</H>
+#       <I>1.99761771e-005</I>
+#       <J>1.50404411e-006</J>
+#       <F0>1000.000</F0>
+#       <Slope>1.00000000</Slope>
+#       <Offset>0.0000</Offset>
+#     </TemperatureSensor>
+#   </sensor>
+#   <sensor Channel="5" >
+#     <!-- Frequency 4, Conductivity, 2 -->
+#     <ConductivitySensor SensorID="3" >
+#       <SerialNumber>4367</SerialNumber>
+#       <CalibrationDate>25-Jan-22</CalibrationDate>
+#       <UseG_J>1</UseG_J>
+#       <!-- Cell const and series R are applicable only for wide range sensors. -->
+#       <SeriesR>0.0000</SeriesR>
+#       <CellConst>2000.0000</CellConst>
+#       <ConductivityType>0</ConductivityType>
+#       <Coefficients equation="0" >
+#         <A>0.00000000e+000</A>
+#         <B>0.00000000e+000</B>
+#         <C>0.00000000e+000</C>
+#         <D>0.00000000e+000</D>
+#         <M>0.0</M>
+#         <CPcor>-9.57000000e-008</CPcor>
+#       </Coefficients>
+#       <Coefficients equation="1" >
+#         <G>-9.79869558e+000</G>
+#         <H>1.38846013e+000</H>
+#         <I>-2.83410392e-007</I>
+#         <J>7.37324840e-005</J>
+#         <CPcor>-9.57000000e-008</CPcor>
+#         <CTcor>3.2500e-006</CTcor>
+#         <!-- WBOTC not applicable unless ConductivityType = 1. -->
+#         <WBOTC>0.00000000e+000</WBOTC>
+#       </Coefficients>
+#       <Slope>1.00000000</Slope>
+#       <Offset>0.00000</Offset>
+#     </ConductivitySensor>
+#   </sensor>
+#   <sensor Channel="6" >
+#     <!-- A/D voltage 0, Fluorometer, WET Labs ECO-AFL/FL -->
+#     <FluoroWetlabECO_AFL_FL_Sensor SensorID="20" >
+#       <SerialNumber>5094</SerialNumber>
+#       <CalibrationDate>20-Dec-21</CalibrationDate>
+#       <ScaleFactor>6.00000000e+000</ScaleFactor>
+#       <!-- Dark output -->
+#       <Vblank>0.0580</Vblank>
+#     </FluoroWetlabECO_AFL_FL_Sensor>
+#   </sensor>
+#   <sensor Channel="7" >
+#     <!-- A/D voltage 1, Transmissometer, WET Labs C-Star -->
+#     <WET_LabsCStar SensorID="71" >
+#       <SerialNumber>1609-DR</SerialNumber>
+#       <CalibrationDate>12-Jan-22</CalibrationDate>
+#       <M>21.2267</M>
+#       <B>-0.0255</B>
+#       <PathLength>0.250</PathLength>
+#     </WET_LabsCStar>
+#   </sensor>
+#   <sensor Channel="8" >
+#     <!-- A/D voltage 2, PAR/Irradiance, Biospherical/Licor -->
+#     <PAR_BiosphericalLicorChelseaSensor SensorID="42" >
+#       <SerialNumber>70777</SerialNumber>
+#       <CalibrationDate>26-JAN-23</CalibrationDate>
+#       <M>1.00000000</M>
+#       <B>0.00000000</B>
+#       <CalibrationConstant>8695652173.91304020</CalibrationConstant>
+#       <Multiplier>1.00000000</Multiplier>
+#       <Offset>-0.11860359</Offset>
+#     </PAR_BiosphericalLicorChelseaSensor>
+#   </sensor>
+#   <sensor Channel="9" >
+#     <!-- A/D voltage 3, Free -->
+#   </sensor>
+#   <sensor Channel="10" >
+#     <!-- A/D voltage 4, Oxygen, SBE 43 -->
+#     <OxygenSensor SensorID="38" >
+#       <SerialNumber>3706</SerialNumber>
+#       <CalibrationDate>23-Feb-23</CalibrationDate>
+#       <Use2007Equation>1</Use2007Equation>
+#       <CalibrationCoefficients equation="0" >
+#         <!-- Coefficients for Owens-Millard equation. -->
+#         <Boc>0.0000</Boc>
+#         <Soc>0.0000e+000</Soc>
+#         <offset>0.0000</offset>
+#         <Pcor>0.00e+000</Pcor>
+#         <Tcor>0.0000</Tcor>
+#         <Tau>0.0</Tau>
+#       </CalibrationCoefficients>
+#       <CalibrationCoefficients equation="1" >
+#         <!-- Coefficients for Sea-Bird equation - SBE calibration in 2007 and later. -->
+#         <Soc>4.5851e-001</Soc>
+#         <offset>-0.4879</offset>
+#         <A>-4.2648e-003</A>
+#         <B> 1.5451e-004</B>
+#         <C>-2.1762e-006</C>
+#         <D0> 2.5826e+000</D0>
+#         <D1> 1.92634e-004</D1>
+#         <D2>-4.64803e-002</D2>
+#         <E> 3.6000e-002</E>
+#         <Tau20> 1.4700</Tau20>
+#         <H1>-3.3000e-002</H1>
+#         <H2> 5.0000e+003</H2>
+#         <H3> 1.4500e+003</H3>
+#       </CalibrationCoefficients>
+#     </OxygenSensor>
+#   </sensor>
+#   <sensor Channel="11" >
+#     <!-- A/D voltage 5, Oxygen, SBE 43, 2 -->
+#     <OxygenSensor SensorID="38" >
+#       <SerialNumber>3704</SerialNumber>
+#       <CalibrationDate>23-Feb-23</CalibrationDate>
+#       <Use2007Equation>1</Use2007Equation>
+#       <CalibrationCoefficients equation="0" >
+#         <!-- Coefficients for Owens-Millard equation. -->
+#         <Boc>0.0000</Boc>
+#         <Soc>0.0000e+000</Soc>
+#         <offset>0.0000</offset>
+#         <Pcor>0.00e+000</Pcor>
+#         <Tcor>0.0000</Tcor>
+#         <Tau>0.0</Tau>
+#       </CalibrationCoefficients>
+#       <CalibrationCoefficients equation="1" >
+#         <!-- Coefficients for Sea-Bird equation - SBE calibration in 2007 and later. -->
+#         <Soc>4.3210e-001</Soc>
+#         <offset>-0.4814</offset>
+#         <A>-4.0888e-003</A>
+#         <B> 1.8360e-004</B>
+#         <C>-2.8112e-006</C>
+#         <D0> 2.5826e+000</D0>
+#         <D1> 1.92634e-004</D1>
+#         <D2>-4.64803e-002</D2>
+#         <E> 3.6000e-002</E>
+#         <Tau20> 1.0100</Tau20>
+#         <H1>-3.3000e-002</H1>
+#         <H2> 5.0000e+003</H2>
+#         <H3> 1.4500e+003</H3>
+#       </CalibrationCoefficients>
+#     </OxygenSensor>
+#   </sensor>
+#   <sensor Channel="12" >
+#     <!-- A/D voltage 6, Altimeter -->
+#     <AltimeterSensor SensorID="0" >
+#       <SerialNumber>302492</SerialNumber>
+#       <CalibrationDate>21-Oct-14</CalibrationDate>
+#       <ScaleFactor>15.000</ScaleFactor>
+#       <Offset>0.000</Offset>
+#     </AltimeterSensor>
+#   </sensor>
+#   <sensor Channel="13" >
+#     <!-- A/D voltage 7, Free -->
+#   </sensor>
+# </Sensors>
+# datcnv_date = Oct 02 2023 06:02:18, 7.26.7.129
+# datcnv_in = d:\ctd\SKQ202312S\skq202312s_075.hex d:\ctd\SKQ202312S\SKQ202312S.xmlcon
+# datcnv_ox_hysteresis_correction = yes
+# datcnv_ox_tau_correction = yes
+# datcnv_bottle_scan_range_source = scans marked with bottle confirm bit, 0, 2
+# datcnv_scans_per_bottle = 49
+# bottlesum_date = Oct 02 2023 06:02:20, 7.26.7.129
+# bottlesum_in = w:\SKQ202312S\ctd\proc\skq202312s_075.ros d:\ctd\SKQ202312S\SKQ202312S.xmlcon
+    Bottle        Date      DepSM   Latitude  Longitude       PrDM      T090C      T190C Potemp090C      Sal00      Sal11  Density00  Sigma-é00 Sbox0Mm/Kg Sbox1Mm/Kg OxsolMm/Kg   Sbeox0PS         V0  FlECO-AFL   CStarAt0       Scan
+  Position        Time                                                                                                                                                                                                                 
+      1    Oct 02 2023     37.813   68.24656 -167.12260     38.199     4.4659     4.4610     4.4634    31.8960    31.9082  1025.4496    25.2716    266.624    252.643  318.63750     83.676     0.0748     0.1010     1.5640       5410 (avg)
+              05:47:53      0.044    0.00000    0.00000      0.044     0.0071     0.0052     0.0071     0.0036     0.0013     0.0033     0.0033      0.389      0.461    0.05057      0.115     0.0011     0.0068     0.0077         14 (sdev)
+      2    Oct 02 2023     38.027   68.24654 -167.12262     38.415     4.4322     4.4499     4.4296    31.9033    31.9105  1025.4600    25.2809    266.622    253.820  318.87912     83.612     0.0758     0.1068     1.5713       5682 (avg)
+              05:48:04      0.061    0.00000    0.00000      0.062     0.0046     0.0101     0.0046     0.0022     0.0031     0.0018     0.0019      0.297      0.256    0.03411      0.095     0.0014     0.0086     0.0042         14 (sdev)
+      3    Oct 02 2023     38.119   68.24654 -167.12264     38.509     4.4563     4.4583     4.4537    31.8969    31.9093  1025.4528    25.2734    265.695    254.775  318.70946     83.366     0.0748     0.1010     1.5533       5923 (avg)
+              05:48:14      0.073    0.00000    0.00001      0.074     0.0109     0.0092     0.0109     0.0026     0.0023     0.0033     0.0030      0.310      0.335    0.07928      0.088     0.0008     0.0052     0.0011         14 (sdev)
+      4    Oct 02 2023     30.393   68.24638 -167.12278     30.703     4.9550     4.9540     4.9528    31.7121    31.7247  1025.2173    25.0745    263.392    251.524  315.36017     83.521     0.0781     0.1209     1.0925       9101 (avg)
+              05:50:27      0.036    0.00000    0.00001      0.036     0.0052     0.0069     0.0052     0.0042     0.0044     0.0040     0.0039      0.085      1.455    0.02938      0.024     0.0005     0.0030     0.0064         14 (sdev)
+      5    Oct 02 2023     30.117   68.24636 -167.12282     30.424     4.9993     4.9991     4.9971    31.6851    31.6964  1025.1898    25.0484    264.788    251.544  315.09091     84.035     0.0776     0.1180     1.0818       9368 (avg)
+              05:50:38      0.072    0.00000    0.00001      0.073     0.0072     0.0090     0.0072     0.0051     0.0056     0.0049     0.0048      0.277      0.567    0.04419      0.087     0.0008     0.0047     0.0010         14 (sdev)
+      6    Oct 02 2023     30.037   68.24636 -167.12282     30.343     5.0237     5.0293     5.0216    31.6690    31.6793  1025.1740    25.0330    264.523    252.078  314.94521     83.990     0.0801     0.1324     1.0810       9537 (avg)
+              05:50:45      0.176    0.00000    0.00001      0.178     0.0369     0.0312     0.0369     0.0238     0.0198     0.0236     0.0228      0.205      0.759    0.22130      0.106     0.0017     0.0099     0.0029         14 (sdev)
+      7    Oct 02 2023     20.258   68.24630 -167.12286     20.464     7.6419     7.6408     7.6401    29.3154    29.3255  1022.9558    22.8617    268.223    254.965  301.49345     88.965     0.1304     0.4341     0.6282      12262 (avg)
+              05:52:38      0.093    0.00000    0.00000      0.094     0.0044     0.0055     0.0044     0.0054     0.0049     0.0051     0.0047      0.219      0.736    0.02053      0.076     0.0028     0.0167     0.0051         14 (sdev)
+      8    Oct 02 2023     20.121   68.24628 -167.12290     20.326     7.6512     7.6388     7.6494    29.3147    29.3348  1022.9534    22.8599    266.732    253.328  301.43118     88.488     0.1269     0.4133     0.6183      13174 (avg)
+              05:53:16      0.052    0.00000    0.00000      0.052     0.0019     0.0057     0.0019     0.0012     0.0064     0.0009     0.0008      0.380      0.319    0.01430      0.124     0.0018     0.0109     0.0033         14 (sdev)
+      9    Oct 02 2023     19.988   68.24628 -167.12290     20.192     7.6480     7.6447     7.6463    29.3166    29.3264  1022.9547    22.8618    268.667    254.153  301.44882     89.125     0.1291     0.4263     0.6171      13362 (avg)
+              05:53:24      0.067    0.00000    0.00000      0.068     0.0023     0.0017     0.0023     0.0013     0.0015     0.0012     0.0013      0.202      0.152    0.01410      0.070     0.0040     0.0240     0.0022         14 (sdev)
+     10    Oct 02 2023     10.264   68.24622 -167.12288     10.368     7.5343     7.5252     7.5334    29.1058    29.1291  1022.7590    22.7113    271.272    255.901  302.69876     89.618     0.1507     0.5560     0.6577      16482 (avg)
+              05:55:34      0.097    0.00000    0.00001      0.098     0.0098     0.0080     0.0098     0.0128     0.0057     0.0116     0.0113      0.188      0.642    0.04094      0.052     0.0018     0.0110     0.0015         14 (sdev)
+     11    Oct 02 2023     10.440   68.24620 -167.12288     10.546     7.5021     7.4986     7.5011    29.1501    29.1815  1022.7988    22.7502    271.796    259.889  302.82408     89.754     0.1469     0.5332     0.6544      16652 (avg)
+              05:55:41      0.156    0.00000    0.00001      0.157     0.0123     0.0054     0.0123     0.0258     0.0139     0.0224     0.0218      0.821      0.831    0.03490      0.276     0.0012     0.0075     0.0019         14 (sdev)
+     12    Oct 02 2023      9.935   68.24616 -167.12294     10.035     7.4919     7.4898     7.4910    29.1797    29.1952  1022.8211    22.7748    270.228    257.235  302.82903     89.234     0.1516     0.5619     0.6619      17129 (avg)
+              05:56:01      0.068    0.00000    0.00000      0.069     0.0063     0.0015     0.0063     0.0205     0.0140     0.0171     0.0169      0.144      0.566    0.01448      0.048     0.0050     0.0301     0.0074         14 (sdev)
+     13    Oct 02 2023      7.263   68.24614 -167.12301      7.336     6.3023     6.3834     6.3017    25.4721    25.6463  1020.0362    20.0020    297.634    283.729  319.91952     93.034     0.2584     1.2023     0.8982      19965 (avg)
+              05:57:59      0.088    0.00000    0.00001      0.089     0.0084     0.0669     0.0084     0.0273     0.1225     0.0210     0.0207      0.193      0.475    0.12380      0.055     0.0023     0.0140     0.0132         14 (sdev)
+     14    Oct 02 2023      7.245   68.24612 -167.12302      7.319     6.3427     6.4007     6.3422    25.5725    25.7138  1020.1108    20.0767    295.445    284.119  319.37750     92.506     0.2520     1.1638     0.8843      20131 (avg)
+              05:58:06      0.064    0.00000    0.00000      0.065     0.0297     0.0402     0.0297     0.0792     0.0810     0.0597     0.0595      1.003      0.705    0.39922      0.209     0.0068     0.0406     0.0255         14 (sdev)
+     15    Oct 02 2023      3.195   68.24604 -167.12311      3.227     6.1938     6.1963     6.1935    25.3042    25.3137  1019.8964    19.8814    299.356    285.916  321.13940     93.217     0.2648     1.2410     0.9279      23071 (avg)
+              06:00:09      0.147    0.00000    0.00001      0.148     0.0004     0.0010     0.0003     0.0002     0.0004     0.0008     0.0002      0.457      0.168    0.00255      0.143     0.0075     0.0451     0.0043         14 (sdev)
+     16    Oct 02 2023      3.272   68.24604 -167.12312      3.305     6.1938     6.1954     6.1936    25.3039    25.3139  1019.8965    19.8811    300.150    284.250  321.13972     93.464     0.2718     1.2827     0.9285      23234 (avg)
+              06:00:16      0.081    0.00000    0.00000      0.082     0.0004     0.0003     0.0003     0.0002     0.0002     0.0005     0.0002      0.325      0.901    0.00226      0.101     0.0055     0.0333     0.0015         14 (sdev)
+     17    Oct 02 2023      2.707   68.24604 -167.12312      2.735     6.1937     6.1951     6.1935    25.3035    25.3134  1019.8936    19.8808    298.796    285.258  321.14195     93.042     0.2588     1.2051     0.9273      23433 (avg)
+              06:00:24      0.088    0.00000    0.00000      0.089     0.0004     0.0004     0.0004     0.0003     0.0002     0.0006     0.0002      0.104      0.630    0.00261      0.032     0.0081     0.0485     0.0012         14 (sdev)

@@ -1,0 +1,461 @@
+Attributes {
+ s {
+  pressure {
+    String _CoordinateAxisType "Height";
+    Float32 _FillValue 1.0e+35;
+    Float32 actual_range 0.0, 162.0;
+    String axis "Z";
+    Float64 colorBarMaximum 8000.0;
+    Float64 colorBarMinimum -8000.0;
+    String colorBarPalette "TopographyDepth";
+    String ioos_category "Pressure";
+    String long_name "Pressure";
+    Float32 missing_value -9999.0;
+    String standard_name "sea_water_pressure";
+  }
+  chlor_fluorescence {
+    Float64 _FillValue NaN;
+    Float64 actual_range -0.2462, 15.8696;
+    Float64 colorBarMaximum 30.0;
+    Float64 colorBarMinimum 0.03;
+    String colorBarScale "Log";
+    String epic_key "F_903";
+    String generic_name "chlor_fluorescence";
+    String ioos_category "Ocean Color";
+    String long_name "Mass Concdentration of chlorophyll from chlorophyll fluorescence";
+    String standard_name "mass_concentration_of_chlorophyll_in_sea_water";
+    String units "ugrams/l";
+  }
+  temperature_ch1 {
+    Float64 _FillValue NaN;
+    Float64 actual_range -0.9848, 4.4231;
+    Float64 colorBarMaximum 32.0;
+    Float64 colorBarMinimum 0.0;
+    String epic_key "T_28";
+    String generic_name "temp channel 1";
+    String ioos_category "Temperature";
+    String long_name "Sea temperature in-situ ITS-90 scale";
+    String standard_name "sea_water_temperature";
+    String units "degree_C";
+  }
+  temperature_ch2 {
+    Float64 _FillValue NaN;
+    Float64 actual_range -0.985, 4.4225;
+    Float64 colorBarMaximum 32.0;
+    Float64 colorBarMinimum 0.0;
+    String epic_key "T2_35";
+    String generic_name "temp channel 2";
+    String ioos_category "Temperature";
+    String long_name "Sea temperature in-situ ITS-90 scale";
+    String standard_name "sea_water_temperature";
+    String units "degree_C";
+  }
+  par {
+    Float64 _FillValue NaN;
+    Float64 actual_range 0.28311, 387.66;
+    Float64 colorBarMaximum 70.0;
+    Float64 colorBarMinimum 0.0;
+    String ioos_category "Optical Properties";
+    String long_name "Spherical Photosynthetic PhotonIrradiance In Sea Water";
+    Float64 missing_value NaN;
+    String standard_name "photosynthetic_photon_spherical_irradiance_in_sea_water";
+    String units "uEin*m-2*s-1";
+  }
+  turbidity {
+    Float64 _FillValue NaN;
+    Float64 actual_range 0.0533, 2.296;
+    String epic_key "Trb_980";
+    String generic_name "Turbidity";
+    String ioos_category "Unknown";
+    String long_name "Turbidity of ocean water in Nephlometric Turbidity Units";
+    String standard_name "sea_water_turbidity";
+    String units "NTU";
+  }
+  salinity_ch1 {
+    Float64 _FillValue NaN;
+    Float64 actual_range 31.5488, 32.7586;
+    Float64 colorBarMaximum 37.0;
+    Float64 colorBarMinimum 32.0;
+    String epic_key "S_41";
+    String generic_name "psal channel 1";
+    String ioos_category "Salinity";
+    String long_name "Practical salinity in-situ PSS-78 scale";
+    String standard_name "sea_water_practical_salinity";
+    String units "PSU";
+  }
+  salinity_ch2 {
+    Float64 _FillValue NaN;
+    Float64 actual_range 31.5478, 32.7586;
+    Float64 colorBarMaximum 37.0;
+    Float64 colorBarMinimum 32.0;
+    String epic_key "S_42";
+    String generic_name "psal channel 2";
+    String ioos_category "Salinity";
+    String long_name "Practical salinity in-situ PSS-78 scale";
+    String standard_name "sea_water_practical_salinity";
+    String units "PSU";
+  }
+  sigma_t_ch1 {
+    Float64 actual_range 25.151502657861784, 26.00873736142944;
+    Float64 colorBarMaximum 200.0;
+    Float64 colorBarMinimum 0.0;
+    String ioos_category "Unknown";
+  }
+  sigma_t_ch2 {
+    Float64 actual_range 25.15139261153263, 26.008756996136754;
+    Float64 colorBarMaximum 200.0;
+    Float64 colorBarMinimum 0.0;
+    String ioos_category "Unknown";
+  }
+  oxy_concM_ch1 {
+    Float64 _FillValue NaN;
+    Float64 actual_range 5.478390367340604, 10.526061927276773;
+    Float64 colorBarMaximum 500.0;
+    Float64 colorBarMinimum 0.0;
+    String epic_key "O_65";
+    String generic_name "oxy_concM channel 1";
+    String ioos_category "Dissolved O2";
+    String long_name "concentration of oxygen in seawater";
+    String standard_name "mole_concentration_of_dissolved_molecular_oxygen_in_sea_water";
+    String units "ml/l";
+  }
+  oxy_conc_ch1 {
+    Float64 _FillValue NaN;
+    Float64 actual_range 238.462794, 458.35407;
+    Float64 colorBarMaximum 500.0;
+    Float64 colorBarMinimum 0.0;
+    String epic_key "O_65";
+    String generic_name "oxy_conc channel 1";
+    String ioos_category "Dissolved O2";
+    String long_name "concentration of oxygen in seawater";
+    String standard_name "mole_concentration_of_dissolved_molecular_oxygen_in_sea_water";
+    String units "micromole/kg";
+  }
+  oxy_percentsat_ch1 {
+    Float64 _FillValue NaN;
+    Float64 actual_range 74.37820368994078, 132.31914379879152;
+    Float64 colorBarMaximum 100.0;
+    Float64 colorBarMinimum 0.0;
+    String epic_key "OST_62";
+    String generic_name "oxy_psat channel 1";
+    String ioos_category "Dissolved O2";
+    String long_name "Percent Saturation of oxygen over air";
+    String standard_name "fractional_saturation_of_oxygen_in_sea_water";
+    String units "percent";
+  }
+  oxy_concM_ch2 {
+    Float64 _FillValue NaN;
+    Float64 actual_range 5.527226367891382, 10.39492906876434;
+    Float64 colorBarMaximum 500.0;
+    Float64 colorBarMinimum 0.0;
+    String epic_key "O_2060";
+    String generic_name "oxy_concM channel 2";
+    String ioos_category "Dissolved O2";
+    String long_name "concentration of oxygen in seawater";
+    String standard_name "mole_concentration_of_dissolved_molecular_oxygen_in_sea_water";
+    String units "ml/l";
+  }
+  oxy_conc_ch2 {
+    Float64 _FillValue NaN;
+    Float64 actual_range 240.588348, 452.644192;
+    Float64 colorBarMaximum 500.0;
+    Float64 colorBarMinimum 0.0;
+    String epic_key "CTDOXY_4221";
+    String generic_name "oxy_conc channel 2";
+    String ioos_category "Dissolved O2";
+    String long_name "concentration of oxygen in seawater";
+    String standard_name "mole_concentration_of_dissolved_molecular_oxygen_in_sea_water";
+    String units "micromole/kg";
+  }
+  oxy_percentsat_ch2 {
+    Float64 _FillValue NaN;
+    Float64 actual_range 75.04792094881044, 130.90482262430223;
+    Float64 colorBarMaximum 100.0;
+    Float64 colorBarMinimum 0.0;
+    String epic_key "CTDOST_4220";
+    String generic_name "oxy_psat channel 2";
+    String ioos_category "Dissolved O2";
+    String long_name "Percent Saturation of oxygen over air";
+    String standard_name "fractional_saturation_of_oxygen_in_sea_water";
+    String units "percent";
+  }
+  latitude {
+    String _CoordinateAxisType "Lat";
+    Float64 _FillValue NaN;
+    Float64 actual_range 54.339616666666664, 59.91133333333333;
+    String axis "Y";
+    Float64 colorBarMaximum 90.0;
+    Float64 colorBarMinimum -90.0;
+    String ioos_category "Location";
+    String long_name "Latitude";
+    String standard_name "latitude";
+    String units "degrees_north";
+  }
+  longitude {
+    String _CoordinateAxisType "Lon";
+    Float64 _FillValue NaN;
+    Float64 actual_range -172.17666666666668, -163.837;
+    String axis "X";
+    Float64 colorBarMaximum 180.0;
+    Float64 colorBarMinimum -180.0;
+    String ioos_category "Location";
+    String long_name "Longitude";
+    String standard_name "longitude";
+    String units "degrees_east";
+  }
+  time {
+    String _CoordinateAxisType "Time";
+    Float64 actual_range 1.65227754e+9, 1.65283434e+9;
+    String axis "T";
+    String calendar "proleptic_gregorian";
+    String ioos_category "Time";
+    String long_name "Time";
+    String standard_name "time";
+    String time_origin "01-JAN-1970 00:00:00";
+    String units "seconds since 1970-01-01T00:00:00Z";
+  }
+  chlor_fluorescence_QC {
+    Float64 _FillValue NaN;
+    Float64 actual_range 0.0, 8.0;
+    Float64 colorBarMaximum 150.0;
+    Float64 colorBarMinimum 0.0;
+    String ioos_category "Quality";
+    String long_name "Chlor Fluorescence QC";
+  }
+  temperature_ch1_QC {
+    Float64 _FillValue NaN;
+    Float64 actual_range -0.0, 8.0;
+    Float64 colorBarMaximum 150.0;
+    Float64 colorBarMinimum 0.0;
+    String ioos_category "Quality";
+    String long_name "Temperature Ch1 QC";
+  }
+  temperature_ch2_QC {
+    Float64 _FillValue NaN;
+    Float64 actual_range -0.0, 8.0;
+    Float64 colorBarMaximum 150.0;
+    Float64 colorBarMinimum 0.0;
+    String ioos_category "Quality";
+    String long_name "Temperature Ch2 QC";
+  }
+  par_QC {
+    Float64 _FillValue NaN;
+    Float64 actual_range 0.0, 9.0;
+    Float64 colorBarMaximum 150.0;
+    Float64 colorBarMinimum 0.0;
+    String ioos_category "Quality";
+    String long_name "Par QC";
+  }
+  turbidity_QC {
+    Float64 _FillValue NaN;
+    Float64 actual_range 0.0, 8.0;
+    Float64 colorBarMaximum 150.0;
+    Float64 colorBarMinimum 0.0;
+    String ioos_category "Quality";
+    String long_name "Turbidity QC";
+  }
+  salinity_ch1_QC {
+    Float64 _FillValue NaN;
+    Float64 actual_range 0.0, 8.0;
+    Float64 colorBarMaximum 150.0;
+    Float64 colorBarMinimum 0.0;
+    String ioos_category "Quality";
+    String long_name "Salinity Ch1 QC";
+  }
+  salinity_ch2_QC {
+    Float64 _FillValue NaN;
+    Float64 actual_range 0.0, 8.0;
+    Float64 colorBarMaximum 150.0;
+    Float64 colorBarMinimum 0.0;
+    String ioos_category "Quality";
+    String long_name "Salinity Ch2 QC";
+  }
+  sigma_t_ch1_QC {
+    Float64 colorBarMaximum 150.0;
+    Float64 colorBarMinimum 0.0;
+    String ioos_category "Unknown";
+    String long_name "Sigma T Ch1 QC";
+  }
+  sigma_t_ch2_QC {
+    Float64 colorBarMaximum 150.0;
+    Float64 colorBarMinimum 0.0;
+    String ioos_category "Unknown";
+    String long_name "Sigma T Ch2 QC";
+  }
+  oxy_concM_ch1_QC {
+    Float64 _FillValue NaN;
+    Float64 actual_range 0.0, 8.0;
+    Float64 colorBarMaximum 150.0;
+    Float64 colorBarMinimum 0.0;
+    String ioos_category "Quality";
+    String long_name "Oxy Conc M Ch1 QC";
+  }
+  oxy_conc_ch1_QC {
+    Float64 _FillValue NaN;
+    Float64 actual_range 0.0, 8.0;
+    Float64 colorBarMaximum 150.0;
+    Float64 colorBarMinimum 0.0;
+    String ioos_category "Quality";
+    String long_name "Oxy Conc Ch1 QC";
+  }
+  oxy_percentsat_ch1_QC {
+    Float64 _FillValue NaN;
+    Float64 actual_range 0.0, 8.0;
+    Float64 colorBarMaximum 150.0;
+    Float64 colorBarMinimum 0.0;
+    String ioos_category "Quality";
+    String long_name "Oxy Percentsat Ch1 QC";
+  }
+  oxy_concM_ch2_QC {
+    Float64 _FillValue NaN;
+    Float64 actual_range 0.0, 8.0;
+    Float64 colorBarMaximum 150.0;
+    Float64 colorBarMinimum 0.0;
+    String ioos_category "Quality";
+    String long_name "Oxy Conc M Ch2 QC";
+  }
+  oxy_conc_ch2_QC {
+    Float64 _FillValue NaN;
+    Float64 actual_range 0.0, 8.0;
+    Float64 colorBarMaximum 150.0;
+    Float64 colorBarMinimum 0.0;
+    String ioos_category "Quality";
+    String long_name "Oxy Conc Ch2 QC";
+  }
+  oxy_percentsat_ch2_QC {
+    Float64 _FillValue NaN;
+    Float64 actual_range 0.0, 8.0;
+    Float64 colorBarMaximum 150.0;
+    Float64 colorBarMinimum 0.0;
+    String ioos_category "Quality";
+    String long_name "Oxy Percentsat Ch2 QC";
+  }
+  Water_Depth {
+    Float32 _FillValue 1.0e+35;
+    Float32 actual_range 58.0, 167.0;
+    String description "estimated seafloor depth at station by ek60 during cast";
+    String ioos_category "Pressure";
+    Float32 missing_value -9999.0;
+    String standard_name "seafloor_depth";
+    String units "dbar";
+  }
+  air_pressure_at_sealevel {
+    Float32 _FillValue 1.0e+35;
+    Float32 actual_range 1023.0, 1031.0;
+    Float64 colorBarMaximum 1050.0;
+    Float64 colorBarMinimum 950.0;
+    String ioos_category "Pressure";
+    Float32 missing_value -9999.0;
+    String name "air_pressure_at_sealevel";
+    String units "mbar";
+  }
+  wind_direction {
+    Float32 _FillValue 1.0e+35;
+    Float32 actual_range 275.0, 354.0;
+    Float64 colorBarMaximum 360.0;
+    Float64 colorBarMinimum 0.0;
+    String ioos_category "Wind";
+    String long_name "Wind From Direction";
+    Float32 missing_value -999.0;
+    String standard_name "wind_from_direction";
+    String units "degrees";
+  }
+  wind_speed {
+    Float32 _FillValue 1.0e+35;
+    Float32 actual_range 4.4, 18.0;
+    String ioos_category "Unknown";
+    String long_name "wind speed";
+    Float32 missing_value -99.9;
+    String standard_name "wind_speed";
+    String units "m s-1";
+  }
+  air_temperature {
+    Float32 _FillValue 1.0e+35;
+    Float32 actual_range -2.0, 3.9;
+    Float64 colorBarMaximum 40.0;
+    Float64 colorBarMinimum -10.0;
+    String ioos_category "Temperature";
+    Float32 missing_value -99.9;
+    String standard_name "air_temperature";
+    String units "degree_C";
+  }
+  Station_Name {
+    String description "FOCI station name";
+    String ioos_category "Unknown";
+    String standard_name "foci_station_name";
+  }
+  profile_id {
+    String cf_role "profile_id";
+    String ioos_category "Identifier";
+  }
+ }
+  NC_GLOBAL {
+    String cdm_altitude_proxy "pressure";
+    String cdm_data_type "Profile";
+    String cdm_profile_variables "profile_id";
+    String ChiefScientist "Shaun Bell";
+    String comment "Provisional data";
+    String Conventions "\"CF-1.6, ~OceanSITES-1.5, ACDD-1.3\", COARDS";
+    String conventions "?CF-1.6, ~OceanSITES-1.5, ACDD-1.2?";
+    String creator_email "shaun.bell (at) noaa.gov";
+    String creator_institution "PMEL";
+    String creator_name "Shaun Bell";
+    String creator_type "person";
+    String creator_url "https://www.pmel.noaa.gov/";
+    String CruiseID "DY2206";
+    String CruiseID_Alternates "DY2206";
+    String CruiseID_Historic "DY2206";
+    String CruiseLocation "Bering Sea";
+    Int32 CruiseYear 2022;
+    String ctdlogs_pdf_name "DY2206_CTDCastLogs.pdf";
+    String date_created "2022-09-29T10:53:58Z";
+    String Description "FOCI Spring Mooring Survey";
+    Float64 Easternmost_Easting -163.837;
+    String EndPort "Dutch Harbor, AK";
+    String featureType "Profile";
+    Float64 geospatial_lat_max 59.91133333333333;
+    Float64 geospatial_lat_min 54.339616666666664;
+    String geospatial_lat_units "degrees_north";
+    Float64 geospatial_lon_max -163.837;
+    Float64 geospatial_lon_min -172.17666666666668;
+    String geospatial_lon_units "degrees_east";
+    String history "Oxy Chan 1 Winkler Slope Correction: 0.954 : < 30000m 2023-12-15 06:31:24.974411
+Oxy Chan 1 Winkler Slope Correction: 0.954 : >= 30000m 2023-12-15 06:31:24.974427
+Oxy Chan 2 Winkler Slope Correction: 1.001 : < 30000m 2023-12-15 06:31:24.974441
+Oxy Chan 2 Winkler Slope Correction: 1.001 : >= 30000m 2023-12-15 06:31:24.974454
+
+2024-03-05T22:58:24Z (local files)
+2024-03-05T22:58:24Z http://akutan.pmel.noaa.gov:8080/erddap/tabledap/CTD_dy2206_final.das";
+    String infoUrl "https://www.pmel.noaa.gov/";
+    String institution "PMEL";
+    String keywords "active, air, available, ch1, ch2, chemistry, chlor, chlor_fluorescence, chlor_fluorescence_QC, chlorophyll, color, conc, concdentration, concentration, cooperative, cruise, data, density, depth, dissolved, dissolved o2, downwelling, downwelling_photosynthetic_photon_radiance_in_sea_water, earth, Earth Science > Oceans > Ocean Chemistry > Chlorophyll, Earth Science > Oceans > Ocean Chemistry > Oxygen, Earth Science > Oceans > Ocean Optics > Photosynthetically Active Radiation, Earth Science > Oceans > Ocean Optics >Irradiance, Earth Science > Oceans > Ocean Temperature > Water Temperature, Earth Science > Oceans > Salinity/Density > Density, Earth Science > Oceans > Salinity/Density > Salinity, environmental, fisheries, fisheries-oceanography, fluorescence, foci, fractional, fractional_saturation_of_oxygen_in_sea_water, in-situ, investigations, Irradiance, its, its-90, lab, laboratory, latitude, local, longitude, marine, mass, mass_concentration_of_chlorophyll_in_sea_water, mole, mole_concentration_of_dissolved_molecular_oxygen_in_sea_water, molecular, mooring, nephlometric, noaa, O2, ocean, ocean color, oceanographic, oceanography, oceans, optical, optical properties, optics, optode, over, oxy, oxy_conc_ch1, oxy_conc_ch1_QC, oxy_conc_ch2, oxy_conc_ch2_QC, oxy_concM_ch1, oxy_concM_ch1_QC, oxy_concM_ch2, oxy_concM_ch2_QC, oxy_percentsat_ch1, oxy_percentsat_ch1_QC, oxy_percentsat_ch2, oxy_percentsat_ch2_QC, oxygen, pacific, par, par_QC, percent, percentsat, photon, photosynthetic, photosynthetically, pmel, practical, properties, pss, pss-78, quality, radiation, salinity, salinity_ch1, salinity_ch1_QC, salinity_ch2, salinity_ch2_QC, saturation, scale, science, sea, sea_water_practical_salinity, sea_water_sigma_t, sea_water_temperature, sea_water_turbidity, seawater, sigma, sigma_t_ch1, sigma_t_ch1_QC, sigma_t_ch2, sigma_t_ch2_QC, sigmat, situ, source, spring, temperature, temperature_ch1, temperature_ch1_QC, temperature_ch2, temperature_ch2_QC, time, turbidity, turbidity_QC, units, voltage, water";
+    String keywords_vocabulary "GCMD Science Keywords";
+    String license "The data may be used and redistributed for free but is not intended
+for legal use, since it may contain inaccuracies. Neither the data
+Contributor, ERD, NOAA, nor the United States Government, nor any
+of their employees or contractors, makes any warranty, express or
+implied, including warranties of merchantability and fitness for a
+particular purpose, or assumes any legal liability for the accuracy,
+completeness, or usefulness, of this information.";
+    Float64 Northernmost_Northing 59.91133333333333;
+    String principal_investigator "Phyllis Stabeno";
+    String principal_investigator_email "phyllis.stabeno (at) noaa.gov";
+    String project "EcoFOCI";
+    String project_url "https://www.ecofoci.noaa.gov";
+    String sea_area "Bering Sea (BS)";
+    String ShipID "DY";
+    String source_documents "http://www.oceansites.org/docs/oceansites_data_format_reference_manual.pdf";
+    String sourceUrl "(local files)";
+    Float64 Southernmost_Northing 54.339616666666664;
+    String standard_name_vocabulary "CF Standard Name Table v70";
+    String StartPort "Dutch Harbor, AK";
+    String subsetVariables "time, latitude, longitude, profile_id";
+    String summary "QC'D CTD Data from DY2206 CTD Data.";
+    String time_coverage_end "2022-05-18T00:39:00Z";
+    String time_coverage_start "2022-05-11T13:59:00Z";
+    String title "CTD Data from DY2206 - Final";
+    String Vessel "NOAAS Oscar Dyson";
+    String VesselName "NOAAS Oscar Dyson";
+    Float64 Westernmost_Easting -172.17666666666668;
+  }
+}

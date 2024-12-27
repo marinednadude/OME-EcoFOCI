@@ -1,0 +1,14 @@
+"0","ggplot(data = world) +
+    geom_sf() +
+    geom_point(data = QAQCMRE_CruiseSampleMetadata_DY23_06, aes(x = Lon_dec, y = Lat_dec, colour=as.Date(Date_UTC)), size=2) +
+    coord_sf(xlim = c(min_lon-1, max_lon+1), ylim = c(min_lat-1, max_lat+1), expand = FALSE) +theme_bw() +xlab(""Longitude"") +ylab(""Latitude"") +
+  geom_text(data = QAQCMRE_CruiseSampleMetadata_DY23_06, aes(x = Lon_dec, y = Lat_dec, label=Station),size = 2, colour=""black"") + scale_color_cmocean(labels=dates, breaks=dates, name =""tempo"", start = 0.1, end=0.5) +labs(colour=""Date"")
+"
+"2","Warning:"
+"2"," [38;5;232mRemoved 3 rows containing missing values or values outside the scale range
+(`geom_point()`).[39m
+"
+"2","Warning:"
+"2"," [38;5;232mRemoved 3 rows containing missing values or values outside the scale range
+(`geom_text()`).[39m
+"

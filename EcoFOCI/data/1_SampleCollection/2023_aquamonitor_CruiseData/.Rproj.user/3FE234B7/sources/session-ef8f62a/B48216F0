@@ -1,0 +1,28 @@
+{
+    "id": "B48216F0",
+    "path": "~/Documents/PMEL/Science/EcoFOCI/data/1_SampleCollection/2023_aquamonitor_CruiseData/MergeScript_AquaM_23.Rmd",
+    "project_path": "MergeScript_AquaM_23.Rmd",
+    "type": "r_markdown",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1735259487932.0,
+    "source_on_save": false,
+    "relative_order": 1,
+    "properties": {
+        "tempName": "Untitled1",
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "142,0",
+        "scrollLine": "126",
+        "docOutlineVisible": "1"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1735260330,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1735260330558,
+    "read_only": false,
+    "read_only_alternatives": []
+}

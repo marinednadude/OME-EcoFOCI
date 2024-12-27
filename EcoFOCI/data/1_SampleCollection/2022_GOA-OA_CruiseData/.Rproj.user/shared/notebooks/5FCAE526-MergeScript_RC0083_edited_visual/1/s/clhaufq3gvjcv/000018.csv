@@ -1,0 +1,15 @@
+"0","ggplot(data = world) +
+    geom_sf() +
+    geom_point(data = uc_data, aes(x = Longitude, y = Latitude, colour=Ph), size=2) +
+    coord_sf(xlim = c(min_lon-2, max_lon+2), ylim = c(min_lat-2, max_lat+2), expand = FALSE) +theme_bw() +xlab(""Longitude"") +ylab(""Latitude"") +
+  geom_text_repel(data = uc_data, aes(x = Longitude, y = Latitude, label=Station),size = 2) +facet_grid(.~Depth_bin) +scale_color_cmocean()
+"
+"2","Warning:"
+"2"," ggrepel: 7 unlabeled data points (too many overlaps). Consider increasing max.overlaps
+"
+"2","Warning:"
+"2"," ggrepel: 3 unlabeled data points (too many overlaps). Consider increasing max.overlaps
+"
+"2","Warning:"
+"2"," ggrepel: 3 unlabeled data points (too many overlaps). Consider increasing max.overlaps
+"

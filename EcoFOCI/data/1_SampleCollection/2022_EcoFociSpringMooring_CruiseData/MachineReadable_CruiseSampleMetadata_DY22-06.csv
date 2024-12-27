@@ -1,0 +1,25 @@
+﻿Sample_Name,Biological_Replicate,Technical_Replicate,Negative_control,Cruise_ID_short,Cruise_ID_long,Collection_Date_UTC,Collection_Date_local,Collection_Time_UTC,Collection_Time_local,Field_Sample_Name,Cast_No.,Rosette_position,Field_collection_method,Preservation,Area.within.region,Station,Depth_m,Lat,Lon,Sample_volume_ml,Personnel_responsible_for_Collecting_Sample,Field_Notes
+E1147.NC.DY2206,NA,NA,TRUE,DY2206,EcoFoci Spring Mooring 2022,NA,NA,NA,NA,NC Start,NA,NA,Sterivex 0.22µm filter,95% EtOH,NA,NA,NA,NA,NA,1000,Emily Lemagie,NA
+E1148.DY2206,1,1,FALSE,DY2206,EcoFoci Spring Mooring 2022,5/11/2022,NA,13:59,NA,,1,1,Niskin; Sterivex 0.22µm filter,95% EtOH,Beiring Sea,70M6,72,56˚ 51.79' N,164˚ 01.91' W,1000,Emily Lemagie,s1h1
+E1149.DY2206,1,1,FALSE,DY2206,EcoFoci Spring Mooring 2022,5/11/2022,NA,13:59,NA,,1,4,Niskin; Sterivex 0.22µm filter,95% EtOH,Beiring Sea,70M6,30,56˚ 51.79' N,164˚ 01.91' W,1000,Emily Lemagie,s1h1
+E1150.DY2206,1,1,FALSE,DY2206,EcoFoci Spring Mooring 2022,5/11/2022,NA,13:59,NA,,1,7,Niskin; Sterivex 0.22µm filter,95% EtOH,Beiring Sea,70M6,1,56˚ 51.79' N,164˚ 01.91' W,1000,Emily Lemagie,s1h1
+E1151.DY2206,1,1,FALSE,DY2206,EcoFoci Spring Mooring 2022,5/12/2022,NA,7:41,NA,,3,1,Niskin; Sterivex 0.22µm filter,95% EtOH,Beiring Sea,M2E,69,56˚ 56.44' N,163˚ 50.22' W,1000,Emily Lemagie,s4h1
+E1152.DY2206,1,1,FALSE,DY2206,EcoFoci Spring Mooring 2022,5/12/2022,NA,7:41,NA,,3,4,Niskin; Sterivex 0.22µm filter,95% EtOH,Beiring Sea,M2E,30,56˚ 56.44' N,163˚ 50.22' W,1000,Emily Lemagie,s4h1
+E1153.DY2206,1,1,FALSE,DY2206,EcoFoci Spring Mooring 2022,5/12/2022,NA,7:41,NA,,3,7,Niskin; Sterivex 0.22µm filter,95% EtOH,Beiring Sea,M2E,1,56˚ 56.44' N,163˚ 50.22' W,1000,Emily Lemagie,s4h1
+E1154.DY2206,1,1,FALSE,DY2206,EcoFoci Spring Mooring 2022,5/12/2022,NA,21:46,NA,,7,1,Niskin; Sterivex 0.22µm filter,95% EtOH,Beiring Sea,M2,72,56˚ 51.56' N,164˚ 03.38' W,1000,Emily Lemagie,s7h3
+E1155.DY2206,1,1,FALSE,DY2206,EcoFoci Spring Mooring 2022,5/12/2022,NA,21:46,NA,,7,4,Niskin; Sterivex 0.22µm filter,95% EtOH,Beiring Sea,M2,30,56˚ 51.56' N,164˚ 03.38' W,1000,Emily Lemagie,s7h3
+E1156.DY2206,1,1,FALSE,DY2206,EcoFoci Spring Mooring 2022,5/12/2022,NA,21:46,NA,,7,7,Niskin; Sterivex 0.22µm filter,95% EtOH,Beiring Sea,M2,1,56˚ 51.56' N,164˚ 03.38' W,1000,Emily Lemagie,s7h3
+E1157.DY2206,NA,NA,TRUE,DY2206,EcoFoci Spring Mooring 2022,5/13/2022,NA,NA,NA,NA,NA,NA,Sterivex 0.22µm filter,95% EtOH,NA,NA,NA,NA,NA,1000,Emily Lemagie,NA
+E1158.DY2206,1,1,FALSE,DY2206,EcoFoci Spring Mooring 2022,5/13/2022,NA,11:26,NA,,12,1,Niskin; Sterivex 0.22µm filter,95% EtOH,Beiring Sea,70M12,70,57˚ 25.81' N,166˚ 49.04' W,1000,Emily Lemagie,s12h1
+E1159.DY2206,1,1,FALSE,DY2206,EcoFoci Spring Mooring 2022,5/13/2022,NA,11:26,NA,,12,4,Niskin; Sterivex 0.22µm filter,95% EtOH,Beiring Sea,70M12,30,57˚ 25.81' N,166˚ 49.04' W,1000,Emily Lemagie,s12h1
+E1160.DY2206,1,1,FALSE,DY2206,EcoFoci Spring Mooring 2022,5/13/2022,NA,11:26,NA,,12,7,Niskin; Sterivex 0.22µm filter,95% EtOH,Beiring Sea,70M12,1,57˚ 25.81' N,166˚ 49.04' W,1000,Emily Lemagie,s12h1
+E1161.DY2206,1,1,FALSE,DY2206,EcoFoci Spring Mooring 2022,5/15/2022,NA,6:00,NA,,17,1,Niskin; Sterivex 0.22µm filter,95% EtOH,Beiring Sea,UBS2,133.5,54˚ 24.43' N,165˚ 08.53' W,1000,Emily Lemagie,s18h1
+E1162.DY2206,1,1,FALSE,DY2206,EcoFoci Spring Mooring 2022,5/15/2022,NA,6:00,NA,,17,4,Niskin; Sterivex 0.22µm filter,95% EtOH,Beiring Sea,UBS2,30,54˚ 24.43' N,165˚ 08.53' W,1000,Emily Lemagie,s18h1
+E1163.DY2206,1,1,FALSE,DY2206,EcoFoci Spring Mooring 2022,5/15/2022,NA,6:00,NA,,17,7,Niskin; Sterivex 0.22µm filter,95% EtOH,Beiring Sea,UBS2,1,54˚ 24.43' N,165˚ 08.53' W,1000,Emily Lemagie,s18h1
+E1164.DY2206,1,1,FALSE,DY2206,EcoFoci Spring Mooring 2022,5/17/2022,NA,0:58,NA,,22,1,Niskin; Sterivex 0.22µm filter,95% EtOH,Beiring Sea,M4C,71,57˚ 52.03' N,168˚ 53.19' W,1000,Emily Lemagie,s23h1
+E1165.DY2206,1,1,FALSE,DY2206,EcoFoci Spring Mooring 2022,5/17/2022,NA,0:58,NA,,22,4,Niskin; Sterivex 0.22µm filter,95% EtOH,Beiring Sea,M4C,30,57˚ 52.03' N,168˚ 53.19' W,1000,Emily Lemagie,s23h1
+E1166.DY2206,1,1,FALSE,DY2206,EcoFoci Spring Mooring 2022,5/17/2022,NA,0:58,NA,,22,7,Niskin; Sterivex 0.22µm filter,95% EtOH,Beiring Sea,M4C,1,57˚ 52.03' N,168˚ 53.19' W,1000,Emily Lemagie,s23h1
+E1167.DY2206,1,1,FALSE,DY2206,EcoFoci Spring Mooring 2022,5/17/2022,NA,21:56,NA,,28,1,Niskin; Sterivex 0.22µm filter,95% EtOH,Beiring Sea,M5C,70,59˚ 54.68' N,171˚ 43.92' W,1000,Emily Lemagie,s30h1
+E1168.DY2206,1,1,FALSE,DY2206,EcoFoci Spring Mooring 2022,5/17/2022,NA,21:56,NA,,28,4,Niskin; Sterivex 0.22µm filter,95% EtOH,Beiring Sea,M5C,30,59˚ 54.68' N,171˚ 43.92' W,1000,Emily Lemagie,s30h1
+E1169.DY2206,1,1,FALSE,DY2206,EcoFoci Spring Mooring 2022,5/17/2022,NA,21:56,NA,,28,7,Niskin; Sterivex 0.22µm filter,95% EtOH,Beiring Sea,M5C,1,59˚ 54.68' N,171˚ 43.92' W,1000,Emily Lemagie,s30h1
+E1170.NC.DY2206,NA,NA,TRUE,DY2206,EcoFoci Spring Mooring 2022,5/17/2022,NA,23:00,NA,NC End,NA,NA,Sterivex 0.22µm filter,95% EtOH,NA,NA,NA,NA,NA,1000,Emily Lemagie,NA

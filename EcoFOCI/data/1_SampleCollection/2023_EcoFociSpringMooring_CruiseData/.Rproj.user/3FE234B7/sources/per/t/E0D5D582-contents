@@ -1,0 +1,148 @@
+---
+title: "DY2306 2023 EcoFOCI Spring Mooring Cruise"
+author: "Zack Gold"
+date: "2024-12-23"
+output: html_document
+---
+
+```{r}
+library(tidyverse)
+library(here)
+library(lubridate)
+library(measurements)
+library(sp)
+library(readr)
+library(sf)
+library("rnaturalearth")
+library("rnaturalearthdata")
+library(cmocean)
+```
+
+```{r}
+
+sample_Data <- read.csv(file = here("MachineReadable_CruiseSampleMetadata_DY23-06.csv"), header=T,fileEncoding="UTF-8")
+
+sample_Data %>% 
+  mutate(., Combined_date = str_c(Collection_Date_UTC, " ",Collection_Time_UTC),
+         Combined_date_local = str_c(Collection_Date_local, " ",Collection_Time_local),
+          Date_local_check = as.POSIXct(Combined_date_local, format="%m/%d/%y %H:%M", tz="US/Alaska"),
+         Date_local_check = if_else(is.na(Date_local_check), as.POSIXct(Combined_date_local, format="%m/%d/%y", tz="UTC"), Date_local_check )) %>% 
+  mutate(.,  Date_UTC = as.POSIXct(Combined_date, format="%m/%d/%Y %H:%M", tz="UTC"),
+                     Date_UTC = if_else(is.na(Date_UTC), as.POSIXct(Collection_Date_UTC, format="%m/%d/%Y", tz="UTC"), Date_UTC ), 
+         Date_local= format(Date_UTC,tz="US/Alaska")) %>% 
+  mutate(., Lat_fix =str_remove(Lat, "' N")) %>% 
+    mutate(., Lat_fix =str_replace(Lat_fix, "°"," ")) %>% 
+  mutate(., Lat_dec = measurements::conv_unit(Lat_fix,'deg_dec_min','dec_deg')) %>% 
+      mutate(., Lat_dec=as.numeric(Lat_dec)) %>% 
+  mutate(., Lon_fix =str_remove(Lon, "' W")) %>% 
+    mutate(., Lon_fix =str_replace(Lon_fix, "°"," ")) %>%
+    mutate(., Lon_dec = measurements::conv_unit(Lon_fix,'deg_dec_min','dec_deg')) %>% 
+  mutate(., Lon_dec=as.numeric(Lon_dec)) %>% 
+  mutate(., , Lon_dec = Lon_dec*-1) %>% 
+  mutate(., Cast=as.character(Cast_No.),
+         Bottle=as.character(Rosette_position)) -> QAQCMRE_CruiseSampleMetadata_DY23_06
+
+
+c("Sample_Name","Biological_Replicate","Technical_Replicate","Negative_control",    "Cruise_ID_short",     "Cruise_ID_long",     "Collection_Date_UTC", "Collection_Date_local","Collection_Time_UTC","Collection_Time_local"                   ,"Field_Sample_Name",   "Cast_No.",  "Rosette_position",    "Field_collection_method"       ,"Preservation",       "Area.within.region",  "Station",    "Depth_m",   
+"Lat",        "Lon",        "Sample_volume_ml",   
+"Personnel_responsible_for_Collecting_Sample", "Field_Notes","Combined_date",      "Combined_date_local", "Date_UTC",   "Date_local_check",   
+"Date_local", "Lat_fix",    "Lat_dec",   
+"Lon_fix",    "Lon_dec",    "Cast",      
+"Bottle"   ) -> skq1_colnames
+
+colnames(QAQCMRE_CruiseSampleMetadata_DY23_06)
+setdiff(skq1_colnames,colnames(QAQCMRE_CruiseSampleMetadata_DY23_06) )
+setdiff(colnames(QAQCMRE_CruiseSampleMetadata_DY23_06),skq1_colnames )
+
+QAQCMRE_CruiseSampleMetadata_DY23_06 <- QAQCMRE_CruiseSampleMetadata_DY23_06[, skq1_colnames]
+
+readr::write_excel_csv(QAQCMRE_CruiseSampleMetadata_DY23_06, file="QAQCMRE_CruiseSampleMetadata_DY23_06.csv")
+```
+
+```{r}
+
+min_lat <- min(QAQCMRE_CruiseSampleMetadata_DY23_06$Lat_dec, na.rm = T)
+max_lat <- max(QAQCMRE_CruiseSampleMetadata_DY23_06$Lat_dec, na.rm = T)
+
+min_lon <- min(QAQCMRE_CruiseSampleMetadata_DY23_06$Lon_dec, na.rm = T)
+max_lon <- max(QAQCMRE_CruiseSampleMetadata_DY23_06$Lon_dec, na.rm = T)
+
+world <- ne_countries(scale = "medium", returnclass = "sf")
+QAQCMRE_CruiseSampleMetadata_DY23_06$Date_UTC %>% as.Date() -> dates
+
+
+ggplot(data = world) +
+    geom_sf() +
+    geom_point(data = QAQCMRE_CruiseSampleMetadata_DY23_06, aes(x = Lon_dec, y = Lat_dec, colour=as.Date(Date_UTC)), size=2) +
+    coord_sf(xlim = c(min_lon-1, max_lon+1), ylim = c(min_lat-1, max_lat+1), expand = FALSE) +theme_bw() +xlab("Longitude") +ylab("Latitude") +
+  geom_text(data = QAQCMRE_CruiseSampleMetadata_DY23_06, aes(x = Lon_dec, y = Lat_dec, label=Station),size = 2, colour="black") + scale_color_cmocean(labels=dates, breaks=dates, name ="tempo", start = 0.1, end=0.5) +labs(colour="Date")
+
+
+```
+
+```{r}
+QAQCMRE_CruiseSampleMetadata_DY23_06 %>% 
+  filter(., is.na(Lat_dec))
+```
+```{r}
+QAQCMRE_CruiseSampleMetadata_DY23_06 %>% 
+  ggplot() +
+  geom_point(aes(y = Lat_dec, x =as.Date(Date_UTC), colour=as.Date(Date_UTC)), size=2) + scale_color_cmocean(labels=dates, breaks=dates, name ="tempo", start = 0.1, end=0.5) +labs(colour="Date") +scale_x_date(date_labels = "%b %d %Y")
+
+QAQCMRE_CruiseSampleMetadata_DY23_06$Date_UTC
+```
+
+```{r}
+bottle_Data <- read.csv(file = here("CTD_raw_BottleFile_DY23-06.csv"), header=T)
+
+```
+
+```{r}
+bottle_Data %>% 
+  mutate(., holder1 = str_remove(profile_id,"DY2306c"),
+         Cast = str_remove(holder1,"_btl")) %>% 
+           mutate(., Cast = as.numeric(Cast)) %>% 
+   rename_with(.fn = ~ paste0("btl_", .x))-> bottle_Data
+
+bottle_Data$Cast <- as.character(bottle_Data$btl_Cast)
+bottle_Data$bottle <- as.character(bottle_Data$btl_bottle)
+```
+
+
+```{r}
+QAQCMRE_CruiseSampleMetadata_DY23_06 %>% 
+ mutate(pressure= round(Depth_m,0)) %>% 
+  left_join(bottle_Data, by = c("Cast" = "Cast", "Bottle" = "bottle")) %>% 
+  mutate(., Date_UTC_btl = as.POSIXct(`btl_time..UTC.`, format="%Y-%m-%dT%H:%M:%SZ", tz="UTC") )-> EcoFOCI_Spring_2023_sample_data
+
+
+#colnames(ctd_Data)[2:13] -> cols_2_keep
+library(rlang)
+
+EcoFOCI_Spring_2023_sample_data %>% 
+  select(Sample_Name, 
+         Biological_Replicate,
+         Technical_Replicate,
+         Negative_control, 
+         Cruise_ID_short, 
+         Cruise_ID_long,
+         Cast_No.,
+         Rosette_position,
+         Field_collection_method,
+         Preservation,
+         Station,
+         Depth_m_notes=Depth_m,
+         Sample_volume_ml,
+         Personnel_responsible_for_Collecting_Sample,
+         Field_Notes,
+         Date_UTC_notes=Date_UTC,
+         Lat_notes = Lat_dec,
+         Lon_notes=Lon_dec,
+          Date_UTC_btl,
+         #!!!syms(cols_2_keep),
+                    starts_with("ctd"),
+        starts_with("btl")
+         ) -> EcoFOCI_Spring_2023_sample_data
+
+readr::write_excel_csv(EcoFOCI_Spring_2023_sample_data, file="FinalOME_Merge_DY23-06.csv")
+```
