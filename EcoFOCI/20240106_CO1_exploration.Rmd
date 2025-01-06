@@ -1,0 +1,69 @@
+---
+title: "EcoFOCI Analysis Run 1-3"
+author: "Zack Gold"
+date: "2025-01-06"
+output: html_document
+---
+
+
+```{r}
+
+library(tidyverse)
+library(here)
+library(lubridate)
+library(measurements)
+library(sp)
+library(readr)
+library(sf)
+library("rnaturalearth")
+library("rnaturalearthdata")
+library(cmocean)
+
+```
+
+# Load Data
+```{r}
+long_MiFish_EcoFOCI <- readRDS(here("data","long_data","long_MiFish_EcoFOCI.RDS"))
+long_COI_EcoFOCI <- readRDS(here("data","long_data","long_COI_EcoFOCI.RDS"))
+
+```
+
+
+```{r}
+
+long_COI_EcoFOCI %>% 
+  dplyr::select(ASV_combo, Kingdom, Phylum, Class, Order, Family, Genus, Species) %>% 
+  distinct() %>% 
+  filter(., Genus=="Calanus")
+
+
+long_COI_EcoFOCI %>% 
+  filter(., Genus=="Calanus") %>% 
+  dplyr::group_by(ASV_combo, Kingdom, Phylum, Class, Order, Family, Genus, Species) %>% 
+  dplyr::summarise(sum_reads=sum(nReads)) %>% 
+  arrange(desc(sum_reads))
+
+  
+```
+
+
+```{r}
+
+min_lat <- min(QAQCMRE_CruiseSampleMetadata_DY20_12$Lat_dec, na.rm = T)
+max_lat <- max(QAQCMRE_CruiseSampleMetadata_DY20_12$Lat_dec, na.rm = T)
+
+min_lon <- min(QAQCMRE_CruiseSampleMetadata_DY20_12$Lon_dec, na.rm = T)
+max_lon <- max(QAQCMRE_CruiseSampleMetadata_DY20_12$Lon_dec, na.rm = T)
+
+world <- ne_countries(scale = "medium", returnclass = "sf")
+QAQCMRE_CruiseSampleMetadata_DY20_12$Date_UTC %>% as.Date() -> dates
+
+
+ggplot(data = world) +
+    geom_sf() +
+    geom_point(data = QAQCMRE_CruiseSampleMetadata_DY20_12, aes(x = Lon_dec, y = Lat_dec, colour=as.Date(Date_UTC)), size=2) +
+    coord_sf(xlim = c(min_lon-1, max_lon+1), ylim = c(min_lat-1, max_lat+1), expand = FALSE) +theme_bw() +xlab("Longitude") +ylab("Latitude") +
+  geom_text(data = QAQCMRE_CruiseSampleMetadata_DY20_12, aes(x = Lon_dec, y = Lat_dec, label=Station),size = 2, colour="black") + scale_color_cmocean(labels=dates, breaks=dates, name ="tempo", start = 0.1, end=0.5) +labs(colour="Date")
+
+
+```

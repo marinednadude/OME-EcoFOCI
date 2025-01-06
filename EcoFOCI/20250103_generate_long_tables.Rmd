@@ -8,7 +8,7 @@ output: html_document
 ```{r}
 library(here)
 library(tidyverse)
-
+library(Biostrings)
 ```
 
 # Load in Sample Metadata
@@ -20,7 +20,46 @@ run1_4_revamp_formatted_metadata %>%
   filter(., str_detect(Sample, "E373"))
 ```
 
-# 18Sv4 
+# 18Sv4 - REVAMP
+
+## Unite ASVs
+
+```{r}
+run2_18Sv4_tax <- read.table(here("data","REVAMP_out","Run2_from_poseidon_20250103","18Sv4","ASV2Taxonomy","18Sv4_RUN1_asvTaxonomyTable.txt"), sep="\t", header=T) #IS IT REALLY CALLED RUN1 when it is RUN2?
+
+run2_18Sv4_fasta <- readDNAStringSet(here("data","REVAMP_out","Run2_from_poseidon_20250103","18Sv4","dada2","ASVs.fa"), format="fasta" )
+
+as.data.frame(run2_18Sv4_fasta) %>%
+  as_tibble(rownames = "ASV") %>% 
+  left_join(run2_18Sv4_tax) %>% 
+  rename_with(.cols = everything(), function(x){paste0("Run2:", x)}) %>% 
+  dplyr::rename(Sequence=`Run2:x`) -> run2_18Sv4_fasta_df
+
+run3_18Sv4_tax <- read.table(here("data","REVAMP_out","Run3_from_poseidon_20250103","18Sv4_REVAMP_out","ASV2Taxonomy","18Sv4_REVAMP_out_asvTaxonomyTable.txt"), sep="\t", header=T) 
+
+run3_18Sv4_fasta <- readDNAStringSet(here("data","REVAMP_out","Run3_from_poseidon_20250103","18Sv4_REVAMP_out","dada2","ASVs.fa"), format="fasta" )
+
+as.data.frame(run3_18Sv4_fasta) %>% 
+  as_tibble(rownames = "ASV") %>% 
+  left_join(run3_18Sv4_tax) %>% 
+   rename_with(.cols = everything(), function(x){paste0("Run3:", x)}) %>% 
+  dplyr::rename(Sequence=`Run3:x`)-> run3_18Sv4_fasta_df
+
+full_join(run2_18Sv4_fasta_df, run3_18Sv4_fasta_df) %>% 
+ mutate(., ASV_combo = row_number(),
+        ASV_combo = str_c("ASVc_",ASV_combo)) %>% 
+ mutate(., Kingdom = if_else(!is.na(`Run3:Kingdom`), `Run3:Kingdom`,`Run2:Kingdom`),
+        Phylum= if_else(!is.na(`Run3:Phylum`), `Run3:Phylum`,`Run2:Phylum`), 
+        Class= if_else(!is.na(`Run3:Class`), `Run3:Class`,`Run2:Class`),
+        Order= if_else(!is.na(`Run3:Order`), `Run3:Order`,`Run2:Order`), 
+        Family= if_else(!is.na(`Run3:Family`), `Run3:Family`,`Run2:Family`),
+        Genus= if_else(!is.na(`Run3:Genus`), `Run3:Genus`,`Run2:Genus`),
+        Species= if_else(!is.na(`Run3:Species`), `Run3:Species`,`Run2:Species`)) %>% 
+  dplyr::select(ASV_combo, `Run3:ASV`, `Run2:ASV`, Sequence, Kingdom,Phylum,Class, Order, Family, Genus, Species) -> run2_3_18Sv4_united_ASV_tables
+
+saveRDS(run2_3_18Sv4_united_ASV_tables, here("data","long_data","run2_3_18Sv4_united_ASV_tables.RDS"))
+
+```
 
 ## Run 1 - There are no EcoFOCI samples in Run1
 I am including this here because there is something a little off about the taxonomy for 18Sv4 and the REVAMP output with Run 1 and Run 2 taxonomy appearing to be flip flopped.
@@ -54,25 +93,23 @@ I am including this here because there is something a little off about the taxon
 ## Run 2
 ```{r}
 
-
 run2_18Sv4_asv <- read.table(here("data","REVAMP_out","Run2_from_poseidon_20250103","18Sv4","dada2","ASVs_counts.tsv"), sep="\t", header=T) %>% 
   rename(ASV=x)
 
-run2_18Sv4_tax <- read.table(here("data","REVAMP_out","Run2_from_poseidon_20250103","18Sv4","ASV2Taxonomy","18Sv4_RUN1_asvTaxonomyTable.txt"), sep="\t", header=T) #IS IT REALLY CALLED RUN1 when it is RUN2?
-
-
 run2_18Sv4_asv %>% 
-  left_join(run2_18Sv4_tax) %>% 
+  dplyr::rename(`Run2:ASV`=ASV) %>% 
+  left_join(run2_3_18Sv4_united_ASV_tables) %>% 
    rename_at(vars(starts_with("MP_")), funs(str_replace(., "MP_", ""))) -> run2_18Sv4_merge
+colnames(run2_18Sv4_merge)
 
 run2_18Sv4_merge %>% 
-  pivot_longer(cols = c(-ASV, -Kingdom, -Phylum, -Class, -Order, -Family,-Genus, -Species), names_to = "Sample", values_to = "nReads") %>% 
+  pivot_longer(cols = c(-`ASV_combo`, -`Run2:ASV`, -`Run3:ASV`,-`Sequence`,-Kingdom, -Phylum, -Class, -Order, -Family, -Genus, -Species), names_to = "Sample", values_to = "nReads") %>% 
   left_join(run1_4_revamp_formatted_metadata) %>% 
   filter(., !is.na(Sample_Name)) %>% # this removes all non-EcoFOCI samples. Note this also excludes positive and negative controls. No decontamination has been performed. We should definitely do this at somepoint, but need a conversation as to what approaches
     group_by(Sample) %>%
     mutate (Tot = sum(nReads),
             Prop.abund = nReads / Tot) %>% 
-    group_by (ASV) %>%
+    group_by (ASV_combo) %>%
     mutate (Colmax = max(Prop.abund),
             eDNA.Index = Prop.abund / Colmax) %>%
   dplyr::select(-Tot,-Colmax) -> run2_18Sv4_long
@@ -86,23 +123,21 @@ run2_18Sv4_merge %>%
 
 
 run3_18Sv4_asv <- read.table(here("data","REVAMP_out","Run3_from_poseidon_20250103","18Sv4_REVAMP_out","dada2","ASVs_counts.tsv"), sep="\t", header=T) %>% 
-  rename(ASV=x)
-
-run3_18Sv4_tax <- read.table(here("data","REVAMP_out","Run3_from_poseidon_20250103","18Sv4_REVAMP_out","ASV2Taxonomy","18Sv4_REVAMP_out_asvTaxonomyTable.txt"), sep="\t", header=T) 
-
+  dplyr::rename(ASV=x)
 
 run3_18Sv4_asv %>% 
-  left_join(run3_18Sv4_tax) %>% 
+  dplyr::rename(`Run3:ASV`=ASV) %>% 
+  left_join(run2_3_18Sv4_united_ASV_tables) %>% 
    rename_at(vars(starts_with("MP_")), funs(str_replace(., "MP_", ""))) -> run3_18Sv4_merge
 
 run3_18Sv4_merge %>% 
-  pivot_longer(cols = c(-ASV, -Kingdom, -Phylum, -Class, -Order, -Family,-Genus, -Species), names_to = "Sample", values_to = "nReads") %>% 
+   pivot_longer(cols = c(-`ASV_combo`, -`Run2:ASV`, -`Run3:ASV`,-`Sequence`,-Kingdom, -Phylum, -Class, -Order, -Family, -Genus, -Species), names_to = "Sample", values_to = "nReads") %>% 
   left_join(run1_4_revamp_formatted_metadata) %>% 
   filter(., !is.na(Sample_Name)) %>% # this removes all non-EcoFOCI samples. Note this also excludes positive and negative controls. No decontamination has been performed. We should definitely do this at somepoint, but need a conversation as to what approaches
     group_by(Sample) %>%
     mutate (Tot = sum(nReads),
             Prop.abund = nReads / Tot) %>% 
-    group_by (ASV) %>%
+    group_by (ASV_combo) %>%
     mutate (Colmax = max(Prop.abund),
             eDNA.Index = Prop.abund / Colmax) %>%
   dplyr::select(-Tot,-Colmax) -> run3_18Sv4_long
@@ -120,34 +155,169 @@ saveRDS(long_18Sv4_EcoFOCI, here("data","long_data","long_18Sv4_EcoFOCI.RDS"))
 
 ```
 
+# 18Sv4 - PR2
 
-# 18Sv9
+## Unite ASVs
+
+```{r}
+run2_18Sv4_tax_pr2 <- read.table(here("data","pr2_setta_20240106","Run2_18Sv4_tax_pr2_sklearn.tsv"), sep="\t", header=T) %>% 
+  dplyr::rename(ASV=Feature.ID) %>% separate(., Taxon, into=c("Domain","Supergroup","Division","Subdivision","Class","Order","Family","Genus","Species"), sep=";")
+
+as.data.frame(run2_18Sv4_fasta) %>%
+  as_tibble(rownames = "ASV") %>% 
+  left_join(run2_18Sv4_tax_pr2) %>% 
+  rename_with(.cols = everything(), function(x){paste0("Run2:", x)}) %>% 
+  dplyr::rename(Sequence=`Run2:x`) -> run2_18Sv4_fasta_df_pr2
+
+run3_18Sv4_tax_pr2 <- read.table(here("data","pr2_setta_20240106","Run3_18Sv4_tax_pr2_sklearn.tsv"), sep="\t", header=T) %>% 
+  dplyr::rename(ASV=Feature.ID) %>% separate(., Taxon, into=c("Domain","Supergroup","Division","Subdivision","Class","Order","Family","Genus","Species"), sep=";")
+
+as.data.frame(run3_18Sv4_fasta) %>% 
+  as_tibble(rownames = "ASV") %>% 
+  left_join(run3_18Sv4_tax_pr2) %>% 
+   rename_with(.cols = everything(), function(x){paste0("Run3:", x)}) %>% 
+  dplyr::rename(Sequence=`Run3:x`)-> run3_18Sv4_fasta_df_pr2
+
+full_join(run2_18Sv4_fasta_df_pr2, run3_18Sv4_fasta_df_pr2) %>% 
+ mutate(., ASV_combo = row_number(),
+        ASV_combo = str_c("ASVc_",ASV_combo)) %>% 
+ mutate(., Domain = if_else(!is.na(`Run3:Domain`), `Run3:Domain`,`Run2:Domain`),
+        Supergroup= if_else(!is.na(`Run3:Supergroup`), `Run3:Supergroup`,`Run2:Supergroup`), 
+         Division= if_else(!is.na(`Run3:Division`), `Run3:Division`,`Run2:Division`), 
+         Subdivision= if_else(!is.na(`Run3:Subdivision`), `Run3:Subdivision`,`Run2:Subdivision`), 
+        Class= if_else(!is.na(`Run3:Class`), `Run3:Class`,`Run2:Class`),
+        Order= if_else(!is.na(`Run3:Order`), `Run3:Order`,`Run2:Order`), 
+        Family= if_else(!is.na(`Run3:Family`), `Run3:Family`,`Run2:Family`),
+        Genus= if_else(!is.na(`Run3:Genus`), `Run3:Genus`,`Run2:Genus`),
+        Species= if_else(!is.na(`Run3:Species`), `Run3:Species`,`Run2:Species`)) %>% 
+  dplyr::select(ASV_combo, `Run3:ASV`, `Run2:ASV`, Sequence, Domain,Supergroup,Division,Subdivision,Class, Order, Family, Genus, Species) -> run2_3_18Sv4_pr2_united_ASV_tables
+
+saveRDS(run2_3_18Sv4_pr2_united_ASV_tables, here("data","long_data","run2_3_18Sv4_pr2_united_ASV_tables.RDS"))
+
+```
+
+## Run 1 - There are no EcoFOCI samples in Run1
 
 ## Run 2
 ```{r}
 
+run2_18Sv4_asv %>% 
+  dplyr::rename(`Run2:ASV`=ASV) %>% 
+  left_join(run2_3_18Sv4_pr2_united_ASV_tables) %>% 
+   rename_at(vars(starts_with("MP_")), funs(str_replace(., "MP_", ""))) -> run2_18Sv4_merge_pr2
 
-run2_18Sv9_asv <- read.table(here("data","REVAMP_out","Run2_from_poseidon_20250103","18Sv9","dada2","ASVs_counts.tsv"), sep="\t", header=T) %>% 
-  rename(ASV=x)
-
-run2_18Sv9_tax <- read.table(here("data","REVAMP_out","Run2_from_poseidon_20250103","18Sv9","ASV2Taxonomy","18Sv9_RUN1_asvTaxonomyTable.txt"), sep="\t", header=T) #IS IT REALLY CALLED RUN1 when it is RUN2?
-
-
-run2_18Sv9_asv %>% 
-  left_join(run2_18Sv9_tax) %>% 
-   rename_at(vars(starts_with("MP_")), funs(str_replace(., "MP_", ""))) -> run2_18Sv9_merge
-
-run2_18Sv9_merge %>% 
-  pivot_longer(cols = c(-ASV, -Kingdom, -Phylum, -Class, -Order, -Family,-Genus, -Species), names_to = "Sample", values_to = "nReads") %>% 
+run2_18Sv4_merge_pr2 %>% 
+  pivot_longer(cols = c(-`ASV_combo`, -`Run2:ASV`, -`Run3:ASV`,-`Sequence`,-Domain,-Supergroup,-Division,-Subdivision, -Class, -Order, -Family, -Genus, -Species), names_to = "Sample", values_to = "nReads") %>% 
   left_join(run1_4_revamp_formatted_metadata) %>% 
   filter(., !is.na(Sample_Name)) %>% # this removes all non-EcoFOCI samples. Note this also excludes positive and negative controls. No decontamination has been performed. We should definitely do this at somepoint, but need a conversation as to what approaches
     group_by(Sample) %>%
     mutate (Tot = sum(nReads),
             Prop.abund = nReads / Tot) %>% 
-    group_by (ASV) %>%
+    group_by (ASV_combo) %>%
     mutate (Colmax = max(Prop.abund),
             eDNA.Index = Prop.abund / Colmax) %>%
-  dplyr::select(-Tot,-Colmax) -> run2_18Sv9_long
+  dplyr::select(-Tot,-Colmax) -> run2_18Sv4_long_pr2
+  
+  
+```
+
+
+## Run 3
+```{r}
+
+run3_18Sv4_asv %>% 
+  dplyr::rename(`Run3:ASV`=ASV) %>% 
+  left_join(run2_3_18Sv4_pr2_united_ASV_tables) %>% 
+   rename_at(vars(starts_with("MP_")), funs(str_replace(., "MP_", ""))) -> run3_18Sv4_merge_pr2
+
+run3_18Sv4_merge_pr2 %>% 
+  pivot_longer(cols = c(-`ASV_combo`, -`Run2:ASV`, -`Run3:ASV`,-`Sequence`,-Domain,-Supergroup,-Division,-Subdivision, -Class, -Order, -Family, -Genus, -Species), names_to = "Sample", values_to = "nReads") %>% 
+  left_join(run1_4_revamp_formatted_metadata) %>% 
+  filter(., !is.na(Sample_Name)) %>% # this removes all non-EcoFOCI samples. Note this also excludes positive and negative controls. No decontamination has been performed. We should definitely do this at somepoint, but need a conversation as to what approaches
+    group_by(Sample) %>%
+    mutate (Tot = sum(nReads),
+            Prop.abund = nReads / Tot) %>% 
+    group_by (ASV_combo) %>%
+    mutate (Colmax = max(Prop.abund),
+            eDNA.Index = Prop.abund / Colmax) %>%
+  dplyr::select(-Tot,-Colmax) -> run3_18Sv4_long_pr2
+  
+  
+```
+
+## Merge
+
+```{r}
+
+bind_rows(run2_18Sv4_long_pr2, run3_18Sv4_long_pr2) -> long_18Sv4_EcoFOCI_pr2
+
+saveRDS(long_18Sv4_EcoFOCI_pr2, here("data","long_data","long_18Sv4_EcoFOCI_pr2.RDS"))
+
+```
+
+# 18Sv9
+
+## Unite ASVs
+
+```{r}
+run2_18Sv9_tax <- read.table(here("data","REVAMP_out","Run2_from_poseidon_20250103","18Sv9","ASV2Taxonomy","18Sv9_RUN1_asvTaxonomyTable.txt"), sep="\t", header=T) #IS IT REALLY CALLED RUN1 when it is RUN2?
+
+run2_18Sv9_fasta <- readDNAStringSet(here("data","REVAMP_out","Run2_from_poseidon_20250103","18Sv9","dada2","ASVs.fa"), format="fasta")
+
+as.data.frame(run2_18Sv9_fasta) %>%
+  as_tibble(rownames = "ASV") %>% 
+  left_join(run2_18Sv9_tax) %>% 
+  rename_with(.cols = everything(), function(x){paste0("Run2:", x)}) %>% 
+  dplyr::rename(Sequence=`Run2:x`) -> run2_18Sv9_fasta_df
+
+run3_18Sv9_tax <- read.table(here("data","REVAMP_out","Run3_from_poseidon_20250103","18Sv9_REVAMP_out","ASV2Taxonomy","18Sv9_REVAMP_out_asvTaxonomyTable.txt"), sep="\t", header=T) 
+
+run3_18Sv9_fasta <- readDNAStringSet(here("data","REVAMP_out","Run3_from_poseidon_20250103","18Sv9_REVAMP_out","dada2","ASVs.fa"), format="fasta" )
+
+as.data.frame(run3_18Sv9_fasta) %>% 
+  as_tibble(rownames = "ASV") %>% 
+  left_join(run3_18Sv9_tax) %>% 
+   rename_with(.cols = everything(), function(x){paste0("Run3:", x)}) %>% 
+  dplyr::rename(Sequence=`Run3:x`)-> run3_18Sv9_fasta_df
+
+full_join(run2_18Sv9_fasta_df, run3_18Sv9_fasta_df) %>% 
+ mutate(., ASV_combo = row_number(),
+        ASV_combo = str_c("ASVc_",ASV_combo)) %>% 
+ mutate(., Kingdom = if_else(!is.na(`Run3:Kingdom`), `Run3:Kingdom`,`Run2:Kingdom`),
+        Phylum= if_else(!is.na(`Run3:Phylum`), `Run3:Phylum`,`Run2:Phylum`), 
+        Class= if_else(!is.na(`Run3:Class`), `Run3:Class`,`Run2:Class`),
+        Order= if_else(!is.na(`Run3:Order`), `Run3:Order`,`Run2:Order`), 
+        Family= if_else(!is.na(`Run3:Family`), `Run3:Family`,`Run2:Family`),
+        Genus= if_else(!is.na(`Run3:Genus`), `Run3:Genus`,`Run2:Genus`),
+        Species= if_else(!is.na(`Run3:Species`), `Run3:Species`,`Run2:Species`)) %>% 
+  dplyr::select(ASV_combo, `Run3:ASV`, `Run2:ASV`, Sequence, Kingdom,Phylum,Class, Order, Family, Genus, Species) -> run2_3_18Sv9_united_ASV_tables
+
+saveRDS(run2_3_18Sv9_united_ASV_tables, here("data","long_data","run2_3_18Sv9_united_ASV_tables.RDS"))
+
+```
+
+## Run 2
+```{r}
+
+run2_18Sv9_asv <- read.table(here("data","REVAMP_out","Run2_from_poseidon_20250103","18Sv9","dada2","ASVs_counts.tsv"), sep="\t", header=T) %>% 
+  dplyr::rename(ASV=x)
+
+run2_18Sv9_asv %>% 
+ dplyr::rename(`Run2:ASV`=ASV) %>% 
+  left_join(run2_3_18Sv9_united_ASV_tables) %>% 
+  rename_at(vars(starts_with("MP_")), funs(str_replace(., "MP_", ""))) -> run2_18Sv9_merge
+
+run2_18Sv9_merge %>% 
+    pivot_longer(cols = c(-`ASV_combo`, -`Run2:ASV`, -`Run3:ASV`,-`Sequence`,-Kingdom, -Phylum, -Class, -Order, -Family, -Genus, -Species), names_to = "Sample", values_to = "nReads") %>% 
+  left_join(run1_4_revamp_formatted_metadata) %>% 
+  filter(., !is.na(Sample_Name)) %>% # this removes all non-EcoFOCI samples. Note this also excludes positive and negative controls. No decontamination has been performed. We should definitely do this at somepoint, but need a conversation as to what approaches
+    group_by(Sample) %>%
+    mutate (Tot = sum(nReads),
+            Prop.abund = nReads / Tot) %>% 
+    group_by (ASV_combo) %>%
+    mutate (Colmax = max(Prop.abund),
+            eDNA.Index = Prop.abund / Colmax) %>%
+  dplyr::select(-Tot,-Colmax)-> run2_18Sv9_long
   
   
 ```
@@ -158,23 +328,21 @@ run2_18Sv9_merge %>%
 
 
 run3_18Sv9_asv <- read.table(here("data","REVAMP_out","Run3_from_poseidon_20250103","18Sv9_REVAMP_out","dada2","ASVs_counts.tsv"), sep="\t", header=T) %>% 
-  rename(ASV=x)
-
-run3_18Sv9_tax <- read.table(here("data","REVAMP_out","Run3_from_poseidon_20250103","18Sv9_REVAMP_out","ASV2Taxonomy","18Sv9_REVAMP_out_asvTaxonomyTable.txt"), sep="\t", header=T) 
-
+  dplyr::rename(ASV=x)
 
 run3_18Sv9_asv %>% 
-  left_join(run3_18Sv9_tax) %>% 
+  dplyr::rename(`Run3:ASV`=ASV) %>% 
+  left_join(run2_3_18Sv4_united_ASV_tables) %>% 
    rename_at(vars(starts_with("MP_")), funs(str_replace(., "MP_", ""))) -> run3_18Sv9_merge
 
 run3_18Sv9_merge %>% 
-  pivot_longer(cols = c(-ASV, -Kingdom, -Phylum, -Class, -Order, -Family,-Genus, -Species), names_to = "Sample", values_to = "nReads") %>% 
+    pivot_longer(cols = c(-`ASV_combo`, -`Run2:ASV`, -`Run3:ASV`,-`Sequence`,-Kingdom, -Phylum, -Class, -Order, -Family, -Genus, -Species), names_to = "Sample", values_to = "nReads") %>% 
   left_join(run1_4_revamp_formatted_metadata) %>% 
   filter(., !is.na(Sample_Name)) %>% # this removes all non-EcoFOCI samples. Note this also excludes positive and negative controls. No decontamination has been performed. We should definitely do this at somepoint, but need a conversation as to what approaches
     group_by(Sample) %>%
     mutate (Tot = sum(nReads),
             Prop.abund = nReads / Tot) %>% 
-    group_by (ASV) %>%
+    group_by (ASV_combo) %>%
     mutate (Colmax = max(Prop.abund),
             eDNA.Index = Prop.abund / Colmax) %>%
   dplyr::select(-Tot,-Colmax) -> run3_18Sv9_long
@@ -195,28 +363,65 @@ saveRDS(long_18Sv9_EcoFOCI, here("data","long_data","long_18Sv9_EcoFOCI.RDS"))
 
 # COI
 
+## Unite ASVs
+
+```{r}
+run2_COI_tax <- read.table(here("data","REVAMP_out","Run2_from_poseidon_20250103","COI","ASV2Taxonomy","COI_RUN1_asvTaxonomyTable.txt"), sep="\t", header=T) #IS IT REALLY CALLED RUN1 when it is RUN2?
+
+run2_COI_fasta <- readDNAStringSet(here("data","REVAMP_out","Run2_from_poseidon_20250103","COI","dada2","ASVs.fa"), format="fasta" )
+
+as.data.frame(run2_COI_fasta) %>%
+  as_tibble(rownames = "ASV") %>% 
+  left_join(run2_COI_tax) %>% 
+  rename_with(.cols = everything(), function(x){paste0("Run2:", x)}) %>% 
+  dplyr::rename(Sequence=`Run2:x`) -> run2_CO1_fasta_df
+
+run3_COI_tax <- read.table(here("data","REVAMP_out","Run3_from_poseidon_20250103","COI_REVAMP_out","ASV2Taxonomy","COI_REVAMP_out_asvTaxonomyTable.txt"), sep="\t", header=T) 
+
+run3_COI_fasta <- readDNAStringSet(here("data","REVAMP_out","Run3_from_poseidon_20250103","COI_REVAMP_out","dada2","ASVs.fa"), format="fasta" )
+
+as.data.frame(run3_COI_fasta) %>% 
+  as_tibble(rownames = "ASV") %>% 
+  left_join(run3_COI_tax) %>% 
+   rename_with(.cols = everything(), function(x){paste0("Run3:", x)}) %>% 
+  dplyr::rename(Sequence=`Run3:x`)-> run3_COI_fasta_df
+
+full_join(run2_CO1_fasta_df, run3_COI_fasta_df) %>% 
+ mutate(., ASV_combo = row_number(),
+        ASV_combo = str_c("ASVc_",ASV_combo)) %>% 
+ mutate(., Kingdom = if_else(!is.na(`Run3:Kingdom`), `Run3:Kingdom`,`Run2:Kingdom`),
+        Phylum= if_else(!is.na(`Run3:Phylum`), `Run3:Phylum`,`Run2:Phylum`), 
+        Class= if_else(!is.na(`Run3:Class`), `Run3:Class`,`Run2:Class`),
+        Order= if_else(!is.na(`Run3:Order`), `Run3:Order`,`Run2:Order`), 
+        Family= if_else(!is.na(`Run3:Family`), `Run3:Family`,`Run2:Family`),
+        Genus= if_else(!is.na(`Run3:Genus`), `Run3:Genus`,`Run2:Genus`),
+        Species= if_else(!is.na(`Run3:Species`), `Run3:Species`,`Run2:Species`)) %>% 
+  dplyr::select(ASV_combo, `Run3:ASV`, `Run2:ASV`, Sequence, Kingdom,Phylum,Class, Order, Family, Genus, Species) -> run2_3_COI_united_ASV_tables
+
+saveRDS(run2_3_COI_united_ASV_tables, here("data","long_data","run2_3_COI_united_ASV_tables.RDS"))
+
+```
+
 ## Run 2
 ```{r}
 
 
 run2_COI_asv <- read.table(here("data","REVAMP_out","Run2_from_poseidon_20250103","COI","dada2","ASVs_counts.tsv"), sep="\t", header=T) %>% 
-  rename(ASV=x)
-
-run2_COI_tax <- read.table(here("data","REVAMP_out","Run2_from_poseidon_20250103","COI","ASV2Taxonomy","COI_RUN1_asvTaxonomyTable.txt"), sep="\t", header=T) #IS IT REALLY CALLED RUN1 when it is RUN2?
-
+  dplyr::rename(ASV=x)
 
 run2_COI_asv %>% 
-  left_join(run2_COI_tax) %>% 
-   rename_at(vars(starts_with("MP_")), funs(str_replace(., "MP_", ""))) -> run2_COI_merge
+ dplyr::rename(`Run2:ASV`=ASV) %>% 
+  left_join(run2_3_COI_united_ASV_tables) %>% 
+  rename_at(vars(starts_with("MP_")), funs(str_replace(., "MP_", ""))) -> run2_COI_merge
 
 run2_COI_merge %>% 
-  pivot_longer(cols = c(-ASV, -Kingdom, -Phylum, -Class, -Order, -Family,-Genus, -Species), names_to = "Sample", values_to = "nReads") %>% 
+    pivot_longer(cols = c(-`ASV_combo`, -`Run2:ASV`, -`Run3:ASV`,-`Sequence`,-Kingdom, -Phylum, -Class, -Order, -Family, -Genus, -Species), names_to = "Sample", values_to = "nReads") %>% 
   left_join(run1_4_revamp_formatted_metadata) %>% 
   filter(., !is.na(Sample_Name)) %>% # this removes all non-EcoFOCI samples. Note this also excludes positive and negative controls. No decontamination has been performed. We should definitely do this at somepoint, but need a conversation as to what approaches
     group_by(Sample) %>%
     mutate (Tot = sum(nReads),
             Prop.abund = nReads / Tot) %>% 
-    group_by (ASV) %>%
+    group_by (ASV_combo) %>%
     mutate (Colmax = max(Prop.abund),
             eDNA.Index = Prop.abund / Colmax) %>%
   dplyr::select(-Tot,-Colmax) -> run2_COI_long
@@ -229,23 +434,21 @@ run2_COI_merge %>%
 
 
 run3_COI_asv <- read.table(here("data","REVAMP_out","Run3_from_poseidon_20250103","COI_REVAMP_out","dada2","ASVs_counts.tsv"), sep="\t", header=T) %>% 
-  rename(ASV=x)
-
-run3_COI_tax <- read.table(here("data","REVAMP_out","Run3_from_poseidon_20250103","COI_REVAMP_out","ASV2Taxonomy","COI_REVAMP_out_asvTaxonomyTable.txt"), sep="\t", header=T) 
-
+  dplyr::rename(ASV=x)
 
 run3_COI_asv %>% 
-  left_join(run3_COI_tax) %>% 
+   dplyr::rename(`Run2:ASV`=ASV) %>% 
+  left_join(run2_3_COI_united_ASV_tables) %>% 
    rename_at(vars(starts_with("MP_")), funs(str_replace(., "MP_", ""))) -> run3_COI_merge
 
 run3_COI_merge %>% 
-  pivot_longer(cols = c(-ASV, -Kingdom, -Phylum, -Class, -Order, -Family,-Genus, -Species), names_to = "Sample", values_to = "nReads") %>% 
+    pivot_longer(cols = c(-`ASV_combo`, -`Run2:ASV`, -`Run3:ASV`,-`Sequence`,-Kingdom, -Phylum, -Class, -Order, -Family, -Genus, -Species), names_to = "Sample", values_to = "nReads") %>% 
   left_join(run1_4_revamp_formatted_metadata) %>% 
   filter(., !is.na(Sample_Name)) %>% # this removes all non-EcoFOCI samples. Note this also excludes positive and negative controls. No decontamination has been performed. We should definitely do this at somepoint, but need a conversation as to what approaches
     group_by(Sample) %>%
     mutate (Tot = sum(nReads),
             Prop.abund = nReads / Tot) %>% 
-    group_by (ASV) %>%
+    group_by (ASV_combo) %>%
     mutate (Colmax = max(Prop.abund),
             eDNA.Index = Prop.abund / Colmax) %>%
   dplyr::select(-Tot,-Colmax) -> run3_COI_long
@@ -266,31 +469,68 @@ saveRDS(long_COI_EcoFOCI, here("data","long_data","long_COI_EcoFOCI.RDS"))
 
 # MiFish
 
+## Unite ASVs
+
+```{r}
+run2_MiFish_tax <- read.table(here("data","REVAMP_out","Run2_from_poseidon_20250103","MiFish","ASV2Taxonomy","MiFish_RUN1_asvTaxonomyTable.txt"), sep="\t", header=T) #IS IT REALLY CALLED RUN1 when it is RUN2?
+
+run2_MiFish_fasta <- readDNAStringSet(here("data","REVAMP_out","Run2_from_poseidon_20250103","MiFish","dada2","ASVs.fa"), format="fasta" )
+
+as.data.frame(run2_MiFish_fasta) %>%
+  as_tibble(rownames = "ASV") %>% 
+  left_join(run2_MiFish_tax) %>% 
+  rename_with(.cols = everything(), function(x){paste0("Run2:", x)}) %>% 
+  dplyr::rename(Sequence=`Run2:x`) -> run2_MiFish_fasta_df
+
+run3_MiFish_tax <- read.table(here("data","REVAMP_out","Run3_from_poseidon_20250103","MiFish_REVAMP_out","ASV2Taxonomy","MiFish_REVAMP_out_asvTaxonomyTable.txt"), sep="\t", header=T) 
+
+run3_MiFish_fasta <- readDNAStringSet(here("data","REVAMP_out","Run3_from_poseidon_20250103","MiFish_REVAMP_out","dada2","ASVs.fa"), format="fasta" )
+
+as.data.frame(run3_MiFish_fasta) %>% 
+  as_tibble(rownames = "ASV") %>% 
+  left_join(run3_MiFish_tax) %>% 
+   rename_with(.cols = everything(), function(x){paste0("Run3:", x)}) %>% 
+  dplyr::rename(Sequence=`Run3:x`)-> run3_MiFish_fasta_df
+
+full_join(run2_MiFish_fasta_df, run3_MiFish_fasta_df) %>% 
+ mutate(., ASV_combo = row_number(),
+        ASV_combo = str_c("ASVc_",ASV_combo)) %>% 
+ mutate(., Kingdom = if_else(!is.na(`Run3:Kingdom`), `Run3:Kingdom`,`Run2:Kingdom`),
+        Phylum= if_else(!is.na(`Run3:Phylum`), `Run3:Phylum`,`Run2:Phylum`), 
+        Class= if_else(!is.na(`Run3:Class`), `Run3:Class`,`Run2:Class`),
+        Order= if_else(!is.na(`Run3:Order`), `Run3:Order`,`Run2:Order`), 
+        Family= if_else(!is.na(`Run3:Family`), `Run3:Family`,`Run2:Family`),
+        Genus= if_else(!is.na(`Run3:Genus`), `Run3:Genus`,`Run2:Genus`),
+        Species= if_else(!is.na(`Run3:Species`), `Run3:Species`,`Run2:Species`)) %>% 
+  dplyr::select(ASV_combo, `Run3:ASV`, `Run2:ASV`, Sequence, Kingdom,Phylum,Class, Order, Family, Genus, Species) -> run2_3_MiFish_united_ASV_tables
+
+saveRDS(run2_3_MiFish_united_ASV_tables, here("data","long_data","run2_3_MiFish_united_ASV_tables.RDS"))
+
+```
+
 ## Run 2
 ```{r}
 
 
 run2_MiFish_asv <- read.table(here("data","REVAMP_out","Run2_from_poseidon_20250103","MiFish","dada2","ASVs_counts.tsv"), sep="\t", header=T) %>% 
-  rename(ASV=x)
-
-run2_MiFish_tax <- read.table(here("data","REVAMP_out","Run2_from_poseidon_20250103","MiFish","ASV2Taxonomy","MiFish_RUN1_asvTaxonomyTable.txt"), sep="\t", header=T) #IS IT REALLY CALLED RUN1 when it is RUN2?
-
+  dplyr::rename(ASV=x)
 
 run2_MiFish_asv %>% 
-  left_join(run2_MiFish_tax) %>% 
-   rename_at(vars(starts_with("MP_")), funs(str_replace(., "MP_", ""))) -> run2_MiFish_merge
+dplyr::rename(`Run2:ASV`=ASV) %>% 
+  left_join(run2_3_MiFish_united_ASV_tables) %>% 
+  rename_at(vars(starts_with("MP_")), funs(str_replace(., "MP_", ""))) -> run2_MiFish_merge
 
 run2_MiFish_merge %>% 
-  pivot_longer(cols = c(-ASV, -Kingdom, -Phylum, -Class, -Order, -Family,-Genus, -Species), names_to = "Sample", values_to = "nReads") %>% 
+    pivot_longer(cols = c(-`ASV_combo`, -`Run2:ASV`, -`Run3:ASV`,-`Sequence`,-Kingdom, -Phylum, -Class, -Order, -Family, -Genus, -Species), names_to = "Sample", values_to = "nReads") %>% 
   left_join(run1_4_revamp_formatted_metadata) %>% 
   filter(., !is.na(Sample_Name)) %>% # this removes all non-EcoFOCI samples. Note this also excludes positive and negative controls. No decontamination has been performed. We should definitely do this at somepoint, but need a conversation as to what approaches
     group_by(Sample) %>%
     mutate (Tot = sum(nReads),
             Prop.abund = nReads / Tot) %>% 
-    group_by (ASV) %>%
+    group_by (ASV_combo) %>%
     mutate (Colmax = max(Prop.abund),
             eDNA.Index = Prop.abund / Colmax) %>%
-  dplyr::select(-Tot,-Colmax) -> run2_MiFish_long
+  dplyr::select(-Tot,-Colmax)-> run2_MiFish_long
   
 ```
 
@@ -300,23 +540,21 @@ run2_MiFish_merge %>%
 
 
 run3_MiFish_asv <- read.table(here("data","REVAMP_out","Run3_from_poseidon_20250103","MiFish_REVAMP_out","dada2","ASVs_counts.tsv"), sep="\t", header=T) %>% 
-  rename(ASV=x)
-
-run3_MiFish_tax <- read.table(here("data","REVAMP_out","Run3_from_poseidon_20250103","MiFish_REVAMP_out","ASV2Taxonomy","MiFish_REVAMP_out_asvTaxonomyTable.txt"), sep="\t", header=T) 
-
+  dplyr::rename(ASV=x)
 
 run3_MiFish_asv %>% 
-  left_join(run3_MiFish_tax) %>% 
+    dplyr::rename(`Run2:ASV`=ASV) %>% 
+  left_join(run2_3_MiFish_united_ASV_tables) %>% 
    rename_at(vars(starts_with("MP_")), funs(str_replace(., "MP_", ""))) -> run3_MiFish_merge
 
 run3_MiFish_merge %>% 
-  pivot_longer(cols = c(-ASV, -Kingdom, -Phylum, -Class, -Order, -Family,-Genus, -Species), names_to = "Sample", values_to = "nReads") %>% 
+    pivot_longer(cols = c(-`ASV_combo`, -`Run2:ASV`, -`Run3:ASV`,-`Sequence`,-Kingdom, -Phylum, -Class, -Order, -Family, -Genus, -Species), names_to = "Sample", values_to = "nReads") %>% 
   left_join(run1_4_revamp_formatted_metadata) %>% 
   filter(., !is.na(Sample_Name)) %>% # this removes all non-EcoFOCI samples. Note this also excludes positive and negative controls. No decontamination has been performed. We should definitely do this at somepoint, but need a conversation as to what approaches
     group_by(Sample) %>%
     mutate (Tot = sum(nReads),
             Prop.abund = nReads / Tot) %>% 
-    group_by (ASV) %>%
+    group_by (ASV_combo) %>%
     mutate (Colmax = max(Prop.abund),
             eDNA.Index = Prop.abund / Colmax) %>%
   dplyr::select(-Tot,-Colmax) -> run3_MiFish_long
