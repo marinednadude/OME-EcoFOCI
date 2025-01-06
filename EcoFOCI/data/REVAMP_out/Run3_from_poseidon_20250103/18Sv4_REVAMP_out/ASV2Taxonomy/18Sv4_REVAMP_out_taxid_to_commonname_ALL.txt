@@ -1,0 +1,65 @@
+Bacteria (eubacteria)	2
+Eukaryota (eucaryotes)	2759
+Chrysophyceae (golden algae)	2825
+Haptophyta (haptophytes)	2830
+Bacillariophyta (diatoms)	2836
+Dinophyceae (dinoflagellates)	2864
+Cryptophyceae (cryptomonads)	3027
+Chlorophyta (green algae)	3041
+Magnoliopsida (flowering plants)	3398
+Ascomycota (ascomycetes)	4890
+Apicomplexa (apicomplexans)	5794
+Piroplasmida (Piroplasmids)	5863
+Ciliophora (ciliates)	5878
+Prostomatea (prostomes)	6000
+Cnidaria (cnidarians)	6073
+Hydrozoa (hydrozoans)	6074
+Anthozoa (anthozoans)	6101
+Actiniaria (sea anemones)	6103
+Aurelia aurita (moon jelly)	6145
+Nemertea (ribbon worms)	6217
+Nematoda (roundworms)	6231
+Annelida (annelid worms)	6340
+Polychaeta (polychaetes)	6341
+Arenicola marina (lugworm)	6344
+Mollusca (mollusks)	6447
+Gastropoda (gastropods)	6448
+Bivalvia (bivalves)	6544
+Pectinidae (scallops)	6566
+Veneridae (venus clams)	6592
+Arthropoda (arthropods)	6656
+Arachnida (arachnids)	6854
+Araneae (spiders)	6893
+Echinodermata (echinoderms)	7586
+Echinoidea (sea urchins)	7625
+Arbacia punctulata (punctuate urchin)	7641
+Gadidae (cods)	8045
+Squamata (squamates)	8509
+Phasianidae (turkeys)	9005
+Homo sapiens (human)	9606
+Rotifera (rotifers)	10190
+Ctenophora (ctenophores)	10197
+Cassiopea (upside-down jellyfish)	12992
+Choanoflagellata (choanoflagellates)	28009
+Foraminifera (foraminifers)	29178
+Gastrotricha (gastrotrichs)	33313
+Coscinodiscophyceae (centric diatoms)	33836
+Bacillariophyceae (Raphid, pennate diatoms)	33849
+Fragilariophyceae (Araphid, pennate diatoms)	33853
+Plasmodiophoridae (plasmodiophorids)	37358
+Cassiopeidae (upsidedown jellyfishes)	37536
+Nereididae (sandworms)	39820
+Mammalia (mammals)	40674
+Opiliones (harvestmen)	43271
+Gonostomatidae (bristlemouths)	48439
+Embiotocidae (surfperches)	50791
+Pseudoscorpiones (false scorpions)	51799
+Uropygi (whip scorpions)	58151
+Amblypygi (whip spiders)	61977
+Gadus macrocephalus (Pacific cod)	80720
+Nothobranchius furzeri (turquoise killifish)	105023
+Musculus discors (discordant mussel)	112138
+Aurelia limbata (brownbanded moon jelly)	184213
+Sprattus sprattus (European sprat)	196075
+Cryptacanthodes maculatus (wrymouth)	1266866
+Serinales (CUG-Ser1 clade)	2916678

@@ -1,0 +1,3100 @@
+Value	Sample	TerminalTaxa
+181304	MP_E1053_SKQ2021	Unknown
+108	MP_E1053_SKQ2021	Peridiniales
+2	MP_E1053_SKQ2021	Coscinodiscophyceae
+27019	MP_E1053_SKQ2021	Gymnodiniales
+322	MP_E1053_SKQ2021	Dinophyceae
+3	MP_E1053_SKQ2021	Bacterosira sp_ RCC4607
+238	MP_E1053_SKQ2021	Cylindrotheca closterium
+6074	MP_E1053_SKQ2021	Prorocentrales
+117	MP_E1053_SKQ2021	Environmental Unknown
+55	MP_E1053_SKQ2021	Pseudo_nitzschia granii
+4	MP_E1053_SKQ2021	Minidiscus trioculatus
+794	MP_E1053_SKQ2021	Chaetocerotales
+9	MP_E1053_SKQ2021	Chaetoceros cf_ neogracilis clade I
+17	MP_E1053_SKQ2021	Chaetocerotaceae
+17056	MP_E1053_SKQ2021	Chaetoceros gelidus
+12948	MP_E1053_SKQ2021	Pseudo_nitzschia pungens
+5	MP_E1053_SKQ2021	Thalassiosirales
+54	MP_E1053_SKQ2021	Pseudo_nitzschia seriata
+27	MP_E1053_SKQ2021	Fragilariopsis cylindrus
+5	MP_E1053_SKQ2021	Prorocentrum
+2	MP_E1053_SKQ2021	Bacillariophyceae
+4	MP_E1053_SKQ2021	Pseudo_nitzschia
+1135	MP_E1053_SKQ2021	Gyrodinium dominans
+21	MP_E1053_SKQ2021	Chaetoceros
+8	MP_E1053_SKQ2021	Thalassiosira hyalina
+24	MP_E1053_SKQ2021	Fragilariopsis oceanica
+6	MP_E1053_SKQ2021	Thalassiosira
+4	MP_E1053_SKQ2021	Gymnodiniaceae
+87	MP_E1053_SKQ2021	Pseudo_nitzschia delicatissima
+2	MP_E1053_SKQ2021	Florenciellales
+180446	MP_E1054_SKQ2021	Unknown
+1432	MP_E1054_SKQ2021	Peridiniales
+3	MP_E1054_SKQ2021	Coscinodiscophyceae
+39215	MP_E1054_SKQ2021	Gymnodiniales
+4247	MP_E1054_SKQ2021	Dinophyceae
+27	MP_E1054_SKQ2021	Bacterosira sp_ RCC4607
+6162	MP_E1054_SKQ2021	Prorocentrales
+581	MP_E1054_SKQ2021	Environmental Unknown
+837	MP_E1054_SKQ2021	Chaetocerotales
+24	MP_E1054_SKQ2021	Chaetoceros cf_ neogracilis clade I
+31214	MP_E1054_SKQ2021	Chaetoceros gelidus
+3464	MP_E1054_SKQ2021	Pseudo_nitzschia pungens
+3	MP_E1054_SKQ2021	Thalassiosirales
+106	MP_E1054_SKQ2021	Fragilariopsis cylindrus
+6	MP_E1054_SKQ2021	Gyrodinium dominans
+311	MP_E1054_SKQ2021	Chaetoceros
+16	MP_E1054_SKQ2021	Thalassiosira hyalina
+139	MP_E1054_SKQ2021	Pseudo_nitzschia delicatissima
+27	MP_E1054_SKQ2021	Thalassiosira nordenskioeldii
+5	MP_E1054_SKQ2021	Thalassiosiraceae
+48	MP_E1054_SKQ2021	Chaetoceros cf_ neogracilis clade II
+7	MP_E1054_SKQ2021	Thalassiosira sp_ RCC4858
+142	MP_E1054_SKQ2021	Levanderina__f__o
+211	MP_E1054_SKQ2021	Levanderina__f
+6	MP_E1054_SKQ2021	Minidiscus
+20	MP_E1054_SKQ2021	Cymatosirales
+2	MP_E1054_SKQ2021	Suessiales
+151	MP_E1054_SKQ2021	Thalassiosira sp_
+150937	MP_E1055_SKQ2021	Unknown
+703	MP_E1055_SKQ2021	Peridiniales
+3	MP_E1055_SKQ2021	Coscinodiscophyceae
+42723	MP_E1055_SKQ2021	Gymnodiniales
+1185	MP_E1055_SKQ2021	Dinophyceae
+4	MP_E1055_SKQ2021	Bacterosira sp_ RCC4607
+741	MP_E1055_SKQ2021	Prorocentrales
+687	MP_E1055_SKQ2021	Environmental Unknown
+2	MP_E1055_SKQ2021	Minidiscus trioculatus
+41	MP_E1055_SKQ2021	Chaetocerotales
+5	MP_E1055_SKQ2021	Chaetoceros cf_ neogracilis clade I
+2654	MP_E1055_SKQ2021	Chaetoceros gelidus
+19816	MP_E1055_SKQ2021	Pseudo_nitzschia pungens
+84	MP_E1055_SKQ2021	Fragilariopsis cylindrus
+19	MP_E1055_SKQ2021	Prorocentrum
+1499	MP_E1055_SKQ2021	Gyrodinium dominans
+1	MP_E1055_SKQ2021	Chaetoceros
+36	MP_E1055_SKQ2021	Fragilariopsis oceanica
+12	MP_E1055_SKQ2021	Thalassiosira
+281	MP_E1055_SKQ2021	Pseudo_nitzschia delicatissima
+912	MP_E1055_SKQ2021	Florenciellales
+28	MP_E1055_SKQ2021	Thalassiosira nordenskioeldii
+5	MP_E1055_SKQ2021	Thalassiosiraceae
+16	MP_E1055_SKQ2021	Levanderina__f__o
+114	MP_E1055_SKQ2021	Levanderina__f
+7	MP_E1055_SKQ2021	Minidiscus
+5	MP_E1055_SKQ2021	Cymatosirales
+75	MP_E1055_SKQ2021	Florenciella__f
+19	MP_E1055_SKQ2021	Florenciella
+9	MP_E1055_SKQ2021	Pelagomonadales
+23	MP_E1055_SKQ2021	Shimiella gracilenta
+222534	MP_E1056_SKQ2021	Unknown
+11686	MP_E1056_SKQ2021	Peridiniales
+15661	MP_E1056_SKQ2021	Gymnodiniales
+1329	MP_E1056_SKQ2021	Dinophyceae
+59	MP_E1056_SKQ2021	Cylindrotheca closterium
+83	MP_E1056_SKQ2021	Prorocentrales
+24	MP_E1056_SKQ2021	Environmental Unknown
+7	MP_E1056_SKQ2021	Minidiscus trioculatus
+167	MP_E1056_SKQ2021	Chaetocerotales
+870	MP_E1056_SKQ2021	Chaetoceros gelidus
+223	MP_E1056_SKQ2021	Pseudo_nitzschia pungens
+3	MP_E1056_SKQ2021	Pseudo_nitzschia seriata
+30	MP_E1056_SKQ2021	Fragilariopsis cylindrus
+6	MP_E1056_SKQ2021	Prorocentrum
+49	MP_E1056_SKQ2021	Pseudo_nitzschia
+755	MP_E1056_SKQ2021	Gyrodinium dominans
+9	MP_E1056_SKQ2021	Thalassiosira hyalina
+40	MP_E1056_SKQ2021	Fragilariopsis oceanica
+4	MP_E1056_SKQ2021	Thalassiosira
+274	MP_E1056_SKQ2021	Gymnodiniaceae
+4844	MP_E1056_SKQ2021	Pseudo_nitzschia delicatissima
+1	MP_E1056_SKQ2021	Thalassiosira nordenskioeldii
+2	MP_E1056_SKQ2021	Thalassiosira sp_ RCC4858
+54	MP_E1056_SKQ2021	Levanderina__f__o
+125	MP_E1056_SKQ2021	Levanderina__f
+1	MP_E1056_SKQ2021	Florenciella__f
+3	MP_E1056_SKQ2021	Shimiella gracilenta
+2	MP_E1056_SKQ2021	Porosira glacialis
+15	MP_E1056_SKQ2021	Shionodiscus sp_ IAL_2014
+2	MP_E1056_SKQ2021	Kareniaceae
+4	MP_E1056_SKQ2021	Fragilariopsis
+4	MP_E1056_SKQ2021	Cylindrotheca
+3	MP_E1056_SKQ2021	Chaetoceros atlanticus
+18	MP_E1056_SKQ2021	Bacillariaceae
+190247	MP_E1057_SKQ2021	Unknown
+1648	MP_E1057_SKQ2021	Peridiniales
+26	MP_E1057_SKQ2021	Coscinodiscophyceae
+18162	MP_E1057_SKQ2021	Gymnodiniales
+1787	MP_E1057_SKQ2021	Dinophyceae
+2	MP_E1057_SKQ2021	Bacterosira sp_ RCC4607
+13	MP_E1057_SKQ2021	Cylindrotheca closterium
+748	MP_E1057_SKQ2021	Prorocentrales
+101	MP_E1057_SKQ2021	Environmental Unknown
+8	MP_E1057_SKQ2021	Chaetocerotales
+481	MP_E1057_SKQ2021	Chaetoceros gelidus
+227	MP_E1057_SKQ2021	Pseudo_nitzschia pungens
+3	MP_E1057_SKQ2021	Thalassiosirales
+72	MP_E1057_SKQ2021	Fragilariopsis cylindrus
+2	MP_E1057_SKQ2021	Prorocentrum
+101	MP_E1057_SKQ2021	Pseudo_nitzschia
+308	MP_E1057_SKQ2021	Gyrodinium dominans
+8	MP_E1057_SKQ2021	Fragilariopsis oceanica
+14578	MP_E1057_SKQ2021	Pseudo_nitzschia delicatissima
+41	MP_E1057_SKQ2021	Florenciellales
+3	MP_E1057_SKQ2021	Thalassiosira nordenskioeldii
+9	MP_E1057_SKQ2021	Thalassiosiraceae
+5	MP_E1057_SKQ2021	Chaetoceros cf_ neogracilis clade II
+1	MP_E1057_SKQ2021	Thalassiosira sp_ RCC4858
+25	MP_E1057_SKQ2021	Levanderina__f__o
+45	MP_E1057_SKQ2021	Levanderina__f
+1	MP_E1057_SKQ2021	Minidiscus
+4	MP_E1057_SKQ2021	Florenciella
+49	MP_E1057_SKQ2021	Shimiella gracilenta
+5	MP_E1057_SKQ2021	Shionodiscus sp_ IAL_2014
+32	MP_E1057_SKQ2021	Kareniaceae
+3	MP_E1057_SKQ2021	Cylindrotheca
+4	MP_E1057_SKQ2021	Bacillariaceae
+2	MP_E1057_SKQ2021	Karlodinium veneficum
+3	MP_E1057_SKQ2021	Tovelliaceae
+7	MP_E1057_SKQ2021	Azadinium dalianense
+1	MP_E1057_SKQ2021	Heterocapsa triquetra
+1	MP_E1057_SKQ2021	Asterionellopsis glacialis
+1	MP_E1057_SKQ2021	Gyrodinium
+2	MP_E1057_SKQ2021	Pseudochattonella
+7	MP_E1057_SKQ2021	Pelagodinium
+185689	MP_E1058_SKQ2021	Unknown
+160	MP_E1058_SKQ2021	Peridiniales
+26	MP_E1058_SKQ2021	Coscinodiscophyceae
+21434	MP_E1058_SKQ2021	Gymnodiniales
+2459	MP_E1058_SKQ2021	Dinophyceae
+209	MP_E1058_SKQ2021	Prorocentrales
+110	MP_E1058_SKQ2021	Environmental Unknown
+3	MP_E1058_SKQ2021	Pseudo_nitzschia granii
+6	MP_E1058_SKQ2021	Chaetocerotales
+224	MP_E1058_SKQ2021	Chaetoceros gelidus
+196	MP_E1058_SKQ2021	Pseudo_nitzschia pungens
+12	MP_E1058_SKQ2021	Fragilariopsis cylindrus
+18	MP_E1058_SKQ2021	Prorocentrum
+3	MP_E1058_SKQ2021	Bacillariophyceae
+115	MP_E1058_SKQ2021	Pseudo_nitzschia
+464	MP_E1058_SKQ2021	Gyrodinium dominans
+3	MP_E1058_SKQ2021	Chaetoceros
+1	MP_E1058_SKQ2021	Thalassiosira hyalina
+3	MP_E1058_SKQ2021	Fragilariopsis oceanica
+19095	MP_E1058_SKQ2021	Pseudo_nitzschia delicatissima
+84	MP_E1058_SKQ2021	Florenciellales
+1	MP_E1058_SKQ2021	Thalassiosira nordenskioeldii
+18	MP_E1058_SKQ2021	Levanderina__f__o
+24	MP_E1058_SKQ2021	Levanderina__f
+1	MP_E1058_SKQ2021	Minidiscus
+21	MP_E1058_SKQ2021	Florenciella__f
+11	MP_E1058_SKQ2021	Florenciella
+122	MP_E1058_SKQ2021	Shimiella gracilenta
+14	MP_E1058_SKQ2021	Kareniaceae
+5	MP_E1058_SKQ2021	Bacillariaceae
+1	MP_E1058_SKQ2021	Karlodinium veneficum
+3	MP_E1058_SKQ2021	Pelagodinium
+245849	MP_E1059_SKQ2021	Unknown
+5734	MP_E1059_SKQ2021	Peridiniales
+9097	MP_E1059_SKQ2021	Gymnodiniales
+2113	MP_E1059_SKQ2021	Dinophyceae
+186	MP_E1059_SKQ2021	Cylindrotheca closterium
+195	MP_E1059_SKQ2021	Prorocentrales
+5	MP_E1059_SKQ2021	Environmental Unknown
+32	MP_E1059_SKQ2021	Chaetocerotales
+898	MP_E1059_SKQ2021	Chaetoceros gelidus
+416	MP_E1059_SKQ2021	Pseudo_nitzschia pungens
+24	MP_E1059_SKQ2021	Pseudo_nitzschia seriata
+56	MP_E1059_SKQ2021	Fragilariopsis cylindrus
+13	MP_E1059_SKQ2021	Prorocentrum
+51	MP_E1059_SKQ2021	Pseudo_nitzschia
+846	MP_E1059_SKQ2021	Gyrodinium dominans
+7	MP_E1059_SKQ2021	Thalassiosira hyalina
+15	MP_E1059_SKQ2021	Fragilariopsis oceanica
+4	MP_E1059_SKQ2021	Gymnodiniaceae
+240	MP_E1059_SKQ2021	Pseudo_nitzschia delicatissima
+2	MP_E1059_SKQ2021	Thalassiosira nordenskioeldii
+13	MP_E1059_SKQ2021	Levanderina__f__o
+55	MP_E1059_SKQ2021	Levanderina__f
+5	MP_E1059_SKQ2021	Shionodiscus sp_ IAL_2014
+5	MP_E1059_SKQ2021	Bacillariaceae
+344764	MP_E1060_SKQ2021	Unknown
+836	MP_E1060_SKQ2021	Peridiniales
+12840	MP_E1060_SKQ2021	Gymnodiniales
+1342	MP_E1060_SKQ2021	Dinophyceae
+157	MP_E1060_SKQ2021	Cylindrotheca closterium
+29	MP_E1060_SKQ2021	Prorocentrales
+130	MP_E1060_SKQ2021	Environmental Unknown
+4	MP_E1060_SKQ2021	Chaetocerotales
+232	MP_E1060_SKQ2021	Chaetoceros gelidus
+852	MP_E1060_SKQ2021	Pseudo_nitzschia pungens
+6	MP_E1060_SKQ2021	Fragilariopsis cylindrus
+1	MP_E1060_SKQ2021	Prorocentrum
+32	MP_E1060_SKQ2021	Pseudo_nitzschia
+1747	MP_E1060_SKQ2021	Gyrodinium dominans
+2	MP_E1060_SKQ2021	Chaetoceros
+23	MP_E1060_SKQ2021	Fragilariopsis oceanica
+6	MP_E1060_SKQ2021	Thalassiosira
+1635	MP_E1060_SKQ2021	Pseudo_nitzschia delicatissima
+1	MP_E1060_SKQ2021	Thalassiosira nordenskioeldii
+3	MP_E1060_SKQ2021	Levanderina__f__o
+6	MP_E1060_SKQ2021	Levanderina__f
+2	MP_E1060_SKQ2021	Shionodiscus sp_ IAL_2014
+5	MP_E1060_SKQ2021	Bacillariaceae
+188192	MP_E1061_SKQ2021	Unknown
+291	MP_E1061_SKQ2021	Peridiniales
+22	MP_E1061_SKQ2021	Coscinodiscophyceae
+36746	MP_E1061_SKQ2021	Gymnodiniales
+1904	MP_E1061_SKQ2021	Dinophyceae
+145	MP_E1061_SKQ2021	Cylindrotheca closterium
+141	MP_E1061_SKQ2021	Prorocentrales
+145	MP_E1061_SKQ2021	Environmental Unknown
+4	MP_E1061_SKQ2021	Pseudo_nitzschia granii
+2	MP_E1061_SKQ2021	Minidiscus trioculatus
+7	MP_E1061_SKQ2021	Chaetocerotales
+14	MP_E1061_SKQ2021	Chaetocerotaceae
+647	MP_E1061_SKQ2021	Chaetoceros gelidus
+1027	MP_E1061_SKQ2021	Pseudo_nitzschia pungens
+52	MP_E1061_SKQ2021	Fragilariopsis cylindrus
+9	MP_E1061_SKQ2021	Prorocentrum
+172	MP_E1061_SKQ2021	Pseudo_nitzschia
+747	MP_E1061_SKQ2021	Gyrodinium dominans
+7	MP_E1061_SKQ2021	Fragilariopsis oceanica
+17697	MP_E1061_SKQ2021	Pseudo_nitzschia delicatissima
+40	MP_E1061_SKQ2021	Florenciellales
+3	MP_E1061_SKQ2021	Thalassiosira nordenskioeldii
+3	MP_E1061_SKQ2021	Thalassiosiraceae
+3	MP_E1061_SKQ2021	Chaetoceros cf_ neogracilis clade II
+9	MP_E1061_SKQ2021	Levanderina__f__o
+40	MP_E1061_SKQ2021	Levanderina__f
+23	MP_E1061_SKQ2021	Minidiscus
+14	MP_E1061_SKQ2021	Cymatosirales
+1	MP_E1061_SKQ2021	Florenciella__f
+17	MP_E1061_SKQ2021	Florenciella
+47	MP_E1061_SKQ2021	Shimiella gracilenta
+3	MP_E1061_SKQ2021	Porosira glacialis
+12	MP_E1061_SKQ2021	Kareniaceae
+3	MP_E1061_SKQ2021	Cylindrotheca
+1	MP_E1061_SKQ2021	Asterionellopsis glacialis
+11	MP_E1061_SKQ2021	Pelagodinium
+2	MP_E1061_SKQ2021	Eukaryota
+2	MP_E1061_SKQ2021	Karlodinium
+2	MP_E1061_SKQ2021	Mediophyceae
+3	MP_E1061_SKQ2021	Heterocapsa
+3	MP_E1061_SKQ2021	Dictyocha speculum
+217751	MP_E1062_SKQ2021	Unknown
+209	MP_E1062_SKQ2021	Peridiniales
+14648	MP_E1062_SKQ2021	Gymnodiniales
+1586	MP_E1062_SKQ2021	Dinophyceae
+355	MP_E1062_SKQ2021	Cylindrotheca closterium
+48	MP_E1062_SKQ2021	Prorocentrales
+113	MP_E1062_SKQ2021	Environmental Unknown
+22	MP_E1062_SKQ2021	Chaetocerotales
+442	MP_E1062_SKQ2021	Chaetoceros gelidus
+730	MP_E1062_SKQ2021	Pseudo_nitzschia pungens
+37	MP_E1062_SKQ2021	Pseudo_nitzschia seriata
+10	MP_E1062_SKQ2021	Prorocentrum
+19	MP_E1062_SKQ2021	Bacillariophyceae
+46	MP_E1062_SKQ2021	Pseudo_nitzschia
+1209	MP_E1062_SKQ2021	Gyrodinium dominans
+1	MP_E1062_SKQ2021	Chaetoceros
+4	MP_E1062_SKQ2021	Thalassiosira hyalina
+35	MP_E1062_SKQ2021	Fragilariopsis oceanica
+6	MP_E1062_SKQ2021	Thalassiosira
+13	MP_E1062_SKQ2021	Pseudo_nitzschia delicatissima
+3	MP_E1062_SKQ2021	Levanderina__f__o
+78	MP_E1062_SKQ2021	Levanderina__f
+3	MP_E1062_SKQ2021	Fragilariopsis reginae_jahniae
+218018	MP_E1063_SKQ2021	Unknown
+143	MP_E1063_SKQ2021	Peridiniales
+18720	MP_E1063_SKQ2021	Gymnodiniales
+2456	MP_E1063_SKQ2021	Dinophyceae
+2	MP_E1063_SKQ2021	Bacterosira sp_ RCC4607
+517	MP_E1063_SKQ2021	Cylindrotheca closterium
+8	MP_E1063_SKQ2021	Prorocentrales
+53	MP_E1063_SKQ2021	Environmental Unknown
+141	MP_E1063_SKQ2021	Chaetocerotales
+956	MP_E1063_SKQ2021	Chaetoceros gelidus
+664	MP_E1063_SKQ2021	Pseudo_nitzschia pungens
+1	MP_E1063_SKQ2021	Thalassiosirales
+17	MP_E1063_SKQ2021	Pseudo_nitzschia seriata
+19	MP_E1063_SKQ2021	Fragilariopsis cylindrus
+22	MP_E1063_SKQ2021	Prorocentrum
+61	MP_E1063_SKQ2021	Bacillariophyceae
+63	MP_E1063_SKQ2021	Pseudo_nitzschia
+745	MP_E1063_SKQ2021	Gyrodinium dominans
+8	MP_E1063_SKQ2021	Chaetoceros
+2	MP_E1063_SKQ2021	Thalassiosira hyalina
+30	MP_E1063_SKQ2021	Fragilariopsis oceanica
+2	MP_E1063_SKQ2021	Thalassiosira
+219	MP_E1063_SKQ2021	Pseudo_nitzschia delicatissima
+4	MP_E1063_SKQ2021	Florenciellales
+11	MP_E1063_SKQ2021	Levanderina__f__o
+18	MP_E1063_SKQ2021	Levanderina__f
+6	MP_E1063_SKQ2021	Fragilariopsis
+195062	MP_E1064_SKQ2021	Unknown
+7	MP_E1064_SKQ2021	Peridiniales
+34181	MP_E1064_SKQ2021	Gymnodiniales
+335	MP_E1064_SKQ2021	Dinophyceae
+3427	MP_E1064_SKQ2021	Cylindrotheca closterium
+76	MP_E1064_SKQ2021	Prorocentrales
+6	MP_E1064_SKQ2021	Environmental Unknown
+46	MP_E1064_SKQ2021	Pseudo_nitzschia granii
+56	MP_E1064_SKQ2021	Chaetocerotales
+36	MP_E1064_SKQ2021	Chaetoceros gelidus
+3328	MP_E1064_SKQ2021	Pseudo_nitzschia pungens
+51	MP_E1064_SKQ2021	Pseudo_nitzschia seriata
+6	MP_E1064_SKQ2021	Fragilariopsis cylindrus
+103	MP_E1064_SKQ2021	Prorocentrum
+369	MP_E1064_SKQ2021	Pseudo_nitzschia
+2280	MP_E1064_SKQ2021	Gyrodinium dominans
+9	MP_E1064_SKQ2021	Chaetoceros
+265	MP_E1064_SKQ2021	Pseudo_nitzschia delicatissima
+2	MP_E1064_SKQ2021	Thalassiosira nordenskioeldii
+15	MP_E1064_SKQ2021	Levanderina__f__o
+64	MP_E1064_SKQ2021	Levanderina__f
+19	MP_E1064_SKQ2021	Shimiella gracilenta
+2	MP_E1064_SKQ2021	Chaetoceros atlanticus
+59	MP_E1064_SKQ2021	Eukaryota
+251430	MP_E1065_SKQ2021	Unknown
+23914	MP_E1065_SKQ2021	Peridiniales
+11113	MP_E1065_SKQ2021	Gymnodiniales
+765	MP_E1065_SKQ2021	Dinophyceae
+1	MP_E1065_SKQ2021	Bacterosira sp_ RCC4607
+58	MP_E1065_SKQ2021	Cylindrotheca closterium
+61	MP_E1065_SKQ2021	Prorocentrales
+35	MP_E1065_SKQ2021	Chaetocerotales
+2	MP_E1065_SKQ2021	Chaetoceros cf_ neogracilis clade I
+338	MP_E1065_SKQ2021	Chaetoceros gelidus
+68	MP_E1065_SKQ2021	Pseudo_nitzschia pungens
+1	MP_E1065_SKQ2021	Thalassiosirales
+120	MP_E1065_SKQ2021	Pseudo_nitzschia seriata
+42	MP_E1065_SKQ2021	Fragilariopsis cylindrus
+29	MP_E1065_SKQ2021	Prorocentrum
+12	MP_E1065_SKQ2021	Bacillariophyceae
+29	MP_E1065_SKQ2021	Pseudo_nitzschia
+644	MP_E1065_SKQ2021	Gyrodinium dominans
+2	MP_E1065_SKQ2021	Chaetoceros
+52	MP_E1065_SKQ2021	Fragilariopsis oceanica
+13	MP_E1065_SKQ2021	Thalassiosira
+3	MP_E1065_SKQ2021	Levanderina__f__o
+104	MP_E1065_SKQ2021	Levanderina__f
+9	MP_E1065_SKQ2021	Shionodiscus sp_ IAL_2014
+9	MP_E1065_SKQ2021	Bacillariaceae
+23	MP_E1065_SKQ2021	Fragilariopsis reginae_jahniae
+2	MP_E1065_SKQ2021	Azadinium obesum
+256552	MP_E1066_SKQ2021	Unknown
+16142	MP_E1066_SKQ2021	Peridiniales
+11157	MP_E1066_SKQ2021	Gymnodiniales
+1449	MP_E1066_SKQ2021	Dinophyceae
+339	MP_E1066_SKQ2021	Cylindrotheca closterium
+73	MP_E1066_SKQ2021	Prorocentrales
+17	MP_E1066_SKQ2021	Chaetocerotales
+227	MP_E1066_SKQ2021	Chaetoceros gelidus
+119	MP_E1066_SKQ2021	Pseudo_nitzschia pungens
+97	MP_E1066_SKQ2021	Pseudo_nitzschia seriata
+65	MP_E1066_SKQ2021	Fragilariopsis cylindrus
+20	MP_E1066_SKQ2021	Prorocentrum
+1	MP_E1066_SKQ2021	Bacillariophyceae
+217	MP_E1066_SKQ2021	Gyrodinium dominans
+1	MP_E1066_SKQ2021	Chaetoceros
+106	MP_E1066_SKQ2021	Fragilariopsis oceanica
+13	MP_E1066_SKQ2021	Pseudo_nitzschia delicatissima
+1	MP_E1066_SKQ2021	Thalassiosiraceae
+11	MP_E1066_SKQ2021	Levanderina__f__o
+87	MP_E1066_SKQ2021	Levanderina__f
+3	MP_E1066_SKQ2021	Thalassiosira sp_
+13	MP_E1066_SKQ2021	Bacillariaceae
+1	MP_E1066_SKQ2021	Fragilariopsis reginae_jahniae
+3	MP_E1066_SKQ2021	Chaetoceros sp_ CCAP 1010_16
+4	MP_E1066_SKQ2021	Thalassiosira gravida
+2	MP_E1066_SKQ2021	Mertensia ovum
+226638	MP_E1067_SKQ2021	Unknown
+1070	MP_E1067_SKQ2021	Peridiniales
+44099	MP_E1067_SKQ2021	Gymnodiniales
+731	MP_E1067_SKQ2021	Dinophyceae
+5771	MP_E1067_SKQ2021	Cylindrotheca closterium
+56	MP_E1067_SKQ2021	Prorocentrales
+14	MP_E1067_SKQ2021	Pseudo_nitzschia granii
+2058	MP_E1067_SKQ2021	Chaetocerotales
+7	MP_E1067_SKQ2021	Chaetocerotaceae
+37	MP_E1067_SKQ2021	Chaetoceros gelidus
+4935	MP_E1067_SKQ2021	Pseudo_nitzschia pungens
+2	MP_E1067_SKQ2021	Pseudo_nitzschia seriata
+59	MP_E1067_SKQ2021	Pseudo_nitzschia
+104	MP_E1067_SKQ2021	Gyrodinium dominans
+6	MP_E1067_SKQ2021	Chaetoceros
+67	MP_E1067_SKQ2021	Pseudo_nitzschia delicatissima
+3	MP_E1067_SKQ2021	Florenciellales
+14	MP_E1067_SKQ2021	Chaetoceros cf_ neogracilis clade II
+1	MP_E1067_SKQ2021	Levanderina__f__o
+35	MP_E1067_SKQ2021	Levanderina__f
+7	MP_E1067_SKQ2021	Shimiella gracilenta
+7	MP_E1067_SKQ2021	Chaetoceros atlanticus
+3	MP_E1067_SKQ2021	Bacillariaceae
+15	MP_E1067_SKQ2021	Eukaryota
+36	MP_E1067_SKQ2021	Chaetoceros sp_ CCAP 1010_16
+240296	MP_E1068_SKQ2021	Unknown
+15747	MP_E1068_SKQ2021	Peridiniales
+10479	MP_E1068_SKQ2021	Gymnodiniales
+545	MP_E1068_SKQ2021	Dinophyceae
+1	MP_E1068_SKQ2021	Bacterosira sp_ RCC4607
+73	MP_E1068_SKQ2021	Cylindrotheca closterium
+31	MP_E1068_SKQ2021	Prorocentrales
+10	MP_E1068_SKQ2021	Pseudo_nitzschia granii
+38	MP_E1068_SKQ2021	Chaetocerotales
+2	MP_E1068_SKQ2021	Chaetoceros cf_ neogracilis clade I
+5	MP_E1068_SKQ2021	Chaetocerotaceae
+168	MP_E1068_SKQ2021	Chaetoceros gelidus
+123	MP_E1068_SKQ2021	Pseudo_nitzschia pungens
+442	MP_E1068_SKQ2021	Pseudo_nitzschia seriata
+8	MP_E1068_SKQ2021	Fragilariopsis cylindrus
+27	MP_E1068_SKQ2021	Prorocentrum
+4	MP_E1068_SKQ2021	Pseudo_nitzschia
+310	MP_E1068_SKQ2021	Gyrodinium dominans
+1	MP_E1068_SKQ2021	Chaetoceros
+36	MP_E1068_SKQ2021	Fragilariopsis oceanica
+1	MP_E1068_SKQ2021	Thalassiosira
+7	MP_E1068_SKQ2021	Pseudo_nitzschia delicatissima
+2	MP_E1068_SKQ2021	Levanderina__f__o
+53	MP_E1068_SKQ2021	Levanderina__f
+7	MP_E1068_SKQ2021	Shionodiscus sp_ IAL_2014
+3	MP_E1068_SKQ2021	Bacillariaceae
+9	MP_E1068_SKQ2021	Fragilariopsis reginae_jahniae
+1	MP_E1068_SKQ2021	Azadinium obesum
+248056	MP_E1069_SKQ2021	Unknown
+16865	MP_E1069_SKQ2021	Peridiniales
+9598	MP_E1069_SKQ2021	Gymnodiniales
+769	MP_E1069_SKQ2021	Dinophyceae
+398	MP_E1069_SKQ2021	Cylindrotheca closterium
+86	MP_E1069_SKQ2021	Prorocentrales
+1	MP_E1069_SKQ2021	Pseudo_nitzschia granii
+176	MP_E1069_SKQ2021	Chaetocerotales
+4	MP_E1069_SKQ2021	Chaetocerotaceae
+106	MP_E1069_SKQ2021	Chaetoceros gelidus
+313	MP_E1069_SKQ2021	Pseudo_nitzschia pungens
+46	MP_E1069_SKQ2021	Pseudo_nitzschia seriata
+10	MP_E1069_SKQ2021	Fragilariopsis cylindrus
+22	MP_E1069_SKQ2021	Prorocentrum
+9	MP_E1069_SKQ2021	Bacillariophyceae
+44	MP_E1069_SKQ2021	Pseudo_nitzschia
+156	MP_E1069_SKQ2021	Gyrodinium dominans
+1	MP_E1069_SKQ2021	Chaetoceros
+1	MP_E1069_SKQ2021	Thalassiosira hyalina
+26	MP_E1069_SKQ2021	Fragilariopsis oceanica
+5	MP_E1069_SKQ2021	Thalassiosira
+16	MP_E1069_SKQ2021	Pseudo_nitzschia delicatissima
+22	MP_E1069_SKQ2021	Levanderina__f__o
+58	MP_E1069_SKQ2021	Levanderina__f
+3	MP_E1069_SKQ2021	Shionodiscus sp_ IAL_2014
+2	MP_E1069_SKQ2021	Bacillariaceae
+1	MP_E1069_SKQ2021	Fragilariopsis reginae_jahniae
+50522	MP_E1070_SKQ2021	Unknown
+175	MP_E1070_SKQ2021	Peridiniales
+2018	MP_E1070_SKQ2021	Gymnodiniales
+73	MP_E1070_SKQ2021	Dinophyceae
+1055	MP_E1070_SKQ2021	Cylindrotheca closterium
+2	MP_E1070_SKQ2021	Pseudo_nitzschia granii
+64	MP_E1070_SKQ2021	Chaetocerotales
+4	MP_E1070_SKQ2021	Chaetocerotaceae
+2	MP_E1070_SKQ2021	Chaetoceros gelidus
+753	MP_E1070_SKQ2021	Pseudo_nitzschia pungens
+11	MP_E1070_SKQ2021	Pseudo_nitzschia seriata
+16	MP_E1070_SKQ2021	Prorocentrum
+26	MP_E1070_SKQ2021	Pseudo_nitzschia
+467	MP_E1070_SKQ2021	Gyrodinium dominans
+1	MP_E1070_SKQ2021	Pseudo_nitzschia delicatissima
+6	MP_E1070_SKQ2021	Levanderina__f
+2	MP_E1070_SKQ2021	Shimiella gracilenta
+2	MP_E1070_SKQ2021	Chaetoceros atlanticus
+153750	MP_E1071_SKQ2021	Unknown
+3382	MP_E1071_SKQ2021	Peridiniales
+12349	MP_E1071_SKQ2021	Gymnodiniales
+968	MP_E1071_SKQ2021	Dinophyceae
+73	MP_E1071_SKQ2021	Cylindrotheca closterium
+31	MP_E1071_SKQ2021	Prorocentrales
+3	MP_E1071_SKQ2021	Chaetocerotales
+102	MP_E1071_SKQ2021	Chaetoceros gelidus
+31	MP_E1071_SKQ2021	Pseudo_nitzschia pungens
+508	MP_E1071_SKQ2021	Pseudo_nitzschia seriata
+16	MP_E1071_SKQ2021	Fragilariopsis cylindrus
+21	MP_E1071_SKQ2021	Prorocentrum
+2	MP_E1071_SKQ2021	Bacillariophyceae
+2	MP_E1071_SKQ2021	Pseudo_nitzschia
+1181	MP_E1071_SKQ2021	Gyrodinium dominans
+1	MP_E1071_SKQ2021	Chaetoceros
+10	MP_E1071_SKQ2021	Fragilariopsis oceanica
+22	MP_E1071_SKQ2021	Thalassiosira
+5	MP_E1071_SKQ2021	Levanderina__f__o
+169	MP_E1071_SKQ2021	Levanderina__f
+2	MP_E1071_SKQ2021	Porosira glacialis
+9	MP_E1071_SKQ2021	Shionodiscus sp_ IAL_2014
+7	MP_E1071_SKQ2021	Bacillariaceae
+5	MP_E1071_SKQ2021	Gyrodinium
+3	MP_E1071_SKQ2021	Polarella glacialis
+228575	MP_E1072_SKQ2021	Unknown
+5767	MP_E1072_SKQ2021	Peridiniales
+19919	MP_E1072_SKQ2021	Gymnodiniales
+2203	MP_E1072_SKQ2021	Dinophyceae
+126	MP_E1072_SKQ2021	Cylindrotheca closterium
+47	MP_E1072_SKQ2021	Prorocentrales
+34	MP_E1072_SKQ2021	Chaetocerotales
+114	MP_E1072_SKQ2021	Chaetoceros gelidus
+25	MP_E1072_SKQ2021	Pseudo_nitzschia pungens
+179	MP_E1072_SKQ2021	Pseudo_nitzschia seriata
+7	MP_E1072_SKQ2021	Fragilariopsis cylindrus
+1	MP_E1072_SKQ2021	Prorocentrum
+41	MP_E1072_SKQ2021	Pseudo_nitzschia
+683	MP_E1072_SKQ2021	Gyrodinium dominans
+1	MP_E1072_SKQ2021	Chaetoceros
+2	MP_E1072_SKQ2021	Thalassiosira hyalina
+50	MP_E1072_SKQ2021	Fragilariopsis oceanica
+35	MP_E1072_SKQ2021	Thalassiosira
+2	MP_E1072_SKQ2021	Pseudo_nitzschia delicatissima
+4	MP_E1072_SKQ2021	Levanderina__f__o
+369	MP_E1072_SKQ2021	Levanderina__f
+2	MP_E1072_SKQ2021	Porosira glacialis
+8	MP_E1072_SKQ2021	Shionodiscus sp_ IAL_2014
+5	MP_E1072_SKQ2021	Chaetoceros atlanticus
+14	MP_E1072_SKQ2021	Bacillariaceae
+8	MP_E1072_SKQ2021	Fragilariopsis reginae_jahniae
+10	MP_E1072_SKQ2021	Polarella glacialis
+167574	MP_E1073_SKQ2021	Unknown
+1356	MP_E1073_SKQ2021	Peridiniales
+13068	MP_E1073_SKQ2021	Gymnodiniales
+307	MP_E1073_SKQ2021	Dinophyceae
+1561	MP_E1073_SKQ2021	Cylindrotheca closterium
+11	MP_E1073_SKQ2021	Prorocentrales
+32	MP_E1073_SKQ2021	Pseudo_nitzschia granii
+132	MP_E1073_SKQ2021	Chaetocerotales
+6	MP_E1073_SKQ2021	Chaetoceros cf_ neogracilis clade I
+2	MP_E1073_SKQ2021	Chaetocerotaceae
+62	MP_E1073_SKQ2021	Chaetoceros gelidus
+1373	MP_E1073_SKQ2021	Pseudo_nitzschia pungens
+9	MP_E1073_SKQ2021	Pseudo_nitzschia seriata
+75	MP_E1073_SKQ2021	Prorocentrum
+42	MP_E1073_SKQ2021	Pseudo_nitzschia
+205	MP_E1073_SKQ2021	Gyrodinium dominans
+24	MP_E1073_SKQ2021	Pseudo_nitzschia delicatissima
+5	MP_E1073_SKQ2021	Chaetoceros cf_ neogracilis clade II
+170	MP_E1073_SKQ2021	Levanderina__f
+17	MP_E1073_SKQ2021	Shionodiscus sp_ IAL_2014
+19	MP_E1073_SKQ2021	Chaetoceros sp_ CCAP 1010_16
+2	MP_E1073_SKQ2021	Laminariales
+217356	MP_E1074_SKQ2021	Unknown
+1541	MP_E1074_SKQ2021	Peridiniales
+17518	MP_E1074_SKQ2021	Gymnodiniales
+921	MP_E1074_SKQ2021	Dinophyceae
+117	MP_E1074_SKQ2021	Cylindrotheca closterium
+32	MP_E1074_SKQ2021	Prorocentrales
+1	MP_E1074_SKQ2021	Pseudo_nitzschia granii
+40	MP_E1074_SKQ2021	Chaetocerotales
+2	MP_E1074_SKQ2021	Chaetoceros cf_ neogracilis clade I
+137	MP_E1074_SKQ2021	Chaetoceros gelidus
+3	MP_E1074_SKQ2021	Pseudo_nitzschia pungens
+234	MP_E1074_SKQ2021	Pseudo_nitzschia seriata
+13	MP_E1074_SKQ2021	Fragilariopsis cylindrus
+32	MP_E1074_SKQ2021	Prorocentrum
+14	MP_E1074_SKQ2021	Pseudo_nitzschia
+192	MP_E1074_SKQ2021	Gyrodinium dominans
+4	MP_E1074_SKQ2021	Chaetoceros
+34	MP_E1074_SKQ2021	Fragilariopsis oceanica
+19	MP_E1074_SKQ2021	Thalassiosira
+5	MP_E1074_SKQ2021	Pseudo_nitzschia delicatissima
+15	MP_E1074_SKQ2021	Levanderina__f__o
+226	MP_E1074_SKQ2021	Levanderina__f
+11	MP_E1074_SKQ2021	Shionodiscus sp_ IAL_2014
+2	MP_E1074_SKQ2021	Kareniaceae
+12	MP_E1074_SKQ2021	Bacillariaceae
+11	MP_E1074_SKQ2021	Fragilariopsis reginae_jahniae
+208098	MP_E1075_SKQ2021	Unknown
+3498	MP_E1075_SKQ2021	Peridiniales
+22196	MP_E1075_SKQ2021	Gymnodiniales
+1124	MP_E1075_SKQ2021	Dinophyceae
+177	MP_E1075_SKQ2021	Cylindrotheca closterium
+48	MP_E1075_SKQ2021	Prorocentrales
+5	MP_E1075_SKQ2021	Pseudo_nitzschia granii
+34	MP_E1075_SKQ2021	Chaetocerotales
+1	MP_E1075_SKQ2021	Chaetoceros cf_ neogracilis clade I
+357	MP_E1075_SKQ2021	Chaetoceros gelidus
+11	MP_E1075_SKQ2021	Pseudo_nitzschia pungens
+263	MP_E1075_SKQ2021	Pseudo_nitzschia seriata
+11	MP_E1075_SKQ2021	Fragilariopsis cylindrus
+9	MP_E1075_SKQ2021	Prorocentrum
+10	MP_E1075_SKQ2021	Pseudo_nitzschia
+409	MP_E1075_SKQ2021	Gyrodinium dominans
+15	MP_E1075_SKQ2021	Chaetoceros
+31	MP_E1075_SKQ2021	Fragilariopsis oceanica
+17	MP_E1075_SKQ2021	Thalassiosira
+9	MP_E1075_SKQ2021	Gymnodiniaceae
+7	MP_E1075_SKQ2021	Pseudo_nitzschia delicatissima
+21	MP_E1075_SKQ2021	Levanderina__f__o
+184	MP_E1075_SKQ2021	Levanderina__f
+1	MP_E1075_SKQ2021	Minidiscus
+27	MP_E1075_SKQ2021	Shionodiscus sp_ IAL_2014
+23	MP_E1075_SKQ2021	Bacillariaceae
+2	MP_E1075_SKQ2021	Heterocapsa triquetra
+3	MP_E1075_SKQ2021	Azadinium obesum
+258246	MP_E1076_SKQ2021	Unknown
+3765	MP_E1076_SKQ2021	Peridiniales
+25631	MP_E1076_SKQ2021	Gymnodiniales
+2283	MP_E1076_SKQ2021	Dinophyceae
+918	MP_E1076_SKQ2021	Cylindrotheca closterium
+41	MP_E1076_SKQ2021	Prorocentrales
+124	MP_E1076_SKQ2021	Chaetocerotales
+15	MP_E1076_SKQ2021	Chaetocerotaceae
+49	MP_E1076_SKQ2021	Chaetoceros gelidus
+771	MP_E1076_SKQ2021	Pseudo_nitzschia pungens
+67	MP_E1076_SKQ2021	Prorocentrum
+9	MP_E1076_SKQ2021	Pseudo_nitzschia
+119	MP_E1076_SKQ2021	Gyrodinium dominans
+13	MP_E1076_SKQ2021	Chaetoceros
+15	MP_E1076_SKQ2021	Levanderina__f__o
+154	MP_E1076_SKQ2021	Levanderina__f
+22	MP_E1076_SKQ2021	Shionodiscus sp_ IAL_2014
+3	MP_E1076_SKQ2021	Bacillariaceae
+19	MP_E1076_SKQ2021	Chaetoceros sp_ CCAP 1010_16
+11	MP_E1076_SKQ2021	Laminariales
+219283	MP_E1077_SKQ2021	Unknown
+896	MP_E1077_SKQ2021	Peridiniales
+33219	MP_E1077_SKQ2021	Gymnodiniales
+835	MP_E1077_SKQ2021	Dinophyceae
+40	MP_E1077_SKQ2021	Cylindrotheca closterium
+130	MP_E1077_SKQ2021	Prorocentrales
+295	MP_E1077_SKQ2021	Environmental Unknown
+62	MP_E1077_SKQ2021	Chaetocerotales
+351	MP_E1077_SKQ2021	Chaetoceros gelidus
+2901	MP_E1077_SKQ2021	Pseudo_nitzschia pungens
+18	MP_E1077_SKQ2021	Pseudo_nitzschia seriata
+10	MP_E1077_SKQ2021	Fragilariopsis cylindrus
+25	MP_E1077_SKQ2021	Prorocentrum
+34	MP_E1077_SKQ2021	Bacillariophyceae
+108	MP_E1077_SKQ2021	Pseudo_nitzschia
+1208	MP_E1077_SKQ2021	Gyrodinium dominans
+6	MP_E1077_SKQ2021	Chaetoceros
+11	MP_E1077_SKQ2021	Thalassiosira hyalina
+26	MP_E1077_SKQ2021	Fragilariopsis oceanica
+7	MP_E1077_SKQ2021	Gymnodiniaceae
+9509	MP_E1077_SKQ2021	Pseudo_nitzschia delicatissima
+10	MP_E1077_SKQ2021	Florenciellales
+6	MP_E1077_SKQ2021	Thalassiosiraceae
+27	MP_E1077_SKQ2021	Levanderina__f__o
+49	MP_E1077_SKQ2021	Levanderina__f
+4	MP_E1077_SKQ2021	Bacillariaceae
+2	MP_E1077_SKQ2021	Pelagodinium
+9	MP_E1077_SKQ2021	Fragilariopsis reginae_jahniae
+200356	MP_E1078_SKQ2021	Unknown
+491	MP_E1078_SKQ2021	Peridiniales
+9	MP_E1078_SKQ2021	Coscinodiscophyceae
+33554	MP_E1078_SKQ2021	Gymnodiniales
+1772	MP_E1078_SKQ2021	Dinophyceae
+15	MP_E1078_SKQ2021	Cylindrotheca closterium
+472	MP_E1078_SKQ2021	Prorocentrales
+141	MP_E1078_SKQ2021	Environmental Unknown
+123	MP_E1078_SKQ2021	Chaetocerotales
+9	MP_E1078_SKQ2021	Chaetocerotaceae
+695	MP_E1078_SKQ2021	Chaetoceros gelidus
+4250	MP_E1078_SKQ2021	Pseudo_nitzschia pungens
+2	MP_E1078_SKQ2021	Thalassiosirales
+19	MP_E1078_SKQ2021	Fragilariopsis cylindrus
+116	MP_E1078_SKQ2021	Prorocentrum
+16	MP_E1078_SKQ2021	Bacillariophyceae
+98	MP_E1078_SKQ2021	Pseudo_nitzschia
+822	MP_E1078_SKQ2021	Gyrodinium dominans
+8	MP_E1078_SKQ2021	Chaetoceros
+26	MP_E1078_SKQ2021	Fragilariopsis oceanica
+10762	MP_E1078_SKQ2021	Pseudo_nitzschia delicatissima
+27	MP_E1078_SKQ2021	Florenciellales
+7	MP_E1078_SKQ2021	Thalassiosiraceae
+50	MP_E1078_SKQ2021	Levanderina__f__o
+180	MP_E1078_SKQ2021	Levanderina__f
+9	MP_E1078_SKQ2021	Minidiscus
+4	MP_E1078_SKQ2021	Cymatosirales
+3	MP_E1078_SKQ2021	Thalassiosira sp_
+18	MP_E1078_SKQ2021	Shimiella gracilenta
+6	MP_E1078_SKQ2021	Shionodiscus sp_ IAL_2014
+6	MP_E1078_SKQ2021	Kareniaceae
+8	MP_E1078_SKQ2021	Bacillariaceae
+26	MP_E1078_SKQ2021	Pelagodinium
+198353	MP_E1079_SKQ2021	Unknown
+763	MP_E1079_SKQ2021	Peridiniales
+5	MP_E1079_SKQ2021	Coscinodiscophyceae
+31115	MP_E1079_SKQ2021	Gymnodiniales
+1733	MP_E1079_SKQ2021	Dinophyceae
+2	MP_E1079_SKQ2021	Bacterosira sp_ RCC4607
+95	MP_E1079_SKQ2021	Cylindrotheca closterium
+25	MP_E1079_SKQ2021	Prorocentrales
+91	MP_E1079_SKQ2021	Environmental Unknown
+4	MP_E1079_SKQ2021	Minidiscus trioculatus
+81	MP_E1079_SKQ2021	Chaetocerotales
+9	MP_E1079_SKQ2021	Chaetocerotaceae
+786	MP_E1079_SKQ2021	Chaetoceros gelidus
+4976	MP_E1079_SKQ2021	Pseudo_nitzschia pungens
+36	MP_E1079_SKQ2021	Prorocentrum
+159	MP_E1079_SKQ2021	Pseudo_nitzschia
+1524	MP_E1079_SKQ2021	Gyrodinium dominans
+11	MP_E1079_SKQ2021	Chaetoceros
+2	MP_E1079_SKQ2021	Thalassiosira
+14539	MP_E1079_SKQ2021	Pseudo_nitzschia delicatissima
+128	MP_E1079_SKQ2021	Florenciellales
+8	MP_E1079_SKQ2021	Thalassiosiraceae
+11	MP_E1079_SKQ2021	Chaetoceros cf_ neogracilis clade II
+21	MP_E1079_SKQ2021	Levanderina__f__o
+96	MP_E1079_SKQ2021	Levanderina__f
+4	MP_E1079_SKQ2021	Minidiscus
+16	MP_E1079_SKQ2021	Cymatosirales
+2	MP_E1079_SKQ2021	Thalassiosira sp_
+1	MP_E1079_SKQ2021	Florenciella__f
+69	MP_E1079_SKQ2021	Shimiella gracilenta
+1	MP_E1079_SKQ2021	Porosira glacialis
+18	MP_E1079_SKQ2021	Kareniaceae
+17	MP_E1079_SKQ2021	Pelagodinium
+4	MP_E1079_SKQ2021	Scrippsiella
+174534	MP_E1080_SKQ2021	Unknown
+65	MP_E1080_SKQ2021	Peridiniales
+28537	MP_E1080_SKQ2021	Gymnodiniales
+1590	MP_E1080_SKQ2021	Dinophyceae
+3	MP_E1080_SKQ2021	Bacterosira sp_ RCC4607
+118	MP_E1080_SKQ2021	Prorocentrales
+169	MP_E1080_SKQ2021	Environmental Unknown
+30	MP_E1080_SKQ2021	Pseudo_nitzschia granii
+122	MP_E1080_SKQ2021	Chaetocerotales
+2	MP_E1080_SKQ2021	Chaetoceros cf_ neogracilis clade I
+72	MP_E1080_SKQ2021	Chaetocerotaceae
+7507	MP_E1080_SKQ2021	Chaetoceros gelidus
+428	MP_E1080_SKQ2021	Pseudo_nitzschia pungens
+7	MP_E1080_SKQ2021	Thalassiosirales
+16	MP_E1080_SKQ2021	Pseudo_nitzschia seriata
+87	MP_E1080_SKQ2021	Fragilariopsis cylindrus
+2	MP_E1080_SKQ2021	Prorocentrum
+18	MP_E1080_SKQ2021	Bacillariophyceae
+98	MP_E1080_SKQ2021	Pseudo_nitzschia
+347	MP_E1080_SKQ2021	Gyrodinium dominans
+4	MP_E1080_SKQ2021	Chaetoceros
+11	MP_E1080_SKQ2021	Fragilariopsis oceanica
+12	MP_E1080_SKQ2021	Gymnodiniaceae
+12612	MP_E1080_SKQ2021	Pseudo_nitzschia delicatissima
+55	MP_E1080_SKQ2021	Florenciellales
+2	MP_E1080_SKQ2021	Thalassiosira nordenskioeldii
+2	MP_E1080_SKQ2021	Thalassiosiraceae
+15	MP_E1080_SKQ2021	Levanderina__f
+7	MP_E1080_SKQ2021	Minidiscus
+4	MP_E1080_SKQ2021	Cymatosirales
+3	MP_E1080_SKQ2021	Florenciella__f
+3	MP_E1080_SKQ2021	Florenciella
+23	MP_E1080_SKQ2021	Shimiella gracilenta
+11	MP_E1080_SKQ2021	Kareniaceae
+2	MP_E1080_SKQ2021	Cylindrotheca
+13	MP_E1080_SKQ2021	Bacillariaceae
+2	MP_E1080_SKQ2021	Azadinium dalianense
+61	MP_E1080_SKQ2021	Heterocapsa triquetra
+3	MP_E1080_SKQ2021	Asterionellopsis glacialis
+5	MP_E1080_SKQ2021	Pelagodinium
+2	MP_E1080_SKQ2021	Mediophyceae
+2	MP_E1080_SKQ2021	Mertensia ovum
+1	MP_E1080_SKQ2021	Thalassiosira bioculata
+124915	MP_E1081_SKQ2021	Unknown
+226	MP_E1081_SKQ2021	Peridiniales
+46698	MP_E1081_SKQ2021	Gymnodiniales
+1950	MP_E1081_SKQ2021	Dinophyceae
+1	MP_E1081_SKQ2021	Bacterosira sp_ RCC4607
+155	MP_E1081_SKQ2021	Prorocentrales
+26	MP_E1081_SKQ2021	Environmental Unknown
+1	MP_E1081_SKQ2021	Pseudo_nitzschia granii
+114	MP_E1081_SKQ2021	Chaetocerotales
+3	MP_E1081_SKQ2021	Chaetoceros cf_ neogracilis clade I
+8	MP_E1081_SKQ2021	Chaetocerotaceae
+3571	MP_E1081_SKQ2021	Chaetoceros gelidus
+249	MP_E1081_SKQ2021	Pseudo_nitzschia pungens
+3	MP_E1081_SKQ2021	Thalassiosirales
+178	MP_E1081_SKQ2021	Fragilariopsis cylindrus
+28	MP_E1081_SKQ2021	Prorocentrum
+30	MP_E1081_SKQ2021	Pseudo_nitzschia
+1626	MP_E1081_SKQ2021	Gyrodinium dominans
+22	MP_E1081_SKQ2021	Chaetoceros
+16	MP_E1081_SKQ2021	Fragilariopsis oceanica
+2	MP_E1081_SKQ2021	Thalassiosira
+1320	MP_E1081_SKQ2021	Pseudo_nitzschia delicatissima
+26	MP_E1081_SKQ2021	Florenciellales
+2	MP_E1081_SKQ2021	Thalassiosira nordenskioeldii
+20	MP_E1081_SKQ2021	Levanderina__f__o
+64	MP_E1081_SKQ2021	Levanderina__f
+4	MP_E1081_SKQ2021	Minidiscus
+19	MP_E1081_SKQ2021	Florenciella
+28	MP_E1081_SKQ2021	Shimiella gracilenta
+2	MP_E1081_SKQ2021	Kareniaceae
+6	MP_E1081_SKQ2021	Fragilariopsis
+2	MP_E1081_SKQ2021	Cylindrotheca
+16	MP_E1081_SKQ2021	Bacillariaceae
+23	MP_E1081_SKQ2021	Heterocapsa triquetra
+1	MP_E1081_SKQ2021	Asterionellopsis glacialis
+1	MP_E1081_SKQ2021	Pelagodinium
+1	MP_E1081_SKQ2021	Thalassiosira bioculata
+2	MP_E1081_SKQ2021	Suessiaceae
+171682	MP_E1082_SKQ2021	Unknown
+768	MP_E1082_SKQ2021	Peridiniales
+3	MP_E1082_SKQ2021	Coscinodiscophyceae
+60050	MP_E1082_SKQ2021	Gymnodiniales
+1013	MP_E1082_SKQ2021	Dinophyceae
+4	MP_E1082_SKQ2021	Bacterosira sp_ RCC4607
+358	MP_E1082_SKQ2021	Prorocentrales
+307	MP_E1082_SKQ2021	Environmental Unknown
+89	MP_E1082_SKQ2021	Pseudo_nitzschia granii
+9	MP_E1082_SKQ2021	Minidiscus trioculatus
+112	MP_E1082_SKQ2021	Chaetocerotales
+156	MP_E1082_SKQ2021	Chaetocerotaceae
+2433	MP_E1082_SKQ2021	Chaetoceros gelidus
+662	MP_E1082_SKQ2021	Pseudo_nitzschia pungens
+7	MP_E1082_SKQ2021	Thalassiosirales
+6	MP_E1082_SKQ2021	Pseudo_nitzschia seriata
+44	MP_E1082_SKQ2021	Fragilariopsis cylindrus
+51	MP_E1082_SKQ2021	Prorocentrum
+47	MP_E1082_SKQ2021	Bacillariophyceae
+86	MP_E1082_SKQ2021	Pseudo_nitzschia
+3026	MP_E1082_SKQ2021	Gyrodinium dominans
+23	MP_E1082_SKQ2021	Chaetoceros
+1	MP_E1082_SKQ2021	Thalassiosira hyalina
+13	MP_E1082_SKQ2021	Fragilariopsis oceanica
+12062	MP_E1082_SKQ2021	Pseudo_nitzschia delicatissima
+40	MP_E1082_SKQ2021	Florenciellales
+5	MP_E1082_SKQ2021	Thalassiosiraceae
+18	MP_E1082_SKQ2021	Thalassiosira sp_ RCC4858
+46	MP_E1082_SKQ2021	Levanderina__f__o
+51	MP_E1082_SKQ2021	Levanderina__f
+4	MP_E1082_SKQ2021	Minidiscus
+6	MP_E1082_SKQ2021	Florenciella__f
+11	MP_E1082_SKQ2021	Florenciella
+9	MP_E1082_SKQ2021	Shimiella gracilenta
+2	MP_E1082_SKQ2021	Porosira glacialis
+10	MP_E1082_SKQ2021	Kareniaceae
+4	MP_E1082_SKQ2021	Karlodinium veneficum
+18	MP_E1082_SKQ2021	Tovelliaceae
+506	MP_E1082_SKQ2021	Heterocapsa triquetra
+37	MP_E1082_SKQ2021	Fragilariopsis reginae_jahniae
+69	MP_E1082_SKQ2021	Gonyaulacales
+4	MP_E1082_SKQ2021	Rhaponeidales
+158292	MP_E1083_SKQ2021	Unknown
+748	MP_E1083_SKQ2021	Peridiniales
+35335	MP_E1083_SKQ2021	Gymnodiniales
+779	MP_E1083_SKQ2021	Dinophyceae
+385	MP_E1083_SKQ2021	Prorocentrales
+323	MP_E1083_SKQ2021	Environmental Unknown
+29	MP_E1083_SKQ2021	Pseudo_nitzschia granii
+5	MP_E1083_SKQ2021	Minidiscus trioculatus
+41	MP_E1083_SKQ2021	Chaetocerotales
+3	MP_E1083_SKQ2021	Chaetoceros cf_ neogracilis clade I
+75	MP_E1083_SKQ2021	Chaetocerotaceae
+1980	MP_E1083_SKQ2021	Chaetoceros gelidus
+686	MP_E1083_SKQ2021	Pseudo_nitzschia pungens
+27	MP_E1083_SKQ2021	Pseudo_nitzschia seriata
+28	MP_E1083_SKQ2021	Fragilariopsis cylindrus
+9	MP_E1083_SKQ2021	Prorocentrum
+17	MP_E1083_SKQ2021	Bacillariophyceae
+69	MP_E1083_SKQ2021	Pseudo_nitzschia
+1786	MP_E1083_SKQ2021	Gyrodinium dominans
+11	MP_E1083_SKQ2021	Chaetoceros
+24	MP_E1083_SKQ2021	Fragilariopsis oceanica
+12134	MP_E1083_SKQ2021	Pseudo_nitzschia delicatissima
+21	MP_E1083_SKQ2021	Florenciellales
+6	MP_E1083_SKQ2021	Thalassiosira nordenskioeldii
+5	MP_E1083_SKQ2021	Thalassiosiraceae
+48	MP_E1083_SKQ2021	Levanderina__f__o
+35	MP_E1083_SKQ2021	Levanderina__f
+18	MP_E1083_SKQ2021	Shimiella gracilenta
+2	MP_E1083_SKQ2021	Kareniaceae
+18	MP_E1083_SKQ2021	Tovelliaceae
+10	MP_E1083_SKQ2021	Azadinium dalianense
+749	MP_E1083_SKQ2021	Heterocapsa triquetra
+66	MP_E1083_SKQ2021	Gonyaulacales
+240962	MP_E1084_SKQ2021	Unknown
+224	MP_E1084_SKQ2021	Peridiniales
+100396	MP_E1084_SKQ2021	Gymnodiniales
+3998	MP_E1084_SKQ2021	Dinophyceae
+5	MP_E1084_SKQ2021	Bacterosira sp_ RCC4607
+3	MP_E1084_SKQ2021	Cylindrotheca closterium
+57	MP_E1084_SKQ2021	Prorocentrales
+9	MP_E1084_SKQ2021	Environmental Unknown
+2	MP_E1084_SKQ2021	Pseudo_nitzschia granii
+194	MP_E1084_SKQ2021	Chaetocerotales
+2	MP_E1084_SKQ2021	Chaetoceros cf_ neogracilis clade I
+22	MP_E1084_SKQ2021	Chaetocerotaceae
+5177	MP_E1084_SKQ2021	Chaetoceros gelidus
+585	MP_E1084_SKQ2021	Pseudo_nitzschia pungens
+5	MP_E1084_SKQ2021	Thalassiosirales
+14	MP_E1084_SKQ2021	Pseudo_nitzschia seriata
+156	MP_E1084_SKQ2021	Fragilariopsis cylindrus
+47	MP_E1084_SKQ2021	Prorocentrum
+7	MP_E1084_SKQ2021	Pseudo_nitzschia
+3269	MP_E1084_SKQ2021	Gyrodinium dominans
+30	MP_E1084_SKQ2021	Chaetoceros
+14	MP_E1084_SKQ2021	Fragilariopsis oceanica
+9	MP_E1084_SKQ2021	Thalassiosira
+120	MP_E1084_SKQ2021	Pseudo_nitzschia delicatissima
+7	MP_E1084_SKQ2021	Florenciellales
+2	MP_E1084_SKQ2021	Thalassiosira nordenskioeldii
+2	MP_E1084_SKQ2021	Thalassiosiraceae
+6	MP_E1084_SKQ2021	Levanderina__f__o
+21	MP_E1084_SKQ2021	Levanderina__f
+1	MP_E1084_SKQ2021	Minidiscus
+11	MP_E1084_SKQ2021	Florenciella__f
+12	MP_E1084_SKQ2021	Shimiella gracilenta
+7	MP_E1084_SKQ2021	Bacillariaceae
+3	MP_E1084_SKQ2021	Shimiella
+2	MP_E1084_SKQ2021	Porosira
+214128	MP_E1085_SKQ2021	Unknown
+531	MP_E1085_SKQ2021	Peridiniales
+51290	MP_E1085_SKQ2021	Gymnodiniales
+649	MP_E1085_SKQ2021	Dinophyceae
+4	MP_E1085_SKQ2021	Bacterosira sp_ RCC4607
+4	MP_E1085_SKQ2021	Cylindrotheca closterium
+796	MP_E1085_SKQ2021	Prorocentrales
+376	MP_E1085_SKQ2021	Environmental Unknown
+74	MP_E1085_SKQ2021	Pseudo_nitzschia granii
+98	MP_E1085_SKQ2021	Chaetocerotales
+56	MP_E1085_SKQ2021	Chaetocerotaceae
+2318	MP_E1085_SKQ2021	Chaetoceros gelidus
+605	MP_E1085_SKQ2021	Pseudo_nitzschia pungens
+46	MP_E1085_SKQ2021	Pseudo_nitzschia seriata
+36	MP_E1085_SKQ2021	Fragilariopsis cylindrus
+19	MP_E1085_SKQ2021	Prorocentrum
+2	MP_E1085_SKQ2021	Bacillariophyceae
+22	MP_E1085_SKQ2021	Pseudo_nitzschia
+1879	MP_E1085_SKQ2021	Gyrodinium dominans
+14	MP_E1085_SKQ2021	Chaetoceros
+2	MP_E1085_SKQ2021	Fragilariopsis oceanica
+4	MP_E1085_SKQ2021	Thalassiosira
+1069	MP_E1085_SKQ2021	Gymnodiniaceae
+5137	MP_E1085_SKQ2021	Pseudo_nitzschia delicatissima
+8	MP_E1085_SKQ2021	Florenciellales
+11	MP_E1085_SKQ2021	Thalassiosira nordenskioeldii
+3	MP_E1085_SKQ2021	Chaetoceros cf_ neogracilis clade II
+9	MP_E1085_SKQ2021	Levanderina__f__o
+79	MP_E1085_SKQ2021	Levanderina__f
+4	MP_E1085_SKQ2021	Minidiscus
+2	MP_E1085_SKQ2021	Florenciella
+5	MP_E1085_SKQ2021	Shimiella gracilenta
+1	MP_E1085_SKQ2021	Porosira glacialis
+1	MP_E1085_SKQ2021	Kareniaceae
+2	MP_E1085_SKQ2021	Fragilariopsis
+7	MP_E1085_SKQ2021	Tovelliaceae
+255	MP_E1085_SKQ2021	Heterocapsa triquetra
+10	MP_E1085_SKQ2021	Pelagodinium
+5	MP_E1085_SKQ2021	Gonyaulacales
+1	MP_E1085_SKQ2021	Rhaponeidales
+190080	MP_E1086_SKQ2021	Unknown
+891	MP_E1086_SKQ2021	Peridiniales
+56236	MP_E1086_SKQ2021	Gymnodiniales
+666	MP_E1086_SKQ2021	Dinophyceae
+4	MP_E1086_SKQ2021	Bacterosira sp_ RCC4607
+413	MP_E1086_SKQ2021	Prorocentrales
+469	MP_E1086_SKQ2021	Environmental Unknown
+21	MP_E1086_SKQ2021	Pseudo_nitzschia granii
+1	MP_E1086_SKQ2021	Minidiscus trioculatus
+50	MP_E1086_SKQ2021	Chaetocerotales
+118	MP_E1086_SKQ2021	Chaetocerotaceae
+1949	MP_E1086_SKQ2021	Chaetoceros gelidus
+470	MP_E1086_SKQ2021	Pseudo_nitzschia pungens
+110	MP_E1086_SKQ2021	Pseudo_nitzschia seriata
+55	MP_E1086_SKQ2021	Fragilariopsis cylindrus
+32	MP_E1086_SKQ2021	Prorocentrum
+55	MP_E1086_SKQ2021	Pseudo_nitzschia
+683	MP_E1086_SKQ2021	Gyrodinium dominans
+11	MP_E1086_SKQ2021	Chaetoceros
+3	MP_E1086_SKQ2021	Fragilariopsis oceanica
+2	MP_E1086_SKQ2021	Thalassiosira
+4215	MP_E1086_SKQ2021	Pseudo_nitzschia delicatissima
+18	MP_E1086_SKQ2021	Florenciellales
+11	MP_E1086_SKQ2021	Thalassiosira nordenskioeldii
+7	MP_E1086_SKQ2021	Thalassiosiraceae
+3	MP_E1086_SKQ2021	Thalassiosira sp_ RCC4858
+14	MP_E1086_SKQ2021	Levanderina__f__o
+107	MP_E1086_SKQ2021	Levanderina__f
+8	MP_E1086_SKQ2021	Minidiscus
+5	MP_E1086_SKQ2021	Florenciella__f
+8	MP_E1086_SKQ2021	Shimiella gracilenta
+5	MP_E1086_SKQ2021	Porosira glacialis
+17	MP_E1086_SKQ2021	Tovelliaceae
+269	MP_E1086_SKQ2021	Heterocapsa triquetra
+3	MP_E1086_SKQ2021	Asterionellopsis glacialis
+4	MP_E1086_SKQ2021	Pelagodinium
+9	MP_E1086_SKQ2021	Bacillariales
+221129	MP_E1087_SKQ2021	Unknown
+437	MP_E1087_SKQ2021	Peridiniales
+86998	MP_E1087_SKQ2021	Gymnodiniales
+2913	MP_E1087_SKQ2021	Dinophyceae
+1	MP_E1087_SKQ2021	Bacterosira sp_ RCC4607
+168	MP_E1087_SKQ2021	Prorocentrales
+77	MP_E1087_SKQ2021	Chaetocerotales
+2286	MP_E1087_SKQ2021	Chaetoceros gelidus
+984	MP_E1087_SKQ2021	Pseudo_nitzschia pungens
+2	MP_E1087_SKQ2021	Pseudo_nitzschia seriata
+62	MP_E1087_SKQ2021	Fragilariopsis cylindrus
+120	MP_E1087_SKQ2021	Prorocentrum
+19	MP_E1087_SKQ2021	Pseudo_nitzschia
+1252	MP_E1087_SKQ2021	Gyrodinium dominans
+17	MP_E1087_SKQ2021	Chaetoceros
+7	MP_E1087_SKQ2021	Fragilariopsis oceanica
+1	MP_E1087_SKQ2021	Thalassiosira
+99	MP_E1087_SKQ2021	Pseudo_nitzschia delicatissima
+8	MP_E1087_SKQ2021	Florenciellales
+1	MP_E1087_SKQ2021	Thalassiosiraceae
+3	MP_E1087_SKQ2021	Chaetoceros cf_ neogracilis clade II
+4	MP_E1087_SKQ2021	Levanderina__f__o
+19	MP_E1087_SKQ2021	Levanderina__f
+2	MP_E1087_SKQ2021	Thalassiosira sp_
+9	MP_E1087_SKQ2021	Florenciella__f
+3	MP_E1087_SKQ2021	Florenciella
+15	MP_E1087_SKQ2021	Shimiella gracilenta
+6	MP_E1087_SKQ2021	Bacillariaceae
+2	MP_E1087_SKQ2021	Asterionellopsis glacialis
+4	MP_E1087_SKQ2021	Gyrodinium
+1	MP_E1087_SKQ2021	Pelagodinium
+169572	MP_E1088_SKQ2021	Unknown
+854	MP_E1088_SKQ2021	Peridiniales
+4	MP_E1088_SKQ2021	Coscinodiscophyceae
+72838	MP_E1088_SKQ2021	Gymnodiniales
+436	MP_E1088_SKQ2021	Dinophyceae
+1	MP_E1088_SKQ2021	Bacterosira sp_ RCC4607
+5	MP_E1088_SKQ2021	Cylindrotheca closterium
+523	MP_E1088_SKQ2021	Prorocentrales
+187	MP_E1088_SKQ2021	Environmental Unknown
+11	MP_E1088_SKQ2021	Pseudo_nitzschia granii
+103	MP_E1088_SKQ2021	Chaetocerotales
+60	MP_E1088_SKQ2021	Chaetocerotaceae
+1312	MP_E1088_SKQ2021	Chaetoceros gelidus
+304	MP_E1088_SKQ2021	Pseudo_nitzschia pungens
+8	MP_E1088_SKQ2021	Pseudo_nitzschia seriata
+50	MP_E1088_SKQ2021	Fragilariopsis cylindrus
+3	MP_E1088_SKQ2021	Prorocentrum
+8	MP_E1088_SKQ2021	Bacillariophyceae
+13	MP_E1088_SKQ2021	Pseudo_nitzschia
+3357	MP_E1088_SKQ2021	Gyrodinium dominans
+3	MP_E1088_SKQ2021	Chaetoceros
+4	MP_E1088_SKQ2021	Gymnodiniaceae
+1508	MP_E1088_SKQ2021	Pseudo_nitzschia delicatissima
+11	MP_E1088_SKQ2021	Florenciellales
+5	MP_E1088_SKQ2021	Chaetoceros cf_ neogracilis clade II
+1	MP_E1088_SKQ2021	Thalassiosira sp_ RCC4858
+18	MP_E1088_SKQ2021	Levanderina__f__o
+63	MP_E1088_SKQ2021	Levanderina__f
+1	MP_E1088_SKQ2021	Thalassiosira sp_
+2	MP_E1088_SKQ2021	Shimiella gracilenta
+7	MP_E1088_SKQ2021	Porosira glacialis
+2	MP_E1088_SKQ2021	Cylindrotheca
+17	MP_E1088_SKQ2021	Tovelliaceae
+98	MP_E1088_SKQ2021	Heterocapsa triquetra
+2	MP_E1088_SKQ2021	Rhaponeidales
+3	MP_E1088_SKQ2021	Chaetoceros cf_ neogracilis clade IV
+199348	MP_E1089_SKQ2021	Unknown
+576	MP_E1089_SKQ2021	Peridiniales
+74632	MP_E1089_SKQ2021	Gymnodiniales
+327	MP_E1089_SKQ2021	Dinophyceae
+1	MP_E1089_SKQ2021	Bacterosira sp_ RCC4607
+6	MP_E1089_SKQ2021	Cylindrotheca closterium
+653	MP_E1089_SKQ2021	Prorocentrales
+266	MP_E1089_SKQ2021	Environmental Unknown
+19	MP_E1089_SKQ2021	Pseudo_nitzschia granii
+178	MP_E1089_SKQ2021	Chaetocerotales
+100	MP_E1089_SKQ2021	Chaetocerotaceae
+1509	MP_E1089_SKQ2021	Chaetoceros gelidus
+534	MP_E1089_SKQ2021	Pseudo_nitzschia pungens
+18	MP_E1089_SKQ2021	Pseudo_nitzschia seriata
+97	MP_E1089_SKQ2021	Fragilariopsis cylindrus
+15	MP_E1089_SKQ2021	Prorocentrum
+8	MP_E1089_SKQ2021	Bacillariophyceae
+63	MP_E1089_SKQ2021	Pseudo_nitzschia
+5877	MP_E1089_SKQ2021	Gyrodinium dominans
+18	MP_E1089_SKQ2021	Chaetoceros
+1	MP_E1089_SKQ2021	Thalassiosira hyalina
+6	MP_E1089_SKQ2021	Fragilariopsis oceanica
+2	MP_E1089_SKQ2021	Thalassiosira
+2	MP_E1089_SKQ2021	Gymnodiniaceae
+1900	MP_E1089_SKQ2021	Pseudo_nitzschia delicatissima
+5	MP_E1089_SKQ2021	Florenciellales
+2	MP_E1089_SKQ2021	Thalassiosira nordenskioeldii
+7	MP_E1089_SKQ2021	Thalassiosiraceae
+25	MP_E1089_SKQ2021	Levanderina__f__o
+162	MP_E1089_SKQ2021	Levanderina__f
+2	MP_E1089_SKQ2021	Minidiscus
+1	MP_E1089_SKQ2021	Shimiella gracilenta
+4	MP_E1089_SKQ2021	Porosira glacialis
+6	MP_E1089_SKQ2021	Fragilariopsis
+3	MP_E1089_SKQ2021	Cylindrotheca
+7	MP_E1089_SKQ2021	Tovelliaceae
+101	MP_E1089_SKQ2021	Heterocapsa triquetra
+8	MP_E1089_SKQ2021	Thalassiosira bioculata
+3	MP_E1089_SKQ2021	Rhaponeidales
+1	MP_E1089_SKQ2021	Bacillariales
+173457	MP_E1090_SKQ2021	Unknown
+693	MP_E1090_SKQ2021	Peridiniales
+79108	MP_E1090_SKQ2021	Gymnodiniales
+2954	MP_E1090_SKQ2021	Dinophyceae
+1	MP_E1090_SKQ2021	Bacterosira sp_ RCC4607
+8	MP_E1090_SKQ2021	Cylindrotheca closterium
+130	MP_E1090_SKQ2021	Prorocentrales
+4	MP_E1090_SKQ2021	Environmental Unknown
+238	MP_E1090_SKQ2021	Chaetocerotales
+1	MP_E1090_SKQ2021	Chaetoceros cf_ neogracilis clade I
+1	MP_E1090_SKQ2021	Chaetocerotaceae
+3917	MP_E1090_SKQ2021	Chaetoceros gelidus
+1170	MP_E1090_SKQ2021	Pseudo_nitzschia pungens
+3	MP_E1090_SKQ2021	Thalassiosirales
+58	MP_E1090_SKQ2021	Pseudo_nitzschia seriata
+97	MP_E1090_SKQ2021	Fragilariopsis cylindrus
+128	MP_E1090_SKQ2021	Prorocentrum
+43	MP_E1090_SKQ2021	Pseudo_nitzschia
+2802	MP_E1090_SKQ2021	Gyrodinium dominans
+42	MP_E1090_SKQ2021	Chaetoceros
+21	MP_E1090_SKQ2021	Fragilariopsis oceanica
+1	MP_E1090_SKQ2021	Thalassiosira
+5	MP_E1090_SKQ2021	Gymnodiniaceae
+54	MP_E1090_SKQ2021	Pseudo_nitzschia delicatissima
+4	MP_E1090_SKQ2021	Florenciellales
+2	MP_E1090_SKQ2021	Thalassiosira nordenskioeldii
+7	MP_E1090_SKQ2021	Levanderina__f__o
+54	MP_E1090_SKQ2021	Levanderina__f
+2	MP_E1090_SKQ2021	Minidiscus
+2	MP_E1090_SKQ2021	Thalassiosira sp_
+7	MP_E1090_SKQ2021	Florenciella__f
+4	MP_E1090_SKQ2021	Shimiella gracilenta
+8	MP_E1090_SKQ2021	Bacillariaceae
+39	MP_E1090_SKQ2021	Heterocapsa triquetra
+3	MP_E1090_SKQ2021	Mediophyceae
+243134	MP_E1091_SKQ2021	Unknown
+1558	MP_E1091_SKQ2021	Peridiniales
+20111	MP_E1091_SKQ2021	Gymnodiniales
+1981	MP_E1091_SKQ2021	Dinophyceae
+5	MP_E1091_SKQ2021	Bacterosira sp_ RCC4607
+3	MP_E1091_SKQ2021	Cylindrotheca closterium
+551	MP_E1091_SKQ2021	Prorocentrales
+5	MP_E1091_SKQ2021	Environmental Unknown
+8	MP_E1091_SKQ2021	Pseudo_nitzschia granii
+268	MP_E1091_SKQ2021	Chaetocerotales
+2	MP_E1091_SKQ2021	Chaetoceros cf_ neogracilis clade I
+4557	MP_E1091_SKQ2021	Chaetoceros gelidus
+23357	MP_E1091_SKQ2021	Pseudo_nitzschia pungens
+191	MP_E1091_SKQ2021	Pseudo_nitzschia seriata
+34	MP_E1091_SKQ2021	Fragilariopsis cylindrus
+5	MP_E1091_SKQ2021	Bacillariophyceae
+59	MP_E1091_SKQ2021	Pseudo_nitzschia
+1667	MP_E1091_SKQ2021	Gyrodinium dominans
+30	MP_E1091_SKQ2021	Chaetoceros
+7	MP_E1091_SKQ2021	Thalassiosira hyalina
+18	MP_E1091_SKQ2021	Fragilariopsis oceanica
+21	MP_E1091_SKQ2021	Gymnodiniaceae
+25	MP_E1091_SKQ2021	Pseudo_nitzschia delicatissima
+1	MP_E1091_SKQ2021	Thalassiosira nordenskioeldii
+9	MP_E1091_SKQ2021	Thalassiosiraceae
+9	MP_E1091_SKQ2021	Levanderina__f__o
+44	MP_E1091_SKQ2021	Levanderina__f
+4	MP_E1091_SKQ2021	Cymatosirales
+30	MP_E1091_SKQ2021	Porosira glacialis
+16	MP_E1091_SKQ2021	Bacillariaceae
+4	MP_E1091_SKQ2021	Peridiniaceae
+227221	MP_E1092_SKQ2021	Unknown
+1771	MP_E1092_SKQ2021	Peridiniales
+12	MP_E1092_SKQ2021	Coscinodiscophyceae
+19007	MP_E1092_SKQ2021	Gymnodiniales
+1559	MP_E1092_SKQ2021	Dinophyceae
+1	MP_E1092_SKQ2021	Bacterosira sp_ RCC4607
+10	MP_E1092_SKQ2021	Cylindrotheca closterium
+556	MP_E1092_SKQ2021	Prorocentrales
+22	MP_E1092_SKQ2021	Environmental Unknown
+334	MP_E1092_SKQ2021	Chaetocerotales
+1	MP_E1092_SKQ2021	Chaetoceros cf_ neogracilis clade I
+2	MP_E1092_SKQ2021	Chaetocerotaceae
+6343	MP_E1092_SKQ2021	Chaetoceros gelidus
+18027	MP_E1092_SKQ2021	Pseudo_nitzschia pungens
+125	MP_E1092_SKQ2021	Pseudo_nitzschia seriata
+54	MP_E1092_SKQ2021	Fragilariopsis cylindrus
+8	MP_E1092_SKQ2021	Bacillariophyceae
+86	MP_E1092_SKQ2021	Pseudo_nitzschia
+631	MP_E1092_SKQ2021	Gyrodinium dominans
+41	MP_E1092_SKQ2021	Chaetoceros
+46	MP_E1092_SKQ2021	Fragilariopsis oceanica
+3	MP_E1092_SKQ2021	Thalassiosira
+7	MP_E1092_SKQ2021	Gymnodiniaceae
+2	MP_E1092_SKQ2021	Thalassiosira nordenskioeldii
+11	MP_E1092_SKQ2021	Thalassiosiraceae
+6	MP_E1092_SKQ2021	Chaetoceros cf_ neogracilis clade II
+3	MP_E1092_SKQ2021	Levanderina__f__o
+42	MP_E1092_SKQ2021	Levanderina__f
+4	MP_E1092_SKQ2021	Minidiscus
+8	MP_E1092_SKQ2021	Cymatosirales
+1	MP_E1092_SKQ2021	Thalassiosira sp_
+3	MP_E1092_SKQ2021	Florenciella
+41	MP_E1092_SKQ2021	Porosira glacialis
+1	MP_E1092_SKQ2021	Fragilariopsis
+12	MP_E1092_SKQ2021	Bacillariaceae
+25	MP_E1092_SKQ2021	Fragilariopsis reginae_jahniae
+5	MP_E1092_SKQ2021	Thalassiosira bioculata
+232256	MP_E1093_SKQ2021	Unknown
+1575	MP_E1093_SKQ2021	Peridiniales
+5	MP_E1093_SKQ2021	Coscinodiscophyceae
+39452	MP_E1093_SKQ2021	Gymnodiniales
+2337	MP_E1093_SKQ2021	Dinophyceae
+10	MP_E1093_SKQ2021	Bacterosira sp_ RCC4607
+12	MP_E1093_SKQ2021	Cylindrotheca closterium
+81	MP_E1093_SKQ2021	Prorocentrales
+9	MP_E1093_SKQ2021	Environmental Unknown
+23	MP_E1093_SKQ2021	Pseudo_nitzschia granii
+4	MP_E1093_SKQ2021	Minidiscus trioculatus
+592	MP_E1093_SKQ2021	Chaetocerotales
+1	MP_E1093_SKQ2021	Chaetoceros cf_ neogracilis clade I
+5	MP_E1093_SKQ2021	Chaetocerotaceae
+39271	MP_E1093_SKQ2021	Chaetoceros gelidus
+10440	MP_E1093_SKQ2021	Pseudo_nitzschia pungens
+3	MP_E1093_SKQ2021	Thalassiosirales
+3	MP_E1093_SKQ2021	Pseudo_nitzschia seriata
+301	MP_E1093_SKQ2021	Fragilariopsis cylindrus
+98	MP_E1093_SKQ2021	Prorocentrum
+47	MP_E1093_SKQ2021	Bacillariophyceae
+97	MP_E1093_SKQ2021	Pseudo_nitzschia
+894	MP_E1093_SKQ2021	Gyrodinium dominans
+78	MP_E1093_SKQ2021	Chaetoceros
+6	MP_E1093_SKQ2021	Thalassiosira hyalina
+35	MP_E1093_SKQ2021	Fragilariopsis oceanica
+2	MP_E1093_SKQ2021	Thalassiosira
+2848	MP_E1093_SKQ2021	Gymnodiniaceae
+161	MP_E1093_SKQ2021	Pseudo_nitzschia delicatissima
+181	MP_E1093_SKQ2021	Florenciellales
+6	MP_E1093_SKQ2021	Thalassiosira nordenskioeldii
+14	MP_E1093_SKQ2021	Thalassiosiraceae
+4	MP_E1093_SKQ2021	Chaetoceros cf_ neogracilis clade II
+6	MP_E1093_SKQ2021	Levanderina__f__o
+44	MP_E1093_SKQ2021	Levanderina__f
+1	MP_E1093_SKQ2021	Thalassiosira sp_
+16	MP_E1093_SKQ2021	Florenciella__f
+13	MP_E1093_SKQ2021	Florenciella
+9	MP_E1093_SKQ2021	Shimiella gracilenta
+2	MP_E1093_SKQ2021	Porosira glacialis
+9	MP_E1093_SKQ2021	Fragilariopsis
+24	MP_E1093_SKQ2021	Bacillariaceae
+1	MP_E1093_SKQ2021	Heterocapsa triquetra
+2	MP_E1093_SKQ2021	Pelagodinium
+155151	MP_E1094_SKQ2021	Unknown
+82	MP_E1094_SKQ2021	Peridiniales
+57052	MP_E1094_SKQ2021	Gymnodiniales
+903	MP_E1094_SKQ2021	Dinophyceae
+3	MP_E1094_SKQ2021	Bacterosira sp_ RCC4607
+56	MP_E1094_SKQ2021	Cylindrotheca closterium
+15387	MP_E1094_SKQ2021	Prorocentrales
+128	MP_E1094_SKQ2021	Environmental Unknown
+1966	MP_E1094_SKQ2021	Chaetocerotales
+1	MP_E1094_SKQ2021	Chaetoceros cf_ neogracilis clade I
+35	MP_E1094_SKQ2021	Chaetocerotaceae
+26519	MP_E1094_SKQ2021	Chaetoceros gelidus
+4293	MP_E1094_SKQ2021	Pseudo_nitzschia pungens
+57	MP_E1094_SKQ2021	Pseudo_nitzschia seriata
+54	MP_E1094_SKQ2021	Fragilariopsis cylindrus
+4	MP_E1094_SKQ2021	Prorocentrum
+1146	MP_E1094_SKQ2021	Gyrodinium dominans
+55	MP_E1094_SKQ2021	Chaetoceros
+16	MP_E1094_SKQ2021	Thalassiosira hyalina
+63	MP_E1094_SKQ2021	Fragilariopsis oceanica
+11	MP_E1094_SKQ2021	Gymnodiniaceae
+55	MP_E1094_SKQ2021	Pseudo_nitzschia delicatissima
+10	MP_E1094_SKQ2021	Thalassiosira nordenskioeldii
+20	MP_E1094_SKQ2021	Thalassiosiraceae
+52	MP_E1094_SKQ2021	Levanderina__f
+10	MP_E1094_SKQ2021	Minidiscus
+9	MP_E1094_SKQ2021	Thalassiosira sp_
+228616	MP_E1095_SKQ2021	Unknown
+509	MP_E1095_SKQ2021	Peridiniales
+28630	MP_E1095_SKQ2021	Gymnodiniales
+2384	MP_E1095_SKQ2021	Dinophyceae
+6	MP_E1095_SKQ2021	Bacterosira sp_ RCC4607
+36	MP_E1095_SKQ2021	Cylindrotheca closterium
+3344	MP_E1095_SKQ2021	Prorocentrales
+124	MP_E1095_SKQ2021	Environmental Unknown
+11	MP_E1095_SKQ2021	Pseudo_nitzschia granii
+13	MP_E1095_SKQ2021	Minidiscus trioculatus
+358	MP_E1095_SKQ2021	Chaetocerotales
+8	MP_E1095_SKQ2021	Chaetocerotaceae
+17255	MP_E1095_SKQ2021	Chaetoceros gelidus
+428	MP_E1095_SKQ2021	Pseudo_nitzschia pungens
+1	MP_E1095_SKQ2021	Thalassiosirales
+4	MP_E1095_SKQ2021	Fragilariopsis cylindrus
+51	MP_E1095_SKQ2021	Bacillariophyceae
+437	MP_E1095_SKQ2021	Gyrodinium dominans
+3	MP_E1095_SKQ2021	Chaetoceros
+2	MP_E1095_SKQ2021	Thalassiosira
+4	MP_E1095_SKQ2021	Gymnodiniaceae
+7	MP_E1095_SKQ2021	Thalassiosira nordenskioeldii
+3	MP_E1095_SKQ2021	Thalassiosiraceae
+28	MP_E1095_SKQ2021	Chaetoceros cf_ neogracilis clade II
+6	MP_E1095_SKQ2021	Levanderina__f__o
+75	MP_E1095_SKQ2021	Levanderina__f
+11	MP_E1095_SKQ2021	Minidiscus
+206967	MP_E1096_SKQ2021	Unknown
+502	MP_E1096_SKQ2021	Peridiniales
+1	MP_E1096_SKQ2021	Coscinodiscophyceae
+39503	MP_E1096_SKQ2021	Gymnodiniales
+1484	MP_E1096_SKQ2021	Dinophyceae
+20	MP_E1096_SKQ2021	Bacterosira sp_ RCC4607
+27	MP_E1096_SKQ2021	Cylindrotheca closterium
+162	MP_E1096_SKQ2021	Prorocentrales
+12	MP_E1096_SKQ2021	Environmental Unknown
+5	MP_E1096_SKQ2021	Minidiscus trioculatus
+168	MP_E1096_SKQ2021	Chaetocerotales
+1	MP_E1096_SKQ2021	Chaetocerotaceae
+15656	MP_E1096_SKQ2021	Chaetoceros gelidus
+7828	MP_E1096_SKQ2021	Pseudo_nitzschia pungens
+8	MP_E1096_SKQ2021	Thalassiosirales
+26	MP_E1096_SKQ2021	Pseudo_nitzschia seriata
+70	MP_E1096_SKQ2021	Fragilariopsis cylindrus
+116	MP_E1096_SKQ2021	Prorocentrum
+8	MP_E1096_SKQ2021	Bacillariophyceae
+55	MP_E1096_SKQ2021	Pseudo_nitzschia
+474	MP_E1096_SKQ2021	Gyrodinium dominans
+54	MP_E1096_SKQ2021	Chaetoceros
+13	MP_E1096_SKQ2021	Thalassiosira hyalina
+40	MP_E1096_SKQ2021	Fragilariopsis oceanica
+25	MP_E1096_SKQ2021	Thalassiosira
+144	MP_E1096_SKQ2021	Pseudo_nitzschia delicatissima
+40	MP_E1096_SKQ2021	Florenciellales
+8	MP_E1096_SKQ2021	Thalassiosira nordenskioeldii
+6	MP_E1096_SKQ2021	Thalassiosiraceae
+11	MP_E1096_SKQ2021	Chaetoceros cf_ neogracilis clade II
+3	MP_E1096_SKQ2021	Levanderina__f__o
+30	MP_E1096_SKQ2021	Levanderina__f
+12	MP_E1096_SKQ2021	Minidiscus
+1	MP_E1096_SKQ2021	Cymatosirales
+11	MP_E1096_SKQ2021	Florenciella__f
+8	MP_E1096_SKQ2021	Shimiella gracilenta
+2	MP_E1096_SKQ2021	Porosira glacialis
+6	MP_E1096_SKQ2021	Fragilariopsis
+4	MP_E1096_SKQ2021	Bacillariaceae
+183867	MP_E1097_SKQ2021	Unknown
+600	MP_E1097_SKQ2021	Peridiniales
+14	MP_E1097_SKQ2021	Coscinodiscophyceae
+47949	MP_E1097_SKQ2021	Gymnodiniales
+716	MP_E1097_SKQ2021	Dinophyceae
+3	MP_E1097_SKQ2021	Bacterosira sp_ RCC4607
+180	MP_E1097_SKQ2021	Cylindrotheca closterium
+259	MP_E1097_SKQ2021	Prorocentrales
+20	MP_E1097_SKQ2021	Environmental Unknown
+34	MP_E1097_SKQ2021	Pseudo_nitzschia granii
+791	MP_E1097_SKQ2021	Chaetocerotales
+18	MP_E1097_SKQ2021	Chaetoceros cf_ neogracilis clade I
+18	MP_E1097_SKQ2021	Chaetocerotaceae
+16213	MP_E1097_SKQ2021	Chaetoceros gelidus
+19933	MP_E1097_SKQ2021	Pseudo_nitzschia pungens
+30	MP_E1097_SKQ2021	Pseudo_nitzschia seriata
+61	MP_E1097_SKQ2021	Fragilariopsis cylindrus
+6	MP_E1097_SKQ2021	Prorocentrum
+9	MP_E1097_SKQ2021	Bacillariophyceae
+37	MP_E1097_SKQ2021	Pseudo_nitzschia
+1018	MP_E1097_SKQ2021	Gyrodinium dominans
+50	MP_E1097_SKQ2021	Chaetoceros
+35	MP_E1097_SKQ2021	Thalassiosira hyalina
+53	MP_E1097_SKQ2021	Fragilariopsis oceanica
+4	MP_E1097_SKQ2021	Thalassiosira
+1605	MP_E1097_SKQ2021	Gymnodiniaceae
+20	MP_E1097_SKQ2021	Pseudo_nitzschia delicatissima
+6	MP_E1097_SKQ2021	Thalassiosira nordenskioeldii
+15	MP_E1097_SKQ2021	Thalassiosiraceae
+10	MP_E1097_SKQ2021	Chaetoceros cf_ neogracilis clade II
+1	MP_E1097_SKQ2021	Thalassiosira sp_ RCC4858
+94	MP_E1097_SKQ2021	Levanderina__f
+15	MP_E1097_SKQ2021	Minidiscus
+2	MP_E1097_SKQ2021	Thalassiosira sp_
+16	MP_E1097_SKQ2021	Porosira glacialis
+2	MP_E1097_SKQ2021	Bacillariaceae
+1	MP_E1097_SKQ2021	Heterocapsa triquetra
+220169	MP_E1098_SKQ2021	Unknown
+973	MP_E1098_SKQ2021	Peridiniales
+28879	MP_E1098_SKQ2021	Gymnodiniales
+1107	MP_E1098_SKQ2021	Dinophyceae
+1	MP_E1098_SKQ2021	Bacterosira sp_ RCC4607
+9	MP_E1098_SKQ2021	Cylindrotheca closterium
+455	MP_E1098_SKQ2021	Prorocentrales
+64	MP_E1098_SKQ2021	Environmental Unknown
+14	MP_E1098_SKQ2021	Pseudo_nitzschia granii
+134	MP_E1098_SKQ2021	Chaetocerotales
+11	MP_E1098_SKQ2021	Chaetoceros cf_ neogracilis clade I
+4	MP_E1098_SKQ2021	Chaetocerotaceae
+11217	MP_E1098_SKQ2021	Chaetoceros gelidus
+3996	MP_E1098_SKQ2021	Pseudo_nitzschia pungens
+46	MP_E1098_SKQ2021	Fragilariopsis cylindrus
+1	MP_E1098_SKQ2021	Prorocentrum
+363	MP_E1098_SKQ2021	Gyrodinium dominans
+15	MP_E1098_SKQ2021	Chaetoceros
+4	MP_E1098_SKQ2021	Thalassiosira hyalina
+15	MP_E1098_SKQ2021	Fragilariopsis oceanica
+4	MP_E1098_SKQ2021	Gymnodiniaceae
+27	MP_E1098_SKQ2021	Pseudo_nitzschia delicatissima
+2	MP_E1098_SKQ2021	Chaetoceros cf_ neogracilis clade II
+7	MP_E1098_SKQ2021	Levanderina__f__o
+86	MP_E1098_SKQ2021	Levanderina__f
+13	MP_E1098_SKQ2021	Minidiscus
+3	MP_E1098_SKQ2021	Shimiella gracilenta
+3	MP_E1098_SKQ2021	Bacillariaceae
+3	MP_E1098_SKQ2021	Mediophyceae
+2	MP_E1098_SKQ2021	Rhaponeidales
+215979	MP_E1099_SKQ2021	Unknown
+193	MP_E1099_SKQ2021	Peridiniales
+2	MP_E1099_SKQ2021	Coscinodiscophyceae
+55399	MP_E1099_SKQ2021	Gymnodiniales
+1034	MP_E1099_SKQ2021	Dinophyceae
+4	MP_E1099_SKQ2021	Bacterosira sp_ RCC4607
+2	MP_E1099_SKQ2021	Cylindrotheca closterium
+174	MP_E1099_SKQ2021	Prorocentrales
+44	MP_E1099_SKQ2021	Environmental Unknown
+110	MP_E1099_SKQ2021	Pseudo_nitzschia granii
+7	MP_E1099_SKQ2021	Minidiscus trioculatus
+217	MP_E1099_SKQ2021	Chaetocerotales
+6807	MP_E1099_SKQ2021	Chaetoceros gelidus
+2505	MP_E1099_SKQ2021	Pseudo_nitzschia pungens
+1	MP_E1099_SKQ2021	Thalassiosirales
+122	MP_E1099_SKQ2021	Fragilariopsis cylindrus
+114	MP_E1099_SKQ2021	Prorocentrum
+34	MP_E1099_SKQ2021	Pseudo_nitzschia
+1151	MP_E1099_SKQ2021	Gyrodinium dominans
+30	MP_E1099_SKQ2021	Chaetoceros
+3	MP_E1099_SKQ2021	Thalassiosira hyalina
+4	MP_E1099_SKQ2021	Fragilariopsis oceanica
+5	MP_E1099_SKQ2021	Thalassiosira
+358	MP_E1099_SKQ2021	Pseudo_nitzschia delicatissima
+143	MP_E1099_SKQ2021	Florenciellales
+5	MP_E1099_SKQ2021	Thalassiosira nordenskioeldii
+8	MP_E1099_SKQ2021	Thalassiosiraceae
+6	MP_E1099_SKQ2021	Levanderina__f__o
+34	MP_E1099_SKQ2021	Levanderina__f
+4	MP_E1099_SKQ2021	Minidiscus
+12	MP_E1099_SKQ2021	Cymatosirales
+2	MP_E1099_SKQ2021	Thalassiosira sp_
+4	MP_E1099_SKQ2021	Florenciella__f
+14	MP_E1099_SKQ2021	Florenciella
+14	MP_E1099_SKQ2021	Shimiella gracilenta
+47	MP_E1099_SKQ2021	Bacillariaceae
+3	MP_E1099_SKQ2021	Eukaryota
+4	MP_E1099_SKQ2021	Skeletonemataceae
+187812	MP_E1100_SKQ2021	Unknown
+161	MP_E1100_SKQ2021	Peridiniales
+8	MP_E1100_SKQ2021	Coscinodiscophyceae
+23854	MP_E1100_SKQ2021	Gymnodiniales
+2321	MP_E1100_SKQ2021	Dinophyceae
+9	MP_E1100_SKQ2021	Cylindrotheca closterium
+370	MP_E1100_SKQ2021	Prorocentrales
+259	MP_E1100_SKQ2021	Environmental Unknown
+7	MP_E1100_SKQ2021	Pseudo_nitzschia granii
+1242	MP_E1100_SKQ2021	Chaetocerotales
+8685	MP_E1100_SKQ2021	Chaetoceros gelidus
+141	MP_E1100_SKQ2021	Pseudo_nitzschia pungens
+2	MP_E1100_SKQ2021	Thalassiosirales
+57	MP_E1100_SKQ2021	Pseudo_nitzschia seriata
+12	MP_E1100_SKQ2021	Fragilariopsis cylindrus
+78	MP_E1100_SKQ2021	Bacillariophyceae
+64	MP_E1100_SKQ2021	Pseudo_nitzschia
+1244	MP_E1100_SKQ2021	Gyrodinium dominans
+9	MP_E1100_SKQ2021	Thalassiosira hyalina
+32	MP_E1100_SKQ2021	Fragilariopsis oceanica
+8	MP_E1100_SKQ2021	Thalassiosira
+5187	MP_E1100_SKQ2021	Pseudo_nitzschia delicatissima
+121	MP_E1100_SKQ2021	Florenciellales
+4	MP_E1100_SKQ2021	Thalassiosira nordenskioeldii
+152	MP_E1100_SKQ2021	Levanderina__f__o
+24	MP_E1100_SKQ2021	Levanderina__f
+6	MP_E1100_SKQ2021	Florenciella
+4	MP_E1100_SKQ2021	Shimiella gracilenta
+2	MP_E1100_SKQ2021	Porosira glacialis
+2	MP_E1100_SKQ2021	Kareniaceae
+3	MP_E1100_SKQ2021	Karlodinium
+217396	MP_E1101_SKQ2021	Unknown
+217	MP_E1101_SKQ2021	Peridiniales
+13	MP_E1101_SKQ2021	Coscinodiscophyceae
+41782	MP_E1101_SKQ2021	Gymnodiniales
+4218	MP_E1101_SKQ2021	Dinophyceae
+6	MP_E1101_SKQ2021	Bacterosira sp_ RCC4607
+290	MP_E1101_SKQ2021	Prorocentrales
+434	MP_E1101_SKQ2021	Environmental Unknown
+3	MP_E1101_SKQ2021	Pseudo_nitzschia granii
+571	MP_E1101_SKQ2021	Chaetocerotales
+7792	MP_E1101_SKQ2021	Chaetoceros gelidus
+110	MP_E1101_SKQ2021	Pseudo_nitzschia pungens
+5	MP_E1101_SKQ2021	Fragilariopsis cylindrus
+26	MP_E1101_SKQ2021	Bacillariophyceae
+53	MP_E1101_SKQ2021	Pseudo_nitzschia
+1550	MP_E1101_SKQ2021	Gyrodinium dominans
+7	MP_E1101_SKQ2021	Thalassiosira hyalina
+45	MP_E1101_SKQ2021	Fragilariopsis oceanica
+25	MP_E1101_SKQ2021	Thalassiosira
+5931	MP_E1101_SKQ2021	Pseudo_nitzschia delicatissima
+266	MP_E1101_SKQ2021	Florenciellales
+7	MP_E1101_SKQ2021	Thalassiosira nordenskioeldii
+5	MP_E1101_SKQ2021	Thalassiosiraceae
+315	MP_E1101_SKQ2021	Levanderina__f__o
+2	MP_E1101_SKQ2021	Levanderina__f
+4	MP_E1101_SKQ2021	Minidiscus
+17	MP_E1101_SKQ2021	Florenciella__f
+7	MP_E1101_SKQ2021	Florenciella
+26	MP_E1101_SKQ2021	Shimiella gracilenta
+2	MP_E1101_SKQ2021	Rhaponeidales
+3	MP_E1101_SKQ2021	Azadinium perforatum
+32	MP_E1101_SKQ2021	Karlodinium elegans
+206700	MP_E1102_SKQ2021	Unknown
+103	MP_E1102_SKQ2021	Peridiniales
+40	MP_E1102_SKQ2021	Coscinodiscophyceae
+40258	MP_E1102_SKQ2021	Gymnodiniales
+6153	MP_E1102_SKQ2021	Dinophyceae
+4	MP_E1102_SKQ2021	Bacterosira sp_ RCC4607
+141	MP_E1102_SKQ2021	Prorocentrales
+355	MP_E1102_SKQ2021	Environmental Unknown
+268	MP_E1102_SKQ2021	Chaetocerotales
+7	MP_E1102_SKQ2021	Chaetocerotaceae
+13137	MP_E1102_SKQ2021	Chaetoceros gelidus
+52	MP_E1102_SKQ2021	Pseudo_nitzschia pungens
+19	MP_E1102_SKQ2021	Fragilariopsis cylindrus
+10	MP_E1102_SKQ2021	Bacillariophyceae
+79	MP_E1102_SKQ2021	Pseudo_nitzschia
+1053	MP_E1102_SKQ2021	Gyrodinium dominans
+7	MP_E1102_SKQ2021	Thalassiosira hyalina
+6	MP_E1102_SKQ2021	Fragilariopsis oceanica
+8	MP_E1102_SKQ2021	Thalassiosira
+5202	MP_E1102_SKQ2021	Pseudo_nitzschia delicatissima
+457	MP_E1102_SKQ2021	Florenciellales
+9	MP_E1102_SKQ2021	Thalassiosira nordenskioeldii
+6	MP_E1102_SKQ2021	Thalassiosiraceae
+1	MP_E1102_SKQ2021	Thalassiosira sp_ RCC4858
+155	MP_E1102_SKQ2021	Levanderina__f__o
+36	MP_E1102_SKQ2021	Levanderina__f
+20	MP_E1102_SKQ2021	Minidiscus
+3	MP_E1102_SKQ2021	Cymatosirales
+5	MP_E1102_SKQ2021	Thalassiosira sp_
+10	MP_E1102_SKQ2021	Florenciella__f
+53	MP_E1102_SKQ2021	Florenciella
+16	MP_E1102_SKQ2021	Shimiella gracilenta
+6	MP_E1102_SKQ2021	Kareniaceae
+2	MP_E1102_SKQ2021	Azadinium dalianense
+10	MP_E1102_SKQ2021	Gyrodinium
+1	MP_E1102_SKQ2021	Pelagodinium
+1	MP_E1102_SKQ2021	Mediophyceae
+2	MP_E1102_SKQ2021	Bacillariales
+5	MP_E1102_SKQ2021	Azadinium perforatum
+42	MP_E1102_SKQ2021	Karlodinium elegans
+6	MP_E1102_SKQ2021	Gymnodinium
+5	MP_E1102_SKQ2021	Aureococcus__f
+196934	MP_E1103_SKQ2021	Unknown
+45	MP_E1103_SKQ2021	Peridiniales
+9992	MP_E1103_SKQ2021	Gymnodiniales
+330	MP_E1103_SKQ2021	Dinophyceae
+1	MP_E1103_SKQ2021	Bacterosira sp_ RCC4607
+52	MP_E1103_SKQ2021	Prorocentrales
+157	MP_E1103_SKQ2021	Environmental Unknown
+183	MP_E1103_SKQ2021	Pseudo_nitzschia granii
+2250	MP_E1103_SKQ2021	Chaetocerotales
+17991	MP_E1103_SKQ2021	Chaetoceros gelidus
+21	MP_E1103_SKQ2021	Pseudo_nitzschia pungens
+1	MP_E1103_SKQ2021	Pseudo_nitzschia seriata
+58	MP_E1103_SKQ2021	Fragilariopsis cylindrus
+301	MP_E1103_SKQ2021	Bacillariophyceae
+58	MP_E1103_SKQ2021	Pseudo_nitzschia
+1568	MP_E1103_SKQ2021	Gyrodinium dominans
+5	MP_E1103_SKQ2021	Thalassiosira hyalina
+152	MP_E1103_SKQ2021	Fragilariopsis oceanica
+4	MP_E1103_SKQ2021	Thalassiosira
+5048	MP_E1103_SKQ2021	Pseudo_nitzschia delicatissima
+7	MP_E1103_SKQ2021	Florenciellales
+15	MP_E1103_SKQ2021	Thalassiosira nordenskioeldii
+2	MP_E1103_SKQ2021	Thalassiosiraceae
+79	MP_E1103_SKQ2021	Levanderina__f__o
+48	MP_E1103_SKQ2021	Levanderina__f
+5	MP_E1103_SKQ2021	Fragilariopsis reginae_jahniae
+2	MP_E1103_SKQ2021	Gymnodinium aureolum
+241794	MP_E1104_SKQ2021	Unknown
+134	MP_E1104_SKQ2021	Peridiniales
+3	MP_E1104_SKQ2021	Coscinodiscophyceae
+13934	MP_E1104_SKQ2021	Gymnodiniales
+723	MP_E1104_SKQ2021	Dinophyceae
+2	MP_E1104_SKQ2021	Bacterosira sp_ RCC4607
+71	MP_E1104_SKQ2021	Prorocentrales
+75	MP_E1104_SKQ2021	Environmental Unknown
+124	MP_E1104_SKQ2021	Pseudo_nitzschia granii
+444	MP_E1104_SKQ2021	Chaetocerotales
+17894	MP_E1104_SKQ2021	Chaetoceros gelidus
+8	MP_E1104_SKQ2021	Pseudo_nitzschia pungens
+18	MP_E1104_SKQ2021	Fragilariopsis cylindrus
+75	MP_E1104_SKQ2021	Bacillariophyceae
+40	MP_E1104_SKQ2021	Pseudo_nitzschia
+1746	MP_E1104_SKQ2021	Gyrodinium dominans
+36	MP_E1104_SKQ2021	Fragilariopsis oceanica
+4	MP_E1104_SKQ2021	Thalassiosira
+3674	MP_E1104_SKQ2021	Pseudo_nitzschia delicatissima
+5	MP_E1104_SKQ2021	Florenciellales
+2	MP_E1104_SKQ2021	Thalassiosira nordenskioeldii
+4	MP_E1104_SKQ2021	Thalassiosira sp_ RCC4858
+144	MP_E1104_SKQ2021	Levanderina__f__o
+17	MP_E1104_SKQ2021	Levanderina__f
+14	MP_E1104_SKQ2021	Shimiella gracilenta
+3	MP_E1104_SKQ2021	Kareniaceae
+2	MP_E1104_SKQ2021	Karlodinium
+142	MP_E1104_SKQ2021	Karlodinium elegans
+205218	MP_E1105_SKQ2021	Unknown
+88	MP_E1105_SKQ2021	Peridiniales
+11332	MP_E1105_SKQ2021	Gymnodiniales
+399	MP_E1105_SKQ2021	Dinophyceae
+2	MP_E1105_SKQ2021	Bacterosira sp_ RCC4607
+3	MP_E1105_SKQ2021	Cylindrotheca closterium
+80	MP_E1105_SKQ2021	Prorocentrales
+105	MP_E1105_SKQ2021	Environmental Unknown
+139	MP_E1105_SKQ2021	Pseudo_nitzschia granii
+543	MP_E1105_SKQ2021	Chaetocerotales
+12	MP_E1105_SKQ2021	Chaetocerotaceae
+27720	MP_E1105_SKQ2021	Chaetoceros gelidus
+10	MP_E1105_SKQ2021	Pseudo_nitzschia pungens
+19	MP_E1105_SKQ2021	Pseudo_nitzschia seriata
+37	MP_E1105_SKQ2021	Fragilariopsis cylindrus
+35	MP_E1105_SKQ2021	Bacillariophyceae
+70	MP_E1105_SKQ2021	Pseudo_nitzschia
+1976	MP_E1105_SKQ2021	Gyrodinium dominans
+36	MP_E1105_SKQ2021	Fragilariopsis oceanica
+7	MP_E1105_SKQ2021	Thalassiosira
+3897	MP_E1105_SKQ2021	Pseudo_nitzschia delicatissima
+11	MP_E1105_SKQ2021	Thalassiosira nordenskioeldii
+3	MP_E1105_SKQ2021	Chaetoceros cf_ neogracilis clade II
+4	MP_E1105_SKQ2021	Thalassiosira sp_ RCC4858
+123	MP_E1105_SKQ2021	Levanderina__f__o
+20	MP_E1105_SKQ2021	Levanderina__f
+8	MP_E1105_SKQ2021	Shimiella gracilenta
+1	MP_E1105_SKQ2021	Porosira glacialis
+5	MP_E1105_SKQ2021	Kareniaceae
+2	MP_E1105_SKQ2021	Asterionellopsis glacialis
+1	MP_E1105_SKQ2021	Pelagodinium
+90	MP_E1105_SKQ2021	Karlodinium elegans
+218344	MP_E1106_SKQ2021	Unknown
+143	MP_E1106_SKQ2021	Peridiniales
+16445	MP_E1106_SKQ2021	Gymnodiniales
+352	MP_E1106_SKQ2021	Dinophyceae
+2	MP_E1106_SKQ2021	Bacterosira sp_ RCC4607
+31	MP_E1106_SKQ2021	Prorocentrales
+134	MP_E1106_SKQ2021	Environmental Unknown
+594	MP_E1106_SKQ2021	Pseudo_nitzschia granii
+3191	MP_E1106_SKQ2021	Chaetocerotales
+10	MP_E1106_SKQ2021	Chaetocerotaceae
+14340	MP_E1106_SKQ2021	Chaetoceros gelidus
+20	MP_E1106_SKQ2021	Pseudo_nitzschia pungens
+5	MP_E1106_SKQ2021	Pseudo_nitzschia seriata
+36	MP_E1106_SKQ2021	Fragilariopsis cylindrus
+63	MP_E1106_SKQ2021	Bacillariophyceae
+268	MP_E1106_SKQ2021	Pseudo_nitzschia
+1345	MP_E1106_SKQ2021	Gyrodinium dominans
+1	MP_E1106_SKQ2021	Thalassiosira hyalina
+17	MP_E1106_SKQ2021	Fragilariopsis oceanica
+1	MP_E1106_SKQ2021	Thalassiosira
+6329	MP_E1106_SKQ2021	Pseudo_nitzschia delicatissima
+7	MP_E1106_SKQ2021	Florenciellales
+7	MP_E1106_SKQ2021	Thalassiosira nordenskioeldii
+2	MP_E1106_SKQ2021	Thalassiosira sp_ RCC4858
+117	MP_E1106_SKQ2021	Levanderina__f__o
+15	MP_E1106_SKQ2021	Levanderina__f
+8	MP_E1106_SKQ2021	Shimiella gracilenta
+2	MP_E1106_SKQ2021	Kareniaceae
+36	MP_E1106_SKQ2021	Karlodinium elegans
+6	MP_E1106_SKQ2021	Pseudo_nitzschia pseudodelicatissima
+205792	MP_E1107_SKQ2021	Unknown
+169	MP_E1107_SKQ2021	Peridiniales
+13073	MP_E1107_SKQ2021	Gymnodiniales
+406	MP_E1107_SKQ2021	Dinophyceae
+11	MP_E1107_SKQ2021	Bacterosira sp_ RCC4607
+102	MP_E1107_SKQ2021	Prorocentrales
+51	MP_E1107_SKQ2021	Environmental Unknown
+518	MP_E1107_SKQ2021	Pseudo_nitzschia granii
+1676	MP_E1107_SKQ2021	Chaetocerotales
+7	MP_E1107_SKQ2021	Chaetocerotaceae
+16285	MP_E1107_SKQ2021	Chaetoceros gelidus
+8	MP_E1107_SKQ2021	Pseudo_nitzschia pungens
+7	MP_E1107_SKQ2021	Pseudo_nitzschia seriata
+28	MP_E1107_SKQ2021	Fragilariopsis cylindrus
+73	MP_E1107_SKQ2021	Bacillariophyceae
+169	MP_E1107_SKQ2021	Pseudo_nitzschia
+1320	MP_E1107_SKQ2021	Gyrodinium dominans
+12	MP_E1107_SKQ2021	Fragilariopsis oceanica
+8	MP_E1107_SKQ2021	Thalassiosira
+6834	MP_E1107_SKQ2021	Pseudo_nitzschia delicatissima
+12	MP_E1107_SKQ2021	Florenciellales
+2	MP_E1107_SKQ2021	Thalassiosira nordenskioeldii
+2	MP_E1107_SKQ2021	Thalassiosiraceae
+75	MP_E1107_SKQ2021	Levanderina__f__o
+20	MP_E1107_SKQ2021	Levanderina__f
+1	MP_E1107_SKQ2021	Thalassiosira sp_
+5	MP_E1107_SKQ2021	Shimiella gracilenta
+9	MP_E1107_SKQ2021	Kareniaceae
+2	MP_E1107_SKQ2021	Asterionellopsis glacialis
+56	MP_E1107_SKQ2021	Karlodinium elegans
+246444	MP_E1108_SKQ2021	Unknown
+83	MP_E1108_SKQ2021	Peridiniales
+14310	MP_E1108_SKQ2021	Gymnodiniales
+674	MP_E1108_SKQ2021	Dinophyceae
+8	MP_E1108_SKQ2021	Bacterosira sp_ RCC4607
+69	MP_E1108_SKQ2021	Prorocentrales
+76	MP_E1108_SKQ2021	Environmental Unknown
+450	MP_E1108_SKQ2021	Pseudo_nitzschia granii
+1620	MP_E1108_SKQ2021	Chaetocerotales
+9	MP_E1108_SKQ2021	Chaetocerotaceae
+18572	MP_E1108_SKQ2021	Chaetoceros gelidus
+42	MP_E1108_SKQ2021	Pseudo_nitzschia pungens
+5	MP_E1108_SKQ2021	Pseudo_nitzschia seriata
+3	MP_E1108_SKQ2021	Fragilariopsis cylindrus
+3	MP_E1108_SKQ2021	Prorocentrum
+17	MP_E1108_SKQ2021	Bacillariophyceae
+133	MP_E1108_SKQ2021	Pseudo_nitzschia
+1527	MP_E1108_SKQ2021	Gyrodinium dominans
+2	MP_E1108_SKQ2021	Fragilariopsis oceanica
+6	MP_E1108_SKQ2021	Thalassiosira
+5750	MP_E1108_SKQ2021	Pseudo_nitzschia delicatissima
+5	MP_E1108_SKQ2021	Florenciellales
+1	MP_E1108_SKQ2021	Thalassiosira nordenskioeldii
+5	MP_E1108_SKQ2021	Thalassiosira sp_ RCC4858
+101	MP_E1108_SKQ2021	Levanderina__f__o
+15	MP_E1108_SKQ2021	Levanderina__f
+10	MP_E1108_SKQ2021	Shimiella gracilenta
+1	MP_E1108_SKQ2021	Shionodiscus sp_ IAL_2014
+6	MP_E1108_SKQ2021	Kareniaceae
+116	MP_E1108_SKQ2021	Karlodinium elegans
+220293	MP_E1109_SKQ2021	Unknown
+382	MP_E1109_SKQ2021	Peridiniales
+15474	MP_E1109_SKQ2021	Gymnodiniales
+1690	MP_E1109_SKQ2021	Dinophyceae
+19	MP_E1109_SKQ2021	Bacterosira sp_ RCC4607
+116	MP_E1109_SKQ2021	Prorocentrales
+1020	MP_E1109_SKQ2021	Environmental Unknown
+57	MP_E1109_SKQ2021	Pseudo_nitzschia granii
+2369	MP_E1109_SKQ2021	Chaetocerotales
+17177	MP_E1109_SKQ2021	Chaetoceros gelidus
+15	MP_E1109_SKQ2021	Pseudo_nitzschia pungens
+5	MP_E1109_SKQ2021	Fragilariopsis cylindrus
+42	MP_E1109_SKQ2021	Bacillariophyceae
+42	MP_E1109_SKQ2021	Pseudo_nitzschia
+1631	MP_E1109_SKQ2021	Gyrodinium dominans
+8	MP_E1109_SKQ2021	Fragilariopsis oceanica
+31	MP_E1109_SKQ2021	Thalassiosira
+2961	MP_E1109_SKQ2021	Pseudo_nitzschia delicatissima
+7	MP_E1109_SKQ2021	Florenciellales
+8	MP_E1109_SKQ2021	Thalassiosira nordenskioeldii
+7	MP_E1109_SKQ2021	Thalassiosira sp_ RCC4858
+89	MP_E1109_SKQ2021	Levanderina__f__o
+43	MP_E1109_SKQ2021	Levanderina__f
+7	MP_E1109_SKQ2021	Florenciella
+5	MP_E1109_SKQ2021	Shimiella gracilenta
+4	MP_E1109_SKQ2021	Porosira glacialis
+13	MP_E1109_SKQ2021	Kareniaceae
+1	MP_E1109_SKQ2021	Thalassiosira bioculata
+1	MP_E1109_SKQ2021	Bacillariales
+3	MP_E1109_SKQ2021	Karlodinium elegans
+2	MP_E1109_SKQ2021	Chaetoceros cf_ neogracilis clade III
+241616	MP_E1110_SKQ2021	Unknown
+82	MP_E1110_SKQ2021	Peridiniales
+15123	MP_E1110_SKQ2021	Gymnodiniales
+2613	MP_E1110_SKQ2021	Dinophyceae
+62	MP_E1110_SKQ2021	Prorocentrales
+207	MP_E1110_SKQ2021	Environmental Unknown
+3	MP_E1110_SKQ2021	Pseudo_nitzschia granii
+825	MP_E1110_SKQ2021	Chaetocerotales
+30414	MP_E1110_SKQ2021	Chaetoceros gelidus
+51	MP_E1110_SKQ2021	Pseudo_nitzschia pungens
+2	MP_E1110_SKQ2021	Pseudo_nitzschia seriata
+6	MP_E1110_SKQ2021	Fragilariopsis cylindrus
+31	MP_E1110_SKQ2021	Prorocentrum
+35	MP_E1110_SKQ2021	Bacillariophyceae
+23	MP_E1110_SKQ2021	Pseudo_nitzschia
+2315	MP_E1110_SKQ2021	Gyrodinium dominans
+1	MP_E1110_SKQ2021	Chaetoceros
+5	MP_E1110_SKQ2021	Thalassiosira hyalina
+5	MP_E1110_SKQ2021	Fragilariopsis oceanica
+15	MP_E1110_SKQ2021	Thalassiosira
+2323	MP_E1110_SKQ2021	Pseudo_nitzschia delicatissima
+42	MP_E1110_SKQ2021	Florenciellales
+5	MP_E1110_SKQ2021	Thalassiosira nordenskioeldii
+1	MP_E1110_SKQ2021	Thalassiosira sp_ RCC4858
+131	MP_E1110_SKQ2021	Levanderina__f__o
+34	MP_E1110_SKQ2021	Levanderina__f
+4	MP_E1110_SKQ2021	Minidiscus
+2	MP_E1110_SKQ2021	Cymatosirales
+4	MP_E1110_SKQ2021	Florenciella__f
+17	MP_E1110_SKQ2021	Florenciella
+24	MP_E1110_SKQ2021	Shimiella gracilenta
+6	MP_E1110_SKQ2021	Kareniaceae
+1	MP_E1110_SKQ2021	Karlodinium veneficum
+2	MP_E1110_SKQ2021	Asterionellopsis glacialis
+48	MP_E1110_SKQ2021	Karlodinium elegans
+5	MP_E1110_SKQ2021	Corethron hystrix
+192981	MP_E1111_SKQ2021	Unknown
+48	MP_E1111_SKQ2021	Peridiniales
+11	MP_E1111_SKQ2021	Coscinodiscophyceae
+16198	MP_E1111_SKQ2021	Gymnodiniales
+2530	MP_E1111_SKQ2021	Dinophyceae
+8	MP_E1111_SKQ2021	Bacterosira sp_ RCC4607
+59	MP_E1111_SKQ2021	Prorocentrales
+215	MP_E1111_SKQ2021	Environmental Unknown
+6	MP_E1111_SKQ2021	Pseudo_nitzschia granii
+508	MP_E1111_SKQ2021	Chaetocerotales
+27758	MP_E1111_SKQ2021	Chaetoceros gelidus
+96	MP_E1111_SKQ2021	Pseudo_nitzschia pungens
+4	MP_E1111_SKQ2021	Thalassiosirales
+26	MP_E1111_SKQ2021	Pseudo_nitzschia seriata
+8	MP_E1111_SKQ2021	Fragilariopsis cylindrus
+31	MP_E1111_SKQ2021	Prorocentrum
+123	MP_E1111_SKQ2021	Bacillariophyceae
+46	MP_E1111_SKQ2021	Pseudo_nitzschia
+2376	MP_E1111_SKQ2021	Gyrodinium dominans
+7	MP_E1111_SKQ2021	Thalassiosira hyalina
+105	MP_E1111_SKQ2021	Fragilariopsis oceanica
+23	MP_E1111_SKQ2021	Thalassiosira
+3363	MP_E1111_SKQ2021	Pseudo_nitzschia delicatissima
+102	MP_E1111_SKQ2021	Florenciellales
+5	MP_E1111_SKQ2021	Thalassiosira nordenskioeldii
+3	MP_E1111_SKQ2021	Chaetoceros cf_ neogracilis clade II
+1	MP_E1111_SKQ2021	Thalassiosira sp_ RCC4858
+123	MP_E1111_SKQ2021	Levanderina__f__o
+5	MP_E1111_SKQ2021	Levanderina__f
+5	MP_E1111_SKQ2021	Minidiscus
+2	MP_E1111_SKQ2021	Cymatosirales
+5	MP_E1111_SKQ2021	Florenciella
+35	MP_E1111_SKQ2021	Shimiella gracilenta
+2	MP_E1111_SKQ2021	Asterionellopsis glacialis
+3	MP_E1111_SKQ2021	Karlodinium
+3	MP_E1111_SKQ2021	Thalassiosira bioculata
+83	MP_E1111_SKQ2021	Karlodinium elegans
+205244	MP_E1112_SKQ2021	Unknown
+147	MP_E1112_SKQ2021	Peridiniales
+3	MP_E1112_SKQ2021	Coscinodiscophyceae
+22607	MP_E1112_SKQ2021	Gymnodiniales
+975	MP_E1112_SKQ2021	Dinophyceae
+18	MP_E1112_SKQ2021	Bacterosira sp_ RCC4607
+7	MP_E1112_SKQ2021	Cylindrotheca closterium
+1215	MP_E1112_SKQ2021	Prorocentrales
+262	MP_E1112_SKQ2021	Environmental Unknown
+26	MP_E1112_SKQ2021	Pseudo_nitzschia granii
+807	MP_E1112_SKQ2021	Chaetocerotales
+2486	MP_E1112_SKQ2021	Chaetoceros gelidus
+54	MP_E1112_SKQ2021	Pseudo_nitzschia pungens
+6	MP_E1112_SKQ2021	Thalassiosirales
+42	MP_E1112_SKQ2021	Fragilariopsis cylindrus
+137	MP_E1112_SKQ2021	Bacillariophyceae
+31	MP_E1112_SKQ2021	Pseudo_nitzschia
+1475	MP_E1112_SKQ2021	Gyrodinium dominans
+1	MP_E1112_SKQ2021	Chaetoceros
+107	MP_E1112_SKQ2021	Fragilariopsis oceanica
+6	MP_E1112_SKQ2021	Thalassiosira
+6014	MP_E1112_SKQ2021	Pseudo_nitzschia delicatissima
+61	MP_E1112_SKQ2021	Florenciellales
+7	MP_E1112_SKQ2021	Thalassiosira nordenskioeldii
+2	MP_E1112_SKQ2021	Thalassiosiraceae
+15	MP_E1112_SKQ2021	Levanderina__f__o
+10	MP_E1112_SKQ2021	Levanderina__f
+48	MP_E1112_SKQ2021	Thalassiosira sp_
+2	MP_E1112_SKQ2021	Kareniaceae
+1	MP_E1112_SKQ2021	Fragilariopsis
+2	MP_E1112_SKQ2021	Pelagodinium
+9	MP_E1112_SKQ2021	Bacillariales
+197571	MP_E1113_SKQ2021	Unknown
+211	MP_E1113_SKQ2021	Peridiniales
+6	MP_E1113_SKQ2021	Coscinodiscophyceae
+36909	MP_E1113_SKQ2021	Gymnodiniales
+15335	MP_E1113_SKQ2021	Dinophyceae
+526	MP_E1113_SKQ2021	Prorocentrales
+63	MP_E1113_SKQ2021	Environmental Unknown
+37	MP_E1113_SKQ2021	Chaetocerotales
+1669	MP_E1113_SKQ2021	Chaetoceros gelidus
+128	MP_E1113_SKQ2021	Pseudo_nitzschia pungens
+6	MP_E1113_SKQ2021	Fragilariopsis cylindrus
+28	MP_E1113_SKQ2021	Prorocentrum
+95	MP_E1113_SKQ2021	Pseudo_nitzschia
+808	MP_E1113_SKQ2021	Gyrodinium dominans
+2	MP_E1113_SKQ2021	Fragilariopsis oceanica
+6752	MP_E1113_SKQ2021	Pseudo_nitzschia delicatissima
+276	MP_E1113_SKQ2021	Florenciellales
+4	MP_E1113_SKQ2021	Thalassiosiraceae
+37	MP_E1113_SKQ2021	Levanderina__f__o
+26	MP_E1113_SKQ2021	Levanderina__f
+13	MP_E1113_SKQ2021	Minidiscus
+4	MP_E1113_SKQ2021	Cymatosirales
+28	MP_E1113_SKQ2021	Florenciella__f
+2	MP_E1113_SKQ2021	Shimiella gracilenta
+3	MP_E1113_SKQ2021	Tovelliaceae
+1	MP_E1113_SKQ2021	Gyrodinium
+12	MP_E1113_SKQ2021	Pelagodinium
+11	MP_E1113_SKQ2021	Azadinium perforatum
+5	MP_E1113_SKQ2021	Karlodinium elegans
+160319	MP_E1114_SKQ2021	Unknown
+102	MP_E1114_SKQ2021	Peridiniales
+20	MP_E1114_SKQ2021	Coscinodiscophyceae
+31240	MP_E1114_SKQ2021	Gymnodiniales
+13612	MP_E1114_SKQ2021	Dinophyceae
+1	MP_E1114_SKQ2021	Bacterosira sp_ RCC4607
+495	MP_E1114_SKQ2021	Prorocentrales
+74	MP_E1114_SKQ2021	Environmental Unknown
+2	MP_E1114_SKQ2021	Minidiscus trioculatus
+34	MP_E1114_SKQ2021	Chaetocerotales
+1432	MP_E1114_SKQ2021	Chaetoceros gelidus
+111	MP_E1114_SKQ2021	Pseudo_nitzschia pungens
+4	MP_E1114_SKQ2021	Fragilariopsis cylindrus
+61	MP_E1114_SKQ2021	Prorocentrum
+5	MP_E1114_SKQ2021	Bacillariophyceae
+82	MP_E1114_SKQ2021	Pseudo_nitzschia
+509	MP_E1114_SKQ2021	Gyrodinium dominans
+1	MP_E1114_SKQ2021	Thalassiosira hyalina
+1	MP_E1114_SKQ2021	Fragilariopsis oceanica
+6389	MP_E1114_SKQ2021	Pseudo_nitzschia delicatissima
+210	MP_E1114_SKQ2021	Florenciellales
+9	MP_E1114_SKQ2021	Thalassiosiraceae
+49	MP_E1114_SKQ2021	Levanderina__f__o
+19	MP_E1114_SKQ2021	Levanderina__f
+21	MP_E1114_SKQ2021	Minidiscus
+17	MP_E1114_SKQ2021	Florenciella
+3	MP_E1114_SKQ2021	Shimiella gracilenta
+2	MP_E1114_SKQ2021	Karlodinium veneficum
+5	MP_E1114_SKQ2021	Pelagodinium
+1	MP_E1114_SKQ2021	Thalassiosira bioculata
+8	MP_E1114_SKQ2021	Azadinium perforatum
+20	MP_E1114_SKQ2021	Karlodinium elegans
+1	MP_E1114_SKQ2021	Biecheleriaceae
+317	MP_E1115_SKQ2021	Unknown
+85	MP_E1115_SKQ2021	Gymnodiniales
+7	MP_E1115_SKQ2021	Dinophyceae
+3	MP_E1115_SKQ2021	Prorocentrales
+15	MP_E1115_SKQ2021	Chaetoceros gelidus
+2	MP_E1115_SKQ2021	Gyrodinium dominans
+47	MP_E1115_SKQ2021	Pseudo_nitzschia delicatissima
+184036	MP_E1116_SKQ2021	Unknown
+277	MP_E1116_SKQ2021	Peridiniales
+30	MP_E1116_SKQ2021	Coscinodiscophyceae
+50694	MP_E1116_SKQ2021	Gymnodiniales
+20194	MP_E1116_SKQ2021	Dinophyceae
+3	MP_E1116_SKQ2021	Bacterosira sp_ RCC4607
+5	MP_E1116_SKQ2021	Cylindrotheca closterium
+985	MP_E1116_SKQ2021	Prorocentrales
+126	MP_E1116_SKQ2021	Environmental Unknown
+35	MP_E1116_SKQ2021	Chaetocerotales
+2148	MP_E1116_SKQ2021	Chaetoceros gelidus
+463	MP_E1116_SKQ2021	Pseudo_nitzschia pungens
+26	MP_E1116_SKQ2021	Prorocentrum
+174	MP_E1116_SKQ2021	Pseudo_nitzschia
+389	MP_E1116_SKQ2021	Gyrodinium dominans
+1	MP_E1116_SKQ2021	Thalassiosira
+13297	MP_E1116_SKQ2021	Pseudo_nitzschia delicatissima
+186	MP_E1116_SKQ2021	Florenciellales
+8	MP_E1116_SKQ2021	Thalassiosiraceae
+67	MP_E1116_SKQ2021	Levanderina__f__o
+23	MP_E1116_SKQ2021	Levanderina__f
+15	MP_E1116_SKQ2021	Minidiscus
+1	MP_E1116_SKQ2021	Florenciella__f
+10	MP_E1116_SKQ2021	Florenciella
+4	MP_E1116_SKQ2021	Shimiella gracilenta
+36	MP_E1116_SKQ2021	Gyrodinium
+15	MP_E1116_SKQ2021	Pelagodinium
+2	MP_E1116_SKQ2021	Heterocapsa
+2	MP_E1116_SKQ2021	Thalassiosira bioculata
+2	MP_E1116_SKQ2021	Rhaponeidales
+6	MP_E1116_SKQ2021	Azadinium perforatum
+11	MP_E1116_SKQ2021	Karlodinium elegans
+4	MP_E1116_SKQ2021	Biecheleriaceae
+5	MP_E1116_SKQ2021	Phaeophyceae
+203781	MP_E1117_SKQ2021	Unknown
+278	MP_E1117_SKQ2021	Peridiniales
+19	MP_E1117_SKQ2021	Coscinodiscophyceae
+54478	MP_E1117_SKQ2021	Gymnodiniales
+23519	MP_E1117_SKQ2021	Dinophyceae
+1220	MP_E1117_SKQ2021	Prorocentrales
+146	MP_E1117_SKQ2021	Environmental Unknown
+54	MP_E1117_SKQ2021	Chaetocerotales
+1896	MP_E1117_SKQ2021	Chaetoceros gelidus
+507	MP_E1117_SKQ2021	Pseudo_nitzschia pungens
+22	MP_E1117_SKQ2021	Prorocentrum
+17	MP_E1117_SKQ2021	Bacillariophyceae
+190	MP_E1117_SKQ2021	Pseudo_nitzschia
+417	MP_E1117_SKQ2021	Gyrodinium dominans
+16	MP_E1117_SKQ2021	Fragilariopsis oceanica
+12033	MP_E1117_SKQ2021	Pseudo_nitzschia delicatissima
+327	MP_E1117_SKQ2021	Florenciellales
+131	MP_E1117_SKQ2021	Levanderina__f__o
+33	MP_E1117_SKQ2021	Levanderina__f
+25	MP_E1117_SKQ2021	Minidiscus
+2	MP_E1117_SKQ2021	Suessiales
+22	MP_E1117_SKQ2021	Florenciella__f
+1	MP_E1117_SKQ2021	Shimiella gracilenta
+19	MP_E1117_SKQ2021	Gyrodinium
+18	MP_E1117_SKQ2021	Pelagodinium
+1	MP_E1117_SKQ2021	Karlodinium
+3	MP_E1117_SKQ2021	Mediophyceae
+2	MP_E1117_SKQ2021	Bacillariales
+16	MP_E1117_SKQ2021	Azadinium perforatum
+13	MP_E1117_SKQ2021	Karlodinium elegans
+2	MP_E1117_SKQ2021	Gymnodinium aureolum
+6	MP_E1117_SKQ2021	Biecheleriaceae
+165577	MP_E1118_SKQ2021	Unknown
+236	MP_E1118_SKQ2021	Peridiniales
+2	MP_E1118_SKQ2021	Coscinodiscophyceae
+52759	MP_E1118_SKQ2021	Gymnodiniales
+2138	MP_E1118_SKQ2021	Dinophyceae
+14	MP_E1118_SKQ2021	Bacterosira sp_ RCC4607
+10875	MP_E1118_SKQ2021	Prorocentrales
+106	MP_E1118_SKQ2021	Environmental Unknown
+523	MP_E1118_SKQ2021	Chaetocerotales
+1914	MP_E1118_SKQ2021	Chaetoceros gelidus
+114	MP_E1118_SKQ2021	Pseudo_nitzschia pungens
+9	MP_E1118_SKQ2021	Pseudo_nitzschia seriata
+305	MP_E1118_SKQ2021	Fragilariopsis cylindrus
+2	MP_E1118_SKQ2021	Prorocentrum
+18	MP_E1118_SKQ2021	Bacillariophyceae
+217	MP_E1118_SKQ2021	Pseudo_nitzschia
+970	MP_E1118_SKQ2021	Gyrodinium dominans
+4	MP_E1118_SKQ2021	Chaetoceros
+30	MP_E1118_SKQ2021	Thalassiosira hyalina
+193	MP_E1118_SKQ2021	Fragilariopsis oceanica
+32	MP_E1118_SKQ2021	Thalassiosira
+27230	MP_E1118_SKQ2021	Pseudo_nitzschia delicatissima
+10	MP_E1118_SKQ2021	Florenciellales
+89	MP_E1118_SKQ2021	Levanderina__f__o
+18	MP_E1118_SKQ2021	Levanderina__f
+2	MP_E1118_SKQ2021	Minidiscus
+18	MP_E1118_SKQ2021	Thalassiosira sp_
+4	MP_E1118_SKQ2021	Porosira glacialis
+4	MP_E1118_SKQ2021	Pelagodinium
+11	MP_E1118_SKQ2021	Azadinium perforatum
+6	MP_E1118_SKQ2021	Prorocentrum criophilum
+143848	MP_E1119_SKQ2021	Unknown
+130	MP_E1119_SKQ2021	Peridiniales
+17	MP_E1119_SKQ2021	Coscinodiscophyceae
+67653	MP_E1119_SKQ2021	Gymnodiniales
+16216	MP_E1119_SKQ2021	Dinophyceae
+427	MP_E1119_SKQ2021	Prorocentrales
+162	MP_E1119_SKQ2021	Environmental Unknown
+22	MP_E1119_SKQ2021	Pseudo_nitzschia granii
+61	MP_E1119_SKQ2021	Chaetocerotales
+1136	MP_E1119_SKQ2021	Chaetoceros gelidus
+715	MP_E1119_SKQ2021	Pseudo_nitzschia pungens
+2	MP_E1119_SKQ2021	Pseudo_nitzschia seriata
+3	MP_E1119_SKQ2021	Fragilariopsis cylindrus
+35	MP_E1119_SKQ2021	Prorocentrum
+448	MP_E1119_SKQ2021	Pseudo_nitzschia
+489	MP_E1119_SKQ2021	Gyrodinium dominans
+45755	MP_E1119_SKQ2021	Pseudo_nitzschia delicatissima
+353	MP_E1119_SKQ2021	Florenciellales
+5	MP_E1119_SKQ2021	Thalassiosiraceae
+52	MP_E1119_SKQ2021	Levanderina__f__o
+6	MP_E1119_SKQ2021	Levanderina__f
+10	MP_E1119_SKQ2021	Minidiscus
+5	MP_E1119_SKQ2021	Cymatosirales
+18	MP_E1119_SKQ2021	Florenciella
+3	MP_E1119_SKQ2021	Shimiella gracilenta
+4	MP_E1119_SKQ2021	Bacillariaceae
+1	MP_E1119_SKQ2021	Karlodinium veneficum
+7	MP_E1119_SKQ2021	Gyrodinium
+24	MP_E1119_SKQ2021	Pelagodinium
+9	MP_E1119_SKQ2021	Karlodinium
+7	MP_E1119_SKQ2021	Azadinium obesum
+2	MP_E1119_SKQ2021	Thalassiosira bioculata
+2	MP_E1119_SKQ2021	Azadinium perforatum
+165552	MP_E1120_SKQ2021	Unknown
+118	MP_E1120_SKQ2021	Peridiniales
+42944	MP_E1120_SKQ2021	Gymnodiniales
+20088	MP_E1120_SKQ2021	Dinophyceae
+10	MP_E1120_SKQ2021	Bacterosira sp_ RCC4607
+244	MP_E1120_SKQ2021	Prorocentrales
+104	MP_E1120_SKQ2021	Environmental Unknown
+19	MP_E1120_SKQ2021	Pseudo_nitzschia granii
+52	MP_E1120_SKQ2021	Chaetocerotales
+742	MP_E1120_SKQ2021	Chaetoceros gelidus
+731	MP_E1120_SKQ2021	Pseudo_nitzschia pungens
+16	MP_E1120_SKQ2021	Pseudo_nitzschia seriata
+3	MP_E1120_SKQ2021	Fragilariopsis cylindrus
+8	MP_E1120_SKQ2021	Prorocentrum
+402	MP_E1120_SKQ2021	Pseudo_nitzschia
+354	MP_E1120_SKQ2021	Gyrodinium dominans
+6	MP_E1120_SKQ2021	Thalassiosira
+21867	MP_E1120_SKQ2021	Pseudo_nitzschia delicatissima
+202	MP_E1120_SKQ2021	Florenciellales
+6	MP_E1120_SKQ2021	Thalassiosiraceae
+52	MP_E1120_SKQ2021	Levanderina__f__o
+76	MP_E1120_SKQ2021	Levanderina__f
+1	MP_E1120_SKQ2021	Minidiscus
+3	MP_E1120_SKQ2021	Cymatosirales
+17	MP_E1120_SKQ2021	Florenciella
+4	MP_E1120_SKQ2021	Shimiella gracilenta
+1	MP_E1120_SKQ2021	Karlodinium veneficum
+3	MP_E1120_SKQ2021	Gyrodinium
+41	MP_E1120_SKQ2021	Pelagodinium
+5	MP_E1120_SKQ2021	Karlodinium
+7	MP_E1120_SKQ2021	Azadinium obesum
+5	MP_E1120_SKQ2021	Thalassiosira bioculata
+12	MP_E1120_SKQ2021	Peridiniaceae
+2	MP_E1120_SKQ2021	Azadinium perforatum
+2	MP_E1120_SKQ2021	Karlodinium elegans
+190656	MP_E1121_SKQ2021	Unknown
+470	MP_E1121_SKQ2021	Peridiniales
+44176	MP_E1121_SKQ2021	Gymnodiniales
+927	MP_E1121_SKQ2021	Dinophyceae
+66	MP_E1121_SKQ2021	Bacterosira sp_ RCC4607
+84	MP_E1121_SKQ2021	Cylindrotheca closterium
+9692	MP_E1121_SKQ2021	Prorocentrales
+162	MP_E1121_SKQ2021	Environmental Unknown
+11	MP_E1121_SKQ2021	Pseudo_nitzschia granii
+2109	MP_E1121_SKQ2021	Chaetocerotales
+1880	MP_E1121_SKQ2021	Chaetoceros gelidus
+1491	MP_E1121_SKQ2021	Pseudo_nitzschia pungens
+3	MP_E1121_SKQ2021	Thalassiosirales
+35	MP_E1121_SKQ2021	Pseudo_nitzschia seriata
+389	MP_E1121_SKQ2021	Fragilariopsis cylindrus
+43	MP_E1121_SKQ2021	Prorocentrum
+55	MP_E1121_SKQ2021	Bacillariophyceae
+126	MP_E1121_SKQ2021	Pseudo_nitzschia
+1565	MP_E1121_SKQ2021	Gyrodinium dominans
+62	MP_E1121_SKQ2021	Thalassiosira hyalina
+1493	MP_E1121_SKQ2021	Fragilariopsis oceanica
+57	MP_E1121_SKQ2021	Thalassiosira
+3	MP_E1121_SKQ2021	Gymnodiniaceae
+14296	MP_E1121_SKQ2021	Pseudo_nitzschia delicatissima
+3	MP_E1121_SKQ2021	Thalassiosira nordenskioeldii
+4	MP_E1121_SKQ2021	Thalassiosiraceae
+75	MP_E1121_SKQ2021	Levanderina__f__o
+40	MP_E1121_SKQ2021	Levanderina__f
+3	MP_E1121_SKQ2021	Thalassiosira sp_
+4	MP_E1121_SKQ2021	Porosira glacialis
+9	MP_E1121_SKQ2021	Fragilariopsis
+2	MP_E1121_SKQ2021	Pelagodinium
+35	MP_E1121_SKQ2021	Fragilariopsis reginae_jahniae
+1	MP_E1121_SKQ2021	Azadinium perforatum
+167673	MP_E1122_SKQ2021	Unknown
+98	MP_E1122_SKQ2021	Peridiniales
+4	MP_E1122_SKQ2021	Coscinodiscophyceae
+40930	MP_E1122_SKQ2021	Gymnodiniales
+18251	MP_E1122_SKQ2021	Dinophyceae
+283	MP_E1122_SKQ2021	Prorocentrales
+30	MP_E1122_SKQ2021	Environmental Unknown
+6	MP_E1122_SKQ2021	Pseudo_nitzschia granii
+342	MP_E1122_SKQ2021	Chaetocerotales
+10	MP_E1122_SKQ2021	Chaetocerotaceae
+2607	MP_E1122_SKQ2021	Chaetoceros gelidus
+1243	MP_E1122_SKQ2021	Pseudo_nitzschia pungens
+63	MP_E1122_SKQ2021	Pseudo_nitzschia seriata
+4	MP_E1122_SKQ2021	Fragilariopsis cylindrus
+10	MP_E1122_SKQ2021	Prorocentrum
+382	MP_E1122_SKQ2021	Pseudo_nitzschia
+798	MP_E1122_SKQ2021	Gyrodinium dominans
+3	MP_E1122_SKQ2021	Thalassiosira hyalina
+22	MP_E1122_SKQ2021	Fragilariopsis oceanica
+13	MP_E1122_SKQ2021	Thalassiosira
+27027	MP_E1122_SKQ2021	Pseudo_nitzschia delicatissima
+117	MP_E1122_SKQ2021	Florenciellales
+2	MP_E1122_SKQ2021	Thalassiosira sp_ RCC4858
+28	MP_E1122_SKQ2021	Levanderina__f__o
+45	MP_E1122_SKQ2021	Levanderina__f
+11	MP_E1122_SKQ2021	Florenciella__f
+12	MP_E1122_SKQ2021	Florenciella
+7	MP_E1122_SKQ2021	Shimiella gracilenta
+2	MP_E1122_SKQ2021	Bacillariaceae
+5	MP_E1122_SKQ2021	Karlodinium veneficum
+64	MP_E1122_SKQ2021	Pelagodinium
+7	MP_E1122_SKQ2021	Karlodinium
+2	MP_E1122_SKQ2021	Heterocapsa
+3	MP_E1122_SKQ2021	Azadinium obesum
+7	MP_E1122_SKQ2021	Thalassiosira bioculata
+170158	MP_E1123_SKQ2021	Unknown
+67	MP_E1123_SKQ2021	Peridiniales
+11	MP_E1123_SKQ2021	Coscinodiscophyceae
+38805	MP_E1123_SKQ2021	Gymnodiniales
+19984	MP_E1123_SKQ2021	Dinophyceae
+12	MP_E1123_SKQ2021	Bacterosira sp_ RCC4607
+404	MP_E1123_SKQ2021	Prorocentrales
+25	MP_E1123_SKQ2021	Environmental Unknown
+3	MP_E1123_SKQ2021	Pseudo_nitzschia granii
+304	MP_E1123_SKQ2021	Chaetocerotales
+2798	MP_E1123_SKQ2021	Chaetoceros gelidus
+1222	MP_E1123_SKQ2021	Pseudo_nitzschia pungens
+12	MP_E1123_SKQ2021	Pseudo_nitzschia seriata
+5	MP_E1123_SKQ2021	Fragilariopsis cylindrus
+42	MP_E1123_SKQ2021	Prorocentrum
+318	MP_E1123_SKQ2021	Pseudo_nitzschia
+579	MP_E1123_SKQ2021	Gyrodinium dominans
+33	MP_E1123_SKQ2021	Fragilariopsis oceanica
+14	MP_E1123_SKQ2021	Thalassiosira
+25605	MP_E1123_SKQ2021	Pseudo_nitzschia delicatissima
+150	MP_E1123_SKQ2021	Florenciellales
+4	MP_E1123_SKQ2021	Thalassiosiraceae
+4	MP_E1123_SKQ2021	Chaetoceros cf_ neogracilis clade II
+76	MP_E1123_SKQ2021	Levanderina__f__o
+78	MP_E1123_SKQ2021	Levanderina__f
+9	MP_E1123_SKQ2021	Minidiscus
+2	MP_E1123_SKQ2021	Cymatosirales
+6	MP_E1123_SKQ2021	Florenciella__f
+9	MP_E1123_SKQ2021	Florenciella
+13	MP_E1123_SKQ2021	Shimiella gracilenta
+1	MP_E1123_SKQ2021	Porosira glacialis
+2	MP_E1123_SKQ2021	Kareniaceae
+9	MP_E1123_SKQ2021	Bacillariaceae
+21	MP_E1123_SKQ2021	Karlodinium veneficum
+50	MP_E1123_SKQ2021	Pelagodinium
+8	MP_E1123_SKQ2021	Karlodinium
+1	MP_E1123_SKQ2021	Azadinium obesum
+5	MP_E1123_SKQ2021	Thalassiosira bioculata
+3	MP_E1123_SKQ2021	Azadinium perforatum
+158794	MP_E1124_SKQ2021	Unknown
+309	MP_E1124_SKQ2021	Peridiniales
+11	MP_E1124_SKQ2021	Coscinodiscophyceae
+79956	MP_E1124_SKQ2021	Gymnodiniales
+746	MP_E1124_SKQ2021	Dinophyceae
+189	MP_E1124_SKQ2021	Bacterosira sp_ RCC4607
+226	MP_E1124_SKQ2021	Cylindrotheca closterium
+4888	MP_E1124_SKQ2021	Prorocentrales
+164	MP_E1124_SKQ2021	Environmental Unknown
+4954	MP_E1124_SKQ2021	Chaetocerotales
+5799	MP_E1124_SKQ2021	Chaetoceros gelidus
+1465	MP_E1124_SKQ2021	Pseudo_nitzschia pungens
+4	MP_E1124_SKQ2021	Thalassiosirales
+22	MP_E1124_SKQ2021	Pseudo_nitzschia seriata
+42	MP_E1124_SKQ2021	Fragilariopsis cylindrus
+111	MP_E1124_SKQ2021	Prorocentrum
+276	MP_E1124_SKQ2021	Bacillariophyceae
+107	MP_E1124_SKQ2021	Pseudo_nitzschia
+252	MP_E1124_SKQ2021	Gyrodinium dominans
+271	MP_E1124_SKQ2021	Thalassiosira hyalina
+240	MP_E1124_SKQ2021	Fragilariopsis oceanica
+182	MP_E1124_SKQ2021	Thalassiosira
+24	MP_E1124_SKQ2021	Gymnodiniaceae
+13419	MP_E1124_SKQ2021	Pseudo_nitzschia delicatissima
+32	MP_E1124_SKQ2021	Thalassiosira nordenskioeldii
+80	MP_E1124_SKQ2021	Levanderina__f__o
+111	MP_E1124_SKQ2021	Levanderina__f
+26	MP_E1124_SKQ2021	Thalassiosira sp_
+1	MP_E1124_SKQ2021	Porosira glacialis
+3	MP_E1124_SKQ2021	Fragilariopsis
+2	MP_E1124_SKQ2021	Thalassiosira bioculata
+10	MP_E1124_SKQ2021	Thalassiosira aff_ guillardii IAL_2014
+185359	MP_E1125_SKQ2021	Unknown
+286	MP_E1125_SKQ2021	Peridiniales
+1	MP_E1125_SKQ2021	Coscinodiscophyceae
+64059	MP_E1125_SKQ2021	Gymnodiniales
+4773	MP_E1125_SKQ2021	Dinophyceae
+7	MP_E1125_SKQ2021	Bacterosira sp_ RCC4607
+71	MP_E1125_SKQ2021	Prorocentrales
+18	MP_E1125_SKQ2021	Environmental Unknown
+7	MP_E1125_SKQ2021	Minidiscus trioculatus
+242	MP_E1125_SKQ2021	Chaetocerotales
+42	MP_E1125_SKQ2021	Chaetocerotaceae
+4005	MP_E1125_SKQ2021	Chaetoceros gelidus
+5826	MP_E1125_SKQ2021	Pseudo_nitzschia pungens
+1	MP_E1125_SKQ2021	Thalassiosirales
+108	MP_E1125_SKQ2021	Fragilariopsis cylindrus
+202	MP_E1125_SKQ2021	Prorocentrum
+365	MP_E1125_SKQ2021	Pseudo_nitzschia
+312	MP_E1125_SKQ2021	Gyrodinium dominans
+9	MP_E1125_SKQ2021	Chaetoceros
+26	MP_E1125_SKQ2021	Thalassiosira hyalina
+23	MP_E1125_SKQ2021	Fragilariopsis oceanica
+24	MP_E1125_SKQ2021	Thalassiosira
+40337	MP_E1125_SKQ2021	Pseudo_nitzschia delicatissima
+76	MP_E1125_SKQ2021	Florenciellales
+4	MP_E1125_SKQ2021	Thalassiosira nordenskioeldii
+37	MP_E1125_SKQ2021	Levanderina__f__o
+24	MP_E1125_SKQ2021	Levanderina__f
+17	MP_E1125_SKQ2021	Minidiscus
+17	MP_E1125_SKQ2021	Cymatosirales
+3	MP_E1125_SKQ2021	Thalassiosira sp_
+6	MP_E1125_SKQ2021	Florenciella__f
+11	MP_E1125_SKQ2021	Pelagomonadales
+69	MP_E1125_SKQ2021	Shimiella gracilenta
+22	MP_E1125_SKQ2021	Bacillariaceae
+11	MP_E1125_SKQ2021	Karlodinium veneficum
+38	MP_E1125_SKQ2021	Pelagodinium
+28	MP_E1125_SKQ2021	Karlodinium
+23	MP_E1125_SKQ2021	Thalassiosira bioculata
+6	MP_E1125_SKQ2021	Tentaculata
+3	MP_E1125_SKQ2021	Ctenophora sp_ _in_ diatoms_
+2	MP_E1125_SKQ2021	Limacina helicina
+174992	MP_E1126_SKQ2021	Unknown
+119	MP_E1126_SKQ2021	Peridiniales
+1	MP_E1126_SKQ2021	Coscinodiscophyceae
+60693	MP_E1126_SKQ2021	Gymnodiniales
+4498	MP_E1126_SKQ2021	Dinophyceae
+1	MP_E1126_SKQ2021	Bacterosira sp_ RCC4607
+91	MP_E1126_SKQ2021	Prorocentrales
+16	MP_E1126_SKQ2021	Environmental Unknown
+15	MP_E1126_SKQ2021	Pseudo_nitzschia granii
+464	MP_E1126_SKQ2021	Chaetocerotales
+25	MP_E1126_SKQ2021	Chaetocerotaceae
+5735	MP_E1126_SKQ2021	Chaetoceros gelidus
+7982	MP_E1126_SKQ2021	Pseudo_nitzschia pungens
+30	MP_E1126_SKQ2021	Fragilariopsis cylindrus
+20	MP_E1126_SKQ2021	Prorocentrum
+397	MP_E1126_SKQ2021	Pseudo_nitzschia
+20	MP_E1126_SKQ2021	Gyrodinium dominans
+6	MP_E1126_SKQ2021	Chaetoceros
+10	MP_E1126_SKQ2021	Thalassiosira hyalina
+4	MP_E1126_SKQ2021	Fragilariopsis oceanica
+5	MP_E1126_SKQ2021	Thalassiosira
+33614	MP_E1126_SKQ2021	Pseudo_nitzschia delicatissima
+49	MP_E1126_SKQ2021	Florenciellales
+24	MP_E1126_SKQ2021	Levanderina__f__o
+34	MP_E1126_SKQ2021	Levanderina__f
+6	MP_E1126_SKQ2021	Florenciella__f
+3	MP_E1126_SKQ2021	Florenciella
+56	MP_E1126_SKQ2021	Shimiella gracilenta
+6	MP_E1126_SKQ2021	Kareniaceae
+29	MP_E1126_SKQ2021	Bacillariaceae
+8	MP_E1126_SKQ2021	Karlodinium veneficum
+94	MP_E1126_SKQ2021	Heterocapsa triquetra
+1	MP_E1126_SKQ2021	Pelagodinium
+15	MP_E1126_SKQ2021	Karlodinium
+2	MP_E1126_SKQ2021	Biecheleriaceae
+2	MP_E1126_SKQ2021	Phaeophyceae
+2	MP_E1126_SKQ2021	Limacina helicina
+183801	MP_E1127_SKQ2021	Unknown
+653	MP_E1127_SKQ2021	Peridiniales
+2	MP_E1127_SKQ2021	Coscinodiscophyceae
+76046	MP_E1127_SKQ2021	Gymnodiniales
+7046	MP_E1127_SKQ2021	Dinophyceae
+4	MP_E1127_SKQ2021	Bacterosira sp_ RCC4607
+100	MP_E1127_SKQ2021	Prorocentrales
+14	MP_E1127_SKQ2021	Environmental Unknown
+337	MP_E1127_SKQ2021	Chaetocerotales
+38	MP_E1127_SKQ2021	Chaetocerotaceae
+10105	MP_E1127_SKQ2021	Chaetoceros gelidus
+9146	MP_E1127_SKQ2021	Pseudo_nitzschia pungens
+13	MP_E1127_SKQ2021	Fragilariopsis cylindrus
+229	MP_E1127_SKQ2021	Prorocentrum
+535	MP_E1127_SKQ2021	Pseudo_nitzschia
+587	MP_E1127_SKQ2021	Gyrodinium dominans
+15	MP_E1127_SKQ2021	Thalassiosira hyalina
+2	MP_E1127_SKQ2021	Fragilariopsis oceanica
+22	MP_E1127_SKQ2021	Thalassiosira
+38527	MP_E1127_SKQ2021	Pseudo_nitzschia delicatissima
+86	MP_E1127_SKQ2021	Florenciellales
+6	MP_E1127_SKQ2021	Thalassiosira nordenskioeldii
+61	MP_E1127_SKQ2021	Levanderina__f__o
+106	MP_E1127_SKQ2021	Levanderina__f
+6	MP_E1127_SKQ2021	Minidiscus
+5	MP_E1127_SKQ2021	Cymatosirales
+6	MP_E1127_SKQ2021	Florenciella__f
+4	MP_E1127_SKQ2021	Florenciella
+2	MP_E1127_SKQ2021	Pelagomonadales
+94	MP_E1127_SKQ2021	Shimiella gracilenta
+5	MP_E1127_SKQ2021	Kareniaceae
+13	MP_E1127_SKQ2021	Bacillariaceae
+30	MP_E1127_SKQ2021	Karlodinium veneficum
+14	MP_E1127_SKQ2021	Pelagodinium
+12	MP_E1127_SKQ2021	Karlodinium
+191783	MP_E1128_SKQ2021	Unknown
+390	MP_E1128_SKQ2021	Peridiniales
+59948	MP_E1128_SKQ2021	Gymnodiniales
+6726	MP_E1128_SKQ2021	Dinophyceae
+8	MP_E1128_SKQ2021	Bacterosira sp_ RCC4607
+7	MP_E1128_SKQ2021	Cylindrotheca closterium
+104	MP_E1128_SKQ2021	Prorocentrales
+8	MP_E1128_SKQ2021	Environmental Unknown
+232	MP_E1128_SKQ2021	Chaetocerotales
+11	MP_E1128_SKQ2021	Chaetocerotaceae
+5793	MP_E1128_SKQ2021	Chaetoceros gelidus
+4008	MP_E1128_SKQ2021	Pseudo_nitzschia pungens
+15	MP_E1128_SKQ2021	Fragilariopsis cylindrus
+144	MP_E1128_SKQ2021	Prorocentrum
+378	MP_E1128_SKQ2021	Pseudo_nitzschia
+248	MP_E1128_SKQ2021	Gyrodinium dominans
+15	MP_E1128_SKQ2021	Chaetoceros
+10	MP_E1128_SKQ2021	Thalassiosira hyalina
+2	MP_E1128_SKQ2021	Fragilariopsis oceanica
+13	MP_E1128_SKQ2021	Thalassiosira
+31883	MP_E1128_SKQ2021	Pseudo_nitzschia delicatissima
+66	MP_E1128_SKQ2021	Florenciellales
+44	MP_E1128_SKQ2021	Levanderina__f__o
+29	MP_E1128_SKQ2021	Levanderina__f
+5	MP_E1128_SKQ2021	Minidiscus
+6	MP_E1128_SKQ2021	Cymatosirales
+10	MP_E1128_SKQ2021	Florenciella
+54	MP_E1128_SKQ2021	Shimiella gracilenta
+4	MP_E1128_SKQ2021	Kareniaceae
+5	MP_E1128_SKQ2021	Bacillariaceae
+16	MP_E1128_SKQ2021	Karlodinium veneficum
+80	MP_E1128_SKQ2021	Heterocapsa triquetra
+17	MP_E1128_SKQ2021	Pelagodinium
+4	MP_E1128_SKQ2021	Karlodinium
+1	MP_E1128_SKQ2021	Bacillariales
+55	MP_E1128_SKQ2021	Peridiniaceae
+180090	MP_E1129_SKQ2021	Unknown
+325	MP_E1129_SKQ2021	Peridiniales
+5	MP_E1129_SKQ2021	Coscinodiscophyceae
+33767	MP_E1129_SKQ2021	Gymnodiniales
+1116	MP_E1129_SKQ2021	Dinophyceae
+166	MP_E1129_SKQ2021	Bacterosira sp_ RCC4607
+59	MP_E1129_SKQ2021	Cylindrotheca closterium
+7245	MP_E1129_SKQ2021	Prorocentrales
+59	MP_E1129_SKQ2021	Environmental Unknown
+48	MP_E1129_SKQ2021	Pseudo_nitzschia granii
+2850	MP_E1129_SKQ2021	Chaetocerotales
+7858	MP_E1129_SKQ2021	Chaetoceros gelidus
+657	MP_E1129_SKQ2021	Pseudo_nitzschia pungens
+35	MP_E1129_SKQ2021	Pseudo_nitzschia seriata
+642	MP_E1129_SKQ2021	Fragilariopsis cylindrus
+34	MP_E1129_SKQ2021	Prorocentrum
+120	MP_E1129_SKQ2021	Bacillariophyceae
+84	MP_E1129_SKQ2021	Pseudo_nitzschia
+564	MP_E1129_SKQ2021	Gyrodinium dominans
+596	MP_E1129_SKQ2021	Thalassiosira hyalina
+624	MP_E1129_SKQ2021	Fragilariopsis oceanica
+366	MP_E1129_SKQ2021	Thalassiosira
+10254	MP_E1129_SKQ2021	Pseudo_nitzschia delicatissima
+8	MP_E1129_SKQ2021	Florenciellales
+9	MP_E1129_SKQ2021	Thalassiosira nordenskioeldii
+3	MP_E1129_SKQ2021	Chaetoceros cf_ neogracilis clade II
+16	MP_E1129_SKQ2021	Levanderina__f__o
+18	MP_E1129_SKQ2021	Levanderina__f
+1	MP_E1129_SKQ2021	Minidiscus
+3	MP_E1129_SKQ2021	Fragilariopsis
+6	MP_E1129_SKQ2021	Karlodinium veneficum
+8	MP_E1129_SKQ2021	Tovelliaceae
+138	MP_E1129_SKQ2021	Heterocapsa triquetra
+3	MP_E1129_SKQ2021	Pelagodinium
+3	MP_E1129_SKQ2021	Karlodinium
+4	MP_E1129_SKQ2021	Mediophyceae
+21	MP_E1129_SKQ2021	Fragilariopsis reginae_jahniae
+8	MP_E1129_SKQ2021	Bacillariales
+4	MP_E1129_SKQ2021	Karlodinium elegans
+193595	MP_E1130_SKQ2021	Unknown
+122	MP_E1130_SKQ2021	Peridiniales
+1	MP_E1130_SKQ2021	Coscinodiscophyceae
+42850	MP_E1130_SKQ2021	Gymnodiniales
+659	MP_E1130_SKQ2021	Dinophyceae
+13	MP_E1130_SKQ2021	Bacterosira sp_ RCC4607
+44	MP_E1130_SKQ2021	Cylindrotheca closterium
+913	MP_E1130_SKQ2021	Prorocentrales
+41	MP_E1130_SKQ2021	Environmental Unknown
+73	MP_E1130_SKQ2021	Pseudo_nitzschia granii
+706	MP_E1130_SKQ2021	Chaetocerotales
+29	MP_E1130_SKQ2021	Chaetocerotaceae
+2093	MP_E1130_SKQ2021	Chaetoceros gelidus
+744	MP_E1130_SKQ2021	Pseudo_nitzschia pungens
+3	MP_E1130_SKQ2021	Thalassiosirales
+16	MP_E1130_SKQ2021	Pseudo_nitzschia seriata
+132	MP_E1130_SKQ2021	Fragilariopsis cylindrus
+3	MP_E1130_SKQ2021	Prorocentrum
+14	MP_E1130_SKQ2021	Bacillariophyceae
+127	MP_E1130_SKQ2021	Pseudo_nitzschia
+521	MP_E1130_SKQ2021	Gyrodinium dominans
+6	MP_E1130_SKQ2021	Chaetoceros
+9	MP_E1130_SKQ2021	Thalassiosira hyalina
+117	MP_E1130_SKQ2021	Fragilariopsis oceanica
+17	MP_E1130_SKQ2021	Thalassiosira
+3	MP_E1130_SKQ2021	Gymnodiniaceae
+8201	MP_E1130_SKQ2021	Pseudo_nitzschia delicatissima
+28	MP_E1130_SKQ2021	Levanderina__f__o
+5	MP_E1130_SKQ2021	Thalassiosira sp_
+1	MP_E1130_SKQ2021	Karlodinium veneficum
+102	MP_E1130_SKQ2021	Heterocapsa triquetra
+10	MP_E1130_SKQ2021	Bacillariales
+146374	MP_E1131_SKQ2021	Unknown
+171	MP_E1131_SKQ2021	Peridiniales
+115673	MP_E1131_SKQ2021	Gymnodiniales
+1014	MP_E1131_SKQ2021	Dinophyceae
+22	MP_E1131_SKQ2021	Environmental Unknown
+42	MP_E1131_SKQ2021	Chaetocerotaceae
+344	MP_E1131_SKQ2021	Chaetoceros gelidus
+5558	MP_E1131_SKQ2021	Pseudo_nitzschia pungens
+18	MP_E1131_SKQ2021	Pseudo_nitzschia seriata
+288	MP_E1131_SKQ2021	Prorocentrum
+45	MP_E1131_SKQ2021	Pseudo_nitzschia
+32	MP_E1131_SKQ2021	Thalassiosira hyalina
+4	MP_E1131_SKQ2021	Thalassiosira
+4926	MP_E1131_SKQ2021	Pseudo_nitzschia delicatissima
+4	MP_E1131_SKQ2021	Florenciellales
+55	MP_E1131_SKQ2021	Levanderina__f__o
+7	MP_E1131_SKQ2021	Levanderina__f
+11	MP_E1131_SKQ2021	Florenciella__f
+40	MP_E1131_SKQ2021	Pelagomonadales
+6	MP_E1131_SKQ2021	Shimiella gracilenta
+6	MP_E1131_SKQ2021	Karlodinium veneficum
+4064	MP_E1131_SKQ2021	Heterocapsa triquetra
+8	MP_E1131_SKQ2021	Karlodinium
+150430	MP_E1132_SKQ2021	Unknown
+51	MP_E1132_SKQ2021	Peridiniales
+118302	MP_E1132_SKQ2021	Gymnodiniales
+5381	MP_E1132_SKQ2021	Dinophyceae
+27	MP_E1132_SKQ2021	Cylindrotheca closterium
+23	MP_E1132_SKQ2021	Pseudo_nitzschia granii
+136	MP_E1132_SKQ2021	Chaetocerotales
+583	MP_E1132_SKQ2021	Chaetoceros gelidus
+9910	MP_E1132_SKQ2021	Pseudo_nitzschia pungens
+86	MP_E1132_SKQ2021	Prorocentrum
+138	MP_E1132_SKQ2021	Pseudo_nitzschia
+156	MP_E1132_SKQ2021	Gyrodinium dominans
+7879	MP_E1132_SKQ2021	Pseudo_nitzschia delicatissima
+35	MP_E1132_SKQ2021	Florenciellales
+27	MP_E1132_SKQ2021	Levanderina__f__o
+185	MP_E1132_SKQ2021	Levanderina__f
+27	MP_E1132_SKQ2021	Thalassiosira sp_
+5	MP_E1132_SKQ2021	Florenciella
+18	MP_E1132_SKQ2021	Pelagomonadales
+215	MP_E1132_SKQ2021	Shimiella gracilenta
+16	MP_E1132_SKQ2021	Kareniaceae
+16	MP_E1132_SKQ2021	Karlodinium veneficum
+60	MP_E1132_SKQ2021	Heterocapsa triquetra
+23	MP_E1132_SKQ2021	Pelagodinium
+9	MP_E1132_SKQ2021	Phaeophyceae
+5	MP_E1132_SKQ2021	Pythiales
+192731	MP_E1133_SKQ2021	Unknown
+241	MP_E1133_SKQ2021	Peridiniales
+1	MP_E1133_SKQ2021	Coscinodiscophyceae
+40697	MP_E1133_SKQ2021	Gymnodiniales
+1421	MP_E1133_SKQ2021	Dinophyceae
+35	MP_E1133_SKQ2021	Bacterosira sp_ RCC4607
+1397	MP_E1133_SKQ2021	Prorocentrales
+67	MP_E1133_SKQ2021	Environmental Unknown
+254	MP_E1133_SKQ2021	Pseudo_nitzschia granii
+3	MP_E1133_SKQ2021	Minidiscus trioculatus
+1117	MP_E1133_SKQ2021	Chaetocerotales
+459	MP_E1133_SKQ2021	Chaetocerotaceae
+21828	MP_E1133_SKQ2021	Chaetoceros gelidus
+688	MP_E1133_SKQ2021	Pseudo_nitzschia pungens
+201	MP_E1133_SKQ2021	Pseudo_nitzschia seriata
+189	MP_E1133_SKQ2021	Fragilariopsis cylindrus
+27	MP_E1133_SKQ2021	Prorocentrum
+27	MP_E1133_SKQ2021	Bacillariophyceae
+282	MP_E1133_SKQ2021	Pseudo_nitzschia
+1171	MP_E1133_SKQ2021	Gyrodinium dominans
+82	MP_E1133_SKQ2021	Chaetoceros
+11	MP_E1133_SKQ2021	Thalassiosira hyalina
+169	MP_E1133_SKQ2021	Fragilariopsis oceanica
+16	MP_E1133_SKQ2021	Thalassiosira
+41252	MP_E1133_SKQ2021	Pseudo_nitzschia delicatissima
+17	MP_E1133_SKQ2021	Florenciellales
+3	MP_E1133_SKQ2021	Thalassiosiraceae
+1	MP_E1133_SKQ2021	Thalassiosira sp_ RCC4858
+42	MP_E1133_SKQ2021	Levanderina__f__o
+43	MP_E1133_SKQ2021	Levanderina__f
+6	MP_E1133_SKQ2021	Minidiscus
+13	MP_E1133_SKQ2021	Cymatosirales
+8	MP_E1133_SKQ2021	Florenciella
+3	MP_E1133_SKQ2021	Shimiella gracilenta
+7	MP_E1133_SKQ2021	Bacillariaceae
+4	MP_E1133_SKQ2021	Karlodinium veneficum
+28	MP_E1133_SKQ2021	Heterocapsa triquetra
+3	MP_E1133_SKQ2021	Thalassiosira bioculata
+12	MP_E1133_SKQ2021	Bacillariales
+5	MP_E1133_SKQ2021	Bacterosira
+195783	MP_E1134_SKQ2021	Unknown
+441	MP_E1134_SKQ2021	Peridiniales
+37013	MP_E1134_SKQ2021	Gymnodiniales
+1701	MP_E1134_SKQ2021	Dinophyceae
+12	MP_E1134_SKQ2021	Bacterosira sp_ RCC4607
+9	MP_E1134_SKQ2021	Cylindrotheca closterium
+1514	MP_E1134_SKQ2021	Prorocentrales
+22	MP_E1134_SKQ2021	Environmental Unknown
+214	MP_E1134_SKQ2021	Pseudo_nitzschia granii
+7	MP_E1134_SKQ2021	Minidiscus trioculatus
+548	MP_E1134_SKQ2021	Chaetocerotales
+348	MP_E1134_SKQ2021	Chaetocerotaceae
+14554	MP_E1134_SKQ2021	Chaetoceros gelidus
+1531	MP_E1134_SKQ2021	Pseudo_nitzschia pungens
+17	MP_E1134_SKQ2021	Pseudo_nitzschia seriata
+87	MP_E1134_SKQ2021	Fragilariopsis cylindrus
+37	MP_E1134_SKQ2021	Prorocentrum
+3	MP_E1134_SKQ2021	Bacillariophyceae
+257	MP_E1134_SKQ2021	Pseudo_nitzschia
+1299	MP_E1134_SKQ2021	Gyrodinium dominans
+37	MP_E1134_SKQ2021	Chaetoceros
+9	MP_E1134_SKQ2021	Thalassiosira hyalina
+80	MP_E1134_SKQ2021	Fragilariopsis oceanica
+26	MP_E1134_SKQ2021	Thalassiosira
+35360	MP_E1134_SKQ2021	Pseudo_nitzschia delicatissima
+13	MP_E1134_SKQ2021	Florenciellales
+2	MP_E1134_SKQ2021	Thalassiosiraceae
+46	MP_E1134_SKQ2021	Levanderina__f__o
+90	MP_E1134_SKQ2021	Levanderina__f
+4	MP_E1134_SKQ2021	Minidiscus
+12	MP_E1134_SKQ2021	Cymatosirales
+1	MP_E1134_SKQ2021	Florenciella
+2	MP_E1134_SKQ2021	Shimiella gracilenta
+2	MP_E1134_SKQ2021	Fragilariopsis
+23	MP_E1134_SKQ2021	Bacillariaceae
+6	MP_E1134_SKQ2021	Karlodinium veneficum
+15	MP_E1134_SKQ2021	Tovelliaceae
+49	MP_E1134_SKQ2021	Heterocapsa triquetra
+1	MP_E1134_SKQ2021	Karlodinium
+15	MP_E1134_SKQ2021	Fragilariopsis reginae_jahniae
+3	MP_E1134_SKQ2021	Thalassiosira bioculata
+2	MP_E1134_SKQ2021	Fragilariopsis pacifica
+3	MP_E1134_SKQ2021	Conticribra
+2	MP_E1134_SKQ2021	Azadinium trinitatum
+221070	MP_E1135_SKQ2021	Unknown
+130	MP_E1135_SKQ2021	Peridiniales
+22743	MP_E1135_SKQ2021	Gymnodiniales
+3433	MP_E1135_SKQ2021	Dinophyceae
+2	MP_E1135_SKQ2021	Bacterosira sp_ RCC4607
+32	MP_E1135_SKQ2021	Cylindrotheca closterium
+501	MP_E1135_SKQ2021	Prorocentrales
+18	MP_E1135_SKQ2021	Environmental Unknown
+180	MP_E1135_SKQ2021	Pseudo_nitzschia granii
+336	MP_E1135_SKQ2021	Chaetocerotales
+52	MP_E1135_SKQ2021	Chaetocerotaceae
+17264	MP_E1135_SKQ2021	Chaetoceros gelidus
+876	MP_E1135_SKQ2021	Pseudo_nitzschia pungens
+123	MP_E1135_SKQ2021	Pseudo_nitzschia seriata
+26	MP_E1135_SKQ2021	Fragilariopsis cylindrus
+9	MP_E1135_SKQ2021	Prorocentrum
+294	MP_E1135_SKQ2021	Pseudo_nitzschia
+914	MP_E1135_SKQ2021	Gyrodinium dominans
+10	MP_E1135_SKQ2021	Chaetoceros
+3	MP_E1135_SKQ2021	Thalassiosira hyalina
+38	MP_E1135_SKQ2021	Fragilariopsis oceanica
+2	MP_E1135_SKQ2021	Thalassiosira
+30929	MP_E1135_SKQ2021	Pseudo_nitzschia delicatissima
+6	MP_E1135_SKQ2021	Florenciellales
+1	MP_E1135_SKQ2021	Thalassiosira nordenskioeldii
+29	MP_E1135_SKQ2021	Levanderina__f__o
+18	MP_E1135_SKQ2021	Levanderina__f
+3	MP_E1135_SKQ2021	Minidiscus
+5	MP_E1135_SKQ2021	Cymatosirales
+9	MP_E1135_SKQ2021	Shimiella gracilenta
+1	MP_E1135_SKQ2021	Porosira glacialis
+2	MP_E1135_SKQ2021	Fragilariopsis
+8	MP_E1135_SKQ2021	Bacillariaceae
+26	MP_E1135_SKQ2021	Heterocapsa triquetra
+1	MP_E1135_SKQ2021	Karlodinium
+4	MP_E1135_SKQ2021	Thalassiosira bioculata
+11	MP_E1135_SKQ2021	Bacillariales
+3	MP_E1135_SKQ2021	Karlodinium elegans
+141266	MP_E1136_SKQ2021	Unknown
+116	MP_E1136_SKQ2021	Peridiniales
+32785	MP_E1136_SKQ2021	Gymnodiniales
+2432	MP_E1136_SKQ2021	Dinophyceae
+6	MP_E1136_SKQ2021	Bacterosira sp_ RCC4607
+10	MP_E1136_SKQ2021	Cylindrotheca closterium
+297	MP_E1136_SKQ2021	Prorocentrales
+10	MP_E1136_SKQ2021	Environmental Unknown
+1326	MP_E1136_SKQ2021	Pseudo_nitzschia granii
+320	MP_E1136_SKQ2021	Chaetocerotales
+69	MP_E1136_SKQ2021	Chaetocerotaceae
+27898	MP_E1136_SKQ2021	Chaetoceros gelidus
+253	MP_E1136_SKQ2021	Pseudo_nitzschia pungens
+416	MP_E1136_SKQ2021	Pseudo_nitzschia seriata
+97	MP_E1136_SKQ2021	Fragilariopsis cylindrus
+1	MP_E1136_SKQ2021	Prorocentrum
+274	MP_E1136_SKQ2021	Pseudo_nitzschia
+649	MP_E1136_SKQ2021	Gyrodinium dominans
+11	MP_E1136_SKQ2021	Chaetoceros
+5	MP_E1136_SKQ2021	Thalassiosira hyalina
+6	MP_E1136_SKQ2021	Fragilariopsis oceanica
+11	MP_E1136_SKQ2021	Thalassiosira
+51350	MP_E1136_SKQ2021	Pseudo_nitzschia delicatissima
+22	MP_E1136_SKQ2021	Florenciellales
+8	MP_E1136_SKQ2021	Levanderina__f__o
+24	MP_E1136_SKQ2021	Levanderina__f
+1	MP_E1136_SKQ2021	Cymatosirales
+7	MP_E1136_SKQ2021	Florenciella
+1	MP_E1136_SKQ2021	Shionodiscus sp_ IAL_2014
+4	MP_E1136_SKQ2021	Bacillariaceae
+90	MP_E1136_SKQ2021	Heterocapsa triquetra
+2	MP_E1136_SKQ2021	Karlodinium
+3	MP_E1136_SKQ2021	Mediophyceae
+43	MP_E1136_SKQ2021	Bacillariales
+5	MP_E1136_SKQ2021	Fragilariopsis pacifica
+201165	MP_E1137_SKQ2021	Unknown
+252	MP_E1137_SKQ2021	Peridiniales
+38133	MP_E1137_SKQ2021	Gymnodiniales
+3986	MP_E1137_SKQ2021	Dinophyceae
+10	MP_E1137_SKQ2021	Bacterosira sp_ RCC4607
+20	MP_E1137_SKQ2021	Cylindrotheca closterium
+117	MP_E1137_SKQ2021	Prorocentrales
+37	MP_E1137_SKQ2021	Environmental Unknown
+1782	MP_E1137_SKQ2021	Pseudo_nitzschia granii
+679	MP_E1137_SKQ2021	Chaetocerotales
+78	MP_E1137_SKQ2021	Chaetocerotaceae
+43105	MP_E1137_SKQ2021	Chaetoceros gelidus
+400	MP_E1137_SKQ2021	Pseudo_nitzschia pungens
+48	MP_E1137_SKQ2021	Pseudo_nitzschia seriata
+86	MP_E1137_SKQ2021	Fragilariopsis cylindrus
+2	MP_E1137_SKQ2021	Prorocentrum
+1	MP_E1137_SKQ2021	Bacillariophyceae
+541	MP_E1137_SKQ2021	Pseudo_nitzschia
+1343	MP_E1137_SKQ2021	Gyrodinium dominans
+30	MP_E1137_SKQ2021	Chaetoceros
+9	MP_E1137_SKQ2021	Thalassiosira hyalina
+20	MP_E1137_SKQ2021	Fragilariopsis oceanica
+3	MP_E1137_SKQ2021	Thalassiosira
+65868	MP_E1137_SKQ2021	Pseudo_nitzschia delicatissima
+23	MP_E1137_SKQ2021	Florenciellales
+26	MP_E1137_SKQ2021	Levanderina__f__o
+19	MP_E1137_SKQ2021	Levanderina__f
+4	MP_E1137_SKQ2021	Florenciella
+1	MP_E1137_SKQ2021	Porosira glacialis
+4	MP_E1137_SKQ2021	Fragilariopsis
+12	MP_E1137_SKQ2021	Bacillariaceae
+25	MP_E1137_SKQ2021	Heterocapsa triquetra
+3	MP_E1137_SKQ2021	Karlodinium
+13	MP_E1137_SKQ2021	Fragilariopsis reginae_jahniae
+31	MP_E1137_SKQ2021	Bacillariales
+19	MP_E1137_SKQ2021	Peridiniaceae
+3	MP_E1137_SKQ2021	Fragilariopsis pacifica
+201790	MP_E1138_SKQ2021	Unknown
+398	MP_E1138_SKQ2021	Peridiniales
+27638	MP_E1138_SKQ2021	Gymnodiniales
+4437	MP_E1138_SKQ2021	Dinophyceae
+3	MP_E1138_SKQ2021	Bacterosira sp_ RCC4607
+164	MP_E1138_SKQ2021	Prorocentrales
+37	MP_E1138_SKQ2021	Environmental Unknown
+1741	MP_E1138_SKQ2021	Pseudo_nitzschia granii
+565	MP_E1138_SKQ2021	Chaetocerotales
+38	MP_E1138_SKQ2021	Chaetocerotaceae
+30165	MP_E1138_SKQ2021	Chaetoceros gelidus
+261	MP_E1138_SKQ2021	Pseudo_nitzschia pungens
+292	MP_E1138_SKQ2021	Pseudo_nitzschia seriata
+40	MP_E1138_SKQ2021	Fragilariopsis cylindrus
+295	MP_E1138_SKQ2021	Pseudo_nitzschia
+960	MP_E1138_SKQ2021	Gyrodinium dominans
+4	MP_E1138_SKQ2021	Chaetoceros
+6	MP_E1138_SKQ2021	Thalassiosira hyalina
+18	MP_E1138_SKQ2021	Fragilariopsis oceanica
+11	MP_E1138_SKQ2021	Thalassiosira
+41159	MP_E1138_SKQ2021	Pseudo_nitzschia delicatissima
+18	MP_E1138_SKQ2021	Florenciellales
+1	MP_E1138_SKQ2021	Thalassiosiraceae
+9	MP_E1138_SKQ2021	Levanderina__f__o
+16	MP_E1138_SKQ2021	Levanderina__f
+2	MP_E1138_SKQ2021	Thalassiosira sp_
+3	MP_E1138_SKQ2021	Shimiella gracilenta
+2	MP_E1138_SKQ2021	Shionodiscus sp_ IAL_2014
+15	MP_E1138_SKQ2021	Bacillariaceae
+34	MP_E1138_SKQ2021	Heterocapsa triquetra
+4	MP_E1138_SKQ2021	Pelagodinium
+2	MP_E1138_SKQ2021	Chaetoceros sp_ CCAP 1010_16
+5	MP_E1138_SKQ2021	Bacillariales
+3	MP_E1138_SKQ2021	Azadinium perforatum
+2	MP_E1138_SKQ2021	Limacina helicina
+142485	MP_E1139_SKQ2021	Unknown
+334	MP_E1139_SKQ2021	Peridiniales
+63325	MP_E1139_SKQ2021	Gymnodiniales
+560	MP_E1139_SKQ2021	Dinophyceae
+18	MP_E1139_SKQ2021	Bacterosira sp_ RCC4607
+13	MP_E1139_SKQ2021	Cylindrotheca closterium
+780	MP_E1139_SKQ2021	Prorocentrales
+108	MP_E1139_SKQ2021	Environmental Unknown
+1328	MP_E1139_SKQ2021	Pseudo_nitzschia granii
+1958	MP_E1139_SKQ2021	Chaetocerotales
+376	MP_E1139_SKQ2021	Chaetocerotaceae
+23190	MP_E1139_SKQ2021	Chaetoceros gelidus
+773	MP_E1139_SKQ2021	Pseudo_nitzschia pungens
+911	MP_E1139_SKQ2021	Pseudo_nitzschia seriata
+279	MP_E1139_SKQ2021	Fragilariopsis cylindrus
+2	MP_E1139_SKQ2021	Prorocentrum
+2	MP_E1139_SKQ2021	Bacillariophyceae
+216	MP_E1139_SKQ2021	Pseudo_nitzschia
+5499	MP_E1139_SKQ2021	Gyrodinium dominans
+34	MP_E1139_SKQ2021	Chaetoceros
+9	MP_E1139_SKQ2021	Thalassiosira hyalina
+274	MP_E1139_SKQ2021	Fragilariopsis oceanica
+35	MP_E1139_SKQ2021	Thalassiosira
+32	MP_E1139_SKQ2021	Gymnodiniaceae
+41827	MP_E1139_SKQ2021	Pseudo_nitzschia delicatissima
+6	MP_E1139_SKQ2021	Florenciellales
+3	MP_E1139_SKQ2021	Thalassiosira nordenskioeldii
+4	MP_E1139_SKQ2021	Thalassiosiraceae
+26	MP_E1139_SKQ2021	Levanderina__f__o
+112	MP_E1139_SKQ2021	Levanderina__f
+6	MP_E1139_SKQ2021	Cymatosirales
+19	MP_E1139_SKQ2021	Thalassiosira sp_
+5	MP_E1139_SKQ2021	Florenciella__f
+7	MP_E1139_SKQ2021	Porosira glacialis
+3	MP_E1139_SKQ2021	Fragilariopsis
+17	MP_E1139_SKQ2021	Bacillariaceae
+105	MP_E1139_SKQ2021	Heterocapsa triquetra
+2	MP_E1139_SKQ2021	Pelagodinium
+14	MP_E1139_SKQ2021	Bacillariales
+153145	MP_E1140_SKQ2021	Unknown
+344	MP_E1140_SKQ2021	Peridiniales
+60597	MP_E1140_SKQ2021	Gymnodiniales
+792	MP_E1140_SKQ2021	Dinophyceae
+13	MP_E1140_SKQ2021	Bacterosira sp_ RCC4607
+3	MP_E1140_SKQ2021	Cylindrotheca closterium
+1105	MP_E1140_SKQ2021	Prorocentrales
+47	MP_E1140_SKQ2021	Environmental Unknown
+990	MP_E1140_SKQ2021	Pseudo_nitzschia granii
+3	MP_E1140_SKQ2021	Minidiscus trioculatus
+1025	MP_E1140_SKQ2021	Chaetocerotales
+155	MP_E1140_SKQ2021	Chaetocerotaceae
+17677	MP_E1140_SKQ2021	Chaetoceros gelidus
+471	MP_E1140_SKQ2021	Pseudo_nitzschia pungens
+2	MP_E1140_SKQ2021	Thalassiosirales
+358	MP_E1140_SKQ2021	Pseudo_nitzschia seriata
+106	MP_E1140_SKQ2021	Fragilariopsis cylindrus
+152	MP_E1140_SKQ2021	Pseudo_nitzschia
+1404	MP_E1140_SKQ2021	Gyrodinium dominans
+25	MP_E1140_SKQ2021	Chaetoceros
+97	MP_E1140_SKQ2021	Fragilariopsis oceanica
+51	MP_E1140_SKQ2021	Thalassiosira
+1	MP_E1140_SKQ2021	Gymnodiniaceae
+33221	MP_E1140_SKQ2021	Pseudo_nitzschia delicatissima
+9	MP_E1140_SKQ2021	Florenciellales
+4	MP_E1140_SKQ2021	Levanderina__f__o
+153	MP_E1140_SKQ2021	Levanderina__f
+5	MP_E1140_SKQ2021	Cymatosirales
+7	MP_E1140_SKQ2021	Shimiella gracilenta
+6	MP_E1140_SKQ2021	Porosira glacialis
+3	MP_E1140_SKQ2021	Kareniaceae
+12	MP_E1140_SKQ2021	Bacillariaceae
+5	MP_E1140_SKQ2021	Karlodinium veneficum
+11	MP_E1140_SKQ2021	Tovelliaceae
+143	MP_E1140_SKQ2021	Heterocapsa triquetra
+4	MP_E1140_SKQ2021	Pelagodinium
+1	MP_E1140_SKQ2021	Karlodinium
+2	MP_E1140_SKQ2021	Mediophyceae
+1	MP_E1140_SKQ2021	Chaetoceros sp_ CCAP 1010_16
+32	MP_E1140_SKQ2021	Bacillariales
+13	MP_E1140_SKQ2021	Tentaculata
+180948	MP_E1141_SKQ2021	Unknown
+168	MP_E1141_SKQ2021	Peridiniales
+45469	MP_E1141_SKQ2021	Gymnodiniales
+2816	MP_E1141_SKQ2021	Dinophyceae
+45	MP_E1141_SKQ2021	Bacterosira sp_ RCC4607
+33	MP_E1141_SKQ2021	Cylindrotheca closterium
+249	MP_E1141_SKQ2021	Prorocentrales
+148	MP_E1141_SKQ2021	Environmental Unknown
+968	MP_E1141_SKQ2021	Pseudo_nitzschia granii
+2710	MP_E1141_SKQ2021	Chaetocerotales
+103	MP_E1141_SKQ2021	Chaetocerotaceae
+33363	MP_E1141_SKQ2021	Chaetoceros gelidus
+410	MP_E1141_SKQ2021	Pseudo_nitzschia pungens
+5	MP_E1141_SKQ2021	Thalassiosirales
+271	MP_E1141_SKQ2021	Pseudo_nitzschia seriata
+675	MP_E1141_SKQ2021	Fragilariopsis cylindrus
+40	MP_E1141_SKQ2021	Prorocentrum
+10	MP_E1141_SKQ2021	Bacillariophyceae
+416	MP_E1141_SKQ2021	Pseudo_nitzschia
+1867	MP_E1141_SKQ2021	Gyrodinium dominans
+38	MP_E1141_SKQ2021	Chaetoceros
+3	MP_E1141_SKQ2021	Thalassiosira hyalina
+115	MP_E1141_SKQ2021	Fragilariopsis oceanica
+67	MP_E1141_SKQ2021	Thalassiosira
+8	MP_E1141_SKQ2021	Gymnodiniaceae
+34978	MP_E1141_SKQ2021	Pseudo_nitzschia delicatissima
+13	MP_E1141_SKQ2021	Florenciellales
+14	MP_E1141_SKQ2021	Chaetoceros cf_ neogracilis clade II
+11	MP_E1141_SKQ2021	Levanderina__f__o
+95	MP_E1141_SKQ2021	Levanderina__f
+15	MP_E1141_SKQ2021	Cymatosirales
+5	MP_E1141_SKQ2021	Suessiales
+18	MP_E1141_SKQ2021	Thalassiosira sp_
+1	MP_E1141_SKQ2021	Shimiella gracilenta
+43	MP_E1141_SKQ2021	Porosira glacialis
+1	MP_E1141_SKQ2021	Shionodiscus sp_ IAL_2014
+8	MP_E1141_SKQ2021	Fragilariopsis
+15	MP_E1141_SKQ2021	Bacillariaceae
+9	MP_E1141_SKQ2021	Heterocapsa triquetra
+5	MP_E1141_SKQ2021	Pelagodinium
+8	MP_E1141_SKQ2021	Karlodinium
+61	MP_E1141_SKQ2021	Bacillariales
+10	MP_E1141_SKQ2021	Chaetoceros cf_ neogracilis clade IV
+1	MP_E1141_SKQ2021	Azadinium perforatum
+10	MP_E1141_SKQ2021	Chaetoceros cf_ neogracilis clade III
+186811	MP_E1142_SKQ2021	Unknown
+182	MP_E1142_SKQ2021	Peridiniales
+3	MP_E1142_SKQ2021	Coscinodiscophyceae
+30574	MP_E1142_SKQ2021	Gymnodiniales
+3919	MP_E1142_SKQ2021	Dinophyceae
+7	MP_E1142_SKQ2021	Bacterosira sp_ RCC4607
+12	MP_E1142_SKQ2021	Cylindrotheca closterium
+1165	MP_E1142_SKQ2021	Prorocentrales
+73	MP_E1142_SKQ2021	Environmental Unknown
+57	MP_E1142_SKQ2021	Pseudo_nitzschia granii
+3	MP_E1142_SKQ2021	Minidiscus trioculatus
+990	MP_E1142_SKQ2021	Chaetocerotales
+184	MP_E1142_SKQ2021	Chaetocerotaceae
+13815	MP_E1142_SKQ2021	Chaetoceros gelidus
+2494	MP_E1142_SKQ2021	Pseudo_nitzschia pungens
+13	MP_E1142_SKQ2021	Pseudo_nitzschia seriata
+66	MP_E1142_SKQ2021	Fragilariopsis cylindrus
+38	MP_E1142_SKQ2021	Prorocentrum
+3	MP_E1142_SKQ2021	Bacillariophyceae
+342	MP_E1142_SKQ2021	Pseudo_nitzschia
+3651	MP_E1142_SKQ2021	Gyrodinium dominans
+25	MP_E1142_SKQ2021	Chaetoceros
+14	MP_E1142_SKQ2021	Thalassiosira hyalina
+46	MP_E1142_SKQ2021	Fragilariopsis oceanica
+33	MP_E1142_SKQ2021	Thalassiosira
+33821	MP_E1142_SKQ2021	Pseudo_nitzschia delicatissima
+32	MP_E1142_SKQ2021	Florenciellales
+39	MP_E1142_SKQ2021	Levanderina__f__o
+45	MP_E1142_SKQ2021	Levanderina__f
+6	MP_E1142_SKQ2021	Minidiscus
+10	MP_E1142_SKQ2021	Cymatosirales
+2	MP_E1142_SKQ2021	Thalassiosira sp_
+2	MP_E1142_SKQ2021	Shimiella gracilenta
+2	MP_E1142_SKQ2021	Porosira glacialis
+7	MP_E1142_SKQ2021	Bacillariaceae
+15	MP_E1142_SKQ2021	Heterocapsa triquetra
+7	MP_E1142_SKQ2021	Pelagodinium
+1	MP_E1142_SKQ2021	Karlodinium
+5	MP_E1142_SKQ2021	Thalassiosira bioculata
+246372	MP_E1143_SKQ2021	Unknown
+258	MP_E1143_SKQ2021	Peridiniales
+7	MP_E1143_SKQ2021	Coscinodiscophyceae
+42312	MP_E1143_SKQ2021	Gymnodiniales
+6351	MP_E1143_SKQ2021	Dinophyceae
+20	MP_E1143_SKQ2021	Bacterosira sp_ RCC4607
+1401	MP_E1143_SKQ2021	Prorocentrales
+98	MP_E1143_SKQ2021	Environmental Unknown
+24	MP_E1143_SKQ2021	Pseudo_nitzschia granii
+7	MP_E1143_SKQ2021	Minidiscus trioculatus
+1047	MP_E1143_SKQ2021	Chaetocerotales
+254	MP_E1143_SKQ2021	Chaetocerotaceae
+16039	MP_E1143_SKQ2021	Chaetoceros gelidus
+2368	MP_E1143_SKQ2021	Pseudo_nitzschia pungens
+5	MP_E1143_SKQ2021	Thalassiosirales
+62	MP_E1143_SKQ2021	Pseudo_nitzschia seriata
+136	MP_E1143_SKQ2021	Fragilariopsis cylindrus
+79	MP_E1143_SKQ2021	Prorocentrum
+5	MP_E1143_SKQ2021	Bacillariophyceae
+434	MP_E1143_SKQ2021	Pseudo_nitzschia
+3468	MP_E1143_SKQ2021	Gyrodinium dominans
+32	MP_E1143_SKQ2021	Chaetoceros
+12	MP_E1143_SKQ2021	Thalassiosira hyalina
+147	MP_E1143_SKQ2021	Fragilariopsis oceanica
+36	MP_E1143_SKQ2021	Thalassiosira
+45761	MP_E1143_SKQ2021	Pseudo_nitzschia delicatissima
+44	MP_E1143_SKQ2021	Florenciellales
+3	MP_E1143_SKQ2021	Chaetoceros cf_ neogracilis clade II
+11	MP_E1143_SKQ2021	Thalassiosira sp_ RCC4858
+54	MP_E1143_SKQ2021	Levanderina__f__o
+65	MP_E1143_SKQ2021	Levanderina__f
+7	MP_E1143_SKQ2021	Minidiscus
+6	MP_E1143_SKQ2021	Thalassiosira sp_
+9	MP_E1143_SKQ2021	Florenciella__f
+2	MP_E1143_SKQ2021	Florenciella
+20	MP_E1143_SKQ2021	Shimiella gracilenta
+6	MP_E1143_SKQ2021	Fragilariopsis
+5	MP_E1143_SKQ2021	Bacillariaceae
+7	MP_E1143_SKQ2021	Karlodinium veneficum
+7	MP_E1143_SKQ2021	Heterocapsa triquetra
+6	MP_E1143_SKQ2021	Pelagodinium
+6	MP_E1143_SKQ2021	Mediophyceae
+28	MP_E1143_SKQ2021	Azadinium obesum
+7	MP_E1143_SKQ2021	Thalassiosira bioculata
+2	MP_E1143_SKQ2021	Karlodinium elegans
+6	MP_E1143_SKQ2021	Hyperia galba
+232081	MP_E1144_SKQ2021	Unknown
+228	MP_E1144_SKQ2021	Peridiniales
+4	MP_E1144_SKQ2021	Coscinodiscophyceae
+32826	MP_E1144_SKQ2021	Gymnodiniales
+6458	MP_E1144_SKQ2021	Dinophyceae
+11	MP_E1144_SKQ2021	Bacterosira sp_ RCC4607
+1211	MP_E1144_SKQ2021	Prorocentrales
+64	MP_E1144_SKQ2021	Environmental Unknown
+21	MP_E1144_SKQ2021	Pseudo_nitzschia granii
+6	MP_E1144_SKQ2021	Minidiscus trioculatus
+733	MP_E1144_SKQ2021	Chaetocerotales
+105	MP_E1144_SKQ2021	Chaetocerotaceae
+11868	MP_E1144_SKQ2021	Chaetoceros gelidus
+910	MP_E1144_SKQ2021	Pseudo_nitzschia pungens
+127	MP_E1144_SKQ2021	Pseudo_nitzschia seriata
+35	MP_E1144_SKQ2021	Fragilariopsis cylindrus
+126	MP_E1144_SKQ2021	Prorocentrum
+313	MP_E1144_SKQ2021	Pseudo_nitzschia
+3022	MP_E1144_SKQ2021	Gyrodinium dominans
+52	MP_E1144_SKQ2021	Chaetoceros
+20	MP_E1144_SKQ2021	Thalassiosira hyalina
+31	MP_E1144_SKQ2021	Fragilariopsis oceanica
+54	MP_E1144_SKQ2021	Thalassiosira
+1	MP_E1144_SKQ2021	Gymnodiniaceae
+28274	MP_E1144_SKQ2021	Pseudo_nitzschia delicatissima
+25	MP_E1144_SKQ2021	Florenciellales
+1	MP_E1144_SKQ2021	Thalassiosira nordenskioeldii
+1	MP_E1144_SKQ2021	Thalassiosiraceae
+59	MP_E1144_SKQ2021	Levanderina__f__o
+84	MP_E1144_SKQ2021	Levanderina__f
+20	MP_E1144_SKQ2021	Minidiscus
+6	MP_E1144_SKQ2021	Cymatosirales
+4	MP_E1144_SKQ2021	Florenciella
+14	MP_E1144_SKQ2021	Shimiella gracilenta
+43	MP_E1144_SKQ2021	Heterocapsa triquetra
+9	MP_E1144_SKQ2021	Pelagodinium
+9	MP_E1144_SKQ2021	Karlodinium
+6	MP_E1144_SKQ2021	Thalassiosira bioculata
+4	MP_E1144_SKQ2021	Biecheleriaceae
+104571	MP_E1145_SKQ2021	Unknown
+72	MP_E1145_SKQ2021	Peridiniales
+58358	MP_E1145_SKQ2021	Gymnodiniales
+1945	MP_E1145_SKQ2021	Dinophyceae
+26	MP_E1145_SKQ2021	Bacterosira sp_ RCC4607
+34	MP_E1145_SKQ2021	Cylindrotheca closterium
+101	MP_E1145_SKQ2021	Prorocentrales
+10	MP_E1145_SKQ2021	Environmental Unknown
+27	MP_E1145_SKQ2021	Pseudo_nitzschia granii
+3	MP_E1145_SKQ2021	Minidiscus trioculatus
+1172	MP_E1145_SKQ2021	Chaetocerotales
+1335	MP_E1145_SKQ2021	Chaetocerotaceae
+45241	MP_E1145_SKQ2021	Chaetoceros gelidus
+517	MP_E1145_SKQ2021	Pseudo_nitzschia pungens
+1	MP_E1145_SKQ2021	Thalassiosirales
+25	MP_E1145_SKQ2021	Pseudo_nitzschia seriata
+716	MP_E1145_SKQ2021	Fragilariopsis cylindrus
+27	MP_E1145_SKQ2021	Prorocentrum
+4	MP_E1145_SKQ2021	Bacillariophyceae
+148	MP_E1145_SKQ2021	Pseudo_nitzschia
+1630	MP_E1145_SKQ2021	Gyrodinium dominans
+123	MP_E1145_SKQ2021	Chaetoceros
+17	MP_E1145_SKQ2021	Thalassiosira hyalina
+73	MP_E1145_SKQ2021	Fragilariopsis oceanica
+8	MP_E1145_SKQ2021	Thalassiosira
+8873	MP_E1145_SKQ2021	Pseudo_nitzschia delicatissima
+20	MP_E1145_SKQ2021	Florenciellales
+21	MP_E1145_SKQ2021	Thalassiosira nordenskioeldii
+4	MP_E1145_SKQ2021	Thalassiosiraceae
+21	MP_E1145_SKQ2021	Levanderina__f__o
+1	MP_E1145_SKQ2021	Levanderina__f
+12	MP_E1145_SKQ2021	Minidiscus
+11	MP_E1145_SKQ2021	Cymatosirales
+15	MP_E1145_SKQ2021	Thalassiosira sp_
+7	MP_E1145_SKQ2021	Shimiella gracilenta
+5	MP_E1145_SKQ2021	Porosira glacialis
+4	MP_E1145_SKQ2021	Fragilariopsis
+4	MP_E1145_SKQ2021	Karlodinium veneficum
+61	MP_E1145_SKQ2021	Heterocapsa triquetra
+3	MP_E1145_SKQ2021	Pelagodinium
+5	MP_E1145_SKQ2021	Karlodinium
+145912	MP_E1146_SKQ2021	Unknown
+79	MP_E1146_SKQ2021	Peridiniales
+2	MP_E1146_SKQ2021	Coscinodiscophyceae
+82370	MP_E1146_SKQ2021	Gymnodiniales
+3389	MP_E1146_SKQ2021	Dinophyceae
+39	MP_E1146_SKQ2021	Bacterosira sp_ RCC4607
+14	MP_E1146_SKQ2021	Cylindrotheca closterium
+81	MP_E1146_SKQ2021	Prorocentrales
+14	MP_E1146_SKQ2021	Environmental Unknown
+52	MP_E1146_SKQ2021	Pseudo_nitzschia granii
+3	MP_E1146_SKQ2021	Minidiscus trioculatus
+2123	MP_E1146_SKQ2021	Chaetocerotales
+1971	MP_E1146_SKQ2021	Chaetocerotaceae
+56972	MP_E1146_SKQ2021	Chaetoceros gelidus
+397	MP_E1146_SKQ2021	Pseudo_nitzschia pungens
+2	MP_E1146_SKQ2021	Thalassiosirales
+128	MP_E1146_SKQ2021	Pseudo_nitzschia seriata
+593	MP_E1146_SKQ2021	Fragilariopsis cylindrus
+6	MP_E1146_SKQ2021	Prorocentrum
+50	MP_E1146_SKQ2021	Bacillariophyceae
+79	MP_E1146_SKQ2021	Pseudo_nitzschia
+845	MP_E1146_SKQ2021	Gyrodinium dominans
+213	MP_E1146_SKQ2021	Chaetoceros
+17	MP_E1146_SKQ2021	Thalassiosira hyalina
+54	MP_E1146_SKQ2021	Fragilariopsis oceanica
+30	MP_E1146_SKQ2021	Thalassiosira
+10543	MP_E1146_SKQ2021	Pseudo_nitzschia delicatissima
+20	MP_E1146_SKQ2021	Florenciellales
+2	MP_E1146_SKQ2021	Thalassiosira nordenskioeldii
+8	MP_E1146_SKQ2021	Thalassiosiraceae
+9	MP_E1146_SKQ2021	Chaetoceros cf_ neogracilis clade II
+1	MP_E1146_SKQ2021	Thalassiosira sp_ RCC4858
+9	MP_E1146_SKQ2021	Levanderina__f__o
+21	MP_E1146_SKQ2021	Levanderina__f
+11	MP_E1146_SKQ2021	Cymatosirales
+10	MP_E1146_SKQ2021	Thalassiosira sp_
+3	MP_E1146_SKQ2021	Pelagomonadales
+9	MP_E1146_SKQ2021	Shimiella gracilenta
+2	MP_E1146_SKQ2021	Shionodiscus sp_ IAL_2014
+2	MP_E1146_SKQ2021	Kareniaceae
+12	MP_E1146_SKQ2021	Karlodinium veneficum
+191	MP_E1146_SKQ2021	Heterocapsa triquetra
+3	MP_E1146_SKQ2021	Pelagodinium
+10	MP_E1146_SKQ2021	Mediophyceae
+4	MP_E1146_SKQ2021	Bacillariales
+118948	MP_POSITIVE	Luticola ventricosa
+51	MP_POSITIVE	Diadesmidaceae

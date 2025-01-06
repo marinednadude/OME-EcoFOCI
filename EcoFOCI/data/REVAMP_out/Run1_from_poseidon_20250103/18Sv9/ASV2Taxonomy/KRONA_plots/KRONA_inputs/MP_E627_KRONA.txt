@@ -1,0 +1,932 @@
+2097	Eukaryota	Dinophyceae__p	Dinophyceae
+1490	Unknown
+1	Eukaryota	Dinophyceae__p	Dinophyceae	Suessiales	Suessiaceae
+7	Eukaryota	Picozoa
+5521	Environmental Unknown
+5	Eukaryota	Cercozoa	Thecofilosea	Ebriacea__o
+73	Eukaryota	Bolidophyceae__p	Bolidophyceae	Parmales	Triparmaceae	Triparma	Triparma pacifica
+14	Eukaryota	Haptophyta	Prymnesiales__c	Prymnesiales	Chrysochromulinaceae	Chrysochromulina	Chrysochromulina sp_
+2	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Chaetoceros eibenii
+4	Eukaryota	Haptophyta
+10	Environmental Unknown
+24	Environmental Unknown
+27	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae
+88	Eukaryota	Ascomycota	Saccharomycetes
+3	Eukaryota	Chrysophyceae__p	Chrysophyceae
+45	Eukaryota	Haptophyta	Prymnesiales__c	Prymnesiales	Prymnesiaceae
+19	Eukaryota	Dinophyceae__p	Dinophyceae	Thoracosphaerales	Thoracosphaeraceae	Stoeckeria
+128	Environmental Unknown
+7	Eukaryota	Cercozoa	Thecofilosea	Mataza__f__o
+53	Eukaryota	Dinophyceae__p	Dinophyceae
+16	Eukaryota	Chrysophyceae__p	Chrysophyceae
+6	Eukaryota	Cercozoa
+65	Eukaryota
+216	Eukaryota	Chlorophyta	Mamiellophyceae	Mamiellales	Mamiellaceae
+4	Eukaryota	Chlorophyta	Mamiellophyceae	Dolichomastigales	Crustomastigaceae
+1	Eukaryota	Chlorophyta	Mamiellophyceae	Dolichomastigales	Crustomastigaceae
+2	Eukaryota	Dinophyceae__p	Dinophyceae	Syndiniales
+2	Eukaryota	Cercozoa	Imbricatea	Thaumatomonadida	Thaumatomastigidae	Protaspis
+4	Eukaryota	Bolidophyceae__p	Bolidophyceae	Parmales
+96	Eukaryota	Cercozoa
+54	Eukaryota	Dinophyceae__p	Dinophyceae	Peridiniales	Pfiesteriaceae
+5	Eukaryota	Haptophyta	Prymnesiales__c	Prymnesiales	Chrysochromulinaceae	Chrysochromulina	Chrysochromulina sp_
+1	Unknown
+140	Eukaryota	Bigyra__p	Bigyra	Oblongichytrida	Oblongichytrium__f	Oblongichytrium	Oblongichytrium sp_
+6	Eukaryota	Cercozoa	Thecofilosea	Ventricleftida
+2	Eukaryota	Telonemida__c__p	Telonemida__c	Telonemida	Telonema__f
+14	Eukaryota	Centroplasthelida__p	Centroplasthelida	Meringosphaera__f__o	Meringosphaera__f	Meringosphaera	Meringosphaera mediterranea
+1	Eukaryota	Dinophyceae__p	Dinophyceae	Peridiniales	Ensiculiferaceae	Ensiculifera	Ensiculifera mexicana
+8	Eukaryota	Cryptophyceae__p	Cryptophyceae	Cryptomonadales	Hemiselmidaceae	Hemiselmis	Hemiselmis cryptochromatica
+13	Eukaryota	Dinophyceae__p	Dinophyceae	Syndiniales	Amoebophryaceae	Amoebophrya
+15	Eukaryota	Ascomycota	Saccharomycetes
+20	Eukaryota	Bolidophyceae__p	Bolidophyceae	Parmales	Triparmaceae
+1	Eukaryota	Picozoa
+202	Eukaryota	Cercozoa	Imbricatea	Thaumatomonadida	Thaumatomastigidae
+33422	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Chaetoceros debilis
+8	Eukaryota	Bigyra__p	Bigyra	Oblongichytrida	Oblongichytrium__f	Oblongichytrium	Oblongichytrium sp_
+1	Eukaryota	Cercozoa	Imbricatea	Thaumatomonadida
+3	Eukaryota	Chlorophyta	Mamiellophyceae	Dolichomastigales
+3	Eukaryota	Dinophyceae__p	Dinophyceae	Syndiniales	Amoebophryaceae	Amoebophrya	Amoebophrya sp_
+3	Eukaryota	Bigyra__p	Bigyra	Thraustochytrida
+29	Eukaryota	Ciliophora	Spirotrichea	Strombidiidae__o	Strombidiidae
+1	Eukaryota	Chlorophyta	Mamiellophyceae	Dolichomastigales	Crustomastigaceae
+29	Eukaryota	Dinophyceae__p	Dinophyceae	Syndiniales
+2	Eukaryota	Telonemida__c__p	Telonemida__c	Telonemida	Telonema__f
+7	Eukaryota	Dinophyceae__p	Dinophyceae	Blastodiniales	Blastodinium__f
+6	Eukaryota	Dinophyceae__p	Dinophyceae	Peridiniales
+1	Eukaryota	Chlorophyta	Mamiellophyceae	Dolichomastigales	Crustomastigaceae
+4	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Pedinellales
+6	Eukaryota	Dinophyceae__p	Dinophyceae	Peridiniales	Ensiculiferaceae	Pentapharsodinium	Pentapharsodinium sp_
+4	Eukaryota	Cercozoa
+1864	Eukaryota	Choanoflagellata__p	Choanoflagellata	Craspedida	Salpingoecidae	Bicosta	Bicosta minor
+17	Eukaryota	Chlorophyta	Mamiellophyceae	Dolichomastigales
+69	Eukaryota	Bacillariophyta	Coscinodiscophyceae
+60	Eukaryota	Bigyra__p	Bigyra	Nanomonadea	Incisomonas__f
+4	Eukaryota	Chlorophyta	Mamiellophyceae	Dolichomastigales	Crustomastigaceae
+1	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Chaetoceros radicans
+1	Eukaryota	Chlorophyta	Mamiellophyceae	Dolichomastigales
+1	Unknown
+3	Eukaryota	Bigyra__p	Bigyra	Thraustochytrida
+210	Eukaryota	Bacillariophyta	Bacillariophyceae	Naviculales	Pleurosigmataceae	Pleurosigma	Pleurosigma planktonicum
+2	Eukaryota	Cryptophyceae__p	Cryptophyceae	Pyrenomonadales
+26	Eukaryota	Bigyra__p	Bigyra	Nanomonadea
+21	Eukaryota	Choanoflagellata__p	Choanoflagellata	Acanthoecida	Stephanoecidae
+49	Eukaryota	Bolidophyceae__p	Bolidophyceae	Parmales	Triparmaceae	Triparma	Triparma pacifica
+2	Eukaryota	Chlorophyta	Mamiellophyceae	Dolichomastigales
+203	Eukaryota	Euglenozoa	Diplonemea	Hemistasiidae__o	Hemistasiidae
+17	Eukaryota	Picozoa
+7	Eukaryota	Dinophyceae__p	Dinophyceae	Syndiniales
+22	Environmental Unknown
+16	Eukaryota	Ciliophora	Prostomatea	Prorodontida
+3	Eukaryota	Cryptophyceae__p	Cryptophyceae	Pyrenomonadales
+14	Eukaryota	Dinophyceae__p	Dinophyceae	Peridiniales	Heterocapsaceae	Heterocapsa	Heterocapsa rotundata
+135	Eukaryota	Picozoa
+1247	Eukaryota	Dinophyceae__p	Dinophyceae
+391	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Chaetoceros lorenzianus
+3	Eukaryota	Chlorophyta	Mamiellophyceae	Dolichomastigales	Crustomastigaceae	Crustomastix	Crustomastix stigmatica
+1	Environmental Unknown
+5	Eukaryota	Chlorophyta	Mamiellophyceae	Dolichomastigales	Crustomastigaceae
+1	Eukaryota	Dinophyceae__p	Dinophyceae	Madanidinium__f__o
+3	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Coscinodiscales	Hemidiscaceae	Actinocyclus	Actinocyclus curvatulus
+4	Eukaryota	Cercozoa	Imbricatea	Metromonadea__o
+2	Eukaryota	Cryptophyceae__p	Cryptophyceae	Cyathomonadacea	Goniomonadaceae
+9	Environmental Unknown
+9	Eukaryota	Streptophyta	Magnoliopsida
+4	Eukaryota	Dinophyceae__p	Dinophyceae	Syndiniales	Amoebophryaceae	Amoebophrya
+12	Eukaryota	Cnidaria	Hydrozoa	Trachymedusae	Rhopalonematidae	Rhopalonema	Rhopalonema velatum
+2	Eukaryota	Chordata	Thaliacea	Doliolida	Doliolidae	Doliolum
+12	Eukaryota	Pelagophyceae__p	Pelagophyceae	Pelagomonadales	Aureococcus__f	Aureococcus	Aureococcus anophagefferens
+50	Eukaryota	Cercozoa	Thecofilosea	Mataza__f__o	Mataza__f
+9	Eukaryota	Choanoflagellata__p	Choanoflagellata
+737	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae
+5	Eukaryota	Chlorophyta	Mamiellophyceae	Dolichomastigales	Crustomastigaceae
+18	Eukaryota	Dinophyceae__p	Dinophyceae
+5	Eukaryota	Chlorophyta	Pyramimonadophyceae	Pyramimonadales	Pyramimonadaceae	Pterosperma	Pterosperma cristatum
+370	Environmental Unknown
+5	Eukaryota	Dinophyceae__p	Dinophyceae	Prorocentrales	Prorocentraceae	Prorocentrum
+23	Eukaryota	Cercozoa
+4	Eukaryota	Cnidaria	Hydrozoa	Leptothecata	Eirenidae	Eutonina	Eutonina indicans
+28	Eukaryota	Cercozoa	Thecofilosea	Mataza__f__o
+144	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	Gymnodiniaceae	Gymnodinium
+10	Eukaryota	Haptophyta
+441	Eukaryota	Ciliophora	Spirotrichea	Tontoniidae__o	Tontoniidae	Pseudotontonia
+3	Unknown
+9	Eukaryota	Dinophyceae__p	Dinophyceae	Syndiniales
+4	Eukaryota	Dinophyceae__p	Dinophyceae
+11	Eukaryota	Cnidaria	Hydrozoa	Narcomedusae	Cuninidae	Solmissus	Solmissus sp_ AGC_2022
+1	Eukaryota	Euglenozoa	Diplonemea	Hemistasiidae__o	Hemistasiidae
+862	Eukaryota	Chlorophyta	Mamiellophyceae	Mamiellales	Mamiellaceae	Micromonas
+10	Eukaryota	Dinophyceae__p	Dinophyceae	Syndiniales	Amoebophryaceae
+4	Eukaryota	Telonemida__c__p	Telonemida__c	Telonemida	Telonema__f
+19	Eukaryota	Bigyra__p	Bigyra	Oblongichytrida	Oblongichytrium__f
+29	Eukaryota	Dinophyceae__p	Dinophyceae	Gonyaulacales	Gonyaulacaceae	Adenoides	Adenoides eludens
+678	Eukaryota	Chlorophyta	Mamiellophyceae	Mamiellales	Bathycoccaceae	Ostreococcus
+9	Eukaryota	Dinophyceae__p	Dinophyceae
+47	Eukaryota	Chlorophyta	Mamiellophyceae	Mamiellales	Mamiellaceae	Micromonas
+4	Unknown
+13	Eukaryota	Mucoromycota	Glomeromycetes
+3	Eukaryota	Chrysophyceae__p	Chrysophyceae	Chromulinales	Dinobryaceae	Dinobryon	Dinobryon balticum
+26	Eukaryota
+37	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	Warnowiaceae	Warnowia	Warnowia sp_ FG20
+7	Eukaryota	Dinophyceae__p	Dinophyceae	Syndiniales	Amoebophryaceae	Amoebophrya
+45	Unknown
+2203	Eukaryota	Ciliophora	Spirotrichea	Strombidiidae__o	Strombidiidae	Strombidium	Strombidium caudispina
+8	Eukaryota	Acantharea__p	Acantharea
+4	Eukaryota	Dinophyceae__p	Dinophyceae	Syndiniales	Amoebophryaceae	Amoebophrya	Amoebophrya sp_
+40	Eukaryota	Cercozoa	Thecofilosea	Cryomonadida	Protaspidae	Cryothecomonas
+1	Eukaryota	Streptophyta	Bryopsida	Hookeriales	Hypopterygiaceae
+17	Eukaryota	Euglenozoa	Diplonemea	Diplonemidae__o	Diplonemidae
+3	Eukaryota	Dinophyceae__p	Dinophyceae	Syndiniales	Amoebophryaceae
+2	Eukaryota	Phaeophyceae__p	Phaeophyceae	Dictyotales
+16	Eukaryota	Cnidaria	Hydrozoa	Leptothecata	Campanulariidae
+4	Eukaryota	Dinophyceae__p	Dinophyceae	Syndiniales	Amoebophryaceae	Amoebophrya	Amoebophrya sp_
+36	Eukaryota	Cryptophyceae__p	Cryptophyceae	Pyrenomonadales
+2	Unknown
+1	Unknown
+1330	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros
+2	Eukaryota	Cercozoa	Imbricatea	Thaumatomonadida
+25	Eukaryota	Cnidaria	Hydrozoa	Leptothecata	Eutimidae	Tima	Tima bairdii
+111	Eukaryota	Chrysophyceae__p	Chrysophyceae	Segregatospumella__f__o	Segregatospumella__f
+994	Eukaryota	Dinophyceae__p	Dinophyceae	Peridiniales
+16	Eukaryota	Cercozoa	Thecofilosea	Mataza__f__o	Mataza__f	Mataza
+1	Eukaryota	Dinophyceae__p	Dinophyceae	Syndiniales	Amoebophryaceae	Amoebophrya	Amoebophrya sp_
+264	Eukaryota	Dinophyceae__p	Dinophyceae
+5	Eukaryota	Dinophyceae__p	Dinophyceae	Syndiniales	Amoebophryaceae	Amoebophrya
+77	Environmental Unknown
+3	Eukaryota	Ctenophora	Tentaculata	Thalassocalycida	Thalassocalycidae	Thalassocalyce	Thalassocalyce inconstans
+18	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales
+2	Eukaryota	Dinophyceae__p	Dinophyceae
+2	Eukaryota	Chrysophyceae__p	Chrysophyceae	Chromulinales
+1507	Eukaryota	Chordata	Appendicularia	Copelata	Oikopleuridae	Oikopleura	Oikopleura dioica
+998	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Pseudo_nitzschia	Pseudo_nitzschia americana
+1	Eukaryota	Dinophyceae__p	Dinophyceae	Peridiniales	Protoperidiniaceae	Protoperidinium	Protoperidinium conicum
+8	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Fragilariopsis
+3	Eukaryota	Bacillariophyta	Bacillariophyceae	Naviculales	Naviculaceae
+3	Eukaryota	Dinophyceae__p	Dinophyceae	Syndiniales	Amoebophryaceae	Amoebophrya	Amoebophrya sp_
+17	Eukaryota	Cercozoa	Thecofilosea	Cryomonadida	Protaspidae	Cryothecomonas
+22	Eukaryota	Telonemida__c__p	Telonemida__c	Telonemida
+11	Eukaryota	Haptophyta	Prymnesiales__c	Prymnesiales	Chrysochromulinaceae	Chrysochromulina	Chrysochromulina strobilus
+1	Eukaryota	Ciliophora
+5	Eukaryota	Choanoflagellata__p	Choanoflagellata
+4	Eukaryota	Cercozoa
+17	Eukaryota	Ciliophora
+91	Eukaryota	Cryptophyceae__p	Cryptophyceae	Pyrenomonadales
+1	Eukaryota	Cnidaria	Hydrozoa	Trachymedusae	Halicreatidae
+3	Unknown
+176	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales
+37	Eukaryota	Bigyra__p	Bigyra	Oblongichytrida	Oblongichytrium__f	Oblongichytrium	Oblongichytrium sp_
+11	Eukaryota	Haptophyta	Prymnesiales__c	Prymnesiales	Chrysocampanula__f	Chrysocampanula	Chrysocampanula spinifera
+37	Eukaryota	Dinophyceae__p	Dinophyceae	Syndiniales	Amoebophryaceae
+65	Eukaryota	Dinophyceae__p	Dinophyceae	Syndiniales	Amoebophryaceae
+5	Environmental Unknown
+70	Eukaryota
+2	Eukaryota	Chlorophyta	Pyramimonadophyceae	Pyramimonadales	Pyramimonadaceae	Pyramimonas
+38	Eukaryota	Synurophyceae__p	Synurophyceae	Ochromonadales	Ochromonadaceae
+1	Eukaryota	Prasinodermophyta	Prasinodermophyceae	Prasinodermales
+11	Eukaryota	Dinophyceae__p	Dinophyceae
+35	Eukaryota	Cercozoa	Thecofilosea	Mataza__f__o	Mataza__f
+2	Unknown
+36	Unknown
+4	Eukaryota	Bacillariophyta	Mediophyceae	Biddulphiales	Biddulphiaceae	Biddulphia	Biddulphia sp_ MACC 6
+236	Eukaryota	Ciliophora	Spirotrichea	Choreotrichida	Leegaardiellidae	Leegaardiella	Leegaardiella sp_
+2	Unknown
+19	Environmental Unknown
+2	Eukaryota	Dinophyceae__p	Dinophyceae	Peridiniales	Ensiculiferaceae	Ensiculifera	Ensiculifera mexicana
+14	Eukaryota	Cercozoa	Thecofilosea	Ebriacea__o
+13	Eukaryota	Dinophyceae__p	Dinophyceae	Syndiniales	Amoebophryaceae
+6	Eukaryota	Dinophyceae__p	Dinophyceae	Syndiniales
+186	Eukaryota	Dinophyceae__p	Dinophyceae	Syndiniales	Amoebophryaceae
+1617	Eukaryota	Choanoflagellata__p	Choanoflagellata	Acanthoecida	Stephanoecidae	Diaphanoeca	Diaphanoeca undulata
+4183	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Chaetoceros constrictus
+2	Eukaryota	Haptophyta	Prymnesiales__c	Prymnesiales	Chrysochromulinaceae	Chrysochromulina	Chrysochromulina sp_
+14	Eukaryota	Cercozoa	Thecofilosea	Ebriacea__o
+81	Environmental Unknown
+427	Eukaryota
+3	Eukaryota	Dinophyceae__p	Dinophyceae	Gonyaulacales	Amphidomataceae	Azadinium
+20	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Pedinellales	Pseudopedinella__f
+23	Eukaryota	Ascomycota	Sordariomycetes	Falcocladiales
+1	Eukaryota	Dinophyceae__p	Dinophyceae	Syndiniales
+12	Eukaryota	Chrysophyceae__p	Chrysophyceae	Chromulinales	Dinobryaceae
+309	Eukaryota	Ciliophora	Spirotrichea	Strombidiidae__o	Strombidiidae	Laboea	Laboea strobila
+377	Eukaryota	Ciliophora	Spirotrichea	Strombidiidae__o	Strombidiidae	Strombidium	Strombidium caudispina
+4	Eukaryota	Dinophyceae__p	Dinophyceae	Gonyaulacales
+1	Eukaryota	Dinophyceae__p	Dinophyceae	Gonyaulacales	Gonyaulacaceae	Adenoides
+2	Unknown
+5	Unknown
+3	Unknown
+43	Eukaryota	Cercozoa	Thecofilosea	Mataza__f__o
+1	Eukaryota	Sticholonchida__c__p	Sticholonchida__c	Sticholonchida
+3	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Bacteriastrum	Bacteriastrum mediterraneum
+2	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Corethrales	Corethraceae	Corethron
+757	Eukaryota	Dinophyceae__p	Dinophyceae
+3	Eukaryota	Cercozoa	Thecofilosea	Cryomonadida	Protaspidae	Cryothecomonas	Cryothecomonas longipes
+18	Eukaryota	Cercozoa	Thecofilosea	Cryomonadida	Protaspidae
+3	Eukaryota	Cercozoa	Imbricatea	Thaumatomonadida	Allas__f	Allas	Allas sp_
+13	Eukaryota	Dinophyceae__p	Dinophyceae	Blastodiniales
+43	Eukaryota	Chlorophyta	Mamiellophyceae	Mamiellales	Bathycoccaceae	Bathycoccus	Bathycoccus prasinos
+2	Eukaryota	Cnidaria	Hydrozoa	Siphonophorae	Apolemiidae	Apolemia
+427	Eukaryota	Annelida	Polychaeta
+3	Eukaryota	Cercozoa	Thecofilosea	Mataza__f__o	Mataza__f
+800	Eukaryota	Pirsoniales__c__p	Pirsoniales__c	Pirsoniales	Pirsonia__f	Pirsonia	Pirsonia guinardiae
+13	Environmental Unknown
+1	Eukaryota	Cryptophyceae__p	Cryptophyceae	Pyrenomonadales
+16	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Pedinellales	Pedinella__f	Pedinella	Pedinella sp_ squamata
+24	Eukaryota	Telonemida__c__p	Telonemida__c	Telonemida	Telonema__f
+5	Eukaryota	Ciliophora	Prostomatea	Prorodontida	Halodinium__f	Halodinium	Halodinium verrucatum
+26	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	Gymnodiniaceae	Gyrodinium
+62	Eukaryota	Cercozoa	Imbricatea	Thaumatomonadida	Thaumatomastigidae
+3	Eukaryota	Dinophyceae__p	Dinophyceae	Syndiniales	Amoebophryaceae
+548	Eukaryota	Chlorophyta	Mamiellophyceae	Dolichomastigales	Crustomastigaceae
+1176	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Pseudo_nitzschia
+98	Environmental Unknown
+2	Eukaryota	Ancyromonadida__c__p	Ancyromonadida__c	Ancyromonadida	Ancyromonadidae	Ancyromonas	Ancyromonas sigmoides
+9	Eukaryota	Dinophyceae__p	Dinophyceae	Prorocentrales
+4	Environmental Unknown
+1	Eukaryota	Haptophyta	Pavlovales__c	Pavlovales
+206	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	Warnowiaceae	Warnowia	Warnowia sp_
+2	Eukaryota	Haptophyta	Prymnesiales__c	Prymnesiales	Prymnesiaceae
+7	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros
+4818	Eukaryota	Ciliophora	Spirotrichea	Strombidiidae__o	Strombidiidae
+4	Eukaryota	Dinophyceae__p	Dinophyceae	Syndiniales
+3	Eukaryota	Synurophyceae__p	Synurophyceae	Synurales	Mallomonadaceae	Synura
+12	Eukaryota
+123	Eukaryota	Cercozoa	Thecofilosea	Cryomonadida	Protaspidae	Cryothecomonas
+24	Environmental Unknown
+121	Eukaryota	Dinophyceae__p	Dinophyceae
+12	Eukaryota	Telonemida__c__p	Telonemida__c	Telonemida	Telonema__f
+5	Eukaryota	Dinophyceae__p	Dinophyceae	Syndiniales	Amoebophryaceae
+1	Eukaryota	Picozoa
+18	Eukaryota	Haptophyta	Prymnesiales__c	Prymnesiales	Chrysochromulinaceae	Chrysochromulina	Chrysochromulina strobilus
+20	Environmental Unknown
+10	Eukaryota	Chlorophyta	Mamiellophyceae	Mamiellales	Bathycoccaceae	Ostreococcus
+3	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	Kareniaceae
+4157	Eukaryota	Choanoflagellata__p	Choanoflagellata
+17	Eukaryota	Haptophyta	Prymnesiales__c	Prymnesiales	Chrysochromulinaceae	Chrysochromulina	Chrysochromulina scutellum
+9	Eukaryota	Haptophyta	Prymnesiales__c	Prymnesiales	Prymnesiaceae	Haptolina	Haptolina ericina
+1	Eukaryota	Dinophyceae__p	Dinophyceae	Gonyaulacales	Gonyaulacaceae	Spiniferites	Spiniferites ramosus
+953	Eukaryota
+32	Eukaryota
+15	Eukaryota	Cercozoa	Thecofilosea	Cryomonadida	Protaspidae	Cryothecomonas	Cryothecomonas sp_ APCC MC5_1Cryo
+14	Eukaryota	Haptophyta	Prymnesiales__c	Prymnesiales	Chrysochromulinaceae	Chrysochromulina	Chrysochromulina sp_
+1108	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros
+54	Eukaryota	Dinophyceae__p	Dinophyceae
+13	Eukaryota	Cercozoa	Imbricatea	Thaumatomonadida	Thaumatomastigidae
+16	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Rhizosoleniales	Rhizosoleniaceae
+5	Eukaryota
+17	Eukaryota	Dinophyceae__p	Dinophyceae	Syndiniales	Amoebophryaceae	Amoebophrya
+89	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros
+3	Eukaryota	Dinophyceae__p	Dinophyceae
+1	Unknown
+1095	Eukaryota	Arthropoda	Hexanauplia	Calanoida	Pontellidae	Labidocera
+1	Eukaryota	Dinophyceae__p	Dinophyceae	Syndiniales	Amoebophryaceae
+13	Eukaryota	Dinophyceae__p	Dinophyceae	Prorocentrales	Prorocentraceae	Prorocentrum	Prorocentrum micans
+81	Eukaryota	Euglenozoa	Diplonemea	Diplonemidae__o	Diplonemidae
+2	Eukaryota	Dinophyceae__p	Dinophyceae	Prorocentrales
+19	Eukaryota	Picozoa
+16	Eukaryota	Dinophyceae__p	Dinophyceae	Peridiniales	Peridiniaceae	Scrippsiella	Scrippsiella masanensis
+1	Eukaryota	Ctenophora	Tentaculata	Cydippida	Pleurobrachiidae
+1	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Pedinellales	Pseudopedinella__f
+704	Environmental Unknown
+2	Eukaryota	Bigyra__p	Bigyra	Nanomonadea	Solenicola__f
+1	Eukaryota	Acantharea__p	Acantharea	Chaunacanthida
+34	Environmental Unknown
+66	Eukaryota
+1	Eukaryota	Dinophyceae__p	Dinophyceae	Syndiniales	Amoebophryaceae
+2	Eukaryota	Chlorophyta	Nephroselmidophyceae	Nephroselmidales	Nephroselmidaceae	Nephroselmis	Nephroselmis pyriformis
+31	Eukaryota	Bigyra__p	Bigyra	Oblongichytrida	Oblongichytrium__f	Oblongichytrium
+24	Eukaryota	Cercozoa	Imbricatea	Thaumatomonadida	Thaumatomastigidae
+6	Eukaryota	Euglenozoa	Diplonemea	Hemistasiidae__o	Hemistasiidae	Hemistasia	Hemistasia phaeocysticola
+632	Eukaryota	Dinophyceae__p	Dinophyceae
+67	Eukaryota	Haptophyta	Zygodiscales__c	Zygodiscales	Braarudosphaeraceae	Braarudosphaera	Braarudosphaera bigelowii
+3	Eukaryota	Chlorophyta	Mamiellophyceae	Mamiellales	Bathycoccaceae	Bathycoccus	Bathycoccus prasinos
+1	Eukaryota	Dinophyceae__p	Dinophyceae	Syndiniales	Amoebophryaceae
+99	Eukaryota	Dinophyceae__p	Dinophyceae
+69	Eukaryota	Choanoflagellata__p	Choanoflagellata	Acanthoecida	Stephanoecidae	Calliacantha	Calliacantha longicaudata
+10	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros
+23	Eukaryota	Bigyra__p	Bigyra	Thraustochytrida
+10	Environmental Unknown
+7	Eukaryota	Dinophyceae__p	Dinophyceae	Peridiniales	Kryptoperidiniaceae
+1	Eukaryota	Dinophyceae__p	Dinophyceae
+3	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Pedinellales
+44	Environmental Unknown
+35	Eukaryota	Haptophyta	Prymnesiales__c	Prymnesiales	Chrysochromulinaceae	Chrysochromulina	Chrysochromulina sp_
+1	Unknown
+2	Unknown
+334	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	Kareniaceae	Karlodinium
+79	Eukaryota	Dinophyceae__p	Dinophyceae	Madanidinium__f__o	Madanidinium__f	Madanidinium	Madanidinium loirii
+137	Eukaryota	Cercozoa	Glissomonadida__c
+13	Eukaryota	Ciliophora	Colpodea	Bryophryida	Bryophryidae
+385	Eukaryota	Arthropoda	Hexanauplia
+3	Eukaryota	Dinophyceae__p	Dinophyceae	Syndiniales	Amoebophryaceae
+55	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	Kareniaceae
+38	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	Kareniaceae	Karlodinium
+4	Eukaryota	Bigyra__p	Bigyra	Nanomonadea	Solenicola__f
+12	Eukaryota	Cercozoa	Thecofilosea	Ebriacea__o	Ebriacea
+5	Eukaryota	Dinophyceae__p	Dinophyceae	Syndiniales
+302	Eukaryota	Dinophyceae__p	Dinophyceae	Peridiniales	Amphidiniopsidaceae
+2	Eukaryota	Cryptophyceae__p	Cryptophyceae	Kathablepharidacea
+17	Eukaryota	Cercozoa	Thecofilosea	Cryomonadida	Protaspidae
+2	Eukaryota	Dinophyceae__p	Dinophyceae	Syndiniales	Amoebophryaceae
+150	Eukaryota	Cercozoa	Thecofilosea	Cryomonadida
+10	Eukaryota	Bacillariophyta
+53	Eukaryota	Dinophyceae__p	Dinophyceae	Syndiniales	Amoebophryaceae	Amoebophrya	Amoebophrya sp_
+6	Eukaryota	Chlorophyta	Pyramimonadophyceae	Pyramimonadales	Pyramimonadaceae	Pyramimonas	Pyramimonas australis
+6	Eukaryota	Dinophyceae__p	Dinophyceae	Syndiniales	Amoebophryaceae
+199	Eukaryota	Cercozoa	Cercomonadida__c	Cercomonadida
+9	Eukaryota	Dinophyceae__p	Dinophyceae	Peridiniales	Peridiniopsidaceae	Parvodinium	Parvodinium umbonatum
+1	Eukaryota	Dinophyceae__p	Dinophyceae	Suessiales
+29	Environmental Unknown
+3	Unknown
+21	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Pseudo_nitzschia	Pseudo_nitzschia delicatissima
+9	Eukaryota	Dinophyceae__p	Dinophyceae
+87	Eukaryota	Cercozoa	Thecofilosea	Cryomonadida	Protaspidae
+1	Eukaryota	Dinophyceae__p	Dinophyceae	Syndiniales
+3	Eukaryota	Dinophyceae__p	Dinophyceae	Syndiniales
+20	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae
+24	Eukaryota	Picozoa
+1	Eukaryota	Cercozoa	Thecofilosea
+44	Environmental Unknown
+38	Eukaryota	Cercozoa	Thecofilosea	Cryomonadida
+4	Eukaryota	Bigyra__p	Bigyra	Oblongichytrida	Oblongichytrium__f	Oblongichytrium	Oblongichytrium sp_
+315	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Melosirales	Stephanopyxidaceae
+7	Eukaryota	Dinophyceae__p	Dinophyceae	Syndiniales
+1	Eukaryota	Cercozoa	Imbricatea	Thaumatomonadida	Thaumatomastigidae	Protaspis
+3	Unknown
+2	Eukaryota	Ciliophora	Spirotrichea	Choreotrichida	Leegaardiellidae	Leegaardiella
+2	Eukaryota	Cercozoa	Cercomonadida__c	Cercomonadida
+4	Eukaryota	Dinophyceae__p	Dinophyceae
+4	Eukaryota	Haptophyta	Prymnesiales__c	Prymnesiales	Chrysochromulinaceae	Chrysochromulina	Chrysochromulina sp_
+9	Eukaryota
+1	Unknown
+6	Eukaryota	Haptophyta	Prymnesiales__c	Prymnesiales	Prymnesiaceae
+35	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Rhizosoleniales	Rhizosoleniaceae
+1960	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Leptocylindrales	Leptocylindraceae	Leptocylindrus
+14	Eukaryota	Chlorophyta	Pyramimonadophyceae	Pyramimonadales	Pyramimonadaceae	Pterosperma	Pterosperma cristatum
+56	Eukaryota	Cercozoa	Thecofilosea	Mataza__f__o
+112	Eukaryota	Cercozoa	Imbricatea	Thaumatomonadida	Thaumatomastigidae
+72	Environmental Unknown
+12	Eukaryota	Bacillariophyta	Coscinodiscophyceae
+2	Eukaryota	Dinophyceae__p	Dinophyceae	Syndiniales	Amoebophryaceae
+8	Eukaryota	Bigyra__p	Bigyra	Nanomonadea	Incisomonas__f	Incisomonas	Incisomonas marina
+9	Eukaryota	Euglenozoa	Diplonemea	Diplonemidae__o	Diplonemidae
+6	Eukaryota	Dinophyceae__p	Dinophyceae	Syndiniales	Eudubosquellidae
+8	Eukaryota	Cercozoa
+37	Eukaryota	Dinophyceae__p	Dinophyceae	Syndiniales
+36	Eukaryota	Dinophyceae__p	Dinophyceae	Thoracosphaerales	Thoracosphaeraceae	Stoeckeria	Stoeckeria algicida
+40	Eukaryota	Haptophyta	Prymnesiales__c	Prymnesiales	Chrysochromulinaceae	Chrysochromulina	Chrysochromulina sp_ NIES_1333
+15	Eukaryota	Cercozoa
+5	Eukaryota	Dinophyceae__p	Dinophyceae	Syndiniales
+266	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Rhizosoleniales	Rhizosoleniaceae	Rhizosolenia	Rhizosolenia setigera
+100	Eukaryota	Dinophyceae__p	Dinophyceae	Gonyaulacales	Amphidomataceae	Azadinium	Azadinium perforatum
+15	Eukaryota	Dinophyceae__p	Dinophyceae	Syndiniales	Amoebophryaceae
+7	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Skeletonemataceae	Skeletonema
+252	Eukaryota	Ciliophora	Spirotrichea	Strombidiidae__o	Strombidiidae
+14	Eukaryota	Bolidophyceae__p	Bolidophyceae	Parmales	Triparmaceae	Triparma
+2	Eukaryota	Phaeophyceae__p	Phaeophyceae
+44	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	Gymnodiniaceae	Gymnodinium
+164	Eukaryota	Telonemida__c__p	Telonemida__c	Telonemida	Telonema__f
+1	Eukaryota	Ciliophora	Spirotrichea	Choreotrichida	Leegaardiellidae	Leegaardiella	Leegaardiella sp_
+1	Eukaryota	Dinophyceae__p	Dinophyceae	Peridiniales	Protoperidiniaceae	Protoperidinium	Protoperidinium monovelum
+51	Eukaryota	Telonemida__c__p	Telonemida__c	Telonemida	Telonema__f
+1	Eukaryota	Cryptophyceae__p	Cryptophyceae	Pyrenomonadales	Geminigeraceae	Geminigera	Geminigera cryophila
+1	Eukaryota	Dinophyceae__p	Dinophyceae	Syndiniales
+1	Eukaryota	Arthropoda	Hexanauplia	Calanoida
+281	Environmental Unknown
+4	Environmental Unknown
+5	Eukaryota	Ciliophora	Spirotrichea	Tintinnida	Tintinnidae	Salpingella	Salpingella sp_
+8	Eukaryota	Picozoa
+2	Environmental Unknown
+1	Eukaryota	Dinophyceae__p	Dinophyceae	Suessiales	Suessiaceae
+2	Eukaryota	Dinophyceae__p	Dinophyceae	Syndiniales	Amoebophryaceae	Amoebophrya	Amoebophrya sp_
+2	Eukaryota	Cercozoa
+7	Environmental Unknown
+1	Eukaryota	Haptophyta	Prymnesiales__c	Prymnesiales
+68	Eukaryota	Telonemida__c__p	Telonemida__c	Telonemida	Telonema__f	Telonema	Telonema antarcticum
+79	Eukaryota	Cercozoa	Thecofilosea	Mataza__f__o
+534	Eukaryota	Dinophyceae__p	Dinophyceae	Peridiniales	Peridiniopsidaceae	Palatinus	Palatinus apiculatus
+6	Unknown
+7	Eukaryota	Dinophyceae__p	Dinophyceae
+20	Eukaryota	Dinophyceae__p	Dinophyceae	Gonyaulacales	Pyrocystaceae	Dissodinium	Dissodinium pseudolunula
+2	Eukaryota	Chlorophyta	Pyramimonadophyceae	Pyramimonadales	Pyramimonadaceae	Pterosperma
+30	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	Gymnodiniaceae
+6	Eukaryota	Phaeophyceae__p	Phaeophyceae	Dictyotales
+1	Eukaryota	Bigyra__p	Bigyra	Thraustochytrida	Thraustochytriaceae	Aplanochytrium
+9	Eukaryota	Prasinodermophyta	Prasinodermophyceae	Prasinodermales	Prasinodermaceae	Prasinoderma	Prasinoderma coloniale
+16	Eukaryota	Dinophyceae__p	Dinophyceae	Syndiniales	Amoebophryaceae	Amoebophrya
+38	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	Gymnodiniaceae	Gymnodinium
+2	Eukaryota	Dinophyceae__p	Dinophyceae	Syndiniales
+72	Eukaryota	Telonemida__c__p	Telonemida__c	Telonemida	Telonema__f
+26	Eukaryota	Telonemida__c__p	Telonemida__c	Telonemida	Telonema__f
+2	Eukaryota	Dinophyceae__p	Dinophyceae	Syndiniales	Amoebophryaceae
+3	Eukaryota	Mucoromycota	Glomeromycetes
+6	Eukaryota	Cryptophyceae__p	Cryptophyceae	Pyrenomonadales
+46	Eukaryota	Dinophyceae__p	Dinophyceae	Syndiniales
+1	Eukaryota	Cryptophyceae__p	Cryptophyceae	Pyrenomonadales
+2	Eukaryota	Dinophyceae__p	Dinophyceae	Syndiniales	Amoebophryaceae	Amoebophrya
+2	Eukaryota	Dinophyceae__p	Dinophyceae	Coccidiniales
+8237	Eukaryota	Dinophyceae__p	Dinophyceae
+32	Eukaryota	Dinophyceae__p	Dinophyceae	Syndiniales
+1	Eukaryota	Cercozoa	Thecofilosea	Cryomonadida
+566	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Pseudo_nitzschia
+3	Eukaryota	Dinophyceae__p	Dinophyceae	Syndiniales
+4	Eukaryota	Bigyra__p	Bigyra
+118	Eukaryota	Ciliophora	Spirotrichea	Strombidiidae__o	Strombidiidae
+5	Eukaryota	Streptophyta	Magnoliopsida	Alismatales
+4	Eukaryota	Dinophyceae__p	Dinophyceae	Syndiniales	Amoebophryaceae	Amoebophrya	Amoebophrya sp_
+206	Eukaryota	Ciliophora	Spirotrichea	Choreotrichida	Strobilidiidae
+4	Eukaryota	Dinophyceae__p	Dinophyceae	Syndiniales	Amoebophryaceae
+146	Eukaryota	Cryptophyceae__p	Cryptophyceae
+9	Environmental Unknown
+21	Eukaryota	Ascomycota	Saccharomycetes	Saccharomycetales
+10	Eukaryota	Cryptophyceae__p	Cryptophyceae
+3	Eukaryota	Cercozoa
+1	Eukaryota	Dinophyceae__p	Dinophyceae
+130	Eukaryota	Dinophyceae__p	Dinophyceae	Blastodiniales	Blastodinium__f
+5	Eukaryota	Cercozoa
+380	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	Warnowiaceae	Warnowia
+4	Eukaryota	Dinophyceae__p	Dinophyceae
+15	Eukaryota	Haptophyta
+2229	Eukaryota	Choanoflagellata__p	Choanoflagellata	Acanthoecida	Stephanoecidae
+100	Eukaryota	Chlorophyta	Mamiellophyceae	Dolichomastigales	Crustomastigaceae
+13	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	Florenciella__f	Florenciella
+6	Eukaryota	Bacillariophyta	Bacillariophyceae	Naviculales	Pleurosigmataceae	Donkinia	Donkinia sp_
+2	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Melosirales	Stephanopyxidaceae
+191	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Rhizosoleniales	Rhizosoleniaceae	Proboscia
+41	Eukaryota	Apicomplexa	Conoidasida	Corallicolida
+12	Eukaryota	Prasinodermophyta	Prasinodermophyceae	Prasinodermales	Prasinodermaceae
+1	Environmental Unknown
+4	Unknown
+1	Eukaryota	Haptophyta
+25	Environmental Unknown
+14	Eukaryota	Cercozoa	Cercomonadida__c	Cercomonadida
+223	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Pseudo_nitzschia	Pseudo_nitzschia fraudulenta
+8	Eukaryota	Cercozoa	Imbricatea	Marimonadida	Abollifer__f	Abollifer
+3	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales
+27	Eukaryota	Oomycota	Peronosporales__c	Peronosporales
+163	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	Kareniaceae	Karlodinium	Karlodinium veneficum
+22	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Detonula	Detonula pumila
+11	Eukaryota	Cryptophyceae__p	Cryptophyceae	Cryptomonadales	Hemiselmidaceae	Hemiselmis	Hemiselmis rufescens
+26	Eukaryota	Bacillariophyta	Bacillariophyceae	Naviculales	Pleurosigmataceae	Donkinia	Donkinia sp_
+18	Eukaryota	Chrysophyceae__p	Chrysophyceae	Chromulinales	Paraphysomonadaceae	Paraphysomonas
+1	Eukaryota	Cercozoa	Cercomonadida__c	Cercomonadida
+3	Eukaryota	Bigyra__p	Bigyra	Mastreximonas__f__o	Mastreximonas__f	Mastreximonas
+1	Eukaryota	Haptophyta	Prymnesiales__c	Prymnesiales	Prymnesiaceae	Prymnesium
+8	Eukaryota	Cercozoa	Imbricatea	Thaumatomonadida	Thaumatomastigidae	Protaspis
+16	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Thalassiosirales
+5	Eukaryota	Dinophyceae__p	Dinophyceae
+3	Eukaryota	Bacillariophyta	Bacillariophyceae	Naviculales
+4	Eukaryota	Bacillariophyta	Fragilariophyceae
+13	Eukaryota	Cryptophyceae__p	Cryptophyceae	Cryptomonadales	Hemiselmidaceae	Hemiselmis
+4	Eukaryota	Choanoflagellata__p	Choanoflagellata	Acanthoecida	Stephanoecidae	Calliacantha	Calliacantha longicaudata
+1	Eukaryota	Haptophyta
+1	Eukaryota	Cnidaria	Hydrozoa	Leptothecata	Mitrocomidae	Halopsis
+13	Eukaryota	Nibbleridia	Nibbleridea	Nibbleridida	Nibbleridae	Ubysseya	Ubysseya fretuma
+17	Eukaryota	Cercozoa	Thecofilosea	Ebriacea__o	Ebriacea
+182	Eukaryota	Bacillariophyta	Mediophyceae	Hemiaulales	Hemiaulaceae	Eucampia
+3	Eukaryota	Dinophyceae__p	Dinophyceae	Syndiniales	Amoebophryaceae
+2	Eukaryota	Cryptophyceae__p	Cryptophyceae	Cryptomonadales	Hemiselmidaceae	Hemiselmis	Hemiselmis cryptochromatica
+41	Eukaryota	Ciliophora	Spirotrichea	Strombidiidae__o	Strombidiidae	Spirostrombidium	Spirostrombidium faurefremieti
+53	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	Kareniaceae
+6	Eukaryota
+2	Eukaryota	Dinophyceae__p	Dinophyceae	Syndiniales	Amoebophryaceae
+18	Eukaryota	Pelagophyceae__p	Pelagophyceae	Pelagomonadales	Pelagomonas__f	Pelagomonas	Pelagomonas calceolata
+15	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Chaetoceros cinctus
+14	Eukaryota	Cryptophyceae__p	Cryptophyceae	Kathablepharidacea	Katablepharidaceae	Katablepharis	Katablepharis japonica
+3	Eukaryota	Apicomplexa	Aconoidasida	Piroplasmida
+2	Eukaryota	Dinophyceae__p	Dinophyceae
+2	Unknown
+2	Eukaryota	Haptophyta	Prymnesiales__c	Prymnesiales
+2	Unknown
+2	Unknown
+2	Eukaryota	Chordata	Actinopteri	Myctophiformes	Myctophidae	Tarletonbeania	Tarletonbeania crenularis
+5	Eukaryota	Dinophyceae__p	Dinophyceae
+8	Eukaryota	Dinophyceae__p	Dinophyceae	Syndiniales	Amoebophryaceae	Amoebophrya	Amoebophrya sp_
+13	Eukaryota	Dinophyceae__p	Dinophyceae
+2	Eukaryota	Haptophyta	Prymnesiales__c	Prymnesiales	Chrysochromulinaceae	Chrysochromulina
+5	Eukaryota	Cercozoa	Imbricatea	Euglyphida
+2	Eukaryota	Dinophyceae__p	Dinophyceae	Syndiniales
+1133	Eukaryota	Dinophyceae__p	Dinophyceae	Gonyaulacales	Gonyaulacaceae	Adenoides	Adenoides eludens
+24	Eukaryota	Cercozoa
+260	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Pedinellales	Pseudopedinella__f
+6	Eukaryota	Dinophyceae__p	Dinophyceae	Syndiniales	Amoebophryaceae
+4	Eukaryota	Cercozoa	Thecofilosea	Ebriacea__o	Ebriacea
+7	Eukaryota	Cercozoa	Thecofilosea	Mataza__f__o	Mataza__f
+9	Eukaryota	Streptophyta
+73	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Chaetoceros sp_ UNC1415
+3	Eukaryota	Dinophyceae__p	Dinophyceae	Syndiniales	Amoebophryaceae
+867	Eukaryota	Ciliophora	Spirotrichea	Tontoniidae__o	Tontoniidae	Pseudotontonia	Pseudotontonia sp_ JG_2011a
+3	Environmental Unknown
+152	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	Florenciella__f	Florenciella
+18	Eukaryota	Cercozoa	Thecofilosea	Ebriacea__o
+2	Eukaryota	Haptophyta	Prymnesiales__c	Prymnesiales	Chrysochromulinaceae	Chrysochromulina
+61	Eukaryota	Chrysophyceae__p	Chrysophyceae	Chromulinales	Paraphysomonadaceae	Paraphysomonas
+2	Eukaryota	Dinophyceae__p	Dinophyceae	Syndiniales	Amoebophryaceae
+26	Eukaryota	Chrysophyceae__p	Chrysophyceae
+6	Eukaryota	Bacillariophyta	Fragilariophyceae
+9	Unknown
+1	Eukaryota	Cryptophyceae__p	Cryptophyceae	Pyrenomonadales	Geminigeraceae
+12	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Pedinellales
+1	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	Gymnodiniaceae	Paulsenella	Paulsenella vonstoschii
+424	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Dictyochales	Dictyochaceae	Dictyocha	Dictyocha speculum
+269	Eukaryota	Chlorophyta	Mamiellophyceae	Mamiellales	Mamiellaceae	Micromonas
+24	Eukaryota	Dinophyceae__p	Dinophyceae
+5	Eukaryota	Arthropoda	Hexanauplia
+5	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	Gymnodiniaceae
+2	Eukaryota	Haptophyta	Prymnesiales__c	Prymnesiales	Chrysochromulinaceae	Chrysochromulina	Chrysochromulina strobilus
+110	Environmental Unknown
+32	Eukaryota	Bacillariophyta	Mediophyceae	Cymatosirales	Cymatosiraceae	Brockmanniella	Brockmanniella brockmannii
+19	Eukaryota	Dinophyceae__p	Dinophyceae	Syndiniales	Amoebophryaceae
+40	Eukaryota	Chlorophyta	Mamiellophyceae	Dolichomastigales
+1	Eukaryota	Dinophyceae__p	Dinophyceae	Gonyaulacales	Gonyaulacaceae	Adenoides
+64	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	Gymnodiniaceae	Paragymnodinium	Paragymnodinium inerme
+2118	Eukaryota	Arthropoda	Hexanauplia	Cyclopoida	Oithonidae	Oithona	Oithona similis
+675	Eukaryota	Ciliophora	Spirotrichea	Choreotrichida	Leegaardiellidae	Leegaardiella	Leegaardiella sp_
+151	Eukaryota	Haptophyta	Prymnesiales__c	Prymnesiales	Chrysochromulinaceae	Chrysochromulina	Chrysochromulina sp_
+38	Eukaryota	Dinophyceae__p	Dinophyceae	Blastodiniales	Blastodinium__f
+1	Eukaryota	Cnidaria	Hydrozoa	Siphonophorae	Clausophyidae	Chuniphyes
+18	Eukaryota	Cercozoa	Imbricatea	Thaumatomonadida
+13	Eukaryota	Cryptophyceae__p	Cryptophyceae	Pyrenomonadales
+7	Eukaryota	Chlorophyta	Mamiellophyceae	Mamiellales	Mamiellaceae	Micromonas	Micromonas pusilla
+5	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Thalassiosira
+5	Eukaryota	Cryptophyceae__p	Cryptophyceae	Pyrenomonadales
+32	Eukaryota	Ciliophora	Spirotrichea	Tintinnida
+256	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Pseudo_nitzschia	Pseudo_nitzschia calliantha
+1	Eukaryota	Haptophyta	Prymnesiales__c	Prymnesiales	Chrysochromulinaceae	Chrysochromulina	Chrysochromulina strobilus
+154	Eukaryota	Bacillariophyta	Fragilariophyceae	Rhabdonematales	Grammatophoraceae
+2	Environmental Unknown
+42	Eukaryota	Ciliophora	Spirotrichea	Choreotrichida	Strobilidiidae	Rimostrombidium	Rimostrombidium veniliae
+286	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Thalassiosira
+3	Eukaryota	Chlorophyta	Mamiellophyceae	Dolichomastigales
+1	Eukaryota	Dinophyceae__p	Dinophyceae	Blastodiniales	Blastodinium__f
+38	Eukaryota	Choanoflagellata__p	Choanoflagellata
+5	Eukaryota	Dinophyceae__p	Dinophyceae
+54	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Thalassiosira
+166	Eukaryota	Haptophyta	Prymnesiales__c	Prymnesiales	Chrysochromulinaceae	Chrysochromulina
+45	Eukaryota	Chlorophyta	Mamiellophyceae	Mamiellales	Bathycoccaceae	Bathycoccus	Bathycoccus prasinos
+24	Eukaryota	Bigyra__p	Bigyra	Oblongichytrida	Oblongichytrium__f	Oblongichytrium	Oblongichytrium sp_
+12	Eukaryota	Chlorophyta	Mamiellophyceae	Dolichomastigales	Crustomastigaceae	Crustomastix	Crustomastix sp_ MBIC10709
+23	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Chaetoceros sp_
+3	Eukaryota	Bigyra__p	Bigyra	Oblongichytrida	Oblongichytrium__f	Oblongichytrium	Oblongichytrium sp_
+63	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	Gymnodiniaceae	Lepidodinium	Lepidodinium viride
+22	Eukaryota	Cercozoa	Imbricatea	Metromonadea__o
+4	Eukaryota	Dinophyceae__p	Dinophyceae
+12	Eukaryota	Chlorophyta	Mamiellophyceae	Dolichomastigales	Crustomastigaceae
+2	Eukaryota	Bacillariophyta	Fragilariophyceae	Rhaponeidales	Rhaphoneidaceae	Neodelphineis	Neodelphineis sp_
+49	Eukaryota	Haptophyta
+17	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales
+183	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	Warnowiaceae	Warnowia	Warnowia sp_
+11	Eukaryota	Dinophyceae__p	Dinophyceae	Gonyaulacales	Amphidomataceae	Azadinium	Azadinium galwayense
+3	Eukaryota	Haptophyta
+3	Eukaryota	Cercozoa	Thecofilosea	Cryomonadida	Protaspidae
+25	Eukaryota	Dinophyceae__p	Dinophyceae	Peridiniales	Protoperidiniaceae	Protoperidinium	Protoperidinium monovelum
+1	Eukaryota	Dinophyceae__p	Dinophyceae	Syndiniales	Amoebophryaceae
+1	Eukaryota	Cercozoa	Thecofilosea	Cryomonadida	Protaspidae	Cryothecomonas	Cryothecomonas aestivalis
+1	Eukaryota	Dinophyceae__p	Dinophyceae	Syndiniales	Ellobiopsidae	Thalassomyces	Thalassomyces fagei
+56	Eukaryota	Pelagophyceae__p	Pelagophyceae	Pelagomonadales	Aureococcus__f	Aureococcus	Aureococcus anophagefferens
+2	Eukaryota	Chlorophyta	Trebouxiophyceae	Coccomyxa__f__o	Coccomyxa__f
+387	Eukaryota	Arthropoda	Insecta	Lepidoptera
+2	Eukaryota	Rotosphaerida__c__p	Rotosphaerida__c	Rotosphaerida
+2805	Eukaryota	Cnidaria	Hydrozoa	Siphonophorae
+3	Eukaryota	Cercozoa	Thecofilosea	Cryomonadida	Protaspidae
+12	Eukaryota	Cercozoa	Thecofilosea	Ebriacea__o
+3	Eukaryota	Bigyra__p	Bigyra	Oblongichytrida	Oblongichytrium__f
+2	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales
+8	Eukaryota	Haptophyta	Prymnesiales__c	Prymnesiales	Prymnesiaceae	Prymnesium
+106	Eukaryota	Haptophyta	Prymnesiales__c	Prymnesiales	Chrysochromulinaceae
+43	Unknown
+3	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Rhizosoleniales	Rhizosoleniaceae	Guinardia	Guinardia striata
+11	Eukaryota	Dinophyceae__p	Dinophyceae
+16	Eukaryota	Cercozoa	Thecofilosea	Mataza__f__o	Mataza__f	Mataza	Mataza hastifera
+1	Eukaryota	Bigyra__p	Bigyra	Oblongichytrida	Oblongichytrium__f	Oblongichytrium	Oblongichytrium sp_
+2	Unknown
+9	Eukaryota	Streptophyta	Magnoliopsida	Brassicales	Brassicaceae
+4	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	Gymnodiniaceae	Polykrikos	Polykrikos sp_ EP_2016a
+86	Eukaryota	Cryptophyceae__p	Cryptophyceae	Pyrenomonadales	Geminigeraceae	Teleaulax
+3	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales
+3	Eukaryota	Cercozoa	Imbricatea	Thaumatomonadida
+9	Eukaryota	Ciliophora	Spirotrichea	Strombidiidae__o	Strombidiidae	Strombidium
+3	Eukaryota	Platyhelminthes	Rhabditophora	Rhabdocoela
+423	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Pseudo_nitzschia
+502	Eukaryota	Choanoflagellata__p	Choanoflagellata	Craspedida	Salpingoecidae
+1	Eukaryota	Pirsoniales__c__p	Pirsoniales__c	Pirsoniales
+144	Eukaryota	Cercozoa	Thecofilosea	Ventricleftida
+1	Eukaryota	Chlorophyta	Pyramimonadophyceae	Pyramimonadales	Pyramimonadaceae	Pterosperma	Pterosperma cristatum
+683	Eukaryota	Dinophyceae__p	Dinophyceae
+9	Eukaryota	Chlorophyta	Mamiellophyceae	Mamiellales	Mamiellaceae	Micromonas
+35	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Rhizosoleniales	Rhizosoleniaceae	Guinardia	Guinardia striata
+26	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Minidiscus
+1	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	Gymnodiniaceae	Paulsenella	Paulsenella vonstoschii
+101	Eukaryota	Cercozoa	Thecofilosea	Cryomonadida	Protaspidae
+11	Eukaryota	Chlorophyta	Pyramimonadophyceae	Pyramimonadales	Pyramimonadaceae	Cymbomonas	Cymbomonas tetramitiformis
+186	Eukaryota	Bigyra__p	Bigyra	Oblongichytrida	Oblongichytrium__f	Oblongichytrium	Oblongichytrium sp_
+55	Environmental Unknown
+3	Eukaryota	Dinophyceae__p	Dinophyceae	Syndiniales	Amoebophryaceae
+73	Eukaryota	Ciliophora	Spirotrichea	Choreotrichida	Strobilidiidae	Pelagostrobilidium	Pelagostrobilidium neptuni
+3	Eukaryota	Haptophyta	Prymnesiales__c	Prymnesiales	Prymnesiaceae
+2	Environmental Unknown
+8	Eukaryota	Haptophyta	Prymnesiales__c	Prymnesiales	Chrysochromulinaceae
+10	Eukaryota	Cnidaria	Hydrozoa	Leptothecata	Clytiidae	Clytia	Clytia gracilis
+60	Eukaryota	Cercozoa	Thecofilosea	Cryomonadida	Protaspidae	Cryothecomonas
+1	Eukaryota	Bolidophyceae__p	Bolidophyceae	Parmales	Triparmaceae
+33	Eukaryota	Chlorophyta	Mamiellophyceae	Dolichomastigales	Crustomastigaceae
+2	Eukaryota	Dinophyceae__p	Dinophyceae	Syndiniales	Amoebophryaceae
+171	Eukaryota	Bacillariophyta	Coscinodiscophyceae
+3	Environmental Unknown
+2	Eukaryota	Dinophyceae__p	Dinophyceae	Syndiniales
+2	Eukaryota	Dinophyceae__p	Dinophyceae	Syndiniales	Amoebophryaceae
+15	Eukaryota	Chlorophyta	Mamiellophyceae	Dolichomastigales	Crustomastigaceae
+3	Eukaryota	Dinophyceae__p	Dinophyceae	Syndiniales	Amoebophryaceae	Amoebophrya
+19	Eukaryota	Chrysophyceae__p	Chrysophyceae
+3	Eukaryota	Bacillariophyta	Fragilariophyceae
+8	Eukaryota	Ciliophora	Spirotrichea	Tintinnida	Tintinnidae	Eutintinnus	Eutintinnus pectinis
+11	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Rhizosoleniales	Rhizosoleniaceae	Rhizosolenia
+14	Eukaryota	Chlorophyta	Mamiellophyceae	Dolichomastigales	Crustomastigaceae
+219	Eukaryota	Haptophyta	Prymnesiales__c	Prymnesiales	Chrysochromulinaceae	Chrysochromulina	Chrysochromulina simplex
+3	Eukaryota	Basidiomycota	Malasseziomycetes	Malasseziales
+11	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae
+3	Eukaryota	Dinophyceae__p	Dinophyceae	Syndiniales	Amoebophryaceae	Amoebophrya
+112	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Pseudo_nitzschia
+250	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Melosirales	Stephanopyxidaceae
+4	Eukaryota	Platyhelminthes	Catenulida	Catenulidae__o
+2	Eukaryota	Phaeophyceae__p	Phaeophyceae	Sphacelariales
+1	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales
+30	Eukaryota	Cryptophyceae__p	Cryptophyceae	Cyathomonadacea
+39	Eukaryota	Cryptophyceae__p	Cryptophyceae	Pyrenomonadales	Geminigeraceae	Teleaulax	Teleaulax amphioxeia
+466	Eukaryota	Dinophyceae__p	Dinophyceae	Syndiniales	Amoebophryaceae
+4	Eukaryota	Dinophyceae__p	Dinophyceae
+2182	Eukaryota	Ciliophora	Spirotrichea	Strombidiidae__o	Strombidiidae
+67	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Chaetoceros sp_ UNC1416
+2	Eukaryota	Phaeophyceae__p	Phaeophyceae	Laminariales
+3	Eukaryota	Dinophyceae__p	Dinophyceae
+30	Eukaryota	Dinophyceae__p	Dinophyceae	Syndiniales	Amoebophryaceae
+4	Eukaryota	Chordata	Thaliacea	Salpida	Salpidae
+5	Eukaryota	Dinophyceae__p	Dinophyceae	Prorocentrales	Prorocentraceae
+19	Eukaryota	Chlorophyta	Trebouxiophyceae	Leptosira__f__o
+5	Eukaryota	Cercozoa	Thecofilosea	Mataza__f__o
+6539	Unknown
+5	Eukaryota	Bacillariophyta
+3	Eukaryota	Dinophyceae__p	Dinophyceae
+3	Eukaryota	Arthropoda	Arachnida
+52	Eukaryota	Cryptophyceae__p	Cryptophyceae	Cryptomonadales	Hemiselmidaceae	Hemiselmis	Hemiselmis cryptochromatica
+180	Eukaryota	Ciliophora	Spirotrichea	Strombidiidae__o	Strombidiidae	Strombidium
+4	Eukaryota	Chlorophyta	Mamiellophyceae	Dolichomastigales
+6	Eukaryota	Annelida	Polychaeta
+11	Eukaryota	Cryptophyceae__p	Cryptophyceae	Pyrenomonadales
+8	Eukaryota	Bacillariophyta	Fragilariophyceae	Fragilariales	Fragilariaceae
+1	Eukaryota	Arthropoda	Arachnida
+1	Eukaryota	Chlorophyta	Mamiellophyceae	Dolichomastigales	Dolichomastigaceae	Dolichomastix	Dolichomastix tenuilepis
+246	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Chaetoceros sp_ UNC1414
+1	Eukaryota	Cercozoa	Imbricatea	Thaumatomonadida
+9	Eukaryota	Bigyra__p	Bigyra
+7	Eukaryota	Cnidaria	Hydrozoa	Anthoathecata	Hydrichthyidae	Hydrichthys	Hydrichthys boycei
+1	Eukaryota	Euglenozoa	Diplonemea	Diplonemidae__o	Diplonemidae
+431	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales
+10	Eukaryota	Cercozoa	Cercomonadida__c	Cercomonadida
+9	Eukaryota	Chlorophyta	Mamiellophyceae	Dolichomastigales	Crustomastigaceae
+18	Eukaryota	Dinophyceae__p	Dinophyceae
+97	Eukaryota	Chlorophyta	Mamiellophyceae	Mamiellales
+1204	Eukaryota	Cryptophyceae__p	Cryptophyceae
+4	Eukaryota	Dinophyceae__p	Dinophyceae	Coccidiniales
+4	Eukaryota	Haptophyta	Prymnesiales__c	Prymnesiales	Chrysochromulinaceae	Chrysochromulina
+3	Eukaryota	Dinophyceae__p	Dinophyceae	Syndiniales	Amoebophryaceae	Amoebophrya	Amoebophrya sp_
+2	Environmental Unknown
+6073	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Chaetoceros sp_ UNC1415
+37	Eukaryota	Dinophyceae__p	Dinophyceae
+41	Eukaryota	Choanoflagellata__p	Choanoflagellata	Acanthoecida	Stephanoecidae
+1	Eukaryota	Chlorophyta	Trebouxiophyceae	Chlorellales
+19	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Thalassiosira	Thalassiosira concaviuscula
+4	Unknown
+2	Eukaryota	Dinophyceae__p	Dinophyceae	Syndiniales	Amoebophryaceae
+8	Eukaryota	Ciliophora	Spirotrichea	Strombidiidae__o	Strombidiidae
+1	Eukaryota	Bigyra__p	Bigyra	Oblongichytrida	Oblongichytrium__f
+2	Eukaryota	Dinophyceae__p	Dinophyceae	Syndiniales	Amoebophryaceae	Amoebophrya	Amoebophrya sp_
+14	Eukaryota	Choanoflagellata__p	Choanoflagellata
+1	Eukaryota	Telonemida__c__p	Telonemida__c	Telonemida	Arpakorses__f
+79	Eukaryota	Bigyra__p	Bigyra	Oblongichytrida	Oblongichytrium__f	Oblongichytrium
+16	Eukaryota	Chlorophyta	Mamiellophyceae	Dolichomastigales	Crustomastigaceae
+4	Eukaryota	Dinophyceae__p	Dinophyceae	Prorocentrales	Prorocentraceae	Prorocentrum	Prorocentrum sp_ RCC5940
+1	Eukaryota	Ciliophora	Spirotrichea	Strombidiidae__o	Strombidiidae	Strombidium	Strombidium chlorophilum
+1	Eukaryota	Cryptophyceae__p	Cryptophyceae	Pyrenomonadales
+212	Eukaryota	Euglenozoa	Diplonemea	Diplonemidae__o	Diplonemidae
+79	Eukaryota	Cnidaria	Hydrozoa	Siphonophorae
+46	Environmental Unknown
+3	Eukaryota	Telonemida__c__p	Telonemida__c	Telonemida	Telonema__f
+13	Eukaryota	Cercozoa	Imbricatea	Euglyphida
+98	Eukaryota
+34	Eukaryota	Cercozoa
+2	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales
+29	Eukaryota	Dinophyceae__p	Dinophyceae
+25	Eukaryota	Dinophyceae__p	Dinophyceae	Peridiniales	Kryptoperidiniaceae
+1	Eukaryota	Dinophyceae__p	Dinophyceae	Syndiniales	Amoebophryaceae
+29	Eukaryota	Chlorophyta	Mamiellophyceae	Dolichomastigales	Crustomastigaceae
+8	Eukaryota	Cercozoa
+5	Eukaryota	Chlorophyta	Mamiellophyceae	Dolichomastigales	Dolichomastigaceae
+69	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Chaetoceros sp_ NIES_3971
+31	Eukaryota	Ciliophora	Spirotrichea	Strombidiidae__o	Strombidiidae
+214	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	Gymnodiniaceae	Lepidodinium	Lepidodinium viride
+46	Environmental Unknown
+11	Eukaryota	Chlorophyta	Mamiellophyceae	Dolichomastigales
+2	Eukaryota	Ciliophora	Spirotrichea	Strombidiidae__o	Strombidiidae	Varistrombidium
+2	Eukaryota	Telonemida__c__p	Telonemida__c	Telonemida	Telonema__f	Telonema
+15	Eukaryota	Cercozoa	Thecofilosea	Ebriacea__o
+5	Eukaryota	Cercozoa	Thecofilosea	Ebriacea__o
+8	Eukaryota
+4	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Pseudo_nitzschia
+54	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Rhizosoleniales	Rhizosoleniaceae	Proboscia
+3	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae
+3	Environmental Unknown
+1	Environmental Unknown
+17	Eukaryota	Dinophyceae__p	Dinophyceae	Syndiniales	Amoebophryaceae
+5	Eukaryota	Dinophyceae__p	Dinophyceae	Syndiniales
+2	Eukaryota	Cryptophyceae__p	Cryptophyceae	Pyrenomonadales
+62	Eukaryota	Dinophyceae__p	Dinophyceae	Blastodiniales	Blastodinium__f
+5	Eukaryota	Cryptophyceae__p	Cryptophyceae	Pyrenomonadales	Geminigeraceae	Teleaulax	Teleaulax amphioxeia
+2	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Thalassiosira
+1	Eukaryota	Cercozoa
+5	Eukaryota	Dinophyceae__p	Dinophyceae	Syndiniales	Amoebophryaceae	Amoebophrya	Amoebophrya sp_
+26	Eukaryota	Chlorophyta	Trebouxiophyceae
+58	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Aulacoseiraceae__o
+1373	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Chaetoceros eibenii
+1	Eukaryota	Chlorophyta	Trebouxiophyceae	Chlorellales	Chlorellaceae
+286	Eukaryota	Cercozoa	Imbricatea	Thaumatomonadida	Thaumatomastigidae	Protaspis
+8	Eukaryota	Dinophyceae__p	Dinophyceae
+3	Eukaryota	Pirsoniales__c__p	Pirsoniales__c	Pirsoniales
+8	Eukaryota
+26	Environmental Unknown
+83	Eukaryota	Picozoa
+14	Eukaryota	Dinophyceae__p	Dinophyceae	Syndiniales	Amoebophryaceae	Amoebophrya	Amoebophrya sp_
+1	Eukaryota	Bigyra__p	Bigyra	Bicosoecida
+19	Eukaryota	Cryptophyceae__p	Cryptophyceae
+723	Eukaryota	Cryptophyceae__p	Cryptophyceae	Pyrenomonadales	Geminigeraceae	Teleaulax	Teleaulax amphioxeia
+3	Environmental Unknown
+233	Eukaryota	Cercozoa
+4	Environmental Unknown
+48	Eukaryota	Cryptophyceae__p	Cryptophyceae	Pyrenomonadales
+2	Eukaryota	Chlorophyta	Mamiellophyceae	Dolichomastigales	Crustomastigaceae	Crustomastix
+3	Eukaryota	Dinophyceae__p	Dinophyceae	Syndiniales	Amoebophryaceae	Amoebophrya
+7	Eukaryota	Chlorophyta	Mamiellophyceae	Dolichomastigales	Crustomastigaceae
+7	Eukaryota	Chlorophyta	Mamiellophyceae	Dolichomastigales	Crustomastigaceae	Crustomastix
+1225	Eukaryota	Chlorophyta	Mamiellophyceae	Mamiellales	Bathycoccaceae	Bathycoccus	Bathycoccus prasinos
+4	Eukaryota	Dinophyceae__p	Dinophyceae	Syndiniales	Amoebophryaceae
+8	Eukaryota	Chlorophyta	Trebouxiophyceae	Chlorellales
+69	Eukaryota	Chrysophyceae__p	Chrysophyceae	Chromulinales	Dinobryaceae	Dinobryon	Dinobryon balticum
+78	Eukaryota	Telonemida__c__p	Telonemida__c	Telonemida	Telonema__f
+4	Eukaryota	Dinophyceae__p	Dinophyceae	Peridiniales	Protoperidiniaceae	Protoperidinium
+15	Eukaryota	Chlorophyta	Mamiellophyceae	Dolichomastigales	Crustomastigaceae	Crustomastix	Crustomastix sp_ MBIC10709
+1	Eukaryota	Dinophyceae__p	Dinophyceae	Syndiniales	Amoebophryaceae	Amoebophrya	Amoebophrya sp_
+1	Eukaryota	Dinophyceae__p	Dinophyceae
+5	Environmental Unknown
+1	Eukaryota	Dinophyceae__p	Dinophyceae	Syndiniales	Amoebophryaceae
+8	Eukaryota	Dinophyceae__p	Dinophyceae	Syndiniales	Amoebophryaceae
+39	Eukaryota	Choanoflagellata__p	Choanoflagellata	Acanthoecida	Stephanoecidae	Stephanoeca
+54	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	Gymnodiniaceae	Gyrodinium	Gyrodinium dominans
+2	Unknown
+2	Eukaryota	Telonemida__c__p	Telonemida__c	Telonemida	Telonema__f
+2	Eukaryota	Cercozoa	Imbricatea	Euglyphida
+2	Eukaryota	Dinophyceae__p	Dinophyceae	Syndiniales	Amoebophryaceae
+5630	Eukaryota	Haptophyta	Phaeocystales__c	Phaeocystales	Phaeocystaceae	Phaeocystis
+2	Eukaryota	Chlorophyta	Mamiellophyceae	Dolichomastigales	Crustomastigaceae
+10	Eukaryota	Dinophyceae__p	Dinophyceae	Syndiniales
+119	Eukaryota	Cercozoa	Thecofilosea	Cryomonadida	Protaspidae	Cryothecomonas	Cryothecomonas sp_ APCC MC5_1Cryo
+2	Eukaryota	Chrysophyceae__p	Chrysophyceae	Chromulinales	Paraphysomonadaceae	Paraphysomonas
+11	Eukaryota	Dinophyceae__p	Dinophyceae	Peridiniales	Amphidiniopsidaceae
+4	Eukaryota	Chlorophyta	Mamiellophyceae	Dolichomastigales	Dolichomastigaceae
+1	Eukaryota	Dinophyceae__p	Dinophyceae	Syndiniales	Amoebophryaceae	Amoebophrya
+2	Eukaryota	Dinophyceae__p	Dinophyceae	Syndiniales	Amoebophryaceae	Amoebophrya	Amoebophrya sp_
+49	Environmental Unknown
+42	Eukaryota	Bacillariophyta	Fragilariophyceae
+1	Eukaryota	Bolidophyceae__p	Bolidophyceae	Parmales
+497	Eukaryota	Bigyra__p	Bigyra	Oblongichytrida	Oblongichytrium__f	Oblongichytrium	Oblongichytrium sp_
+62	Unknown
+4	Eukaryota	Cryptophyceae__p	Cryptophyceae	Pyrenomonadales	Chroomonadaceae
+42	Eukaryota	Bacillariophyta	Bacillariophyceae	Naviculales	Plagiotropidaceae	Plagiolemma	Plagiolemma distortum
+1	Eukaryota	Centroplasthelida__p	Centroplasthelida	Pterocystida
+8	Eukaryota	Chlorophyta	Mamiellophyceae	Dolichomastigales	Crustomastigaceae
+10	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Pseudo_nitzschia
+1	Eukaryota	Centroplasthelida__p	Centroplasthelida
+1	Eukaryota	Haptophyta	Prymnesiales__c	Prymnesiales	Prymnesiaceae
+54	Eukaryota	Dinophyceae__p	Dinophyceae	Gonyaulacales	Amphidomataceae	Azadinium	Azadinium galwayense
+3	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Corethrales
+1	Eukaryota	Dinophyceae__p	Dinophyceae	Syndiniales	Eudubosquellidae
+2	Eukaryota	Dinophyceae__p	Dinophyceae	Syndiniales	Amoebophryaceae	Amoebophrya
+2	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros
+8	Eukaryota	Cryptophyceae__p	Cryptophyceae	Pyrenomonadales
+14	Eukaryota	Dinophyceae__p	Dinophyceae	Torodiniales	Torodiniaceae	Torodinium	Torodinium robustum
+18	Eukaryota	Choanoflagellata__p	Choanoflagellata	Acanthoecida	Acanthoecidae	Crinolina	Crinolina isefiordensis
+7	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Pseudo_nitzschia
+1	Eukaryota	Dinophyceae__p	Dinophyceae	Syndiniales	Amoebophryaceae	Amoebophrya
+1	Eukaryota	Haptophyta	Prymnesiales__c	Prymnesiales
+1	Eukaryota	Dinophyceae__p	Dinophyceae	Syndiniales	Amoebophryaceae
+1	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros
+2	Eukaryota	Arthropoda	Malacostraca	Euphausiacea	Euphausiidae
+213	Eukaryota	Bigyra__p	Bigyra	Oblongichytrida	Oblongichytrium__f	Oblongichytrium	Oblongichytrium sp_
+1	Eukaryota	Dinophyceae__p	Dinophyceae	Dinophysales
+221	Eukaryota	Ctenophora	Tentaculata	Cydippida	Mertensiidae
+6	Eukaryota	Dinophyceae__p	Dinophyceae	Syndiniales
+3	Eukaryota	Cnidaria	Hydrozoa	Leptothecata	Aequoreidae	Aequorea
+12	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Melosirales	Stephanopyxidaceae
+2	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Chaetoceros eibenii
+3	Eukaryota	Dinophyceae__p	Dinophyceae	Syndiniales
+1	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	Gymnodiniaceae
+8	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	Kareniaceae	Karlodinium
+8	Eukaryota	Dinophyceae__p	Dinophyceae	Gonyaulacales	Gonyaulacaceae
+284	Eukaryota	Cercozoa	Thecofilosea	Cryomonadida	Protaspidae
+4	Environmental Unknown
+2	Environmental Unknown
+826	Eukaryota	Bacillariophyta	Mediophyceae	Hemiaulales	Hemiaulaceae	Eucampia
+2	Eukaryota	Chlorophyta	Mamiellophyceae	Mamiellales	Mamiellaceae	Micromonas	Micromonas pusilla
+2	Eukaryota	Choanoflagellata__p	Choanoflagellata	Acanthoecida	Stephanoecidae
+10	Eukaryota	Chlorophyta	Mamiellophyceae	Dolichomastigales	Crustomastigaceae
+357	Eukaryota	Platyhelminthes	Rhabditophora	Macrostomida
+3	Eukaryota	Chrysophyceae__p	Chrysophyceae	Chromulinales	Chromulinaceae	Ochromonas
+5	Eukaryota	Chordata	Appendicularia	Copelata	Oikopleuridae	Oikopleura
+6	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae
+16	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae
+229	Eukaryota	Euglenozoa	Diplonemea	Diplonemidae__o	Diplonemidae
+16	Eukaryota	Dinophyceae__p	Dinophyceae	Syndiniales	Amoebophryaceae	Amoebophrya	Amoebophrya sp_
+71	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros
+453	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Pedinellales	Pseudopedinella__f
+19	Eukaryota	Dinophyceae__p	Dinophyceae	Peridiniales	Heterocapsaceae	Heterocapsa	Heterocapsa rotundata
+40	Eukaryota	Chlorophyta	Mamiellophyceae	Mamiellales	Mamiellaceae	Mantoniella	Mantoniella squamata
+2	Eukaryota	Chlorophyta	Mamiellophyceae	Dolichomastigales
+8	Eukaryota	Chlorophyta	Mamiellophyceae	Dolichomastigales	Crustomastigaceae
+5	Environmental Unknown
+24	Eukaryota	Bacillariophyta	Bacillariophyceae	Naviculales
+1	Eukaryota	Chlorophyta	Mamiellophyceae	Dolichomastigales	Crustomastigaceae	Crustomastix
+10	Eukaryota	Chlorophyta	Mamiellophyceae	Dolichomastigales	Crustomastigaceae
+100	Eukaryota	Haptophyta
+11	Eukaryota	Ciliophora	Spirotrichea	Strombidiidae__o	Strombidiidae	Parallelostrombidium	Parallelostrombidium conicum
+1	Eukaryota	Chlorophyta	Mamiellophyceae	Dolichomastigales	Crustomastigaceae
+13	Eukaryota	Cryptophyceae__p	Cryptophyceae	Kathablepharidacea	Katablepharidaceae	Leucocryptos	Leucocryptos marina
+2	Eukaryota	Dinophyceae__p	Dinophyceae
+80	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Thalassiosira	Thalassiosira oceanica
+14	Eukaryota	Cnidaria	Hydrozoa	Anthoathecata	Pandeidae	Leuckartiara	Leuckartiara octona
+1	Eukaryota	Dinophyceae__p	Dinophyceae	Syndiniales	Amoebophryaceae
+2	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Chaetoceros eibenii
+2	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Chaetoceros eibenii
+1	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Rhizosoleniales	Rhizosoleniaceae
+6	Eukaryota	Ciliophora	Oligohymenophorea
+4	Eukaryota	Dinophyceae__p	Dinophyceae	Syndiniales	Amoebophryaceae
+13	Eukaryota	Chlorophyta	Mamiellophyceae	Dolichomastigales
+19	Eukaryota	Choanoflagellata__p	Choanoflagellata	Acanthoecida	Stephanoecidae	Calliacantha	Calliacantha natans
+10	Eukaryota	Apicomplexa	Conoidasida	Corallicolida
+1	Environmental Unknown
+14	Eukaryota	Bigyra__p	Bigyra	Thraustochytrida	Thraustochytriaceae
+55	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Pseudo_nitzschia	Pseudo_nitzschia pseudodelicatissima
+7	Eukaryota	Dinophyceae__p	Dinophyceae	Syndiniales	Amoebophryaceae
+1	Eukaryota	Cryptophyceae__p	Cryptophyceae	Pyrenomonadales	Chroomonadaceae	Falcomonas	Falcomonas daucoides
+5	Eukaryota	Dinophyceae__p	Dinophyceae	Syndiniales	Amoebophryaceae
+2	Eukaryota
+4	Eukaryota	Oomycota	Lagenidiales__c	Lagenidiales
+7	Eukaryota
+99	Eukaryota	Cryptophyceae__p	Cryptophyceae	Cryptomonadales	Cryptomonadaceae	Plagioselmis	Plagioselmis prolonga
+4	Eukaryota	Ciliophora	Spirotrichea	Strombidiidae__o	Strombidiidae	Spirostrombidium
+5	Eukaryota	Chlorophyta	Trebouxiophyceae	Chlorellales	Chlorellaceae
+37	Eukaryota	Cercozoa	Thecofilosea	Mataza__f__o
+2	Eukaryota	Cryptophyceae__p	Cryptophyceae	Pyrenomonadales
+3243	Eukaryota	Cnidaria	Hydrozoa	Siphonophorae
+39	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	Kareniaceae
+80	Eukaryota	Cercozoa	Cercomonadida__c	Cercomonadida
+44	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Thalassiosira	Thalassiosira sp_
+3	Eukaryota	Dinophyceae__p	Dinophyceae	Syndiniales	Amoebophryaceae	Amoebophrya	Amoebophrya sp_
+284	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros
+36	Eukaryota	Bolidophyceae__p	Bolidophyceae	Parmales	Triparmaceae	Triparma	Triparma retinervis
+105	Eukaryota	Dinophyceae__p	Dinophyceae	Suessiales	Dactylodinium__f	Dactylodinium	Dactylodinium arachnoides
+46	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Pseudo_nitzschia	Pseudo_nitzschia delicatissima
+3	Unknown
+5	Eukaryota	Chlorophyta	Mamiellophyceae	Dolichomastigales	Crustomastigaceae
+5	Eukaryota	Bigyra__p	Bigyra	Nanomonadea	Solenicola__f
+81	Environmental Unknown
+4	Eukaryota	Chlorophyta	Mamiellophyceae	Dolichomastigales	Crustomastigaceae
+133	Eukaryota	Cercozoa	Imbricatea	Thaumatomonadida	Thaumatomastigidae
+3	Eukaryota	Bolidophyceae__p	Bolidophyceae	Parmales
+9	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	Gymnodiniaceae	Paragymnodinium
+3	Eukaryota
+58	Eukaryota	Telonemida__c__p	Telonemida__c	Telonemida	Telonema__f
+19	Eukaryota	Bacillariophyta
+56	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales
+6	Eukaryota	Chlorophyta
+73	Eukaryota	Choanoflagellata__p	Choanoflagellata	Acanthoecida
+3	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae
+2	Eukaryota	Choanoflagellata__p	Choanoflagellata	Craspedida
+3	Unknown
+2	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	Kareniaceae
+10157	Eukaryota	Choanoflagellata__p	Choanoflagellata	Acanthoecida	Stephanoecidae	Calliacantha	Calliacantha natans
+10	Eukaryota	Cercozoa	Imbricatea	Thaumatomonadida	Thaumatomastigidae	Protaspis	Protaspis sp_ CC_2009c
+1	Bacteria	Myxococcota	Myxococcia
+4	Eukaryota	Chlorophyta	Mamiellophyceae	Dolichomastigales	Crustomastigaceae	Crustomastix
+3	Eukaryota	Chlorophyta	Mamiellophyceae	Dolichomastigales	Crustomastigaceae	Crustomastix
+9	Eukaryota	Chlorophyta	Mamiellophyceae	Dolichomastigales	Crustomastigaceae
+4	Eukaryota	Haptophyta	Isochrysidales__c	Isochrysidales	Isochrysidaceae
+28	Unknown
+2	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros
+7	Unknown
+150	Eukaryota	Pelagophyceae__p	Pelagophyceae
+32	Eukaryota	Pelagophyceae__p	Pelagophyceae	Pelagomonadales	Aureococcus__f	Aureococcus	Aureococcus anophagefferens
+5	Eukaryota	Annelida	Polychaeta	Phyllodocida	Tomopteridae	Tomopteris
+90	Environmental Unknown
+38	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Chaetoceros contortus
+10	Eukaryota	Dinophyceae__p	Dinophyceae	Syndiniales	Amoebophryaceae	Amoebophrya	Amoebophrya sp_
+11	Eukaryota	Cercozoa	Thecofilosea	Mataza__f__o	Mataza__f
+64	Eukaryota
+5	Bacteria	Cyanobacteriota	Cyanophyceae	Synechococcales	Synechococcaceae

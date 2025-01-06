@@ -1,0 +1,23 @@
+3	Bacteria	Pseudomonadota	Alphaproteobacteria
+1	Bacteria	Pseudomonadota	Gammaproteobacteria	Cellvibrionales	Spongiibacteraceae	Sinobacterium
+92	Eukaryota	Chordata	Actinopteri	Perciformes	Cottidae
+1	Bacteria	Candidatus Kaiserbacteria
+1	Eukaryota	Chordata	Actinopteri	Gadiformes	Gadidae	Gadus	Gadus chalcogrammus (walleye pollock)
+1	Eukaryota	Chlorophyta	Pyramimonadophyceae	Pyramimonadales
+30	Eukaryota	Chordata	Actinopteri	Osmeriformes	Osmeridae	Spirinchus	Spirinchus thaleichthys (longfin smelt)
+1	Bacteria	Candidatus Latescibacterota
+7	Eukaryota	Chordata	Actinopteri	Centrarchiformes	Centrarchidae	Lepomis	Lepomis macrochirus (bluegill)
+1	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Chaetoceros sp_
+1	Bacteria
+1	Bacteria	Planctomycetota
+141	Eukaryota	Chordata	Actinopteri	Perciformes	Percidae	Perca
+2	Eukaryota	Chordata	Actinopteri	Clupeiformes	Clupeidae	Clupea	Clupea pallasii (Pacific herring)
+1	Eukaryota
+2	Bacteria	Campylobacterota	Epsilonproteobacteria	Campylobacterales	Sulfurimonadaceae	Sulfurimonas
+443	Eukaryota	Chordata	Actinopteri	Perciformes	Cottidae
+1	Eukaryota	Chordata	Actinopteri	Salmoniformes	Salmonidae	Oncorhynchus	Oncorhynchus clarkii (cutthroat trout)
+3	Bacteria
+1	Eukaryota
+1	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Chaetoceros sp_
+7	Eukaryota	Chordata	Actinopteri	Centrarchiformes	Centrarchidae	Lepomis
+5	Eukaryota	Chordata	Actinopteri	Centrarchiformes	Centrarchidae	Ambloplites

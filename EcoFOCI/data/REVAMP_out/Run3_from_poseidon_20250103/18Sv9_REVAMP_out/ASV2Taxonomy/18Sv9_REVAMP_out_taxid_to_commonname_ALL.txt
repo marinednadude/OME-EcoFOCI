@@ -1,0 +1,119 @@
+Bacteria (eubacteria)	2
+Actinomycetes (high G+C Gram-positive bacteria)	1760
+Eukaryota (eucaryotes)	2759
+Rhodophyta (red algae)	2763
+Chrysophyceae (golden algae)	2825
+Haptophyta (haptophytes)	2830
+Xanthophyceae (yellow-green algae)	2833
+Bacillariophyta (diatoms)	2836
+Dinophyceae (dinoflagellates)	2864
+Phaeophyceae (brown algae)	2870
+Cryptophyceae (cryptomonads)	3027
+Euglenida (euglenids)	3035
+Chlorophyta (green algae)	3041
+Selaginellales (spike mosses)	3244
+Magnoliopsida (flowering plants)	3398
+Cucurbita (marrows)	3660
+Brassicaceae (mustard family)	3700
+Arabidopsis thaliana (thale cress)	3702
+Phytophthora infestans (potato late blight agent)	4787
+Mucorales (pin molds)	4827
+Ascomycota (ascomycetes)	4890
+Eurotiales (green and blue molds)	5042
+Basidiomycota (basidiomycetes)	5204
+Tremellales (jelly fungi)	5234
+Polyporaceae (bracket fungi)	5317
+Agaricales (gill mushrooms)	5338
+Kinetoplastea (kinetoplasts)	5653
+Apicomplexa (apicomplexans)	5794
+Piroplasmida (Piroplasmids)	5863
+Ciliophora (ciliates)	5878
+Microsporidia (microsporidians)	6029
+Spongillidae (freshwater sponges)	6050
+Hydrozoa (hydrozoans)	6074
+Anthozoa (anthozoans)	6101
+Actiniaria (sea anemones)	6103
+Scleractinia (stony corals)	6125
+Heteronemertea (heteronemertine worms)	6219
+Nematoda (roundworms)	6231
+Polychaeta (polychaetes)	6341
+Gastropoda (gastropods)	6448
+Lymnaeidae (pond snails)	6521
+Stylommatophora (land snails)	6527
+Bivalvia (bivalves)	6544
+Pectinidae (scallops)	6566
+Veneridae (venus clams)	6592
+Arthropoda (arthropods)	6656
+Daphnia (common water fleas)	6668
+Ostracoda (mussel shrimps)	6670
+Balanus nubilus (giant acorn barnacle)	6678
+Amphipoda (beach hoppers, scuds and well shrimps)	6821
+Arachnida (arachnids)	6854
+Araneae (spiders)	6893
+Coleoptera (beetles)	7041
+Lepidoptera (butterflies and moths)	7088
+Diptera (flies)	7147
+Chironomidae (nonbiting midges)	7149
+Psychodidae (sandflies and mothflies)	7197
+Asteroidea (starfishes)	7588
+Ophiuroidea (brittle stars)	7618
+Echinoidea (sea urchins)	7625
+Chordata (chordates)	7711
+Ascidiacea (sea squirts)	7713
+Gadiformes (cods and others)	8043
+Merluccius merluccius (European hake)	8063
+Cyclopterus lumpus (lumpfish)	8103
+Squamata (squamates)	8509
+Homo sapiens (human)	9606
+Ctenophora (ctenophores)	10197
+Potamogeton (pondweeds)	13228
+Isoetales (quillworts)	13836
+Myriophyllum (water milfoils)	24952
+Aphididae (aphids)	27482
+Mnemiopsis leidyi (sea walnut)	27923
+Choanoflagellata (choanoflagellates)	28009
+Foraminifera (foraminifers)	29178
+Isopoda (pill bugs, wood lice and sea slaters)	29979
+Collembola (springtails)	30001
+Ephemeroptera (mayflies)	30073
+Cicadellidae (leafhoppers)	30102
+Trichoptera (caddisflies)	30263
+Scaphopoda (tusk shells)	32584
+Coscinodiscophyceae (centric diatoms)	33836
+Bacillariophyceae (Raphid, pennate diatoms)	33849
+Fragilariophyceae (Araphid, pennate diatoms)	33853
+Chaetothyriales (black yeasts)	34395
+Pleurobrachia (sea gooseberries)	34498
+Theridiidae (cobweb weavers)	34643
+Isotomidae (smooth springtails)	36141
+Plasmodiophoridae (plasmodiophorids)	37358
+Tipulidae (crane flies)	41042
+Osmeriformes (freshwater smelts and others)	41711
+Tuber borchii (whitish truffle)	42251
+Siphonophorae (siphonophores)	42759
+Opiliones (harvestmen)	43271
+Antipatharia (black corals)	44168
+Gonostomatidae (bristlemouths)	48439
+Cyclothone atraria (deep-water bristlemouth)	48443
+Insecta (insects)	50557
+Ciona savignyi (Pacific transparent sea squirt)	51511
+Tsuga canadensis (Canada hemlock)	66173
+Myctophidae (lanternfishes)	68515
+Thymallus arcticus (Arctic grayling)	70285
+Linyphiidae (dwarf spiders and sheet-web weavers)	81835
+Podocopida (seed shrimps & mussel shrimps)	84318
+Ammodytidae (sand lances)	84619
+Blattodea (cockroaches)	85823
+Coronatae (crown jellyfishes)	86058
+Phacellophora camtschatica (eggyolk jelly)	168771
+Paralepididae (barracudinas)	172138
+Anoplopoma fimbria (sablefish)	229290
+Atheresthes stomias (arrowtooth flounder)	428034
+Nannobrachium achirus (lantern fish)	473322
+Microstoma microstoma (slender argentine)	880961
+Melanostigma gelatinosum (limp eelpout)	1091424
+Didymosphenia geminata (rock snot)	1115533
+Lycopodiopsida (clubmosses)	1521260
+Chiasmodon subniger (swarthy snaketooth)	2048724
+Naididae (sludge worms)	2109251
+Serinales (CUG-Ser1 clade)	2916678

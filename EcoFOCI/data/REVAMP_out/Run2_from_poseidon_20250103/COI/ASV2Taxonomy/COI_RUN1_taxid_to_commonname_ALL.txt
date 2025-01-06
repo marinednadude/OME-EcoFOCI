@@ -1,0 +1,144 @@
+Bacteria (eubacteria)	2
+Rickettsiales (rickettsias)	766
+Eukaryota (eucaryotes)	2759
+Rhodophyta (red algae)	2763
+Chrysophyceae (golden algae)	2825
+Bacillariophyta (diatoms)	2836
+Dinophyceae (dinoflagellates)	2864
+Phaeophyceae (brown algae)	2870
+Cryptophyceae (cryptomonads)	3027
+Chlorophyta (green algae)	3041
+Magnoliopsida (flowering plants)	3398
+Mucorales (pin molds)	4827
+Ascomycota (ascomycetes)	4890
+Eurotiales (green and blue molds)	5042
+Tremellales (jelly fungi)	5234
+Agaricales (gill mushrooms)	5338
+Cnidaria (cnidarians)	6073
+Hydrozoa (hydrozoans)	6074
+Anthozoa (anthozoans)	6101
+Actiniaria (sea anemones)	6103
+Metridium senile (brown sea anemone)	6116
+Scleractinia (stony corals)	6125
+Cubozoa (sea wasps)	6137
+Scyphozoa (jellyfishes)	6142
+Nemertea (ribbon worms)	6217
+Heteronemertea (heteronemertine worms)	6219
+Annelida (annelid worms)	6340
+Polychaeta (polychaetes)	6341
+Sipuncula (peanut worms)	6433
+Mollusca (mollusks)	6447
+Gastropoda (gastropods)	6448
+Stylommatophora (land snails)	6527
+Bivalvia (bivalves)	6544
+Mytilus trossulus (common blue mussel)	6551
+Cephalopoda (cephalopods)	6605
+Arthropoda (arthropods)	6656
+Ostracoda (mussel shrimps)	6670
+Balanus nubilus (giant acorn barnacle)	6678
+Cancridae (rock crabs)	6753
+Euphausiacea (krill)	6816
+Amphipoda (beach hoppers, scuds and well shrimps)	6821
+Arachnida (arachnids)	6854
+Scorpiones (scorpions)	6855
+Araneae (spiders)	6893
+Ixodida (ticks)	6935
+Dermatophagoides pteronyssinus (European house dust mite)	6956
+Odonata (dragonflies and damselflies)	6961
+Coleoptera (beetles)	7041
+Lepidoptera (butterflies and moths)	7088
+Diptera (flies)	7147
+Siphonaptera (fleas)	7509
+Neuroptera (net-winged insects)	7516
+Chilopoda (centipedes)	7540
+Diplopoda (millipedes)	7553
+Ophiuroidea (brittle stars)	7618
+Strongylocentrotus pallidus (pale sea urchin)	7670
+Holothuroidea (sea cucumbers)	7705
+Eptatretus stoutii (Pacific hagfish)	7765
+Prionace glauca (blue shark)	7815
+Hydrolagus colliei (spotted ratfish)	7873
+Cypriniformes (carps and others)	7952
+Siluriformes (catfishes)	7995
+Salmoniformes (salmons and trouts)	8006
+Pleuronectiformes (flatfishes)	8252
+Amphibia (amphibians)	8292
+Lepidosauria (lepidosaurs)	8504
+Squamata (squamates)	8509
+Aves (birds)	8782
+Passeriformes (song birds)	9126
+Homo sapiens (human)	9606
+Canis lupus (gray wolf)	9612
+Delphinidae (marine dolphins)	9726
+Phocoena phocoena (harbor porpoise)	9742
+Phocoenoides dalli (Dall's porpoise)	9744
+Delphinapterus leucas (beluga whale)	9749
+Megaptera novaeangliae (humpback whale)	9773
+Placozoa (placozoans)	10226
+Mecoptera (scorpionflies and hangingflies)	27420
+Lycaenidae (gossamer-wings)	27544
+Balaena mysticetus (bowhead whale)	27602
+Sardinops sagax (South American pilchard)	28381
+Mycetophilidae (fungus gnats)	29035
+Metacarcinus magister (Dungeness crab)	29965
+Isopoda (pill bugs, wood lice and sea slaters)	29979
+Diplura (diplurans)	29997
+Protura (coneheads)	29999
+Collembola (springtails)	30001
+Ephemeroptera (mayflies)	30073
+Psocoptera (booklice and barklice)	30259
+Trichoptera (caddisflies)	30263
+Clypeasteroida (sand dollars)	31186
+Cecidomyiidae (gall midges)	33406
+Coscinodiscophyceae (centric diatoms)	33836
+Bacillariophyceae (Raphid, pennate diatoms)	33849
+Chaetothyriales (black yeasts)	34395
+Ophiopholis aculeata (daisy brittle star)	35052
+Crinoidea (crinoids)	35069
+Glycera americana (American bloodworm)	37469
+Stauromedusae (stalked jellyfishes)	37528
+Balanidae (acorn barnacles)	37806
+Chthamalidae (star barnacles)	37897
+Glyceridae (bloodworms)	39821
+Mammalia (mammals)	40674
+Chionoecetes opilio (snow crab)	41210
+Solifugae (sun spiders)	41356
+Mugiliformes (mullets)	41872
+Siphonophorae (siphonophores)	42759
+Opiliones (harvestmen)	43271
+Patiria miniata (bat star)	46514
+Dytiscidae (predacious diving beetles)	50515
+Insecta (true insects)	50557
+Plecoptera (stoneflies)	50622
+Pseudoscorpiones (false scorpions)	51799
+Pycnogonida (sea spiders)	57294
+Mysida (opossum shrimps)	75399
+Geometridae (geometer moths)	82593
+Podocopida (seed shrimps & mussel shrimps)	84318
+Pinnotheridae (pea crabs)	84654
+Coronatae (crown jellyfishes)	86058
+Allocentrotus fragilis (fragile urchin)	86255
+Metacarcinus gracilis (graceful rock crab)	88206
+Euphausia pacifica (North Pacific krill)	102976
+Sphaeriusidae (minute bog beetles)	110033
+Syngnathiformes (pipefishes and seahorses)	129912
+Frankliniella occidentalis (western flower thrips)	133901
+Prosorhochmidae (smiling worms)	166020
+Phacellophora camtschatica (eggyolk jelly)	168771
+Parophrys vetulus (English sole)	172659
+Isopsetta isolepis (butter sole)	195617
+Psettichthys melanostictus (Pacific sand sole)	195639
+Clubionidae (sac spiders)	210000
+Hemilepidotus spinosus (brown Irish lord)	271501
+Trachurus symmetricus (Pacific jack mackerel)	271940
+Hesperia lindseyi (lost-egg skipper)	291690
+Bathyraja parmifera (Alaska skate)	341249
+Atheresthes stomias (arrowtooth flounder)	428034
+Allosmerus elongatus (whitebait smelt)	433393
+Liparis fucensis (slipskin snailfish)	433401
+Liparis pulchellus (showy snailfish)	433402
+Didymella pinodes (pea foot rot fungus)	749589
+Gobiiformes (gobies and sleepers)	1489878
+Scombriformes (tunas and others)	1489894
+Holocentriformes (soldierfishes and squirrelfishes)	1490028
+Beringraja binoculata (big skate)	2838337

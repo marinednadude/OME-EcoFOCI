@@ -1,0 +1,111 @@
+Bacteria (eubacteria)	2
+Eukaryota (eucaryotes)	2759
+Porifera (sponges)	6040
+Hydrozoa (hydrozoans)	6074
+Anthozoa (anthozoans)	6101
+Nemertea (ribbon worms)	6217
+Heteronemertea (heteronemertine worms)	6219
+Mollusca (mollusks)	6447
+Gastropoda (gastropods)	6448
+Mytilus trossulus (common blue mussel)	6551
+Pectinidae (scallops)	6566
+Cephalopoda (cephalopods)	6605
+Daphnia (common water fleas)	6668
+Daphnia pulex (common water flea)	6669
+Pacifastacus leniusculus (signal crayfish)	6720
+Amphipoda (beach hoppers, scuds and well shrimps)	6821
+Arachnida (arachnids)	6854
+Scorpiones (scorpions)	6855
+Coleoptera (beetles)	7041
+Lampyridae (fireflies)	7049
+Lepidoptera (butterflies and moths)	7088
+Diptera (flies)	7147
+Chironomidae (nonbiting midges)	7149
+Aedes albopictus (Asian tiger mosquito)	7160
+Sciaridae (black fungus gnats)	7184
+Tephritidae (fruit flies)	7211
+Asteroidea (starfishes)	7588
+Ophiuroidea (brittle stars)	7618
+Echinoidea (sea urchins)	7625
+Holothuroidea (sea cucumbers)	7705
+Chordata (chordates)	7711
+Chondrichthyes (cartilaginous fishes)	7777
+Tetronarce californica (Pacific electric ray)	7787
+Chimaeriformes (chimaeras)	7864
+Cypriniformes (carps and others)	7952
+Gadiformes (cods and others)	8043
+Perciformes (perches and others)	8111
+Anarhichas lupus (Atlantic wolffish)	8204
+Aves (birds)	8782
+Charadriiformes (shorebirds & allies)	8906
+Passeriformes (song birds)	9126
+Hominidae (great apes)	9604
+Homo sapiens (human)	9606
+Canidae (dog, coyote, wolf, fox)	9608
+Mustelidae (weasel, mink, badger, martens and others)	9655
+Otariidae (fur seals & sea lions)	9702
+Odobenus rosmarus (walrus)	9707
+Orcinus orca (killer whale)	9733
+Balaenoptera musculus (blue whale)	9771
+Megaptera novaeangliae (humpback whale)	9773
+Suidae (pigs)	9821
+Sus scrofa (pig)	9823
+Camelus dromedarius (Arabian camel)	9838
+Leporidae (rabbits and hares)	9979
+Rodentia (rodent)	9989
+Mus pahari (shrew mouse)	10093
+Enteropneusta (acorn worms)	10220
+Dermaptera (earwigs)	27434
+Aphididae (aphids)	27482
+Micropterus salmoides (largemouth bass)	27706
+Metacarcinus magister (Dungeness crab)	29965
+Collembola (springtails)	30001
+Hypogastruridae (elongate-bodied springtails)	30002
+Ephemeroptera (mayflies)	30073
+Cicadellidae (leafhoppers)	30102
+Trichoptera (caddisflies)	30263
+Rajidae (hardnose skates)	30475
+Cecidomyiidae (gall midges)	33406
+Orseolia oryzae (Asian rice gall midge)	33408
+Syrphidae (hover flies)	34680
+Isotomidae (smooth springtails)	36141
+Thymallus thymallus (grayling)	36185
+Modiolus (horsemussels)	40255
+Mammalia (mammals)	40674
+Tipulidae (crane flies)	41042
+Osmeriformes (freshwater smelts and others)	41711
+Siphonophorae (siphonophores)	42759
+Opiliones (harvestmen)	43271
+Thripidae (true thrips)	45053
+Cyclothone atraria (deep-water bristlemouth)	48443
+Entomobryidae (slender springtails)	48704
+Onychiuridae (blind springtails)	48715
+Dytiscidae (predacious diving beetles)	50515
+Insecta (insects)	50557
+Plecoptera (stoneflies)	50622
+Perlodidae (predatory stoneflies)	50623
+Ephemerellidae (spiny crawler mayflies)	50633
+Castor canadensis (American beaver)	51338
+Pardosa (thin-legged wolf spiders)	74980
+Hippoboscidae (louse flies)	81710
+Blattodea (cockroaches)	85823
+Merluccius albidus (offshore hake)	89945
+Merluccius paradoxus (deep-water Cape hake)	89950
+Merluccius productus (North Pacific hake)	89952
+Artiodactyla (even-toed ungulates & whales)	91561
+Stenobrachius leucopsarus (northern lampfish)	91658
+Euphausia pacifica (North Pacific krill)	102976
+Trachipterus trachypterus (ribbon fish)	143894
+Prosorhochmidae (smiling worms)	166020
+Amphimedon compressa (erect rope sponge)	178514
+Bibio marci (St. Mark's fly)	189979
+Triphoturus mexicanus (Mexican lampfish)	242287
+Acanthocepola krusensternii (red-spotted bandfish)	270597
+Scopelogadus bispinosus (twospine bigscale)	319445
+Apristurus brunneus (brown cat shark)	428037
+Eumicrotremus spinosus (Atlantic spiny lumpsucker)	430040
+Eumicrotremus orbis (Pacific spiny lumpsucker)	433392
+Sepiida (bobtail squid)	551287
+Gobiiformes (gobies and sleepers)	1489878
+Ctenomys brasiliensis (Brazilian tuco-tuco)	2928630
+Turrum gymnostethus (bludger)	3040461

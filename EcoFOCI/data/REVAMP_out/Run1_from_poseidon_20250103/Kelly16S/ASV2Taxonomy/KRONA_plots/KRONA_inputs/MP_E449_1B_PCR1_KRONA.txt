@@ -1,0 +1,104 @@
+2840	Eukaryota
+26700	Eukaryota	Arthropoda	Thecostraca	Balanomorpha
+100	Eukaryota
+5	Eukaryota	Mollusca	Cephalopoda	Octopoda	Octopodidae	Enteroctopus
+11	Eukaryota	Echinodermata	Echinoidea
+1	Eukaryota	Nemertea	Pilidiophora	Heteronemertea	Lineidae	Lineus	Lineus flavescens
+75	Eukaryota	Porifera	Demospongiae	Dendroceratida
+3	Unknown
+3	Eukaryota	Porifera	Demospongiae	Poecilosclerida	Crellidae	Crella	Crella elegans
+2	Eukaryota	Mollusca	Bivalvia	Pectinida	Anomiidae
+1	Eukaryota	Porifera	Demospongiae	Axinellida
+25	Eukaryota	Mollusca	Cephalopoda
+20	Eukaryota	Porifera	Demospongiae	Haplosclerida	Callyspongiidae	Callyspongia
+2	Eukaryota	Mollusca	Bivalvia	Adapedonta	Pharidae	Siliqua	Siliqua alta
+53	Eukaryota
+5213	Eukaryota	Mollusca	Bivalvia	Mytilida	Mytilidae	Mytilus
+342	Eukaryota	Mollusca	Gastropoda	Nudibranchia	Dendronotidae	Dendronotus
+17	Eukaryota	Picozoa
+3	Eukaryota	Picozoa
+3	Unknown
+9	Eukaryota	Chaetognatha	Sagittoidea	Aphragmophora	Sagittidae
+34	Eukaryota	Arthropoda	Hexanauplia	Calanoida	Clausocalanidae	Pseudocalanus	Pseudocalanus elongatus
+2099	Eukaryota	Arthropoda	Hexanauplia	Calanoida	Acartiidae	Acartia	Acartia longiremis
+4	Eukaryota	Arthropoda	Malacostraca	Amphipoda
+1	Unknown
+166	Eukaryota	Echinodermata	Ophiuroidea
+1	Eukaryota	Arthropoda	Malacostraca	Amphipoda	Aoridae	Aoroides	Aoroides columbiae
+5	Eukaryota	Arthropoda	Hexanauplia	Calanoida
+4	Eukaryota	Mollusca	Bivalvia	Cardiida	Tellinidae
+20	Eukaryota	Bryozoa	Gymnolaemata	Cheilostomatida	Romancheinidae
+317	Eukaryota	Mollusca	Bivalvia	Cardiida	Solecurtidae	Sinonovacula
+13	Eukaryota	Bryozoa	Gymnolaemata	Cheilostomatida	Microporellidae	Microporella	Microporella cf_ ciliata AW214
+20	Eukaryota	Echinodermata	Asteroidea	Forcipulatida	Asteriidae
+2	Unknown
+311	Eukaryota	Chordata	Actinopteri
+8	Eukaryota	Chaetognatha	Sagittoidea	Aphragmophora
+21	Eukaryota	Chordata	Actinopteri
+460	Eukaryota	Nemertea	Palaeonemertea	Archinemertea	Cephalotrichidae	Cephalothrix
+5	Eukaryota	Mollusca	Bivalvia	Mytilida	Mytilidae
+5	Eukaryota	Mollusca	Bivalvia	Mytilida	Mytilidae	Mytilus
+5	Eukaryota	Bryozoa	Gymnolaemata	Cheilostomatida
+3	Eukaryota	Arthropoda	Malacostraca	Amphipoda
+302	Eukaryota	Porifera	Demospongiae	Poecilosclerida
+4	Eukaryota	Nemertea
+4	Eukaryota
+85	Eukaryota	Nemertea	Palaeonemertea	Carinomiformes	Carinomidae	Carinoma	Carinoma hamanako
+672	Eukaryota	Annelida	Polychaeta	Sabellida	Oweniidae
+3	Unknown
+55	Eukaryota	Arthropoda	Hexanauplia	Calanoida	Centropagidae
+28001	Eukaryota	Arthropoda	Thecostraca	Balanomorpha
+3	Eukaryota	Nemertea	Pilidiophora	Heteronemertea	Lineidae	Cerebratulus
+2	Unknown
+2	Eukaryota	Arthropoda	Malacostraca	Amphipoda	Ischyroceridae
+2	Unknown
+2	Eukaryota	Bryozoa	Gymnolaemata	Cheilostomatida	Hippothoidae	Celleporella	Celleporella hyalina
+2	Unknown
+713	Eukaryota	Chordata	Actinopteri	Osmeriformes
+618	Eukaryota	Echinodermata	Echinoidea
+59	Unknown
+3	Eukaryota	Echinodermata	Asteroidea	Valvatida	Poraniidae	Dermasterias	Dermasterias imbricata
+12	Eukaryota	Echinodermata	Holothuroidea	Dendrochirotida
+45	Eukaryota	Echinodermata	Holothuroidea	Molpadida
+17	Eukaryota	Mollusca	Bivalvia	Mytilida	Mytilidae
+6	Eukaryota	Nemertea	Pilidiophora	Heteronemertea	Lineidae	Maculaura
+4	Eukaryota	Mollusca	Bivalvia	Cardiida	Tellinidae	Macoma
+224	Eukaryota	Chordata	Actinopteri
+4	Eukaryota	Porifera	Demospongiae	Suberitida
+30	Eukaryota	Picozoa
+123	Eukaryota	Picozoa
+58215	Eukaryota	Mollusca	Bivalvia	Mytilida	Mytilidae	Mytilus
+24	Eukaryota	Chaetognatha	Sagittoidea	Aphragmophora
+7	Eukaryota	Porifera	Demospongiae
+12	Eukaryota	Chaetognatha	Sagittoidea	Aphragmophora	Sagittidae
+63	Eukaryota	Porifera	Demospongiae	Axinellida
+246	Eukaryota	Nemertea	Palaeonemertea	Carinomiformes	Carinomidae	Carinoma	Carinoma mutabilis
+2	Eukaryota	Chaetognatha	Sagittoidea	Aphragmophora	Sagittidae
+9	Bacteria	Bacteroidota	Flavobacteriia	Flavobacteriales	Candidatus Karelsulcia__f
+40717	Eukaryota	Chordata	Actinopteri
+301	Eukaryota	Chordata	Chondrichthyes	Rajiformes	Rajidae
+12	Eukaryota	Mollusca	Bivalvia	Cardiida	Tellinidae	Moerella
+254	Eukaryota	Arthropoda	Thecostraca	Balanomorpha
+2	Eukaryota	Nemertea	Enopla	Monostilifera
+213	Eukaryota	Picozoa
+3	Unknown
+541	Eukaryota
+6	Eukaryota	Cnidaria	Anthozoa
+20	Eukaryota	Picozoa
+4	Eukaryota	Nemertea	Pilidiophora	Heteronemertea	Riseriellidae	Riserius	Riserius sp_ no eyes
+6	Unknown
+29	Eukaryota	Arthropoda	Malacostraca	Euphausiacea	Euphausiidae	Euphausia	Euphausia pacifica (North Pacific krill)
+10	Eukaryota	Arthropoda	Hexanauplia	Calanoida
+2	Unknown
+908	Eukaryota	Hemichordata	Enteropneusta	Harrimaniidae__o	Harrimaniidae	Saccoglossus
+4	Eukaryota	Porifera	Demospongiae	Poecilosclerida	Crellidae	Crella
+5	Eukaryota	Nemertea	Enopla	Monostilifera
+28	Eukaryota	Bryozoa	Gymnolaemata	Cheilostomatida	Celleporidae	Celleporina	Celleporina souleae
+5	Eukaryota	Picozoa
+143	Eukaryota	Arthropoda	Thecostraca	Balanomorpha
+45	Unknown
+9	Eukaryota	Arthropoda	Malacostraca	Anaspidacea
+4	Eukaryota	Bryozoa	Gymnolaemata	Cheilostomatida
+54	Eukaryota	Mollusca	Bivalvia	Pectinida	Pectinidae	Crassadoma	Crassadoma gigantea
+18	Eukaryota	Arthropoda	Malacostraca	Decapoda	Cancridae	Glebocarcinus	Glebocarcinus oregonensis
+396	Eukaryota

@@ -1,0 +1,28 @@
+##This is the MetaPipe config file
+
+####################################################
+##Frequently modified parameters
+####################################################
+primerF=TCCGTAGGTGAACCTGCGG
+primerR=CATCCACCGCTGAAAGTTGTAA
+blastLengthCutoff=200 #bp length cutoff
+systemmemoryMB=320000
+locationNTdatabase=/temp/fail
+taxonomyCutoffs=97,95,90,80,70,60 #Percent ID cutoffs for ID to species,genus,etc
+#removeASVsFILE=/Users/mcallister/Desktop/chris_test/remove_contaminants.txt
+
+###DADA2 Filtering options:
+dada_minlength=100
+dada_phix=TRUE
+dada_trunQ=2
+dada_maxEE1=2
+dada_maxEE2=2
+dada_trimRight=25
+dada_trimLeft=0
+###
+
+####################################################
+##Infrequently changed default parameters
+####################################################
+blastMode=mostEnvOUT #options: allIN,allEnvOUT,mostEnvOUT
+

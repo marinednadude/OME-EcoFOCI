@@ -1,0 +1,379 @@
+3	Eukaryota	Cryptophyceae__p	Cryptophyceae	Cyathomonadacea
+74	Eukaryota	Phaeophyceae__p	Phaeophyceae	Ectocarpales
+65	Eukaryota	Bigyra__p	Bigyra	Bicosoecida	Cafeteriaceae	Cafeteria	Cafeteria roenbergensis
+10	Eukaryota	Discosea	Flabellinia	Dactylopodida	Paramoebidae
+357	Eukaryota	Mollusca	Gastropoda	Thiaridae__o
+72	Eukaryota	Arthropoda	Insecta	Hemiptera
+8	Eukaryota	Oomycota
+70	Unknown
+19	Eukaryota	Rhodophyta	Bangiophyceae	Bangiales	Bangiaceae
+10	Eukaryota	Mollusca	Gastropoda
+5	Eukaryota	Cnidaria	Hydrozoa	Siphonophorae	Prayidae	Rosacea	Rosacea sp_ 3 BO_2009
+67	Eukaryota	Phaeophyceae__p	Phaeophyceae	Ectocarpales
+236	Unknown
+22	Eukaryota	Arthropoda	Insecta	Diptera
+65	Unknown
+16	Eukaryota	Oomycota	Saprolegniales__c	Saprolegniales
+700	Eukaryota	Synurophyceae__p	Synurophyceae	Ochromonadales
+64	Eukaryota	Arthropoda	Insecta	Coleoptera
+63	Unknown
+36	Eukaryota	Oomycota	Peronosporales__c
+62	Eukaryota	Cnidaria	Hydrozoa	Narcomedusae
+1926	Eukaryota	Oomycota	Peronosporales__c	Peronosporales
+61	Unknown
+81	Eukaryota	Arthropoda	Insecta	Hymenoptera
+1880	Eukaryota	Oomycota	Saprolegniales__c	Saprolegniales
+1125	Eukaryota	Arthropoda	Hexanauplia	Calanoida	Temoridae
+58	Eukaryota	Porifera	Demospongiae	Desmacellida
+89	Unknown
+17	Eukaryota	Picozoa
+37	Eukaryota	Arthropoda	Arachnida	Araneae
+1022	Eukaryota	Cnidaria	Hydrozoa
+1	Unknown
+54	Eukaryota	Basidiomycota	Agaricomycetes	Agaricales
+54	Eukaryota	Arthropoda	Hexanauplia	Calanoida	Temoridae
+53	Eukaryota	Arthropoda	Insecta	Neuroptera
+52	Eukaryota	Echinodermata	Holothuroidea	Elasipodida	Elpidiidae	Elpidia	Elpidia soyoae
+541	Eukaryota	Cnidaria	Scyphozoa	Semaeostomeae	Ulmaridae	Phacellophora
+50	Eukaryota	Arthropoda	Insecta	Diptera
+41	Eukaryota	Phaeophyceae__p	Phaeophyceae	Ectocarpales
+48	Eukaryota	Basidiomycota	Agaricomycetes	Agaricales
+47	Eukaryota	Cnidaria	Hydrozoa	Siphonophorae
+3	Eukaryota	Arthropoda	Insecta	Diptera
+46	Eukaryota	Cnidaria	Scyphozoa	Semaeostomeae	Ulmaridae	Phacellophora
+46	Eukaryota	Phaeophyceae__p	Phaeophyceae	Laminariales
+1743	Unknown
+6	Eukaryota	Arthropoda	Insecta	Diptera
+45	Eukaryota	Cnidaria	Scyphozoa	Semaeostomeae	Ulmaridae	Phacellophora
+44	Unknown
+27	Eukaryota	Nemertea	Palaeonemertea	Archinemertea
+43	Eukaryota	Arthropoda	Arachnida	Araneae
+12	Unknown
+42	Eukaryota	Chlorophyta
+42	Unknown
+3	Bacteria	Bacteroidota	Flavobacteriia	Flavobacteriales
+41	Eukaryota	Oomycota	Pythiales__c	Pythiales
+15	Eukaryota	Cnidaria	Hydrozoa	Anthoathecata	Pandeidae	Pandea	Pandea clionis
+13	Eukaryota	Mollusca	Gastropoda	Limapontiidae__o
+1383	Eukaryota	Cnidaria	Hydrozoa	Siphonophorae	Diphyidae	Lensia	Lensia conoidea
+2	Eukaryota	Phaeophyceae__p	Phaeophyceae	Ectocarpales
+40	Eukaryota	Arthropoda	Insecta	Hymenoptera
+39	Unknown
+39	Eukaryota	Phaeophyceae__p	Phaeophyceae	Ectocarpales
+3	Unknown
+38	Eukaryota	Oomycota	Saprolegniales__c	Saprolegniales
+10	Eukaryota	Chlorophyta	Trebouxiophyceae	Chlorellales
+36	Unknown
+36	Eukaryota	Cnidaria	Scyphozoa	Semaeostomeae	Ulmaridae	Phacellophora
+36	Eukaryota	Cnidaria	Hydrozoa	Leptothecata
+12	Eukaryota	Chlorophyta	Trebouxiophyceae	Chlorellales
+7	Eukaryota	Mollusca	Gastropoda	Limapontiidae__o
+1475	Eukaryota	Arthropoda	Arachnida	Araneae
+35	Eukaryota	Oomycota	Peronosporales__c	Peronosporales
+34	Eukaryota	Cnidaria	Scyphozoa	Semaeostomeae	Ulmaridae	Phacellophora
+34	Eukaryota	Echinodermata	Holothuroidea	Elasipodida	Elpidiidae	Elpidia	Elpidia soyoae
+13	Eukaryota	Cnidaria	Hydrozoa
+32	Eukaryota	Mollusca	Gastropoda	Neogastropoda
+2	Eukaryota	Cnidaria	Hydrozoa	Leptothecata
+254	Eukaryota	Rhodophyta	Florideophyceae
+1354	Eukaryota	Arthropoda	Arachnida	Araneae
+5	Eukaryota	Rhodophyta	Florideophyceae	Ceramiales
+31	Eukaryota	Oomycota	Saprolegniales__c	Saprolegniales
+16	Eukaryota	Cnidaria	Hydrozoa	Siphonophorae
+9	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	Gymnodiniaceae	Gymnodinium	Gymnodinium catenatum
+30	Eukaryota	Echinodermata	Holothuroidea	Elasipodida	Elpidiidae	Elpidia	Elpidia soyoae
+30	Eukaryota	Discosea	Flabellinia	Dactylopodida
+30	Unknown
+19	Eukaryota	Arthropoda	Insecta	Neuroptera
+29	Eukaryota	Cnidaria	Hydrozoa	Leptothecata
+7	Eukaryota	Arthropoda	Insecta
+153	Eukaryota	Oomycota	Saprolegniales__c	Saprolegniales
+28	Unknown
+28	Eukaryota	Oomycota	Pythiales__c	Pythiales
+1207	Eukaryota	Oomycota	Pythiales__c	Pythiales
+9	Eukaryota	Cnidaria	Hydrozoa	Siphonophorae
+23	Unknown
+5	Unknown
+11	Eukaryota	Synurophyceae__p	Synurophyceae	Ochromonadales
+22	Eukaryota	Arthropoda	Insecta	Diptera
+10	Eukaryota	Cryptophyceae__p	Cryptophyceae	Pyrenomonadales
+2	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	Kareniaceae	Takayama	Takayama acrotrocha
+5888	Eukaryota	Haptophyta	Prymnesiales__c	Prymnesiales
+66	Unknown
+21	Unknown
+21	Eukaryota	Arthropoda	Arachnida	Araneae
+20	Eukaryota	Arthropoda	Insecta	Lepidoptera
+20	Eukaryota	Basidiomycota	Cystobasidiomycetes	Cystobasidiales	Cystobasidiaceae
+19	Environmental Unknown
+18	Eukaryota	Echinodermata	Holothuroidea	Elasipodida	Elpidiidae	Elpidia	Elpidia soyoae
+18	Unknown
+66	Unknown
+972	Eukaryota	Phaeophyceae__p	Phaeophyceae	Fucales
+17	Unknown
+17	Unknown
+17	Unknown
+16	Eukaryota	Cnidaria	Hydrozoa	Siphonophorae
+144	Eukaryota	Haptophyta	Prymnesiales__c	Prymnesiales
+16	Unknown
+16	Eukaryota	Arthropoda	Arachnida	Araneae
+7	Eukaryota	Phaeophyceae__p	Phaeophyceae	Ectocarpales
+15	Eukaryota	Discosea	Flabellinia	Dactylopodida
+15	Eukaryota	Bacillariophyta	Mediophyceae	Lithodesmiales
+911	Eukaryota	Cnidaria	Scyphozoa	Semaeostomeae	Ulmaridae	Phacellophora
+505	Eukaryota	Cnidaria	Anthozoa	Scleractinia
+14	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Skeletonemataceae
+14	Eukaryota	Mollusca	Gastropoda
+14	Eukaryota	Arthropoda	Arachnida	Araneae
+864	Unknown
+862	Eukaryota	Discosea	Himatismenida__c	Himatismenida
+13	Eukaryota	Cnidaria	Hydrozoa	Siphonophorae
+13	Eukaryota	Haptophyta	Phaeocystales__c	Phaeocystales
+13	Eukaryota	Phaeophyceae__p	Phaeophyceae	Dictyotales
+4	Unknown
+2	Eukaryota	Arthropoda	Insecta	Hemiptera
+227	Unknown
+44	Eukaryota	Rhodophyta	Florideophyceae	Ceramiales
+12	Environmental Unknown
+12	Bacteria	Pseudomonadota	Alphaproteobacteria
+12	Eukaryota	Phaeophyceae__p	Phaeophyceae	Fucales
+12	Unknown
+9	Eukaryota	Arthropoda	Insecta	Diptera
+3	Eukaryota	Bacillariophyta	Mediophyceae	Triceratiales
+797	Eukaryota	Cnidaria	Scyphozoa	Semaeostomeae	Ulmaridae	Phacellophora
+2981	Eukaryota	Cnidaria	Scyphozoa	Semaeostomeae	Ulmaridae	Phacellophora
+784	Eukaryota	Arthropoda	Insecta	Diptera
+241	Eukaryota	Oomycota	Myzocytiopsidales__c	Myzocytiopsidales
+11	Unknown
+11	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales
+11	Unknown
+11	Eukaryota	Discosea	Longamoebia__c	Longamoebia
+11	Eukaryota	Rhodophyta	Florideophyceae	Ceramiales
+770	Eukaryota
+8	Eukaryota	Porifera	Demospongiae	Haplosclerida
+748	Eukaryota	Cnidaria	Scyphozoa	Semaeostomeae	Ulmaridae	Phacellophora
+41	Eukaryota	Arthropoda	Insecta	Coleoptera
+6	Eukaryota	Arthropoda	Malacostraca	Amphipoda
+10	Bacteria	Pseudomonadota	Gammaproteobacteria
+10	Unknown
+10	Unknown
+738	Eukaryota	Arthropoda	Insecta	Diptera
+736	Eukaryota	Cnidaria	Scyphozoa	Semaeostomeae	Ulmaridae	Phacellophora
+83	Eukaryota	Rhodophyta	Florideophyceae	Ceramiales
+725	Eukaryota	Chlorophyta	Trebouxiophyceae	Prasiolales
+723	Eukaryota	Cnidaria	Scyphozoa	Semaeostomeae	Ulmaridae	Phacellophora
+721	Eukaryota	Arthropoda	Insecta	Coleoptera
+410	Eukaryota	Phaeophyceae__p	Phaeophyceae	Fucales
+9	Eukaryota	Oomycota	Peronosporales__c	Peronosporales
+9	Eukaryota	Malawimonadida__c__p	Malawimonadida__c	Malawimonadida
+9	Eukaryota	Discosea	Longamoebia__c	Longamoebia
+9	Unknown
+695	Eukaryota	Arthropoda	Insecta
+81	Eukaryota	Arthropoda	Insecta	Coleoptera
+2	Unknown
+669	Eukaryota
+8	Eukaryota	Cnidaria	Hydrozoa	Anthoathecata
+8	Eukaryota	Arthropoda	Insecta	Diptera
+8	Eukaryota	Oomycota	Pythiales__c	Pythiales
+8	Eukaryota	Oomycota	Pythiales__c	Pythiales
+8	Eukaryota	Cnidaria	Hydrozoa	Anthoathecata
+2	Bacteria	Bacteroidota	Flavobacteriia
+2610	Eukaryota	Cnidaria	Scyphozoa	Semaeostomeae
+369	Eukaryota	Discosea	Flabellinia	Dactylopodida
+60	Eukaryota	Porifera	Demospongiae	Desmacellida
+7	Eukaryota	Apusomonadida__c__p	Apusomonadida__c	Apusomonadida
+7	Unknown
+7	Eukaryota	Rhodophyta	Florideophyceae	Ceramiales
+7	Bacteria	Bacteroidota	Flavobacteriia
+7	Eukaryota	Discosea	Longamoebia__c	Longamoebia
+7	Unknown
+7	Eukaryota	Cnidaria	Scyphozoa	Semaeostomeae	Ulmaridae	Phacellophora	Phacellophora sp_ PCA7
+34	Eukaryota	Cnidaria	Hydrozoa	Siphonophorae	Sphaeronectidae	Sphaeronectes
+2718	Eukaryota	Cnidaria	Scyphozoa	Semaeostomeae	Ulmaridae	Phacellophora
+68	Eukaryota	Phaeophyceae__p	Phaeophyceae	Ectocarpales
+8477	Eukaryota	Cnidaria	Scyphozoa	Semaeostomeae	Ulmaridae	Phacellophora
+6	Eukaryota	Cnidaria	Hydrozoa	Siphonophorae	Sphaeronectidae	Sphaeronectes	Sphaeronectes sp_
+6	Unknown
+6	Eukaryota	Rhodophyta	Florideophyceae
+6	Unknown
+6	Eukaryota	Discosea	Longamoebia__c	Longamoebia
+45	Eukaryota	Cnidaria	Hydrozoa	Siphonophorae	Agalmatidae	Nanomia
+1983	Eukaryota	Chordata	Mammalia	Primates	Hominidae	Homo	Homo sapiens (human)
+7298	Eukaryota	Cnidaria	Scyphozoa	Semaeostomeae	Ulmaridae	Phacellophora
+1	Eukaryota	Arthropoda	Insecta	Coleoptera
+5	Eukaryota	Porifera	Demospongiae	Bubarida
+6	Unknown
+494	Eukaryota	Cnidaria	Scyphozoa	Semaeostomeae	Ulmaridae	Phacellophora
+5	Eukaryota	Cnidaria	Hydrozoa	Siphonophorae	Diphyidae	Lensia	Lensia achilles
+5	Eukaryota	Arthropoda	Arachnida	Trombidiformes
+5	Unknown
+5	Eukaryota	Cnidaria	Scyphozoa
+5	Unknown
+5	Unknown
+5	Unknown
+5	Eukaryota	Chlorophyta	Trebouxiophyceae	Chlorellales
+5	Eukaryota	Cnidaria	Hydrozoa	Siphonophorae	Diphyidae	Chelophyes	Chelophyes appendiculata
+5	Eukaryota	Haptophyta	Prymnesiales__c	Prymnesiales
+900	Eukaryota	Rhodophyta	Florideophyceae	Ceramiales
+475	Eukaryota	Discosea	Flabellinia	Dactylopodida
+4	Eukaryota	Chordata	Mammalia	Primates	Hominidae	Homo	Homo sapiens (human)
+18	Unknown
+428	Unknown
+424	Eukaryota	Oomycota	Saprolegniales__c	Saprolegniales
+122	Eukaryota	Cnidaria	Hydrozoa	Leptothecata
+418	Eukaryota	Cnidaria	Hydrozoa	Narcomedusae
+267	Eukaryota	Rhodophyta	Florideophyceae	Gigartinales
+408	Eukaryota	Cnidaria	Scyphozoa	Semaeostomeae	Ulmaridae	Phacellophora
+406	Eukaryota	Arthropoda	Insecta	Diptera
+4	Unknown
+4	Eukaryota	Phaeophyceae__p	Phaeophyceae	Ectocarpales
+4	Unknown
+4	Unknown
+4	Unknown
+4	Eukaryota	Oomycota	Pythiales__c	Pythiales
+4	Eukaryota	Discosea	Flabellinia	Dactylopodida	Vexilliferidae
+4	Eukaryota	Arthropoda	Insecta	Diptera
+4	Eukaryota	Arthropoda	Insecta
+4	Unknown
+4	Eukaryota	Cnidaria	Scyphozoa	Semaeostomeae	Ulmaridae	Phacellophora
+4	Unknown
+4	Eukaryota	Oomycota	Peronosporales__c	Peronosporales
+4	Unknown
+4	Unknown
+377	Eukaryota	Oomycota	Pythiales__c	Pythiales
+377	Eukaryota	Cnidaria	Scyphozoa	Semaeostomeae	Ulmaridae	Phacellophora
+310	Eukaryota	Arthropoda	Insecta
+306	Eukaryota	Phaeophyceae__p	Phaeophyceae	Ectocarpales
+4	Unknown
+14	Eukaryota	Chlorophyta	Mamiellophyceae	Mamiellales	Bathycoccaceae	Bathycoccus	Bathycoccus prasinos
+70	Unknown
+94	Eukaryota	Arthropoda	Insecta
+328	Eukaryota	Cnidaria	Hydrozoa
+353	Eukaryota	Cnidaria	Scyphozoa	Semaeostomeae	Ulmaridae	Phacellophora
+352	Eukaryota	Phaeophyceae__p	Phaeophyceae	Fucales
+60	Eukaryota
+53170	Eukaryota	Cnidaria	Scyphozoa	Semaeostomeae	Ulmaridae	Phacellophora
+61	Eukaryota	Arthropoda	Arachnida	Sarcoptiformes
+262	Eukaryota	Cnidaria	Scyphozoa	Semaeostomeae	Ulmaridae	Phacellophora	Phacellophora camtschatica (eggyolk jelly)
+159	Eukaryota	Rhodophyta	Florideophyceae	Gelidiales
+15	Unknown
+302	Eukaryota	Arthropoda	Insecta	Hemiptera
+7	Eukaryota	Oomycota	Peronosporales__c	Peronosporales
+3	Unknown
+3	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Stephanodiscales
+3	Unknown
+3	Eukaryota	Discosea	Longamoebia__c	Longamoebia	Acanthamoebidae
+3	Unknown
+3	Unknown
+3	Unknown
+3	Eukaryota	Arthropoda	Insecta	Diptera
+3	Eukaryota	Arthropoda	Pycnogonida
+3	Eukaryota	Arthropoda	Arachnida	Araneae
+3	Unknown
+3	Unknown
+3	Eukaryota	Mollusca	Gastropoda	Planorbidae__o
+3	Eukaryota	Mollusca	Gastropoda	Neogastropoda
+3	Unknown
+3	Eukaryota	Arthropoda	Insecta
+3	Eukaryota	Cnidaria	Hydrozoa	Leptothecata
+3	Bacteria	Pseudomonadota	Alphaproteobacteria	Hyphomicrobiales
+3	Unknown
+3	Eukaryota	Arthropoda	Hexanauplia	Calanoida
+3	Eukaryota	Porifera	Demospongiae	Axinellida
+3	Bacteria	Bacteroidota	Flavobacteriia	Flavobacteriales
+3	Unknown
+13	Eukaryota	Cnidaria	Hydrozoa	Siphonophorae	Sphaeronectidae	Sphaeronectes
+286	Eukaryota	Ascomycota	Eurotiomycetes	Chaetothyriales	Trichomeriaceae
+108	Eukaryota	Evosea	Squamamoeba__f__o__c	Squamamoeba__f__o	Squamamoeba__f	Squamamoeba	Squamamoeba japonica
+268	Eukaryota	Cnidaria	Hydrozoa	Anthoathecata	Pandeidae	Neoturris
+32	Eukaryota	Rhodophyta	Florideophyceae	Ceramiales
+245	Eukaryota	Cnidaria	Hydrozoa	Leptothecata
+181	Unknown
+2	Eukaryota	Phaeophyceae__p	Phaeophyceae	Dictyotales
+32	Eukaryota	Arthropoda	Hexanauplia	Calanoida	Temoridae
+13	Eukaryota	Oomycota	Saprolegniales__c	Saprolegniales
+28	Eukaryota	Chlorophyta	Trebouxiophyceae	Chlorellales
+219	Eukaryota	Cnidaria	Scyphozoa	Semaeostomeae	Ulmaridae	Phacellophora
+9	Unknown
+54	Eukaryota	Oomycota	Haptoglossa__f__o__c	Haptoglossa__f__o
+123	Eukaryota	Arthropoda	Insecta
+2	Eukaryota	Cnidaria	Scyphozoa	Semaeostomeae	Ulmaridae
+2	Eukaryota	Basidiomycota	Agaricomycetes	Agaricales
+2	Bacteria	Pseudomonadota	Alphaproteobacteria	Candidatus Pelagibacterales	Candidatus Pelagibacteraceae
+2	Eukaryota	Mollusca	Gastropoda	Planorbidae__o
+2	Unknown
+2	Unknown
+2	Eukaryota	Synurophyceae__p	Synurophyceae	Synurales
+2	Eukaryota	Arthropoda	Insecta	Neuroptera
+2	Eukaryota	Arthropoda	Insecta	Diptera
+2	Unknown
+2	Eukaryota	Synurophyceae__p	Synurophyceae	Ochromonadales
+2	Eukaryota	Cnidaria	Hydrozoa	Anthoathecata
+2	Unknown
+2	Eukaryota	Cnidaria	Hydrozoa	Siphonophorae
+29	Eukaryota	Arthropoda	Insecta	Diptera
+63	Eukaryota	Arthropoda	Insecta
+202	Eukaryota	Haptophyta	Prymnesiales__c	Prymnesiales
+2920	Eukaryota	Bacillariophyta	Bacillariophyceae	Naviculales
+18	Eukaryota	Oomycota	Saprolegniales__c	Saprolegniales
+2440	Eukaryota	Cnidaria	Scyphozoa	Semaeostomeae	Ulmaridae	Phacellophora
+6	Unknown
+191	Eukaryota	Phaeophyceae__p	Phaeophyceae	Fucales
+27	Eukaryota	Ascomycota	Dothideomycetes	Mycosphaerellales	Mycosphaerellaceae
+8	Eukaryota	Ctenophora
+22	Eukaryota	Arthropoda	Insecta	Coleoptera	Carabidae
+7	Eukaryota	Dinophyceae__p	Dinophyceae	Gonyaulacales	Amphidomataceae	Azadinium
+128	Eukaryota	Oomycota	Haptoglossa__f__o__c	Haptoglossa__f__o
+20	Eukaryota	Cnidaria	Hydrozoa	Leptothecata
+2	Unknown
+174	Eukaryota	Chrysophyceae__p	Chrysophyceae
+10	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales
+16	Unknown
+1498	Eukaryota	Cnidaria	Scyphozoa	Semaeostomeae	Ulmaridae	Phacellophora
+163	Eukaryota	Arthropoda	Insecta	Hemiptera
+13	Unknown
+56	Eukaryota	Chrysophyceae__p	Chrysophyceae	Chromulinales
+360	Eukaryota	Placozoa
+4	Unknown
+156	Eukaryota	Porifera	Demospongiae	Desmacellida
+85	Unknown
+69	Eukaryota	Phaeophyceae__p	Phaeophyceae	Dictyotales
+152	Eukaryota	Cnidaria	Scyphozoa	Semaeostomeae	Ulmaridae	Phacellophora
+70	Eukaryota	Echinodermata	Holothuroidea	Elasipodida	Elpidiidae	Elpidia	Elpidia soyoae
+42	Eukaryota	Arthropoda	Insecta	Lepidoptera
+147	Eukaryota	Cnidaria	Scyphozoa	Semaeostomeae	Ulmaridae	Phacellophora
+147	Eukaryota	Cnidaria	Hydrozoa	Anthoathecata
+38	Unknown
+143	Eukaryota	Arthropoda	Hexanauplia	Calanoida	Acartiidae	Acartia	Acartia tonsa
+5	Unknown
+126	Eukaryota	Cnidaria	Scyphozoa	Semaeostomeae	Ulmaridae	Phacellophora
+65	Unknown
+14	Eukaryota	Oomycota	Saprolegniales__c	Saprolegniales
+1460	Eukaryota	Cnidaria	Scyphozoa	Semaeostomeae	Ulmaridae	Phacellophora
+86	Eukaryota	Haptophyta	Isochrysidales__c	Isochrysidales
+528	Eukaryota	Arthropoda	Insecta	Coleoptera
+1	Unknown
+12	Eukaryota	Ascomycota	Leotiomycetes	Leohumicola__f__o	Leohumicola__f
+14	Unknown
+3227	Eukaryota	Cnidaria	Scyphozoa	Semaeostomeae	Ulmaridae	Phacellophora
+103	Unknown
+478	Eukaryota	Rhodophyta	Florideophyceae	Ceramiales
+97	Eukaryota	Oomycota	Pythiales__c	Pythiales
+71	Eukaryota	Rhodophyta	Florideophyceae	Ceramiales
+96	Eukaryota	Arthropoda	Arachnida	Ixodida
+2005	Eukaryota	Mollusca	Gastropoda	Planorbidae__o
+2	Bacteria	Bacteroidota	Flavobacteriia
+25	Eukaryota	Cnidaria	Hydrozoa	Siphonophorae	Sphaeronectidae	Sphaeronectes
+210	Eukaryota	Arthropoda	Insecta	Hymenoptera
+74	Environmental Unknown
+22	Eukaryota	Chlorophyta	Mamiellophyceae	Mamiellales	Bathycoccaceae	Bathycoccus	Bathycoccus prasinos
+1	Unknown
+87	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Rhizosoleniales
+65	Eukaryota	Cnidaria	Hydrozoa	Leptothecata
+7	Bacteria	Bacteroidota	Flavobacteriia	Flavobacteriales
+86	Eukaryota	Arthropoda	Insecta	Diptera
+909	Eukaryota	Arthropoda	Insecta	Diptera
+8	Eukaryota	Chrysophyceae__p	Chrysophyceae	Chromulinales
+81	Eukaryota	Arthropoda	Insecta	Coleoptera
+76	Unknown
+76	Eukaryota	Arthropoda	Insecta	Diptera
+19	Eukaryota	Arthropoda	Insecta	Coleoptera	Carabidae

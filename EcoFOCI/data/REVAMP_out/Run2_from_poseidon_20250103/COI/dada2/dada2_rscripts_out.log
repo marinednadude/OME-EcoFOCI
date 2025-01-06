@@ -1,0 +1,2315 @@
+Loading required package: Rcpp
+Read 374 items
+Warning message:
+Removed 1123 rows containing missing values (`geom_tile()`). 
+null device 
+          1 
+Warning message:
+Removed 2652 rows containing missing values (`geom_tile()`). 
+null device 
+          1 
+null device 
+          1 
+null device 
+          1 
+Loading required package: Rcpp
+Read 374 items
+DADA2 - Learning error Running
+8570723910 total bases in 43074590 reads from 374 samples will be used for learning the error rates.
+8570590987 total bases in 43074590 reads from 374 samples will be used for learning the error rates.
+Warning messages:
+1: Transformation introduced infinite values in continuous y-axis 
+2: Transformation introduced infinite values in continuous y-axis 
+null device 
+          1 
+Warning messages:
+1: Transformation introduced infinite values in continuous y-axis 
+2: Transformation introduced infinite values in continuous y-axis 
+null device 
+          1 
+DADA2 - Dereplication Running
+Dereplicating sequence entries in Fastq file: MP_E1032_OC0821_PCR1_R1_filtered.fq.gz
+Encountered 20941 unique sequences from 75283 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1032_OC0821_PCR2_R1_filtered.fq.gz
+Encountered 30674 unique sequences from 77999 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1032_OC0821_PCR3_R1_filtered.fq.gz
+Encountered 17375 unique sequences from 98833 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1033_OC0821_PCR1_R1_filtered.fq.gz
+Encountered 12608 unique sequences from 109289 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1033_OC0821_PCR2_R1_filtered.fq.gz
+Encountered 12786 unique sequences from 107502 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1033_OC0821_PCR3_R1_filtered.fq.gz
+Encountered 11166 unique sequences from 87273 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1034_OC0821_PCR1_R1_filtered.fq.gz
+Encountered 229 unique sequences from 483 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1034_OC0821_PCR2_R1_filtered.fq.gz
+Encountered 18433 unique sequences from 95530 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1034_OC0821_PCR3_R1_filtered.fq.gz
+Encountered 19449 unique sequences from 104956 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1053_SKQ2021_R1_filtered.fq.gz
+Encountered 29536 unique sequences from 90931 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1054_SKQ2021_R1_filtered.fq.gz
+Encountered 16150 unique sequences from 87143 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1055_SKQ2021_R1_filtered.fq.gz
+Encountered 21511 unique sequences from 94660 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1056_SKQ2021_R1_filtered.fq.gz
+Encountered 11960 unique sequences from 57779 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1057_SKQ2021_R1_filtered.fq.gz
+Encountered 28372 unique sequences from 91977 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1058_SKQ2021_R1_filtered.fq.gz
+Encountered 20914 unique sequences from 91965 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1059_SKQ2021_R1_filtered.fq.gz
+Encountered 22080 unique sequences from 102787 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1060_SKQ2021_R1_filtered.fq.gz
+Encountered 15272 unique sequences from 112116 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1061_SKQ2021_R1_filtered.fq.gz
+Encountered 18611 unique sequences from 108673 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1062_SKQ2021_R1_filtered.fq.gz
+Encountered 29298 unique sequences from 95519 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1063_SKQ2021_R1_filtered.fq.gz
+Encountered 16120 unique sequences from 98309 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1064_SKQ2021_R1_filtered.fq.gz
+Encountered 11131 unique sequences from 101831 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1065_SKQ2021_R1_filtered.fq.gz
+Encountered 16040 unique sequences from 84346 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1066_SKQ2021_R1_filtered.fq.gz
+Encountered 15929 unique sequences from 111714 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1067_SKQ2021_R1_filtered.fq.gz
+Encountered 12343 unique sequences from 105178 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1068_SKQ2021_R1_filtered.fq.gz
+Encountered 18205 unique sequences from 94870 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1069_SKQ2021_R1_filtered.fq.gz
+Encountered 18125 unique sequences from 87698 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1070_SKQ2021_R1_filtered.fq.gz
+Encountered 5368 unique sequences from 30448 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1071_SKQ2021_R1_filtered.fq.gz
+Encountered 10694 unique sequences from 60406 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1072_SKQ2021_R1_filtered.fq.gz
+Encountered 8872 unique sequences from 59563 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1073_SKQ2021_R1_filtered.fq.gz
+Encountered 24562 unique sequences from 76995 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1074_SKQ2021_R1_filtered.fq.gz
+Encountered 13475 unique sequences from 71308 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1075_SKQ2021_R1_filtered.fq.gz
+Encountered 15036 unique sequences from 78157 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1076_SKQ2021_R1_filtered.fq.gz
+Encountered 8778 unique sequences from 49081 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1077_SKQ2021_R1_filtered.fq.gz
+Encountered 18568 unique sequences from 103925 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1078_SKQ2021_R1_filtered.fq.gz
+Encountered 16714 unique sequences from 95885 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1079_SKQ2021_R1_filtered.fq.gz
+Encountered 14309 unique sequences from 78744 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1080_SKQ2021_R1_filtered.fq.gz
+Encountered 15812 unique sequences from 108629 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1081_SKQ2021_R1_filtered.fq.gz
+Encountered 20752 unique sequences from 87408 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1082_SKQ2021_R1_filtered.fq.gz
+Encountered 18661 unique sequences from 108220 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1083_SKQ2021_R1_filtered.fq.gz
+Encountered 29365 unique sequences from 71089 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1084_SKQ2021_R1_filtered.fq.gz
+Encountered 16441 unique sequences from 122068 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1085_SKQ2021_R1_filtered.fq.gz
+Encountered 19020 unique sequences from 102419 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1086_SKQ2021_R1_filtered.fq.gz
+Encountered 15874 unique sequences from 80571 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1087_SKQ2021_R1_filtered.fq.gz
+Encountered 14779 unique sequences from 104351 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1088_SKQ2021_R1_filtered.fq.gz
+Encountered 14848 unique sequences from 61780 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1089_SKQ2021_R1_filtered.fq.gz
+Encountered 15916 unique sequences from 83331 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1090_SKQ2021_R1_filtered.fq.gz
+Encountered 14884 unique sequences from 104121 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1091_SKQ2021_R1_filtered.fq.gz
+Encountered 14341 unique sequences from 112063 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1092_SKQ2021_R1_filtered.fq.gz
+Encountered 17580 unique sequences from 81557 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1093_SKQ2021_R1_filtered.fq.gz
+Encountered 13286 unique sequences from 86914 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1094_SKQ2021_R1_filtered.fq.gz
+Encountered 7246 unique sequences from 30013 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1095_SKQ2021_R1_filtered.fq.gz
+Encountered 19110 unique sequences from 100090 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1096_SKQ2021_R1_filtered.fq.gz
+Encountered 15766 unique sequences from 109380 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1097_SKQ2021_R1_filtered.fq.gz
+Encountered 11718 unique sequences from 66196 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1098_SKQ2021_R1_filtered.fq.gz
+Encountered 13435 unique sequences from 71874 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1099_SKQ2021_R1_filtered.fq.gz
+Encountered 14950 unique sequences from 115933 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1100_SKQ2021_R1_filtered.fq.gz
+Encountered 21948 unique sequences from 69908 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1101_SKQ2021_R1_filtered.fq.gz
+Encountered 14776 unique sequences from 96790 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1102_SKQ2021_R1_filtered.fq.gz
+Encountered 12962 unique sequences from 93535 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1103_SKQ2021_R1_filtered.fq.gz
+Encountered 15643 unique sequences from 98675 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1104_SKQ2021_R1_filtered.fq.gz
+Encountered 15502 unique sequences from 119110 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1105_SKQ2021_R1_filtered.fq.gz
+Encountered 1071 unique sequences from 2969 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1106_SKQ2021_R1_filtered.fq.gz
+Encountered 16824 unique sequences from 110883 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1107_SKQ2021_R1_filtered.fq.gz
+Encountered 16643 unique sequences from 110965 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1108_SKQ2021_R1_filtered.fq.gz
+Encountered 16146 unique sequences from 106552 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1109_SKQ2021_R1_filtered.fq.gz
+Encountered 17381 unique sequences from 73531 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1110_SKQ2021_R1_filtered.fq.gz
+Encountered 16427 unique sequences from 106551 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1111_SKQ2021_R1_filtered.fq.gz
+Encountered 431 unique sequences from 1266 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1112_SKQ2021_R1_filtered.fq.gz
+Encountered 19084 unique sequences from 105773 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1113_SKQ2021_R1_filtered.fq.gz
+Encountered 15703 unique sequences from 108877 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1114_SKQ2021_R1_filtered.fq.gz
+Encountered 16375 unique sequences from 110790 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1115_SKQ2021_R1_filtered.fq.gz
+Encountered 18331 unique sequences from 59213 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1116_SKQ2021_R1_filtered.fq.gz
+Encountered 14030 unique sequences from 106647 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1117_SKQ2021_R1_filtered.fq.gz
+Encountered 24649 unique sequences from 102180 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1118_SKQ2021_R1_filtered.fq.gz
+Encountered 10262 unique sequences from 53078 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1119_SKQ2021_R1_filtered.fq.gz
+Encountered 16389 unique sequences from 114152 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1120_SKQ2021_R1_filtered.fq.gz
+Encountered 15804 unique sequences from 111446 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1121_SKQ2021_R1_filtered.fq.gz
+Encountered 12983 unique sequences from 63247 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1122_SKQ2021_R1_filtered.fq.gz
+Encountered 16254 unique sequences from 116976 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1123_SKQ2021_R1_filtered.fq.gz
+Encountered 15789 unique sequences from 126698 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1124_SKQ2021_R1_filtered.fq.gz
+Encountered 14714 unique sequences from 63363 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1125_SKQ2021_R1_filtered.fq.gz
+Encountered 17402 unique sequences from 110211 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1126_SKQ2021_R1_filtered.fq.gz
+Encountered 16203 unique sequences from 127326 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1127_SKQ2021_R1_filtered.fq.gz
+Encountered 17641 unique sequences from 147469 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1128_SKQ2021_R1_filtered.fq.gz
+Encountered 15653 unique sequences from 135151 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1129_SKQ2021_R1_filtered.fq.gz
+Encountered 19453 unique sequences from 99279 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1130_SKQ2021_R1_filtered.fq.gz
+Encountered 19870 unique sequences from 106837 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1131_SKQ2021_R1_filtered.fq.gz
+Encountered 17192 unique sequences from 117627 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1132_SKQ2021_R1_filtered.fq.gz
+Encountered 13154 unique sequences from 109582 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1133_SKQ2021_R1_filtered.fq.gz
+Encountered 15596 unique sequences from 84326 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1134_SKQ2021_R1_filtered.fq.gz
+Encountered 17338 unique sequences from 98812 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1135_SKQ2021_R1_filtered.fq.gz
+Encountered 18884 unique sequences from 136999 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1136_SKQ2021_R1_filtered.fq.gz
+Encountered 17587 unique sequences from 124315 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1137_SKQ2021_R1_filtered.fq.gz
+Encountered 16988 unique sequences from 143641 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1138_SKQ2021_R1_filtered.fq.gz
+Encountered 15978 unique sequences from 125298 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1139_SKQ2021_R1_filtered.fq.gz
+Encountered 14208 unique sequences from 79659 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1140_SKQ2021_R1_filtered.fq.gz
+Encountered 15546 unique sequences from 96996 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1141_SKQ2021_R1_filtered.fq.gz
+Encountered 11022 unique sequences from 75820 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1142_SKQ2021_R1_filtered.fq.gz
+Encountered 15792 unique sequences from 81538 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1143_SKQ2021_R1_filtered.fq.gz
+Encountered 13737 unique sequences from 78109 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1144_SKQ2021_R1_filtered.fq.gz
+Encountered 14202 unique sequences from 90256 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1145_SKQ2021_R1_filtered.fq.gz
+Encountered 26521 unique sequences from 83809 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1146_SKQ2021_R1_filtered.fq.gz
+Encountered 18013 unique sequences from 108724 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1172_OC0622_R1_filtered.fq.gz
+Encountered 18020 unique sequences from 113616 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1173_OC0622_R1_filtered.fq.gz
+Encountered 17846 unique sequences from 99515 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1174_OC0622_R1_filtered.fq.gz
+Encountered 18549 unique sequences from 114927 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1229_OC0822_PCR1_R1_filtered.fq.gz
+Encountered 17485 unique sequences from 96494 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1229_OC0822_PCR2_R1_filtered.fq.gz
+Encountered 14708 unique sequences from 78067 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1229_OC0822_PCR3_R1_filtered.fq.gz
+Encountered 17316 unique sequences from 96668 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1230_OC0822_PCR1_R1_filtered.fq.gz
+Encountered 15592 unique sequences from 89479 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1230_OC0822_PCR2_R1_filtered.fq.gz
+Encountered 17395 unique sequences from 97845 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1230_OC0822_PCR3_R1_filtered.fq.gz
+Encountered 19451 unique sequences from 90966 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1231_OC0822_PCR1_R1_filtered.fq.gz
+Encountered 13754 unique sequences from 93701 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1231_OC0822_PCR2_R1_filtered.fq.gz
+Encountered 17123 unique sequences from 100584 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1231_OC0822_PCR3_R1_filtered.fq.gz
+Encountered 15516 unique sequences from 96600 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1240_OC0922_R1_filtered.fq.gz
+Encountered 12711 unique sequences from 114486 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1241_OC0922_R1_filtered.fq.gz
+Encountered 17120 unique sequences from 97701 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1242_OC0922_R1_filtered.fq.gz
+Encountered 21374 unique sequences from 121581 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1243_OC0922_R1_filtered.fq.gz
+Encountered 33143 unique sequences from 136057 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1244_OC0922_R1_filtered.fq.gz
+Encountered 31223 unique sequences from 104854 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1245_OC0922_R1_filtered.fq.gz
+Encountered 31993 unique sequences from 123372 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1246_OC0922_R1_filtered.fq.gz
+Encountered 32662 unique sequences from 84997 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1247_OC0922_R1_filtered.fq.gz
+Encountered 34709 unique sequences from 97923 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1248_OC0922_R1_filtered.fq.gz
+Encountered 18124 unique sequences from 107641 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1249_OC0922_R1_filtered.fq.gz
+Encountered 51126 unique sequences from 88938 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1250_OC0922_R1_filtered.fq.gz
+Encountered 23576 unique sequences from 123742 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1251_OC0922_R1_filtered.fq.gz
+Encountered 21626 unique sequences from 165148 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1252_OC0922_R1_filtered.fq.gz
+Encountered 27387 unique sequences from 141882 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1253_OC0922_R1_filtered.fq.gz
+Encountered 35953 unique sequences from 112899 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1254_OC0922_R1_filtered.fq.gz
+Encountered 26180 unique sequences from 128433 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1255_OC0922_R1_filtered.fq.gz
+Encountered 34286 unique sequences from 162042 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1256_OC0922_R1_filtered.fq.gz
+Encountered 29730 unique sequences from 160042 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1257_OC0922_R1_filtered.fq.gz
+Encountered 22063 unique sequences from 155284 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1258_OC0922_R1_filtered.fq.gz
+Encountered 26531 unique sequences from 146479 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1259_OC0922_R1_filtered.fq.gz
+Encountered 36990 unique sequences from 144779 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1260_OC0922_R1_filtered.fq.gz
+Encountered 22746 unique sequences from 125253 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1261_OC0922_R1_filtered.fq.gz
+Encountered 25244 unique sequences from 80259 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1262_OC0922_R1_filtered.fq.gz
+Encountered 25553 unique sequences from 155126 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1263_OC0922_R1_filtered.fq.gz
+Encountered 42206 unique sequences from 87757 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1265_OC0922_PCR1_R1_filtered.fq.gz
+Encountered 23359 unique sequences from 110010 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1265_OC0922_PCR2_R1_filtered.fq.gz
+Encountered 15474 unique sequences from 119779 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1265_OC0922_PCR3_R1_filtered.fq.gz
+Encountered 14790 unique sequences from 119458 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1266_OC0922_PCR1_R1_filtered.fq.gz
+Encountered 17053 unique sequences from 138887 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1266_OC0922_PCR2_R1_filtered.fq.gz
+Encountered 11897 unique sequences from 73227 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1266_OC0922_PCR3_R1_filtered.fq.gz
+Encountered 16601 unique sequences from 106444 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1267_OC0922_PCR1_R1_filtered.fq.gz
+Encountered 11394 unique sequences from 113403 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1267_OC0922_PCR2_R1_filtered.fq.gz
+Encountered 14570 unique sequences from 118925 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1267_OC0922_PCR3_R1_filtered.fq.gz
+Encountered 16963 unique sequences from 109270 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1275_OC1021_R1_filtered.fq.gz
+Encountered 23658 unique sequences from 161542 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1276_OC1021_R1_filtered.fq.gz
+Encountered 24178 unique sequences from 130184 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1277_OC1021_R1_filtered.fq.gz
+Encountered 25302 unique sequences from 171859 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1278_OC1021_R1_filtered.fq.gz
+Encountered 20035 unique sequences from 154230 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1279_OC1021_R1_filtered.fq.gz
+Encountered 24910 unique sequences from 135857 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1280_OC1021_R1_filtered.fq.gz
+Encountered 23845 unique sequences from 135092 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1281_OC1021_R1_filtered.fq.gz
+Encountered 31956 unique sequences from 119383 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1282_OC1021_R1_filtered.fq.gz
+Encountered 25171 unique sequences from 168222 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1283_OC1021_R1_filtered.fq.gz
+Encountered 25543 unique sequences from 160199 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1284_OC1021_R1_filtered.fq.gz
+Encountered 26831 unique sequences from 162994 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1285_OC1021_R1_filtered.fq.gz
+Encountered 15218 unique sequences from 142162 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1286_OC1021_R1_filtered.fq.gz
+Encountered 24180 unique sequences from 133690 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1287_OC1021_R1_filtered.fq.gz
+Encountered 23403 unique sequences from 138272 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1288_OC1021_R1_filtered.fq.gz
+Encountered 32141 unique sequences from 138490 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1289_OC1021_R1_filtered.fq.gz
+Encountered 9 unique sequences from 10 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1290_OC1021_R1_filtered.fq.gz
+Encountered 30457 unique sequences from 163914 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1291_OC1021_R1_filtered.fq.gz
+Encountered 33531 unique sequences from 167961 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1292_OC1021_R1_filtered.fq.gz
+Encountered 24226 unique sequences from 173948 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1293_OC1021_R1_filtered.fq.gz
+Encountered 22092 unique sequences from 143058 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1294_OC1021_R1_filtered.fq.gz
+Encountered 18997 unique sequences from 147951 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1295_OC1021_R1_filtered.fq.gz
+Encountered 20014 unique sequences from 133576 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1296_OC1021_R1_filtered.fq.gz
+Encountered 25516 unique sequences from 151308 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1297_OC1021_R1_filtered.fq.gz
+Encountered 23475 unique sequences from 157388 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1298_OC1021_R1_filtered.fq.gz
+Encountered 24834 unique sequences from 167065 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1299_OC1021_R1_filtered.fq.gz
+Encountered 21839 unique sequences from 161730 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1300_OC1021_R1_filtered.fq.gz
+Encountered 26873 unique sequences from 150563 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1301_OC1021_R1_filtered.fq.gz
+Encountered 26064 unique sequences from 148579 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1302_OC1021_R1_filtered.fq.gz
+Encountered 16854 unique sequences from 149214 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1303_OC1021_R1_filtered.fq.gz
+Encountered 17910 unique sequences from 131075 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1304_OC1021_R1_filtered.fq.gz
+Encountered 16351 unique sequences from 119243 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1305_OC1021_R1_filtered.fq.gz
+Encountered 18715 unique sequences from 142688 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1306_OC1021_R1_filtered.fq.gz
+Encountered 32429 unique sequences from 147062 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1307_OC1021_R1_filtered.fq.gz
+Encountered 14716 unique sequences from 159225 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1308_OC1021_R1_filtered.fq.gz
+Encountered 40612 unique sequences from 109343 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1309_OC1021_R1_filtered.fq.gz
+Encountered 19899 unique sequences from 163579 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1310_OC1021_R1_filtered.fq.gz
+Encountered 14917 unique sequences from 147215 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1312_OC1021_R1_filtered.fq.gz
+Encountered 14648 unique sequences from 149799 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1313_OC1021_R1_filtered.fq.gz
+Encountered 20480 unique sequences from 130073 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1315_OC1021_R1_filtered.fq.gz
+Encountered 18863 unique sequences from 152759 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1316_OC1021_R1_filtered.fq.gz
+Encountered 19851 unique sequences from 149254 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1317_OC1021_R1_filtered.fq.gz
+Encountered 11841 unique sequences from 156942 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1318_OC1021_R1_filtered.fq.gz
+Encountered 47732 unique sequences from 143382 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1319_OC1021_R1_filtered.fq.gz
+Encountered 35858 unique sequences from 118505 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1320_OC1021_R1_filtered.fq.gz
+Encountered 10301 unique sequences from 144488 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1321_OC1021_R1_filtered.fq.gz
+Encountered 10318 unique sequences from 137132 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1322_OC1021_R1_filtered.fq.gz
+Encountered 11516 unique sequences from 114972 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1323_OC1021_PCR1_R1_filtered.fq.gz
+Encountered 1702 unique sequences from 5072 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1323_OC1021_PCR2_R1_filtered.fq.gz
+Encountered 20255 unique sequences from 120856 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1323_OC1021_PCR3_R1_filtered.fq.gz
+Encountered 17626 unique sequences from 103049 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1324_OC1021_PCR1_R1_filtered.fq.gz
+Encountered 17361 unique sequences from 119960 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1324_OC1021_PCR2_R1_filtered.fq.gz
+Encountered 26660 unique sequences from 94085 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1324_OC1021_PCR3_R1_filtered.fq.gz
+Encountered 33195 unique sequences from 112537 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1325_OC1021_PCR1_R1_filtered.fq.gz
+Encountered 17418 unique sequences from 105474 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1325_OC1021_PCR2_R1_filtered.fq.gz
+Encountered 18542 unique sequences from 109010 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1325_OC1021_PCR3_R1_filtered.fq.gz
+Encountered 19215 unique sequences from 117336 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1389_OC0722_R1_filtered.fq.gz
+Encountered 18016 unique sequences from 131374 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1390_OC0722_R1_filtered.fq.gz
+Encountered 29483 unique sequences from 141403 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1391_OC0722_R1_filtered.fq.gz
+Encountered 26609 unique sequences from 137709 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1403_OC0722_R1_filtered.fq.gz
+Encountered 22912 unique sequences from 176194 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1404_OC0722_R1_filtered.fq.gz
+Encountered 20732 unique sequences from 110530 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1406_OC0722_R1_filtered.fq.gz
+Encountered 24675 unique sequences from 156375 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1408_OC0722_R1_filtered.fq.gz
+Encountered 20845 unique sequences from 122915 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1410_OC0722_R1_filtered.fq.gz
+Encountered 22497 unique sequences from 126740 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1412_OC0722_R1_filtered.fq.gz
+Encountered 20675 unique sequences from 125706 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1414_OC0722_R1_filtered.fq.gz
+Encountered 24965 unique sequences from 149196 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1416_OC0722_R1_filtered.fq.gz
+Encountered 27496 unique sequences from 164053 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1418_OC0722_R1_filtered.fq.gz
+Encountered 30862 unique sequences from 144330 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1420_OC0722_R1_filtered.fq.gz
+Encountered 28906 unique sequences from 144092 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1422_OC0722_R1_filtered.fq.gz
+Encountered 27769 unique sequences from 156603 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1424_OC0722_R1_filtered.fq.gz
+Encountered 30554 unique sequences from 168032 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1426_OC0722_R1_filtered.fq.gz
+Encountered 24340 unique sequences from 149154 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1845_OC0623_R1_filtered.fq.gz
+Encountered 46723 unique sequences from 101569 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1846_OC0623_R1_filtered.fq.gz
+Encountered 33319 unique sequences from 115486 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1847_OC0623_R1_filtered.fq.gz
+Encountered 46415 unique sequences from 173645 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1849_OC0723_R1_filtered.fq.gz
+Encountered 46768 unique sequences from 130094 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1850_OC0723_R1_filtered.fq.gz
+Encountered 43688 unique sequences from 154181 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1851_OC0723_R1_filtered.fq.gz
+Encountered 31330 unique sequences from 182608 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1852_OC0723_R1_filtered.fq.gz
+Encountered 46971 unique sequences from 130745 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1853_OC0723_R1_filtered.fq.gz
+Encountered 19894 unique sequences from 157575 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1854_OC0723_R1_filtered.fq.gz
+Encountered 42971 unique sequences from 180618 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1855_OC0723_R1_filtered.fq.gz
+Encountered 26868 unique sequences from 191841 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1856_OC0723_R1_filtered.fq.gz
+Encountered 28851 unique sequences from 211865 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1857_OC0723_R1_filtered.fq.gz
+Encountered 22238 unique sequences from 135995 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1858_OC0723_R1_filtered.fq.gz
+Encountered 21182 unique sequences from 165428 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1859_OC0723_R1_filtered.fq.gz
+Encountered 31859 unique sequences from 158652 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1860_OC0723_R1_filtered.fq.gz
+Encountered 32660 unique sequences from 182789 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1861_OC0723_R1_filtered.fq.gz
+Encountered 30696 unique sequences from 158367 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1862_OC0723_R1_filtered.fq.gz
+Encountered 28826 unique sequences from 184832 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1863_OC0723_R1_filtered.fq.gz
+Encountered 32054 unique sequences from 166186 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1864_OC0723_R1_filtered.fq.gz
+Encountered 23544 unique sequences from 155971 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1865_OC0723_R1_filtered.fq.gz
+Encountered 37923 unique sequences from 138301 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1866_OC0723_R1_filtered.fq.gz
+Encountered 12417 unique sequences from 81298 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1867_OC0723_R1_filtered.fq.gz
+Encountered 10597 unique sequences from 111487 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1868_OC0723_R1_filtered.fq.gz
+Encountered 22717 unique sequences from 135591 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1869_OC0723_R1_filtered.fq.gz
+Encountered 18772 unique sequences from 160679 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1870_OC0723_R1_filtered.fq.gz
+Encountered 21883 unique sequences from 132160 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1871_OC0723_R1_filtered.fq.gz
+Encountered 20131 unique sequences from 118259 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1872_OC0723_R1_filtered.fq.gz
+Encountered 19149 unique sequences from 113272 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1873_OC0723_R1_filtered.fq.gz
+Encountered 22944 unique sequences from 120457 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1874_OC0723_R1_filtered.fq.gz
+Encountered 21475 unique sequences from 118187 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1875_OC0723_R1_filtered.fq.gz
+Encountered 20684 unique sequences from 125180 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E2128_1B_R1_filtered.fq.gz
+Encountered 18793 unique sequences from 91567 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E2128_2B_R1_filtered.fq.gz
+Encountered 23534 unique sequences from 82121 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E2128_3B_R1_filtered.fq.gz
+Encountered 81 unique sequences from 219 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E2128_4B_R1_filtered.fq.gz
+Encountered 19570 unique sequences from 112251 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E2129_1B_R1_filtered.fq.gz
+Encountered 10038 unique sequences from 80645 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E2129_2B_R1_filtered.fq.gz
+Encountered 9350 unique sequences from 43703 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E2129_3B_R1_filtered.fq.gz
+Encountered 15506 unique sequences from 115853 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E2129_4B_R1_filtered.fq.gz
+Encountered 18759 unique sequences from 46337 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E2129_5B_R1_filtered.fq.gz
+Encountered 6589 unique sequences from 35458 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E2130_1B_R1_filtered.fq.gz
+Encountered 16877 unique sequences from 96498 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E2130_2B_R1_filtered.fq.gz
+Encountered 18575 unique sequences from 104808 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E2130_3B_R1_filtered.fq.gz
+Encountered 11308 unique sequences from 50951 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E2130_4B_R1_filtered.fq.gz
+Encountered 35225 unique sequences from 73563 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E2130_5B_R1_filtered.fq.gz
+Encountered 12456 unique sequences from 79368 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E2131_1B_R1_filtered.fq.gz
+Encountered 21506 unique sequences from 109268 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E2131_2B_R1_filtered.fq.gz
+Encountered 13354 unique sequences from 76938 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E2131_3B_R1_filtered.fq.gz
+Encountered 16166 unique sequences from 91838 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E2131_4B_R1_filtered.fq.gz
+Encountered 16543 unique sequences from 100672 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E2131_5B_R1_filtered.fq.gz
+Encountered 18195 unique sequences from 87929 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E2132_1B_R1_filtered.fq.gz
+Encountered 5965 unique sequences from 38509 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E2132_2B_R1_filtered.fq.gz
+Encountered 11507 unique sequences from 62366 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E2132_3B_R1_filtered.fq.gz
+Encountered 12888 unique sequences from 82113 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E2132_4B_R1_filtered.fq.gz
+Encountered 10937 unique sequences from 73965 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E2132_5B_R1_filtered.fq.gz
+Encountered 2775 unique sequences from 12073 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E2133_1B_R1_filtered.fq.gz
+Encountered 15684 unique sequences from 93870 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E2133_2B_R1_filtered.fq.gz
+Encountered 17003 unique sequences from 95688 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E2133_3B_R1_filtered.fq.gz
+Encountered 11079 unique sequences from 70309 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E2133_4B_R1_filtered.fq.gz
+Encountered 17942 unique sequences from 106873 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E2133_5B_R1_filtered.fq.gz
+Encountered 18205 unique sequences from 94992 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E2134_1B_R1_filtered.fq.gz
+Encountered 21193 unique sequences from 52171 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E2134_2B_R1_filtered.fq.gz
+Encountered 11193 unique sequences from 91209 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E2134_3B_R1_filtered.fq.gz
+Encountered 9145 unique sequences from 81877 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E2134_4B_R1_filtered.fq.gz
+Encountered 14066 unique sequences from 77137 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E2134_5B_R1_filtered.fq.gz
+Encountered 10212 unique sequences from 85138 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E2135_1B_R1_filtered.fq.gz
+Encountered 6075 unique sequences from 34387 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E2135_2B_R1_filtered.fq.gz
+Encountered 8342 unique sequences from 45264 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E2135_3B_R1_filtered.fq.gz
+Encountered 19596 unique sequences from 93455 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E2135_4B_R1_filtered.fq.gz
+Encountered 15864 unique sequences from 96930 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E2135_5B_R1_filtered.fq.gz
+Encountered 13995 unique sequences from 103364 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E2136_1B_R1_filtered.fq.gz
+Encountered 27330 unique sequences from 101528 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E2136_2B_R1_filtered.fq.gz
+Encountered 7577 unique sequences from 61161 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E2136_3B_R1_filtered.fq.gz
+Encountered 13170 unique sequences from 93592 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E2136_4B_R1_filtered.fq.gz
+Encountered 225 unique sequences from 627 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E2136_5B_R1_filtered.fq.gz
+Encountered 10428 unique sequences from 95006 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E2137_1B_R1_filtered.fq.gz
+Encountered 15152 unique sequences from 87465 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E446_1B_PCR2_R1_filtered.fq.gz
+Encountered 20041 unique sequences from 146956 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E446_1B_PCR3_R1_filtered.fq.gz
+Encountered 21835 unique sequences from 141777 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E446_2B_PCR2_R1_filtered.fq.gz
+Encountered 25325 unique sequences from 115975 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E446_2B_PCR3_R1_filtered.fq.gz
+Encountered 26259 unique sequences from 145681 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E446_3B_PCR2_R1_filtered.fq.gz
+Encountered 26837 unique sequences from 111516 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E446_3B_PCR3_R1_filtered.fq.gz
+Encountered 42083 unique sequences from 116964 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E447_1B_PCR2_R1_filtered.fq.gz
+Encountered 15377 unique sequences from 150577 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E447_1B_PCR3_R1_filtered.fq.gz
+Encountered 16614 unique sequences from 151384 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E447_2B_PCR2_R1_filtered.fq.gz
+Encountered 23327 unique sequences from 137310 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E447_2B_PCR3_R1_filtered.fq.gz
+Encountered 15161 unique sequences from 143030 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E447_3B_PCR2_R1_filtered.fq.gz
+Encountered 12355 unique sequences from 130723 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E447_3B_PCR3_R1_filtered.fq.gz
+Encountered 13932 unique sequences from 137527 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E448_1B_PCR2_R1_filtered.fq.gz
+Encountered 28814 unique sequences from 188956 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E448_1B_PCR3_R1_filtered.fq.gz
+Encountered 20466 unique sequences from 182010 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E448_2B_PCR2_R1_filtered.fq.gz
+Encountered 30122 unique sequences from 119454 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E448_2B_PCR3_R1_filtered.fq.gz
+Encountered 16535 unique sequences from 153520 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E448_3B_PCR2_R1_filtered.fq.gz
+Encountered 23033 unique sequences from 179855 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E448_3B_PCR3_R1_filtered.fq.gz
+Encountered 39217 unique sequences from 133106 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E449_1B_PCR2_R1_filtered.fq.gz
+Encountered 18851 unique sequences from 122645 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E449_1B_PCR3_R1_filtered.fq.gz
+Encountered 20676 unique sequences from 146794 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E449_2B_PCR2_R1_filtered.fq.gz
+Encountered 27392 unique sequences from 79074 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E449_2B_PCR3_R1_filtered.fq.gz
+Encountered 37107 unique sequences from 119238 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E449_3B_PCR2_R1_filtered.fq.gz
+Encountered 22903 unique sequences from 125400 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E449_3B_PCR3_R1_filtered.fq.gz
+Encountered 20587 unique sequences from 125748 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E450_1B_PCR2_R1_filtered.fq.gz
+Encountered 18417 unique sequences from 130363 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E450_1B_PCR3_R1_filtered.fq.gz
+Encountered 17363 unique sequences from 135142 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E450_2B_PCR2_R1_filtered.fq.gz
+Encountered 17014 unique sequences from 147870 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E450_2B_PCR3_R1_filtered.fq.gz
+Encountered 16286 unique sequences from 131660 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E450_3B_PCR2_R1_filtered.fq.gz
+Encountered 17745 unique sequences from 130827 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E450_3B_PCR3_R1_filtered.fq.gz
+Encountered 17789 unique sequences from 131075 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E475_PCR2_R1_filtered.fq.gz
+Encountered 24070 unique sequences from 127169 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E475_PCR3_R1_filtered.fq.gz
+Encountered 16272 unique sequences from 141260 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E486_PCR2_R1_filtered.fq.gz
+Encountered 26845 unique sequences from 117250 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E486_PCR3_R1_filtered.fq.gz
+Encountered 15479 unique sequences from 138472 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E492_1B_PCR2_R1_filtered.fq.gz
+Encountered 27155 unique sequences from 141777 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E492_1B_PCR3_R1_filtered.fq.gz
+Encountered 24919 unique sequences from 140237 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E494_PCR2_R1_filtered.fq.gz
+Encountered 17559 unique sequences from 134641 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E494_PCR3_R1_filtered.fq.gz
+Encountered 17228 unique sequences from 126246 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E496_1T_PCR2_R1_filtered.fq.gz
+Encountered 25474 unique sequences from 157698 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E496_1T_PCR3_R1_filtered.fq.gz
+Encountered 18289 unique sequences from 175483 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E496_3B_PCR2_R1_filtered.fq.gz
+Encountered 20721 unique sequences from 163280 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E496_3B_PCR3_R1_filtered.fq.gz
+Encountered 18150 unique sequences from 147847 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E498_1B_PCR2_R1_filtered.fq.gz
+Encountered 16796 unique sequences from 160458 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E498_1B_PCR3_R1_filtered.fq.gz
+Encountered 17695 unique sequences from 151914 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E498_2B_PCR2_R1_filtered.fq.gz
+Encountered 15517 unique sequences from 130014 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E498_2B_PCR3_R1_filtered.fq.gz
+Encountered 15912 unique sequences from 142096 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E498_3B_PCR2_R1_filtered.fq.gz
+Encountered 16351 unique sequences from 155015 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E498_3B_PCR3_R1_filtered.fq.gz
+Encountered 17094 unique sequences from 154156 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E573_1B_PCR2_R1_filtered.fq.gz
+Encountered 35647 unique sequences from 138614 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E573_1B_PCR3_R1_filtered.fq.gz
+Encountered 18816 unique sequences from 101854 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E573_2B_PCR2_R1_filtered.fq.gz
+Encountered 22329 unique sequences from 148511 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E573_2B_PCR3_R1_filtered.fq.gz
+Encountered 24476 unique sequences from 169447 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E573_3B_PCR2_R1_filtered.fq.gz
+Encountered 25609 unique sequences from 159201 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E573_3B_PCR3_R1_filtered.fq.gz
+Encountered 25667 unique sequences from 152514 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E574_1B_PCR2_R1_filtered.fq.gz
+Encountered 12477 unique sequences from 58909 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E574_1B_PCR3_R1_filtered.fq.gz
+Encountered 19584 unique sequences from 122685 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E574_2B_PCR2_R1_filtered.fq.gz
+Encountered 21204 unique sequences from 131775 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E574_2B_PCR3_R1_filtered.fq.gz
+Encountered 18183 unique sequences from 107607 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E574_3B_PCR2_R1_filtered.fq.gz
+Encountered 10483 unique sequences from 141366 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E574_3B_PCR3_R1_filtered.fq.gz
+Encountered 9659 unique sequences from 131016 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E575_1B_PCR2_R1_filtered.fq.gz
+Encountered 16910 unique sequences from 139301 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E575_1B_PCR3_R1_filtered.fq.gz
+Encountered 17960 unique sequences from 130102 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E575_2B_PCR2_R1_filtered.fq.gz
+Encountered 14063 unique sequences from 126490 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E575_2B_PCR3_R1_filtered.fq.gz
+Encountered 15393 unique sequences from 125105 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E575_3B_PCR2_R1_filtered.fq.gz
+Encountered 15332 unique sequences from 135398 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E575_3B_PCR3_R1_filtered.fq.gz
+Encountered 32874 unique sequences from 89260 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E598_1B_PCR2_R1_filtered.fq.gz
+Encountered 23058 unique sequences from 160891 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E598_1B_PCR3_R1_filtered.fq.gz
+Encountered 37988 unique sequences from 133726 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E598_2B_PCR2_R1_filtered.fq.gz
+Encountered 26858 unique sequences from 177749 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E598_2B_PCR3_R1_filtered.fq.gz
+Encountered 24038 unique sequences from 136300 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E598_3B_PCR2_R1_filtered.fq.gz
+Encountered 23850 unique sequences from 134177 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E598_3B_PCR3_R1_filtered.fq.gz
+Encountered 30881 unique sequences from 137139 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E600_1B_PCR2_R1_filtered.fq.gz
+Encountered 25475 unique sequences from 139093 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E600_1B_PCR3_R1_filtered.fq.gz
+Encountered 15082 unique sequences from 148356 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E600_2B_PCR2_R1_filtered.fq.gz
+Encountered 13269 unique sequences from 137574 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E600_2B_PCR3_R1_filtered.fq.gz
+Encountered 18308 unique sequences from 148235 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E600_3B_PCR2_R1_filtered.fq.gz
+Encountered 24699 unique sequences from 120825 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E600_3B_PCR3_R1_filtered.fq.gz
+Encountered 18246 unique sequences from 180302 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E610_NC_R1_filtered.fq.gz
+Encountered 1033 unique sequences from 2251 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_POSITIVE_R1_filtered.fq.gz
+Encountered 11442 unique sequences from 83649 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1032_OC0821_PCR1_R2_filtered.fq.gz
+Encountered 12621 unique sequences from 75283 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1032_OC0821_PCR2_R2_filtered.fq.gz
+Encountered 13108 unique sequences from 77999 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1032_OC0821_PCR3_R2_filtered.fq.gz
+Encountered 17433 unique sequences from 98833 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1033_OC0821_PCR1_R2_filtered.fq.gz
+Encountered 13749 unique sequences from 109289 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1033_OC0821_PCR2_R2_filtered.fq.gz
+Encountered 13418 unique sequences from 107502 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1033_OC0821_PCR3_R2_filtered.fq.gz
+Encountered 11927 unique sequences from 87273 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1034_OC0821_PCR1_R2_filtered.fq.gz
+Encountered 226 unique sequences from 483 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1034_OC0821_PCR2_R2_filtered.fq.gz
+Encountered 18626 unique sequences from 95530 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1034_OC0821_PCR3_R2_filtered.fq.gz
+Encountered 19501 unique sequences from 104956 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1053_SKQ2021_R2_filtered.fq.gz
+Encountered 16482 unique sequences from 90931 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1054_SKQ2021_R2_filtered.fq.gz
+Encountered 16972 unique sequences from 87143 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1055_SKQ2021_R2_filtered.fq.gz
+Encountered 12648 unique sequences from 94660 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1056_SKQ2021_R2_filtered.fq.gz
+Encountered 12227 unique sequences from 57779 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1057_SKQ2021_R2_filtered.fq.gz
+Encountered 14877 unique sequences from 91977 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1058_SKQ2021_R2_filtered.fq.gz
+Encountered 15120 unique sequences from 91965 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1059_SKQ2021_R2_filtered.fq.gz
+Encountered 21475 unique sequences from 102787 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1060_SKQ2021_R2_filtered.fq.gz
+Encountered 16106 unique sequences from 112116 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1061_SKQ2021_R2_filtered.fq.gz
+Encountered 18225 unique sequences from 108673 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1062_SKQ2021_R2_filtered.fq.gz
+Encountered 16230 unique sequences from 95519 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1063_SKQ2021_R2_filtered.fq.gz
+Encountered 16202 unique sequences from 98309 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1064_SKQ2021_R2_filtered.fq.gz
+Encountered 10926 unique sequences from 101831 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1065_SKQ2021_R2_filtered.fq.gz
+Encountered 17954 unique sequences from 84346 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1066_SKQ2021_R2_filtered.fq.gz
+Encountered 17544 unique sequences from 111714 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1067_SKQ2021_R2_filtered.fq.gz
+Encountered 13691 unique sequences from 105178 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1068_SKQ2021_R2_filtered.fq.gz
+Encountered 11201 unique sequences from 94870 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1069_SKQ2021_R2_filtered.fq.gz
+Encountered 17288 unique sequences from 87698 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1070_SKQ2021_R2_filtered.fq.gz
+Encountered 6682 unique sequences from 30448 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1071_SKQ2021_R2_filtered.fq.gz
+Encountered 11032 unique sequences from 60406 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1072_SKQ2021_R2_filtered.fq.gz
+Encountered 9189 unique sequences from 59563 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1073_SKQ2021_R2_filtered.fq.gz
+Encountered 7522 unique sequences from 76995 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1074_SKQ2021_R2_filtered.fq.gz
+Encountered 14133 unique sequences from 71308 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1075_SKQ2021_R2_filtered.fq.gz
+Encountered 14407 unique sequences from 78157 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1076_SKQ2021_R2_filtered.fq.gz
+Encountered 9468 unique sequences from 49081 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1077_SKQ2021_R2_filtered.fq.gz
+Encountered 19391 unique sequences from 103925 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1078_SKQ2021_R2_filtered.fq.gz
+Encountered 17139 unique sequences from 95885 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1079_SKQ2021_R2_filtered.fq.gz
+Encountered 13874 unique sequences from 78744 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1080_SKQ2021_R2_filtered.fq.gz
+Encountered 16431 unique sequences from 108629 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1081_SKQ2021_R2_filtered.fq.gz
+Encountered 13592 unique sequences from 87408 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1082_SKQ2021_R2_filtered.fq.gz
+Encountered 19783 unique sequences from 108220 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1083_SKQ2021_R2_filtered.fq.gz
+Encountered 13600 unique sequences from 71089 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1084_SKQ2021_R2_filtered.fq.gz
+Encountered 16172 unique sequences from 122068 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1085_SKQ2021_R2_filtered.fq.gz
+Encountered 18182 unique sequences from 102419 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1086_SKQ2021_R2_filtered.fq.gz
+Encountered 15977 unique sequences from 80571 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1087_SKQ2021_R2_filtered.fq.gz
+Encountered 14998 unique sequences from 104351 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1088_SKQ2021_R2_filtered.fq.gz
+Encountered 12944 unique sequences from 61780 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1089_SKQ2021_R2_filtered.fq.gz
+Encountered 16920 unique sequences from 83331 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1090_SKQ2021_R2_filtered.fq.gz
+Encountered 15309 unique sequences from 104121 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1091_SKQ2021_R2_filtered.fq.gz
+Encountered 15927 unique sequences from 112063 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1092_SKQ2021_R2_filtered.fq.gz
+Encountered 16416 unique sequences from 81557 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1093_SKQ2021_R2_filtered.fq.gz
+Encountered 14063 unique sequences from 86914 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1094_SKQ2021_R2_filtered.fq.gz
+Encountered 8599 unique sequences from 30013 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1095_SKQ2021_R2_filtered.fq.gz
+Encountered 19378 unique sequences from 100090 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1096_SKQ2021_R2_filtered.fq.gz
+Encountered 15649 unique sequences from 109380 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1097_SKQ2021_R2_filtered.fq.gz
+Encountered 12953 unique sequences from 66196 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1098_SKQ2021_R2_filtered.fq.gz
+Encountered 14827 unique sequences from 71874 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1099_SKQ2021_R2_filtered.fq.gz
+Encountered 14467 unique sequences from 115933 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1100_SKQ2021_R2_filtered.fq.gz
+Encountered 11237 unique sequences from 69908 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1101_SKQ2021_R2_filtered.fq.gz
+Encountered 15226 unique sequences from 96790 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1102_SKQ2021_R2_filtered.fq.gz
+Encountered 14427 unique sequences from 93535 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1103_SKQ2021_R2_filtered.fq.gz
+Encountered 16082 unique sequences from 98675 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1104_SKQ2021_R2_filtered.fq.gz
+Encountered 15927 unique sequences from 119110 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1105_SKQ2021_R2_filtered.fq.gz
+Encountered 900 unique sequences from 2969 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1106_SKQ2021_R2_filtered.fq.gz
+Encountered 17415 unique sequences from 110883 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1107_SKQ2021_R2_filtered.fq.gz
+Encountered 16928 unique sequences from 110965 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1108_SKQ2021_R2_filtered.fq.gz
+Encountered 17920 unique sequences from 106552 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1109_SKQ2021_R2_filtered.fq.gz
+Encountered 11783 unique sequences from 73531 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1110_SKQ2021_R2_filtered.fq.gz
+Encountered 16894 unique sequences from 106551 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1111_SKQ2021_R2_filtered.fq.gz
+Encountered 445 unique sequences from 1266 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1112_SKQ2021_R2_filtered.fq.gz
+Encountered 16892 unique sequences from 105773 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1113_SKQ2021_R2_filtered.fq.gz
+Encountered 14966 unique sequences from 108877 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1114_SKQ2021_R2_filtered.fq.gz
+Encountered 15190 unique sequences from 110790 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1115_SKQ2021_R2_filtered.fq.gz
+Encountered 10545 unique sequences from 59213 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1116_SKQ2021_R2_filtered.fq.gz
+Encountered 13756 unique sequences from 106647 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1117_SKQ2021_R2_filtered.fq.gz
+Encountered 12102 unique sequences from 102180 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1118_SKQ2021_R2_filtered.fq.gz
+Encountered 11590 unique sequences from 53078 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1119_SKQ2021_R2_filtered.fq.gz
+Encountered 14307 unique sequences from 114152 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1120_SKQ2021_R2_filtered.fq.gz
+Encountered 14406 unique sequences from 111446 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1121_SKQ2021_R2_filtered.fq.gz
+Encountered 14103 unique sequences from 63247 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1122_SKQ2021_R2_filtered.fq.gz
+Encountered 15095 unique sequences from 116976 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1123_SKQ2021_R2_filtered.fq.gz
+Encountered 16491 unique sequences from 126698 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1124_SKQ2021_R2_filtered.fq.gz
+Encountered 14717 unique sequences from 63363 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1125_SKQ2021_R2_filtered.fq.gz
+Encountered 15520 unique sequences from 110211 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1126_SKQ2021_R2_filtered.fq.gz
+Encountered 16608 unique sequences from 127326 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1127_SKQ2021_R2_filtered.fq.gz
+Encountered 18374 unique sequences from 147469 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1128_SKQ2021_R2_filtered.fq.gz
+Encountered 16209 unique sequences from 135151 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1129_SKQ2021_R2_filtered.fq.gz
+Encountered 20317 unique sequences from 99279 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1130_SKQ2021_R2_filtered.fq.gz
+Encountered 19288 unique sequences from 106837 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1131_SKQ2021_R2_filtered.fq.gz
+Encountered 16260 unique sequences from 117627 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1132_SKQ2021_R2_filtered.fq.gz
+Encountered 13229 unique sequences from 109582 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1133_SKQ2021_R2_filtered.fq.gz
+Encountered 17576 unique sequences from 84326 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1134_SKQ2021_R2_filtered.fq.gz
+Encountered 18807 unique sequences from 98812 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1135_SKQ2021_R2_filtered.fq.gz
+Encountered 22470 unique sequences from 136999 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1136_SKQ2021_R2_filtered.fq.gz
+Encountered 18628 unique sequences from 124315 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1137_SKQ2021_R2_filtered.fq.gz
+Encountered 17950 unique sequences from 143641 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1138_SKQ2021_R2_filtered.fq.gz
+Encountered 16849 unique sequences from 125298 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1139_SKQ2021_R2_filtered.fq.gz
+Encountered 14490 unique sequences from 79659 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1140_SKQ2021_R2_filtered.fq.gz
+Encountered 14236 unique sequences from 96996 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1141_SKQ2021_R2_filtered.fq.gz
+Encountered 12614 unique sequences from 75820 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1142_SKQ2021_R2_filtered.fq.gz
+Encountered 16384 unique sequences from 81538 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1143_SKQ2021_R2_filtered.fq.gz
+Encountered 14675 unique sequences from 78109 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1144_SKQ2021_R2_filtered.fq.gz
+Encountered 15754 unique sequences from 90256 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1145_SKQ2021_R2_filtered.fq.gz
+Encountered 13246 unique sequences from 83809 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1146_SKQ2021_R2_filtered.fq.gz
+Encountered 17277 unique sequences from 108724 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1172_OC0622_R2_filtered.fq.gz
+Encountered 19908 unique sequences from 113616 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1173_OC0622_R2_filtered.fq.gz
+Encountered 18756 unique sequences from 99515 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1174_OC0622_R2_filtered.fq.gz
+Encountered 19991 unique sequences from 114927 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1229_OC0822_PCR1_R2_filtered.fq.gz
+Encountered 17377 unique sequences from 96494 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1229_OC0822_PCR2_R2_filtered.fq.gz
+Encountered 14738 unique sequences from 78067 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1229_OC0822_PCR3_R2_filtered.fq.gz
+Encountered 17707 unique sequences from 96668 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1230_OC0822_PCR1_R2_filtered.fq.gz
+Encountered 17001 unique sequences from 89479 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1230_OC0822_PCR2_R2_filtered.fq.gz
+Encountered 18663 unique sequences from 97845 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1230_OC0822_PCR3_R2_filtered.fq.gz
+Encountered 17270 unique sequences from 90966 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1231_OC0822_PCR1_R2_filtered.fq.gz
+Encountered 15849 unique sequences from 93701 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1231_OC0822_PCR2_R2_filtered.fq.gz
+Encountered 17526 unique sequences from 100584 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1231_OC0822_PCR3_R2_filtered.fq.gz
+Encountered 15946 unique sequences from 96600 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1240_OC0922_R2_filtered.fq.gz
+Encountered 13648 unique sequences from 114486 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1241_OC0922_R2_filtered.fq.gz
+Encountered 15993 unique sequences from 97701 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1242_OC0922_R2_filtered.fq.gz
+Encountered 22018 unique sequences from 121581 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1243_OC0922_R2_filtered.fq.gz
+Encountered 13795 unique sequences from 136057 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1244_OC0922_R2_filtered.fq.gz
+Encountered 19758 unique sequences from 104854 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1245_OC0922_R2_filtered.fq.gz
+Encountered 19839 unique sequences from 123372 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1246_OC0922_R2_filtered.fq.gz
+Encountered 15645 unique sequences from 84997 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1247_OC0922_R2_filtered.fq.gz
+Encountered 18277 unique sequences from 97923 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1248_OC0922_R2_filtered.fq.gz
+Encountered 19157 unique sequences from 107641 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1249_OC0922_R2_filtered.fq.gz
+Encountered 17677 unique sequences from 88938 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1250_OC0922_R2_filtered.fq.gz
+Encountered 26524 unique sequences from 123742 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1251_OC0922_R2_filtered.fq.gz
+Encountered 23678 unique sequences from 165148 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1252_OC0922_R2_filtered.fq.gz
+Encountered 19909 unique sequences from 141882 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1253_OC0922_R2_filtered.fq.gz
+Encountered 20917 unique sequences from 112899 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1254_OC0922_R2_filtered.fq.gz
+Encountered 26819 unique sequences from 128433 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1255_OC0922_R2_filtered.fq.gz
+Encountered 31546 unique sequences from 162042 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1256_OC0922_R2_filtered.fq.gz
+Encountered 30136 unique sequences from 160042 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1257_OC0922_R2_filtered.fq.gz
+Encountered 23010 unique sequences from 155284 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1258_OC0922_R2_filtered.fq.gz
+Encountered 29711 unique sequences from 146479 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1259_OC0922_R2_filtered.fq.gz
+Encountered 21106 unique sequences from 144779 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1260_OC0922_R2_filtered.fq.gz
+Encountered 24179 unique sequences from 125253 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1261_OC0922_R2_filtered.fq.gz
+Encountered 16528 unique sequences from 80259 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1262_OC0922_R2_filtered.fq.gz
+Encountered 27933 unique sequences from 155126 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1263_OC0922_R2_filtered.fq.gz
+Encountered 13652 unique sequences from 87757 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1265_OC0922_PCR1_R2_filtered.fq.gz
+Encountered 14155 unique sequences from 110010 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1265_OC0922_PCR2_R2_filtered.fq.gz
+Encountered 16160 unique sequences from 119779 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1265_OC0922_PCR3_R2_filtered.fq.gz
+Encountered 15768 unique sequences from 119458 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1266_OC0922_PCR1_R2_filtered.fq.gz
+Encountered 19190 unique sequences from 138887 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1266_OC0922_PCR2_R2_filtered.fq.gz
+Encountered 11961 unique sequences from 73227 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1266_OC0922_PCR3_R2_filtered.fq.gz
+Encountered 17470 unique sequences from 106444 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1267_OC0922_PCR1_R2_filtered.fq.gz
+Encountered 14451 unique sequences from 113403 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1267_OC0922_PCR2_R2_filtered.fq.gz
+Encountered 14455 unique sequences from 118925 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1267_OC0922_PCR3_R2_filtered.fq.gz
+Encountered 11950 unique sequences from 109270 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1275_OC1021_R2_filtered.fq.gz
+Encountered 25701 unique sequences from 161542 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1276_OC1021_R2_filtered.fq.gz
+Encountered 24032 unique sequences from 130184 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1277_OC1021_R2_filtered.fq.gz
+Encountered 26127 unique sequences from 171859 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1278_OC1021_R2_filtered.fq.gz
+Encountered 20096 unique sequences from 154230 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1279_OC1021_R2_filtered.fq.gz
+Encountered 22885 unique sequences from 135857 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1280_OC1021_R2_filtered.fq.gz
+Encountered 25552 unique sequences from 135092 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1281_OC1021_R2_filtered.fq.gz
+Encountered 21199 unique sequences from 119383 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1282_OC1021_R2_filtered.fq.gz
+Encountered 27760 unique sequences from 168222 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1283_OC1021_R2_filtered.fq.gz
+Encountered 26268 unique sequences from 160199 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1284_OC1021_R2_filtered.fq.gz
+Encountered 33939 unique sequences from 162994 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1285_OC1021_R2_filtered.fq.gz
+Encountered 17252 unique sequences from 142162 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1286_OC1021_R2_filtered.fq.gz
+Encountered 24039 unique sequences from 133690 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1287_OC1021_R2_filtered.fq.gz
+Encountered 21970 unique sequences from 138272 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1288_OC1021_R2_filtered.fq.gz
+Encountered 23528 unique sequences from 138490 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1289_OC1021_R2_filtered.fq.gz
+Encountered 9 unique sequences from 10 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1290_OC1021_R2_filtered.fq.gz
+Encountered 31029 unique sequences from 163914 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1291_OC1021_R2_filtered.fq.gz
+Encountered 19275 unique sequences from 167961 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1292_OC1021_R2_filtered.fq.gz
+Encountered 26874 unique sequences from 173948 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1293_OC1021_R2_filtered.fq.gz
+Encountered 23827 unique sequences from 143058 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1294_OC1021_R2_filtered.fq.gz
+Encountered 22185 unique sequences from 147951 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1295_OC1021_R2_filtered.fq.gz
+Encountered 20705 unique sequences from 133576 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1296_OC1021_R2_filtered.fq.gz
+Encountered 25316 unique sequences from 151308 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1297_OC1021_R2_filtered.fq.gz
+Encountered 23984 unique sequences from 157388 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1298_OC1021_R2_filtered.fq.gz
+Encountered 24059 unique sequences from 167065 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1299_OC1021_R2_filtered.fq.gz
+Encountered 22568 unique sequences from 161730 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1300_OC1021_R2_filtered.fq.gz
+Encountered 16773 unique sequences from 150563 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1301_OC1021_R2_filtered.fq.gz
+Encountered 26487 unique sequences from 148579 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1302_OC1021_R2_filtered.fq.gz
+Encountered 19026 unique sequences from 149214 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1303_OC1021_R2_filtered.fq.gz
+Encountered 17125 unique sequences from 131075 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1304_OC1021_R2_filtered.fq.gz
+Encountered 16412 unique sequences from 119243 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1305_OC1021_R2_filtered.fq.gz
+Encountered 19599 unique sequences from 142688 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1306_OC1021_R2_filtered.fq.gz
+Encountered 15267 unique sequences from 147062 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1307_OC1021_R2_filtered.fq.gz
+Encountered 14890 unique sequences from 159225 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1308_OC1021_R2_filtered.fq.gz
+Encountered 11524 unique sequences from 109343 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1309_OC1021_R2_filtered.fq.gz
+Encountered 22949 unique sequences from 163579 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1310_OC1021_R2_filtered.fq.gz
+Encountered 15136 unique sequences from 147215 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1312_OC1021_R2_filtered.fq.gz
+Encountered 14613 unique sequences from 149799 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1313_OC1021_R2_filtered.fq.gz
+Encountered 18856 unique sequences from 130073 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1315_OC1021_R2_filtered.fq.gz
+Encountered 20399 unique sequences from 152759 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1316_OC1021_R2_filtered.fq.gz
+Encountered 22184 unique sequences from 149254 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1317_OC1021_R2_filtered.fq.gz
+Encountered 14160 unique sequences from 156942 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1318_OC1021_R2_filtered.fq.gz
+Encountered 20597 unique sequences from 143382 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1319_OC1021_R2_filtered.fq.gz
+Encountered 8976 unique sequences from 118505 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1320_OC1021_R2_filtered.fq.gz
+Encountered 10074 unique sequences from 144488 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1321_OC1021_R2_filtered.fq.gz
+Encountered 9285 unique sequences from 137132 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1322_OC1021_R2_filtered.fq.gz
+Encountered 9400 unique sequences from 114972 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1323_OC1021_PCR1_R2_filtered.fq.gz
+Encountered 1703 unique sequences from 5072 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1323_OC1021_PCR2_R2_filtered.fq.gz
+Encountered 21667 unique sequences from 120856 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1323_OC1021_PCR3_R2_filtered.fq.gz
+Encountered 19276 unique sequences from 103049 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1324_OC1021_PCR1_R2_filtered.fq.gz
+Encountered 19446 unique sequences from 119960 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1324_OC1021_PCR2_R2_filtered.fq.gz
+Encountered 16092 unique sequences from 94085 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1324_OC1021_PCR3_R2_filtered.fq.gz
+Encountered 15975 unique sequences from 112537 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1325_OC1021_PCR1_R2_filtered.fq.gz
+Encountered 18891 unique sequences from 105474 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1325_OC1021_PCR2_R2_filtered.fq.gz
+Encountered 20102 unique sequences from 109010 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1325_OC1021_PCR3_R2_filtered.fq.gz
+Encountered 20324 unique sequences from 117336 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1389_OC0722_R2_filtered.fq.gz
+Encountered 20757 unique sequences from 131374 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1390_OC0722_R2_filtered.fq.gz
+Encountered 30485 unique sequences from 141403 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1391_OC0722_R2_filtered.fq.gz
+Encountered 29195 unique sequences from 137709 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1403_OC0722_R2_filtered.fq.gz
+Encountered 26025 unique sequences from 176194 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1404_OC0722_R2_filtered.fq.gz
+Encountered 21744 unique sequences from 110530 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1406_OC0722_R2_filtered.fq.gz
+Encountered 26987 unique sequences from 156375 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1408_OC0722_R2_filtered.fq.gz
+Encountered 19379 unique sequences from 122915 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1410_OC0722_R2_filtered.fq.gz
+Encountered 23426 unique sequences from 126740 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1412_OC0722_R2_filtered.fq.gz
+Encountered 19927 unique sequences from 125706 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1414_OC0722_R2_filtered.fq.gz
+Encountered 22848 unique sequences from 149196 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1416_OC0722_R2_filtered.fq.gz
+Encountered 25808 unique sequences from 164053 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1418_OC0722_R2_filtered.fq.gz
+Encountered 31392 unique sequences from 144330 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1420_OC0722_R2_filtered.fq.gz
+Encountered 32653 unique sequences from 144092 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1422_OC0722_R2_filtered.fq.gz
+Encountered 29368 unique sequences from 156603 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1424_OC0722_R2_filtered.fq.gz
+Encountered 32200 unique sequences from 168032 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1426_OC0722_R2_filtered.fq.gz
+Encountered 27588 unique sequences from 149154 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1845_OC0623_R2_filtered.fq.gz
+Encountered 15744 unique sequences from 101569 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1846_OC0623_R2_filtered.fq.gz
+Encountered 18943 unique sequences from 115486 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1847_OC0623_R2_filtered.fq.gz
+Encountered 22236 unique sequences from 173645 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1849_OC0723_R2_filtered.fq.gz
+Encountered 20256 unique sequences from 130094 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1850_OC0723_R2_filtered.fq.gz
+Encountered 27708 unique sequences from 154181 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1851_OC0723_R2_filtered.fq.gz
+Encountered 30374 unique sequences from 182608 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1852_OC0723_R2_filtered.fq.gz
+Encountered 22778 unique sequences from 130745 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1853_OC0723_R2_filtered.fq.gz
+Encountered 23451 unique sequences from 157575 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1854_OC0723_R2_filtered.fq.gz
+Encountered 27597 unique sequences from 180618 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1855_OC0723_R2_filtered.fq.gz
+Encountered 28484 unique sequences from 191841 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1856_OC0723_R2_filtered.fq.gz
+Encountered 30562 unique sequences from 211865 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1857_OC0723_R2_filtered.fq.gz
+Encountered 24579 unique sequences from 135995 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1858_OC0723_R2_filtered.fq.gz
+Encountered 23450 unique sequences from 165428 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1859_OC0723_R2_filtered.fq.gz
+Encountered 27127 unique sequences from 158652 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1860_OC0723_R2_filtered.fq.gz
+Encountered 36219 unique sequences from 182789 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1861_OC0723_R2_filtered.fq.gz
+Encountered 31245 unique sequences from 158367 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1862_OC0723_R2_filtered.fq.gz
+Encountered 30428 unique sequences from 184832 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1863_OC0723_R2_filtered.fq.gz
+Encountered 32669 unique sequences from 166186 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1864_OC0723_R2_filtered.fq.gz
+Encountered 26927 unique sequences from 155971 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1865_OC0723_R2_filtered.fq.gz
+Encountered 25380 unique sequences from 138301 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1866_OC0723_R2_filtered.fq.gz
+Encountered 13691 unique sequences from 81298 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1867_OC0723_R2_filtered.fq.gz
+Encountered 10855 unique sequences from 111487 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1868_OC0723_R2_filtered.fq.gz
+Encountered 24207 unique sequences from 135591 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1869_OC0723_R2_filtered.fq.gz
+Encountered 19799 unique sequences from 160679 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1870_OC0723_R2_filtered.fq.gz
+Encountered 23831 unique sequences from 132160 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1871_OC0723_R2_filtered.fq.gz
+Encountered 21291 unique sequences from 118259 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1872_OC0723_R2_filtered.fq.gz
+Encountered 19028 unique sequences from 113272 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1873_OC0723_R2_filtered.fq.gz
+Encountered 21710 unique sequences from 120457 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1874_OC0723_R2_filtered.fq.gz
+Encountered 23525 unique sequences from 118187 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E1875_OC0723_R2_filtered.fq.gz
+Encountered 20752 unique sequences from 125180 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E2128_1B_R2_filtered.fq.gz
+Encountered 9475 unique sequences from 91567 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E2128_2B_R2_filtered.fq.gz
+Encountered 11390 unique sequences from 82121 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E2128_3B_R2_filtered.fq.gz
+Encountered 81 unique sequences from 219 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E2128_4B_R2_filtered.fq.gz
+Encountered 15888 unique sequences from 112251 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E2129_1B_R2_filtered.fq.gz
+Encountered 8281 unique sequences from 80645 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E2129_2B_R2_filtered.fq.gz
+Encountered 6849 unique sequences from 43703 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E2129_3B_R2_filtered.fq.gz
+Encountered 11945 unique sequences from 115853 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E2129_4B_R2_filtered.fq.gz
+Encountered 7802 unique sequences from 46337 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E2129_5B_R2_filtered.fq.gz
+Encountered 5634 unique sequences from 35458 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E2130_1B_R2_filtered.fq.gz
+Encountered 17243 unique sequences from 96498 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E2130_2B_R2_filtered.fq.gz
+Encountered 18941 unique sequences from 104808 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E2130_3B_R2_filtered.fq.gz
+Encountered 9303 unique sequences from 50951 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E2130_4B_R2_filtered.fq.gz
+Encountered 11164 unique sequences from 73563 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E2130_5B_R2_filtered.fq.gz
+Encountered 12497 unique sequences from 79368 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E2131_1B_R2_filtered.fq.gz
+Encountered 17661 unique sequences from 109268 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E2131_2B_R2_filtered.fq.gz
+Encountered 12735 unique sequences from 76938 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E2131_3B_R2_filtered.fq.gz
+Encountered 14573 unique sequences from 91838 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E2131_4B_R2_filtered.fq.gz
+Encountered 16882 unique sequences from 100672 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E2131_5B_R2_filtered.fq.gz
+Encountered 15162 unique sequences from 87929 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E2132_1B_R2_filtered.fq.gz
+Encountered 6091 unique sequences from 38509 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E2132_2B_R2_filtered.fq.gz
+Encountered 10527 unique sequences from 62366 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E2132_3B_R2_filtered.fq.gz
+Encountered 12107 unique sequences from 82113 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E2132_4B_R2_filtered.fq.gz
+Encountered 9863 unique sequences from 73965 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E2132_5B_R2_filtered.fq.gz
+Encountered 2611 unique sequences from 12073 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E2133_1B_R2_filtered.fq.gz
+Encountered 13489 unique sequences from 93870 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E2133_2B_R2_filtered.fq.gz
+Encountered 16836 unique sequences from 95688 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E2133_3B_R2_filtered.fq.gz
+Encountered 10746 unique sequences from 70309 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E2133_4B_R2_filtered.fq.gz
+Encountered 16110 unique sequences from 106873 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E2133_5B_R2_filtered.fq.gz
+Encountered 14436 unique sequences from 94992 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E2134_1B_R2_filtered.fq.gz
+Encountered 5965 unique sequences from 52171 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E2134_2B_R2_filtered.fq.gz
+Encountered 9151 unique sequences from 91209 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E2134_3B_R2_filtered.fq.gz
+Encountered 8584 unique sequences from 81877 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E2134_4B_R2_filtered.fq.gz
+Encountered 13148 unique sequences from 77137 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E2134_5B_R2_filtered.fq.gz
+Encountered 8417 unique sequences from 85138 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E2135_1B_R2_filtered.fq.gz
+Encountered 6423 unique sequences from 34387 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E2135_2B_R2_filtered.fq.gz
+Encountered 7566 unique sequences from 45264 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E2135_3B_R2_filtered.fq.gz
+Encountered 16978 unique sequences from 93455 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E2135_4B_R2_filtered.fq.gz
+Encountered 16127 unique sequences from 96930 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E2135_5B_R2_filtered.fq.gz
+Encountered 13908 unique sequences from 103364 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E2136_1B_R2_filtered.fq.gz
+Encountered 7407 unique sequences from 101528 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E2136_2B_R2_filtered.fq.gz
+Encountered 6721 unique sequences from 61161 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E2136_3B_R2_filtered.fq.gz
+Encountered 11774 unique sequences from 93592 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E2136_4B_R2_filtered.fq.gz
+Encountered 214 unique sequences from 627 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E2136_5B_R2_filtered.fq.gz
+Encountered 10209 unique sequences from 95006 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E2137_1B_R2_filtered.fq.gz
+Encountered 13565 unique sequences from 87465 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E446_1B_PCR2_R2_filtered.fq.gz
+Encountered 22405 unique sequences from 146956 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E446_1B_PCR3_R2_filtered.fq.gz
+Encountered 21521 unique sequences from 141777 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E446_2B_PCR2_R2_filtered.fq.gz
+Encountered 24017 unique sequences from 115975 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E446_2B_PCR3_R2_filtered.fq.gz
+Encountered 28491 unique sequences from 145681 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E446_3B_PCR2_R2_filtered.fq.gz
+Encountered 21397 unique sequences from 111516 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E446_3B_PCR3_R2_filtered.fq.gz
+Encountered 21724 unique sequences from 116964 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E447_1B_PCR2_R2_filtered.fq.gz
+Encountered 17421 unique sequences from 150577 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E447_1B_PCR3_R2_filtered.fq.gz
+Encountered 16992 unique sequences from 151384 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E447_2B_PCR2_R2_filtered.fq.gz
+Encountered 14542 unique sequences from 137310 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E447_2B_PCR3_R2_filtered.fq.gz
+Encountered 16839 unique sequences from 143030 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E447_3B_PCR2_R2_filtered.fq.gz
+Encountered 12779 unique sequences from 130723 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E447_3B_PCR3_R2_filtered.fq.gz
+Encountered 13162 unique sequences from 137527 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E448_1B_PCR2_R2_filtered.fq.gz
+Encountered 19857 unique sequences from 188956 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E448_1B_PCR3_R2_filtered.fq.gz
+Encountered 19806 unique sequences from 182010 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E448_2B_PCR2_R2_filtered.fq.gz
+Encountered 11296 unique sequences from 119454 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E448_2B_PCR3_R2_filtered.fq.gz
+Encountered 15522 unique sequences from 153520 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E448_3B_PCR2_R2_filtered.fq.gz
+Encountered 17715 unique sequences from 179855 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E448_3B_PCR3_R2_filtered.fq.gz
+Encountered 13771 unique sequences from 133106 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E449_1B_PCR2_R2_filtered.fq.gz
+Encountered 19288 unique sequences from 122645 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E449_1B_PCR3_R2_filtered.fq.gz
+Encountered 22202 unique sequences from 146794 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E449_2B_PCR2_R2_filtered.fq.gz
+Encountered 11803 unique sequences from 79074 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E449_2B_PCR3_R2_filtered.fq.gz
+Encountered 15756 unique sequences from 119238 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E449_3B_PCR2_R2_filtered.fq.gz
+Encountered 18427 unique sequences from 125400 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E449_3B_PCR3_R2_filtered.fq.gz
+Encountered 19378 unique sequences from 125748 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E450_1B_PCR2_R2_filtered.fq.gz
+Encountered 18477 unique sequences from 130363 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E450_1B_PCR3_R2_filtered.fq.gz
+Encountered 18529 unique sequences from 135142 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E450_2B_PCR2_R2_filtered.fq.gz
+Encountered 20481 unique sequences from 147870 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E450_2B_PCR3_R2_filtered.fq.gz
+Encountered 18842 unique sequences from 131660 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E450_3B_PCR2_R2_filtered.fq.gz
+Encountered 16995 unique sequences from 130827 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E450_3B_PCR3_R2_filtered.fq.gz
+Encountered 17945 unique sequences from 131075 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E475_PCR2_R2_filtered.fq.gz
+Encountered 15038 unique sequences from 127169 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E475_PCR3_R2_filtered.fq.gz
+Encountered 18095 unique sequences from 141260 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E486_PCR2_R2_filtered.fq.gz
+Encountered 14410 unique sequences from 117250 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E486_PCR3_R2_filtered.fq.gz
+Encountered 16366 unique sequences from 138472 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E492_1B_PCR2_R2_filtered.fq.gz
+Encountered 25560 unique sequences from 141777 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E492_1B_PCR3_R2_filtered.fq.gz
+Encountered 24157 unique sequences from 140237 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E494_PCR2_R2_filtered.fq.gz
+Encountered 18238 unique sequences from 134641 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E494_PCR3_R2_filtered.fq.gz
+Encountered 17906 unique sequences from 126246 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E496_1T_PCR2_R2_filtered.fq.gz
+Encountered 18332 unique sequences from 157698 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E496_1T_PCR3_R2_filtered.fq.gz
+Encountered 21156 unique sequences from 175483 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E496_3B_PCR2_R2_filtered.fq.gz
+Encountered 19407 unique sequences from 163280 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E496_3B_PCR3_R2_filtered.fq.gz
+Encountered 18453 unique sequences from 147847 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E498_1B_PCR2_R2_filtered.fq.gz
+Encountered 17306 unique sequences from 160458 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E498_1B_PCR3_R2_filtered.fq.gz
+Encountered 16764 unique sequences from 151914 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E498_2B_PCR2_R2_filtered.fq.gz
+Encountered 15869 unique sequences from 130014 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E498_2B_PCR3_R2_filtered.fq.gz
+Encountered 16695 unique sequences from 142096 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E498_3B_PCR2_R2_filtered.fq.gz
+Encountered 17496 unique sequences from 155015 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E498_3B_PCR3_R2_filtered.fq.gz
+Encountered 17161 unique sequences from 154156 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E573_1B_PCR2_R2_filtered.fq.gz
+Encountered 23895 unique sequences from 138614 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E573_1B_PCR3_R2_filtered.fq.gz
+Encountered 21577 unique sequences from 101854 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E573_2B_PCR2_R2_filtered.fq.gz
+Encountered 25460 unique sequences from 148511 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E573_2B_PCR3_R2_filtered.fq.gz
+Encountered 28449 unique sequences from 169447 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E573_3B_PCR2_R2_filtered.fq.gz
+Encountered 27156 unique sequences from 159201 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E573_3B_PCR3_R2_filtered.fq.gz
+Encountered 25341 unique sequences from 152514 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E574_1B_PCR2_R2_filtered.fq.gz
+Encountered 15780 unique sequences from 58909 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E574_1B_PCR3_R2_filtered.fq.gz
+Encountered 22248 unique sequences from 122685 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E574_2B_PCR2_R2_filtered.fq.gz
+Encountered 24404 unique sequences from 131775 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E574_2B_PCR3_R2_filtered.fq.gz
+Encountered 21232 unique sequences from 107607 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E574_3B_PCR2_R2_filtered.fq.gz
+Encountered 11829 unique sequences from 141366 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E574_3B_PCR3_R2_filtered.fq.gz
+Encountered 11016 unique sequences from 131016 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E575_1B_PCR2_R2_filtered.fq.gz
+Encountered 18151 unique sequences from 139301 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E575_1B_PCR3_R2_filtered.fq.gz
+Encountered 16807 unique sequences from 130102 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E575_2B_PCR2_R2_filtered.fq.gz
+Encountered 15662 unique sequences from 126490 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E575_2B_PCR3_R2_filtered.fq.gz
+Encountered 15968 unique sequences from 125105 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E575_3B_PCR2_R2_filtered.fq.gz
+Encountered 16239 unique sequences from 135398 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E575_3B_PCR3_R2_filtered.fq.gz
+Encountered 10980 unique sequences from 89260 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E598_1B_PCR2_R2_filtered.fq.gz
+Encountered 24955 unique sequences from 160891 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E598_1B_PCR3_R2_filtered.fq.gz
+Encountered 19782 unique sequences from 133726 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E598_2B_PCR2_R2_filtered.fq.gz
+Encountered 28131 unique sequences from 177749 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E598_2B_PCR3_R2_filtered.fq.gz
+Encountered 23499 unique sequences from 136300 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E598_3B_PCR2_R2_filtered.fq.gz
+Encountered 25373 unique sequences from 134177 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E598_3B_PCR3_R2_filtered.fq.gz
+Encountered 25203 unique sequences from 137139 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E600_1B_PCR2_R2_filtered.fq.gz
+Encountered 14355 unique sequences from 139093 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E600_1B_PCR3_R2_filtered.fq.gz
+Encountered 15773 unique sequences from 148356 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E600_2B_PCR2_R2_filtered.fq.gz
+Encountered 14007 unique sequences from 137574 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E600_2B_PCR3_R2_filtered.fq.gz
+Encountered 13657 unique sequences from 148235 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E600_3B_PCR2_R2_filtered.fq.gz
+Encountered 12191 unique sequences from 120825 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E600_3B_PCR3_R2_filtered.fq.gz
+Encountered 20297 unique sequences from 180302 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_E610_NC_R2_filtered.fq.gz
+Encountered 384 unique sequences from 2251 total sequences read.
+Dereplicating sequence entries in Fastq file: MP_POSITIVE_R2_filtered.fq.gz
+Encountered 7260 unique sequences from 83649 total sequences read.
+Sample 1 - 75283 reads in 20941 unique sequences.
+Sample 2 - 77999 reads in 30674 unique sequences.
+Sample 3 - 98833 reads in 17375 unique sequences.
+Sample 4 - 109289 reads in 12608 unique sequences.
+Sample 5 - 107502 reads in 12786 unique sequences.
+Sample 6 - 87273 reads in 11166 unique sequences.
+Sample 7 - 483 reads in 229 unique sequences.
+Sample 8 - 95530 reads in 18433 unique sequences.
+Sample 9 - 104956 reads in 19449 unique sequences.
+Sample 10 - 90931 reads in 29536 unique sequences.
+Sample 11 - 87143 reads in 16150 unique sequences.
+Sample 12 - 94660 reads in 21511 unique sequences.
+Sample 13 - 57779 reads in 11960 unique sequences.
+Sample 14 - 91977 reads in 28372 unique sequences.
+Sample 15 - 91965 reads in 20914 unique sequences.
+Sample 16 - 102787 reads in 22080 unique sequences.
+Sample 17 - 112116 reads in 15272 unique sequences.
+Sample 18 - 108673 reads in 18611 unique sequences.
+Sample 19 - 95519 reads in 29298 unique sequences.
+Sample 20 - 98309 reads in 16120 unique sequences.
+Sample 21 - 101831 reads in 11131 unique sequences.
+Sample 22 - 84346 reads in 16040 unique sequences.
+Sample 23 - 111714 reads in 15929 unique sequences.
+Sample 24 - 105178 reads in 12343 unique sequences.
+Sample 25 - 94870 reads in 18205 unique sequences.
+Sample 26 - 87698 reads in 18125 unique sequences.
+Sample 27 - 30448 reads in 5368 unique sequences.
+Sample 28 - 60406 reads in 10694 unique sequences.
+Sample 29 - 59563 reads in 8872 unique sequences.
+Sample 30 - 76995 reads in 24562 unique sequences.
+Sample 31 - 71308 reads in 13475 unique sequences.
+Sample 32 - 78157 reads in 15036 unique sequences.
+Sample 33 - 49081 reads in 8778 unique sequences.
+Sample 34 - 103925 reads in 18568 unique sequences.
+Sample 35 - 95885 reads in 16714 unique sequences.
+Sample 36 - 78744 reads in 14309 unique sequences.
+Sample 37 - 108629 reads in 15812 unique sequences.
+Sample 38 - 87408 reads in 20752 unique sequences.
+Sample 39 - 108220 reads in 18661 unique sequences.
+Sample 40 - 71089 reads in 29365 unique sequences.
+Sample 41 - 122068 reads in 16441 unique sequences.
+Sample 42 - 102419 reads in 19020 unique sequences.
+Sample 43 - 80571 reads in 15874 unique sequences.
+Sample 44 - 104351 reads in 14779 unique sequences.
+Sample 45 - 61780 reads in 14848 unique sequences.
+Sample 46 - 83331 reads in 15916 unique sequences.
+Sample 47 - 104121 reads in 14884 unique sequences.
+Sample 48 - 112063 reads in 14341 unique sequences.
+Sample 49 - 81557 reads in 17580 unique sequences.
+Sample 50 - 86914 reads in 13286 unique sequences.
+Sample 51 - 30013 reads in 7246 unique sequences.
+Sample 52 - 100090 reads in 19110 unique sequences.
+Sample 53 - 109380 reads in 15766 unique sequences.
+Sample 54 - 66196 reads in 11718 unique sequences.
+Sample 55 - 71874 reads in 13435 unique sequences.
+Sample 56 - 115933 reads in 14950 unique sequences.
+Sample 57 - 69908 reads in 21948 unique sequences.
+Sample 58 - 96790 reads in 14776 unique sequences.
+Sample 59 - 93535 reads in 12962 unique sequences.
+Sample 60 - 98675 reads in 15643 unique sequences.
+Sample 61 - 119110 reads in 15502 unique sequences.
+Sample 62 - 2969 reads in 1071 unique sequences.
+Sample 63 - 110883 reads in 16824 unique sequences.
+Sample 64 - 110965 reads in 16643 unique sequences.
+Sample 65 - 106552 reads in 16146 unique sequences.
+Sample 66 - 73531 reads in 17381 unique sequences.
+Sample 67 - 106551 reads in 16427 unique sequences.
+Sample 68 - 1266 reads in 431 unique sequences.
+Sample 69 - 105773 reads in 19084 unique sequences.
+Sample 70 - 108877 reads in 15703 unique sequences.
+Sample 71 - 110790 reads in 16375 unique sequences.
+Sample 72 - 59213 reads in 18331 unique sequences.
+Sample 73 - 106647 reads in 14030 unique sequences.
+Sample 74 - 102180 reads in 24649 unique sequences.
+Sample 75 - 53078 reads in 10262 unique sequences.
+Sample 76 - 114152 reads in 16389 unique sequences.
+Sample 77 - 111446 reads in 15804 unique sequences.
+Sample 78 - 63247 reads in 12983 unique sequences.
+Sample 79 - 116976 reads in 16254 unique sequences.
+Sample 80 - 126698 reads in 15789 unique sequences.
+Sample 81 - 63363 reads in 14714 unique sequences.
+Sample 82 - 110211 reads in 17402 unique sequences.
+Sample 83 - 127326 reads in 16203 unique sequences.
+Sample 84 - 147469 reads in 17641 unique sequences.
+Sample 85 - 135151 reads in 15653 unique sequences.
+Sample 86 - 99279 reads in 19453 unique sequences.
+Sample 87 - 106837 reads in 19870 unique sequences.
+Sample 88 - 117627 reads in 17192 unique sequences.
+Sample 89 - 109582 reads in 13154 unique sequences.
+Sample 90 - 84326 reads in 15596 unique sequences.
+Sample 91 - 98812 reads in 17338 unique sequences.
+Sample 92 - 136999 reads in 18884 unique sequences.
+Sample 93 - 124315 reads in 17587 unique sequences.
+Sample 94 - 143641 reads in 16988 unique sequences.
+Sample 95 - 125298 reads in 15978 unique sequences.
+Sample 96 - 79659 reads in 14208 unique sequences.
+Sample 97 - 96996 reads in 15546 unique sequences.
+Sample 98 - 75820 reads in 11022 unique sequences.
+Sample 99 - 81538 reads in 15792 unique sequences.
+Sample 100 - 78109 reads in 13737 unique sequences.
+Sample 101 - 90256 reads in 14202 unique sequences.
+Sample 102 - 83809 reads in 26521 unique sequences.
+Sample 103 - 108724 reads in 18013 unique sequences.
+Sample 104 - 113616 reads in 18020 unique sequences.
+Sample 105 - 99515 reads in 17846 unique sequences.
+Sample 106 - 114927 reads in 18549 unique sequences.
+Sample 107 - 96494 reads in 17485 unique sequences.
+Sample 108 - 78067 reads in 14708 unique sequences.
+Sample 109 - 96668 reads in 17316 unique sequences.
+Sample 110 - 89479 reads in 15592 unique sequences.
+Sample 111 - 97845 reads in 17395 unique sequences.
+Sample 112 - 90966 reads in 19451 unique sequences.
+Sample 113 - 93701 reads in 13754 unique sequences.
+Sample 114 - 100584 reads in 17123 unique sequences.
+Sample 115 - 96600 reads in 15516 unique sequences.
+Sample 116 - 114486 reads in 12711 unique sequences.
+Sample 117 - 97701 reads in 17120 unique sequences.
+Sample 118 - 121581 reads in 21374 unique sequences.
+Sample 119 - 136057 reads in 33143 unique sequences.
+Sample 120 - 104854 reads in 31223 unique sequences.
+Sample 121 - 123372 reads in 31993 unique sequences.
+Sample 122 - 84997 reads in 32662 unique sequences.
+Sample 123 - 97923 reads in 34709 unique sequences.
+Sample 124 - 107641 reads in 18124 unique sequences.
+Sample 125 - 88938 reads in 51126 unique sequences.
+Sample 126 - 123742 reads in 23576 unique sequences.
+Sample 127 - 165148 reads in 21626 unique sequences.
+Sample 128 - 141882 reads in 27387 unique sequences.
+Sample 129 - 112899 reads in 35953 unique sequences.
+Sample 130 - 128433 reads in 26180 unique sequences.
+Sample 131 - 162042 reads in 34286 unique sequences.
+Sample 132 - 160042 reads in 29730 unique sequences.
+Sample 133 - 155284 reads in 22063 unique sequences.
+Sample 134 - 146479 reads in 26531 unique sequences.
+Sample 135 - 144779 reads in 36990 unique sequences.
+Sample 136 - 125253 reads in 22746 unique sequences.
+Sample 137 - 80259 reads in 25244 unique sequences.
+Sample 138 - 155126 reads in 25553 unique sequences.
+Sample 139 - 87757 reads in 42206 unique sequences.
+Sample 140 - 110010 reads in 23359 unique sequences.
+Sample 141 - 119779 reads in 15474 unique sequences.
+Sample 142 - 119458 reads in 14790 unique sequences.
+Sample 143 - 138887 reads in 17053 unique sequences.
+Sample 144 - 73227 reads in 11897 unique sequences.
+Sample 145 - 106444 reads in 16601 unique sequences.
+Sample 146 - 113403 reads in 11394 unique sequences.
+Sample 147 - 118925 reads in 14570 unique sequences.
+Sample 148 - 109270 reads in 16963 unique sequences.
+Sample 149 - 161542 reads in 23658 unique sequences.
+Sample 150 - 130184 reads in 24178 unique sequences.
+Sample 151 - 171859 reads in 25302 unique sequences.
+Sample 152 - 154230 reads in 20035 unique sequences.
+Sample 153 - 135857 reads in 24910 unique sequences.
+Sample 154 - 135092 reads in 23845 unique sequences.
+Sample 155 - 119383 reads in 31956 unique sequences.
+Sample 156 - 168222 reads in 25171 unique sequences.
+Sample 157 - 160199 reads in 25543 unique sequences.
+Sample 158 - 162994 reads in 26831 unique sequences.
+Sample 159 - 142162 reads in 15218 unique sequences.
+Sample 160 - 133690 reads in 24180 unique sequences.
+Sample 161 - 138272 reads in 23403 unique sequences.
+Sample 162 - 138490 reads in 32141 unique sequences.
+Sample 163 - 10 reads in 9 unique sequences.
+Sample 164 - 163914 reads in 30457 unique sequences.
+Sample 165 - 167961 reads in 33531 unique sequences.
+Sample 166 - 173948 reads in 24226 unique sequences.
+Sample 167 - 143058 reads in 22092 unique sequences.
+Sample 168 - 147951 reads in 18997 unique sequences.
+Sample 169 - 133576 reads in 20014 unique sequences.
+Sample 170 - 151308 reads in 25516 unique sequences.
+Sample 171 - 157388 reads in 23475 unique sequences.
+Sample 172 - 167065 reads in 24834 unique sequences.
+Sample 173 - 161730 reads in 21839 unique sequences.
+Sample 174 - 150563 reads in 26873 unique sequences.
+Sample 175 - 148579 reads in 26064 unique sequences.
+Sample 176 - 149214 reads in 16854 unique sequences.
+Sample 177 - 131075 reads in 17910 unique sequences.
+Sample 178 - 119243 reads in 16351 unique sequences.
+Sample 179 - 142688 reads in 18715 unique sequences.
+Sample 180 - 147062 reads in 32429 unique sequences.
+Sample 181 - 159225 reads in 14716 unique sequences.
+Sample 182 - 109343 reads in 40612 unique sequences.
+Sample 183 - 163579 reads in 19899 unique sequences.
+Sample 184 - 147215 reads in 14917 unique sequences.
+Sample 185 - 149799 reads in 14648 unique sequences.
+Sample 186 - 130073 reads in 20480 unique sequences.
+Sample 187 - 152759 reads in 18863 unique sequences.
+Sample 188 - 149254 reads in 19851 unique sequences.
+Sample 189 - 156942 reads in 11841 unique sequences.
+Sample 190 - 143382 reads in 47732 unique sequences.
+Sample 191 - 118505 reads in 35858 unique sequences.
+Sample 192 - 144488 reads in 10301 unique sequences.
+Sample 193 - 137132 reads in 10318 unique sequences.
+Sample 194 - 114972 reads in 11516 unique sequences.
+Sample 195 - 5072 reads in 1702 unique sequences.
+Sample 196 - 120856 reads in 20255 unique sequences.
+Sample 197 - 103049 reads in 17626 unique sequences.
+Sample 198 - 119960 reads in 17361 unique sequences.
+Sample 199 - 94085 reads in 26660 unique sequences.
+Sample 200 - 112537 reads in 33195 unique sequences.
+Sample 201 - 105474 reads in 17418 unique sequences.
+Sample 202 - 109010 reads in 18542 unique sequences.
+Sample 203 - 117336 reads in 19215 unique sequences.
+Sample 204 - 131374 reads in 18016 unique sequences.
+Sample 205 - 141403 reads in 29483 unique sequences.
+Sample 206 - 137709 reads in 26609 unique sequences.
+Sample 207 - 176194 reads in 22912 unique sequences.
+Sample 208 - 110530 reads in 20732 unique sequences.
+Sample 209 - 156375 reads in 24675 unique sequences.
+Sample 210 - 122915 reads in 20845 unique sequences.
+Sample 211 - 126740 reads in 22497 unique sequences.
+Sample 212 - 125706 reads in 20675 unique sequences.
+Sample 213 - 149196 reads in 24965 unique sequences.
+Sample 214 - 164053 reads in 27496 unique sequences.
+Sample 215 - 144330 reads in 30862 unique sequences.
+Sample 216 - 144092 reads in 28906 unique sequences.
+Sample 217 - 156603 reads in 27769 unique sequences.
+Sample 218 - 168032 reads in 30554 unique sequences.
+Sample 219 - 149154 reads in 24340 unique sequences.
+Sample 220 - 101569 reads in 46723 unique sequences.
+Sample 221 - 115486 reads in 33319 unique sequences.
+Sample 222 - 173645 reads in 46415 unique sequences.
+Sample 223 - 130094 reads in 46768 unique sequences.
+Sample 224 - 154181 reads in 43688 unique sequences.
+Sample 225 - 182608 reads in 31330 unique sequences.
+Sample 226 - 130745 reads in 46971 unique sequences.
+Sample 227 - 157575 reads in 19894 unique sequences.
+Sample 228 - 180618 reads in 42971 unique sequences.
+Sample 229 - 191841 reads in 26868 unique sequences.
+Sample 230 - 211865 reads in 28851 unique sequences.
+Sample 231 - 135995 reads in 22238 unique sequences.
+Sample 232 - 165428 reads in 21182 unique sequences.
+Sample 233 - 158652 reads in 31859 unique sequences.
+Sample 234 - 182789 reads in 32660 unique sequences.
+Sample 235 - 158367 reads in 30696 unique sequences.
+Sample 236 - 184832 reads in 28826 unique sequences.
+Sample 237 - 166186 reads in 32054 unique sequences.
+Sample 238 - 155971 reads in 23544 unique sequences.
+Sample 239 - 138301 reads in 37923 unique sequences.
+Sample 240 - 81298 reads in 12417 unique sequences.
+Sample 241 - 111487 reads in 10597 unique sequences.
+Sample 242 - 135591 reads in 22717 unique sequences.
+Sample 243 - 160679 reads in 18772 unique sequences.
+Sample 244 - 132160 reads in 21883 unique sequences.
+Sample 245 - 118259 reads in 20131 unique sequences.
+Sample 246 - 113272 reads in 19149 unique sequences.
+Sample 247 - 120457 reads in 22944 unique sequences.
+Sample 248 - 118187 reads in 21475 unique sequences.
+Sample 249 - 125180 reads in 20684 unique sequences.
+Sample 250 - 91567 reads in 18793 unique sequences.
+Sample 251 - 82121 reads in 23534 unique sequences.
+Sample 252 - 219 reads in 81 unique sequences.
+Sample 253 - 112251 reads in 19570 unique sequences.
+Sample 254 - 80645 reads in 10038 unique sequences.
+Sample 255 - 43703 reads in 9350 unique sequences.
+Sample 256 - 115853 reads in 15506 unique sequences.
+Sample 257 - 46337 reads in 18759 unique sequences.
+Sample 258 - 35458 reads in 6589 unique sequences.
+Sample 259 - 96498 reads in 16877 unique sequences.
+Sample 260 - 104808 reads in 18575 unique sequences.
+Sample 261 - 50951 reads in 11308 unique sequences.
+Sample 262 - 73563 reads in 35225 unique sequences.
+Sample 263 - 79368 reads in 12456 unique sequences.
+Sample 264 - 109268 reads in 21506 unique sequences.
+Sample 265 - 76938 reads in 13354 unique sequences.
+Sample 266 - 91838 reads in 16166 unique sequences.
+Sample 267 - 100672 reads in 16543 unique sequences.
+Sample 268 - 87929 reads in 18195 unique sequences.
+Sample 269 - 38509 reads in 5965 unique sequences.
+Sample 270 - 62366 reads in 11507 unique sequences.
+Sample 271 - 82113 reads in 12888 unique sequences.
+Sample 272 - 73965 reads in 10937 unique sequences.
+Sample 273 - 12073 reads in 2775 unique sequences.
+Sample 274 - 93870 reads in 15684 unique sequences.
+Sample 275 - 95688 reads in 17003 unique sequences.
+Sample 276 - 70309 reads in 11079 unique sequences.
+Sample 277 - 106873 reads in 17942 unique sequences.
+Sample 278 - 94992 reads in 18205 unique sequences.
+Sample 279 - 52171 reads in 21193 unique sequences.
+Sample 280 - 91209 reads in 11193 unique sequences.
+Sample 281 - 81877 reads in 9145 unique sequences.
+Sample 282 - 77137 reads in 14066 unique sequences.
+Sample 283 - 85138 reads in 10212 unique sequences.
+Sample 284 - 34387 reads in 6075 unique sequences.
+Sample 285 - 45264 reads in 8342 unique sequences.
+Sample 286 - 93455 reads in 19596 unique sequences.
+Sample 287 - 96930 reads in 15864 unique sequences.
+Sample 288 - 103364 reads in 13995 unique sequences.
+Sample 289 - 101528 reads in 27330 unique sequences.
+Sample 290 - 61161 reads in 7577 unique sequences.
+Sample 291 - 93592 reads in 13170 unique sequences.
+Sample 292 - 627 reads in 225 unique sequences.
+Sample 293 - 95006 reads in 10428 unique sequences.
+Sample 294 - 87465 reads in 15152 unique sequences.
+Sample 295 - 146956 reads in 20041 unique sequences.
+Sample 296 - 141777 reads in 21835 unique sequences.
+Sample 297 - 115975 reads in 25325 unique sequences.
+Sample 298 - 145681 reads in 26259 unique sequences.
+Sample 299 - 111516 reads in 26837 unique sequences.
+Sample 300 - 116964 reads in 42083 unique sequences.
+Sample 301 - 150577 reads in 15377 unique sequences.
+Sample 302 - 151384 reads in 16614 unique sequences.
+Sample 303 - 137310 reads in 23327 unique sequences.
+Sample 304 - 143030 reads in 15161 unique sequences.
+Sample 305 - 130723 reads in 12355 unique sequences.
+Sample 306 - 137527 reads in 13932 unique sequences.
+Sample 307 - 188956 reads in 28814 unique sequences.
+Sample 308 - 182010 reads in 20466 unique sequences.
+Sample 309 - 119454 reads in 30122 unique sequences.
+Sample 310 - 153520 reads in 16535 unique sequences.
+Sample 311 - 179855 reads in 23033 unique sequences.
+Sample 312 - 133106 reads in 39217 unique sequences.
+Sample 313 - 122645 reads in 18851 unique sequences.
+Sample 314 - 146794 reads in 20676 unique sequences.
+Sample 315 - 79074 reads in 27392 unique sequences.
+Sample 316 - 119238 reads in 37107 unique sequences.
+Sample 317 - 125400 reads in 22903 unique sequences.
+Sample 318 - 125748 reads in 20587 unique sequences.
+Sample 319 - 130363 reads in 18417 unique sequences.
+Sample 320 - 135142 reads in 17363 unique sequences.
+Sample 321 - 147870 reads in 17014 unique sequences.
+Sample 322 - 131660 reads in 16286 unique sequences.
+Sample 323 - 130827 reads in 17745 unique sequences.
+Sample 324 - 131075 reads in 17789 unique sequences.
+Sample 325 - 127169 reads in 24070 unique sequences.
+Sample 326 - 141260 reads in 16272 unique sequences.
+Sample 327 - 117250 reads in 26845 unique sequences.
+Sample 328 - 138472 reads in 15479 unique sequences.
+Sample 329 - 141777 reads in 27155 unique sequences.
+Sample 330 - 140237 reads in 24919 unique sequences.
+Sample 331 - 134641 reads in 17559 unique sequences.
+Sample 332 - 126246 reads in 17228 unique sequences.
+Sample 333 - 157698 reads in 25474 unique sequences.
+Sample 334 - 175483 reads in 18289 unique sequences.
+Sample 335 - 163280 reads in 20721 unique sequences.
+Sample 336 - 147847 reads in 18150 unique sequences.
+Sample 337 - 160458 reads in 16796 unique sequences.
+Sample 338 - 151914 reads in 17695 unique sequences.
+Sample 339 - 130014 reads in 15517 unique sequences.
+Sample 340 - 142096 reads in 15912 unique sequences.
+Sample 341 - 155015 reads in 16351 unique sequences.
+Sample 342 - 154156 reads in 17094 unique sequences.
+Sample 343 - 138614 reads in 35647 unique sequences.
+Sample 344 - 101854 reads in 18816 unique sequences.
+Sample 345 - 148511 reads in 22329 unique sequences.
+Sample 346 - 169447 reads in 24476 unique sequences.
+Sample 347 - 159201 reads in 25609 unique sequences.
+Sample 348 - 152514 reads in 25667 unique sequences.
+Sample 349 - 58909 reads in 12477 unique sequences.
+Sample 350 - 122685 reads in 19584 unique sequences.
+Sample 351 - 131775 reads in 21204 unique sequences.
+Sample 352 - 107607 reads in 18183 unique sequences.
+Sample 353 - 141366 reads in 10483 unique sequences.
+Sample 354 - 131016 reads in 9659 unique sequences.
+Sample 355 - 139301 reads in 16910 unique sequences.
+Sample 356 - 130102 reads in 17960 unique sequences.
+Sample 357 - 126490 reads in 14063 unique sequences.
+Sample 358 - 125105 reads in 15393 unique sequences.
+Sample 359 - 135398 reads in 15332 unique sequences.
+Sample 360 - 89260 reads in 32874 unique sequences.
+Sample 361 - 160891 reads in 23058 unique sequences.
+Sample 362 - 133726 reads in 37988 unique sequences.
+Sample 363 - 177749 reads in 26858 unique sequences.
+Sample 364 - 136300 reads in 24038 unique sequences.
+Sample 365 - 134177 reads in 23850 unique sequences.
+Sample 366 - 137139 reads in 30881 unique sequences.
+Sample 367 - 139093 reads in 25475 unique sequences.
+Sample 368 - 148356 reads in 15082 unique sequences.
+Sample 369 - 137574 reads in 13269 unique sequences.
+Sample 370 - 148235 reads in 18308 unique sequences.
+Sample 371 - 120825 reads in 24699 unique sequences.
+Sample 372 - 180302 reads in 18246 unique sequences.
+Sample 373 - 2251 reads in 1033 unique sequences.
+Sample 374 - 83649 reads in 11442 unique sequences.
+
+   selfConsist step 2Sample 1 - 75283 reads in 12621 unique sequences.
+Sample 2 - 77999 reads in 13108 unique sequences.
+Sample 3 - 98833 reads in 17433 unique sequences.
+Sample 4 - 109289 reads in 13749 unique sequences.
+Sample 5 - 107502 reads in 13418 unique sequences.
+Sample 6 - 87273 reads in 11927 unique sequences.
+Sample 7 - 483 reads in 226 unique sequences.
+Sample 8 - 95530 reads in 18626 unique sequences.
+Sample 9 - 104956 reads in 19501 unique sequences.
+Sample 10 - 90931 reads in 16482 unique sequences.
+Sample 11 - 87143 reads in 16972 unique sequences.
+Sample 12 - 94660 reads in 12648 unique sequences.
+Sample 13 - 57779 reads in 12227 unique sequences.
+Sample 14 - 91977 reads in 14877 unique sequences.
+Sample 15 - 91965 reads in 15120 unique sequences.
+Sample 16 - 102787 reads in 21475 unique sequences.
+Sample 17 - 112116 reads in 16106 unique sequences.
+Sample 18 - 108673 reads in 18225 unique sequences.
+Sample 19 - 95519 reads in 16230 unique sequences.
+Sample 20 - 98309 reads in 16202 unique sequences.
+Sample 21 - 101831 reads in 10926 unique sequences.
+Sample 22 - 84346 reads in 17954 unique sequences.
+Sample 23 - 111714 reads in 17544 unique sequences.
+Sample 24 - 105178 reads in 13691 unique sequences.
+Sample 25 - 94870 reads in 11201 unique sequences.
+Sample 26 - 87698 reads in 17288 unique sequences.
+Sample 27 - 30448 reads in 6682 unique sequences.
+Sample 28 - 60406 reads in 11032 unique sequences.
+Sample 29 - 59563 reads in 9189 unique sequences.
+Sample 30 - 76995 reads in 7522 unique sequences.
+Sample 31 - 71308 reads in 14133 unique sequences.
+Sample 32 - 78157 reads in 14407 unique sequences.
+Sample 33 - 49081 reads in 9468 unique sequences.
+Sample 34 - 103925 reads in 19391 unique sequences.
+Sample 35 - 95885 reads in 17139 unique sequences.
+Sample 36 - 78744 reads in 13874 unique sequences.
+Sample 37 - 108629 reads in 16431 unique sequences.
+Sample 38 - 87408 reads in 13592 unique sequences.
+Sample 39 - 108220 reads in 19783 unique sequences.
+Sample 40 - 71089 reads in 13600 unique sequences.
+Sample 41 - 122068 reads in 16172 unique sequences.
+Sample 42 - 102419 reads in 18182 unique sequences.
+Sample 43 - 80571 reads in 15977 unique sequences.
+Sample 44 - 104351 reads in 14998 unique sequences.
+Sample 45 - 61780 reads in 12944 unique sequences.
+Sample 46 - 83331 reads in 16920 unique sequences.
+Sample 47 - 104121 reads in 15309 unique sequences.
+Sample 48 - 112063 reads in 15927 unique sequences.
+Sample 49 - 81557 reads in 16416 unique sequences.
+Sample 50 - 86914 reads in 14063 unique sequences.
+Sample 51 - 30013 reads in 8599 unique sequences.
+Sample 52 - 100090 reads in 19378 unique sequences.
+Sample 53 - 109380 reads in 15649 unique sequences.
+Sample 54 - 66196 reads in 12953 unique sequences.
+Sample 55 - 71874 reads in 14827 unique sequences.
+Sample 56 - 115933 reads in 14467 unique sequences.
+Sample 57 - 69908 reads in 11237 unique sequences.
+Sample 58 - 96790 reads in 15226 unique sequences.
+Sample 59 - 93535 reads in 14427 unique sequences.
+Sample 60 - 98675 reads in 16082 unique sequences.
+Sample 61 - 119110 reads in 15927 unique sequences.
+Sample 62 - 2969 reads in 900 unique sequences.
+Sample 63 - 110883 reads in 17415 unique sequences.
+Sample 64 - 110965 reads in 16928 unique sequences.
+Sample 65 - 106552 reads in 17920 unique sequences.
+Sample 66 - 73531 reads in 11783 unique sequences.
+Sample 67 - 106551 reads in 16894 unique sequences.
+Sample 68 - 1266 reads in 445 unique sequences.
+Sample 69 - 105773 reads in 16892 unique sequences.
+Sample 70 - 108877 reads in 14966 unique sequences.
+Sample 71 - 110790 reads in 15190 unique sequences.
+Sample 72 - 59213 reads in 10545 unique sequences.
+Sample 73 - 106647 reads in 13756 unique sequences.
+Sample 74 - 102180 reads in 12102 unique sequences.
+Sample 75 - 53078 reads in 11590 unique sequences.
+Sample 76 - 114152 reads in 14307 unique sequences.
+Sample 77 - 111446 reads in 14406 unique sequences.
+Sample 78 - 63247 reads in 14103 unique sequences.
+Sample 79 - 116976 reads in 15095 unique sequences.
+Sample 80 - 126698 reads in 16491 unique sequences.
+Sample 81 - 63363 reads in 14717 unique sequences.
+Sample 82 - 110211 reads in 15520 unique sequences.
+Sample 83 - 127326 reads in 16608 unique sequences.
+Sample 84 - 147469 reads in 18374 unique sequences.
+Sample 85 - 135151 reads in 16209 unique sequences.
+Sample 86 - 99279 reads in 20317 unique sequences.
+Sample 87 - 106837 reads in 19288 unique sequences.
+Sample 88 - 117627 reads in 16260 unique sequences.
+Sample 89 - 109582 reads in 13229 unique sequences.
+Sample 90 - 84326 reads in 17576 unique sequences.
+Sample 91 - 98812 reads in 18807 unique sequences.
+Sample 92 - 136999 reads in 22470 unique sequences.
+Sample 93 - 124315 reads in 18628 unique sequences.
+Sample 94 - 143641 reads in 17950 unique sequences.
+Sample 95 - 125298 reads in 16849 unique sequences.
+Sample 96 - 79659 reads in 14490 unique sequences.
+Sample 97 - 96996 reads in 14236 unique sequences.
+Sample 98 - 75820 reads in 12614 unique sequences.
+Sample 99 - 81538 reads in 16384 unique sequences.
+Sample 100 - 78109 reads in 14675 unique sequences.
+Sample 101 - 90256 reads in 15754 unique sequences.
+Sample 102 - 83809 reads in 13246 unique sequences.
+Sample 103 - 108724 reads in 17277 unique sequences.
+Sample 104 - 113616 reads in 19908 unique sequences.
+Sample 105 - 99515 reads in 18756 unique sequences.
+Sample 106 - 114927 reads in 19991 unique sequences.
+Sample 107 - 96494 reads in 17377 unique sequences.
+Sample 108 - 78067 reads in 14738 unique sequences.
+Sample 109 - 96668 reads in 17707 unique sequences.
+Sample 110 - 89479 reads in 17001 unique sequences.
+Sample 111 - 97845 reads in 18663 unique sequences.
+Sample 112 - 90966 reads in 17270 unique sequences.
+Sample 113 - 93701 reads in 15849 unique sequences.
+Sample 114 - 100584 reads in 17526 unique sequences.
+Sample 115 - 96600 reads in 15946 unique sequences.
+Sample 116 - 114486 reads in 13648 unique sequences.
+Sample 117 - 97701 reads in 15993 unique sequences.
+Sample 118 - 121581 reads in 22018 unique sequences.
+Sample 119 - 136057 reads in 13795 unique sequences.
+Sample 120 - 104854 reads in 19758 unique sequences.
+Sample 121 - 123372 reads in 19839 unique sequences.
+Sample 122 - 84997 reads in 15645 unique sequences.
+Sample 123 - 97923 reads in 18277 unique sequences.
+Sample 124 - 107641 reads in 19157 unique sequences.
+Sample 125 - 88938 reads in 17677 unique sequences.
+Sample 126 - 123742 reads in 26524 unique sequences.
+Sample 127 - 165148 reads in 23678 unique sequences.
+Sample 128 - 141882 reads in 19909 unique sequences.
+Sample 129 - 112899 reads in 20917 unique sequences.
+Sample 130 - 128433 reads in 26819 unique sequences.
+Sample 131 - 162042 reads in 31546 unique sequences.
+Sample 132 - 160042 reads in 30136 unique sequences.
+Sample 133 - 155284 reads in 23010 unique sequences.
+Sample 134 - 146479 reads in 29711 unique sequences.
+Sample 135 - 144779 reads in 21106 unique sequences.
+Sample 136 - 125253 reads in 24179 unique sequences.
+Sample 137 - 80259 reads in 16528 unique sequences.
+Sample 138 - 155126 reads in 27933 unique sequences.
+Sample 139 - 87757 reads in 13652 unique sequences.
+Sample 140 - 110010 reads in 14155 unique sequences.
+Sample 141 - 119779 reads in 16160 unique sequences.
+Sample 142 - 119458 reads in 15768 unique sequences.
+Sample 143 - 138887 reads in 19190 unique sequences.
+Sample 144 - 73227 reads in 11961 unique sequences.
+Sample 145 - 106444 reads in 17470 unique sequences.
+Sample 146 - 113403 reads in 14451 unique sequences.
+Sample 147 - 118925 reads in 14455 unique sequences.
+Sample 148 - 109270 reads in 11950 unique sequences.
+Sample 149 - 161542 reads in 25701 unique sequences.
+Sample 150 - 130184 reads in 24032 unique sequences.
+Sample 151 - 171859 reads in 26127 unique sequences.
+Sample 152 - 154230 reads in 20096 unique sequences.
+Sample 153 - 135857 reads in 22885 unique sequences.
+Sample 154 - 135092 reads in 25552 unique sequences.
+Sample 155 - 119383 reads in 21199 unique sequences.
+Sample 156 - 168222 reads in 27760 unique sequences.
+Sample 157 - 160199 reads in 26268 unique sequences.
+Sample 158 - 162994 reads in 33939 unique sequences.
+Sample 159 - 142162 reads in 17252 unique sequences.
+Sample 160 - 133690 reads in 24039 unique sequences.
+Sample 161 - 138272 reads in 21970 unique sequences.
+Sample 162 - 138490 reads in 23528 unique sequences.
+Sample 163 - 10 reads in 9 unique sequences.
+Sample 164 - 163914 reads in 31029 unique sequences.
+Sample 165 - 167961 reads in 19275 unique sequences.
+Sample 166 - 173948 reads in 26874 unique sequences.
+Sample 167 - 143058 reads in 23827 unique sequences.
+Sample 168 - 147951 reads in 22185 unique sequences.
+Sample 169 - 133576 reads in 20705 unique sequences.
+Sample 170 - 151308 reads in 25316 unique sequences.
+Sample 171 - 157388 reads in 23984 unique sequences.
+Sample 172 - 167065 reads in 24059 unique sequences.
+Sample 173 - 161730 reads in 22568 unique sequences.
+Sample 174 - 150563 reads in 16773 unique sequences.
+Sample 175 - 148579 reads in 26487 unique sequences.
+Sample 176 - 149214 reads in 19026 unique sequences.
+Sample 177 - 131075 reads in 17125 unique sequences.
+Sample 178 - 119243 reads in 16412 unique sequences.
+Sample 179 - 142688 reads in 19599 unique sequences.
+Sample 180 - 147062 reads in 15267 unique sequences.
+Sample 181 - 159225 reads in 14890 unique sequences.
+Sample 182 - 109343 reads in 11524 unique sequences.
+Sample 183 - 163579 reads in 22949 unique sequences.
+Sample 184 - 147215 reads in 15136 unique sequences.
+Sample 185 - 149799 reads in 14613 unique sequences.
+Sample 186 - 130073 reads in 18856 unique sequences.
+Sample 187 - 152759 reads in 20399 unique sequences.
+Sample 188 - 149254 reads in 22184 unique sequences.
+Sample 189 - 156942 reads in 14160 unique sequences.
+Sample 190 - 143382 reads in 20597 unique sequences.
+Sample 191 - 118505 reads in 8976 unique sequences.
+Sample 192 - 144488 reads in 10074 unique sequences.
+Sample 193 - 137132 reads in 9285 unique sequences.
+Sample 194 - 114972 reads in 9400 unique sequences.
+Sample 195 - 5072 reads in 1703 unique sequences.
+Sample 196 - 120856 reads in 21667 unique sequences.
+Sample 197 - 103049 reads in 19276 unique sequences.
+Sample 198 - 119960 reads in 19446 unique sequences.
+Sample 199 - 94085 reads in 16092 unique sequences.
+Sample 200 - 112537 reads in 15975 unique sequences.
+Sample 201 - 105474 reads in 18891 unique sequences.
+Sample 202 - 109010 reads in 20102 unique sequences.
+Sample 203 - 117336 reads in 20324 unique sequences.
+Sample 204 - 131374 reads in 20757 unique sequences.
+Sample 205 - 141403 reads in 30485 unique sequences.
+Sample 206 - 137709 reads in 29195 unique sequences.
+Sample 207 - 176194 reads in 26025 unique sequences.
+Sample 208 - 110530 reads in 21744 unique sequences.
+Sample 209 - 156375 reads in 26987 unique sequences.
+Sample 210 - 122915 reads in 19379 unique sequences.
+Sample 211 - 126740 reads in 23426 unique sequences.
+Sample 212 - 125706 reads in 19927 unique sequences.
+Sample 213 - 149196 reads in 22848 unique sequences.
+Sample 214 - 164053 reads in 25808 unique sequences.
+Sample 215 - 144330 reads in 31392 unique sequences.
+Sample 216 - 144092 reads in 32653 unique sequences.
+Sample 217 - 156603 reads in 29368 unique sequences.
+Sample 218 - 168032 reads in 32200 unique sequences.
+Sample 219 - 149154 reads in 27588 unique sequences.
+Sample 220 - 101569 reads in 15744 unique sequences.
+Sample 221 - 115486 reads in 18943 unique sequences.
+Sample 222 - 173645 reads in 22236 unique sequences.
+Sample 223 - 130094 reads in 20256 unique sequences.
+Sample 224 - 154181 reads in 27708 unique sequences.
+Sample 225 - 182608 reads in 30374 unique sequences.
+Sample 226 - 130745 reads in 22778 unique sequences.
+Sample 227 - 157575 reads in 23451 unique sequences.
+Sample 228 - 180618 reads in 27597 unique sequences.
+Sample 229 - 191841 reads in 28484 unique sequences.
+Sample 230 - 211865 reads in 30562 unique sequences.
+Sample 231 - 135995 reads in 24579 unique sequences.
+Sample 232 - 165428 reads in 23450 unique sequences.
+Sample 233 - 158652 reads in 27127 unique sequences.
+Sample 234 - 182789 reads in 36219 unique sequences.
+Sample 235 - 158367 reads in 31245 unique sequences.
+Sample 236 - 184832 reads in 30428 unique sequences.
+Sample 237 - 166186 reads in 32669 unique sequences.
+Sample 238 - 155971 reads in 26927 unique sequences.
+Sample 239 - 138301 reads in 25380 unique sequences.
+Sample 240 - 81298 reads in 13691 unique sequences.
+Sample 241 - 111487 reads in 10855 unique sequences.
+Sample 242 - 135591 reads in 24207 unique sequences.
+Sample 243 - 160679 reads in 19799 unique sequences.
+Sample 244 - 132160 reads in 23831 unique sequences.
+Sample 245 - 118259 reads in 21291 unique sequences.
+Sample 246 - 113272 reads in 19028 unique sequences.
+Sample 247 - 120457 reads in 21710 unique sequences.
+Sample 248 - 118187 reads in 23525 unique sequences.
+Sample 249 - 125180 reads in 20752 unique sequences.
+Sample 250 - 91567 reads in 9475 unique sequences.
+Sample 251 - 82121 reads in 11390 unique sequences.
+Sample 252 - 219 reads in 81 unique sequences.
+Sample 253 - 112251 reads in 15888 unique sequences.
+Sample 254 - 80645 reads in 8281 unique sequences.
+Sample 255 - 43703 reads in 6849 unique sequences.
+Sample 256 - 115853 reads in 11945 unique sequences.
+Sample 257 - 46337 reads in 7802 unique sequences.
+Sample 258 - 35458 reads in 5634 unique sequences.
+Sample 259 - 96498 reads in 17243 unique sequences.
+Sample 260 - 104808 reads in 18941 unique sequences.
+Sample 261 - 50951 reads in 9303 unique sequences.
+Sample 262 - 73563 reads in 11164 unique sequences.
+Sample 263 - 79368 reads in 12497 unique sequences.
+Sample 264 - 109268 reads in 17661 unique sequences.
+Sample 265 - 76938 reads in 12735 unique sequences.
+Sample 266 - 91838 reads in 14573 unique sequences.
+Sample 267 - 100672 reads in 16882 unique sequences.
+Sample 268 - 87929 reads in 15162 unique sequences.
+Sample 269 - 38509 reads in 6091 unique sequences.
+Sample 270 - 62366 reads in 10527 unique sequences.
+Sample 271 - 82113 reads in 12107 unique sequences.
+Sample 272 - 73965 reads in 9863 unique sequences.
+Sample 273 - 12073 reads in 2611 unique sequences.
+Sample 274 - 93870 reads in 13489 unique sequences.
+Sample 275 - 95688 reads in 16836 unique sequences.
+Sample 276 - 70309 reads in 10746 unique sequences.
+Sample 277 - 106873 reads in 16110 unique sequences.
+Sample 278 - 94992 reads in 14436 unique sequences.
+Sample 279 - 52171 reads in 5965 unique sequences.
+Sample 280 - 91209 reads in 9151 unique sequences.
+Sample 281 - 81877 reads in 8584 unique sequences.
+Sample 282 - 77137 reads in 13148 unique sequences.
+Sample 283 - 85138 reads in 8417 unique sequences.
+Sample 284 - 34387 reads in 6423 unique sequences.
+Sample 285 - 45264 reads in 7566 unique sequences.
+Sample 286 - 93455 reads in 16978 unique sequences.
+Sample 287 - 96930 reads in 16127 unique sequences.
+Sample 288 - 103364 reads in 13908 unique sequences.
+Sample 289 - 101528 reads in 7407 unique sequences.
+Sample 290 - 61161 reads in 6721 unique sequences.
+Sample 291 - 93592 reads in 11774 unique sequences.
+Sample 292 - 627 reads in 214 unique sequences.
+Sample 293 - 95006 reads in 10209 unique sequences.
+Sample 294 - 87465 reads in 13565 unique sequences.
+Sample 295 - 146956 reads in 22405 unique sequences.
+Sample 296 - 141777 reads in 21521 unique sequences.
+Sample 297 - 115975 reads in 24017 unique sequences.
+Sample 298 - 145681 reads in 28491 unique sequences.
+Sample 299 - 111516 reads in 21397 unique sequences.
+Sample 300 - 116964 reads in 21724 unique sequences.
+Sample 301 - 150577 reads in 17421 unique sequences.
+Sample 302 - 151384 reads in 16992 unique sequences.
+Sample 303 - 137310 reads in 14542 unique sequences.
+Sample 304 - 143030 reads in 16839 unique sequences.
+Sample 305 - 130723 reads in 12779 unique sequences.
+Sample 306 - 137527 reads in 13162 unique sequences.
+Sample 307 - 188956 reads in 19857 unique sequences.
+Sample 308 - 182010 reads in 19806 unique sequences.
+Sample 309 - 119454 reads in 11296 unique sequences.
+Sample 310 - 153520 reads in 15522 unique sequences.
+Sample 311 - 179855 reads in 17715 unique sequences.
+Sample 312 - 133106 reads in 13771 unique sequences.
+Sample 313 - 122645 reads in 19288 unique sequences.
+Sample 314 - 146794 reads in 22202 unique sequences.
+Sample 315 - 79074 reads in 11803 unique sequences.
+Sample 316 - 119238 reads in 15756 unique sequences.
+Sample 317 - 125400 reads in 18427 unique sequences.
+Sample 318 - 125748 reads in 19378 unique sequences.
+Sample 319 - 130363 reads in 18477 unique sequences.
+Sample 320 - 135142 reads in 18529 unique sequences.
+Sample 321 - 147870 reads in 20481 unique sequences.
+Sample 322 - 131660 reads in 18842 unique sequences.
+Sample 323 - 130827 reads in 16995 unique sequences.
+Sample 324 - 131075 reads in 17945 unique sequences.
+Sample 325 - 127169 reads in 15038 unique sequences.
+Sample 326 - 141260 reads in 18095 unique sequences.
+Sample 327 - 117250 reads in 14410 unique sequences.
+Sample 328 - 138472 reads in 16366 unique sequences.
+Sample 329 - 141777 reads in 25560 unique sequences.
+Sample 330 - 140237 reads in 24157 unique sequences.
+Sample 331 - 134641 reads in 18238 unique sequences.
+Sample 332 - 126246 reads in 17906 unique sequences.
+Sample 333 - 157698 reads in 18332 unique sequences.
+Sample 334 - 175483 reads in 21156 unique sequences.
+Sample 335 - 163280 reads in 19407 unique sequences.
+Sample 336 - 147847 reads in 18453 unique sequences.
+Sample 337 - 160458 reads in 17306 unique sequences.
+Sample 338 - 151914 reads in 16764 unique sequences.
+Sample 339 - 130014 reads in 15869 unique sequences.
+Sample 340 - 142096 reads in 16695 unique sequences.
+Sample 341 - 155015 reads in 17496 unique sequences.
+Sample 342 - 154156 reads in 17161 unique sequences.
+Sample 343 - 138614 reads in 23895 unique sequences.
+Sample 344 - 101854 reads in 21577 unique sequences.
+Sample 345 - 148511 reads in 25460 unique sequences.
+Sample 346 - 169447 reads in 28449 unique sequences.
+Sample 347 - 159201 reads in 27156 unique sequences.
+Sample 348 - 152514 reads in 25341 unique sequences.
+Sample 349 - 58909 reads in 15780 unique sequences.
+Sample 350 - 122685 reads in 22248 unique sequences.
+Sample 351 - 131775 reads in 24404 unique sequences.
+Sample 352 - 107607 reads in 21232 unique sequences.
+Sample 353 - 141366 reads in 11829 unique sequences.
+Sample 354 - 131016 reads in 11016 unique sequences.
+Sample 355 - 139301 reads in 18151 unique sequences.
+Sample 356 - 130102 reads in 16807 unique sequences.
+Sample 357 - 126490 reads in 15662 unique sequences.
+Sample 358 - 125105 reads in 15968 unique sequences.
+Sample 359 - 135398 reads in 16239 unique sequences.
+Sample 360 - 89260 reads in 10980 unique sequences.
+Sample 361 - 160891 reads in 24955 unique sequences.
+Sample 362 - 133726 reads in 19782 unique sequences.
+Sample 363 - 177749 reads in 28131 unique sequences.
+Sample 364 - 136300 reads in 23499 unique sequences.
+Sample 365 - 134177 reads in 25373 unique sequences.
+Sample 366 - 137139 reads in 25203 unique sequences.
+Sample 367 - 139093 reads in 14355 unique sequences.
+Sample 368 - 148356 reads in 15773 unique sequences.
+Sample 369 - 137574 reads in 14007 unique sequences.
+Sample 370 - 148235 reads in 13657 unique sequences.
+Sample 371 - 120825 reads in 12191 unique sequences.
+Sample 372 - 180302 reads in 20297 unique sequences.
+Sample 373 - 2251 reads in 384 unique sequences.
+Sample 374 - 83649 reads in 7260 unique sequences.
+
+   selfConsist step 2DADA2 - Merge Running
+Duplicate sequences in merged output.
+Duplicate sequences in merged output.
+Duplicate sequences in merged output.
+Duplicate sequences in merged output.
+Duplicate sequences in merged output.
+Duplicate sequences in merged output.
+Duplicate sequences in merged output.
+Duplicate sequences in merged output.
+Duplicate sequences in merged output.
+Duplicate sequences in merged output.
+Duplicate sequences in merged output.
+DADA2 - Chimera Check Running
+Duplicate sequences detected and merged.
+Duplicate sequences detected and merged.
+Duplicate sequences detected and merged.
+Duplicate sequences detected and merged.
+Duplicate sequences detected and merged.
+Duplicate sequences detected and merged.
+Duplicate sequences detected and merged.
+Duplicate sequences detected and merged.
+Duplicate sequences detected and merged.
+Duplicate sequences detected and merged.
+Duplicate sequences detected and merged.
+Identified 75881 bimeras out of 133730 input sequences.
+Percent non-chimera:
+[1] 96.10106
+Duplicate sequences detected and merged.
+Duplicate sequences detected and merged.
+Duplicate sequences detected and merged.
+Duplicate sequences detected and merged.
+Duplicate sequences detected and merged.
+Duplicate sequences detected and merged.
+Duplicate sequences detected and merged.
+Duplicate sequences detected and merged.
+Duplicate sequences detected and merged.
+Duplicate sequences detected and merged.
+Duplicate sequences detected and merged.
+DADA2 - Creating ASV outs

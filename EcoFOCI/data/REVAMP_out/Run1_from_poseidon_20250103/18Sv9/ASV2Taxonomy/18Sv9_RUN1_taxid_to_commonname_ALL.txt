@@ -1,0 +1,111 @@
+Bacteria (eubacteria)	2
+Eukaryota (eucaryotes)	2759
+Rhodophyta (red algae)	2763
+Chrysophyceae (golden algae)	2825
+Xanthophyceae (yellow-green algae)	2833
+Bacillariophyta (diatoms)	2836
+Dinophyceae (dinoflagellates)	2864
+Phaeophyceae (brown algae)	2870
+Cryptophyceae (cryptomonads)	3027
+Euglenida (euglenids)	3035
+Chlorophyta (green algae)	3041
+Selaginellales (spike mosses)	3244
+Magnoliopsida (flowering plants)	3398
+Cucurbita (marrows)	3660
+Brassicaceae (mustard family)	3700
+Mucorales (pin molds)	4827
+Ascomycota (ascomycetes)	4890
+Saccharomyces cerevisiae (brewer's yeast)	4932
+Eurotiales (green and blue molds)	5042
+Basidiomycota (basidiomycetes)	5204
+Agaricales (gill mushrooms)	5338
+Kinetoplastea (kinetoplasts)	5653
+Apicomplexa (apicomplexans)	5794
+Haemosporida (haemosporidians)	5819
+Piroplasmida (Piroplasmids)	5863
+Ciliophora (ciliates)	5878
+Spongillidae (freshwater sponges)	6050
+Hydrozoa (hydrozoans)	6074
+Anthozoa (anthozoans)	6101
+Actiniaria (sea anemones)	6103
+Scleractinia (stony corals)	6125
+Scyphozoa (jellyfishes)	6142
+Heteronemertea (heteronemertine worms)	6219
+Nematoda (roundworms)	6231
+Annelida (annelid worms)	6340
+Polychaeta (polychaetes)	6341
+Sipuncula (peanut worms)	6433
+Gastropoda (gastropods)	6448
+Trochidae (top shells)	6466
+Bivalvia (bivalves)	6544
+Ostreidae (oysters)	6563
+Pectinidae (scallops)	6566
+Mactridae (surf clams)	6581
+Veneridae (venus clams)	6592
+Polyplacophora (chitons)	6650
+Arthropoda (arthropods)	6656
+Daphnia (common water fleas)	6668
+Ostracoda (mussel shrimps)	6670
+Balanus nubilus (giant acorn barnacle)	6678
+Amphipoda (beach hoppers, scuds and well shrimps)	6821
+Arachnida (arachnids)	6854
+Araneae (spiders)	6893
+Ixodida (ticks)	6935
+Phasmatodea (walking sticks)	7020
+Coleoptera (beetles)	7041
+Lepidoptera (butterflies and moths)	7088
+Diptera (flies)	7147
+Mantodea (mantids)	7504
+Echinodermata (echinoderms)	7586
+Echinoidea (sea urchins)	7625
+Strongylocentrotus purpuratus (purple sea urchin)	7668
+Chordata (chordates)	7711
+Chondrichthyes (cartilaginous fishes)	7777
+Gadiformes (cods and others)	8043
+Pleuronectiformes (flatfishes)	8252
+Homo sapiens (human)	9606
+Ctenophora (ctenophores)	10197
+Isoetales (quillworts)	13836
+Mecoptera (scorpionflies and hangingflies)	27420
+Mnemiopsis leidyi (sea walnut)	27923
+Foraminifera (foraminifers)	29178
+Collembola (springtails)	30001
+Ephemeroptera (mayflies)	30073
+Strepsiptera (twisted-wing parasites)	30261
+Thysanoptera (thrips)	30262
+Coscinodiscophyceae (centric diatoms)	33836
+Bacillariophyceae (Raphid, pennate diatoms)	33849
+Fragilariophyceae (Araphid, pennate diatoms)	33853
+Chaetothyriales (black yeasts)	34395
+Katharina tunicata (black chiton)	34587
+Alosa pseudoharengus (alewife)	34774
+Obelia dichotoma (sea thread hydroid)	37520
+Chthamalidae (star barnacles)	37897
+Cancer borealis (Jonah crab)	39395
+Modiolus (horsemussels)	40255
+Osmeriformes (freshwater smelts and others)	41711
+Siphonophorae (siphonophores)	42759
+Antipatharia (black corals)	44168
+Zoantharia (zoanthids)	44927
+Gonostomatidae (bristlemouths)	48439
+Insecta (true insects)	50557
+Embioptera (web-spinners)	50657
+Ciona savignyi (Pacific transparent sea squirt)	51511
+Clupeidae (herrings)	55118
+Myctophiformes (lanternfishes and blackchins)	68514
+Myctophidae (lanternfishes)	68515
+Eriophyidae (gall mites)	70320
+Mysida (opossum shrimps)	75399
+Charybdis japonica (shore swimming crab)	80839
+Blattodea (cockroaches)	85823
+Coronatae (crown jellyfishes)	86058
+Palpigradi (microwhip scorpions)	88344
+Ruditapes philippinarum (Manila clam)	129788
+Clavelina lepadiformis (light-bulb sea squirt)	159417
+Phacellophora camtschatica (eggyolk jelly)	168771
+Anoplopoma fimbria (sablefish)	229290
+Atheresthes stomias (arrowtooth flounder)	428034
+Parequula melbournensis (silverbelly)	548269
+Melanostigma gelatinosum (limp eelpout)	1091424
+Arcuatula senhousia (Asian date mussel)	1954227
+Naididae (sludge worms)	2109251

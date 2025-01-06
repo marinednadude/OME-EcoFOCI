@@ -1,0 +1,123 @@
+Bacteria (eubacteria)	2
+Myxococcales (fruiting gliding bacteria)	29
+Rickettsiales (rickettsias)	766
+Cyanobacteriota (blue-green algae)	1117
+Actinomycetes (high G+C Gram-positive bacteria)	1760
+Eukaryota (eucaryotes)	2759
+Bacillariophyta (diatoms)	2836
+Dinophyceae (dinoflagellates)	2864
+Phaeophyceae (brown algae)	2870
+Cryptophyceae (cryptomonads)	3027
+Euglenida (euglenids)	3035
+Prionace glauca (blue shark)	7815
+Hydrolagus colliei (spotted ratfish)	7873
+Cypriniformes (carps and others)	7952
+Osmeridae (smelts)	8012
+Oncorhynchus gorbuscha (pink salmon)	8017
+Oncorhynchus keta (chum salmon)	8018
+Oncorhynchus kisutch (coho salmon)	8019
+Oncorhynchus mykiss (rainbow trout)	8022
+Gadidae (cods)	8045
+Eleginus gracilis (saffron cod)	8047
+Gadus morhua (Atlantic cod)	8049
+Cottidae (sculpins)	8092
+Zoarcidae (eelpouts)	8193
+Lycodes polaris (Canadian eelpout)	8197
+Pleuronectidae (righteye flounders)	8256
+Homo sapiens (human)	9606
+Canis lupus (gray wolf)	9612
+Odobenus rosmarus (walrus)	9707
+Pusa hispida (Ringed seal)	9718
+Delphinidae (marine dolphins)	9726
+Stenella coeruleoalba (striped dolphin)	9737
+Phocoena phocoena (harbor porpoise)	9742
+Delphinapterus leucas (beluga whale)	9749
+Eschrichtius robustus (grey whale)	9764
+Balaenoptera acutorostrata (minke whale)	9767
+Balaenoptera physalus (Fin whale)	9770
+Balaenoptera musculus (blue whale)	9771
+Megaptera novaeangliae (humpback whale)	9773
+Sus scrofa (pig)	9823
+Bos taurus (cattle)	9913
+Enteropneusta (acorn worms)	10220
+Balaena mysticetus (bowhead whale)	27602
+Sardinops sagax (South American pilchard)	28381
+Clupea pallasii (Pacific herring)	30724
+Stichaeidae (pricklebacks)	30892
+Mallotus villosus (capelin)	30960
+Agonidae (poachers)	30972
+Coscinodiscophyceae (centric diatoms)	33836
+Bacillariophyceae (Raphid, pennate diatoms)	33849
+Enhydra lutris (sea otter)	34882
+Eumetopias jubatus (Steller sea lion)	34886
+Phoca fasciata (ribbon seal)	39088
+Phoca largha (spotted seal)	39090
+Erignathus barbatus (bearded seal)	39304
+Rhodospirillaceae (purple nonsulfur bacteria)	41295
+Cymatogaster aggregata (shiner perch)	50794
+Scorpaenichthys marmoratus (cabezon)	52273
+Alburnus alburnus (bleak)	54556
+Clupeidae (herrings)	55118
+Phalacrocorax auritus (double-crested cormorant)	56069
+Apodichthys flavidus (penpoint gunnel)	57779
+Gibbonsia montereyensis (crevice kelpfish)	57803
+Alburnoides bipunctatus (spirlin)	58321
+Gobiesox maeandricus (northern clingfish)	63828
+Gasterosteus aculeatus (three-spined stickleback)	69293
+Sebastes entomelas (widow rockfish)	72073
+Sebastes paucispinis (bocaccio)	72093
+Ectothiorhodospiraceae (purple sulfur bacteria)	72276
+Oncorhynchus tshawytscha (Chinook salmon)	74940
+Gadus macrocephalus (Pacific cod)	80720
+Ammodytidae (sand lances)	84619
+Galeorhinus galeus (tope shark)	86063
+Mylocheilus caurinus (peamouth chub)	86918
+Microstomus pacificus (Dover sole)	89058
+Merluccius productus (North Pacific hake)	89952
+Artiodactyla (whales, hippos, ruminants, pigs, camels etc.)	91561
+Stenobrachius leucopsarus (northern lampfish)	91658
+Mola mola (ocean sunfish)	94237
+Embiotoca jacksoni (black perch)	100190
+Reinhardtius hippoglossoides (Greenland flounder)	111784
+Cololabis saira (Pacific saury)	129043
+Eopsetta jordani (Petrale sole)	195609
+Glyptocephalus zachirus (Rex sole)	195612
+Lyopsetta exilis (slender sole)	195626
+Girella nigricans (opaleye)	214657
+Leptocottus armatus (Pacific staghorn sculpin)	214925
+Embiotoca lateralis (striped seaperch)	229144
+Anoplopoma fimbria (sablefish)	229290
+Atherinops affinis (topsmelt silverside)	238741
+Engraulis mordax (northern anchovy)	239368
+Thaleichthys pacificus (eulachon)	240832
+Spirinchus thaleichthys (longfin smelt)	260508
+Trachurus symmetricus (Pacific jack mackerel)	271940
+Hexagrammos decagrammus (kelp greenling)	274741
+Artedius fenestralis (padded sculpin)	274758
+Radulinus asprellus (slim sculpin)	274768
+Liparis mucosus (slimy snailfish)	274786
+Pholis ornata (saddleback gunnel)	283028
+Icichthys lockingtoni (medusafish)	302051
+Harpagornis moorei (New Zealand giant eagle)	307641
+Citharichthys sordidus (Pacific sanddab)	319774
+Citharichthys stigmaeus (speckled sanddab)	319775
+Pleuronichthys decurrens (curlfin sole)	320379
+Podothecus accipenserinus (sturgeon poacher)	320612
+Odontopyxis trispinosa (pygmy poacher)	320620
+Liparis tunicatus (kelp snailfish)	420949
+Agonopsis vulsa (northern spearnose poacher)	428027
+Allosmerus elongatus (whitebait smelt)	433393
+Artedius harringtoni (scalyhead sculpin)	433399
+Liparis fucensis (slipskin snailfish)	433401
+Liparis pulchellus (showy snailfish)	433402
+Anarrhichthys ocellatus (wolf-eel)	433405
+Spirinchus starksi (night smelt)	443727
+Clinocottus globiceps (mosshead sculpin)	459047
+Ammodytes hexapterus (Pacific sand lance)	476914
+Lycodes raridens (marbled eelpout)	512206
+Cryptacanthodes aleutensis (dwarf wrymouth)	557343
+Gymnocanthus tricuspis (Arctic staghorn sculpin)	980329
+Gadus chalcogrammus (walleye pollock)	1042646
+Atherinopsis californiensis (Jack silverside)	1311532
+Gobiiformes (gobies and sleepers)	1489878
+Beringraja binoculata (big skate)	2838337

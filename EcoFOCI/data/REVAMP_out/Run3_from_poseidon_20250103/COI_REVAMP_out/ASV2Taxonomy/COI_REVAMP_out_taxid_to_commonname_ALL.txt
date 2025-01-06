@@ -1,0 +1,178 @@
+Bacteria (eubacteria)	2
+Rickettsiales (rickettsias)	766
+Eukaryota (eucaryotes)	2759
+Rhodophyta (red algae)	2763
+Chrysophyceae (golden algae)	2825
+Xanthophyceae (yellow-green algae)	2833
+Bacillariophyta (diatoms)	2836
+Dinophyceae (dinoflagellates)	2864
+Phaeophyceae (brown algae)	2870
+Cryptophyceae (cryptomonads)	3027
+Chlorophyta (green algae)	3041
+Magnoliopsida (flowering plants)	3398
+Mucorales (pin molds)	4827
+Ascomycota (ascomycetes)	4890
+Eurotiales (green and blue molds)	5042
+Tremellales (jelly fungi)	5234
+Agaricales (gill mushrooms)	5338
+Spongillidae (freshwater sponges)	6050
+Cnidaria (cnidarians)	6073
+Hydrozoa (hydrozoans)	6074
+Hydridae (hydras)	6080
+Hydra viridissima (green hydra)	6082
+Hydra vulgaris (swiftwater hydra)	6087
+Anthozoa (anthozoans)	6101
+Actiniaria (sea anemones)	6103
+Scleractinia (stony corals)	6125
+Cubozoa (sea wasps)	6137
+Scyphozoa (jellyfishes)	6142
+Nemertea (ribbon worms)	6217
+Heteronemertea (heteronemertine worms)	6219
+Annelida (annelid worms)	6340
+Polychaeta (polychaetes)	6341
+Gastropoda (gastropods)	6448
+Aplysiida (sea hares)	6497
+Stylommatophora (land snails)	6527
+Bivalvia (bivalves)	6544
+Cephalopoda (cephalopods)	6605
+Polyplacophora (chitons)	6650
+Arthropoda (arthropods)	6656
+Daphnia (common water fleas)	6668
+Ostracoda (mussel shrimps)	6670
+Balanus nubilus (giant acorn barnacle)	6678
+Lithodidae (stone and king crabs)	6739
+Euphausiacea (krill)	6816
+Amphipoda (beach hoppers, scuds and well shrimps)	6821
+Arachnida (arachnids)	6854
+Scorpiones (scorpions)	6855
+Araneae (spiders)	6893
+Ixodida (ticks)	6935
+Odonata (dragonflies and damselflies)	6961
+Coleoptera (beetles)	7041
+Lepidoptera (butterflies and moths)	7088
+Pyralidae (snout moths)	7135
+Diptera (flies)	7147
+Chironomidae (nonbiting midges)	7149
+Culicidae (mosquitos)	7157
+Sciaridae (black fungus gnats)	7184
+Tabanidae (horseflies and deerflies)	7205
+Muscidae (house flies)	7366
+Siphonaptera (fleas)	7509
+Neuroptera (net-winged insects)	7516
+Chilopoda (centipedes)	7540
+Diplopoda (millipedes)	7553
+Ophiuroidea (brittle stars)	7618
+Echinoidea (sea urchins)	7625
+Strongylocentrotus pallidus (pale sea urchin)	7670
+Strongylocentrotus droebachiensis (green sea urchin)	7671
+Holothuroidea (sea cucumbers)	7705
+Chordata (chordates)	7711
+Ascidiacea (sea squirts)	7713
+Chimaeridae (shortnose chimaeras)	7869
+Hydrolagus colliei (spotted ratfish)	7873
+Anguilliformes (true eels)	7933
+Siluriformes (catfishes)	7995
+Salmoniformes (salmons and trouts)	8006
+Eleginus gracilis (saffron cod)	8047
+Amphibia (amphibians)	8292
+Aves (birds)	8782
+Passeriformes (song birds)	9126
+Chiroptera (bats)	9397
+Homo sapiens (human)	9606
+Canis lupus (gray wolf)	9612
+Delphinidae (marine dolphins)	9726
+Tursiops truncatus (common bottlenose dolphin)	9739
+Phocoena phocoena (harbor porpoise)	9742
+Delphinapterus leucas (beluga whale)	9749
+Megaptera novaeangliae (humpback whale)	9773
+Perissodactyla (odd-toed ungulates)	9787
+Rotifera (rotifers)	10190
+Ctenophora (ctenophores)	10197
+Bryozoa (bryozoans)	10205
+Hemichordata (hemichordates)	10219
+Enteropneusta (acorn worms)	10220
+Placozoa (placozoans)	10226
+Mecoptera (scorpionflies and hangingflies)	27420
+Dermaptera (earwigs)	27434
+Lycaenidae (gossamer-wings)	27544
+Balaena mysticetus (bowhead whale)	27602
+Choanoflagellata (choanoflagellates)	28009
+Sardinops sagax (South American pilchard)	28381
+Staphylinidae (rove beetles)	29026
+Mycetophilidae (fungus gnats)	29035
+Isopoda (pill bugs, wood lice and sea slaters)	29979
+Diplura (diplurans)	29997
+Protura (coneheads)	29999
+Collembola (springtails)	30001
+Hypogastruridae (elongate-bodied springtails)	30002
+Ephemeroptera (mayflies)	30073
+Psocoptera (booklice and barklice)	30259
+Thysanoptera (thrips)	30262
+Trichoptera (caddisflies)	30263
+Salpida (salps)	30307
+Macrouridae (grenadiers)	30761
+Clypeasteroida (sand dollars)	31186
+Gastrotricha (gastrotrichs)	33313
+Cecidomyiidae (gall midges)	33406
+Carnivora (carnivores)	33554
+Coscinodiscophyceae (centric diatoms)	33836
+Bacillariophyceae (Raphid, pennate diatoms)	33849
+Fragilariophyceae (Araphid, pennate diatoms)	33853
+Chaetothyriales (black yeasts)	34395
+Ophiopholis aculeata (daisy brittle star)	35052
+Crinoidea (crinoids)	35069
+Isotomidae (smooth springtails)	36141
+Glycera americana (American bloodworm)	37469
+Stauromedusae (stalked jellyfishes)	37528
+Balanidae (acorn barnacles)	37806
+Nereididae (sandworms)	39820
+Mammalia (mammals)	40674
+Carabidae (ground beetles)	41073
+Chionoecetes opilio (snow crab)	41210
+Solifugae (sun spiders)	41356
+Ceratopogonidae (biting midges)	41819
+Mugiliformes (mullets)	41872
+Siphonophorae (siphonophores)	42759
+Leptasterias (six-rayed sea stars)	43054
+Opiliones (harvestmen)	43271
+Antipatharia (black corals)	44168
+Cyclothone signata (showy bristlemouth)	48453
+Onychiuridae (blind springtails)	48715
+Dytiscidae (predacious diving beetles)	50515
+Insecta (insects)	50557
+Plecoptera (stoneflies)	50622
+Pseudoscorpiones (false scorpions)	51799
+Pycnogonida (sea spiders)	57294
+Aulopiformes (grinners and others)	68510
+Florometra serratissima (common feather star)	73431
+Mysida (opossum shrimps)	75399
+Geometridae (geometer moths)	82593
+Podocopida (seed shrimps & mussel shrimps)	84318
+Blattodea (cockroaches)	85823
+Coronatae (crown jellyfishes)	86058
+Allocentrotus fragilis (fragile urchin)	86255
+Artiodactyla (even-toed ungulates & whales)	91561
+Ophidiiformes (cusk-eels and others)	94929
+Euphausia pacifica (North Pacific krill)	102976
+Agromyzidae (leaf miners)	127399
+Syngnathiformes (pipefishes and seahorses)	129912
+Prosorhochmidae (smiling worms)	166020
+Phacellophora camtschatica (eggyolk jelly)	168771
+Lyopsetta exilis (slender sole)	195626
+Corylophidae (minute fungus beetles)	196998
+Clubionidae (sac spiders)	210000
+Cottus aleuticus (coastrange sculpin)	214914
+Lycodes diapterus (black eelpout)	215426
+Paralithodes platypus (blue king crab)	273748
+Bathyraja parmifera (Alaska skate)	341249
+Eptatretus deani (black hagfish)	418109
+Liparis fucensis (slipskin snailfish)	433401
+Lycodes raridens (marbled eelpout)	512206
+Sepiida (bobtail squid)	551287
+Enophrys diceraus (antlered sculpin)	980326
+Scombriformes (tunas and others)	1489894
+Carangiformes (jacks and others)	1489907
+Holocentriformes (soldierfishes and squirrelfishes)	1490028
+Lycodopsis pacificus (blackbelly eelpout)	1772091
+Naididae (sludge worms)	2109251
+Serinales (CUG-Ser1 clade)	2916678

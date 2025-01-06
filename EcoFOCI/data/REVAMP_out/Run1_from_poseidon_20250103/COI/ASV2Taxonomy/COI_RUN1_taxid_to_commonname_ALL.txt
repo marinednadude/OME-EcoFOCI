@@ -1,0 +1,176 @@
+Bacteria (eubacteria)	2
+Rickettsiales (rickettsias)	766
+Eukaryota (eucaryotes)	2759
+Chrysophyceae (golden algae)	2825
+Bacillariophyta (diatoms)	2836
+Dinophyceae (dinoflagellates)	2864
+Phaeophyceae (brown algae)	2870
+Cryptophyceae (cryptomonads)	3027
+Chlorophyta (green algae)	3041
+Magnoliopsida (flowering plants)	3398
+Mucorales (pin molds)	4827
+Ascomycota (ascomycetes)	4890
+Eurotiales (green and blue molds)	5042
+Tremellales (jelly fungi)	5234
+Agaricales (gill mushrooms)	5338
+Cnidaria (cnidarians)	6073
+Hydrozoa (hydrozoans)	6074
+Hydridae (hydras)	6080
+Polyorchis penicillatus (penicillate jellyfish)	6091
+Anthozoa (anthozoans)	6101
+Actiniaria (sea anemones)	6103
+Anthopleura elegantissima (clonal anemone)	6110
+Metridium senile (brown sea anemone)	6116
+Scleractinia (stony corals)	6125
+Scyphozoa (jellyfishes)	6142
+Nemertea (ribbon worms)	6217
+Heteronemertea (heteronemertine worms)	6219
+Annelida (annelid worms)	6340
+Polychaeta (polychaetes)	6341
+Mollusca (mollusks)	6447
+Gastropoda (gastropods)	6448
+Aplysiida (sea hares)	6497
+Stylommatophora (land snails)	6527
+Bivalvia (bivalves)	6544
+Mytilus trossulus (common blue mussel)	6551
+Ostreidae (oysters)	6563
+Cephalopoda (cephalopods)	6605
+Polyplacophora (chitons)	6650
+Arthropoda (arthropods)	6656
+Ostracoda (mussel shrimps)	6670
+Balanus nubilus (giant acorn barnacle)	6678
+Euphausiacea (krill)	6816
+Amphipoda (beach hoppers, scuds and well shrimps)	6821
+Arachnida (arachnids)	6854
+Scorpiones (scorpions)	6855
+Araneae (spiders)	6893
+Ixodida (ticks)	6935
+Dermatophagoides pteronyssinus (European house dust mite)	6956
+Odonata (dragonflies and damselflies)	6961
+Coleoptera (beetles)	7041
+Lepidoptera (butterflies and moths)	7088
+Pieridae (white, yellow and sulphur butterflies)	7114
+Diptera (flies)	7147
+Chironomidae (nonbiting midges)	7149
+Tabanidae (horseflies and deerflies)	7205
+Siphonaptera (fleas)	7509
+Neuroptera (net-winged insects)	7516
+Chrysopidae (green lacewings)	7520
+Chilopoda (centipedes)	7540
+Diplopoda (millipedes)	7553
+Asteroidea (starfishes)	7588
+Ophiuroidea (brittle stars)	7618
+Strongylocentrotus pallidus (pale sea urchin)	7670
+Holothuroidea (sea cucumbers)	7705
+Eptatretus stoutii (Pacific hagfish)	7765
+Chondrichthyes (cartilaginous fishes)	7777
+Prionace glauca (blue shark)	7815
+Hydrolagus colliei (spotted ratfish)	7873
+Anguilliformes (true eels)	7933
+Siluriformes (catfishes)	7995
+Salmoniformes (salmons and trouts)	8006
+Pleuronectiformes (flatfishes)	8252
+Beryciformes (whalefishes and others)	8277
+Amphibia (amphibians)	8292
+Lepidosauria (lepidosaurs)	8504
+Aves (birds)	8782
+Tinamiformes (tinamous)	8802
+Passeriformes (song birds)	9126
+Hominidae (great apes)	9604
+Homo sapiens (human)	9606
+Canis lupus (gray wolf)	9612
+Delphinidae (marine dolphins)	9726
+Phocoena phocoena (harbor porpoise)	9742
+Phocoenoides dalli (Dall's porpoise)	9744
+Balaenoptera acutorostrata (minke whale)	9767
+Balaenoptera musculus (blue whale)	9771
+Megaptera novaeangliae (humpback whale)	9773
+Ctenophora (ctenophores)	10197
+Bryozoa (bryozoans)	10205
+Placozoa (placozoans)	10226
+Mecoptera (scorpionflies and hangingflies)	27420
+Lycaenidae (gossamer-wings)	27544
+Mycetophilidae (fungus gnats)	29035
+Mytilus galloprovincialis (Mediterranean mussel)	29158
+Metacarcinus magister (Dungeness crab)	29965
+Isopoda (pill bugs, wood lice and sea slaters)	29979
+Collembola (springtails)	30001
+Ephemeroptera (mayflies)	30073
+Psocoptera (booklice and barklice)	30259
+Thysanoptera (thrips)	30262
+Trichoptera (caddisflies)	30263
+Triakis semifasciata (leopard shark)	30493
+Clupea pallasii (Pacific herring)	30724
+Tetraodontiformes (pufferfishes and others)	31022
+Clypeasteroida (sand dollars)	31186
+Carnivora (carnivores)	33554
+Coscinodiscophyceae (centric diatoms)	33836
+Bacillariophyceae (Raphid, pennate diatoms)	33849
+Fragilariophyceae (Araphid, pennate diatoms)	33853
+Chaetothyriales (black yeasts)	34395
+Cancer antennarius (Pacific rock crab)	34650
+Crinoidea (crinoids)	35069
+Glycera americana (American bloodworm)	37469
+Obelia dichotoma (sea thread hydroid)	37520
+Stauromedusae (stalked jellyfishes)	37528
+Balanidae (acorn barnacles)	37806
+Nereididae (sandworms)	39820
+Modiolus (horsemussels)	40255
+Mammalia (mammals)	40674
+Micropterigidae (mandibulate moths)	41025
+Carabidae (ground beetles)	41073
+Solifugae (sun spiders)	41356
+Siphonophorae (siphonophores)	42759
+Opiliones (harvestmen)	43271
+Antipatharia (black corals)	44168
+Porichthys notatus (plainfin midshipman)	45384
+Patiria miniata (bat star)	46514
+Dytiscidae (predacious diving beetles)	50515
+Insecta (true insects)	50557
+Plecoptera (stoneflies)	50622
+Bombyliidae (bee flies)	50674
+Stylasteridae (hydrocorals)	51112
+Pseudoscorpiones (false scorpions)	51799
+Sphyraena argentea (Pacific barracuda)	55125
+Pycnogonida (sea spiders)	57294
+Lycodes cortezianus (bigfin eelpout)	57818
+Sicyoniidae (rock shrimps)	64463
+Succineidae (amber snails)	73114
+Florometra serratissima (common feather star)	73431
+Mysida (opossum shrimps)	75399
+Geometridae (geometer moths)	82593
+Grampus griseus (Risso's dolphin)	83653
+Podocopida (seed shrimps & mussel shrimps)	84318
+Pinnotheridae (pea crabs)	84654
+Blattodea (cockroaches)	85823
+Coronatae (crown jellyfishes)	86058
+Allocentrotus fragilis (fragile urchin)	86255
+Lagenorhynchus obliquidens (Pacific white-sided dolphin)	90247
+Zalembius rosaceus (pink seaperch)	100204
+Euphausia pacifica (North Pacific krill)	102976
+Lissodelphis borealis (northern right whale dolphin)	103588
+Haliplidae (crawling water beetles)	107851
+Benthesicymidae (benthesicymid shrimps)	111525
+Phyllaplysia taylori (zebra leafslug)	114759
+Symbolophorus californiensis (bigfin lanternfish)	123339
+Agromyzidae (leaf miners)	127399
+Ruditapes philippinarum (Manila clam)	129788
+Chrysaora colorata (purplestriped jelly)	168767
+Phacellophora camtschatica (eggyolk jelly)	168771
+Parophrys vetulus (English sole)	172659
+Hippoglossus stenolepis (Pacific halibut)	195615
+Isopsetta isolepis (butter sole)	195617
+Lyopsetta exilis (slender sole)	195626
+Psettichthys melanostictus (Pacific sand sole)	195639
+Clubionidae (sac spiders)	210000
+Trachurus symmetricus (Pacific jack mackerel)	271940
+Symphurus atricaudus (California tonguefish)	305513
+Paralichthys californicus (California flounder)	319776
+Eptatretus deani (black hagfish)	418109
+Liparis fucensis (slipskin snailfish)	433401
+Gobiiformes (gobies and sleepers)	1489878
+Scombriformes (tunas and others)	1489894
+Holocentriformes (soldierfishes and squirrelfishes)	1490028
+Lycodopsis pacificus (blackbelly eelpout)	1772091
+Naididae (sludge worms)	2109251
+Beringraja inornata (California ray)	2838339

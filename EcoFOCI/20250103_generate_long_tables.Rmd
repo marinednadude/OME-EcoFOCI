@@ -1,0 +1,335 @@
+---
+title: "REVAMP & Sample Metadata Merge Into Long Format Files"
+author: "Zack Gold"
+date: "2025-01-03"
+output: html_document
+---
+
+```{r}
+library(here)
+library(tidyverse)
+
+```
+
+# Load in Sample Metadata
+
+```{r}
+run1_4_revamp_formatted_metadata <- read.csv(here("run1_4_revamp_formatted_metadata.csv"))
+
+run1_4_revamp_formatted_metadata %>% 
+  filter(., str_detect(Sample, "E373"))
+```
+
+# 18Sv4 
+
+## Run 1 - There are no EcoFOCI samples in Run1
+I am including this here because there is something a little off about the taxonomy for 18Sv4 and the REVAMP output with Run 1 and Run 2 taxonomy appearing to be flip flopped.
+```{r}
+
+# 
+# run1_18Sv4_asv <- read.table(here("data","REVAMP_out","run1_from_poseidon_20250103","18Sv4","dada2","ASVs_counts.tsv"), sep="\t", header=T) %>% 
+#   rename(ASV=x)
+# 
+# run1_18Sv4_tax <- read.table(here("data","REVAMP_out","run1_from_poseidon_20250103","18Sv4","ASV2Taxonomy","18Sv4_RUN2_sansPOS_asvTaxonomyTable.txt"), sep="\t", header=T) #IS IT REALLY CALLED RUN2 when it is run1?
+# 
+# run1_18Sv4_asv %>% 
+#   left_join(run1_18Sv4_tax) %>% 
+#    rename_at(vars(starts_with("MP_")), funs(str_replace(., "MP_", ""))) -> run1_18Sv4_merge
+# 
+# run1_18Sv4_merge %>% 
+#   pivot_longer(cols = c(-ASV, -Kingdom, -Phylum, -Class, -Order, -Family,-Genus, -Species), names_to = "Sample", values_to = "nReads") %>% 
+#   left_join(run1_4_revamp_formatted_metadata) %>% 
+#   filter(., !is.na(Sample_Name)) %>% # this removes all non-EcoFOCI samples. Note this also excludes positive and negative controls. No decontamination has been performed. We should definitely do this at somepoint, but need a conversation as to what approaches
+#     group_by(Sample) %>%
+#     mutate (Tot = sum(nReads),
+#             Prop.abund = nReads / Tot) %>% 
+#     group_by (ASV) %>%
+#     mutate (Colmax = max(Prop.abund),
+#             eDNA.Index = Prop.abund / Colmax) %>%
+#   dplyr::select(-Tot,-Colmax) -> run1_18Sv4_long
+  
+```
+
+
+## Run 2
+```{r}
+
+
+run2_18Sv4_asv <- read.table(here("data","REVAMP_out","Run2_from_poseidon_20250103","18Sv4","dada2","ASVs_counts.tsv"), sep="\t", header=T) %>% 
+  rename(ASV=x)
+
+run2_18Sv4_tax <- read.table(here("data","REVAMP_out","Run2_from_poseidon_20250103","18Sv4","ASV2Taxonomy","18Sv4_RUN1_asvTaxonomyTable.txt"), sep="\t", header=T) #IS IT REALLY CALLED RUN1 when it is RUN2?
+
+
+run2_18Sv4_asv %>% 
+  left_join(run2_18Sv4_tax) %>% 
+   rename_at(vars(starts_with("MP_")), funs(str_replace(., "MP_", ""))) -> run2_18Sv4_merge
+
+run2_18Sv4_merge %>% 
+  pivot_longer(cols = c(-ASV, -Kingdom, -Phylum, -Class, -Order, -Family,-Genus, -Species), names_to = "Sample", values_to = "nReads") %>% 
+  left_join(run1_4_revamp_formatted_metadata) %>% 
+  filter(., !is.na(Sample_Name)) %>% # this removes all non-EcoFOCI samples. Note this also excludes positive and negative controls. No decontamination has been performed. We should definitely do this at somepoint, but need a conversation as to what approaches
+    group_by(Sample) %>%
+    mutate (Tot = sum(nReads),
+            Prop.abund = nReads / Tot) %>% 
+    group_by (ASV) %>%
+    mutate (Colmax = max(Prop.abund),
+            eDNA.Index = Prop.abund / Colmax) %>%
+  dplyr::select(-Tot,-Colmax) -> run2_18Sv4_long
+  
+  
+```
+
+
+## Run 3
+```{r}
+
+
+run3_18Sv4_asv <- read.table(here("data","REVAMP_out","Run3_from_poseidon_20250103","18Sv4_REVAMP_out","dada2","ASVs_counts.tsv"), sep="\t", header=T) %>% 
+  rename(ASV=x)
+
+run3_18Sv4_tax <- read.table(here("data","REVAMP_out","Run3_from_poseidon_20250103","18Sv4_REVAMP_out","ASV2Taxonomy","18Sv4_REVAMP_out_asvTaxonomyTable.txt"), sep="\t", header=T) 
+
+
+run3_18Sv4_asv %>% 
+  left_join(run3_18Sv4_tax) %>% 
+   rename_at(vars(starts_with("MP_")), funs(str_replace(., "MP_", ""))) -> run3_18Sv4_merge
+
+run3_18Sv4_merge %>% 
+  pivot_longer(cols = c(-ASV, -Kingdom, -Phylum, -Class, -Order, -Family,-Genus, -Species), names_to = "Sample", values_to = "nReads") %>% 
+  left_join(run1_4_revamp_formatted_metadata) %>% 
+  filter(., !is.na(Sample_Name)) %>% # this removes all non-EcoFOCI samples. Note this also excludes positive and negative controls. No decontamination has been performed. We should definitely do this at somepoint, but need a conversation as to what approaches
+    group_by(Sample) %>%
+    mutate (Tot = sum(nReads),
+            Prop.abund = nReads / Tot) %>% 
+    group_by (ASV) %>%
+    mutate (Colmax = max(Prop.abund),
+            eDNA.Index = Prop.abund / Colmax) %>%
+  dplyr::select(-Tot,-Colmax) -> run3_18Sv4_long
+  
+  
+```
+
+## Merge
+
+```{r}
+
+bind_rows(run2_18Sv4_long, run3_18Sv4_long) -> long_18Sv4_EcoFOCI
+
+saveRDS(long_18Sv4_EcoFOCI, here("data","long_data","long_18Sv4_EcoFOCI.RDS"))
+
+```
+
+
+# 18Sv9
+
+## Run 2
+```{r}
+
+
+run2_18Sv9_asv <- read.table(here("data","REVAMP_out","Run2_from_poseidon_20250103","18Sv9","dada2","ASVs_counts.tsv"), sep="\t", header=T) %>% 
+  rename(ASV=x)
+
+run2_18Sv9_tax <- read.table(here("data","REVAMP_out","Run2_from_poseidon_20250103","18Sv9","ASV2Taxonomy","18Sv9_RUN1_asvTaxonomyTable.txt"), sep="\t", header=T) #IS IT REALLY CALLED RUN1 when it is RUN2?
+
+
+run2_18Sv9_asv %>% 
+  left_join(run2_18Sv9_tax) %>% 
+   rename_at(vars(starts_with("MP_")), funs(str_replace(., "MP_", ""))) -> run2_18Sv9_merge
+
+run2_18Sv9_merge %>% 
+  pivot_longer(cols = c(-ASV, -Kingdom, -Phylum, -Class, -Order, -Family,-Genus, -Species), names_to = "Sample", values_to = "nReads") %>% 
+  left_join(run1_4_revamp_formatted_metadata) %>% 
+  filter(., !is.na(Sample_Name)) %>% # this removes all non-EcoFOCI samples. Note this also excludes positive and negative controls. No decontamination has been performed. We should definitely do this at somepoint, but need a conversation as to what approaches
+    group_by(Sample) %>%
+    mutate (Tot = sum(nReads),
+            Prop.abund = nReads / Tot) %>% 
+    group_by (ASV) %>%
+    mutate (Colmax = max(Prop.abund),
+            eDNA.Index = Prop.abund / Colmax) %>%
+  dplyr::select(-Tot,-Colmax) -> run2_18Sv9_long
+  
+  
+```
+
+
+## Run 3
+```{r}
+
+
+run3_18Sv9_asv <- read.table(here("data","REVAMP_out","Run3_from_poseidon_20250103","18Sv9_REVAMP_out","dada2","ASVs_counts.tsv"), sep="\t", header=T) %>% 
+  rename(ASV=x)
+
+run3_18Sv9_tax <- read.table(here("data","REVAMP_out","Run3_from_poseidon_20250103","18Sv9_REVAMP_out","ASV2Taxonomy","18Sv9_REVAMP_out_asvTaxonomyTable.txt"), sep="\t", header=T) 
+
+
+run3_18Sv9_asv %>% 
+  left_join(run3_18Sv9_tax) %>% 
+   rename_at(vars(starts_with("MP_")), funs(str_replace(., "MP_", ""))) -> run3_18Sv9_merge
+
+run3_18Sv9_merge %>% 
+  pivot_longer(cols = c(-ASV, -Kingdom, -Phylum, -Class, -Order, -Family,-Genus, -Species), names_to = "Sample", values_to = "nReads") %>% 
+  left_join(run1_4_revamp_formatted_metadata) %>% 
+  filter(., !is.na(Sample_Name)) %>% # this removes all non-EcoFOCI samples. Note this also excludes positive and negative controls. No decontamination has been performed. We should definitely do this at somepoint, but need a conversation as to what approaches
+    group_by(Sample) %>%
+    mutate (Tot = sum(nReads),
+            Prop.abund = nReads / Tot) %>% 
+    group_by (ASV) %>%
+    mutate (Colmax = max(Prop.abund),
+            eDNA.Index = Prop.abund / Colmax) %>%
+  dplyr::select(-Tot,-Colmax) -> run3_18Sv9_long
+  
+  
+```
+
+## Merge
+
+```{r}
+
+bind_rows(run2_18Sv9_long, run3_18Sv9_long) -> long_18Sv9_EcoFOCI
+
+saveRDS(long_18Sv9_EcoFOCI, here("data","long_data","long_18Sv9_EcoFOCI.RDS"))
+
+```
+
+
+# COI
+
+## Run 2
+```{r}
+
+
+run2_COI_asv <- read.table(here("data","REVAMP_out","Run2_from_poseidon_20250103","COI","dada2","ASVs_counts.tsv"), sep="\t", header=T) %>% 
+  rename(ASV=x)
+
+run2_COI_tax <- read.table(here("data","REVAMP_out","Run2_from_poseidon_20250103","COI","ASV2Taxonomy","COI_RUN1_asvTaxonomyTable.txt"), sep="\t", header=T) #IS IT REALLY CALLED RUN1 when it is RUN2?
+
+
+run2_COI_asv %>% 
+  left_join(run2_COI_tax) %>% 
+   rename_at(vars(starts_with("MP_")), funs(str_replace(., "MP_", ""))) -> run2_COI_merge
+
+run2_COI_merge %>% 
+  pivot_longer(cols = c(-ASV, -Kingdom, -Phylum, -Class, -Order, -Family,-Genus, -Species), names_to = "Sample", values_to = "nReads") %>% 
+  left_join(run1_4_revamp_formatted_metadata) %>% 
+  filter(., !is.na(Sample_Name)) %>% # this removes all non-EcoFOCI samples. Note this also excludes positive and negative controls. No decontamination has been performed. We should definitely do this at somepoint, but need a conversation as to what approaches
+    group_by(Sample) %>%
+    mutate (Tot = sum(nReads),
+            Prop.abund = nReads / Tot) %>% 
+    group_by (ASV) %>%
+    mutate (Colmax = max(Prop.abund),
+            eDNA.Index = Prop.abund / Colmax) %>%
+  dplyr::select(-Tot,-Colmax) -> run2_COI_long
+  
+```
+
+
+## Run 3
+```{r}
+
+
+run3_COI_asv <- read.table(here("data","REVAMP_out","Run3_from_poseidon_20250103","COI_REVAMP_out","dada2","ASVs_counts.tsv"), sep="\t", header=T) %>% 
+  rename(ASV=x)
+
+run3_COI_tax <- read.table(here("data","REVAMP_out","Run3_from_poseidon_20250103","COI_REVAMP_out","ASV2Taxonomy","COI_REVAMP_out_asvTaxonomyTable.txt"), sep="\t", header=T) 
+
+
+run3_COI_asv %>% 
+  left_join(run3_COI_tax) %>% 
+   rename_at(vars(starts_with("MP_")), funs(str_replace(., "MP_", ""))) -> run3_COI_merge
+
+run3_COI_merge %>% 
+  pivot_longer(cols = c(-ASV, -Kingdom, -Phylum, -Class, -Order, -Family,-Genus, -Species), names_to = "Sample", values_to = "nReads") %>% 
+  left_join(run1_4_revamp_formatted_metadata) %>% 
+  filter(., !is.na(Sample_Name)) %>% # this removes all non-EcoFOCI samples. Note this also excludes positive and negative controls. No decontamination has been performed. We should definitely do this at somepoint, but need a conversation as to what approaches
+    group_by(Sample) %>%
+    mutate (Tot = sum(nReads),
+            Prop.abund = nReads / Tot) %>% 
+    group_by (ASV) %>%
+    mutate (Colmax = max(Prop.abund),
+            eDNA.Index = Prop.abund / Colmax) %>%
+  dplyr::select(-Tot,-Colmax) -> run3_COI_long
+  
+  
+```
+
+## Merge
+
+```{r}
+
+bind_rows(run2_COI_long, run3_COI_long) -> long_COI_EcoFOCI
+
+saveRDS(long_COI_EcoFOCI, here("data","long_data","long_COI_EcoFOCI.RDS"))
+
+```
+
+
+# MiFish
+
+## Run 2
+```{r}
+
+
+run2_MiFish_asv <- read.table(here("data","REVAMP_out","Run2_from_poseidon_20250103","MiFish","dada2","ASVs_counts.tsv"), sep="\t", header=T) %>% 
+  rename(ASV=x)
+
+run2_MiFish_tax <- read.table(here("data","REVAMP_out","Run2_from_poseidon_20250103","MiFish","ASV2Taxonomy","MiFish_RUN1_asvTaxonomyTable.txt"), sep="\t", header=T) #IS IT REALLY CALLED RUN1 when it is RUN2?
+
+
+run2_MiFish_asv %>% 
+  left_join(run2_MiFish_tax) %>% 
+   rename_at(vars(starts_with("MP_")), funs(str_replace(., "MP_", ""))) -> run2_MiFish_merge
+
+run2_MiFish_merge %>% 
+  pivot_longer(cols = c(-ASV, -Kingdom, -Phylum, -Class, -Order, -Family,-Genus, -Species), names_to = "Sample", values_to = "nReads") %>% 
+  left_join(run1_4_revamp_formatted_metadata) %>% 
+  filter(., !is.na(Sample_Name)) %>% # this removes all non-EcoFOCI samples. Note this also excludes positive and negative controls. No decontamination has been performed. We should definitely do this at somepoint, but need a conversation as to what approaches
+    group_by(Sample) %>%
+    mutate (Tot = sum(nReads),
+            Prop.abund = nReads / Tot) %>% 
+    group_by (ASV) %>%
+    mutate (Colmax = max(Prop.abund),
+            eDNA.Index = Prop.abund / Colmax) %>%
+  dplyr::select(-Tot,-Colmax) -> run2_MiFish_long
+  
+```
+
+
+## Run 3
+```{r}
+
+
+run3_MiFish_asv <- read.table(here("data","REVAMP_out","Run3_from_poseidon_20250103","MiFish_REVAMP_out","dada2","ASVs_counts.tsv"), sep="\t", header=T) %>% 
+  rename(ASV=x)
+
+run3_MiFish_tax <- read.table(here("data","REVAMP_out","Run3_from_poseidon_20250103","MiFish_REVAMP_out","ASV2Taxonomy","MiFish_REVAMP_out_asvTaxonomyTable.txt"), sep="\t", header=T) 
+
+
+run3_MiFish_asv %>% 
+  left_join(run3_MiFish_tax) %>% 
+   rename_at(vars(starts_with("MP_")), funs(str_replace(., "MP_", ""))) -> run3_MiFish_merge
+
+run3_MiFish_merge %>% 
+  pivot_longer(cols = c(-ASV, -Kingdom, -Phylum, -Class, -Order, -Family,-Genus, -Species), names_to = "Sample", values_to = "nReads") %>% 
+  left_join(run1_4_revamp_formatted_metadata) %>% 
+  filter(., !is.na(Sample_Name)) %>% # this removes all non-EcoFOCI samples. Note this also excludes positive and negative controls. No decontamination has been performed. We should definitely do this at somepoint, but need a conversation as to what approaches
+    group_by(Sample) %>%
+    mutate (Tot = sum(nReads),
+            Prop.abund = nReads / Tot) %>% 
+    group_by (ASV) %>%
+    mutate (Colmax = max(Prop.abund),
+            eDNA.Index = Prop.abund / Colmax) %>%
+  dplyr::select(-Tot,-Colmax) -> run3_MiFish_long
+  
+  
+```
+
+## Merge
+
+```{r}
+
+bind_rows(run2_MiFish_long, run3_MiFish_long) -> long_MiFish_EcoFOCI
+
+saveRDS(long_MiFish_EcoFOCI, here("data","long_data","long_MiFish_EcoFOCI.RDS"))
+
+```

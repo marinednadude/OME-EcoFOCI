@@ -1,0 +1,1418 @@
+ASV	Kingdom	Phylum	Class	Order	Family	Genus	Species
+ASV_1005	Eukaryota	Dinophyceae__p	Dinophyceae	Peridiniales	NA	NA	NA
+ASV_1015	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_1018	Eukaryota	Bacillariophyta	Coscinodiscophyceae	NA	NA	NA	NA
+ASV_1019	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Fragilariopsis	Fragilariopsis oceanica
+ASV_1044	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Pseudo_nitzschia	Pseudo_nitzschia delicatissima
+ASV_106	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_1069	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_1070	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_1071	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_1074	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Thalassiosira	Thalassiosira nordenskioeldii
+ASV_1076	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_1077	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_1079	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_108	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_1081	Eukaryota	Dinophyceae__p	Dinophyceae	Prorocentrales	NA	NA	NA
+ASV_1088	Eukaryota	Dinophyceae__p	Dinophyceae	Levanderina__f__o	Levanderina__f	NA	NA
+ASV_1089	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_1092	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_1099	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_11	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_110	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_1100	Eukaryota	Dinophyceae__p	Dinophyceae	Peridiniales	NA	NA	NA
+ASV_111	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_1127	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Chaetoceros gelidus
+ASV_1128	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_1130	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Fragilariopsis	Fragilariopsis cylindrus
+ASV_1133	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	NA	NA	NA
+ASV_1135	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_1137	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_1143	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Pseudo_nitzschia	Pseudo_nitzschia granii
+ASV_1163	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Pseudo_nitzschia	Pseudo_nitzschia delicatissima
+ASV_1166	Eukaryota	Dinophyceae__p	Dinophyceae	Levanderina__f__o	NA	NA	NA
+ASV_1168	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_1176	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Thalassiosira	Thalassiosira hyalina
+ASV_1177	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_1182	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_119	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_1206	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_1246	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	NA	NA
+ASV_1250	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	NA	NA	NA
+ASV_1254	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_1255	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_1258	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Chaetoceros gelidus
+ASV_1263	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_1264	Eukaryota	Dinophyceae__p	Dinophyceae	Levanderina__f__o	Levanderina__f	NA	NA
+ASV_1267	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_1268	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_1269	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Pseudo_nitzschia	NA
+ASV_1270	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Chaetoceros gelidus
+ASV_1276	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_1284	Eukaryota	Dinophyceae__p	Dinophyceae	Prorocentrales	NA	NA	NA
+ASV_1291	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_130	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_1304	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Bacterosira	Bacterosira sp_ RCC4607
+ASV_1307	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_131	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_1320	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_134	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Cylindrotheca	Cylindrotheca closterium
+ASV_1342	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_1346	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Fragilariopsis	Fragilariopsis oceanica
+ASV_1352	Eukaryota	Dinophyceae__p	Dinophyceae	Prorocentrales	NA	NA	NA
+ASV_1356	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Fragilariopsis	Fragilariopsis reginae_jahniae
+ASV_1361	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Pseudo_nitzschia	NA
+ASV_1365	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Pseudo_nitzschia	Pseudo_nitzschia delicatissima
+ASV_1368	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_1369	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_1374	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_1376	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Minidiscus	NA
+ASV_138	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_1391	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	Kareniaceae	Karlodinium	Karlodinium veneficum
+ASV_1399	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_1401	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_1403	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Porosira	Porosira glacialis
+ASV_1410	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_1420	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_1430	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_1431	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Chaetoceros gelidus
+ASV_1437	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_1439	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_1445	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Pseudo_nitzschia	NA
+ASV_1452	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_146	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_1462	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Shionodiscus	Shionodiscus sp_ IAL_2014
+ASV_1463	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Chaetoceros cf_ neogracilis clade II
+ASV_1467	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Chaetoceros gelidus
+ASV_148	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_149	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_1492	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_1493	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Chaetoceros gelidus
+ASV_1509	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_1517	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Chaetoceros gelidus
+ASV_1525	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_1530	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_1543	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_155	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_1554	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_1557	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_1563	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_1574	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_1575	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Fragilariopsis	Fragilariopsis oceanica
+ASV_1577	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_158	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Pseudo_nitzschia	Pseudo_nitzschia granii
+ASV_1580	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_16	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_1600	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Pseudo_nitzschia	Pseudo_nitzschia delicatissima
+ASV_1601	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_1603	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Minidiscus	NA
+ASV_1604	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	Tovelliaceae	NA	NA
+ASV_1613	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Fragilariopsis	Fragilariopsis oceanica
+ASV_1622	Eukaryota	Dinophyceae__p	Dinophyceae	Prorocentrales	NA	NA	NA
+ASV_1623	Eukaryota	Dinophyceae__p	Dinophyceae	Peridiniales	NA	NA	NA
+ASV_163	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_1634	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_1638	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_1644	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_1646	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_1654	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_1661	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_1662	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_1663	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_1670	Eukaryota	Dinophyceae__p	Dinophyceae	Peridiniales	NA	NA	NA
+ASV_17	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_1702	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Minidiscus	Minidiscus trioculatus
+ASV_1703	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Thalassiosira	NA
+ASV_1711	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_1713	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_1714	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_1716	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	Florenciella__f	Florenciella	NA
+ASV_1718	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	Kareniaceae	Karlodinium	NA
+ASV_1719	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_172	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Pseudo_nitzschia	Pseudo_nitzschia delicatissima
+ASV_1721	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_1726	Eukaryota	Dinophyceae__p	Dinophyceae	Prorocentrales	NA	NA	NA
+ASV_1735	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_174	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_175	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_1763	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_1765	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Pseudo_nitzschia	Pseudo_nitzschia granii
+ASV_177	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	NA	NA	NA
+ASV_1770	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_1775	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_1777	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_1780	Eukaryota	Dinophyceae__p	Dinophyceae	Prorocentrales	NA	NA	NA
+ASV_1784	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_179	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_1795	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_182	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Pseudo_nitzschia	Pseudo_nitzschia delicatissima
+ASV_1829	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Chaetoceros gelidus
+ASV_1838	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_1847	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_1849	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_185	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_1850	Eukaryota	Dinophyceae__p	Dinophyceae	Gonyaulacales	NA	NA	NA
+ASV_1855	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_1860	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Chaetoceros cf_ neogracilis clade I
+ASV_1861	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_1870	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Pseudo_nitzschia	Pseudo_nitzschia pungens
+ASV_1872	Eukaryota	Dinophyceae__p	Dinophyceae	Peridiniales	NA	NA	NA
+ASV_1873	Eukaryota	Dinophyceae__p	Dinophyceae	Prorocentrales	NA	NA	NA
+ASV_1874	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Chaetoceros gelidus
+ASV_188	Eukaryota	Dinophyceae__p	Dinophyceae	Peridiniales	Heterocapsaceae	Heterocapsa	Heterocapsa triquetra
+ASV_1887	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_1896	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_1901	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_1903	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_1906	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	Kareniaceae	NA	NA
+ASV_1924	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_1930	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Chaetoceros gelidus
+ASV_1931	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_1934	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_1937	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_194	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_1940	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_1943	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Pseudo_nitzschia	Pseudo_nitzschia pungens
+ASV_1950	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_1957	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Thalassiosira	Thalassiosira bioculata
+ASV_1962	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_1965	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Pseudo_nitzschia	Pseudo_nitzschia pungens
+ASV_1972	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_1978	Eukaryota	Dinophyceae__p	Dinophyceae	Prorocentrales	NA	NA	NA
+ASV_1979	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_1981	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_1988	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Chaetoceros sp_ CCAP 1010_16
+ASV_1989	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_199	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Pseudo_nitzschia	NA
+ASV_1995	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	NA	NA	NA
+ASV_200	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_2009	Eukaryota	Bacillariophyta	Bacillariophyceae	Naviculales	Diadesmidaceae	Luticola	Luticola ventricosa
+ASV_2017	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Chaetoceros gelidus
+ASV_2018	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_202	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	NA	NA	NA
+ASV_2025	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Chaetoceros gelidus
+ASV_2029	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_203	Eukaryota	Dinophyceae__p	Dinophyceae	Peridiniales	NA	NA	NA
+ASV_2031	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_2033	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_2036	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_204	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	NA	NA
+ASV_2040	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_2041	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_2044	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_205	Eukaryota	Dinophyceae__p	Dinophyceae	Peridiniales	NA	NA	NA
+ASV_2063	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_2070	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_2074	Eukaryota	Dinophyceae__p	Dinophyceae	Prorocentrales	NA	NA	NA
+ASV_2076	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Thalassiosira	Thalassiosira sp_ RCC4858
+ASV_208	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_2087	Eukaryota	Dinophyceae__p	Dinophyceae	Peridiniales	NA	NA	NA
+ASV_2089	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Chaetoceros gelidus
+ASV_2098	Eukaryota	Dinophyceae__p	Dinophyceae	Gonyaulacales	Amphidomataceae	Azadinium	Azadinium perforatum
+ASV_2099	Eukaryota	Dinophyceae__p	Dinophyceae	Levanderina__f__o	NA	NA	NA
+ASV_2116	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Chaetoceros gelidus
+ASV_2117	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_2118	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_2121	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Pseudo_nitzschia	Pseudo_nitzschia pungens
+ASV_2126	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_213	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_2140	Eukaryota	Dinophyceae__p	Dinophyceae	Prorocentrales	NA	NA	NA
+ASV_2142	Eukaryota	Dinophyceae__p	Dinophyceae	Prorocentrales	NA	NA	NA
+ASV_2143	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	Florenciella__f	NA	NA
+ASV_2144	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_2149	Eukaryota	Dinophyceae__p	Dinophyceae	Prorocentrales	NA	NA	NA
+ASV_215	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Chaetoceros gelidus
+ASV_2158	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_2161	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_2169	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	Kareniaceae	NA	NA
+ASV_2177	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_2192	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	Gymnodiniaceae	Gyrodinium	NA
+ASV_2193	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_2195	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_22	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_220	Eukaryota	Dinophyceae__p	Dinophyceae	Prorocentrales	NA	NA	NA
+ASV_2216	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_2228	Eukaryota	Bacillariophyta	Bacillariophyceae	Naviculales	Diadesmidaceae	Luticola	Luticola ventricosa
+ASV_224	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	Gymnodiniaceae	NA	NA
+ASV_2245	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_2259	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_226	Eukaryota	Dinophyceae__p	Dinophyceae	Peridiniales	NA	NA	NA
+ASV_2262	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_2267	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_2268	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_2274	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_2281	Eukaryota	NA	NA	NA	NA	NA	NA
+ASV_2284	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_2292	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_2294	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Chaetoceros gelidus
+ASV_2297	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_23	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Pseudo_nitzschia	Pseudo_nitzschia pungens
+ASV_2300	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Chaetoceros gelidus
+ASV_2301	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_2307	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	Florenciella__f	Florenciella	NA
+ASV_231	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_2312	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_2324	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_2331	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_2336	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_2342	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_2357	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_2358	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_2359	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_2366	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Pseudo_nitzschia	Pseudo_nitzschia delicatissima
+ASV_2368	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_2371	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_2374	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_2377	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_2380	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_2383	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_2385	Eukaryota	Dinophyceae__p	Dinophyceae	Prorocentrales	NA	NA	NA
+ASV_2400	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_2402	Eukaryota	Dinophyceae__p	Dinophyceae	Suessiales	Suessiaceae	Pelagodinium	NA
+ASV_2403	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_2405	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Chaetoceros gelidus
+ASV_2411	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	NA	NA
+ASV_2412	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	NA	NA	NA
+ASV_2419	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Cylindrotheca	Cylindrotheca closterium
+ASV_2425	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_2427	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_243	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_2433	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_2450	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	Gymnodiniaceae	Gyrodinium	Gyrodinium dominans
+ASV_246	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_248	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_2486	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_2492	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Pseudo_nitzschia	Pseudo_nitzschia delicatissima
+ASV_2505	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	NA	NA
+ASV_2516	Eukaryota	Dinophyceae__p	Dinophyceae	Prorocentrales	NA	NA	NA
+ASV_2517	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_2522	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_2524	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_2528	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_2529	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_253	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_2543	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Pseudo_nitzschia	NA
+ASV_2544	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_255	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_2551	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Pseudo_nitzschia	Pseudo_nitzschia delicatissima
+ASV_2560	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_2561	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_2563	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_2567	Eukaryota	Dinophyceae__p	Dinophyceae	Gonyaulacales	NA	NA	NA
+ASV_2569	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	Florenciella__f	NA	NA
+ASV_2571	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_2572	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_2584	Eukaryota	Dinophyceae__p	Dinophyceae	Prorocentrales	NA	NA	NA
+ASV_2586	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_2592	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_2595	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_2605	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_261	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	Gymnodiniaceae	Gyrodinium	Gyrodinium dominans
+ASV_2616	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_2623	Eukaryota	Dinophyceae__p	Dinophyceae	Levanderina__f__o	Levanderina__f	NA	NA
+ASV_2629	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_2632	Eukaryota	Dinophyceae__p	Dinophyceae	Levanderina__f__o	Levanderina__f	NA	NA
+ASV_2635	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Pseudo_nitzschia	Pseudo_nitzschia pungens
+ASV_264	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_2652	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_2657	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_267	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Pseudo_nitzschia	Pseudo_nitzschia seriata
+ASV_2681	Eukaryota	Dinophyceae__p	Dinophyceae	Peridiniales	NA	NA	NA
+ASV_2698	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_2700	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_271	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_272	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_2729	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_2736	Eukaryota	Bacillariophyta	Bacillariophyceae	Naviculales	Diadesmidaceae	Luticola	Luticola ventricosa
+ASV_2738	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_2739	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Fragilariopsis	NA
+ASV_2750	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	Gymnodiniaceae	NA	NA
+ASV_2759	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Chaetoceros gelidus
+ASV_2771	Eukaryota	Bacillariophyta	Bacillariophyceae	Naviculales	Diadesmidaceae	Luticola	Luticola ventricosa
+ASV_2775	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_2783	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_2793	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_2795	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	Florenciella__f	NA	NA
+ASV_2796	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_2799	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_28	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_2801	Eukaryota	Dinophyceae__p	Dinophyceae	Levanderina__f__o	Levanderina__f	NA	NA
+ASV_2807	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_2812	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_2813	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_2815	Eukaryota	Dinophyceae__p	Dinophyceae	Levanderina__f__o	NA	NA	NA
+ASV_282	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_2821	Eukaryota	Dinophyceae__p	Dinophyceae	Gonyaulacales	Amphidomataceae	Azadinium	Azadinium obesum
+ASV_2822	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_2828	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_2835	Eukaryota	Dinophyceae__p	Dinophyceae	Prorocentrales	NA	NA	NA
+ASV_2845	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_2848	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_2850	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Chaetoceros gelidus
+ASV_2855	Eukaryota	Dinophyceae__p	Dinophyceae	Prorocentrales	NA	NA	NA
+ASV_2859	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_2862	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_2866	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_2877	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_288	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Chaetoceros gelidus
+ASV_2898	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Thalassiosira	Thalassiosira nordenskioeldii
+ASV_2902	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Pseudo_nitzschia	Pseudo_nitzschia pungens
+ASV_2903	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_2921	Eukaryota	Dinophyceae__p	Dinophyceae	Peridiniales	NA	NA	NA
+ASV_2938	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Chaetoceros gelidus
+ASV_2947	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_2960	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_2979	Eukaryota	Dinophyceae__p	Dinophyceae	Peridiniales	NA	NA	NA
+ASV_298	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_2981	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	Gymnodiniaceae	Gyrodinium	Gyrodinium dominans
+ASV_2989	Eukaryota	Dinophyceae__p	Dinophyceae	Peridiniales	NA	NA	NA
+ASV_2996	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_3000	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_3009	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_302	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_3024	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_3026	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Chaetoceros gelidus
+ASV_303	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Fragilariopsis	Fragilariopsis cylindrus
+ASV_3032	Eukaryota	Dinophyceae__p	Dinophyceae	Prorocentrales	NA	NA	NA
+ASV_3040	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Fragilariopsis	Fragilariopsis cylindrus
+ASV_3054	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_3074	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Pseudo_nitzschia	NA
+ASV_3075	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Pseudo_nitzschia	Pseudo_nitzschia delicatissima
+ASV_308	Eukaryota	Dinophyceae__p	Dinophyceae	Levanderina__f__o	NA	NA	NA
+ASV_3081	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_3086	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Fragilariopsis	Fragilariopsis oceanica
+ASV_3092	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	Kareniaceae	Karlodinium	NA
+ASV_3093	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_310	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Pseudo_nitzschia	Pseudo_nitzschia pungens
+ASV_3104	Eukaryota	Bacillariophyta	Coscinodiscophyceae	NA	NA	NA	NA
+ASV_3107	Eukaryota	Bacillariophyta	Mediophyceae	Cymatosirales	NA	NA	NA
+ASV_3126	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_3137	Eukaryota	Bacillariophyta	Mediophyceae	NA	NA	NA	NA
+ASV_3138	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_3140	Eukaryota	Bacillariophyta	Bacillariophyceae	NA	NA	NA	NA
+ASV_3148	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_315	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_3158	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_3162	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_3163	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	NA	NA	NA
+ASV_3168	Eukaryota	Dinophyceae__p	Dinophyceae	Prorocentrales	NA	NA	NA
+ASV_3174	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_3182	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	NA	NA	NA
+ASV_3185	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_3195	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Fragilariopsis	NA
+ASV_3205	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_3210	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_3216	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_3218	Eukaryota	Bacillariophyta	Bacillariophyceae	Naviculales	Diadesmidaceae	Luticola	Luticola ventricosa
+ASV_322	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_3224	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_3226	Eukaryota	Dinophyceae__p	Dinophyceae	Peridiniales	NA	NA	NA
+ASV_323	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_3242	Eukaryota	Dinophyceae__p	Dinophyceae	Prorocentrales	NA	NA	NA
+ASV_3244	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_3248	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_325	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Pseudo_nitzschia	Pseudo_nitzschia delicatissima
+ASV_3255	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	Gymnodiniaceae	NA	NA
+ASV_3262	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_3265	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_3281	Eukaryota	Dinophyceae__p	Dinophyceae	Prorocentrales	Prorocentraceae	Prorocentrum	NA
+ASV_3301	Eukaryota	Dinophyceae__p	Dinophyceae	Prorocentrales	NA	NA	NA
+ASV_3305	Eukaryota	Dinophyceae__p	Dinophyceae	Peridiniales	Peridiniaceae	NA	NA
+ASV_3313	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_334	Eukaryota	Dinophyceae__p	Dinophyceae	Prorocentrales	Prorocentraceae	Prorocentrum	NA
+ASV_3357	Eukaryota	Bacillariophyta	Bacillariophyceae	Naviculales	Diadesmidaceae	NA	NA
+ASV_336	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_3363	Eukaryota	Dinophyceae__p	Dinophyceae	Peridiniales	NA	NA	NA
+ASV_3367	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_3373	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	Kareniaceae	NA	NA
+ASV_3376	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_3377	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_3379	Eukaryota	Dinophyceae__p	Dinophyceae	Prorocentrales	NA	NA	NA
+ASV_3388	Eukaryota	Dinophyceae__p	Dinophyceae	Prorocentrales	NA	NA	NA
+ASV_3392	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	NA	NA	NA
+ASV_3409	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_342	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_3421	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_3432	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_3436	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_3452	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_346	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_3460	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Pseudo_nitzschia	Pseudo_nitzschia pungens
+ASV_3466	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_3469	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_3471	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_3475	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	Kareniaceae	Shimiella	Shimiella gracilenta
+ASV_3481	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_3483	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_3508	Eukaryota	Dinophyceae__p	Dinophyceae	Levanderina__f__o	NA	NA	NA
+ASV_3509	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Cylindrotheca	Cylindrotheca closterium
+ASV_3522	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_353	Eukaryota	Dinophyceae__p	Dinophyceae	Levanderina__f__o	Levanderina__f	NA	NA
+ASV_3531	Eukaryota	Dinophyceae__p	Dinophyceae	Prorocentrales	NA	NA	NA
+ASV_3533	Eukaryota	Bacillariophyta	Mediophyceae	Cymatosirales	NA	NA	NA
+ASV_3534	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_3564	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_3567	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_358	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Pseudo_nitzschia	Pseudo_nitzschia delicatissima
+ASV_3580	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Pseudo_nitzschia	Pseudo_nitzschia delicatissima
+ASV_359	Eukaryota	Dinophyceae__p	Dinophyceae	Peridiniales	NA	NA	NA
+ASV_36	Eukaryota	Bacillariophyta	Bacillariophyceae	Naviculales	Diadesmidaceae	Luticola	Luticola ventricosa
+ASV_3603	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_3605	Eukaryota	Bacillariophyta	Bacillariophyceae	NA	NA	NA	NA
+ASV_3606	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	NA	NA
+ASV_3626	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Fragilariopsis	Fragilariopsis reginae_jahniae
+ASV_3628	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_3632	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Chaetoceros cf_ neogracilis clade II
+ASV_3647	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_3650	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_3652	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Fragilariopsis	Fragilariopsis oceanica
+ASV_3659	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_3663	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_367	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_3688	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_3692	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_3693	Eukaryota	Dinophyceae__p	Dinophyceae	Prorocentrales	NA	NA	NA
+ASV_37	Eukaryota	Dinophyceae__p	Dinophyceae	Peridiniales	NA	NA	NA
+ASV_3707	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	Florenciella__f	Florenciella	NA
+ASV_3714	Eukaryota	Dinophyceae__p	Dinophyceae	Prorocentrales	NA	NA	NA
+ASV_3718	Eukaryota	Dinophyceae__p	Dinophyceae	Prorocentrales	NA	NA	NA
+ASV_372	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Pseudo_nitzschia	Pseudo_nitzschia delicatissima
+ASV_3725	Eukaryota	Pelagophyceae__p	Pelagophyceae	Pelagomonadales	NA	NA	NA
+ASV_3726	Eukaryota	Dinophyceae__p	Dinophyceae	Peridiniales	Peridiniaceae	NA	NA
+ASV_3730	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_3731	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_3732	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_3734	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Chaetoceros gelidus
+ASV_3741	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_3743	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_375	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Pseudo_nitzschia	NA
+ASV_3757	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_3768	Eukaryota	Dinophyceae__p	Dinophyceae	Prorocentrales	NA	NA	NA
+ASV_3790	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Fragilariopsis	Fragilariopsis oceanica
+ASV_38	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_380	Eukaryota	Dinophyceae__p	Dinophyceae	Prorocentrales	NA	NA	NA
+ASV_3800	Eukaryota	Dinophyceae__p	Dinophyceae	Prorocentrales	Prorocentraceae	Prorocentrum	NA
+ASV_3802	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Fragilariopsis	Fragilariopsis oceanica
+ASV_3814	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Minidiscus	NA
+ASV_3817	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_3818	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_3822	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_3833	Eukaryota	Dinophyceae__p	Dinophyceae	Levanderina__f__o	Levanderina__f	NA	NA
+ASV_3849	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_3852	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_3861	Eukaryota	Dinophyceae__p	Dinophyceae	Peridiniales	NA	NA	NA
+ASV_3882	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_3885	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_3890	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_3895	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Pseudo_nitzschia	NA
+ASV_3898	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_3899	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_391	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Chaetoceros gelidus
+ASV_3910	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_3911	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_3912	Eukaryota	Dinophyceae__p	Dinophyceae	Gonyaulacales	Amphidomataceae	Azadinium	Azadinium dalianense
+ASV_3921	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_3925	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_393	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_3935	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_3936	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_3939	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Porosira	Porosira glacialis
+ASV_3941	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_3947	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_3964	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_3973	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_3979	Eukaryota	Bacillariophyta	Bacillariophyceae	Naviculales	Diadesmidaceae	NA	NA
+ASV_3982	Eukaryota	Bacillariophyta	Mediophyceae	Cymatosirales	NA	NA	NA
+ASV_3989	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_399	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Fragilariopsis	Fragilariopsis oceanica
+ASV_3997	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_4	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_4001	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_4008	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_401	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Pseudo_nitzschia	Pseudo_nitzschia delicatissima
+ASV_4030	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Chaetoceros gelidus
+ASV_4033	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	Gymnodiniaceae	NA	NA
+ASV_4036	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_4039	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_4048	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_4064	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_4081	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_409	Eukaryota	Bacillariophyta	Bacillariophyceae	NA	NA	NA	NA
+ASV_4096	Eukaryota	NA	NA	NA	NA	NA	NA
+ASV_4104	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_4109	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	Florenciella__f	Florenciella	NA
+ASV_4115	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Minidiscus	NA
+ASV_4122	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_4132	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_4139	Eukaryota	Ctenophora	Tentaculata	NA	NA	NA	NA
+ASV_4147	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_415	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_4152	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Fragilariopsis	Fragilariopsis oceanica
+ASV_4153	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Chaetoceros gelidus
+ASV_4154	Eukaryota	Dinophyceae__p	Dinophyceae	Peridiniales	Peridiniaceae	NA	NA
+ASV_4159	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_416	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_4160	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_4163	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_4167	Eukaryota	Dinophyceae__p	Dinophyceae	Peridiniales	Heterocapsaceae	Heterocapsa	Heterocapsa triquetra
+ASV_419	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Fragilariopsis	Fragilariopsis cylindrus
+ASV_4196	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	NA	NA
+ASV_420	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_4218	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	Florenciella__f	Florenciella	NA
+ASV_4227	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_4230	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_4238	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_424	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Pseudo_nitzschia	Pseudo_nitzschia pungens
+ASV_4240	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	Florenciella__f	Florenciella	NA
+ASV_4241	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_4260	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_4261	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_427	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	Gymnodiniaceae	Gyrodinium	Gyrodinium dominans
+ASV_4273	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_4274	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_4276	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_4283	Eukaryota	Dinophyceae__p	Dinophyceae	Levanderina__f__o	Levanderina__f	NA	NA
+ASV_4285	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	Florenciella__f	NA	NA
+ASV_429	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Pseudo_nitzschia	NA
+ASV_432	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_4322	Eukaryota	Dinophyceae__p	Dinophyceae	Prorocentrales	NA	NA	NA
+ASV_434	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_4344	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	Florenciella__f	Florenciella	NA
+ASV_4351	Eukaryota	Dinophyceae__p	Dinophyceae	Suessiales	Biecheleriaceae	NA	NA
+ASV_4352	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_436	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_4365	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_4366	Eukaryota	Dinophyceae__p	Dinophyceae	Levanderina__f__o	Levanderina__f	NA	NA
+ASV_4369	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_437	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_4382	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Pseudo_nitzschia	NA
+ASV_4393	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_44	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Pseudo_nitzschia	Pseudo_nitzschia delicatissima
+ASV_440	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	Gymnodiniaceae	Gyrodinium	Gyrodinium dominans
+ASV_4401	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_441	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_4418	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_4428	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_4439	Eukaryota	Dinophyceae__p	Dinophyceae	Peridiniales	NA	NA	NA
+ASV_445	Eukaryota	Dinophyceae__p	Dinophyceae	Prorocentrales	NA	NA	NA
+ASV_4450	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_446	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_4468	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Porosira	Porosira glacialis
+ASV_447	Eukaryota	Dinophyceae__p	Dinophyceae	Prorocentrales	NA	NA	NA
+ASV_4473	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	Gymnodiniaceae	Gyrodinium	Gyrodinium dominans
+ASV_4483	Eukaryota	Bacillariophyta	Mediophyceae	Cymatosirales	NA	NA	NA
+ASV_4491	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_4508	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Pseudo_nitzschia	Pseudo_nitzschia delicatissima
+ASV_4509	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_4514	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_4516	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_4517	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	Florenciella__f	Florenciella	NA
+ASV_4519	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_4520	Eukaryota	Dinophyceae__p	Dinophyceae	Prorocentrales	NA	NA	NA
+ASV_4525	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_4527	Eukaryota	Bacillariophyta	Fragilariophyceae	Fragilariales	Fragilariaceae	Asterionellopsis	Asterionellopsis glacialis
+ASV_4528	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	Gymnodiniaceae	Gyrodinium	NA
+ASV_455	Eukaryota	Dinophyceae__p	Dinophyceae	Levanderina__f__o	Levanderina__f	NA	NA
+ASV_4576	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_4587	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_459	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_4597	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_4600	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_4601	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	Florenciella__f	NA	NA
+ASV_461	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_4621	Eukaryota	Dinophyceae__p	Dinophyceae	Levanderina__f__o	Levanderina__f	NA	NA
+ASV_4627	Eukaryota	Pelagophyceae__p	Pelagophyceae	Pelagomonadales	NA	NA	NA
+ASV_4632	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Fragilariopsis	Fragilariopsis reginae_jahniae
+ASV_4639	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_464	Eukaryota	Dinophyceae__p	Dinophyceae	Prorocentrales	NA	NA	NA
+ASV_4640	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Pseudo_nitzschia	NA
+ASV_4645	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_4646	Eukaryota	Dinophyceae__p	Dinophyceae	Prorocentrales	NA	NA	NA
+ASV_4647	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_4648	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_465	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_4654	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_4671	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_468	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Pseudo_nitzschia	Pseudo_nitzschia seriata
+ASV_4680	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_4682	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_4688	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_4700	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_4715	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_4720	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_4724	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	Florenciella__f	NA	NA
+ASV_4747	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	Florenciella__f	Florenciella	NA
+ASV_4748	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Pseudo_nitzschia	Pseudo_nitzschia granii
+ASV_4750	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_4758	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_4766	Eukaryota	Dinophyceae__p	Dinophyceae	Prorocentrales	NA	NA	NA
+ASV_4769	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_4771	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_4792	Eukaryota	Dinophyceae__p	Dinophyceae	Prorocentrales	NA	NA	NA
+ASV_4793	Eukaryota	Dinophyceae__p	Dinophyceae	Prorocentrales	NA	NA	NA
+ASV_4794	Eukaryota	Dinophyceae__p	Dinophyceae	Prorocentrales	NA	NA	NA
+ASV_4796	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_4800	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_4801	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_4802	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_4803	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_4804	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_481	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Fragilariopsis	Fragilariopsis cylindrus
+ASV_4826	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_4830	Eukaryota	Dinophyceae__p	Dinophyceae	Suessiales	Suessiaceae	Polarella	Polarella glacialis
+ASV_4833	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_4840	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_4842	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_4851	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Chaetoceros cf_ neogracilis clade IV
+ASV_4855	Eukaryota	Bacillariophyta	Mediophyceae	Cymatosirales	NA	NA	NA
+ASV_4856	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_4863	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Minidiscus	NA
+ASV_4871	Eukaryota	Dinophyceae__p	Dinophyceae	Prorocentrales	NA	NA	NA
+ASV_4874	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_4886	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_4890	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_4900	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	Florenciella__f	NA	NA
+ASV_4912	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_4924	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_4937	Eukaryota	Bacillariophyta	Mediophyceae	Cymatosirales	NA	NA	NA
+ASV_4940	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_4944	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_4953	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_4957	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_496	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_4974	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Cylindrotheca	NA
+ASV_4979	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_4988	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_4993	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_5004	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	Gymnodiniaceae	NA	NA
+ASV_5013	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_5015	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_5037	Eukaryota	Dinophyceae__p	Dinophyceae	Peridiniales	NA	NA	NA
+ASV_5057	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_5058	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	NA	NA
+ASV_5067	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_5071	Eukaryota	Dinophyceae__p	Dinophyceae	Prorocentrales	NA	NA	NA
+ASV_5073	Eukaryota	Dinophyceae__p	Dinophyceae	Peridiniales	Peridiniaceae	NA	NA
+ASV_5074	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_5075	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_510	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	NA	NA	NA
+ASV_5105	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_5109	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_5134	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_5138	Eukaryota	Dinophyceae__p	Dinophyceae	Peridiniales	NA	NA	NA
+ASV_5139	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_5147	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Pseudo_nitzschia	Pseudo_nitzschia pungens
+ASV_5153	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Chaetoceros atlanticus
+ASV_5158	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_5162	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_5163	Eukaryota	Dinophyceae__p	Dinophyceae	Levanderina__f__o	NA	NA	NA
+ASV_5175	Eukaryota	Phaeophyceae__p	Phaeophyceae	Laminariales	NA	NA	NA
+ASV_519	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_5192	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_5194	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	Florenciella__f	Florenciella	NA
+ASV_5198	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	Florenciella__f	NA	NA
+ASV_5203	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_5207	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_5213	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_5214	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_5224	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_523	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_5232	Eukaryota	Dinophyceae__p	Dinophyceae	Prorocentrales	NA	NA	NA
+ASV_524	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_5242	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_525	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_5251	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_5254	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_5259	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_5270	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	Florenciella__f	NA	NA
+ASV_5273	Eukaryota	Pelagophyceae__p	Pelagophyceae	Pelagomonadales	NA	NA	NA
+ASV_5280	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_5295	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	Florenciella__f	NA	NA
+ASV_5297	Eukaryota	Pelagophyceae__p	Pelagophyceae	Pelagomonadales	NA	NA	NA
+ASV_53	Eukaryota	Dinophyceae__p	Dinophyceae	Prorocentrales	NA	NA	NA
+ASV_5316	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_5317	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	NA	NA	NA
+ASV_5327	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_5328	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_533	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Pseudo_nitzschia	Pseudo_nitzschia delicatissima
+ASV_5330	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_5346	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_5348	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_5354	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Chaetoceros cf_ neogracilis clade II
+ASV_537	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Pseudo_nitzschia	Pseudo_nitzschia delicatissima
+ASV_5378	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_538	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_539	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	NA
+ASV_5399	Eukaryota	Dinophyceae__p	Dinophyceae	Prorocentrales	NA	NA	NA
+ASV_540	Eukaryota	Dinophyceae__p	Dinophyceae	Prorocentrales	NA	NA	NA
+ASV_5406	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_5409	Eukaryota	Dinophyceae__p	Dinophyceae	Prorocentrales	NA	NA	NA
+ASV_5413	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_543	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Thalassiosira	Thalassiosira hyalina
+ASV_5435	Eukaryota	Dinophyceae__p	Dinophyceae	Peridiniales	NA	NA	NA
+ASV_5460	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	NA	NA
+ASV_5464	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_5478	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_5483	Eukaryota	Bacillariophyta	Mediophyceae	Cymatosirales	NA	NA	NA
+ASV_5489	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Thalassiosira	Thalassiosira aff_ guillardii IAL_2014
+ASV_549	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_5492	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_5507	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	Gymnodiniaceae	Gyrodinium	Gyrodinium dominans
+ASV_5517	Eukaryota	Pelagophyceae__p	Pelagophyceae	Pelagomonadales	NA	NA	NA
+ASV_552	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Fragilariopsis	Fragilariopsis oceanica
+ASV_5527	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Fragilariopsis	Fragilariopsis pacifica
+ASV_5528	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_5530	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_5532	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_5534	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_5535	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Chaetoceros cf_ neogracilis clade III
+ASV_5536	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Pseudo_nitzschia	Pseudo_nitzschia delicatissima
+ASV_5537	Eukaryota	Dinophyceae__p	Dinophyceae	Peridiniales	NA	NA	NA
+ASV_5549	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_5554	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_5559	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_5560	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	Florenciella__f	NA	NA
+ASV_5562	Eukaryota	Pelagophyceae__p	Pelagophyceae	Pelagomonadales	NA	NA	NA
+ASV_5578	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_5582	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	Kareniaceae	NA	NA
+ASV_5584	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	Florenciella__f	Florenciella	NA
+ASV_56	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_5621	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_5626	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_5630	Eukaryota	Bacillariophyta	Mediophyceae	Cymatosirales	NA	NA	NA
+ASV_5644	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	NA	NA	NA
+ASV_5646	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_5647	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_5651	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_5655	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_5656	Eukaryota	Dinophyceae__p	Dinophyceae	Prorocentrales	NA	NA	NA
+ASV_5666	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_5669	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Minidiscus	NA
+ASV_567	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_5670	Eukaryota	Dinophyceae__p	Dinophyceae	Prorocentrales	NA	NA	NA
+ASV_5689	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_5703	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	NA	NA
+ASV_571	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_5710	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_572	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_5739	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_5742	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_5743	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_5744	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_5750	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_5770	Eukaryota	Phaeophyceae__p	Phaeophyceae	NA	NA	NA	NA
+ASV_5772	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_5805	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	Florenciella__f	NA	NA
+ASV_5807	Eukaryota	Bacillariophyta	Mediophyceae	Cymatosirales	NA	NA	NA
+ASV_5808	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	NA	NA
+ASV_5811	Eukaryota	Dinophyceae__p	Dinophyceae	Prorocentrales	NA	NA	NA
+ASV_5816	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_5825	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Minidiscus	NA
+ASV_5829	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_5832	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_584	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Pseudo_nitzschia	Pseudo_nitzschia delicatissima
+ASV_5841	Eukaryota	Bacillariophyta	Bacillariophyceae	NA	NA	NA	NA
+ASV_5844	Eukaryota	Dinophyceae__p	Dinophyceae	Peridiniales	NA	NA	NA
+ASV_5850	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	NA	NA
+ASV_5877	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Chaetoceros gelidus
+ASV_5889	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_589	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_5900	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_5915	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_5916	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_5929	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_5939	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Chaetoceros gelidus
+ASV_594	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_5944	Eukaryota	Bacillariophyta	Mediophyceae	Cymatosirales	NA	NA	NA
+ASV_5945	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_5946	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_595	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_5951	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_5954	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_5970	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_5973	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_5989	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_5991	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_5999	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_60	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	Gymnodiniaceae	Gyrodinium	Gyrodinium dominans
+ASV_600	Eukaryota	Dinophyceae__p	Dinophyceae	Prorocentrales	NA	NA	NA
+ASV_6002	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_603	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_604	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_6045	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	NA
+ASV_605	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_6051	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_6052	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_6058	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_6059	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	Gymnodiniaceae	NA	NA
+ASV_6064	Eukaryota	Dinophyceae__p	Dinophyceae	Peridiniales	NA	NA	NA
+ASV_6069	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_6072	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_6081	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_6088	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	Florenciella__f	NA	NA
+ASV_6094	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_6097	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_61	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_6104	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	Gymnodiniaceae	NA	NA
+ASV_6106	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_6113	Eukaryota	Dinophyceae__p	Dinophyceae	Peridiniales	Heterocapsaceae	Heterocapsa	NA
+ASV_6132	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Thalassiosira	Thalassiosira sp_
+ASV_6145	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_6177	Eukaryota	Bacillariophyta	Fragilariophyceae	Rhaponeidales	NA	NA	NA
+ASV_6178	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_618	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_6181	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_619	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_6193	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_6201	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_6202	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_6211	Eukaryota	Dinophyceae__p	Dinophyceae	Prorocentrales	NA	NA	NA
+ASV_6212	Eukaryota	Dinophyceae__p	Dinophyceae	Levanderina__f__o	Levanderina__f	NA	NA
+ASV_6216	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_6218	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	Florenciella__f	NA	NA
+ASV_622	Eukaryota	Dinophyceae__p	Dinophyceae	Peridiniales	NA	NA	NA
+ASV_6222	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_6236	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_6242	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	NA	NA
+ASV_6259	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_6260	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_6272	Eukaryota	Dinophyceae__p	Dinophyceae	Peridiniales	NA	NA	NA
+ASV_628	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	Kareniaceae	Shimiella	Shimiella gracilenta
+ASV_6281	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_6291	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_6293	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_6294	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_6295	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_6298	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_63	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_6302	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_6313	Eukaryota	Dinophyceae__p	Dinophyceae	Prorocentrales	NA	NA	NA
+ASV_6317	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_6318	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_6324	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_6328	Eukaryota	Dinophyceae__p	Dinophyceae	Prorocentrales	NA	NA	NA
+ASV_6329	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_633	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_6334	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_6341	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	Florenciella__f	Florenciella	NA
+ASV_6342	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_6364	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_6372	Eukaryota	Dinophyceae__p	Dinophyceae	Levanderina__f__o	NA	NA	NA
+ASV_6376	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	Florenciella__f	Florenciella	NA
+ASV_6377	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_6379	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_6383	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_6386	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Thalassiosira	Thalassiosira sp_
+ASV_6389	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_6395	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_6396	Eukaryota	Bacillariophyta	Mediophyceae	Cymatosirales	NA	NA	NA
+ASV_640	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_6400	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_6405	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Pseudo_nitzschia	NA
+ASV_6406	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_641	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_6410	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_6413	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	NA	NA
+ASV_6417	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Thalassiosira	Thalassiosira hyalina
+ASV_6423	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_6427	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_643	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_6443	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_645	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Fragilariopsis	Fragilariopsis oceanica
+ASV_6451	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_6460	Eukaryota	Dinophyceae__p	Dinophyceae	Gonyaulacales	Amphidomataceae	Azadinium	Azadinium obesum
+ASV_6463	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_6475	Eukaryota	Bacillariophyta	Bacillariophyceae	NA	NA	NA	NA
+ASV_6482	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Chaetoceros cf_ neogracilis clade I
+ASV_6488	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_6489	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_649	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_6495	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_6499	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_65	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Pseudo_nitzschia	Pseudo_nitzschia delicatissima
+ASV_6501	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_6503	Eukaryota	Bacillariophyta	Mediophyceae	Cymatosirales	NA	NA	NA
+ASV_6504	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_6505	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_6506	Eukaryota	Bacillariophyta	Bacillariophyceae	NA	NA	NA	NA
+ASV_651	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_6511	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_6512	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_6515	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_6524	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_6527	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Fragilariopsis	Fragilariopsis cylindrus
+ASV_6537	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_6543	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_6545	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_6546	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_6549	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_6554	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Thalassiosira	Thalassiosira hyalina
+ASV_6558	Eukaryota	Dinophyceae__p	Dinophyceae	Prorocentrales	NA	NA	NA
+ASV_6562	Eukaryota	Dinophyceae__p	Dinophyceae	Prorocentrales	NA	NA	NA
+ASV_6568	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_6584	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	Florenciella__f	Florenciella	NA
+ASV_6587	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_6594	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_6597	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	Gymnodiniaceae	Gymnodinium	NA
+ASV_6609	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_661	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Thalassiosira	NA
+ASV_6624	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Pseudo_nitzschia	Pseudo_nitzschia pseudodelicatissima
+ASV_6638	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_664	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Pseudo_nitzschia	Pseudo_nitzschia delicatissima
+ASV_6645	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_6647	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Fragilariopsis	Fragilariopsis cylindrus
+ASV_6655	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_6665	Eukaryota	Dinophyceae__p	Dinophyceae	Prorocentrales	NA	NA	NA
+ASV_6667	Eukaryota	Dinophyceae__p	Dinophyceae	Prorocentrales	Prorocentraceae	Prorocentrum	Prorocentrum criophilum
+ASV_6670	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Pseudo_nitzschia	Pseudo_nitzschia delicatissima
+ASV_6686	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_6691	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_6696	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_6699	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_670	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_6703	Eukaryota	Dinophyceae__p	Dinophyceae	Prorocentrales	NA	NA	NA
+ASV_6705	Eukaryota	Dinophyceae__p	Dinophyceae	Prorocentrales	NA	NA	NA
+ASV_671	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_6710	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_6712	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_6721	Eukaryota	Dinophyceae__p	Dinophyceae	Peridiniales	NA	NA	NA
+ASV_6724	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_6726	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_673	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_6738	Eukaryota	Bacillariophyta	Mediophyceae	Cymatosirales	NA	NA	NA
+ASV_6740	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_6741	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_6742	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_6743	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_6746	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_675	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_6750	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Thalassiosira	Thalassiosira hyalina
+ASV_6762	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_6765	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_6766	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_677	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Pseudo_nitzschia	NA
+ASV_6770	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	Kareniaceae	Shimiella	Shimiella gracilenta
+ASV_6779	Eukaryota	Dinophyceae__p	Dinophyceae	Peridiniales	NA	NA	NA
+ASV_6783	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_6785	Eukaryota	Arthropoda	Malacostraca	Amphipoda	Hyperiidae	Hyperia	Hyperia galba
+ASV_6787	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_6789	Eukaryota	Bacillariophyta	Mediophyceae	Cymatosirales	NA	NA	NA
+ASV_6793	Eukaryota	Dinophyceae__p	Dinophyceae	Peridiniales	NA	NA	NA
+ASV_6796	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_6802	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_6806	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	Florenciella__f	NA	NA
+ASV_6808	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_681	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	Kareniaceae	Karlodinium	Karlodinium elegans
+ASV_6810	Eukaryota	Bacillariophyta	Mediophyceae	Cymatosirales	NA	NA	NA
+ASV_6814	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_6815	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	NA	NA
+ASV_6816	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_6826	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_6832	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_684	Eukaryota	Dinophyceae__p	Dinophyceae	Prorocentrales	NA	NA	NA
+ASV_685	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_6859	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	Gymnodiniaceae	Gyrodinium	NA
+ASV_6863	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Chaetoceros atlanticus
+ASV_687	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Fragilariopsis	Fragilariopsis oceanica
+ASV_6880	Eukaryota	Dinophyceae__p	Dinophyceae	Levanderina__f__o	Levanderina__f	NA	NA
+ASV_6889	Eukaryota	Bacillariophyta	Mediophyceae	Cymatosirales	NA	NA	NA
+ASV_689	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_6892	Eukaryota	Bacillariophyta	Mediophyceae	Cymatosirales	NA	NA	NA
+ASV_69	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_6901	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_6905	Eukaryota	Dinophyceae__p	Dinophyceae	Prorocentrales	NA	NA	NA
+ASV_6907	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_6911	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_6915	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_6940	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_6952	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Fragilariopsis	Fragilariopsis oceanica
+ASV_6967	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Chaetoceros gelidus
+ASV_6974	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_6975	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_6976	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_6979	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_6981	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_6986	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_6989	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_6997	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_6999	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_7008	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_7014	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_702	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_7023	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Thalassiosira	Thalassiosira sp_
+ASV_7025	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_7028	Eukaryota	Pelagophyceae__p	Pelagophyceae	Pelagomonadales	Aureococcus__f	NA	NA
+ASV_7047	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	Kareniaceae	NA	NA
+ASV_705	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_7056	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_7074	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_708	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_7084	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_7093	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Corethrales	Corethraceae	Corethron	Corethron hystrix
+ASV_7094	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_71	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	Gymnodiniaceae	Gyrodinium	Gyrodinium dominans
+ASV_7110	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	Florenciella__f	NA	NA
+ASV_7118	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_7124	Eukaryota	Phaeophyceae__p	Phaeophyceae	NA	NA	NA	NA
+ASV_7131	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_7133	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_7143	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_7150	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_7152	Eukaryota	Bacillariophyta	Coscinodiscophyceae	NA	NA	NA	NA
+ASV_7171	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_7174	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_7175	Eukaryota	Bacillariophyta	Mediophyceae	Cymatosirales	NA	NA	NA
+ASV_718	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	Gymnodiniaceae	Gyrodinium	Gyrodinium dominans
+ASV_7185	Eukaryota	Dinophyceae__p	Dinophyceae	Prorocentrales	NA	NA	NA
+ASV_7186	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_7192	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_7196	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_7199	Eukaryota	Oomycota	Pythiales__c	Pythiales	NA	NA	NA
+ASV_72	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	NA	NA	NA
+ASV_7201	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	Florenciella__f	Florenciella	NA
+ASV_7203	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_7208	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Bacterosira	NA
+ASV_7210	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_7211	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_7212	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_7224	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_7225	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	Florenciella__f	NA	NA
+ASV_7233	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_7241	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_7242	Eukaryota	Dinophyceae__p	Dinophyceae	Levanderina__f__o	NA	NA	NA
+ASV_7243	Eukaryota	Dinophyceae__p	Dinophyceae	Suessiales	NA	NA	NA
+ASV_725	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Pseudo_nitzschia	Pseudo_nitzschia delicatissima
+ASV_7251	Eukaryota	Bacillariophyta	Bacillariophyceae	NA	NA	NA	NA
+ASV_7254	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_7259	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_7261	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	Gymnodiniaceae	NA	NA
+ASV_7263	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_7270	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_7273	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	Florenciella__f	NA	NA
+ASV_7274	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_7276	Eukaryota	Dinophyceae__p	Dinophyceae	Prorocentrales	NA	NA	NA
+ASV_7278	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_728	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Thalassiosira	NA
+ASV_7280	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Cylindrotheca	NA
+ASV_7284	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_7301	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	NA	NA
+ASV_7313	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_7317	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_732	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_7324	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_7331	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_7336	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_7339	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_7342	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Thalassiosira	Thalassiosira gravida
+ASV_7351	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_736	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	Gymnodiniaceae	Gyrodinium	Gyrodinium dominans
+ASV_7362	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	NA	NA
+ASV_7367	Eukaryota	Dinophyceae__p	Dinophyceae	Levanderina__f__o	NA	NA	NA
+ASV_737	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_7372	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_7373	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	NA	NA
+ASV_7387	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_7398	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_74	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_740	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Pseudo_nitzschia	Pseudo_nitzschia delicatissima
+ASV_7401	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_7402	Eukaryota	Bacillariophyta	Mediophyceae	Cymatosirales	NA	NA	NA
+ASV_7403	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_7404	Eukaryota	Dinophyceae__p	Dinophyceae	Peridiniales	Peridiniaceae	Scrippsiella	NA
+ASV_7410	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_7411	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_7413	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	NA	NA	NA
+ASV_7416	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_7420	Eukaryota	Bacillariophyta	Fragilariophyceae	Rhaponeidales	NA	NA	NA
+ASV_7421	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Minidiscus	NA
+ASV_7429	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_7440	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_7445	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_7446	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_7448	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_7459	Eukaryota	Bacillariophyta	Bacillariophyceae	NA	NA	NA	NA
+ASV_746	Eukaryota	Dinophyceae__p	Dinophyceae	Prorocentrales	NA	NA	NA
+ASV_7461	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_7470	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_7471	Eukaryota	Dinophyceae__p	Dinophyceae	Peridiniales	Peridiniaceae	NA	NA
+ASV_7475	Eukaryota	Dinophyceae__p	Dinophyceae	Prorocentrales	NA	NA	NA
+ASV_7498	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Fragilariopsis	NA
+ASV_7517	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_7520	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_7522	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_7528	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Skeletonemataceae	NA	NA
+ASV_7545	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_7549	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_7550	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_7551	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_7567	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_7571	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_7589	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Thalassiosira	NA
+ASV_7614	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_7619	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_762	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Pseudo_nitzschia	Pseudo_nitzschia pungens
+ASV_7622	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_7626	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_763	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	NA
+ASV_7635	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_7639	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_7642	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_765	Eukaryota	Dinophyceae__p	Dinophyceae	Prorocentrales	NA	NA	NA
+ASV_7651	Eukaryota	Bacillariophyta	Mediophyceae	Cymatosirales	NA	NA	NA
+ASV_7652	Eukaryota	Dinophyceae__p	Dinophyceae	Prorocentrales	NA	NA	NA
+ASV_7662	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_7670	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_7672	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_7673	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	Florenciella__f	NA	NA
+ASV_768	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_7682	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Thalassiosira	Thalassiosira bioculata
+ASV_7684	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_7685	Eukaryota	Dinophyceae__p	Dinophyceae	Gonyaulacales	Amphidomataceae	Azadinium	Azadinium obesum
+ASV_7687	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Thalassiosira	NA
+ASV_7694	Eukaryota	Dinophyceae__p	Dinophyceae	Prorocentrales	NA	NA	NA
+ASV_7698	Eukaryota	Dinophyceae__p	Dinophyceae	Prorocentrales	NA	NA	NA
+ASV_7700	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_7702	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_7708	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Chaetoceros cf_ neogracilis clade II
+ASV_7716	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_7730	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_7743	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_7748	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_7749	Eukaryota	Dinophyceae__p	Dinophyceae	Prorocentrales	NA	NA	NA
+ASV_7760	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_7762	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_7764	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_7771	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_7775	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_7776	Eukaryota	Bacillariophyta	Mediophyceae	Cymatosirales	NA	NA	NA
+ASV_7777	Eukaryota	Bacillariophyta	Mediophyceae	Cymatosirales	NA	NA	NA
+ASV_7786	Eukaryota	Dinophyceae__p	Dinophyceae	Levanderina__f__o	NA	NA	NA
+ASV_7795	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Thalassiosira	Thalassiosira bioculata
+ASV_7805	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	Florenciella__f	Florenciella	NA
+ASV_7808	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Fragilariopsis	NA
+ASV_7813	Eukaryota	Dinophyceae__p	Dinophyceae	Suessiales	Suessiaceae	Pelagodinium	NA
+ASV_7820	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_7821	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	NA	NA
+ASV_7824	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_7828	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_7829	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Thalassiosira	NA
+ASV_7835	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_7859	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_7860	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	NA	NA
+ASV_7867	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_7871	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Chaetoceros atlanticus
+ASV_7880	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Cylindrotheca	NA
+ASV_7888	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_7894	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_7897	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_79	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_790	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Chaetoceros gelidus
+ASV_7903	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_7905	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_7906	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_7909	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Dictyochales	Dictyochaceae	Dictyocha	Dictyocha speculum
+ASV_7910	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_7911	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_7913	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	Kareniaceae	NA	NA
+ASV_7918	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_7920	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_7935	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_7939	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Chaetoceros gelidus
+ASV_7947	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	NA	NA
+ASV_795	Eukaryota	Dinophyceae__p	Dinophyceae	Prorocentrales	NA	NA	NA
+ASV_797	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_7987	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_7992	Eukaryota	Dinophyceae__p	Dinophyceae	Prorocentrales	NA	NA	NA
+ASV_8	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Pseudo_nitzschia	Pseudo_nitzschia delicatissima
+ASV_801	Eukaryota	Dinophyceae__p	Dinophyceae	Levanderina__f__o	Levanderina__f	NA	NA
+ASV_8016	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_8018	Eukaryota	Bacillariophyta	Bacillariophyceae	NA	NA	NA	NA
+ASV_8026	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_8028	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_803	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_8030	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_8031	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_8040	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	Florenciella__f	NA	NA
+ASV_8050	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_8060	Eukaryota	Dinophyceae__p	Dinophyceae	Levanderina__f__o	Levanderina__f	NA	NA
+ASV_8061	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_8067	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	Kareniaceae	Shimiella	NA
+ASV_8069	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_8073	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_8080	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	NA	NA
+ASV_8084	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_8097	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_8104	Eukaryota	Bacillariophyta	Fragilariophyceae	Rhaponeidales	NA	NA	NA
+ASV_8105	Eukaryota	Bacillariophyta	Mediophyceae	NA	NA	NA	NA
+ASV_8111	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_8130	Eukaryota	Dinophyceae__p	Dinophyceae	Peridiniales	NA	NA	NA
+ASV_8131	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	Florenciella__f	Florenciella	NA
+ASV_8138	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	Gymnodiniaceae	NA	NA
+ASV_8145	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_8146	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_8154	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_8160	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_8165	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_8169	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	NA	NA
+ASV_8173	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	NA	NA
+ASV_8178	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_8190	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_8204	Eukaryota	Bacillariophyta	Mediophyceae	Cymatosirales	NA	NA	NA
+ASV_822	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_8227	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Chaetoceros cf_ neogracilis clade II
+ASV_8228	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_8241	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_8252	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Thalassiosira	NA
+ASV_8269	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_8275	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_8279	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_8287	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_8288	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Thalassiosira	Thalassiosira bioculata
+ASV_8290	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_8291	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_83	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_8309	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_8316	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	Florenciella__f	Florenciella	NA
+ASV_8318	Eukaryota	Dinophyceae__p	Dinophyceae	Prorocentrales	NA	NA	NA
+ASV_8320	Eukaryota	Dinophyceae__p	Dinophyceae	Prorocentrales	NA	NA	NA
+ASV_8324	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_8340	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_8357	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_8359	Eukaryota	Dinophyceae__p	Dinophyceae	Levanderina__f__o	Levanderina__f	NA	NA
+ASV_836	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Fragilariopsis	Fragilariopsis cylindrus
+ASV_8366	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_8367	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Fragilariopsis	Fragilariopsis cylindrus
+ASV_8375	Eukaryota	Bacillariophyta	Fragilariophyceae	Licmophorales	Ulnariaceae	Ctenophora	Ctenophora sp_ _in_ diatoms_
+ASV_8376	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Thalassiosira	Thalassiosira sp_
+ASV_838	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Pseudo_nitzschia	Pseudo_nitzschia delicatissima
+ASV_8381	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	Kareniaceae	NA	NA
+ASV_8384	Eukaryota	Mollusca	Gastropoda	Pteropoda	Limacinidae	Limacina	Limacina helicina
+ASV_8396	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_8406	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Chaetoceros cf_ neogracilis clade II
+ASV_8408	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_841	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_8411	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_8420	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_8422	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	NA	NA
+ASV_8423	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_8426	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_843	Eukaryota	Dinophyceae__p	Dinophyceae	Levanderina__f__o	Levanderina__f	NA	NA
+ASV_8434	Eukaryota	Bacillariophyta	Mediophyceae	Cymatosirales	NA	NA	NA
+ASV_8437	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_8441	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Conticribra	NA
+ASV_8444	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_8449	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_8454	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	NA	NA
+ASV_8462	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_8474	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_848	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_8480	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	NA	NA
+ASV_8482	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_8483	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_8498	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	NA	NA	NA
+ASV_8506	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_8507	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	NA	NA
+ASV_8512	Eukaryota	Bacillariophyta	Coscinodiscophyceae	NA	NA	NA	NA
+ASV_8515	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_8517	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	Kareniaceae	Karlodinium	Karlodinium veneficum
+ASV_8521	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_8530	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_8533	Eukaryota	Dinophyceae__p	Dinophyceae	Levanderina__f__o	Levanderina__f	NA	NA
+ASV_8536	Eukaryota	Pelagophyceae__p	Pelagophyceae	Pelagomonadales	NA	NA	NA
+ASV_8537	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_8542	Eukaryota	Dinophyceae__p	Dinophyceae	Suessiales	NA	NA	NA
+ASV_8543	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_8544	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_8555	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	Pseudochattonella__f	Pseudochattonella	NA
+ASV_8557	Eukaryota	Dinophyceae__p	Dinophyceae	Prorocentrales	NA	NA	NA
+ASV_858	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_8599	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_86	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_8605	Eukaryota	Ctenophora	Tentaculata	Cydippida	Mertensiidae	Mertensia	Mertensia ovum
+ASV_862	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_8627	Eukaryota	Phaeophyceae__p	Phaeophyceae	Laminariales	NA	NA	NA
+ASV_8633	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	Kareniaceae	NA	NA
+ASV_8641	Eukaryota	Dinophyceae__p	Dinophyceae	Suessiales	Suessiaceae	Pelagodinium	NA
+ASV_8649	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	NA	NA
+ASV_8655	Eukaryota	Ctenophora	Tentaculata	Cydippida	Mertensiidae	Mertensia	Mertensia ovum
+ASV_8658	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_8663	Eukaryota	Dinophyceae__p	Dinophyceae	Suessiales	Suessiaceae	NA	NA
+ASV_8676	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Porosira	NA
+ASV_8679	Eukaryota	Bacillariophyta	Bacillariophyceae	NA	NA	NA	NA
+ASV_8681	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	Florenciella__f	NA	NA
+ASV_8687	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_869	Eukaryota	Dinophyceae__p	Dinophyceae	Prorocentrales	Prorocentraceae	Prorocentrum	NA
+ASV_87	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_870	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Pseudo_nitzschia	Pseudo_nitzschia seriata
+ASV_8704	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_8709	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	Gymnodiniaceae	NA	NA
+ASV_8710	Eukaryota	Dinophyceae__p	Dinophyceae	Levanderina__f__o	NA	NA	NA
+ASV_8711	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Thalassiosira	Thalassiosira sp_
+ASV_8714	Eukaryota	Bacillariophyta	Mediophyceae	Cymatosirales	NA	NA	NA
+ASV_8723	Eukaryota	Bacillariophyta	Coscinodiscophyceae	NA	NA	NA	NA
+ASV_8727	Eukaryota	Dinophyceae__p	Dinophyceae	Prorocentrales	NA	NA	NA
+ASV_8747	Eukaryota	Bacillariophyta	Fragilariophyceae	Rhaponeidales	NA	NA	NA
+ASV_8771	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_8781	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	Gymnodiniaceae	Gymnodinium	Gymnodinium aureolum
+ASV_8790	Eukaryota	Bacillariophyta	Fragilariophyceae	Fragilariales	Fragilariaceae	Asterionellopsis	Asterionellopsis glacialis
+ASV_8792	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Chaetoceros gelidus
+ASV_8793	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_8799	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_8803	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_8808	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	NA	NA
+ASV_8810	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_882	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	NA	NA
+ASV_8822	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Chaetoceros cf_ neogracilis clade III
+ASV_8825	Eukaryota	Bacillariophyta	Mediophyceae	Cymatosirales	NA	NA	NA
+ASV_8829	Eukaryota	Bacillariophyta	Fragilariophyceae	Fragilariales	Fragilariaceae	Asterionellopsis	Asterionellopsis glacialis
+ASV_8835	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_8838	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	NA	NA
+ASV_8840	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_8842	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_8869	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	Gymnodiniaceae	Gymnodinium	Gymnodinium aureolum
+ASV_887	Eukaryota	Dinophyceae__p	Dinophyceae	Prorocentrales	NA	NA	NA
+ASV_8871	Eukaryota	Dinophyceae__p	Dinophyceae	Suessiales	NA	NA	NA
+ASV_889	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	Kareniaceae	Shimiella	Shimiella gracilenta
+ASV_8905	Eukaryota	Phaeophyceae__p	Phaeophyceae	NA	NA	NA	NA
+ASV_8909	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	Florenciella__f	NA	NA
+ASV_8910	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_8911	Eukaryota	Bacillariophyta	Mediophyceae	Cymatosirales	NA	NA	NA
+ASV_8926	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_894	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_8951	Eukaryota	Dinophyceae__p	Dinophyceae	Gonyaulacales	Amphidomataceae	Azadinium	Azadinium trinitatum
+ASV_896	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_8964	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Pseudo_nitzschia	Pseudo_nitzschia delicatissima
+ASV_8971	Eukaryota	Dinophyceae__p	Dinophyceae	Prorocentrales	Prorocentraceae	Prorocentrum	NA
+ASV_8987	Eukaryota	Bacillariophyta	Mediophyceae	NA	NA	NA	NA
+ASV_899	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_8993	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_8997	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Thalassiosira	Thalassiosira sp_
+ASV_9	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Chaetoceros gelidus
+ASV_9009	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_9015	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_9019	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	NA	NA
+ASV_902	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Bacterosira	Bacterosira sp_ RCC4607
+ASV_9022	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	NA	NA	NA
+ASV_9031	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_9032	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_9033	Eukaryota	Mollusca	Gastropoda	Pteropoda	Limacinidae	Limacina	Limacina helicina
+ASV_9034	Eukaryota	Mollusca	Gastropoda	Pteropoda	Limacinidae	Limacina	Limacina helicina
+ASV_9035	Eukaryota	Mollusca	Gastropoda	Pteropoda	Limacinidae	Limacina	Limacina helicina
+ASV_906	Eukaryota	Dinophyceae__p	Dinophyceae	Suessiales	Suessiaceae	Pelagodinium	NA
+ASV_923	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_924	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_93	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_939	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_94	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_946	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_954	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Pseudo_nitzschia	Pseudo_nitzschia pungens
+ASV_957	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_958	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Thalassiosira	Thalassiosira sp_
+ASV_960	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_965	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_970	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_971	Eukaryota	Dinophyceae__p	Dinophyceae	NA	NA	NA	NA
+ASV_973	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_982	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Bacterosira	Bacterosira sp_ RCC4607
+ASV_986	Eukaryota	Dinophyceae__p	Dinophyceae	Gymnodiniales	NA	NA	NA
+ASV_993	Eukaryota	Dinophyceae__p	Dinophyceae	Prorocentrales	NA	NA	NA

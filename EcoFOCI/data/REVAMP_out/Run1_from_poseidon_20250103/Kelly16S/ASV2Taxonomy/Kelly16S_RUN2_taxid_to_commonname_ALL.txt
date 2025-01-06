@@ -1,0 +1,123 @@
+Bacteria (eubacteria)	2
+Rickettsiales (rickettsias)	766
+Actinomycetes (high G+C Gram-positive bacteria)	1760
+Eukaryota (eucaryotes)	2759
+Magnoliopsida (flowering plants)	3398
+Porifera (sponges)	6040
+Anthozoa (anthozoans)	6101
+Actiniaria (sea anemones)	6103
+Metridium senile (brown sea anemone)	6116
+Scleractinia (stony corals)	6125
+Nemertea (ribbon worms)	6217
+Heteronemertea (heteronemertine worms)	6219
+Mollusca (mollusks)	6447
+Gastropoda (gastropods)	6448
+Trochidae (top shells)	6466
+Stylommatophora (land snails)	6527
+Bivalvia (bivalves)	6544
+Mytilus californianus (California mussel)	6549
+Mytilus trossulus (common blue mussel)	6551
+Pectinidae (scallops)	6566
+Mactridae (surf clams)	6581
+Solenidae (razor clams)	6585
+Veneridae (venus clams)	6592
+Cephalopoda (cephalopods)	6605
+Watasenia scintillans (sparkling enope)	6625
+Daphnia (common water fleas)	6668
+Pandalus borealis (northern shrimp)	6703
+Amphipoda (beach hoppers, scuds and well shrimps)	6821
+Araneae (spiders)	6893
+Coleoptera (beetles)	7041
+Lepidoptera (butterflies and moths)	7088
+Diptera (flies)	7147
+Chironomidae (nonbiting midges)	7149
+Asteroidea (starfishes)	7588
+Ophiuroidea (brittle stars)	7618
+Echinoidea (sea urchins)	7625
+Holothuroidea (sea cucumbers)	7705
+Chordata (chordates)	7711
+Petromyzontidae (lampreys)	7746
+Chondrichthyes (cartilaginous fishes)	7777
+Prionace glauca (blue shark)	7815
+Chimaeriformes (chimaeras)	7864
+Acipenseriformes (sturgeons and paddlefish)	7899
+Cypriniformes (carps and others)	7952
+Salvelinus namaycush (lake trout)	8040
+Perciformes (perches and others)	8111
+Scombridae (mackerels)	8224
+Aves (birds)	8782
+Charadriiformes (shorebirds and others)	8906
+Lemuridae (lemurs)	9445
+Cercopithecidae (Old World monkeys)	9527
+Hominidae (great apes)	9604
+Homo sapiens (human)	9606
+Otariidae (fur seals & sea lions)	9702
+Orcinus orca (killer whale)	9733
+Phocoena phocoena (harbor porpoise)	9742
+Balaenoptera acutorostrata (minke whale)	9767
+Balaenoptera musculus (blue whale)	9771
+Megaptera novaeangliae (humpback whale)	9773
+Proboscidea (elephants)	9779
+Suidae (pigs)	9821
+Sus scrofa (pig)	9823
+Hemichordata (hemichordates)	10219
+Enteropneusta (acorn worms)	10220
+Uria aalge (common murre)	13746
+Dermaptera (earwigs)	27434
+Aphididae (aphids)	27482
+Metacarcinus magister (Dungeness crab)	29965
+Rajidae (hardnose skates)	30475
+Moridae (morid cods)	30759
+Lutjanidae (snappers)	30850
+Serranidae (sea basses)	30871
+Numenius (curlews)	32638
+Cecidomyiidae (gall midges)	33406
+Carnivora (carnivores)	33554
+Enhydra lutris (sea otter)	34882
+Crinoidea (crinoids)	35069
+Pycnonotidae (bulbuls)	36294
+Modiolus (horsemussels)	40255
+Mammalia (mammals)	40674
+Osmeriformes (freshwater smelts and others)	41711
+Ceratopogonidae (biting midges)	41819
+Siphonophorae (siphonophores)	42759
+Opiliones (harvestmen)	43271
+Porichthys notatus (plainfin midshipman)	45384
+Patiria miniata (bat star)	46514
+Cyclothone atraria (deep-water bristlemouth)	48443
+Insecta (true insects)	50557
+Embiotocidae (surfperches)	50791
+Castor canadensis (American beaver)	51338
+Calopteryx splendens (banded demoiselle)	52612
+Abbottina rivularis (Chinese false gudgeon)	75332
+Aphrocallistes vastus (cloud sponge)	83887
+Pinnotheridae (pea crabs)	84654
+Galeorhinus galeus (tope shark)	86063
+Metacarcinus gracilis (graceful rock crab)	88206
+Merluccius albidus (offshore hake)	89945
+Merluccius productus (North Pacific hake)	89952
+Lagenorhynchus obliquidens (Pacific white-sided dolphin)	90247
+Artiodactyla (whales, hippos, ruminants, pigs, camels etc.)	91561
+Stenobrachius leucopsarus (northern lampfish)	91658
+Euphausia pacifica (North Pacific krill)	102976
+Ruditapes philippinarum (Manila clam)	129788
+Trachipterus trachypterus (ribbon fish)	143894
+Pseudomugilidae (blue eyes)	160493
+Prosorhochmidae (smiling worms)	166020
+Paralepididae (barracudinas)	172138
+Amphimedon compressa (erect rope sponge)	178514
+Citharichthys xanthostigma (longfin sanddab)	195600
+Aequorea coerulescens (belt jellyfish)	210840
+Lutjanus fulviflamma (dory snapper)	260525
+Iotrochota birotulata (green finger sponge)	283497
+Apostichopus japonicus (Japanese sea cucumber)	307972
+Tactostoma macropus (longfin dragonfish)	319451
+Ophidion scrippsae (basketweave cusk-eel)	319755
+Agonopsis vulsa (northern spearnose poacher)	428027
+Apristurus brunneus (brown cat shark)	428037
+Eumicrotremus spinosus (Atlantic spiny lumpsucker)	430040
+Gymnothorax eurostus (Abbott's moray eel)	473453
+Gymnothorax meleagris (turkey moray)	473458
+Limanda sakhalinensis (Sakhalin sole)	641109
+Symphurus ommaspilus (ocellated tounguefish)	1183110
+Arcuatula senhousia (Asian date mussel)	1954227

@@ -1,0 +1,128 @@
+Bacteria (eubacteria)	2
+Myxococcales (fruiting gliding bacteria)	29
+Rickettsiales (rickettsias)	766
+Cyanobacteriota (blue-green algae)	1117
+Actinomycetes (high G+C Gram-positive bacteria)	1760
+Eukaryota (eucaryotes)	2759
+Haptophyta (haptophytes)	2830
+Bacillariophyta (diatoms)	2836
+Dinophyceae (dinoflagellates)	2864
+Phaeophyceae (brown algae)	2870
+Cryptophyceae (cryptomonads)	3027
+Euglenida (euglenids)	3035
+Chlorophyta (green algae)	3041
+Magnoliopsida (flowering plants)	3398
+Prionace glauca (blue shark)	7815
+Hydrolagus colliei (spotted ratfish)	7873
+Salmoniformes (salmons and trouts)	8006
+Osmeridae (smelts)	8012
+Osmerus mordax (rainbow smelt)	8014
+Salmonidae (salmonids)	8015
+Oncorhynchus gorbuscha (pink salmon)	8017
+Oncorhynchus keta (chum salmon)	8018
+Oncorhynchus kisutch (coho salmon)	8019
+Oncorhynchus nerka (sockeye salmon)	8023
+Gadidae (cods)	8045
+Eleginus gracilis (saffron cod)	8047
+Gadus morhua (Atlantic cod)	8049
+Merlucciidae (merluccid hakes)	8061
+Lophiiformes (anglerfishes)	8070
+Cottidae (sculpins)	8092
+Perca flavescens (yellow perch)	8167
+Zoarcidae (eelpouts)	8193
+Lycodes polaris (Canadian eelpout)	8197
+Pleuronectidae (righteye flounders)	8256
+Anatidae (waterfowl)	8830
+Branta canadensis (Canada goose)	8853
+Phasianidae (turkeys)	9005
+Turdus migratorius (American robin)	9188
+Homo sapiens (human)	9606
+Canis lupus (gray wolf)	9612
+Odobenus rosmarus (walrus)	9707
+Phoca vitulina (harbor seal)	9720
+Delphinidae (marine dolphins)	9726
+Orcinus orca (killer whale)	9733
+Phocoena phocoena (harbor porpoise)	9742
+Phocoenoides dalli (Dall's porpoise)	9744
+Delphinapterus leucas (beluga whale)	9749
+Eschrichtius robustus (grey whale)	9764
+Balaenoptera physalus (Fin whale)	9770
+Megaptera novaeangliae (humpback whale)	9773
+Sus scrofa (pig)	9823
+Bos (cattle)	9903
+Bos taurus (domestic cattle)	9913
+Oryctolagus cuniculus (rabbit)	9986
+Lepomis macrochirus (bluegill)	13106
+Balaena mysticetus (bowhead whale)	27602
+Sylvilagus audubonii (desert cottontail)	30581
+Clupea pallasii (Pacific herring)	30724
+Macrouridae (grenadiers)	30761
+Stichaeidae (pricklebacks)	30892
+Mallotus villosus (capelin)	30960
+Oncorhynchus clarkii (cutthroat trout)	30962
+Coscinodiscophyceae (centric diatoms)	33836
+Bacillariophyceae (Raphid, pennate diatoms)	33849
+Eumetopias jubatus (Steller sea lion)	34886
+Erignathus barbatus (bearded seal)	39304
+Mammalia (mammals)	40674
+Rhodospirillaceae (purple nonsulfur bacteria)	41295
+Cyclothone acclinidens (benttooth bristlemouth)	48441
+Cyclothone atraria (deep-water bristlemouth)	48443
+Cyclothone signata (showy bristlemouth)	48453
+Castor canadensis (American beaver)	51338
+Gasterosteus aculeatus (three-spined stickleback)	69293
+Ectothiorhodospiraceae (purple sulfur bacteria)	72276
+Oncorhynchus tshawytscha (Chinook salmon)	74940
+Dallia pectoralis (Alaska blackfish)	75939
+Gadus macrocephalus (Pacific cod)	80720
+Fulica americana (American coot)	81903
+Mylocheilus caurinus (peamouth chub)	86918
+Rhinichthys osculus (speckled dace)	86924
+Microstomus pacificus (Dover sole)	89058
+Merluccius productus (North Pacific hake)	89952
+Diaphus theta (California headlightfish)	91653
+Nannobrachium regale (pinpoint lanternfish)	91654
+Stenobrachius leucopsarus (northern lampfish)	91658
+Mola mola (ocean sunfish)	94237
+Stenobrachius nannochir (garnet lanternfish)	123240
+Cottus cognatus (slimy sculpin)	147210
+Micropterus dolomieu (smallmouth bass)	147949
+Alepocephalus tenebrosus (California slickhead)	170189
+Lipolagus ochotensis (eared blacksmelt)	170193
+Aythya marila (greater scaup)	189534
+Eopsetta jordani (Petrale sole)	195609
+Lyopsetta exilis (slender sole)	195626
+Lycodes diapterus (black eelpout)	215426
+Coryphaenoides filifer (filamented rattail)	216980
+Anoplopoma fimbria (sablefish)	229290
+Engraulis mordax (northern anchovy)	239368
+Thaleichthys pacificus (eulachon)	240832
+Triphoturus mexicanus (Mexican lampfish)	242287
+Spirinchus thaleichthys (longfin smelt)	260508
+Radulinus asprellus (slim sculpin)	274768
+Icichthys lockingtoni (medusafish)	302051
+Chauliodus macouni (Pacific viperfish)	302055
+Harpagornis moorei (New Zealand giant eagle)	307641
+Tactostoma macropus (longfin dragonfish)	319451
+Citharichthys sordidus (Pacific sanddab)	319774
+Sagamichthys abei (shining tubeshoulder)	319782
+Lycenchelys crotalinus (snakehead eelpout)	320591
+Sebastes nebulosus (China rockfish)	394698
+Lumpenus sagitta (snake prickleback)	428036
+Triglops pingelii (ribbed sculpin)	433391
+Allosmerus elongatus (whitebait smelt)	433393
+Liparis fucensis (slipskin snailfish)	433401
+Lycodapus fierasfer (blackmouth eelpout)	433411
+Ammodytes hexapterus (Pacific sand lance)	476914
+Lycodes raridens (marbled eelpout)	512206
+Cryptacanthodes aleutensis (dwarf wrymouth)	557343
+Lycodapus mandibularis (pallid eelpout)	557350
+Melanostigma pammelas (midwater eelpout)	557412
+Enophrys diceraus (antlered sculpin)	980326
+Gymnocanthus tricuspis (Arctic staghorn sculpin)	980329
+Stichaeus punctatus (Arctic shanny)	980344
+Gadus chalcogrammus (walleye pollock)	1042646
+Acantholumpenus mackayi (pighead prickleback)	1049575
+Didymosphenia geminata (rock snot)	1115533
+Lycodapus microchir (obdurate eelpout)	1696856
+Alexandromys kikuchii (Taiwan vole)	3369700

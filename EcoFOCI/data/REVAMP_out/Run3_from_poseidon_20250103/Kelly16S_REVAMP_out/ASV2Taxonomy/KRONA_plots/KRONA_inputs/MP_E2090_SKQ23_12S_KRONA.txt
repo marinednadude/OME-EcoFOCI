@@ -1,0 +1,33 @@
+2	Eukaryota
+1	Eukaryota	Chordata	Aves	Galliformes	Phasianidae	Gallus
+88	Eukaryota	Mollusca	Bivalvia	Cardiida	Tellinidae	Macoma
+1	Eukaryota	Cnidaria	Hydrozoa	Siphonophorae
+1	Eukaryota	Arthropoda	Branchiopoda	Diplostraca	Bosminidae
+69	Eukaryota	Mollusca	Bivalvia	Cardiida
+9	Eukaryota	Porifera	Demospongiae
+51	Eukaryota	Priapulida	Priapulimorpha	Priapulimorphida	Priapulidae	Priapulus	Priapulus caudatus
+46	Eukaryota	Bryozoa	Gymnolaemata	Cheilostomatida
+31	Eukaryota	Bryozoa	Gymnolaemata	Cheilostomatida
+4	Eukaryota	Picozoa
+10	Unknown
+16	Unknown
+12	Eukaryota	Arthropoda	Insecta	Diptera	Chironomidae
+6	Unknown
+3	Eukaryota	Porifera	Demospongiae	Dendroceratida
+34	Eukaryota	Arthropoda	Branchiopoda	Diplostraca	Daphniidae	Daphnia	Daphnia pulex (common water flea)
+4	Bacteria	Candidatus Chazhemtobacteraceae__o__c__p	Candidatus Chazhemtobacteraceae__o__c	Candidatus Chazhemtobacteraceae__o	Candidatus Chazhemtobacteraceae
+2	Unknown
+2	Bacteria	Pseudomonadota	Alphaproteobacteria	Rhodospirillales
+5	Unknown
+68	Eukaryota	Porifera	Demospongiae	Poecilosclerida
+178	Eukaryota	Arthropoda	Hexanauplia	Calanoida	Acartiidae	Acartia	Acartia longiremis
+8	Eukaryota	Arthropoda	Hexanauplia	Calanoida	Clausocalanidae	Pseudocalanus	Pseudocalanus elongatus
+316	Eukaryota	Nemertea	Palaeonemertea	Archinemertea	Cephalotrichidae	Cephalothrix
+3	Eukaryota	Arthropoda	Branchiopoda	Diplostraca	Bosminidae	Eubosmina
+4	Eukaryota	Porifera	Demospongiae	Axinellida
+1	Eukaryota	Bryozoa	Gymnolaemata	Ctenostomatida	Paludicellidae	Paludicella	Paludicella articulata
+4709	Eukaryota
+2	Eukaryota	Chordata	Actinopteri
+10379	Eukaryota	Bryozoa	Gymnolaemata	Cheilostomatida
+17	Eukaryota	Picozoa
+8154	Eukaryota	Bryozoa	Gymnolaemata	Cheilostomatida

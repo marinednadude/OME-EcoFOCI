@@ -1,5 +1,0 @@
-"0","full_long_SKQ21_data_set %>% "
-"0","    filter(., nReads >0) %>% "
-"0","  group_by(Species) %>% "
-"0","  dplyr::summarise(max(nReads), mean(nReads), sum(nReads)) %>% "
-"0","  arrange(desc(`sum(nReads)`))"

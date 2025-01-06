@@ -1,0 +1,89 @@
+16	Eukaryota
+14	Eukaryota	Arthropoda	Thecostraca	Balanomorpha
+20	Eukaryota	Hemichordata	Enteropneusta	Ptychoderidae__o	Ptychoderidae
+16	Eukaryota	Echinodermata	Echinoidea
+27	Eukaryota	Nemertea	Pilidiophora	Heteronemertea	Lineidae	Cerebratulus	Cerebratulus albifrons
+4	Eukaryota	Nemertea	Pilidiophora	Heteronemertea
+1	Eukaryota	Mollusca	Bivalvia	Venerida	Mactridae	Pseudocardium	Pseudocardium sachalinense
+9	Eukaryota	Picozoa
+9	Eukaryota	Picozoa
+5	Eukaryota	Mollusca	Bivalvia	Cardiida	Tellinidae
+31	Eukaryota	Mollusca	Bivalvia	Mytilida	Mytilidae	Mytilus
+27	Eukaryota	Arthropoda	Malacostraca	Decapoda	Pinnotheridae
+94	Eukaryota	Arthropoda	Hexanauplia	Calanoida	Acartiidae	Acartia	Acartia longiremis
+29	Eukaryota	Arthropoda	Malacostraca	Decapoda	Majidae	Loxorhynchus	Loxorhynchus crispatus
+22	Eukaryota	Arthropoda	Malacostraca	Decapoda	Hippidae	Emerita
+4	Eukaryota	Mollusca	Bivalvia	Galeommatida
+177	Eukaryota	Chordata
+15	Eukaryota	Mollusca	Bivalvia	Mytilida	Mytilidae
+39	Eukaryota	Chordata	Mammalia	Artiodactyla
+3	Bacteria	Bacteroidota	Flavobacteriia	Flavobacteriales	Candidatus Karelsulcia__f
+153	Eukaryota	Echinodermata	Asteroidea	Forcipulatida	Asteriidae
+10	Eukaryota	Mollusca	Bivalvia	Myida	Myidae
+10	Eukaryota	Mollusca	Bivalvia	Venerida	Veneridae
+587	Eukaryota	Mollusca	Bivalvia	Cardiida	Tellinidae	Macoma	Macoma nasuta
+53175	Eukaryota	Chordata	Actinopteri
+1	Unknown
+47822	Eukaryota	Mollusca	Bivalvia	Cardiida	Tellinidae	Nitidotellina
+5	Eukaryota	Arthropoda	Hexanauplia	Calanoida	Paracalanidae
+5	Eukaryota	Mollusca	Bivalvia	Adapedonta
+358	Eukaryota	Chordata	Actinopteri
+121	Eukaryota	Porifera	Demospongiae	Poecilosclerida
+90	Eukaryota	Nemertea	Palaeonemertea	Carinomiformes	Carinomidae	Carinoma	Carinoma sp_ 5 TCH_2015
+4	Eukaryota	Bryozoa	Gymnolaemata	Cheilostomatida	Hippothoidae	Celleporella	Celleporella sp_ CAL_2
+24	Eukaryota	Mollusca	Bivalvia	Cardiida	Tellinidae
+23	Eukaryota	Arthropoda	Hexanauplia	Calanoida	Acartiidae	Acartia	Acartia tonsa
+3	Unknown
+2	Eukaryota	Chordata	Actinopteri
+987	Eukaryota	Mollusca	Bivalvia	Venerida
+11	Eukaryota	Nemertea	Pilidiophora	Heteronemertea	Lineidae	Cerebratulus
+24	Eukaryota	Mollusca	Bivalvia	Adapedonta	Pharidae	Siliqua
+65	Eukaryota	Nemertea	Pilidiophora	Heteronemertea	Lineidae	Cerebratulus
+5	Eukaryota	Chordata
+2	Unknown
+33	Eukaryota	Echinodermata	Echinoidea
+2	Unknown
+428	Unknown
+274	Eukaryota	Chordata	Actinopteri
+25	Eukaryota	Echinodermata	Holothuroidea	Dendrochirotida
+241	Eukaryota	Mollusca	Bivalvia	Mytilida	Mytilidae
+14	Eukaryota	Nemertea	Pilidiophora	Heteronemertea	Lineidae	Maculaura
+215	Eukaryota	Chordata	Mammalia	Artiodactyla	Phocoenidae	Phocoena	Phocoena phocoena (harbor porpoise)
+2	Eukaryota	Porifera	Demospongiae	Dendroceratida
+247	Eukaryota	Chordata	Actinopteri
+36	Eukaryota	Mollusca	Bivalvia	Myida
+2	Unknown
+220	Eukaryota	Picozoa
+58	Eukaryota	Nemertea	Palaeonemertea	Tubulaniformes
+104	Eukaryota	Picozoa
+2	Eukaryota	Arthropoda	Malacostraca	Decapoda
+25208	Eukaryota	Mollusca	Bivalvia	Mytilida	Mytilidae	Mytilus
+77	Eukaryota	Porifera	Demospongiae	Axinellida
+5	Eukaryota	Arthropoda	Malacostraca	Decapoda	Callianassidae	Neotrypaea
+4	Eukaryota	Mollusca	Bivalvia	Adapedonta
+2	Bacteria	Bacteroidota	Flavobacteriia	Flavobacteriales	Candidatus Karelsulcia__f
+434	Eukaryota	Nemertea	Palaeonemertea	Carinomiformes	Carinomidae	Carinoma	Carinoma sp_ yellowback
+263	Eukaryota	Mollusca	Bivalvia	Adapedonta
+304	Eukaryota	Chordata	Mammalia	Artiodactyla	Balaenopteridae	Megaptera	Megaptera novaeangliae (humpback whale)
+1201	Eukaryota	Chordata	Actinopteri
+4	Unknown
+1	Eukaryota	Arthropoda	Hexanauplia	Calanoida
+5	Eukaryota	Mollusca	Bivalvia	Myida	Myidae
+1	Unknown
+20	Eukaryota	Picozoa
+1	Eukaryota	Cnidaria	Hydrozoa	Siphonophorae
+3	Eukaryota	Porifera	Demospongiae	Poecilosclerida
+4	Eukaryota	Porifera	Demospongiae	Tethyida	Tethyidae
+363	Eukaryota
+16	Eukaryota	Picozoa
+32	Eukaryota	Bryozoa	Gymnolaemata	Cheilostomatida	Celleporidae	Celleporina	Celleporina souleae
+5530	Eukaryota	Mollusca	Bivalvia	Adapedonta
+172	Eukaryota	Chordata	Actinopteri
+71	Eukaryota	Nemertea	Pilidiophora	Heteronemertea	Lineidae	Cerebratulus
+45	Eukaryota	Hemichordata	Enteropneusta	Harrimaniidae__o	Harrimaniidae	Saccoglossus
+156	Eukaryota	Mollusca	Bivalvia	Cardiida	Tellinidae
+503	Eukaryota
+2	Eukaryota	Echinodermata	Ophiuroidea	Amphilepidida	Ophiotrichidae	Ophiothrix	Ophiothrix angulata
+917	Eukaryota
+115	Eukaryota	Mollusca	Bivalvia	Venerida	Chamidae
+24	Eukaryota	Nemertea	Palaeonemertea	Carinomiformes	Carinomidae	Carinoma	Carinoma mutabilis

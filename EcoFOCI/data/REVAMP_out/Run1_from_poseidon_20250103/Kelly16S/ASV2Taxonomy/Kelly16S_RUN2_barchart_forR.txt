@@ -1,0 +1,4468 @@
+Value	Sample	TerminalTaxa
+73997	MP_E370	Eukaryota
+1	MP_E370	Ulmaridae
+62	MP_E370	Enteroctopus
+664	MP_E370	Homo sapiens
+425	MP_E370	Unknown
+56	MP_E370	Picozoa
+2307	MP_E370	Candidatus Karelsulcia__f
+1	MP_E370	Doliolum nationalis
+11	MP_E370	Paragorgia
+11	MP_E370	Diptera
+42	MP_E370	Poecilosclerida
+7	MP_E370	Chuniphyes multidentata
+949	MP_E370	Hominidae
+38449	MP_E370	Ophiotreta
+85	MP_E370	Trichometra cubensis
+114	MP_E370	Lineidae
+9939	MP_E378	Eukaryota
+311	MP_E378	Homo sapiens
+17796	MP_E378	Unknown
+9106	MP_E378	Picozoa
+55	MP_E378	Candidatus Karelsulcia__f
+396	MP_E378	Poecilosclerida
+1725	MP_E378	Cheilostomatida
+442	MP_E378	Echinoidea
+314	MP_E378	Dendroceratida
+75	MP_E378	Clathrinida
+6	MP_E378	Anomiidae
+36	MP_E378	Polymastia
+1647	MP_E378	Axinellida
+4812	MP_E378	Dendronotus
+3	MP_E378	candidate division WOR_3
+113	MP_E378	Ctenostomatida
+494	MP_E378	Adapedonta
+80	MP_E378	Pseudocalanus elongatus
+1713	MP_E378	Acartia longiremis
+15	MP_E378	Pagurus nigrofascia
+4	MP_E378	Steironepion moniliferum
+5	MP_E378	Holothuroidea
+2	MP_E378	Porifera
+11	MP_E378	Vazella pourtalesii
+376	MP_E378	Thysanoessa
+579	MP_E378	Balanomorpha
+2	MP_E378	Carybdeida
+125	MP_E378	Amphimedon compressa
+936	MP_E378	Rhynchozoon sp_ MHD_2004
+69	MP_E378	Cyclopecten sp_ DJC_2016
+789	MP_E378	Perciformes
+615	MP_E378	Cupuladriidae
+1	MP_E378	Suberitida
+22	MP_E378	Demospongiae
+371	MP_E378	Trochidae
+61	MP_E378	Ophiopholis mirabilis
+130	MP_E378	Dictyodendrillidae
+76	MP_E378	Tethyidae
+151	MP_E378	Romancheinidae
+128	MP_E378	Fenestrulina
+125	MP_E378	Dendronotus venustus
+124	MP_E378	Hemiptera
+14	MP_E378	Callyspongia
+3531	MP_E378	Forcipulatida
+29561	MP_E384_3B	Eukaryota
+197	MP_E384_3B	Homo sapiens
+12895	MP_E384_3B	Unknown
+1315	MP_E384_3B	Picozoa
+32640	MP_E384_3B	Candidatus Karelsulcia__f
+3492	MP_E384_3B	Poecilosclerida
+226	MP_E384_3B	Echinoidea
+159	MP_E384_3B	Dendroceratida
+847	MP_E384_3B	Axinellida
+467	MP_E384_3B	Pseudocalanus elongatus
+4	MP_E384_3B	Acartia longiremis
+5	MP_E384_3B	Holothuroidea
+865	MP_E384_3B	Thysanoessa
+6	MP_E384_3B	Carybdeida
+278	MP_E384_3B	Amphimedon compressa
+378	MP_E384_3B	Cyclopecten sp_ DJC_2016
+192	MP_E384_3B	Demospongiae
+50	MP_E384_3B	Dictyodendrillidae
+139	MP_E384_3B	Tethyidae
+113	MP_E384_3B	Ophiura sarsii
+17	MP_E384_3B	Heterochone calyx
+4	MP_E384_3B	Velatida
+35	MP_E384_3B	Flavobacteriales
+19	MP_E384_3B	Aplysina
+215	MP_E384_3B	Stichopodidae
+306	MP_E384_3B	Strongylocentrotus
+4	MP_E384_3B	Polymastiida
+3	MP_E384_3B	Gymnodinium impudicum
+2	MP_E384_3B	Cyanea
+737	MP_E384_3B	Spatangoida
+274	MP_E384_3B	Bacillota
+79	MP_E384_3B	Crella
+4953	MP_E384_3B	Chimaeriformes
+180	MP_E384_3B	Sclerodactylidae
+336	MP_E384_3B	Aphragmophora
+2735	MP_E384_3B	Antedonidae
+15	MP_E384_3B	Siphonophorae
+206	MP_E384_3B	Chaperiidae
+530	MP_E384_3B	Amphipholis torelli
+8	MP_E384_3B	Environmental Unknown
+5	MP_E384_3B	Spongillida
+105694	MP_E388_1B	Eukaryota
+2521	MP_E388_1B	Homo sapiens
+320	MP_E388_1B	Unknown
+7	MP_E388_1B	Picozoa
+51	MP_E388_1B	Candidatus Karelsulcia__f
+5	MP_E388_1B	Poecilosclerida
+1	MP_E388_1B	Carybdeida
+1	MP_E388_1B	Actinopteri
+602	MP_E388_1B	Harrimaniidae
+681	MP_E388_1B	Thyasiridae
+67	MP_E388_1B	Agelasidae
+560	MP_E388_1B	Trachipterus trachypterus
+4	MP_E388_1B	Sphaeronectes koellikeri
+112	MP_E388_1B	Apostichopus japonicus
+8082	MP_E392	Eukaryota
+8	MP_E392	Ulmaridae
+660	MP_E392	Unknown
+208	MP_E392	Picozoa
+9184	MP_E392	Candidatus Karelsulcia__f
+248	MP_E392	Poecilosclerida
+3	MP_E392	Suberitida
+9	MP_E392	Spongillida
+9960	MP_E392	Actinopteri
+24	MP_E392	Sphaeronectes koellikeri
+356	MP_E392	Eptatretus
+83	MP_E392	Elasipodida
+12643	MP_E392	Stenobrachius leucopsarus
+377	MP_E392	Heteronemertea
+8	MP_E392	Ophiuridae
+43	MP_E392	Cerebratulus sp_ 1 TCH_2015
+1114	MP_E392	Eusergestes arcticus
+1	MP_E392	Actinomycetaceae
+1	MP_E392	Candidatus Beckwithbacteria
+7	MP_E392	Coleoptera
+2	MP_E392	Propionibacteriaceae
+893	MP_E392	Solaster
+1121	MP_E392	Hubrechtidae
+1554	MP_E392	Saccoglossus
+20	MP_E392	Chalinidae
+410	MP_E392	Euphausia pacifica
+120	MP_E392	Hymenodiscus cf_ fragilis RSIOAS009
+86622	MP_E396	Eukaryota
+462	MP_E396	Unknown
+30	MP_E396	Picozoa
+3196	MP_E396	Candidatus Karelsulcia__f
+13	MP_E396	Poecilosclerida
+1331	MP_E396	Lineidae
+2	MP_E396	Holothuroidea
+111	MP_E396	Thysanoessa
+3	MP_E396	Dictyodendrillidae
+82	MP_E396	Antedonidae
+12140	MP_E396	Actinopteri
+109	MP_E396	Agelasidae
+1	MP_E396	Sphaeronectes koellikeri
+95	MP_E396	Heteronemertea
+28	MP_E396	Euphausia pacifica
+5041	MP_E396	Sus scrofa
+2602	MP_E396	Elpidiidae
+22	MP_E396	Gemmatimonadales
+42	MP_E396	Chaetoderma nitidulum
+18	MP_E396	Suidae
+6	MP_E396	Sphaerichthys
+2162	MP_E396	Prionace glauca
+2	MP_E396	Mammalia
+1298	MP_E396	Tubulanidae
+5	MP_E396	Anthozoa
+873	MP_E396	Xylophaga oregona
+10	MP_E396	Chiridota sp_ 2 AKM_2016
+78	MP_E396	Monostilifera
+51884	MP_E400	Eukaryota
+1272	MP_E400	Homo sapiens
+486	MP_E400	Unknown
+26	MP_E400	Picozoa
+5	MP_E400	Holothuroidea
+6	MP_E400	Flavobacteriales
+1054	MP_E400	Harrimaniidae
+9	MP_E400	Agelasidae
+39	MP_E400	Synaptidae
+4694	MP_E400	Plutonaster agassizi
+22	MP_E400	Candidatus Woesebacteria
+3495	MP_E400	Allapasus
+1782	MP_E400	Benthogone abstrusa
+2	MP_E400	Phacellophora sp_ PCA7
+580	MP_E400	Valenciniidae
+543	MP_E400	Peniagone vitrea setosa
+300	MP_E400	Synallactidae
+236	MP_E400	Apodida
+41839	MP_E404	Eukaryota
+1414	MP_E404	Unknown
+3313	MP_E404	Picozoa
+1344	MP_E404	Candidatus Karelsulcia__f
+2596	MP_E404	Poecilosclerida
+568	MP_E404	Echinoidea
+160	MP_E404	Dendroceratida
+766	MP_E404	Axinellida
+750	MP_E404	Pseudocalanus elongatus
+1295	MP_E404	Acartia longiremis
+2361	MP_E404	Thysanoessa
+614	MP_E404	Balanomorpha
+12	MP_E404	Carybdeida
+361	MP_E404	Amphimedon compressa
+10860	MP_E404	Perciformes
+41	MP_E404	Suberitida
+216	MP_E404	Demospongiae
+200	MP_E404	Fenestrulina
+1959	MP_E404	Forcipulatida
+10	MP_E404	Ophiura sarsii
+19	MP_E404	Velatida
+207	MP_E404	Flavobacteriales
+1417	MP_E404	Stichopodidae
+1594	MP_E404	Strongylocentrotus
+979	MP_E404	Spatangoida
+452	MP_E404	Crella
+2357	MP_E404	Aphragmophora
+4	MP_E404	Siphonophorae
+3	MP_E404	Spongillida
+5223	MP_E404	Actinopteri
+2	MP_E404	Sphaeronectes koellikeri
+1534	MP_E404	Euphausia pacifica
+4	MP_E404	Candidatus Woesebacteria
+103	MP_E404	Electridae
+4	MP_E404	Candidatus Pseudothioglobus__f
+807	MP_E404	Sagittidae
+850	MP_E404	Petrasma pervernicosa
+26	MP_E404	Crellidae
+22	MP_E404	Negombata magnifica
+7891	MP_E404	Chordata
+14	MP_E404	Pseudocalanus
+60	MP_E404	Artiodactyla
+410	MP_E404	Asteriidae
+8	MP_E404	Clausocalanidae
+6	MP_E404	Suberites domuncula
+2533	MP_E404	Orcinus orca
+115	MP_E404	Modiolus
+6	MP_E404	Centropagidae
+439	MP_E404	Celleporina souleae
+236	MP_E404	Dendrochirotida
+578	MP_E404	Bugulidae
+3409	MP_E404	Megaptera novaeangliae
+116	MP_E404	Negombata
+13226	MP_E408	Eukaryota
+3728	MP_E408	Unknown
+10880	MP_E408	Picozoa
+706	MP_E408	Candidatus Karelsulcia__f
+3559	MP_E408	Poecilosclerida
+1504	MP_E408	Cheilostomatida
+424	MP_E408	Echinoidea
+219	MP_E408	Dendroceratida
+1047	MP_E408	Axinellida
+167	MP_E408	Pseudocalanus elongatus
+1459	MP_E408	Acartia longiremis
+4405	MP_E408	Thysanoessa
+669	MP_E408	Balanomorpha
+12	MP_E408	Carybdeida
+18	MP_E408	Amphimedon compressa
+510	MP_E408	Rhynchozoon sp_ MHD_2004
+71	MP_E408	Demospongiae
+52	MP_E408	Ophiopholis mirabilis
+18	MP_E408	Stichopodidae
+1162	MP_E408	Chimaeriformes
+109	MP_E408	Sclerodactylidae
+35	MP_E408	Aphragmophora
+6	MP_E408	Siphonophorae
+378	MP_E408	Amphipholis torelli
+20755	MP_E408	Actinopteri
+3185	MP_E408	Euphausia pacifica
+2884	MP_E408	Tubulanidae
+18	MP_E408	Anthozoa
+22	MP_E408	Sagittidae
+845	MP_E408	Chordata
+351	MP_E408	Asteriidae
+31	MP_E408	Centropagidae
+247	MP_E408	Celleporina souleae
+59	MP_E408	Lepadidae__o
+33	MP_E408	Lineus flavescens
+50	MP_E408	Polydactylus
+46	MP_E408	Tubulanus sp_ 3 TCH_2015
+89	MP_E408	Amphipoda
+1448	MP_E408	Evadne
+31	MP_E408	Cypriniformes
+26	MP_E408	Riserius
+717	MP_E408	Pinnixa
+19	MP_E408	Hoilungia
+13	MP_E408	Elusimicrobiota
+3	MP_E408	Neogastropoda
+256	MP_E408	Trochida
+4	MP_E408	Parasagitta
+177	MP_E408	Cephalothrix
+3	MP_E408	Oweniidae
+3	MP_E408	Rhodobacterales
+3	MP_E408	Betaproteobacteria
+3	MP_E408	Ototyphlonemertidae
+2	MP_E408	Fusobacteriales
+727	MP_E408	Margarites
+2737	MP_E408	Phocoena phocoena
+28	MP_E408	Psammobiidae
+581	MP_E408	Henricia
+14234	MP_E408	Chondrichthyes
+312	MP_E408	Carinoma mutabilis
+290	MP_E408	Flustridae
+5453	MP_E408	Rajidae
+6	MP_E408	Calanoida
+131	MP_E408	Oerstedia sp_ SJ 64
+582	MP_E408	Luidia foliolata
+10703	MP_E411_1T	Eukaryota
+2054	MP_E411_1T	Unknown
+3342	MP_E411_1T	Picozoa
+144	MP_E411_1T	Candidatus Karelsulcia__f
+2466	MP_E411_1T	Poecilosclerida
+67	MP_E411_1T	Echinoidea
+120	MP_E411_1T	Dendroceratida
+702	MP_E411_1T	Axinellida
+137	MP_E411_1T	Pseudocalanus elongatus
+13351	MP_E411_1T	Acartia longiremis
+2935	MP_E411_1T	Thysanoessa
+134	MP_E411_1T	Balanomorpha
+4	MP_E411_1T	Carybdeida
+3	MP_E411_1T	Demospongiae
+1398	MP_E411_1T	Spatangoida
+17	MP_E411_1T	Bacillota
+10434	MP_E411_1T	Aphragmophora
+1	MP_E411_1T	Spongillida
+28359	MP_E411_1T	Actinopteri
+70	MP_E411_1T	Saccoglossus
+682	MP_E411_1T	Euphausia pacifica
+19	MP_E411_1T	Anthozoa
+386	MP_E411_1T	Sagittidae
+673	MP_E411_1T	Petrasma pervernicosa
+1299	MP_E411_1T	Chordata
+2	MP_E411_1T	Centropagidae
+11	MP_E411_1T	Lineus flavescens
+28	MP_E411_1T	Tubulanus sp_ 3 TCH_2015
+3	MP_E411_1T	Amphipoda
+91	MP_E411_1T	Pinnixa
+2	MP_E411_1T	Oweniidae
+1828	MP_E411_1T	Psammobiidae
+2	MP_E411_1T	Phoronidae__o
+29574	MP_E411_1T	Tellinidae
+1	MP_E411_1T	Cephalopoda
+2041	MP_E411_1T	Otariidae
+37	MP_E411_1T	Carnivora
+5	MP_E411_1T	Opiliones
+25031	MP_E411_1T	Osmeriformes
+19	MP_E411_1T	Clavagellidae
+45	MP_E411_1T	Prosorhochmidae
+43	MP_E411_1T	Parasagitta elegans
+16	MP_E411_1T	Glebocarcinus oregonensis
+57290	MP_E423	Eukaryota
+21	MP_E423	Enteroctopus
+94	MP_E423	Homo sapiens
+595	MP_E423	Unknown
+2279	MP_E423	Picozoa
+7	MP_E423	Candidatus Karelsulcia__f
+237	MP_E423	Poecilosclerida
+9	MP_E423	Lineidae
+204	MP_E423	Cheilostomatida
+155	MP_E423	Echinoidea
+37	MP_E423	Dendroceratida
+45	MP_E423	Clathrinida
+63	MP_E423	Anomiidae
+2	MP_E423	Polymastia
+97	MP_E423	Axinellida
+16	MP_E423	candidate division WOR_3
+3199	MP_E423	Adapedonta
+3	MP_E423	Pseudocalanus elongatus
+331	MP_E423	Acartia longiremis
+9	MP_E423	Pagurus nigrofascia
+130	MP_E423	Thysanoessa
+51254	MP_E423	Balanomorpha
+14	MP_E423	Amphimedon compressa
+51	MP_E423	Rhynchozoon sp_ MHD_2004
+377	MP_E423	Perciformes
+46	MP_E423	Suberitida
+50	MP_E423	Demospongiae
+133	MP_E423	Trochidae
+13	MP_E423	Ophiopholis mirabilis
+11	MP_E423	Tethyidae
+111	MP_E423	Callyspongia
+51	MP_E423	Forcipulatida
+65	MP_E423	Stichopodidae
+49	MP_E423	Strongylocentrotus
+30	MP_E423	Crella
+304	MP_E423	Chimaeriformes
+12	MP_E423	Sclerodactylidae
+13	MP_E423	Aphragmophora
+2	MP_E423	Antedonidae
+173	MP_E423	Amphipholis torelli
+1485	MP_E423	Actinopteri
+19	MP_E423	Euphausia pacifica
+8	MP_E423	Mammalia
+4	MP_E423	Monostilifera
+36	MP_E423	Sagittidae
+59	MP_E423	Asteriidae
+53	MP_E423	Celleporina souleae
+18	MP_E423	Dendrochirotida
+31	MP_E423	Bugulidae
+2	MP_E423	Lineus flavescens
+15	MP_E423	Amphipoda
+4	MP_E423	Pinnixa
+258	MP_E423	Trochida
+3	MP_E423	Oweniidae
+56	MP_E423	Margarites
+6	MP_E423	Psammobiidae
+53	MP_E423	Carinoma mutabilis
+14	MP_E423	Luidia foliolata
+6464	MP_E423	Tellinidae
+516	MP_E423	Otariidae
+555	MP_E423	Osmeriformes
+1	MP_E423	Glebocarcinus oregonensis
+6	MP_E423	Lyonsiidae__o
+81	MP_E423	Schizomavella acuta
+10	MP_E423	Corticium
+66	MP_E423	Camarodonta
+46	MP_E423	Cellariidae
+58	MP_E423	Parasmittina
+17	MP_E423	Cliona patera
+51	MP_E423	Psolus
+48	MP_E423	Chlamys hastata
+1	MP_E423	Synchaetidae
+18	MP_E423	Celleporella hyalina
+37	MP_E423	Munididae
+80	MP_E423	Cucumaria
+35	MP_E423	Solaster endeca
+30	MP_E423	Petaloconchus
+29	MP_E423	Echinasteridae
+3	MP_E423	Aoroides columbiae
+14	MP_E423	Pachycheles
+21	MP_E423	Hiatellidae
+20368	MP_E423	Mytilus
+11	MP_E423	Compsomyax subdiaphana
+3339	MP_E423	Hiatella
+15	MP_E423	Latrunculiidae
+13	MP_E423	Muggiaea atlantica
+13	MP_E423	Eualus
+13	MP_E423	Lucapina
+11	MP_E423	Pseudocnus
+9	MP_E423	Escharinidae
+7	MP_E423	Insecta
+6	MP_E423	Lutjanidae
+4	MP_E423	Bitias
+61	MP_E423	Mytilus californianus
+6	MP_E423	Cerebratulus
+2	MP_E423	Jakobida
+2	MP_E423	Homosclerophorida
+61	MP_E423	Alcyonidiidae
+21	MP_E423	Dermasterias imbricata
+8	MP_E423	Carcinonemertes
+147	MP_E423	Pectinidae
+2	MP_E423	Sapromyza palpella
+6	MP_E423	Zygonemertes
+2	MP_E423	Moerella
+21	MP_E423	Octopodidae
+16	MP_E423	Crassadoma gigantea
+117	MP_E423	Adeonidae
+48124	MP_E427	Eukaryota
+1	MP_E427	Ulmaridae
+393	MP_E427	Unknown
+793	MP_E427	Picozoa
+3062	MP_E427	Candidatus Karelsulcia__f
+849	MP_E427	Poecilosclerida
+58	MP_E427	Echinoidea
+24	MP_E427	Dendroceratida
+392	MP_E427	Axinellida
+5369	MP_E427	Thysanoessa
+5	MP_E427	Carybdeida
+23	MP_E427	Demospongiae
+2	MP_E427	Dictyodendrillidae
+7251	MP_E427	Spatangoida
+121	MP_E427	Aphragmophora
+2	MP_E427	Siphonophorae
+246	MP_E427	Amphipholis torelli
+2	MP_E427	Spongillida
+14777	MP_E427	Euphausia pacifica
+75	MP_E427	Tubulanidae
+3	MP_E427	Anthozoa
+2	MP_E427	Candidatus Woesebacteria
+240	MP_E427	Sagittidae
+1416	MP_E427	Chordata
+1999	MP_E427	Artiodactyla
+389	MP_E427	Asteriidae
+3594	MP_E427	Megaptera novaeangliae
+13	MP_E427	Tellinidae
+155	MP_E427	Cephalopoda
+9	MP_E427	Latrunculiidae
+1119	MP_E427	Merluccius
+3	MP_E427	Erysipelotrichales
+3	MP_E427	Candidatus Pseudothioglobus__f__o
+311	MP_E427	Galeorhinus galeus
+11817	MP_E431	Eukaryota
+28	MP_E431	Enteroctopus
+992	MP_E431	Unknown
+1807	MP_E431	Picozoa
+2502	MP_E431	Candidatus Karelsulcia__f
+1877	MP_E431	Poecilosclerida
+51	MP_E431	Cheilostomatida
+54	MP_E431	Echinoidea
+101	MP_E431	Dendroceratida
+614	MP_E431	Axinellida
+130	MP_E431	Adapedonta
+655	MP_E431	Acartia longiremis
+3170	MP_E431	Thysanoessa
+15006	MP_E431	Perciformes
+258	MP_E431	Demospongiae
+1	MP_E431	Dictyodendrillidae
+330	MP_E431	Forcipulatida
+1159	MP_E431	Spatangoida
+2735	MP_E431	Chimaeriformes
+450	MP_E431	Aphragmophora
+5	MP_E431	Siphonophorae
+6	MP_E431	Spongillida
+9536	MP_E431	Actinopteri
+4	MP_E431	Heteronemertea
+10418	MP_E431	Euphausia pacifica
+396	MP_E431	Sagittidae
+3406	MP_E431	Chordata
+2417	MP_E431	Artiodactyla
+147	MP_E431	Negombata
+1736	MP_E431	Phocoena phocoena
+3338	MP_E431	Chondrichthyes
+3	MP_E431	Candidatus Pseudothioglobus__f__o
+70	MP_E431	Aplysinidae
+5	MP_E431	Clathria prolifera
+35	MP_E431	Lutjanus fulviflamma
+3	MP_E431	Chlorophyceae
+5	MP_E431	Cercopithecidae
+7	MP_E431	Ophiura luetkenii
+327	MP_E431	Gorgonocephalus
+155	MP_E431	Tetractinellida
+122	MP_E431	Serranidae
+1987	MP_E435	Unknown
+1470	MP_E435	Picozoa
+9995	MP_E435	Candidatus Karelsulcia__f
+3963	MP_E435	Poecilosclerida
+995	MP_E435	Echinoidea
+96	MP_E435	Dendroceratida
+916	MP_E435	Axinellida
+34	MP_E435	Pseudocalanus elongatus
+443	MP_E435	Acartia longiremis
+5076	MP_E435	Thysanoessa
+39	MP_E435	Carybdeida
+36	MP_E435	Cyclopecten sp_ DJC_2016
+141	MP_E435	Demospongiae
+14	MP_E435	Dictyodendrillidae
+95	MP_E435	Tethyidae
+3998	MP_E435	Spatangoida
+91	MP_E435	Bacillota
+113	MP_E435	Crella
+9134	MP_E435	Chimaeriformes
+298	MP_E435	Aphragmophora
+5	MP_E435	Antedonidae
+8	MP_E435	Siphonophorae
+224	MP_E435	Amphipholis torelli
+1	MP_E435	Spongillida
+68622	MP_E435	Actinopteri
+2	MP_E435	Actinomycetaceae
+4951	MP_E435	Euphausia pacifica
+7	MP_E435	Anthozoa
+102	MP_E435	Monostilifera
+300	MP_E435	Sagittidae
+6982	MP_E435	Chordata
+80	MP_E435	Artiodactyla
+1747	MP_E435	Modiolus
+4705	MP_E435	Megaptera novaeangliae
+10	MP_E435	Amphipoda
+65	MP_E435	Pinnixa
+917	MP_E435	Chondrichthyes
+2855	MP_E435	Rajidae
+182	MP_E435	Luidia foliolata
+249	MP_E435	Prosorhochmidae
+11	MP_E435	Cerebratulus
+284	MP_E435	Pectinidae
+1188	MP_E435	Merluccius
+2	MP_E435	Clathria prolifera
+62	MP_E435	Crella elegans
+709	MP_E435	Magelonidae
+28	MP_E435	Tetilla dactyloidea
+12	MP_E435	Ampithoidae
+225	MP_E435	Nemertea
+41	MP_E435	Ophiopholis sp_ EAC01
+559	MP_E435	Seguenziida
+356	MP_E435	Parasmittina jeffreysi
+2	MP_E435	Chaetopteridae__o
+309	MP_E435	Orthasterias koehleri
+156	MP_E435	Porella
+45	MP_E435	Heteromolpadia tridens
+120	MP_E435	Chlamys islandica
+3047	MP_E438	Eukaryota
+10	MP_E438	Ulmaridae
+781	MP_E438	Unknown
+674	MP_E438	Picozoa
+10222	MP_E438	Candidatus Karelsulcia__f
+912	MP_E438	Poecilosclerida
+410	MP_E438	Echinoidea
+10	MP_E438	Dendroceratida
+264	MP_E438	Axinellida
+2704	MP_E438	Thysanoessa
+1	MP_E438	Demospongiae
+14	MP_E438	Dictyodendrillidae
+88	MP_E438	Ophiura sarsii
+1088	MP_E438	Spatangoida
+5027	MP_E438	Chimaeriformes
+97	MP_E438	Antedonidae
+5	MP_E438	Siphonophorae
+482	MP_E438	Amphipholis torelli
+6	MP_E438	Spongillida
+8946	MP_E438	Actinopteri
+44	MP_E438	Eusergestes arcticus
+5	MP_E438	Actinomycetaceae
+23693	MP_E438	Euphausia pacifica
+4	MP_E438	Candidatus Pseudothioglobus__f
+373	MP_E438	Petrasma pervernicosa
+10348	MP_E438	Chordata
+2429	MP_E438	Megaptera novaeangliae
+77	MP_E438	Tellinidae
+2	MP_E438	Candidatus Pseudothioglobus__f__o
+61	MP_E438	Ophiopholis sp_ EAC01
+205	MP_E438	Gallus
+17726	MP_E442	Eukaryota
+34	MP_E442	Ulmaridae
+1085	MP_E442	Unknown
+245	MP_E442	Picozoa
+18488	MP_E442	Candidatus Karelsulcia__f
+796	MP_E442	Poecilosclerida
+398	MP_E442	Lineidae
+11	MP_E442	Echinoidea
+6	MP_E442	Dendroceratida
+99	MP_E442	Axinellida
+6	MP_E442	Holothuroidea
+90	MP_E442	Thysanoessa
+14	MP_E442	Carybdeida
+8	MP_E442	Suberitida
+13	MP_E442	Dictyodendrillidae
+187	MP_E442	Ophiura sarsii
+57	MP_E442	Flavobacteriales
+765	MP_E442	Spatangoida
+5	MP_E442	Spongillida
+6472	MP_E442	Actinopteri
+10	MP_E442	Heteronemertea
+1	MP_E442	Ophiuridae
+10	MP_E442	Actinomycetaceae
+4426	MP_E442	Euphausia pacifica
+199	MP_E442	Monostilifera
+3	MP_E442	Candidatus Woesebacteria
+33	MP_E442	Apodida
+10415	MP_E442	Chordata
+4180	MP_E442	Cephalopoda
+18	MP_E442	Opiliones
+36	MP_E442	Hiatella
+354	MP_E442	Merluccius
+26	MP_E442	Loxosomella
+5	MP_E442	Rickettsiales
+5	MP_E442	Actinomycetes
+3	MP_E442	Myxoderma platyacanthum
+1262	MP_E442	Onykia
+63	MP_E442	Cancellothyrididae
+108	MP_E442	Decapoda
+46440	MP_E446_1B_PCR1	Eukaryota
+1030	MP_E446_1B_PCR1	Unknown
+2653	MP_E446_1B_PCR1	Picozoa
+1174	MP_E446_1B_PCR1	Candidatus Karelsulcia__f
+4631	MP_E446_1B_PCR1	Poecilosclerida
+1612	MP_E446_1B_PCR1	Echinoidea
+261	MP_E446_1B_PCR1	Dendroceratida
+249	MP_E446_1B_PCR1	Clathrinida
+936	MP_E446_1B_PCR1	Axinellida
+29	MP_E446_1B_PCR1	candidate division WOR_3
+10	MP_E446_1B_PCR1	Adapedonta
+182	MP_E446_1B_PCR1	Pseudocalanus elongatus
+2810	MP_E446_1B_PCR1	Acartia longiremis
+105	MP_E446_1B_PCR1	Balanomorpha
+2	MP_E446_1B_PCR1	Carybdeida
+30	MP_E446_1B_PCR1	Amphimedon compressa
+114	MP_E446_1B_PCR1	Rhynchozoon sp_ MHD_2004
+19195	MP_E446_1B_PCR1	Perciformes
+164	MP_E446_1B_PCR1	Cupuladriidae
+53	MP_E446_1B_PCR1	Demospongiae
+9	MP_E446_1B_PCR1	Ophiopholis mirabilis
+19	MP_E446_1B_PCR1	Tethyidae
+23	MP_E446_1B_PCR1	Callyspongia
+613	MP_E446_1B_PCR1	Forcipulatida
+4	MP_E446_1B_PCR1	Flavobacteriales
+53	MP_E446_1B_PCR1	Stichopodidae
+227	MP_E446_1B_PCR1	Strongylocentrotus
+254	MP_E446_1B_PCR1	Spatangoida
+417	MP_E446_1B_PCR1	Aphragmophora
+5	MP_E446_1B_PCR1	Siphonophorae
+10	MP_E446_1B_PCR1	Spongillida
+23645	MP_E446_1B_PCR1	Actinopteri
+56	MP_E446_1B_PCR1	Heteronemertea
+2	MP_E446_1B_PCR1	Propionibacteriaceae
+2920	MP_E446_1B_PCR1	Saccoglossus
+16	MP_E446_1B_PCR1	Anthozoa
+191	MP_E446_1B_PCR1	Monostilifera
+1	MP_E446_1B_PCR1	Candidatus Woesebacteria
+5	MP_E446_1B_PCR1	Candidatus Pseudothioglobus__f
+2567	MP_E446_1B_PCR1	Chordata
+85	MP_E446_1B_PCR1	Centropagidae
+17	MP_E446_1B_PCR1	Celleporina souleae
+1945	MP_E446_1B_PCR1	Megaptera novaeangliae
+9	MP_E446_1B_PCR1	Lineus flavescens
+7	MP_E446_1B_PCR1	Amphipoda
+9	MP_E446_1B_PCR1	Pinnixa
+36	MP_E446_1B_PCR1	Oweniidae
+195	MP_E446_1B_PCR1	Margarites
+54	MP_E446_1B_PCR1	Phocoena phocoena
+231	MP_E446_1B_PCR1	Flustridae
+4	MP_E446_1B_PCR1	Calanoida
+16	MP_E446_1B_PCR1	Oerstedia sp_ SJ 64
+7	MP_E446_1B_PCR1	Corticium
+41	MP_E446_1B_PCR1	Cellariidae
+1758	MP_E446_1B_PCR1	Mytilus
+44	MP_E446_1B_PCR1	Mytilus californianus
+44	MP_E446_1B_PCR1	Cerebratulus
+37	MP_E446_1B_PCR1	Crella elegans
+1159	MP_E446_1B_PCR1	Magelonidae
+70	MP_E446_1B_PCR1	Gymnothorax zonipectis
+40	MP_E446_1B_PCR1	Candidae
+62	MP_E446_1B_PCR1	Calopteryx splendens
+51	MP_E446_1B_PCR1	Terebratulina unguicula
+58	MP_E446_1B_PCR1	Agonopsis vulsa
+45	MP_E446_1B_PCR1	Chironomidae
+682	MP_E446_1B_PCR1	Ophiuroidea
+3	MP_E446_1B_PCR1	Columbellidae
+44	MP_E446_1B_PCR1	Sinonovacula
+4	MP_E446_1B_PCR1	Haplosporidiidae
+202	MP_E446_1B_PCR1	Molpadida
+19	MP_E446_1B_PCR1	Macoma
+706	MP_E446_1B_PCR1	Magelona
+147	MP_E446_1B_PCR1	Watersiporidae
+38	MP_E446_1B_PCR1	Anaspidacea
+112	MP_E446_1B_PCR1	Bugulina
+85588	MP_E446_2B_PCR1	Eukaryota
+194	MP_E446_2B_PCR1	Homo sapiens
+1397	MP_E446_2B_PCR1	Unknown
+3293	MP_E446_2B_PCR1	Picozoa
+1706	MP_E446_2B_PCR1	Candidatus Karelsulcia__f
+5373	MP_E446_2B_PCR1	Poecilosclerida
+317	MP_E446_2B_PCR1	Cheilostomatida
+1818	MP_E446_2B_PCR1	Echinoidea
+484	MP_E446_2B_PCR1	Dendroceratida
+1300	MP_E446_2B_PCR1	Axinellida
+62	MP_E446_2B_PCR1	Pseudocalanus elongatus
+8829	MP_E446_2B_PCR1	Acartia longiremis
+174	MP_E446_2B_PCR1	Thysanoessa
+3	MP_E446_2B_PCR1	Balanomorpha
+13	MP_E446_2B_PCR1	Carybdeida
+81	MP_E446_2B_PCR1	Amphimedon compressa
+9	MP_E446_2B_PCR1	Rhynchozoon sp_ MHD_2004
+3681	MP_E446_2B_PCR1	Perciformes
+266	MP_E446_2B_PCR1	Demospongiae
+26	MP_E446_2B_PCR1	Callyspongia
+18	MP_E446_2B_PCR1	Stichopodidae
+133	MP_E446_2B_PCR1	Spatangoida
+91	MP_E446_2B_PCR1	Bacillota
+501	MP_E446_2B_PCR1	Aphragmophora
+5	MP_E446_2B_PCR1	Siphonophorae
+9895	MP_E446_2B_PCR1	Actinopteri
+870	MP_E446_2B_PCR1	Saccoglossus
+210	MP_E446_2B_PCR1	Euphausia pacifica
+11	MP_E446_2B_PCR1	Anthozoa
+30	MP_E446_2B_PCR1	Monostilifera
+4	MP_E446_2B_PCR1	Candidatus Woesebacteria
+90	MP_E446_2B_PCR1	Sagittidae
+2070	MP_E446_2B_PCR1	Chordata
+231	MP_E446_2B_PCR1	Centropagidae
+107	MP_E446_2B_PCR1	Dendrochirotida
+22	MP_E446_2B_PCR1	Negombata
+109	MP_E446_2B_PCR1	Amphipoda
+120	MP_E446_2B_PCR1	Pinnixa
+27	MP_E446_2B_PCR1	Elusimicrobiota
+38	MP_E446_2B_PCR1	Oweniidae
+1395	MP_E446_2B_PCR1	Rajidae
+6594	MP_E446_2B_PCR1	Calanoida
+373	MP_E446_2B_PCR1	Luidia foliolata
+48	MP_E446_2B_PCR1	Tellinidae
+652	MP_E446_2B_PCR1	Osmeriformes
+4	MP_E446_2B_PCR1	Parasagitta elegans
+70	MP_E446_2B_PCR1	Lyonsiidae__o
+5051	MP_E446_2B_PCR1	Mytilus
+17	MP_E446_2B_PCR1	Latrunculiidae
+83	MP_E446_2B_PCR1	Mytilus californianus
+158	MP_E446_2B_PCR1	Alcyonidiidae
+172	MP_E446_2B_PCR1	Magelonidae
+272	MP_E446_2B_PCR1	Gallus
+23	MP_E446_2B_PCR1	Candidae
+344	MP_E446_2B_PCR1	Ophiuroidea
+74	MP_E446_2B_PCR1	Molpadida
+37	MP_E446_2B_PCR1	Anaspidacea
+95	MP_E446_2B_PCR1	Lepraliellidae
+77	MP_E446_2B_PCR1	Phidolopora pacifica
+34	MP_E446_2B_PCR1	Cricotopus
+30	MP_E446_2B_PCR1	Humilaria kennerleyi
+15	MP_E446_2B_PCR1	Bacteria
+5	MP_E446_2B_PCR1	Acetomicrobiaceae
+4	MP_E446_2B_PCR1	Pseudomonadales
+3	MP_E446_2B_PCR1	Aequorea coerulescens
+2	MP_E446_2B_PCR1	Mariniblastus
+147	MP_E446_2B_PCR1	Patinopecten caurinus
+971	MP_E446_2B_PCR1	Fredericella
+504	MP_E446_2B_PCR1	Mytilidae
+90	MP_E446_2B_PCR1	Axinella
+225	MP_E446_2B_PCR1	Micrura wilsoni
+12	MP_E446_2B_PCR1	Cochlodesma
+140	MP_E446_2B_PCR1	Thermobia
+109	MP_E446_2B_PCR1	Galeommatida
+31636	MP_E446_3B_PCR1	Eukaryota
+1172	MP_E446_3B_PCR1	Unknown
+3638	MP_E446_3B_PCR1	Picozoa
+1859	MP_E446_3B_PCR1	Candidatus Karelsulcia__f
+5285	MP_E446_3B_PCR1	Poecilosclerida
+5	MP_E446_3B_PCR1	Chuniphyes multidentata
+103	MP_E446_3B_PCR1	Cheilostomatida
+2053	MP_E446_3B_PCR1	Echinoidea
+373	MP_E446_3B_PCR1	Dendroceratida
+1184	MP_E446_3B_PCR1	Axinellida
+1	MP_E446_3B_PCR1	candidate division WOR_3
+115	MP_E446_3B_PCR1	Pseudocalanus elongatus
+7126	MP_E446_3B_PCR1	Acartia longiremis
+563	MP_E446_3B_PCR1	Thysanoessa
+213	MP_E446_3B_PCR1	Balanomorpha
+7	MP_E446_3B_PCR1	Carybdeida
+89	MP_E446_3B_PCR1	Demospongiae
+149	MP_E446_3B_PCR1	Ophiopholis mirabilis
+5	MP_E446_3B_PCR1	Dictyodendrillidae
+53	MP_E446_3B_PCR1	Stichopodidae
+563	MP_E446_3B_PCR1	Aphragmophora
+17	MP_E446_3B_PCR1	Siphonophorae
+4	MP_E446_3B_PCR1	Spongillida
+35974	MP_E446_3B_PCR1	Actinopteri
+11	MP_E446_3B_PCR1	Coleoptera
+1160	MP_E446_3B_PCR1	Saccoglossus
+169	MP_E446_3B_PCR1	Euphausia pacifica
+61	MP_E446_3B_PCR1	Monostilifera
+5	MP_E446_3B_PCR1	Candidatus Woesebacteria
+568	MP_E446_3B_PCR1	Sagittidae
+443	MP_E446_3B_PCR1	Petrasma pervernicosa
+1065	MP_E446_3B_PCR1	Chordata
+800	MP_E446_3B_PCR1	Centropagidae
+108	MP_E446_3B_PCR1	Celleporina souleae
+143	MP_E446_3B_PCR1	Tubulanus sp_ 3 TCH_2015
+13	MP_E446_3B_PCR1	Amphipoda
+13	MP_E446_3B_PCR1	Oweniidae
+1773	MP_E446_3B_PCR1	Phocoena phocoena
+4	MP_E446_3B_PCR1	Calanoida
+65	MP_E446_3B_PCR1	Tellinidae
+1891	MP_E446_3B_PCR1	Osmeriformes
+57	MP_E446_3B_PCR1	Prosorhochmidae
+10310	MP_E446_3B_PCR1	Mytilus
+90	MP_E446_3B_PCR1	Mytilus californianus
+5	MP_E446_3B_PCR1	Candidatus Pseudothioglobus__f__o
+16	MP_E446_3B_PCR1	Clathria prolifera
+2	MP_E446_3B_PCR1	Chlorophyceae
+33	MP_E446_3B_PCR1	Porella
+33	MP_E446_3B_PCR1	Decapoda
+626	MP_E446_3B_PCR1	Ophiuroidea
+3	MP_E446_3B_PCR1	Sinonovacula
+80	MP_E446_3B_PCR1	Molpadida
+57	MP_E446_3B_PCR1	Macoma
+2	MP_E446_3B_PCR1	Anaspidacea
+19	MP_E446_3B_PCR1	Cochlodesma
+108	MP_E446_3B_PCR1	Oshurkovia littoralis
+11	MP_E446_3B_PCR1	Lucinida
+5	MP_E446_3B_PCR1	Alphaproteobacteria
+3	MP_E446_3B_PCR1	Crangon sp_ UF_53625
+340	MP_E446_3B_PCR1	Asteroidea
+25	MP_E446_3B_PCR1	Tresus
+3934	MP_E449_1B_PCR1	Eukaryota
+5	MP_E449_1B_PCR1	Enteroctopus
+133	MP_E449_1B_PCR1	Unknown
+411	MP_E449_1B_PCR1	Picozoa
+9	MP_E449_1B_PCR1	Candidatus Karelsulcia__f
+302	MP_E449_1B_PCR1	Poecilosclerida
+9	MP_E449_1B_PCR1	Cheilostomatida
+629	MP_E449_1B_PCR1	Echinoidea
+75	MP_E449_1B_PCR1	Dendroceratida
+2	MP_E449_1B_PCR1	Anomiidae
+64	MP_E449_1B_PCR1	Axinellida
+342	MP_E449_1B_PCR1	Dendronotus
+34	MP_E449_1B_PCR1	Pseudocalanus elongatus
+2099	MP_E449_1B_PCR1	Acartia longiremis
+55098	MP_E449_1B_PCR1	Balanomorpha
+4	MP_E449_1B_PCR1	Suberitida
+7	MP_E449_1B_PCR1	Demospongiae
+20	MP_E449_1B_PCR1	Romancheinidae
+20	MP_E449_1B_PCR1	Callyspongia
+4	MP_E449_1B_PCR1	Crella
+32	MP_E449_1B_PCR1	Aphragmophora
+41273	MP_E449_1B_PCR1	Actinopteri
+908	MP_E449_1B_PCR1	Saccoglossus
+29	MP_E449_1B_PCR1	Euphausia pacifica
+6	MP_E449_1B_PCR1	Anthozoa
+7	MP_E449_1B_PCR1	Monostilifera
+23	MP_E449_1B_PCR1	Sagittidae
+20	MP_E449_1B_PCR1	Asteriidae
+55	MP_E449_1B_PCR1	Centropagidae
+28	MP_E449_1B_PCR1	Celleporina souleae
+12	MP_E449_1B_PCR1	Dendrochirotida
+1	MP_E449_1B_PCR1	Lineus flavescens
+7	MP_E449_1B_PCR1	Amphipoda
+460	MP_E449_1B_PCR1	Cephalothrix
+672	MP_E449_1B_PCR1	Oweniidae
+246	MP_E449_1B_PCR1	Carinoma mutabilis
+301	MP_E449_1B_PCR1	Rajidae
+15	MP_E449_1B_PCR1	Calanoida
+4	MP_E449_1B_PCR1	Tellinidae
+25	MP_E449_1B_PCR1	Cephalopoda
+713	MP_E449_1B_PCR1	Osmeriformes
+18	MP_E449_1B_PCR1	Glebocarcinus oregonensis
+2	MP_E449_1B_PCR1	Celleporella hyalina
+1	MP_E449_1B_PCR1	Aoroides columbiae
+63433	MP_E449_1B_PCR1	Mytilus
+3	MP_E449_1B_PCR1	Cerebratulus
+3	MP_E449_1B_PCR1	Dermasterias imbricata
+12	MP_E449_1B_PCR1	Moerella
+54	MP_E449_1B_PCR1	Crassadoma gigantea
+3	MP_E449_1B_PCR1	Crella elegans
+4	MP_E449_1B_PCR1	Nemertea
+166	MP_E449_1B_PCR1	Ophiuroidea
+317	MP_E449_1B_PCR1	Sinonovacula
+45	MP_E449_1B_PCR1	Molpadida
+4	MP_E449_1B_PCR1	Macoma
+9	MP_E449_1B_PCR1	Anaspidacea
+22	MP_E449_1B_PCR1	Mytilidae
+2	MP_E449_1B_PCR1	Siliqua alta
+13	MP_E449_1B_PCR1	Microporella cf_ ciliata AW214
+85	MP_E449_1B_PCR1	Carinoma hamanako
+2	MP_E449_1B_PCR1	Ischyroceridae
+6	MP_E449_1B_PCR1	Maculaura
+4	MP_E449_1B_PCR1	Riserius sp_ no eyes
+2262	MP_E449_2B_PCR1	Eukaryota
+16	MP_E449_2B_PCR1	Enteroctopus
+204	MP_E449_2B_PCR1	Unknown
+416	MP_E449_2B_PCR1	Picozoa
+6	MP_E449_2B_PCR1	Candidatus Karelsulcia__f
+386	MP_E449_2B_PCR1	Poecilosclerida
+26	MP_E449_2B_PCR1	Cheilostomatida
+458	MP_E449_2B_PCR1	Echinoidea
+146	MP_E449_2B_PCR1	Dendroceratida
+93	MP_E449_2B_PCR1	Axinellida
+51	MP_E449_2B_PCR1	Pseudocalanus elongatus
+801	MP_E449_2B_PCR1	Acartia longiremis
+7	MP_E449_2B_PCR1	Thysanoessa
+241	MP_E449_2B_PCR1	Balanomorpha
+2	MP_E449_2B_PCR1	Carybdeida
+14	MP_E449_2B_PCR1	Rhynchozoon sp_ MHD_2004
+120	MP_E449_2B_PCR1	Perciformes
+1	MP_E449_2B_PCR1	Suberitida
+8	MP_E449_2B_PCR1	Demospongiae
+5	MP_E449_2B_PCR1	Ophiopholis mirabilis
+8	MP_E449_2B_PCR1	Callyspongia
+28	MP_E449_2B_PCR1	Sclerodactylidae
+7	MP_E449_2B_PCR1	Aphragmophora
+15812	MP_E449_2B_PCR1	Actinopteri
+4	MP_E449_2B_PCR1	Heteronemertea
+1558	MP_E449_2B_PCR1	Saccoglossus
+21	MP_E449_2B_PCR1	Euphausia pacifica
+1	MP_E449_2B_PCR1	Gemmatimonadales
+3	MP_E449_2B_PCR1	Suidae
+4	MP_E449_2B_PCR1	Anthozoa
+1	MP_E449_2B_PCR1	Monostilifera
+294	MP_E449_2B_PCR1	Chordata
+6	MP_E449_2B_PCR1	Asteriidae
+46	MP_E449_2B_PCR1	Centropagidae
+2	MP_E449_2B_PCR1	Dendrochirotida
+179	MP_E449_2B_PCR1	Megaptera novaeangliae
+2	MP_E449_2B_PCR1	Lepadidae__o
+8	MP_E449_2B_PCR1	Amphipoda
+360	MP_E449_2B_PCR1	Cephalothrix
+289	MP_E449_2B_PCR1	Oweniidae
+724	MP_E449_2B_PCR1	Phocoena phocoena
+437	MP_E449_2B_PCR1	Carinoma mutabilis
+63	MP_E449_2B_PCR1	Rajidae
+233	MP_E449_2B_PCR1	Calanoida
+30	MP_E449_2B_PCR1	Cephalopoda
+1031	MP_E449_2B_PCR1	Osmeriformes
+11	MP_E449_2B_PCR1	Glebocarcinus oregonensis
+5	MP_E449_2B_PCR1	Cellariidae
+1	MP_E449_2B_PCR1	Cliona patera
+30	MP_E449_2B_PCR1	Cucumaria
+4	MP_E449_2B_PCR1	Aoroides columbiae
+101317	MP_E449_2B_PCR1	Mytilus
+16	MP_E449_2B_PCR1	Mytilus californianus
+2	MP_E449_2B_PCR1	Cerebratulus
+64	MP_E449_2B_PCR1	Dermasterias imbricata
+7	MP_E449_2B_PCR1	Moerella
+30	MP_E449_2B_PCR1	Parasmittina jeffreysi
+200	MP_E449_2B_PCR1	Ophiuroidea
+2442	MP_E449_2B_PCR1	Sinonovacula
+20	MP_E449_2B_PCR1	Molpadida
+17	MP_E449_2B_PCR1	Macoma
+22	MP_E449_2B_PCR1	Anaspidacea
+13	MP_E449_2B_PCR1	Siliqua alta
+124	MP_E449_2B_PCR1	Carinoma hamanako
+4	MP_E449_2B_PCR1	Riserius sp_ no eyes
+46	MP_E449_2B_PCR1	Chthamalus
+31	MP_E449_2B_PCR1	Scrupocellaria varians
+267	MP_E449_2B_PCR1	Phoca
+7	MP_E449_2B_PCR1	Lepidoptera
+17	MP_E449_2B_PCR1	Carinina sp_ chocolate
+3	MP_E449_2B_PCR1	Lampropidae
+3	MP_E449_2B_PCR1	Pseudosuberites sp_ CY_2021
+2	MP_E449_2B_PCR1	Pontogeneiidae
+3	MP_E449_2B_PCR1	Metacarcinus magister
+324	MP_E449_2B_PCR1	Enhydra lutris
+7513	MP_E449_3B_PCR1	Eukaryota
+4	MP_E449_3B_PCR1	Enteroctopus
+7	MP_E449_3B_PCR1	Homo sapiens
+158	MP_E449_3B_PCR1	Unknown
+473	MP_E449_3B_PCR1	Picozoa
+7	MP_E449_3B_PCR1	Candidatus Karelsulcia__f
+358	MP_E449_3B_PCR1	Poecilosclerida
+26	MP_E449_3B_PCR1	Cheilostomatida
+265	MP_E449_3B_PCR1	Echinoidea
+95	MP_E449_3B_PCR1	Dendroceratida
+77	MP_E449_3B_PCR1	Axinellida
+26	MP_E449_3B_PCR1	Pseudocalanus elongatus
+1185	MP_E449_3B_PCR1	Acartia longiremis
+85	MP_E449_3B_PCR1	Thysanoessa
+7576	MP_E449_3B_PCR1	Balanomorpha
+17	MP_E449_3B_PCR1	Rhynchozoon sp_ MHD_2004
+10	MP_E449_3B_PCR1	Suberitida
+1	MP_E449_3B_PCR1	Demospongiae
+6	MP_E449_3B_PCR1	Callyspongia
+13	MP_E449_3B_PCR1	Sclerodactylidae
+42	MP_E449_3B_PCR1	Aphragmophora
+8478	MP_E449_3B_PCR1	Actinopteri
+1370	MP_E449_3B_PCR1	Saccoglossus
+7	MP_E449_3B_PCR1	Euphausia pacifica
+2	MP_E449_3B_PCR1	Anthozoa
+8	MP_E449_3B_PCR1	Monostilifera
+43	MP_E449_3B_PCR1	Sagittidae
+5	MP_E449_3B_PCR1	Crellidae
+32	MP_E449_3B_PCR1	Centropagidae
+8	MP_E449_3B_PCR1	Lepadidae__o
+3	MP_E449_3B_PCR1	Amphipoda
+168	MP_E449_3B_PCR1	Cephalothrix
+139	MP_E449_3B_PCR1	Oweniidae
+219	MP_E449_3B_PCR1	Phocoena phocoena
+1136	MP_E449_3B_PCR1	Carinoma mutabilis
+90	MP_E449_3B_PCR1	Calanoida
+1011	MP_E449_3B_PCR1	Osmeriformes
+38	MP_E449_3B_PCR1	Glebocarcinus oregonensis
+1	MP_E449_3B_PCR1	Cellariidae
+108802	MP_E449_3B_PCR1	Mytilus
+2	MP_E449_3B_PCR1	Cerebratulus
+3	MP_E449_3B_PCR1	Moerella
+3	MP_E449_3B_PCR1	Adeonidae
+45	MP_E449_3B_PCR1	Magelonidae
+6	MP_E449_3B_PCR1	Candidae
+40	MP_E449_3B_PCR1	Chironomidae
+96	MP_E449_3B_PCR1	Ophiuroidea
+278	MP_E449_3B_PCR1	Sinonovacula
+34	MP_E449_3B_PCR1	Molpadida
+6	MP_E449_3B_PCR1	Macoma
+6	MP_E449_3B_PCR1	Anaspidacea
+19	MP_E449_3B_PCR1	Mytilidae
+56	MP_E449_3B_PCR1	Carinoma hamanako
+5	MP_E449_3B_PCR1	Ischyroceridae
+11487	MP_E449_3B_PCR1	Riserius sp_ no eyes
+14	MP_E449_3B_PCR1	Chthamalus
+17	MP_E449_3B_PCR1	Carinina sp_ chocolate
+15	MP_E449_3B_PCR1	Metacarcinus magister
+52	MP_E449_3B_PCR1	Enhydra lutris
+6	MP_E449_3B_PCR1	Podonidae
+13	MP_E449_3B_PCR1	Alvania
+20	MP_E449_3B_PCR1	Nassariidae
+1	MP_E449_3B_PCR1	Maculaura alaskensis
+2	MP_E449_3B_PCR1	Farrella
+5	MP_E449_3B_PCR1	Pollicipes polymerus
+292	MP_E451	Eukaryota
+3	MP_E451	Ulmaridae
+280	MP_E451	Unknown
+73	MP_E451	Picozoa
+1613	MP_E451	Candidatus Karelsulcia__f
+10	MP_E451	Chuniphyes multidentata
+266	MP_E451	Trichometra cubensis
+957	MP_E451	Lineidae
+1132	MP_E451	Acartia longiremis
+72	MP_E451	Bacillota
+817	MP_E451	Hubrechtidae
+2075	MP_E451	Elpidiidae
+3	MP_E451	Anthozoa
+252	MP_E451	Chiridota sp_ 2 AKM_2016
+38	MP_E451	Monostilifera
+5	MP_E451	Apodida
+526	MP_E451	Cephalothrix
+7	MP_E451	Oweniidae
+4	MP_E451	Tetractinellida
+136	MP_E451	Cancellothyrididae
+2140	MP_E451	Pteraster jordani
+47	MP_E451	Chironephthya sp_ CSM_2012
+19	MP_E451	Tubulaniformes
+13	MP_E451	Ifalukella yanii
+2	MP_E451	Narcomedusae
+1900	MP_E455	Eukaryota
+5441	MP_E455	Unknown
+3325	MP_E455	Picozoa
+8	MP_E455	Poecilosclerida
+6	MP_E455	Echinoidea
+23	MP_E455	Dendroceratida
+56	MP_E455	Axinellida
+9	MP_E455	Pseudocalanus elongatus
+12877	MP_E455	Acartia longiremis
+30175	MP_E455	Thysanoessa
+11	MP_E455	Balanomorpha
+10	MP_E455	Demospongiae
+1	MP_E455	Spongillida
+6917	MP_E455	Actinopteri
+1	MP_E455	Euphausia pacifica
+26	MP_E455	Sagittidae
+340	MP_E455	Centropagidae
+348	MP_E455	Megaptera novaeangliae
+32	MP_E455	Pinnixa
+36	MP_E455	Elusimicrobiota
+331	MP_E455	Oweniidae
+8	MP_E455	Carinoma mutabilis
+1	MP_E455	Calanoida
+535	MP_E455	Osmeriformes
+33	MP_E455	Synchaetidae
+74633	MP_E455	Mytilus
+61	MP_E455	Dermasterias imbricata
+4	MP_E455	Chlorophyceae
+2	MP_E455	Sinonovacula
+37812	MP_E455	Macoma
+28	MP_E455	Mytilidae
+28	MP_E455	Venerida
+27	MP_E455	Charadriiformes
+9	MP_E455	Eubacteriales
+4	MP_E455	Ploima
+443	MP_E458_1B	Eukaryota
+7	MP_E458_1B	Ulmaridae
+19	MP_E458_1B	Homo sapiens
+4676	MP_E458_1B	Unknown
+33	MP_E458_1B	Picozoa
+5357	MP_E458_1B	Candidatus Karelsulcia__f
+2	MP_E458_1B	Doliolum nationalis
+75	MP_E458_1B	Lineidae
+284	MP_E458_1B	Pseudocalanus elongatus
+115	MP_E458_1B	Cyclopecten sp_ DJC_2016
+7	MP_E458_1B	Dictyodendrillidae
+57	MP_E458_1B	Ophiura sarsii
+163	MP_E458_1B	Flavobacteriales
+3239	MP_E458_1B	Actinopteri
+34	MP_E458_1B	Thyasiridae
+6	MP_E458_1B	Agelasidae
+4520	MP_E458_1B	Stenobrachius leucopsarus
+82	MP_E458_1B	Heteronemertea
+640	MP_E458_1B	Solaster
+755	MP_E458_1B	Saccoglossus
+290	MP_E458_1B	Euphausia pacifica
+1138	MP_E458_1B	Elpidiidae
+106	MP_E458_1B	Candidatus Woesebacteria
+1336	MP_E458_1B	Carinoma mutabilis
+6	MP_E458_1B	Hiatellidae
+1166	MP_E458_1B	Octopodidae
+562	MP_E458_1B	Heteromolpadia tridens
+117	MP_E458_1B	Lucinida
+4942	MP_E458_1B	Pteraster jordani
+7516	MP_E458_1B	Tactostoma macropus
+77	MP_E458_1B	Cyclothone atraria
+67	MP_E458_1B	Xenoturbella
+57	MP_E458_1B	Polymastia littoralis
+48	MP_E458_1B	Malacobdella grossa
+47	MP_E458_1B	Poralia
+4	MP_E458_1B	Carinaria sp_
+3959	MP_E458_1B	Pseudobathylagus milleri
+1330	MP_E458_1B	Lonchotaster tartareus
+3	MP_E458_1B	Oreasteridae
+2	MP_E458_1B	Dacrydium sp_ DJC_2016
+896	MP_E458_1B	Acharax johnsoni
+611	MP_E458_1B	Nucula
+156	MP_E458_1B	Sphaeropleales
+787	MP_E458_1B	Tarletonbeania
+348	MP_E467	Eukaryota
+417	MP_E467	Unknown
+60	MP_E467	Picozoa
+134090	MP_E467	Echinoidea
+112	MP_E467	Adapedonta
+9	MP_E467	Acartia longiremis
+1	MP_E467	Thysanoessa
+8	MP_E467	Balanomorpha
+89	MP_E467	Perciformes
+4	MP_E467	Callyspongia
+261	MP_E467	Actinopteri
+102	MP_E467	Chordata
+43	MP_E467	Artiodactyla
+39	MP_E467	Asteriidae
+2	MP_E467	Centropagidae
+7	MP_E467	Lepadidae__o
+50	MP_E467	Evadne
+18	MP_E467	Oweniidae
+54	MP_E467	Phocoena phocoena
+9	MP_E467	Carinoma mutabilis
+122	MP_E467	Rajidae
+6	MP_E467	Calanoida
+7	MP_E467	Tellinidae
+60	MP_E467	Otariidae
+145	MP_E467	Osmeriformes
+3	MP_E467	Celleporella hyalina
+9480	MP_E467	Mytilus
+1638	MP_E467	Mytilus californianus
+67	MP_E467	Dermasterias imbricata
+197	MP_E467	Moerella
+1068	MP_E467	Crassadoma gigantea
+323	MP_E467	Merluccius
+25	MP_E467	Magelonidae
+10	MP_E467	Sinonovacula
+703	MP_E467	Macoma
+452	MP_E467	Siliqua alta
+1700	MP_E467	Carinoma hamanako
+2	MP_E467	Metacarcinus magister
+2	MP_E467	Venerida
+3	MP_E467	Cephalothrix major
+37	MP_E467	Sebastidae
+9	MP_E467	Macoma nasuta
+338	MP_E467	Mytilus trossulus
+1	MP_E467	Nuttallia
+3	MP_E467	Carinoma sp_ white
+2	MP_E467	Celleporidae
+1502	MP_E467	Mya
+571	MP_E467	Macoma balthica
+233	MP_E467	Megangulus venulosus
+5	MP_E467	Myida
+39	MP_E467	Acipenseriformes
+222	MP_E467	Farrellidae
+66	MP_E467	Bosminidae
+16	MP_E467	Eurytemora
+1521	MP_E471	Eukaryota
+24	MP_E471	Unknown
+6	MP_E471	Picozoa
+29275	MP_E471	Echinoidea
+2	MP_E471	Dendroceratida
+1	MP_E471	Axinellida
+312	MP_E471	Acartia longiremis
+1952	MP_E471	Balanomorpha
+216	MP_E471	Perciformes
+2	MP_E471	Spongillida
+1248	MP_E471	Actinopteri
+1	MP_E471	Sagittidae
+2010	MP_E471	Chordata
+9	MP_E471	Asteriidae
+4	MP_E471	Centropagidae
+11	MP_E471	Evadne
+173	MP_E471	Carinoma mutabilis
+101	MP_E471	Osmeriformes
+56	MP_E471	Synchaetidae
+14550	MP_E471	Mytilus
+3	MP_E471	Cerebratulus
+15	MP_E471	Dermasterias imbricata
+1759	MP_E471	Merluccius
+42	MP_E471	Galeorhinus galeus
+6210	MP_E471	Magelonidae
+8	MP_E471	Chironomidae
+2	MP_E471	Molpadida
+35	MP_E471	Macoma
+19	MP_E471	Fredericella
+3	MP_E471	Mytilidae
+798	MP_E471	Siliqua alta
+4	MP_E471	Carinoma hamanako
+122	MP_E471	Phoca
+3	MP_E471	Podonidae
+2	MP_E471	Ploima
+5	MP_E471	Cephalothrix major
+145	MP_E471	Macoma nasuta
+1973	MP_E471	Mytilus trossulus
+2051	MP_E471	Nuttallia
+59585	MP_E471	Mya
+43175	MP_E471	Macoma balthica
+318	MP_E471	Megangulus venulosus
+4134	MP_E471	Myida
+192	MP_E471	Acipenseriformes
+24	MP_E471	Bosminidae
+2455	MP_E471	Eurytemora
+64	MP_E471	Petromyzontidae
+11	MP_E471	Pandalus
+38	MP_E471	Alona affinis
+48	MP_E471	Merluccius productus
+23	MP_E471	Aves
+5	MP_E471	Cyprididae
+8	MP_E471	Moina
+6	MP_E471	Haplosclerida
+3	MP_E471	Odhneripisidium caucasus
+3	MP_E471	Scleractinia
+150	MP_E471	Embiotocidae
+55	MP_E471	Daphnia parvula
+29	MP_E471	Eurycercus glacialis
+3503	MP_E472	Eukaryota
+47	MP_E472	Unknown
+7	MP_E472	Picozoa
+1425	MP_E472	Echinoidea
+19	MP_E472	Acartia longiremis
+1786	MP_E472	Balanomorpha
+468	MP_E472	Perciformes
+1	MP_E472	Aphragmophora
+4	MP_E472	Spongillida
+2669	MP_E472	Actinopteri
+2	MP_E472	Sagittidae
+856	MP_E472	Chordata
+41	MP_E472	Asteriidae
+9	MP_E472	Cephalothrix
+4	MP_E472	Oweniidae
+4	MP_E472	Margarites
+59	MP_E472	Carinoma mutabilis
+37	MP_E472	Cephalopoda
+91	MP_E472	Osmeriformes
+13	MP_E472	Synchaetidae
+2022	MP_E472	Mytilus
+7	MP_E472	Mytilus californianus
+25	MP_E472	Crassadoma gigantea
+2749	MP_E472	Merluccius
+330	MP_E472	Magelonidae
+6	MP_E472	Decapoda
+33	MP_E472	Chironomidae
+5	MP_E472	Ophiuroidea
+25	MP_E472	Macoma
+101	MP_E472	Fredericella
+76	MP_E472	Siliqua alta
+2	MP_E472	Podonidae
+3	MP_E472	Ploima
+1267	MP_E472	Mytilus trossulus
+471	MP_E472	Nuttallia
+19613	MP_E472	Mya
+32122	MP_E472	Macoma balthica
+1	MP_E472	Megangulus venulosus
+39	MP_E472	Myida
+176	MP_E472	Acipenseriformes
+18869	MP_E472	Bosminidae
+6199	MP_E472	Eurytemora
+23	MP_E472	Pandalus
+7	MP_E472	Alona affinis
+6	MP_E472	Aves
+6	MP_E472	Cyprididae
+17	MP_E472	Scleractinia
+328	MP_E472	Embiotocidae
+58694	MP_E472	Daphnia parvula
+117	MP_E472	Eurycercus glacialis
+100	MP_E472	Plumatellidae
+99	MP_E472	Fundulus
+64	MP_E472	Castor canadensis
+45	MP_E472	Bothrocara hollandi
+75	MP_E472	Temoridae
+26	MP_E472	Phalacrocorax pelagicus
+22	MP_E472	Caenis sp_ BYU IGCEP019
+20	MP_E472	Paludicella articulata
+18	MP_E472	Eubosmina
+13	MP_E472	Daphnia
+12	MP_E472	Okanagana
+18	MP_E472	Chydoridae
+5	MP_E472	Malacobdellidae
+4	MP_E472	Maculaura cerebrosa
+2	MP_E472	Idoteidae
+236	MP_E472	Stylommatophora
+197	MP_E472	Eurytemora affinis
+824	MP_E475_PCR1	Eukaryota
+19	MP_E475_PCR1	Unknown
+10	MP_E475_PCR1	Picozoa
+120484	MP_E475_PCR1	Echinoidea
+1	MP_E475_PCR1	Dendroceratida
+56	MP_E475_PCR1	Acartia longiremis
+125	MP_E475_PCR1	Thysanoessa
+533	MP_E475_PCR1	Spatangoida
+2	MP_E475_PCR1	Centropagidae
+6	MP_E475_PCR1	Evadne
+14	MP_E475_PCR1	Oweniidae
+162	MP_E475_PCR1	Carinoma mutabilis
+13	MP_E475_PCR1	Calanoida
+2	MP_E475_PCR1	Tellinidae
+38	MP_E475_PCR1	Osmeriformes
+861	MP_E475_PCR1	Mytilus
+72	MP_E475_PCR1	Cerebratulus
+1	MP_E475_PCR1	Dermasterias imbricata
+10	MP_E475_PCR1	Carcinonemertes
+11	MP_E475_PCR1	Moerella
+14	MP_E475_PCR1	Decapoda
+508	MP_E475_PCR1	Ophiuroidea
+50	MP_E475_PCR1	Sinonovacula
+384	MP_E475_PCR1	Macoma
+1	MP_E475_PCR1	Tresus
+49	MP_E475_PCR1	Siliqua alta
+2	MP_E475_PCR1	Carinina sp_ chocolate
+232	MP_E475_PCR1	Podonidae
+8	MP_E475_PCR1	Nuttallia
+2	MP_E475_PCR1	Mya
+1	MP_E475_PCR1	Megangulus venulosus
+76065	MP_E486_PCR1	Eukaryota
+814	MP_E486_PCR1	Unknown
+1104	MP_E486_PCR1	Picozoa
+5741	MP_E486_PCR1	Candidatus Karelsulcia__f
+2031	MP_E486_PCR1	Poecilosclerida
+391	MP_E486_PCR1	Echinoidea
+68	MP_E486_PCR1	Dendroceratida
+231	MP_E486_PCR1	Axinellida
+68	MP_E486_PCR1	Pseudocalanus elongatus
+36	MP_E486_PCR1	Acartia longiremis
+5	MP_E486_PCR1	Holothuroidea
+902	MP_E486_PCR1	Thysanoessa
+2894	MP_E486_PCR1	Perciformes
+3	MP_E486_PCR1	Demospongiae
+1825	MP_E486_PCR1	Aphragmophora
+10260	MP_E486_PCR1	Actinopteri
+7	MP_E486_PCR1	Candidatus Beckwithbacteria
+4168	MP_E486_PCR1	Euphausia pacifica
+23	MP_E486_PCR1	Anthozoa
+2	MP_E486_PCR1	Candidatus Pseudothioglobus__f
+164	MP_E486_PCR1	Sagittidae
+10635	MP_E486_PCR1	Chordata
+403	MP_E486_PCR1	Pinnixa
+1	MP_E486_PCR1	Neogastropoda
+1426	MP_E486_PCR1	Cephalothrix
+944	MP_E486_PCR1	Calanoida
+39	MP_E486_PCR1	Parasagitta elegans
+26	MP_E486_PCR1	Glebocarcinus oregonensis
+207	MP_E486_PCR1	Mytilus
+122	MP_E486_PCR1	Moerella
+3	MP_E486_PCR1	Candidatus Pseudothioglobus__f__o
+132	MP_E486_PCR1	Chaetopteridae__o
+1335	MP_E486_PCR1	Ophiuroidea
+797	MP_E486_PCR1	Metacarcinus magister
+1094	MP_E486_PCR1	Tarletonbeania
+48	MP_E486_PCR1	Macoma nasuta
+30	MP_E486_PCR1	Harrimaniidae__o
+6	MP_E486_PCR1	Nocardioidaceae
+3	MP_E486_PCR1	Candidatus Fonsibacter ubiquis
+2	MP_E486_PCR1	Gammaproteobacteria
+4083	MP_E492_1B_PCR1	Eukaryota
+760	MP_E492_1B_PCR1	Unknown
+1083	MP_E492_1B_PCR1	Picozoa
+1513	MP_E492_1B_PCR1	Candidatus Karelsulcia__f
+893	MP_E492_1B_PCR1	Poecilosclerida
+212	MP_E492_1B_PCR1	Echinoidea
+22	MP_E492_1B_PCR1	Dendroceratida
+316	MP_E492_1B_PCR1	Axinellida
+1	MP_E492_1B_PCR1	Pseudocalanus elongatus
+2	MP_E492_1B_PCR1	Holothuroidea
+440	MP_E492_1B_PCR1	Thysanoessa
+7	MP_E492_1B_PCR1	Demospongiae
+3	MP_E492_1B_PCR1	Dictyodendrillidae
+5768	MP_E492_1B_PCR1	Spatangoida
+1170	MP_E492_1B_PCR1	Aphragmophora
+4	MP_E492_1B_PCR1	Spongillida
+146	MP_E492_1B_PCR1	Thyasiridae
+11914	MP_E492_1B_PCR1	Euphausia pacifica
+169	MP_E492_1B_PCR1	Anthozoa
+2	MP_E492_1B_PCR1	Candidatus Woesebacteria
+1114	MP_E492_1B_PCR1	Sagittidae
+5482	MP_E492_1B_PCR1	Chordata
+3946	MP_E492_1B_PCR1	Megaptera novaeangliae
+178	MP_E492_1B_PCR1	Tellinidae
+3209	MP_E492_1B_PCR1	Osmeriformes
+271	MP_E492_1B_PCR1	Carcinonemertes
+2	MP_E492_1B_PCR1	Chlorophyceae
+12	MP_E492_1B_PCR1	Decapoda
+97	MP_E492_1B_PCR1	Macoma
+4	MP_E492_1B_PCR1	Spirontocaris holmesi
+14	MP_E492_1B_PCR1	Pandalus borealis
+309	MP_E492_1B_PCR1	Breviturma doederleini
+457	MP_E492_1B_PCR1	Meioglossus psammophilus
+7702	MP_E499	Eukaryota
+1248	MP_E499	Unknown
+886	MP_E499	Picozoa
+2551	MP_E499	Candidatus Karelsulcia__f
+640	MP_E499	Poecilosclerida
+679	MP_E499	Echinoidea
+9	MP_E499	Dendroceratida
+153	MP_E499	Axinellida
+35	MP_E499	Pseudocalanus elongatus
+1	MP_E499	Balanomorpha
+7672	MP_E499	Perciformes
+6	MP_E499	Demospongiae
+2	MP_E499	Dictyodendrillidae
+793	MP_E499	Spatangoida
+49	MP_E499	Aphragmophora
+5	MP_E499	Siphonophorae
+2	MP_E499	Spongillida
+6064	MP_E499	Stenobrachius leucopsarus
+2345	MP_E499	Euphausia pacifica
+5	MP_E499	Chaetoderma nitidulum
+2	MP_E499	Anthozoa
+4	MP_E499	Candidatus Pseudothioglobus__f
+669	MP_E499	Sagittidae
+2353	MP_E499	Chordata
+9987	MP_E499	Merluccius
+1	MP_E499	Candidatus Pseudothioglobus__f__o
+4	MP_E499	Chaetopteridae__o
+13	MP_E499	Decapoda
+9	MP_E499	Spirontocaris holmesi
+6	MP_E499	Pirellulaceae
+134	MP_E499	Kulikovia montgomeryi
+2	MP_E499	Candidatus Lokiarchaeum__f__o
+651	MP_E499	Pteraster tesselatus
+40410	MP_E501	Eukaryota
+872	MP_E501	Unknown
+1065	MP_E501	Picozoa
+2938	MP_E501	Candidatus Karelsulcia__f
+3	MP_E501	Doliolum nationalis
+1153	MP_E501	Poecilosclerida
+475	MP_E501	Echinoidea
+20	MP_E501	Dendroceratida
+309	MP_E501	Axinellida
+42	MP_E501	Acartia longiremis
+341	MP_E501	Thysanoessa
+2	MP_E501	Carybdeida
+55	MP_E501	Demospongiae
+2	MP_E501	Dictyodendrillidae
+406	MP_E501	Spatangoida
+71	MP_E501	Bacillota
+190	MP_E501	Aphragmophora
+1	MP_E501	Siphonophorae
+5	MP_E501	Actinomycetaceae
+2982	MP_E501	Euphausia pacifica
+7	MP_E501	Anthozoa
+12	MP_E501	Candidatus Pseudothioglobus__f
+4556	MP_E501	Artiodactyla
+179	MP_E501	Luidia foliolata
+101	MP_E501	Tellinidae
+246	MP_E501	Cephalopoda
+2340	MP_E501	Merluccius
+8	MP_E501	Candidatus Pseudothioglobus__f__o
+17	MP_E501	Eurytemora
+254	MP_E501	Breviturma doederleini
+965	MP_E501	Kulikovia montgomeryi
+33	MP_E501	Comatulida
+2	MP_E501	Candidatus Chazhemtobacteraceae
+3	MP_E501	Pilidiophora
+442	MP_E501	Lepas
+241	MP_E501	Euphausia
+128008	MP_E506	Eukaryota
+1	MP_E506	Ulmaridae
+1057	MP_E506	Homo sapiens
+251	MP_E506	Unknown
+13	MP_E506	Picozoa
+1037	MP_E506	Candidatus Karelsulcia__f
+1	MP_E506	Dictyodendrillidae
+960	MP_E506	Actinopteri
+122	MP_E506	Agelasidae
+31	MP_E506	Chalinidae
+260	MP_E506	Cephalopoda
+2	MP_E506	Muggiaea atlantica
+1	MP_E506	Carinaria sp_
+122	MP_E506	Gennadas
+747	MP_E516	Unknown
+3	MP_E516	Picozoa
+20	MP_E516	Candidatus Karelsulcia__f
+4	MP_E516	Poecilosclerida
+70	MP_E516	Lineidae
+1	MP_E516	Demospongiae
+88	MP_E516	Agelasidae
+10	MP_E516	Sphaeronectes koellikeri
+4	MP_E516	Synaptidae
+171	MP_E516	Sagittidae
+1	MP_E516	Carinaria sp_
+3	MP_E516	Aves
+238	MP_E516	Mollusca
+2	MP_E516	Trachymedusae
+1230	MP_E516	Protoglossus koehleri
+455	MP_E516	Acharax sp_ NY_2022
+29797	MP_E520_1B	Eukaryota
+2	MP_E520_1B	Ulmaridae
+366	MP_E520_1B	Unknown
+1	MP_E520_1B	Picozoa
+749	MP_E520_1B	Candidatus Karelsulcia__f
+2	MP_E520_1B	Doliolum nationalis
+11	MP_E520_1B	Poecilosclerida
+8	MP_E520_1B	Chuniphyes multidentata
+116	MP_E520_1B	Lineidae
+5	MP_E520_1B	Dictyodendrillidae
+6866	MP_E520_1B	Actinopteri
+354	MP_E520_1B	Harrimaniidae
+94	MP_E520_1B	Agelasidae
+41	MP_E520_1B	Sphaeronectes koellikeri
+129	MP_E520_1B	Chalinidae
+472	MP_E520_1B	Euphausia pacifica
+224	MP_E520_1B	Elpidiidae
+7476	MP_E520_1B	Mammalia
+2	MP_E520_1B	Merluccius
+1050	MP_E520_1B	Asteronychidae
+5	MP_E520_1B	Nuculidae
+1979	MP_E520_1B	Ennucula decipiens
+963	MP_E520_1B	Ctenodiscus crispatus
+610	MP_E520_1B	Hippasteria spinosa
+479	MP_E520_1B	Gorgonocephalidae
+15972	MP_E524	Eukaryota
+2	MP_E524	Ulmaridae
+228	MP_E524	Homo sapiens
+1033	MP_E524	Unknown
+170	MP_E524	Picozoa
+5180	MP_E524	Candidatus Karelsulcia__f
+6	MP_E524	Chuniphyes multidentata
+780	MP_E524	Lineidae
+314	MP_E524	Acartia longiremis
+3	MP_E524	Carybdeida
+261	MP_E524	Cyclopecten sp_ DJC_2016
+48	MP_E524	Flavobacteriales
+3299	MP_E524	Aphragmophora
+4	MP_E524	Spongillida
+2957	MP_E524	Actinopteri
+134	MP_E524	Agelasidae
+7	MP_E524	Sphaeronectes koellikeri
+867	MP_E524	Hubrechtidae
+9022	MP_E524	Euphausia pacifica
+40	MP_E524	Anthozoa
+177	MP_E524	Chiridota sp_ 2 AKM_2016
+9	MP_E524	Apodida
+596	MP_E524	Sagittidae
+172	MP_E524	Tetractinellida
+212	MP_E524	Decapoda
+3748	MP_E524	Protoglossus koehleri
+33	MP_E524	Vesicomyidae
+59	MP_E524	Stereobalanus canadensis
+2	MP_E524	Crinoidea
+527	MP_E524	Galiteuthis armata
+34826	MP_E528	Eukaryota
+4	MP_E528	Ulmaridae
+1845	MP_E528	Unknown
+371	MP_E528	Picozoa
+9123	MP_E528	Candidatus Karelsulcia__f
+561	MP_E528	Poecilosclerida
+3	MP_E528	Echinoidea
+5	MP_E528	Dendroceratida
+149	MP_E528	Axinellida
+1	MP_E528	Pseudocalanus elongatus
+282	MP_E528	Acartia longiremis
+1468	MP_E528	Thysanoessa
+316	MP_E528	Balanomorpha
+14	MP_E528	Carybdeida
+13	MP_E528	Dictyodendrillidae
+3706	MP_E528	Aphragmophora
+2	MP_E528	Siphonophorae
+4322	MP_E528	Actinopteri
+289	MP_E528	Eusergestes arcticus
+16	MP_E528	Actinomycetaceae
+11843	MP_E528	Euphausia pacifica
+3	MP_E528	Candidatus Pseudothioglobus__f
+2236	MP_E528	Sagittidae
+2	MP_E528	Centropagidae
+459	MP_E528	Cephalopoda
+98	MP_E528	Parasagitta elegans
+4179	MP_E528	Merluccius
+6	MP_E528	Ophiopholis sp_ EAC01
+110	MP_E528	Heteromolpadia tridens
+1263	MP_E528	Breviturma doederleini
+117	MP_E528	Pteraster tesselatus
+78	MP_E528	Ophiophthalmus
+66	MP_E528	Dondersiidae
+3810	MP_E528	Merluccius albidus
+619	MP_E528	Pterasteridae
+168	MP_E528	Enteropneusta
+91325	MP_E529	Eukaryota
+3659	MP_E529	Homo sapiens
+304	MP_E529	Unknown
+245	MP_E529	Picozoa
+2949	MP_E529	Candidatus Karelsulcia__f
+609	MP_E529	Poecilosclerida
+14	MP_E529	Hominidae
+6	MP_E529	Dendroceratida
+195	MP_E529	Axinellida
+194	MP_E529	Acartia longiremis
+776	MP_E529	Thysanoessa
+7619	MP_E529	Perciformes
+1	MP_E529	Demospongiae
+8	MP_E529	Dictyodendrillidae
+7014	MP_E529	Aphragmophora
+66	MP_E529	Antedonidae
+2	MP_E529	Spongillida
+10	MP_E529	Actinomycetaceae
+30790	MP_E529	Euphausia pacifica
+11	MP_E529	Candidatus Woesebacteria
+2	MP_E529	Candidatus Pseudothioglobus__f
+1667	MP_E529	Sagittidae
+11	MP_E529	Chordata
+72	MP_E529	Cephalopoda
+49	MP_E529	Carcinonemertes
+7652	MP_E529	Merluccius
+2	MP_E529	Tetractinellida
+88810	MP_E532	Eukaryota
+308	MP_E532	Unknown
+467	MP_E532	Picozoa
+667	MP_E532	Candidatus Karelsulcia__f
+1408	MP_E532	Poecilosclerida
+30	MP_E532	Hominidae
+18	MP_E532	Cheilostomatida
+204	MP_E532	Echinoidea
+55	MP_E532	Dendroceratida
+210	MP_E532	Axinellida
+160	MP_E532	Acartia longiremis
+1217	MP_E532	Thysanoessa
+152	MP_E532	Balanomorpha
+5444	MP_E532	Perciformes
+3	MP_E532	Demospongiae
+2	MP_E532	Dictyodendrillidae
+560	MP_E532	Spatangoida
+2063	MP_E532	Aphragmophora
+1	MP_E532	Spongillida
+1274	MP_E532	Actinopteri
+10075	MP_E532	Euphausia pacifica
+2384	MP_E532	Sus scrofa
+24	MP_E532	Anthozoa
+717	MP_E532	Sagittidae
+1440	MP_E532	Megaptera novaeangliae
+347	MP_E532	Cephalothrix
+51	MP_E532	Luidia foliolata
+14	MP_E532	Phoronidae__o
+99	MP_E532	Tellinidae
+2554	MP_E532	Osmeriformes
+54	MP_E532	Carcinonemertes
+51	MP_E532	Magelonidae
+1	MP_E532	Columbellidae
+84	MP_E532	Patinopecten caurinus
+26	MP_E532	Macoma nasuta
+16	MP_E532	Pandalus
+2	MP_E532	Candidatus Lokiarchaeum__f__o
+170	MP_E532	Ctenodiscus crispatus
+152	MP_E532	Rossia pacifica
+528	MP_E532	Spionida
+20033	MP_E536	Eukaryota
+1844	MP_E536	Unknown
+802	MP_E536	Picozoa
+1870	MP_E536	Candidatus Karelsulcia__f
+2407	MP_E536	Poecilosclerida
+21	MP_E536	Echinoidea
+104	MP_E536	Dendroceratida
+213	MP_E536	Axinellida
+195	MP_E536	Pseudocalanus elongatus
+646	MP_E536	Acartia longiremis
+919	MP_E536	Thysanoessa
+3	MP_E536	Demospongiae
+3	MP_E536	Dictyodendrillidae
+1583	MP_E536	Aphragmophora
+7	MP_E536	Siphonophorae
+25400	MP_E536	Actinopteri
+89	MP_E536	Thyasiridae
+10375	MP_E536	Euphausia pacifica
+37	MP_E536	Anthozoa
+22	MP_E536	Candidatus Woesebacteria
+10	MP_E536	Candidatus Pseudothioglobus__f
+651	MP_E536	Sagittidae
+3066	MP_E536	Chordata
+1022	MP_E536	Evadne
+104	MP_E536	Pinnixa
+7	MP_E536	Oweniidae
+5218	MP_E536	Psammobiidae
+324	MP_E536	Luidia foliolata
+64351	MP_E536	Tellinidae
+1022	MP_E536	Magelonidae
+10	MP_E536	Ophiuroidea
+1081	MP_E536	Patinopecten caurinus
+187	MP_E536	Cochlodesma
+415	MP_E536	Podonidae
+9	MP_E536	Pandalus borealis
+258	MP_E536	Breviturma doederleini
+3	MP_E536	Candidatus Chazhemtobacteraceae
+24	MP_E536	Hippolytidae
+32	MP_E536	Baseodiscidae
+2572	MP_E536	Serratella sp_ Liaoning_2019
+1274	MP_E536	Serratella ignita
+17	MP_E536	Neotrypaea
+245	MP_E536	Vermetidae
+17	MP_E536	Poseidonemertes
+125	MP_E536	Bathytyphlops marionae
+602	MP_E540	Eukaryota
+48	MP_E540	Unknown
+97	MP_E540	Picozoa
+47	MP_E540	Candidatus Karelsulcia__f
+85	MP_E540	Poecilosclerida
+50292	MP_E540	Echinoidea
+4	MP_E540	Dendroceratida
+18	MP_E540	Axinellida
+2	MP_E540	Adapedonta
+67	MP_E540	Acartia longiremis
+6	MP_E540	Thysanoessa
+53977	MP_E540	Balanomorpha
+41	MP_E540	Sclerodactylidae
+2	MP_E540	Aphragmophora
+1302	MP_E540	Actinopteri
+9	MP_E540	Euphausia pacifica
+10	MP_E540	Sagittidae
+958	MP_E540	Chordata
+36	MP_E540	Asteriidae
+14	MP_E540	Centropagidae
+4	MP_E540	Dendrochirotida
+2	MP_E540	Amphipoda
+47	MP_E540	Evadne
+135	MP_E540	Cephalothrix
+299	MP_E540	Oweniidae
+35	MP_E540	Phocoena phocoena
+98	MP_E540	Chondrichthyes
+31785	MP_E540	Carinoma mutabilis
+119	MP_E540	Rajidae
+30	MP_E540	Calanoida
+12	MP_E540	Luidia foliolata
+16	MP_E540	Tellinidae
+4094	MP_E540	Mytilus
+12	MP_E540	Mytilus californianus
+11	MP_E540	Cerebratulus
+3	MP_E540	Moerella
+1	MP_E540	Octopodidae
+2	MP_E540	Chaetopteridae__o
+2	MP_E540	Decapoda
+12	MP_E540	Ophiuroidea
+15	MP_E540	Sinonovacula
+10	MP_E540	Molpadida
+31	MP_E540	Macoma
+10	MP_E540	Anaspidacea
+1162	MP_E540	Cochlodesma
+5	MP_E540	Siliqua alta
+33	MP_E540	Phoca
+68	MP_E540	Podonidae
+66	MP_E540	Maculaura alaskensis
+44	MP_E540	Cephalothrix major
+9	MP_E540	Macoma nasuta
+97	MP_E540	Bankia setacea
+91	MP_E540	Limanda sakhalinensis
+13	MP_E540	Cerebratulus albifrons
+2	MP_E540	Nitidotellina
+25	MP_E540	Carinoma sp_ 5 TCH_2015
+3	MP_E540	Solenidae
+3	MP_E540	Bivalvia
+3	MP_E540	Oerstedia
+2	MP_E543	Eukaryota
+185	MP_E543	Unknown
+270	MP_E543	Picozoa
+93720	MP_E543	Echinoidea
+279	MP_E543	Adapedonta
+35	MP_E543	Acartia longiremis
+1	MP_E543	Balanomorpha
+3741	MP_E543	Spatangoida
+532	MP_E543	Actinopteri
+2	MP_E543	Heteronemertea
+1	MP_E543	Euphausia pacifica
+3	MP_E543	Chordata
+70380	MP_E543	Evadne
+4	MP_E543	Oweniidae
+10	MP_E543	Carinoma mutabilis
+26	MP_E543	Calanoida
+144	MP_E543	Osmeriformes
+2159	MP_E543	Mytilus
+2	MP_E543	Cerebratulus
+1	MP_E543	Merluccius
+5	MP_E543	Magelonidae
+116	MP_E543	Macoma
+5	MP_E543	Tresus
+279	MP_E543	Siliqua alta
+9	MP_E543	Podonidae
+232	MP_E543	Myida
+23	MP_E543	Alopias
+160	MP_E543	Clinocardium nuttallii
+8402	MP_E552	Eukaryota
+645	MP_E552	Unknown
+8	MP_E552	Picozoa
+32	MP_E552	Candidatus Karelsulcia__f
+4	MP_E552	Acartia longiremis
+3	MP_E552	Carybdeida
+2	MP_E552	Dictyodendrillidae
+7	MP_E552	Sphaeronectes koellikeri
+377	MP_E552	Coleoptera
+1057	MP_E552	Fredericella
+186	MP_E552	Tubulaniformes
+16	MP_E552	Ophiura signata
+161	MP_E552	Peniagone leander
+13	MP_E555	Ulmaridae
+395	MP_E555	Unknown
+25	MP_E555	Picozoa
+3183	MP_E555	Candidatus Karelsulcia__f
+5	MP_E555	Chuniphyes multidentata
+155	MP_E555	Lineidae
+8	MP_E555	Axinellida
+29	MP_E555	Acartia longiremis
+108	MP_E555	Cyclopecten sp_ DJC_2016
+3	MP_E555	Dictyodendrillidae
+178	MP_E555	Aphragmophora
+3	MP_E555	Spongillida
+3400	MP_E555	Actinopteri
+8	MP_E555	Agelasidae
+6	MP_E555	Heteronemertea
+1	MP_E555	Actinomycetaceae
+5	MP_E555	Chalinidae
+123	MP_E555	Euphausia pacifica
+14	MP_E555	Vesicomyidae
+100	MP_E555	Valvatida
+5819	MP_E555	Apristurus brunneus
+4	MP_E555	Paragorgia coralloides
+656	MP_E555	Watasenia scintillans
+46573	MP_E560	Eukaryota
+9	MP_E560	Ulmaridae
+5368	MP_E560	Unknown
+655	MP_E560	Picozoa
+12722	MP_E560	Candidatus Karelsulcia__f
+1413	MP_E560	Poecilosclerida
+128	MP_E560	Lineidae
+1	MP_E560	Echinoidea
+10	MP_E560	Dendroceratida
+358	MP_E560	Axinellida
+25	MP_E560	Carybdeida
+996	MP_E560	Perciformes
+1	MP_E560	Demospongiae
+5	MP_E560	Dictyodendrillidae
+6457	MP_E560	Ophiura sarsii
+1689	MP_E560	Spatangoida
+124	MP_E560	Aphragmophora
+3	MP_E560	Spongillida
+5661	MP_E560	Actinopteri
+4940	MP_E560	Stenobrachius leucopsarus
+38	MP_E560	Ophiuridae
+23	MP_E560	Actinomycetaceae
+1663	MP_E560	Euphausia pacifica
+38	MP_E560	Anthozoa
+7	MP_E560	Apodida
+2	MP_E560	Candidatus Pseudothioglobus__f
+339	MP_E560	Petrasma pervernicosa
+148	MP_E560	Evadne
+68	MP_E560	Psammobiidae
+44	MP_E560	Cephalopoda
+21	MP_E560	Insecta
+1766	MP_E560	Merluccius
+2	MP_E560	Tetractinellida
+59	MP_E560	Ophiopholis sp_ EAC01
+10866	MP_E560	Myxoderma platyacanthum
+3329	MP_E560	Magelona
+10113	MP_E560	Breviturma doederleini
+707	MP_E560	Acharax sp_ NY_2022
+1300	MP_E560	Stereobalanus canadensis
+1222	MP_E560	Pterasteridae
+4135	MP_E560	Cheiraster dawsoni
+25	MP_E560	Rhizostomeae
+11	MP_E560	Pseudomugilidae
+67	MP_E560	Ophiotreta stimulea
+726	MP_E560	Dermaptera
+321	MP_E560	Micrura purpurea
+284	MP_E560	Breviturma
+4738	MP_E561	Eukaryota
+1491	MP_E561	Unknown
+922	MP_E561	Picozoa
+10703	MP_E561	Candidatus Karelsulcia__f
+1743	MP_E561	Poecilosclerida
+6	MP_E561	Chuniphyes multidentata
+37	MP_E561	Echinoidea
+97	MP_E561	Dendroceratida
+419	MP_E561	Axinellida
+428	MP_E561	Thysanoessa
+42	MP_E561	Carybdeida
+24289	MP_E561	Perciformes
+4	MP_E561	Demospongiae
+4	MP_E561	Dictyodendrillidae
+428	MP_E561	Ophiura sarsii
+238	MP_E561	Flavobacteriales
+236	MP_E561	Stichopodidae
+155	MP_E561	Spatangoida
+106	MP_E561	Bacillota
+6	MP_E561	Aphragmophora
+7	MP_E561	Spongillida
+3460	MP_E561	Actinopteri
+9045	MP_E561	Stenobrachius leucopsarus
+421	MP_E561	Eusergestes arcticus
+9	MP_E561	Actinomycetaceae
+5620	MP_E561	Euphausia pacifica
+19	MP_E561	Anthozoa
+4	MP_E561	Candidatus Pseudothioglobus__f
+209	MP_E561	Petrasma pervernicosa
+72	MP_E561	Chordata
+4403	MP_E561	Megaptera novaeangliae
+85	MP_E561	Tellinidae
+369	MP_E561	Insecta
+217	MP_E561	Cerebratulus
+1309	MP_E561	Merluccius
+108	MP_E561	Magelonidae
+41	MP_E561	Tetilla dactyloidea
+103	MP_E561	Ophiopholis sp_ EAC01
+669	MP_E561	Chironomidae
+7214	MP_E561	Magelona
+173	MP_E561	Merluccius productus
+823	MP_E561	Breviturma doederleini
+225	MP_E561	Kulikovia montgomeryi
+5	MP_E561	Candidatus Chazhemtobacteraceae
+195	MP_E561	Stereobalanus canadensis
+2179	MP_E561	Cheiraster dawsoni
+82	MP_E561	Ophiotreta stimulea
+4	MP_E561	Mycobacteriaceae
+600	MP_E562	Eukaryota
+1427	MP_E562	Unknown
+946	MP_E562	Picozoa
+11429	MP_E562	Candidatus Karelsulcia__f
+2373	MP_E562	Poecilosclerida
+52	MP_E562	Echinoidea
+145	MP_E562	Dendroceratida
+285	MP_E562	Axinellida
+38	MP_E562	Acartia longiremis
+101	MP_E562	Porifera
+9	MP_E562	Carybdeida
+22041	MP_E562	Perciformes
+8	MP_E562	Demospongiae
+11	MP_E562	Dictyodendrillidae
+1	MP_E562	Ophiura sarsii
+11	MP_E562	Velatida
+307	MP_E562	Spatangoida
+124	MP_E562	Bacillota
+12	MP_E562	Siphonophorae
+3	MP_E562	Spongillida
+1805	MP_E562	Actinopteri
+14	MP_E562	Actinomycetaceae
+1692	MP_E562	Euphausia pacifica
+21	MP_E562	Gemmatimonadales
+59	MP_E562	Candidatus Woesebacteria
+9	MP_E562	Candidatus Pseudothioglobus__f
+10	MP_E562	Chordata
+847	MP_E562	Cephalopoda
+12	MP_E562	Latrunculiidae
+4554	MP_E562	Merluccius
+1687	MP_E562	Magelona
+21	MP_E562	Mycoplasmatales
+51	MP_E562	Micrura verrilli
+8633	MP_E565	Eukaryota
+742	MP_E565	Unknown
+791	MP_E565	Picozoa
+7084	MP_E565	Candidatus Karelsulcia__f
+1263	MP_E565	Poecilosclerida
+4	MP_E565	Echinoidea
+61	MP_E565	Dendroceratida
+214	MP_E565	Axinellida
+6	MP_E565	Holothuroidea
+10	MP_E565	Carybdeida
+66	MP_E565	Cyclopecten sp_ DJC_2016
+25992	MP_E565	Perciformes
+99	MP_E565	Demospongiae
+1	MP_E565	Dictyodendrillidae
+112	MP_E565	Ophiura sarsii
+4403	MP_E565	Spatangoida
+7	MP_E565	Siphonophorae
+416	MP_E565	Amphipholis torelli
+315	MP_E565	Heteronemertea
+13	MP_E565	Actinomycetaceae
+1841	MP_E565	Euphausia pacifica
+181	MP_E565	Mammalia
+52	MP_E565	Anthozoa
+315	MP_E565	Monostilifera
+6	MP_E565	Candidatus Pseudothioglobus__f
+544	MP_E565	Petrasma pervernicosa
+4279	MP_E565	Chordata
+37	MP_E565	Negombata
+2003	MP_E565	Rajidae
+135	MP_E565	Tellinidae
+14110	MP_E565	Merluccius
+2	MP_E565	Candidatus Pseudothioglobus__f__o
+727	MP_E565	Magelonidae
+21	MP_E565	Heteromolpadia tridens
+2509	MP_E565	Magelona
+83	MP_E565	Maculaura
+2	MP_E565	Ploima
+5259	MP_E565	Tarletonbeania
+2782	MP_E565	Breviturma doederleini
+130	MP_E565	Kulikovia montgomeryi
+192	MP_E565	Acharax sp_ NY_2022
+318	MP_E565	Ophiotreta stimulea
+81	MP_E565	Breviturma
+8	MP_E565	Aphrocallistes vastus
+3	MP_E565	Nitrososphaerota
+2	MP_E565	Chloropicales
+11363	MP_E566	Eukaryota
+562	MP_E566	Unknown
+583	MP_E566	Picozoa
+7227	MP_E566	Candidatus Karelsulcia__f
+1071	MP_E566	Poecilosclerida
+14	MP_E566	Echinoidea
+43	MP_E566	Dendroceratida
+149	MP_E566	Axinellida
+1	MP_E566	Acartia longiremis
+288	MP_E566	Thysanoessa
+25	MP_E566	Carybdeida
+23	MP_E566	Cyclopecten sp_ DJC_2016
+45439	MP_E566	Perciformes
+214	MP_E566	Demospongiae
+1	MP_E566	Dictyodendrillidae
+97	MP_E566	Ophiura sarsii
+152	MP_E566	Flavobacteriales
+275	MP_E566	Spatangoida
+4	MP_E566	Siphonophorae
+1608	MP_E566	Amphipholis torelli
+3	MP_E566	Spongillida
+385	MP_E566	Eptatretus
+8	MP_E566	Actinomycetaceae
+532	MP_E566	Euphausia pacifica
+6	MP_E566	Candidatus Pseudothioglobus__f
+511	MP_E566	Petrasma pervernicosa
+3955	MP_E566	Merluccius
+2	MP_E566	Ophiopholis sp_ EAC01
+900	MP_E566	Magelona
+41	MP_E566	Scrupocellaria varians
+431	MP_E566	Breviturma doederleini
+149	MP_E566	Ophiotreta stimulea
+14	MP_E566	Littorinimorpha
+5132	MP_E569	Eukaryota
+1	MP_E569	Ulmaridae
+126	MP_E569	Unknown
+290	MP_E569	Picozoa
+3989	MP_E569	Candidatus Karelsulcia__f
+801	MP_E569	Poecilosclerida
+9	MP_E569	Echinoidea
+31	MP_E569	Dendroceratida
+148	MP_E569	Axinellida
+83	MP_E569	Acartia longiremis
+3	MP_E569	Vazella pourtalesii
+2	MP_E569	Carybdeida
+14	MP_E569	Amphimedon compressa
+135	MP_E569	Cyclopecten sp_ DJC_2016
+40439	MP_E569	Perciformes
+171	MP_E569	Demospongiae
+4	MP_E569	Dictyodendrillidae
+11	MP_E569	Heterochone calyx
+125	MP_E569	Flavobacteriales
+1823	MP_E569	Spatangoida
+111	MP_E569	Aphragmophora
+7	MP_E569	Antedonidae
+916	MP_E569	Amphipholis torelli
+1	MP_E569	Spongillida
+21477	MP_E569	Actinopteri
+4085	MP_E569	Eptatretus
+19	MP_E569	Heteronemertea
+5	MP_E569	Actinomycetaceae
+3663	MP_E569	Euphausia pacifica
+224	MP_E569	Mammalia
+10	MP_E569	Candidatus Woesebacteria
+120	MP_E569	Petrasma pervernicosa
+5798	MP_E569	Chordata
+42	MP_E569	Bugulidae
+121	MP_E569	Negombata
+2	MP_E569	Oweniidae
+2060	MP_E569	Rajidae
+53	MP_E569	Tellinidae
+541	MP_E569	Munididae
+41	MP_E569	Hiatellidae
+21	MP_E569	Latrunculiidae
+744	MP_E569	Merluccius
+62	MP_E569	Ophiopholis sp_ EAC01
+20	MP_E569	Chaetopteridae__o
+104	MP_E569	Ophiuroidea
+2008	MP_E569	Magelona
+23247	MP_E569	Breviturma doederleini
+183	MP_E569	Kulikovia montgomeryi
+326	MP_E569	Ophiotreta stimulea
+675	MP_E569	Breviturma
+3	MP_E569	Halisarca dujardinii
+190	MP_E569	Maculaura aquilonia
+143	MP_E569	Watersipora
+1844	MP_E570	Eukaryota
+694	MP_E570	Unknown
+492	MP_E570	Picozoa
+7363	MP_E570	Candidatus Karelsulcia__f
+743	MP_E570	Poecilosclerida
+6	MP_E570	Echinoidea
+39	MP_E570	Dendroceratida
+76	MP_E570	Axinellida
+6	MP_E570	Acartia longiremis
+2	MP_E570	Holothuroidea
+44	MP_E570	Thysanoessa
+8	MP_E570	Carybdeida
+29500	MP_E570	Perciformes
+281	MP_E570	Aphragmophora
+1	MP_E570	Siphonophorae
+371	MP_E570	Amphipholis torelli
+238	MP_E570	Actinopteri
+91	MP_E570	Eusergestes arcticus
+10	MP_E570	Actinomycetaceae
+7	MP_E570	Candidatus Beckwithbacteria
+618	MP_E570	Euphausia pacifica
+4409	MP_E570	Artiodactyla
+4282	MP_E570	Merluccius
+9	MP_E570	Ophiopholis sp_ EAC01
+19	MP_E570	Ophiuroidea
+2	MP_E570	Ploima
+58	MP_E570	Mya
+56	MP_E570	Macoma balthica
+6	MP_E570	Mycoplasmatales
+3	MP_E570	Lagenorhynchus obliquidens
+79561	MP_E573_1B_PCR1	Eukaryota
+46	MP_E573_1B_PCR1	Homo sapiens
+607	MP_E573_1B_PCR1	Unknown
+1689	MP_E573_1B_PCR1	Picozoa
+2232	MP_E573_1B_PCR1	Candidatus Karelsulcia__f
+3890	MP_E573_1B_PCR1	Poecilosclerida
+650	MP_E573_1B_PCR1	Echinoidea
+235	MP_E573_1B_PCR1	Dendroceratida
+288	MP_E573_1B_PCR1	Axinellida
+1	MP_E573_1B_PCR1	Pseudocalanus elongatus
+23503	MP_E573_1B_PCR1	Acartia longiremis
+720	MP_E573_1B_PCR1	Thysanoessa
+10	MP_E573_1B_PCR1	Demospongiae
+41	MP_E573_1B_PCR1	Aphragmophora
+7	MP_E573_1B_PCR1	Spongillida
+9191	MP_E573_1B_PCR1	Actinopteri
+4	MP_E573_1B_PCR1	Candidatus Beckwithbacteria
+9	MP_E573_1B_PCR1	Euphausia pacifica
+434	MP_E573_1B_PCR1	Mammalia
+58	MP_E573_1B_PCR1	Anthozoa
+11	MP_E573_1B_PCR1	Candidatus Woesebacteria
+10	MP_E573_1B_PCR1	Candidatus Pseudothioglobus__f
+18	MP_E573_1B_PCR1	Sagittidae
+6191	MP_E573_1B_PCR1	Chordata
+17	MP_E573_1B_PCR1	Centropagidae
+274	MP_E573_1B_PCR1	Phocoena phocoena
+30	MP_E573_1B_PCR1	Tellinidae
+9	MP_E573_1B_PCR1	Glebocarcinus oregonensis
+1938	MP_E573_1B_PCR1	Merluccius
+5	MP_E573_1B_PCR1	Chaetopteridae__o
+90	MP_E573_1B_PCR1	Macoma
+244	MP_E573_1B_PCR1	Maculaura
+220	MP_E573_1B_PCR1	Maculaura alaskensis
+213	MP_E573_1B_PCR1	Pollicipes polymerus
+41	MP_E573_1B_PCR1	Spionida
+31	MP_E573_1B_PCR1	Hippolytidae
+136	MP_E573_1B_PCR1	Neotrypaea
+14	MP_E573_1B_PCR1	Cerebratulus albifrons
+52	MP_E573_1B_PCR1	Tonicella lineata
+19	MP_E573_1B_PCR1	Gammarus balcanicus
+8	MP_E573_1B_PCR1	Aphididae
+8	MP_E573_1B_PCR1	Liposcelis bostrychophila
+24191	MP_E573_2B_PCR1	Eukaryota
+317	MP_E573_2B_PCR1	Unknown
+848	MP_E573_2B_PCR1	Picozoa
+1692	MP_E573_2B_PCR1	Candidatus Karelsulcia__f
+2322	MP_E573_2B_PCR1	Poecilosclerida
+102	MP_E573_2B_PCR1	Echinoidea
+117	MP_E573_2B_PCR1	Dendroceratida
+188	MP_E573_2B_PCR1	Axinellida
+4592	MP_E573_2B_PCR1	Ctenostomatida
+31296	MP_E573_2B_PCR1	Acartia longiremis
+4	MP_E573_2B_PCR1	Holothuroidea
+775	MP_E573_2B_PCR1	Thysanoessa
+7	MP_E573_2B_PCR1	Suberitida
+2	MP_E573_2B_PCR1	Demospongiae
+4	MP_E573_2B_PCR1	Dictyodendrillidae
+56	MP_E573_2B_PCR1	Bacillota
+180	MP_E573_2B_PCR1	Aphragmophora
+4	MP_E573_2B_PCR1	Siphonophorae
+23445	MP_E573_2B_PCR1	Actinopteri
+115	MP_E573_2B_PCR1	Euphausia pacifica
+35	MP_E573_2B_PCR1	Anthozoa
+12	MP_E573_2B_PCR1	Monostilifera
+12	MP_E573_2B_PCR1	Candidatus Pseudothioglobus__f
+7	MP_E573_2B_PCR1	Sagittidae
+11965	MP_E573_2B_PCR1	Chordata
+89	MP_E573_2B_PCR1	Centropagidae
+1	MP_E573_2B_PCR1	Neogastropoda
+808	MP_E573_2B_PCR1	Phocoena phocoena
+14	MP_E573_2B_PCR1	Phoronidae__o
+113	MP_E573_2B_PCR1	Mytilus californianus
+49	MP_E573_2B_PCR1	Octopodidae
+6136	MP_E573_2B_PCR1	Merluccius
+1421	MP_E573_2B_PCR1	Magelonidae
+2118	MP_E573_2B_PCR1	Chaetopteridae__o
+134	MP_E573_2B_PCR1	Decapoda
+3	MP_E573_2B_PCR1	Columbellidae
+63	MP_E573_2B_PCR1	Maculaura
+209	MP_E573_2B_PCR1	Carinina sp_ chocolate
+343	MP_E573_2B_PCR1	Maculaura alaskensis
+22	MP_E573_2B_PCR1	Spirontocaris holmesi
+7	MP_E573_2B_PCR1	Neotrypaea
+63	MP_E573_2B_PCR1	Eumicrotremus spinosus
+272	MP_E573_2B_PCR1	Carinoma sp_ yellowback
+271	MP_E573_2B_PCR1	Limnophyes sp_ YF_2022
+74	MP_E573_2B_PCR1	Flabellidae
+13739	MP_E573_3B_PCR1	Eukaryota
+52	MP_E573_3B_PCR1	Homo sapiens
+481	MP_E573_3B_PCR1	Unknown
+1078	MP_E573_3B_PCR1	Picozoa
+2347	MP_E573_3B_PCR1	Candidatus Karelsulcia__f
+2377	MP_E573_3B_PCR1	Poecilosclerida
+223	MP_E573_3B_PCR1	Echinoidea
+164	MP_E573_3B_PCR1	Dendroceratida
+163	MP_E573_3B_PCR1	Axinellida
+9	MP_E573_3B_PCR1	Pseudocalanus elongatus
+33203	MP_E573_3B_PCR1	Acartia longiremis
+131	MP_E573_3B_PCR1	Thysanoessa
+6	MP_E573_3B_PCR1	Demospongiae
+190	MP_E573_3B_PCR1	Bacillota
+433	MP_E573_3B_PCR1	Aphragmophora
+7	MP_E573_3B_PCR1	Siphonophorae
+1	MP_E573_3B_PCR1	Spongillida
+13754	MP_E573_3B_PCR1	Actinopteri
+911	MP_E573_3B_PCR1	Euphausia pacifica
+42	MP_E573_3B_PCR1	Anthozoa
+29	MP_E573_3B_PCR1	Candidatus Pseudothioglobus__f
+386	MP_E573_3B_PCR1	Sagittidae
+2664	MP_E573_3B_PCR1	Chordata
+1	MP_E573_3B_PCR1	Centropagidae
+12	MP_E573_3B_PCR1	Lineus flavescens
+123	MP_E573_3B_PCR1	Pinnixa
+14	MP_E573_3B_PCR1	Phoronidae__o
+95	MP_E573_3B_PCR1	Tellinidae
+28	MP_E573_3B_PCR1	Parasagitta elegans
+89	MP_E573_3B_PCR1	Cerebratulus
+88	MP_E573_3B_PCR1	Carcinonemertes
+2411	MP_E573_3B_PCR1	Merluccius
+2	MP_E573_3B_PCR1	Candidatus Pseudothioglobus__f__o
+6	MP_E573_3B_PCR1	Chaetopteridae__o
+1	MP_E573_3B_PCR1	Columbellidae
+49	MP_E573_3B_PCR1	Siliqua alta
+303	MP_E573_3B_PCR1	Maculaura
+3865	MP_E573_3B_PCR1	Phoca
+545	MP_E573_3B_PCR1	Carinina sp_ chocolate
+222	MP_E573_3B_PCR1	Maculaura alaskensis
+2	MP_E573_3B_PCR1	Pirellulaceae
+18	MP_E573_3B_PCR1	Neotrypaea
+368	MP_E573_3B_PCR1	Carinoma sp_ 5 TCH_2015
+10	MP_E573_3B_PCR1	Bryobacterales
+9	MP_E573_3B_PCR1	Spatangus raschi
+129	MP_E573_3B_PCR1	Citharichthys xanthostigma
+16095	MP_E579	Eukaryota
+312	MP_E579	Unknown
+547	MP_E579	Picozoa
+399	MP_E579	Poecilosclerida
+2	MP_E579	Cheilostomatida
+5285	MP_E579	Echinoidea
+13	MP_E579	Dendroceratida
+9	MP_E579	Axinellida
+14	MP_E579	Adapedonta
+41	MP_E579	Pseudocalanus elongatus
+6726	MP_E579	Acartia longiremis
+103708	MP_E579	Balanomorpha
+60	MP_E579	Rhynchozoon sp_ MHD_2004
+1345	MP_E579	Perciformes
+24	MP_E579	Demospongiae
+1	MP_E579	Callyspongia
+4183	MP_E579	Actinopteri
+62	MP_E579	Euphausia pacifica
+20	MP_E579	Sagittidae
+441	MP_E579	Chordata
+145	MP_E579	Asteriidae
+7	MP_E579	Centropagidae
+12	MP_E579	Dendrochirotida
+16	MP_E579	Bugulidae
+7	MP_E579	Lepadidae__o
+2	MP_E579	Amphipoda
+68	MP_E579	Evadne
+29	MP_E579	Cephalothrix
+84	MP_E579	Carinoma mutabilis
+20	MP_E579	Flustridae
+82	MP_E579	Rajidae
+220	MP_E579	Calanoida
+12	MP_E579	Tellinidae
+70	MP_E579	Cephalopoda
+297	MP_E579	Osmeriformes
+7	MP_E579	Corticium
+39	MP_E579	Synchaetidae
+10	MP_E579	Celleporella hyalina
+1141	MP_E579	Mytilus
+55	MP_E579	Dermasterias imbricata
+168	MP_E579	Gallus
+6	MP_E579	Decapoda
+68	MP_E579	Ophiuroidea
+42	MP_E579	Molpadida
+4777	MP_E579	Macoma
+43	MP_E579	Mytilidae
+1	MP_E579	Tresus
+3051	MP_E579	Siliqua alta
+33	MP_E579	Carinoma hamanako
+8	MP_E579	Maculaura
+2	MP_E579	Lampropidae
+12	MP_E579	Metacarcinus magister
+7	MP_E579	Alvania
+26	MP_E579	Maculaura alaskensis
+6	MP_E579	Venerida
+14	MP_E579	Farrellidae
+3	MP_E579	Cerebratulus albifrons
+23	MP_E579	Nitidotellina
+30	MP_E579	Gastropoda
+25	MP_E579	Saxidomus nuttalli
+15	MP_E579	Pagurus
+10	MP_E579	Maculaura magna
+16	MP_E579	Cardiida
+3384	MP_E583	Unknown
+690	MP_E583	Candidatus Karelsulcia__f
+16	MP_E583	Poecilosclerida
+327	MP_E583	Lineidae
+185	MP_E583	Cheilostomatida
+2	MP_E583	Acartia longiremis
+352	MP_E583	Thysanoessa
+57186	MP_E583	Balanomorpha
+69	MP_E583	Ophiura sarsii
+1800	MP_E583	Actinopteri
+52	MP_E583	Harrimaniidae
+43	MP_E583	Heteronemertea
+14	MP_E583	Ophiuridae
+734	MP_E583	Saccoglossus
+16	MP_E583	Euphausia pacifica
+1119	MP_E583	Elpidiidae
+16	MP_E583	Anthozoa
+93	MP_E583	Chiridota sp_ 2 AKM_2016
+154	MP_E583	Sagittidae
+2	MP_E583	Synchaetidae
+168	MP_E583	Octopodidae
+5	MP_E583	Tetractinellida
+5	MP_E583	Siliqua alta
+28	MP_E583	Acharax johnsoni
+3071	MP_E583	Asteronychidae
+79	MP_E583	Brisinga sp_ SS_2022
+29	MP_E583	Hymenaster latebrosus
+16	MP_E588	Ulmaridae
+1056	MP_E588	Unknown
+104	MP_E588	Picozoa
+4031	MP_E588	Candidatus Karelsulcia__f
+95	MP_E588	Poecilosclerida
+2	MP_E588	Chuniphyes multidentata
+5957	MP_E588	Balanomorpha
+3	MP_E588	Carybdeida
+7082	MP_E588	Perciformes
+2	MP_E588	Demospongiae
+8	MP_E588	Dictyodendrillidae
+11	MP_E588	Spongillida
+5	MP_E588	Sphaeronectes koellikeri
+2	MP_E588	Heteronemertea
+2	MP_E588	Actinomycetaceae
+53	MP_E588	Chalinidae
+372	MP_E588	Euphausia pacifica
+356	MP_E588	Insecta
+4	MP_E588	Tetractinellida
+16	MP_E588	Carinaria sp_
+1942	MP_E588	Lonchotaster tartareus
+98	MP_E588	Megabalanus
+6	MP_E588	Magnoliopsida
+5	MP_E588	Lepidodermella squamata
+4	MP_E588	Benthocodon pedunculatus
+770	MP_E588	Psathyrometra fragilis
+706	MP_E590	Unknown
+861	MP_E590	Picozoa
+8415	MP_E590	Candidatus Karelsulcia__f
+1697	MP_E590	Poecilosclerida
+18	MP_E590	Echinoidea
+26	MP_E590	Dendroceratida
+654	MP_E590	Axinellida
+134	MP_E590	Thysanoessa
+61	MP_E590	Carybdeida
+2	MP_E590	Demospongiae
+216	MP_E590	Ophiura sarsii
+2973	MP_E590	Spatangoida
+1	MP_E590	Spongillida
+6636	MP_E590	Actinopteri
+5	MP_E590	Sphaeronectes koellikeri
+135	MP_E590	Eusergestes arcticus
+11	MP_E590	Actinomycetaceae
+1088	MP_E590	Euphausia pacifica
+704	MP_E590	Cephalothrix
+3076	MP_E590	Merluccius
+1290	MP_E590	Breviturma doederleini
+13	MP_E590	Actinulida
+8	MP_E590	Aglantha digitale
+4793	MP_E594	Eukaryota
+879	MP_E594	Unknown
+1195	MP_E594	Picozoa
+5303	MP_E594	Candidatus Karelsulcia__f
+897	MP_E594	Poecilosclerida
+18	MP_E594	Echinoidea
+19	MP_E594	Dendroceratida
+152	MP_E594	Axinellida
+100	MP_E594	Ctenostomatida
+197	MP_E594	Pseudocalanus elongatus
+319	MP_E594	Acartia longiremis
+2	MP_E594	Holothuroidea
+1422	MP_E594	Balanomorpha
+1	MP_E594	Carybdeida
+204	MP_E594	Amphimedon compressa
+13474	MP_E594	Cyclopecten sp_ DJC_2016
+42525	MP_E594	Perciformes
+114	MP_E594	Suberitida
+234	MP_E594	Demospongiae
+464	MP_E594	Forcipulatida
+247	MP_E594	Ophiura sarsii
+13	MP_E594	Heterochone calyx
+90	MP_E594	Stichopodidae
+2550	MP_E594	Spatangoida
+153	MP_E594	Crella
+32	MP_E594	Aphragmophora
+2602	MP_E594	Antedonidae
+1	MP_E594	Siphonophorae
+9	MP_E594	Spongillida
+3	MP_E594	Actinomycetaceae
+1198	MP_E594	Euphausia pacifica
+14	MP_E594	Anthozoa
+4	MP_E594	Candidatus Woesebacteria
+1	MP_E594	Candidatus Pseudothioglobus__f
+569	MP_E594	Sagittidae
+18	MP_E594	Negombata magnifica
+1741	MP_E594	Chordata
+29	MP_E594	Dendrochirotida
+619	MP_E594	Trochida
+30	MP_E594	Tellinidae
+51	MP_E594	Hiatellidae
+87	MP_E594	Latrunculiidae
+62	MP_E594	Ophiura luetkenii
+82	MP_E594	Crella elegans
+142	MP_E594	Ophiopholis sp_ EAC01
+429	MP_E594	Decapoda
+840	MP_E594	Magelona
+8	MP_E594	Carinaria sp_
+379	MP_E594	Breviturma doederleini
+63	MP_E594	Ophiotreta stimulea
+136	MP_E594	Micrura verrilli
+94	MP_E594	Watersipora
+35	MP_E594	Cardiida
+95	MP_E594	Tethyida
+68	MP_E594	Ophiopholis
+19	MP_E594	Axinellidae
+5	MP_E594	Cadlina luteomarginata
+660	MP_E594	Lophaster furcilliger
+303	MP_E594	Tubulanus
+298	MP_E594	Smittinidae
+133	MP_E594	Micrura
+601	MP_E598_1B_PCR1	Unknown
+735	MP_E598_1B_PCR1	Picozoa
+1082	MP_E598_1B_PCR1	Candidatus Karelsulcia__f
+1085	MP_E598_1B_PCR1	Poecilosclerida
+23	MP_E598_1B_PCR1	Echinoidea
+224	MP_E598_1B_PCR1	Dendroceratida
+309	MP_E598_1B_PCR1	Axinellida
+6	MP_E598_1B_PCR1	Carybdeida
+22	MP_E598_1B_PCR1	Suberitida
+75	MP_E598_1B_PCR1	Demospongiae
+283	MP_E598_1B_PCR1	Spatangoida
+129	MP_E598_1B_PCR1	Aphragmophora
+61	MP_E598_1B_PCR1	Siphonophorae
+35689	MP_E598_1B_PCR1	Actinopteri
+4	MP_E598_1B_PCR1	Actinomycetaceae
+5275	MP_E598_1B_PCR1	Euphausia pacifica
+5	MP_E598_1B_PCR1	Candidatus Woesebacteria
+3	MP_E598_1B_PCR1	Candidatus Pseudothioglobus__f
+46	MP_E598_1B_PCR1	Sagittidae
+181	MP_E598_1B_PCR1	Parasagitta elegans
+9	MP_E598_1B_PCR1	Carcinonemertes
+925	MP_E598_1B_PCR1	Merluccius
+1012	MP_E598_2B_PCR1	Unknown
+1051	MP_E598_2B_PCR1	Picozoa
+2185	MP_E598_2B_PCR1	Candidatus Karelsulcia__f
+1777	MP_E598_2B_PCR1	Poecilosclerida
+44	MP_E598_2B_PCR1	Echinoidea
+391	MP_E598_2B_PCR1	Dendroceratida
+433	MP_E598_2B_PCR1	Axinellida
+3882	MP_E598_2B_PCR1	Thysanoessa
+4624	MP_E598_2B_PCR1	Balanomorpha
+2	MP_E598_2B_PCR1	Carybdeida
+11	MP_E598_2B_PCR1	Demospongiae
+5	MP_E598_2B_PCR1	Dictyodendrillidae
+65	MP_E598_2B_PCR1	Bacillota
+113	MP_E598_2B_PCR1	Aphragmophora
+4	MP_E598_2B_PCR1	Spongillida
+9932	MP_E598_2B_PCR1	Actinopteri
+2697	MP_E598_2B_PCR1	Euphausia pacifica
+8	MP_E598_2B_PCR1	Anthozoa
+2	MP_E598_2B_PCR1	Candidatus Pseudothioglobus__f
+14	MP_E598_2B_PCR1	Sagittidae
+28	MP_E598_2B_PCR1	Calanoida
+44	MP_E598_2B_PCR1	Tellinidae
+5357	MP_E598_2B_PCR1	Merluccius
+31	MP_E598_2B_PCR1	Lampropidae
+10704	MP_E598_3B_PCR1	Eukaryota
+38	MP_E598_3B_PCR1	Homo sapiens
+2195	MP_E598_3B_PCR1	Unknown
+1674	MP_E598_3B_PCR1	Picozoa
+3597	MP_E598_3B_PCR1	Candidatus Karelsulcia__f
+4023	MP_E598_3B_PCR1	Poecilosclerida
+83	MP_E598_3B_PCR1	Echinoidea
+684	MP_E598_3B_PCR1	Dendroceratida
+866	MP_E598_3B_PCR1	Axinellida
+50	MP_E598_3B_PCR1	Thysanoessa
+1313	MP_E598_3B_PCR1	Balanomorpha
+11	MP_E598_3B_PCR1	Carybdeida
+7	MP_E598_3B_PCR1	Demospongiae
+6	MP_E598_3B_PCR1	Dictyodendrillidae
+3	MP_E598_3B_PCR1	Siphonophorae
+3	MP_E598_3B_PCR1	Actinomycetaceae
+9531	MP_E598_3B_PCR1	Euphausia pacifica
+6	MP_E598_3B_PCR1	Candidatus Pseudothioglobus__f
+66	MP_E598_3B_PCR1	Sagittidae
+17	MP_E598_3B_PCR1	Psammobiidae
+107	MP_E598_3B_PCR1	Tellinidae
+5104	MP_E598_3B_PCR1	Merluccius
+11	MP_E598_3B_PCR1	Mycoplasmatales
+12	MP_E598_3B_PCR1	Euphausiidae
+2	MP_E598_3B_PCR1	Mallomonadaceae
+17163	MP_E601	Eukaryota
+95	MP_E601	Homo sapiens
+110	MP_E601	Unknown
+112	MP_E601	Picozoa
+319	MP_E601	Candidatus Karelsulcia__f
+479	MP_E601	Poecilosclerida
+21	MP_E601	Echinoidea
+53	MP_E601	Dendroceratida
+68	MP_E601	Axinellida
+789	MP_E601	Thysanoessa
+181	MP_E601	Balanomorpha
+5	MP_E601	Carybdeida
+7079	MP_E601	Cyclopecten sp_ DJC_2016
+1	MP_E601	Demospongiae
+230	MP_E601	Aphragmophora
+1	MP_E601	Actinomycetaceae
+197	MP_E601	Saccoglossus
+1334	MP_E601	Euphausia pacifica
+5	MP_E601	Anthozoa
+4767	MP_E601	Chordata
+77	MP_E601	Tubulanus sp_ 3 TCH_2015
+123930	MP_E601	Merluccius
+70	MP_E601	Axinella
+474	MP_E601	Breviturma doederleini
+3	MP_E601	Cadlina
+16	MP_E601	Cerianthidae
+1019	MP_E604	Eukaryota
+656	MP_E604	Unknown
+1697	MP_E604	Picozoa
+1069	MP_E604	Candidatus Karelsulcia__f
+2220	MP_E604	Poecilosclerida
+54	MP_E604	Echinoidea
+194	MP_E604	Dendroceratida
+178	MP_E604	Axinellida
+160	MP_E604	Adapedonta
+130	MP_E604	Pseudocalanus elongatus
+15967	MP_E604	Acartia longiremis
+421	MP_E604	Thysanoessa
+7	MP_E604	Demospongiae
+2243	MP_E604	Aphragmophora
+1	MP_E604	Siphonophorae
+24667	MP_E604	Actinopteri
+398	MP_E604	Eptatretus
+266	MP_E604	Euphausia pacifica
+2	MP_E604	Candidatus Pseudothioglobus__f
+1110	MP_E604	Sagittidae
+5837	MP_E604	Chordata
+281	MP_E604	Asteriidae
+72	MP_E604	Pinnixa
+7354	MP_E604	Phocoena phocoena
+10	MP_E604	Calanoida
+10	MP_E604	Phoronidae__o
+210	MP_E604	Tellinidae
+5828	MP_E604	Osmeriformes
+6964	MP_E604	Magelonidae
+249	MP_E604	Molpadida
+32	MP_E604	Siliqua alta
+36760	MP_E604	Maculaura
+64	MP_E604	Carinina sp_ chocolate
+7	MP_E604	Lampropidae
+836	MP_E604	Maculaura alaskensis
+18	MP_E604	Macoma nasuta
+106	MP_E604	Mya
+3	MP_E604	Macoma balthica
+5	MP_E604	Candidatus Chazhemtobacteraceae
+631	MP_E604	Spionida
+23	MP_E604	Neotrypaea
+694	MP_E604	Carinoma sp_ 5 TCH_2015
+43	MP_E604	Semelidae
+897	MP_E604	Numenius
+459	MP_E604	Sagittoidea
+176	MP_E604	Loxosomatidae
+16	MP_E604	Schizocardium
+1745	MP_E607	Unknown
+1110	MP_E607	Picozoa
+687	MP_E607	Candidatus Karelsulcia__f
+1671	MP_E607	Poecilosclerida
+14	MP_E607	Cheilostomatida
+82	MP_E607	Echinoidea
+288	MP_E607	Dendroceratida
+410	MP_E607	Axinellida
+59	MP_E607	Pseudocalanus elongatus
+4576	MP_E607	Acartia longiremis
+598	MP_E607	Thysanoessa
+107	MP_E607	Balanomorpha
+13	MP_E607	Carybdeida
+5	MP_E607	Amphimedon compressa
+345	MP_E607	Spatangoida
+239	MP_E607	Aphragmophora
+1	MP_E607	Siphonophorae
+22120	MP_E607	Actinopteri
+4	MP_E607	Actinomycetaceae
+1454	MP_E607	Euphausia pacifica
+4098	MP_E607	Mammalia
+102	MP_E607	Sagittidae
+24	MP_E607	Crellidae
+8257	MP_E607	Chordata
+78	MP_E607	Pinnixa
+97	MP_E607	Psammobiidae
+58	MP_E607	Tellinidae
+30855	MP_E607	Osmeriformes
+1098	MP_E607	Breviturma doederleini
+137	MP_E607	Numenius
+22	MP_E607	Aeromonadales
+4868	MP_E632	Eukaryota
+1804	MP_E632	Unknown
+200	MP_E632	Picozoa
+957	MP_E632	Candidatus Karelsulcia__f
+5	MP_E632	Doliolum nationalis
+446	MP_E632	Poecilosclerida
+55	MP_E632	Echinoidea
+16	MP_E632	Dendroceratida
+219	MP_E632	Axinellida
+25	MP_E632	Pseudocalanus elongatus
+2255	MP_E632	Acartia longiremis
+22	MP_E632	Thysanoessa
+39	MP_E632	Balanomorpha
+7	MP_E632	Carybdeida
+3608	MP_E632	Perciformes
+3	MP_E632	Stichopodidae
+277	MP_E632	Spatangoida
+10	MP_E632	Aphragmophora
+3195	MP_E632	Actinopteri
+368	MP_E632	Harrimaniidae
+3	MP_E632	Actinomycetaceae
+433	MP_E632	Euphausia pacifica
+5	MP_E632	Anthozoa
+2	MP_E632	Monostilifera
+44	MP_E632	Sagittidae
+1568	MP_E632	Chordata
+4	MP_E632	Amphipoda
+36512	MP_E632	Psammobiidae
+133	MP_E632	Luidia foliolata
+110710	MP_E632	Tellinidae
+82	MP_E632	Otariidae
+40	MP_E632	Clavagellidae
+4	MP_E632	Cellariidae
+43	MP_E632	Cucumaria
+24	MP_E632	Carcinonemertes
+928	MP_E632	Magelonidae
+19	MP_E632	Ophiuroidea
+5	MP_E632	Columbellidae
+12	MP_E632	Macoma
+38	MP_E632	Tubulaniformes
+84	MP_E632	Macoma nasuta
+196	MP_E632	Breviturma doederleini
+31	MP_E632	Kulikovia montgomeryi
+2	MP_E632	Mollusca
+444	MP_E632	Spionida
+5	MP_E632	Poseidonemertes
+3	MP_E632	Cardiida
+15	MP_E632	Semelidae
+5	MP_E632	Ceratopogonidae
+274	MP_E632	Balaenoptera musculus
+169	MP_E632	Acila
+4781	MP_E635	Unknown
+6998	MP_E635	Picozoa
+7	MP_E635	Candidatus Karelsulcia__f
+1	MP_E635	Doliolum nationalis
+379	MP_E635	Poecilosclerida
+7828	MP_E635	Echinoidea
+63	MP_E635	Dendroceratida
+1378	MP_E635	Axinellida
+27	MP_E635	Pseudocalanus elongatus
+2119	MP_E635	Acartia longiremis
+21	MP_E635	Thysanoessa
+161	MP_E635	Balanomorpha
+67	MP_E635	Demospongiae
+114	MP_E635	Sclerodactylidae
+4	MP_E635	Spongillida
+17222	MP_E635	Actinopteri
+46	MP_E635	Euphausia pacifica
+6	MP_E635	Candidatus Woesebacteria
+3	MP_E635	Candidatus Pseudothioglobus__f
+2205	MP_E635	Chordata
+6	MP_E635	Centropagidae
+860	MP_E635	Evadne
+23	MP_E635	Elusimicrobiota
+5	MP_E635	Rhodobacterales
+158	MP_E635	Psammobiidae
+3	MP_E635	Flustridae
+552	MP_E635	Rajidae
+532	MP_E635	Tellinidae
+9	MP_E635	Synchaetidae
+25	MP_E635	Moerella
+236	MP_E635	Podonidae
+28	MP_E635	Alvania
+34	MP_E638	Eukaryota
+69	MP_E638	Unknown
+402	MP_E638	Picozoa
+4	MP_E638	Doliolum nationalis
+4	MP_E638	Echinoidea
+1	MP_E638	Axinellida
+194	MP_E638	Acartia longiremis
+5633	MP_E638	Balanomorpha
+4	MP_E638	Demospongiae
+14574	MP_E638	Actinopteri
+701	MP_E638	Sagittidae
+1	MP_E638	Centropagidae
+124645	MP_E638	Evadne
+1	MP_E638	Phocoena phocoena
+4	MP_E638	Calanoida
+179	MP_E638	Tellinidae
+235	MP_E638	Osmeriformes
+2	MP_E638	Synchaetidae
+5542	MP_E638	Chthamalus
+4412	MP_E638	Podonidae
+194	MP_E638	Cardiida
+21	MP_E638	Onchidoris bilamellata
+9	MP_E638	Nudibranchia
+31282	MP_E655	Eukaryota
+45	MP_E655	Enteroctopus
+138	MP_E655	Homo sapiens
+1589	MP_E655	Unknown
+3911	MP_E655	Picozoa
+4495	MP_E655	Candidatus Karelsulcia__f
+21	MP_E655	Diptera
+2715	MP_E655	Poecilosclerida
+291	MP_E655	Cheilostomatida
+517	MP_E655	Echinoidea
+29	MP_E655	Dendroceratida
+1081	MP_E655	Axinellida
+284	MP_E655	Ctenostomatida
+209	MP_E655	Pseudocalanus elongatus
+532	MP_E655	Acartia longiremis
+1301	MP_E655	Thysanoessa
+645	MP_E655	Balanomorpha
+29	MP_E655	Carybdeida
+147	MP_E655	Amphimedon compressa
+2057	MP_E655	Cyclopecten sp_ DJC_2016
+51357	MP_E655	Perciformes
+10	MP_E655	Suberitida
+50	MP_E655	Demospongiae
+34	MP_E655	Ophiopholis mirabilis
+106	MP_E655	Tethyidae
+4	MP_E655	Velatida
+103	MP_E655	Flavobacteriales
+56	MP_E655	Stichopodidae
+46	MP_E655	Crella
+8837	MP_E655	Chimaeriformes
+7132	MP_E655	Antedonidae
+2	MP_E655	Siphonophorae
+714	MP_E655	Amphipholis torelli
+11	MP_E655	Actinopteri
+4567	MP_E655	Stenobrachius leucopsarus
+1	MP_E655	Actinomycetaceae
+912	MP_E655	Euphausia pacifica
+5	MP_E655	Anthozoa
+4	MP_E655	Candidatus Pseudothioglobus__f
+34	MP_E655	Negombata magnifica
+1335	MP_E655	Chordata
+1057	MP_E655	Asteriidae
+38	MP_E655	Dendrochirotida
+46	MP_E655	Negombata
+2	MP_E655	Lineus flavescens
+4	MP_E655	Amphipoda
+74	MP_E655	Flustridae
+294	MP_E655	Luidia foliolata
+17	MP_E655	Phoronidae__o
+131	MP_E655	Cephalopoda
+44	MP_E655	Corticium
+67	MP_E655	Cellariidae
+117	MP_E655	Munididae
+58	MP_E655	Cucumaria
+6	MP_E655	Latrunculiidae
+118	MP_E655	Insecta
+2	MP_E655	Homosclerophorida
+179	MP_E655	Zygonemertes
+141	MP_E655	Merluccius
+13	MP_E655	Tetractinellida
+34	MP_E655	Crella elegans
+94	MP_E655	Ophiopholis sp_ EAC01
+180	MP_E655	Chaetopteridae__o
+11	MP_E655	Decapoda
+1490	MP_E655	Tarletonbeania
+9	MP_E655	Ophiotreta stimulea
+6	MP_E655	Aphrocallistes vastus
+3525	MP_E655	Pteraster sp_ TX_2020
+57	MP_E655	Acanthella acuta
+48	MP_E655	Plakinidae
+4	MP_E655	Corambe
+64037	MP_E658_1B	Eukaryota
+235	MP_E658_1B	Homo sapiens
+2113	MP_E658_1B	Unknown
+3653	MP_E658_1B	Picozoa
+5925	MP_E658_1B	Candidatus Karelsulcia__f
+3034	MP_E658_1B	Poecilosclerida
+881	MP_E658_1B	Echinoidea
+26	MP_E658_1B	Dendroceratida
+1784	MP_E658_1B	Axinellida
+1	MP_E658_1B	Pseudocalanus elongatus
+9	MP_E658_1B	Acartia longiremis
+1	MP_E658_1B	Holothuroidea
+1299	MP_E658_1B	Thysanoessa
+1704	MP_E658_1B	Balanomorpha
+61	MP_E658_1B	Carybdeida
+3081	MP_E658_1B	Cyclopecten sp_ DJC_2016
+31332	MP_E658_1B	Perciformes
+278	MP_E658_1B	Demospongiae
+54	MP_E658_1B	Trochidae
+6	MP_E658_1B	Ophiopholis mirabilis
+955	MP_E658_1B	Spatangoida
+847	MP_E658_1B	Antedonidae
+2	MP_E658_1B	Siphonophorae
+1297	MP_E658_1B	Amphipholis torelli
+2	MP_E658_1B	Spongillida
+2223	MP_E658_1B	Actinopteri
+10	MP_E658_1B	Actinomycetaceae
+245	MP_E658_1B	Euphausia pacifica
+11	MP_E658_1B	Mammalia
+93	MP_E658_1B	Tubulanidae
+79	MP_E658_1B	Anthozoa
+4	MP_E658_1B	Candidatus Pseudothioglobus__f
+740	MP_E658_1B	Chordata
+8094	MP_E658_1B	Artiodactyla
+815	MP_E658_1B	Bugulidae
+138	MP_E658_1B	Tubulanus sp_ 3 TCH_2015
+207	MP_E658_1B	Pinnixa
+208	MP_E658_1B	Tellinidae
+123	MP_E658_1B	Zygonemertes
+5758	MP_E658_1B	Merluccius
+94	MP_E658_1B	Tetractinellida
+24	MP_E658_1B	Ophiuroidea
+4	MP_E658_1B	Callyspongiidae
+1563	MP_E658_1B	Hemichordata
+1541	MP_E658_1B	Xylophaga washingtona
+2	MP_E658_1B	Metridium senile
+590	MP_E658_1B	Amphiuridae
+291	MP_E658_1B	Actiniaria
+225	MP_E658_1B	Citharichthys
+198	MP_E658_1B	Hubrechtella
+127	MP_E658_1B	Leucilla nuttingi
+16074	MP_E658_2T	Eukaryota
+2035	MP_E658_2T	Unknown
+4173	MP_E658_2T	Picozoa
+6350	MP_E658_2T	Candidatus Karelsulcia__f
+8	MP_E658_2T	Doliolum nationalis
+2223	MP_E658_2T	Poecilosclerida
+394	MP_E658_2T	Echinoidea
+36	MP_E658_2T	Dendroceratida
+1353	MP_E658_2T	Axinellida
+118	MP_E658_2T	Pseudocalanus elongatus
+18	MP_E658_2T	Acartia longiremis
+256	MP_E658_2T	Thysanoessa
+1158	MP_E658_2T	Balanomorpha
+28	MP_E658_2T	Carybdeida
+246	MP_E658_2T	Amphimedon compressa
+1445	MP_E658_2T	Cyclopecten sp_ DJC_2016
+26753	MP_E658_2T	Perciformes
+20	MP_E658_2T	Suberitida
+873	MP_E658_2T	Demospongiae
+85	MP_E658_2T	Trochidae
+1	MP_E658_2T	Dictyodendrillidae
+14	MP_E658_2T	Tethyidae
+1010	MP_E658_2T	Spatangoida
+153	MP_E658_2T	Sclerodactylidae
+868	MP_E658_2T	Antedonidae
+4	MP_E658_2T	Siphonophorae
+3975	MP_E658_2T	Amphipholis torelli
+10	MP_E658_2T	Environmental Unknown
+3491	MP_E658_2T	Actinopteri
+3225	MP_E658_2T	Stenobrachius leucopsarus
+6	MP_E658_2T	Actinomycetaceae
+1751	MP_E658_2T	Euphausia pacifica
+13	MP_E658_2T	Anthozoa
+6	MP_E658_2T	Candidatus Pseudothioglobus__f
+26	MP_E658_2T	Chordata
+1747	MP_E658_2T	Artiodactyla
+4	MP_E658_2T	Orcinus orca
+339	MP_E658_2T	Margarites
+11	MP_E658_2T	Phoronidae__o
+801	MP_E658_2T	Cephalopoda
+8	MP_E658_2T	Pachycheles
+94	MP_E658_2T	Zygonemertes
+1139	MP_E658_2T	Merluccius
+3	MP_E658_2T	Ophiopholis sp_ EAC01
+109	MP_E658_2T	Poseidonemertes
+49	MP_E658_2T	Cardiida
+265	MP_E658_2T	Balaenoptera musculus
+2490	MP_E658_2T	Pteraster sp_ TX_2020
+29	MP_E658_2T	Callyspongiidae
+8	MP_E658_2T	Lineus sp_ 1 TCH_2015
+2	MP_E658_2T	Ostreococcus sp_ _lucimarinus_
+383	MP_E658_2T	Architaenioglossa
+3	MP_E658_2T	Ophiothrix angulata
+12501	MP_E658_3T	Eukaryota
+1654	MP_E658_3T	Unknown
+3403	MP_E658_3T	Picozoa
+3842	MP_E658_3T	Candidatus Karelsulcia__f
+2580	MP_E658_3T	Poecilosclerida
+136	MP_E658_3T	Echinoidea
+15	MP_E658_3T	Dendroceratida
+1324	MP_E658_3T	Axinellida
+16	MP_E658_3T	Steironepion moniliferum
+6	MP_E658_3T	Porifera
+3854	MP_E658_3T	Thysanoessa
+630	MP_E658_3T	Balanomorpha
+56	MP_E658_3T	Carybdeida
+13	MP_E658_3T	Amphimedon compressa
+277	MP_E658_3T	Rhynchozoon sp_ MHD_2004
+8690	MP_E658_3T	Cyclopecten sp_ DJC_2016
+15946	MP_E658_3T	Perciformes
+41	MP_E658_3T	Demospongiae
+565	MP_E658_3T	Forcipulatida
+12	MP_E658_3T	Stichopodidae
+234	MP_E658_3T	Spatangoida
+10	MP_E658_3T	Sclerodactylidae
+581	MP_E658_3T	Antedonidae
+1	MP_E658_3T	Siphonophorae
+233	MP_E658_3T	Amphipholis torelli
+5	MP_E658_3T	Spongillida
+2786	MP_E658_3T	Actinopteri
+3	MP_E658_3T	Sphaeronectes koellikeri
+5	MP_E658_3T	Actinomycetaceae
+225	MP_E658_3T	Euphausia pacifica
+6	MP_E658_3T	Candidatus Pseudothioglobus__f
+41	MP_E658_3T	Crellidae
+135	MP_E658_3T	Chordata
+326	MP_E658_3T	Celleporina souleae
+1906	MP_E658_3T	Phocoena phocoena
+343	MP_E658_3T	Parasmittina
+542	MP_E658_3T	Dermasterias imbricata
+4260	MP_E658_3T	Merluccius
+152	MP_E658_3T	Crella elegans
+16	MP_E658_3T	Ophiopholis sp_ EAC01
+83	MP_E658_3T	Parasmittina jeffreysi
+478	MP_E658_3T	Breviturma doederleini
+21	MP_E658_3T	Nitidotellina
+34	MP_E658_3T	Ophiotreta stimulea
+46	MP_E658_3T	Cerianthidae
+15	MP_E658_3T	Plakinidae
+44	MP_E658_3T	Heptacarpus
+15	MP_E658_3T	Hermissenda
+1369	MP_E661	Eukaryota
+6	MP_E661	Ulmaridae
+34	MP_E661	Homo sapiens
+2027	MP_E661	Unknown
+3067	MP_E661	Picozoa
+5665	MP_E661	Candidatus Karelsulcia__f
+2244	MP_E661	Poecilosclerida
+143	MP_E661	Echinoidea
+25	MP_E661	Dendroceratida
+1015	MP_E661	Axinellida
+6	MP_E661	Pseudocalanus elongatus
+102	MP_E661	Porifera
+564	MP_E661	Thysanoessa
+40	MP_E661	Carybdeida
+44	MP_E661	Amphimedon compressa
+22134	MP_E661	Cyclopecten sp_ DJC_2016
+41657	MP_E661	Perciformes
+52	MP_E661	Demospongiae
+7	MP_E661	Dictyodendrillidae
+5	MP_E661	Tethyidae
+613	MP_E661	Callyspongia
+5324	MP_E661	Spatangoida
+229	MP_E661	Chimaeriformes
+1098	MP_E661	Antedonidae
+3	MP_E661	Siphonophorae
+2046	MP_E661	Amphipholis torelli
+1	MP_E661	Sphaeronectes koellikeri
+835	MP_E661	Eptatretus
+320	MP_E661	Eusergestes arcticus
+16	MP_E661	Actinomycetaceae
+404	MP_E661	Euphausia pacifica
+45	MP_E661	Anthozoa
+6	MP_E661	Candidatus Pseudothioglobus__f
+195	MP_E661	Chordata
+98	MP_E661	Dendrochirotida
+485	MP_E661	Cephalopoda
+1178	MP_E661	Insecta
+1527	MP_E661	Merluccius
+17	MP_E661	Clathria prolifera
+71	MP_E661	Ophiopholis sp_ EAC01
+9	MP_E661	Terebratulina unguicula
+98	MP_E661	Nitidotellina
+175	MP_E661	Ophiotreta stimulea
+2	MP_E661	Mycoplasmatales
+368	MP_E661	Balaenoptera musculus
+8	MP_E661	Aptyxis
+6	MP_E661	Clionaidae
+382	MP_E661	Patiria miniata
+28641	MP_E675_1B	Eukaryota
+816	MP_E675_1B	Unknown
+776	MP_E675_1B	Picozoa
+4683	MP_E675_1B	Candidatus Karelsulcia__f
+729	MP_E675_1B	Poecilosclerida
+50	MP_E675_1B	Echinoidea
+22	MP_E675_1B	Dendroceratida
+292	MP_E675_1B	Axinellida
+24	MP_E675_1B	Carybdeida
+1	MP_E675_1B	Dictyodendrillidae
+2273	MP_E675_1B	Spatangoida
+760	MP_E675_1B	Antedonidae
+2480	MP_E675_1B	Actinopteri
+1176	MP_E675_1B	Stenobrachius leucopsarus
+57	MP_E675_1B	Euphausia pacifica
+4	MP_E675_1B	Candidatus Pseudothioglobus__f
+2886	MP_E675_1B	Chordata
+21	MP_E675_1B	Amphipoda
+6	MP_E675_1B	Elusimicrobiota
+420	MP_E675_1B	Psammobiidae
+215	MP_E675_1B	Tellinidae
+232	MP_E675_1B	Clavagellidae
+10	MP_E675_1B	Aoroides columbiae
+3604	MP_E675_1B	Merluccius
+6	MP_E675_1B	Tetractinellida
+315	MP_E675_1B	Breviturma doederleini
+3	MP_E675_1B	Candidatus Chazhemtobacteraceae
+2	MP_E675_1B	Chloropicales
+61	MP_E675_1B	Loxosomella aloxiata
+1137	MP_E675_1B	Amphilepidida
+40	MP_E675_1B	Lycodichthys antarcticus
+1306	MP_E675_1B	Luidia neozelanica
+7	MP_E675_1B	Lucicutia flavicornis
+361	MP_E675_1B	Acartia tonsa
+134	MP_E675_1B	Frigidocardium
+135	MP_E675_1B	Smittina
+120	MP_E675_1B	Amphioplus
+7	MP_E685	Eukaryota
+439	MP_E685	Unknown
+430	MP_E685	Picozoa
+709	MP_E685	Candidatus Karelsulcia__f
+776	MP_E685	Poecilosclerida
+215	MP_E685	Cheilostomatida
+29	MP_E685	Echinoidea
+4	MP_E685	Dendroceratida
+135	MP_E685	Axinellida
+1	MP_E685	Acartia longiremis
+1	MP_E685	Carybdeida
+16	MP_E685	Callyspongia
+1005	MP_E685	Spatangoida
+1	MP_E685	Siphonophorae
+123732	MP_E685	Actinopteri
+183	MP_E685	Harrimaniidae
+4213	MP_E685	Chordata
+162	MP_E685	Tubulanus sp_ 3 TCH_2015
+12	MP_E685	Calanoida
+3384	MP_E685	Luidia foliolata
+69	MP_E685	Tellinidae
+22	MP_E685	Clavagellidae
+6	MP_E685	Aoroides columbiae
+64	MP_E685	Compsomyax subdiaphana
+47	MP_E685	Heteromolpadia tridens
+97	MP_E685	Maculaura
+10	MP_E685	Macoma nasuta
+21	MP_E685	Pilidiophora
+1929	MP_E685	Schizocardium
+2	MP_E685	Hemichordata
+41	MP_E685	Halichoeres
+19	MP_E685	Cephalaspidea
+8	MP_E685	Lucinoma borealis
+341	MP_E685	Gymnothorax meleagris
+610	MP_E685	Thymallus
+19	MP_E685	Olindiasidae
+1	MP_E685	Eualus subtilis
+1799	MP_E688	Eukaryota
+443	MP_E688	Unknown
+378	MP_E688	Picozoa
+5	MP_E688	Candidatus Karelsulcia__f
+124	MP_E688	Poecilosclerida
+49	MP_E688	Echinoidea
+2	MP_E688	Dendroceratida
+77	MP_E688	Axinellida
+5802	MP_E688	Adapedonta
+94	MP_E688	Acartia longiremis
+14	MP_E688	Balanomorpha
+4	MP_E688	Tethyidae
+1	MP_E688	Siphonophorae
+55429	MP_E688	Actinopteri
+4	MP_E688	Heteronemertea
+45	MP_E688	Saccoglossus
+182	MP_E688	Chordata
+39	MP_E688	Artiodactyla
+153	MP_E688	Asteriidae
+32	MP_E688	Celleporina souleae
+25	MP_E688	Dendrochirotida
+304	MP_E688	Megaptera novaeangliae
+215	MP_E688	Phocoena phocoena
+24	MP_E688	Carinoma mutabilis
+1	MP_E688	Calanoida
+185	MP_E688	Tellinidae
+25239	MP_E688	Mytilus
+147	MP_E688	Cerebratulus
+2	MP_E688	Decapoda
+256	MP_E688	Mytilidae
+4	MP_E688	Galeommatida
+14	MP_E688	Maculaura
+58	MP_E688	Tubulaniformes
+987	MP_E688	Venerida
+587	MP_E688	Macoma nasuta
+36	MP_E688	Myida
+5	MP_E688	Neotrypaea
+27	MP_E688	Cerebratulus albifrons
+47822	MP_E688	Nitidotellina
+90	MP_E688	Carinoma sp_ 5 TCH_2015
+434	MP_E688	Carinoma sp_ yellowback
+2	MP_E688	Ophiothrix angulata
+23	MP_E688	Acartia tonsa
+20	MP_E688	Ptychoderidae
+1	MP_E688	Pseudocardium sachalinense
+27	MP_E688	Pinnotheridae
+29	MP_E688	Loxorhynchus crispatus
+22	MP_E688	Emerita
+15	MP_E688	Myidae
+10	MP_E688	Veneridae
+5	MP_E688	Paracalanidae
+4	MP_E688	Celleporella sp_ CAL_2
+24	MP_E688	Siliqua
+115	MP_E688	Chamidae
+26847	MP_E691_1B	Eukaryota
+1215	MP_E691_1B	Unknown
+2355	MP_E691_1B	Picozoa
+2031	MP_E691_1B	Candidatus Karelsulcia__f
+1872	MP_E691_1B	Poecilosclerida
+3	MP_E691_1B	Lineidae
+100	MP_E691_1B	Echinoidea
+12	MP_E691_1B	Dendroceratida
+434	MP_E691_1B	Axinellida
+84	MP_E691_1B	Adapedonta
+9	MP_E691_1B	Pseudocalanus elongatus
+599	MP_E691_1B	Acartia longiremis
+6	MP_E691_1B	Carybdeida
+10	MP_E691_1B	Siphonophorae
+2	MP_E691_1B	Environmental Unknown
+70127	MP_E691_1B	Actinopteri
+8	MP_E691_1B	Mammalia
+2	MP_E691_1B	Anthozoa
+7	MP_E691_1B	Monostilifera
+33	MP_E691_1B	Sagittidae
+3567	MP_E691_1B	Chordata
+750	MP_E691_1B	Artiodactyla
+327	MP_E691_1B	Dendrochirotida
+1370	MP_E691_1B	Megaptera novaeangliae
+114	MP_E691_1B	Tubulanus sp_ 3 TCH_2015
+8604	MP_E691_1B	Phocoena phocoena
+3	MP_E691_1B	Calanoida
+227	MP_E691_1B	Tellinidae
+20	MP_E691_1B	Hiatellidae
+13	MP_E691_1B	Compsomyax subdiaphana
+37954	MP_E691_1B	Cerebratulus
+11	MP_E691_1B	Carcinonemertes
+81	MP_E691_1B	Sapromyza palpella
+343	MP_E691_1B	Magelonidae
+239	MP_E691_1B	Nemertea
+2	MP_E691_1B	Chaetopteridae__o
+1250	MP_E691_1B	Heteromolpadia tridens
+153	MP_E691_1B	Decapoda
+432	MP_E691_1B	Mytilidae
+19	MP_E691_1B	Galeommatida
+76	MP_E691_1B	Siliqua alta
+394	MP_E691_1B	Maculaura
+6	MP_E691_1B	Lampropidae
+1	MP_E691_1B	Nassariidae
+251	MP_E691_1B	Maculaura alaskensis
+245	MP_E691_1B	Tubulaniformes
+12	MP_E691_1B	Macoma nasuta
+154	MP_E691_1B	Myida
+52	MP_E691_1B	Neotrypaea
+4116	MP_E691_1B	Carinoma sp_ yellowback
+136	MP_E691_1B	Cardiida
+315	MP_E691_1B	Schizocardium
+2	MP_E691_1B	Ophiothrix angulata
+5	MP_E691_1B	Acartia tonsa
+118	MP_E691_1B	Olindiasidae
+5	MP_E691_1B	Eualus subtilis
+446	MP_E691_1B	Ptychoderidae
+5	MP_E691_1B	Myidae
+64	MP_E691_1B	Reginella hippocrepis
+105	MP_E691_1B	Lasaeidae
+21	MP_E691_1B	Cerebratulus cf_ marginatus 7 MBA_2020
+8	MP_E691_1B	Pachycerianthus
+2	MP_E691_1B	Homoscleromorpha
+185	MP_E691_1B	Tubulanus sexlineatus
+317	MP_E691_1B	Amphipholis squamata
+867	MP_E691_2B	Eukaryota
+1386	MP_E691_2B	Unknown
+1947	MP_E691_2B	Picozoa
+1055	MP_E691_2B	Candidatus Karelsulcia__f
+1633	MP_E691_2B	Poecilosclerida
+3419	MP_E691_2B	Hominidae
+65	MP_E691_2B	Echinoidea
+15	MP_E691_2B	Dendroceratida
+264	MP_E691_2B	Axinellida
+336	MP_E691_2B	Ctenostomatida
+580	MP_E691_2B	Adapedonta
+3	MP_E691_2B	Pseudocalanus elongatus
+56	MP_E691_2B	Acartia longiremis
+1	MP_E691_2B	Carybdeida
+40	MP_E691_2B	Demospongiae
+41	MP_E691_2B	Hemiptera
+3	MP_E691_2B	Siphonophorae
+76064	MP_E691_2B	Actinopteri
+1	MP_E691_2B	Actinomycetaceae
+224	MP_E691_2B	Saccoglossus
+4	MP_E691_2B	Anthozoa
+1	MP_E691_2B	Candidatus Woesebacteria
+42	MP_E691_2B	Chordata
+41	MP_E691_2B	Tubulanus sp_ 3 TCH_2015
+8439	MP_E691_2B	Phocoena phocoena
+12	MP_E691_2B	Calanoida
+145	MP_E691_2B	Tellinidae
+22850	MP_E691_2B	Cerebratulus
+1767	MP_E691_2B	Heteromolpadia tridens
+155	MP_E691_2B	Decapoda
+55	MP_E691_2B	Mytilidae
+30	MP_E691_2B	Siliqua alta
+220	MP_E691_2B	Maculaura
+492	MP_E691_2B	Maculaura alaskensis
+13	MP_E691_2B	Tubulaniformes
+132	MP_E691_2B	Macoma nasuta
+244	MP_E691_2B	Myida
+59	MP_E691_2B	Neotrypaea
+275	MP_E691_2B	Carinoma sp_ 5 TCH_2015
+4285	MP_E691_2B	Carinoma sp_ yellowback
+15	MP_E691_2B	Cardiida
+20	MP_E691_2B	Semelidae
+1923	MP_E691_2B	Acartia tonsa
+25	MP_E691_2B	Olindiasidae
+222	MP_E691_2B	Myidae
+150	MP_E691_2B	Tubulanus sexlineatus
+261	MP_E691_2B	Amphipholis squamata
+29	MP_E691_2B	Siphonenteron
+7	MP_E691_2B	Chloroflexota
+8	MP_E691_2B	Crangon crangon
+3	MP_E691_2B	Naticidae
+118	MP_E691_2B	Uria aalge
+7756	MP_E691_3B	Eukaryota
+45	MP_E691_3B	Homo sapiens
+1276	MP_E691_3B	Unknown
+2291	MP_E691_3B	Picozoa
+1435	MP_E691_3B	Candidatus Karelsulcia__f
+1667	MP_E691_3B	Poecilosclerida
+10	MP_E691_3B	Cheilostomatida
+103	MP_E691_3B	Echinoidea
+24	MP_E691_3B	Dendroceratida
+424	MP_E691_3B	Axinellida
+20	MP_E691_3B	Ctenostomatida
+200	MP_E691_3B	Adapedonta
+1	MP_E691_3B	Acartia longiremis
+97	MP_E691_3B	Thysanoessa
+6	MP_E691_3B	Carybdeida
+1	MP_E691_3B	Siphonophorae
+76902	MP_E691_3B	Actinopteri
+158	MP_E691_3B	Artiodactyla
+243	MP_E691_3B	Tubulanus sp_ 3 TCH_2015
+10	MP_E691_3B	Amphipoda
+3280	MP_E691_3B	Rajidae
+20	MP_E691_3B	Calanoida
+244	MP_E691_3B	Tellinidae
+86	MP_E691_3B	Mytilus
+12	MP_E691_3B	Compsomyax subdiaphana
+25901	MP_E691_3B	Cerebratulus
+16	MP_E691_3B	Chaetopteridae__o
+1794	MP_E691_3B	Heteromolpadia tridens
+116	MP_E691_3B	Decapoda
+9	MP_E691_3B	Columbellidae
+224	MP_E691_3B	Maculaura
+31	MP_E691_3B	Lampropidae
+89	MP_E691_3B	Maculaura alaskensis
+50	MP_E691_3B	Venerida
+5	MP_E691_3B	Chydoridae
+201	MP_E691_3B	Spionida
+46	MP_E691_3B	Neotrypaea
+3326	MP_E691_3B	Carinoma sp_ yellowback
+13	MP_E691_3B	Acartia tonsa
+58	MP_E691_3B	Olindiasidae
+23	MP_E691_3B	Myidae
+1588	MP_E691_3B	Amphipholis squamata
+8	MP_E691_3B	Gymnodinium sp_ ex Spongotrochus glacialis
+378	MP_E691_3B	Pleuroxus denticulatus
+8815	MP_E694_1B	Eukaryota
+909	MP_E694_1B	Unknown
+478	MP_E694_1B	Picozoa
+4677	MP_E694_1B	Candidatus Karelsulcia__f
+872	MP_E694_1B	Poecilosclerida
+76	MP_E694_1B	Lineidae
+176	MP_E694_1B	Cheilostomatida
+34	MP_E694_1B	Echinoidea
+32	MP_E694_1B	Dendroceratida
+245	MP_E694_1B	Axinellida
+60	MP_E694_1B	Adapedonta
+39	MP_E694_1B	Pseudocalanus elongatus
+1104	MP_E694_1B	Acartia longiremis
+29	MP_E694_1B	Carybdeida
+10	MP_E694_1B	Amphimedon compressa
+144	MP_E694_1B	Cyclopecten sp_ DJC_2016
+8386	MP_E694_1B	Perciformes
+62	MP_E694_1B	Demospongiae
+60	MP_E694_1B	Callyspongia
+7	MP_E694_1B	Velatida
+117	MP_E694_1B	Stichopodidae
+8647	MP_E694_1B	Spatangoida
+172	MP_E694_1B	Antedonidae
+334	MP_E694_1B	Amphipholis torelli
+4	MP_E694_1B	Spongillida
+9733	MP_E694_1B	Actinopteri
+2316	MP_E694_1B	Harrimaniidae
+593	MP_E694_1B	Heteronemertea
+14	MP_E694_1B	Actinomycetaceae
+393	MP_E694_1B	Euphausia pacifica
+1397	MP_E694_1B	Tubulanidae
+37	MP_E694_1B	Anthozoa
+1	MP_E694_1B	Candidatus Pseudothioglobus__f
+11	MP_E694_1B	Crellidae
+1106	MP_E694_1B	Chordata
+278	MP_E694_1B	Dendrochirotida
+1818	MP_E694_1B	Bugulidae
+207	MP_E694_1B	Tubulanus sp_ 3 TCH_2015
+10	MP_E694_1B	Amphipoda
+1437	MP_E694_1B	Luidia foliolata
+194	MP_E694_1B	Tellinidae
+519	MP_E694_1B	Cephalopoda
+1	MP_E694_1B	Otariidae
+34	MP_E694_1B	Hiatellidae
+7165	MP_E694_1B	Cerebratulus
+103	MP_E694_1B	Alcyonidiidae
+632	MP_E694_1B	Ophiura luetkenii
+8	MP_E694_1B	Chaetopteridae__o
+1142	MP_E694_1B	Heteromolpadia tridens
+1	MP_E694_1B	Decapoda
+43	MP_E694_1B	Ophiuroidea
+2	MP_E694_1B	Columbellidae
+132	MP_E694_1B	Axinella
+1816	MP_E694_1B	Maculaura
+965	MP_E694_1B	Carinina sp_ chocolate
+9	MP_E694_1B	Mollusca
+2439	MP_E694_1B	Cerebratulus albifrons
+6931	MP_E694_1B	Carinoma sp_ yellowback
+74	MP_E694_1B	Cerianthidae
+495	MP_E694_1B	Schizocardium
+3	MP_E694_1B	Acartia tonsa
+1977	MP_E694_1B	Amphipholis squamata
+37	MP_E694_1B	Saxipendium coronatum
+30	MP_E694_1B	Symphurus
+20	MP_E694_1B	Saxipendium
+2273	MP_E694_1B	Symphurus ommaspilus
+69753	MP_E694_2B	Eukaryota
+248	MP_E694_2B	Homo sapiens
+320	MP_E694_2B	Unknown
+303	MP_E694_2B	Picozoa
+2001	MP_E694_2B	Candidatus Karelsulcia__f
+266	MP_E694_2B	Poecilosclerida
+3	MP_E694_2B	Cheilostomatida
+569	MP_E694_2B	Echinoidea
+8	MP_E694_2B	Dendroceratida
+80	MP_E694_2B	Axinellida
+36	MP_E694_2B	Pseudocalanus elongatus
+94	MP_E694_2B	Acartia longiremis
+7	MP_E694_2B	Carybdeida
+96	MP_E694_2B	Cyclopecten sp_ DJC_2016
+3213	MP_E694_2B	Perciformes
+9	MP_E694_2B	Suberitida
+5366	MP_E694_2B	Spatangoida
+75	MP_E694_2B	Sclerodactylidae
+25	MP_E694_2B	Antedonidae
+2	MP_E694_2B	Spongillida
+14766	MP_E694_2B	Actinopteri
+1212	MP_E694_2B	Harrimaniidae
+736	MP_E694_2B	Heteronemertea
+6	MP_E694_2B	Gemmatimonadales
+1114	MP_E694_2B	Tubulanidae
+5	MP_E694_2B	Anthozoa
+54	MP_E694_2B	Chiridota sp_ 2 AKM_2016
+2	MP_E694_2B	Candidatus Pseudothioglobus__f
+3867	MP_E694_2B	Chordata
+87	MP_E694_2B	Bugulidae
+85	MP_E694_2B	Tubulanus sp_ 3 TCH_2015
+29	MP_E694_2B	Amphipoda
+1359	MP_E694_2B	Pinnixa
+3269	MP_E694_2B	Rajidae
+476	MP_E694_2B	Luidia foliolata
+123	MP_E694_2B	Tellinidae
+677	MP_E694_2B	Otariidae
+34	MP_E694_2B	Clavagellidae
+7	MP_E694_2B	Celleporella hyalina
+64	MP_E694_2B	Hiatellidae
+1356	MP_E694_2B	Cerebratulus
+907	MP_E694_2B	Merluccius
+9	MP_E694_2B	Clathria prolifera
+477	MP_E694_2B	Ophiura luetkenii
+153	MP_E694_2B	Nemertea
+15	MP_E694_2B	Ophiopholis sp_ EAC01
+83	MP_E694_2B	Chaetopteridae__o
+323	MP_E694_2B	Heteromolpadia tridens
+271	MP_E694_2B	Gallus
+63	MP_E694_2B	Ophiuroidea
+655	MP_E694_2B	Maculaura
+126	MP_E694_2B	Carinina sp_ chocolate
+62	MP_E694_2B	Maculaura alaskensis
+69	MP_E694_2B	Macoma nasuta
+4	MP_E694_2B	Alona affinis
+118	MP_E694_2B	Pilidiophora
+1760	MP_E694_2B	Cerebratulus albifrons
+452	MP_E694_2B	Carinoma sp_ 5 TCH_2015
+2821	MP_E694_2B	Carinoma sp_ yellowback
+138	MP_E694_2B	Maculaura magna
+10	MP_E694_2B	Cerianthidae
+177	MP_E694_2B	Schizocardium
+65	MP_E694_2B	Amphilepidida
+10	MP_E694_2B	Eualus subtilis
+333	MP_E694_2B	Uria aalge
+416	MP_E694_2B	Porichthys notatus
+23	MP_E694_2B	Caprellidae
+10	MP_E694_2B	Carinomidae
+5	MP_E694_2B	Crangon
+9118	MP_E694_3B	Eukaryota
+53796	MP_E694_3B	Unknown
+213	MP_E694_3B	Picozoa
+2442	MP_E694_3B	Candidatus Karelsulcia__f
+470	MP_E694_3B	Poecilosclerida
+223	MP_E694_3B	Echinoidea
+17	MP_E694_3B	Dendroceratida
+49	MP_E694_3B	Axinellida
+6	MP_E694_3B	Pseudocalanus elongatus
+7695	MP_E694_3B	Acartia longiremis
+25	MP_E694_3B	Carybdeida
+4	MP_E694_3B	Amphimedon compressa
+497	MP_E694_3B	Cyclopecten sp_ DJC_2016
+3292	MP_E694_3B	Perciformes
+31	MP_E694_3B	Suberitida
+1	MP_E694_3B	Dictyodendrillidae
+2	MP_E694_3B	Velatida
+5637	MP_E694_3B	Spatangoida
+20	MP_E694_3B	Crella
+138	MP_E694_3B	Antedonidae
+13609	MP_E694_3B	Actinopteri
+2452	MP_E694_3B	Harrimaniidae
+3	MP_E694_3B	Sphaeronectes koellikeri
+698	MP_E694_3B	Heteronemertea
+2	MP_E694_3B	Actinomycetaceae
+131	MP_E694_3B	Euphausia pacifica
+1430	MP_E694_3B	Tubulanidae
+39	MP_E694_3B	Anthozoa
+56	MP_E694_3B	Monostilifera
+3942	MP_E694_3B	Chordata
+786	MP_E694_3B	Bugulidae
+16	MP_E694_3B	Lineus flavescens
+134	MP_E694_3B	Tubulanus sp_ 3 TCH_2015
+4	MP_E694_3B	Amphipoda
+1217	MP_E694_3B	Luidia foliolata
+502	MP_E694_3B	Tellinidae
+99	MP_E694_3B	Clavagellidae
+57	MP_E694_3B	Parasmittina
+7	MP_E694_3B	Aoroides columbiae
+17	MP_E694_3B	Hiatellidae
+1242	MP_E694_3B	Cerebratulus
+37	MP_E694_3B	Octopodidae
+414	MP_E694_3B	Ophiura luetkenii
+5	MP_E694_3B	Nemertea
+251	MP_E694_3B	Heteromolpadia tridens
+5	MP_E694_3B	Gallus
+88	MP_E694_3B	Decapoda
+182	MP_E694_3B	Ophiuroidea
+429	MP_E694_3B	Maculaura
+885	MP_E694_3B	Carinina sp_ chocolate
+2	MP_E694_3B	Venerida
+48	MP_E694_3B	Pilidiophora
+1760	MP_E694_3B	Cerebratulus albifrons
+4282	MP_E694_3B	Carinoma sp_ yellowback
+24	MP_E694_3B	Cerianthidae
+1355	MP_E694_3B	Schizocardium
+46	MP_E694_3B	Amphilepidida
+1491	MP_E694_3B	Porichthys notatus
+10	MP_E694_3B	Caprellidae
+41	MP_E694_3B	Isarachnanthus nocturnus
+295	MP_E707	Eukaryota
+146	MP_E707	Unknown
+103	MP_E707	Picozoa
+160	MP_E707	Cheilostomatida
+9	MP_E707	Echinoidea
+15	MP_E707	Adapedonta
+16	MP_E707	Demospongiae
+4238	MP_E707	Actinopteri
+2	MP_E707	Anthozoa
+1991	MP_E707	Chordata
+5850	MP_E707	Cephalothrix
+67148	MP_E707	Calanoida
+25	MP_E707	Moerella
+1	MP_E707	Tresus
+687	MP_E707	Maculaura
+26256	MP_E707	Myida
+1	MP_E707	Poseidonemertes
+5435	MP_E707	Cardiida
+861	MP_E707	Pseudocardium sachalinense
+1326	MP_E707	Siliqua
+3	MP_E707	Caprellidae
+89	MP_E707	Ruditapes philippinarum
+231	MP_E707	Arcuatula senhousia
+22	MP_E707	Theora lubrica
+5	MP_E707	Candidatus Moranbacteria
+3	MP_E707	Didemnum vexillum
+194	MP_E707	Tubulanus sp_ 1 TCH_2015
+36	MP_E707	Phoronida
+2125	MP_E713	Eukaryota
+1138	MP_E713	Unknown
+1057	MP_E713	Picozoa
+5	MP_E713	Poecilosclerida
+7248	MP_E713	Cheilostomatida
+49791	MP_E713	Echinoidea
+2	MP_E713	Dendroceratida
+13	MP_E713	Axinellida
+48	MP_E713	Adapedonta
+36	MP_E713	Balanomorpha
+2	MP_E713	Carybdeida
+42	MP_E713	Rhynchozoon sp_ MHD_2004
+31	MP_E713	Suberitida
+40	MP_E713	Demospongiae
+8	MP_E713	Tethyidae
+7	MP_E713	Callyspongia
+41782	MP_E713	Actinopteri
+349	MP_E713	Coleoptera
+78	MP_E713	Saccoglossus
+15	MP_E713	Anthozoa
+31	MP_E713	Chordata
+35	MP_E713	Asteriidae
+294	MP_E713	Modiolus
+12	MP_E713	Bugulidae
+10	MP_E713	Lepadidae__o
+15	MP_E713	Amphipoda
+554	MP_E713	Phocoena phocoena
+2768	MP_E713	Calanoida
+4	MP_E713	Phoronidae__o
+2	MP_E713	Tellinidae
+35	MP_E713	Cellariidae
+3	MP_E713	Synchaetidae
+32	MP_E713	Celleporella hyalina
+41	MP_E713	Mytilus
+1	MP_E713	Latrunculiidae
+16	MP_E713	Mytilus californianus
+30	MP_E713	Alcyonidiidae
+7	MP_E713	Moerella
+576	MP_E713	Galeorhinus galeus
+19	MP_E713	Clathria prolifera
+7	MP_E713	Parasmittina jeffreysi
+50	MP_E713	Gallus
+829	MP_E713	Decapoda
+79	MP_E713	Mytilidae
+253	MP_E713	Tresus
+1	MP_E713	Siliqua alta
+15	MP_E713	Maculaura
+3	MP_E713	Chthamalus
+16	MP_E713	Scrupocellaria varians
+6	MP_E713	Pollicipes polymerus
+75	MP_E713	Venerida
+34758	MP_E713	Myida
+22	MP_E713	Farrellidae
+4	MP_E713	Neotrypaea
+5232	MP_E713	Nitidotellina
+37	MP_E713	Carinoma sp_ 5 TCH_2015
+4	MP_E713	Clinocardium nuttallii
+276	MP_E713	Watersipora
+54	MP_E713	Saxidomus nuttalli
+18	MP_E713	Cardiida
+66	MP_E713	Smittinidae
+57	MP_E713	Patiria miniata
+3	MP_E713	Acartia tonsa
+3619	MP_E713	Pseudocardium sachalinense
+10	MP_E713	Pinnotheridae
+2	MP_E713	Emerita
+32	MP_E713	Siliqua
+44	MP_E713	Reginella hippocrepis
+19	MP_E713	Porichthys notatus
+4	MP_E713	Caprellidae
+7	MP_E713	Tubulanus sp_ 1 TCH_2015
+36	MP_E713	Mytilimeria nuttalli
+28	MP_E713	Metacarcinus gracilis
+1433	MP_E713	Conopeum reticulum
+8	MP_E713	Caprella
+6	MP_E713	Mactridae
+4	MP_E713	Araneae
+1197	MP_E713	Myliobatidae
+323	MP_E713	Mustelus
+1566	MP_E716	Eukaryota
+885	MP_E716	Unknown
+408	MP_E716	Picozoa
+39	MP_E716	Poecilosclerida
+8087	MP_E716	Cheilostomatida
+2958	MP_E716	Echinoidea
+6	MP_E716	Dendroceratida
+21	MP_E716	Axinellida
+4640	MP_E716	Adapedonta
+18	MP_E716	Balanomorpha
+2	MP_E716	Carybdeida
+4	MP_E716	Rhynchozoon sp_ MHD_2004
+6	MP_E716	Callyspongia
+1	MP_E716	Siphonophorae
+59979	MP_E716	Actinopteri
+20	MP_E716	Coleoptera
+48	MP_E716	Saccoglossus
+194	MP_E716	Prionace glauca
+5	MP_E716	Anthozoa
+2542	MP_E716	Chordata
+92	MP_E716	Modiolus
+11	MP_E716	Dendrochirotida
+2	MP_E716	Lepadidae__o
+9054	MP_E716	Trochida
+2258	MP_E716	Phocoena phocoena
+665	MP_E716	Rajidae
+6760	MP_E716	Calanoida
+8	MP_E716	Tellinidae
+5	MP_E716	Parasmittina
+5	MP_E716	Synchaetidae
+1	MP_E716	Celleporella hyalina
+18	MP_E716	Mytilus californianus
+372	MP_E716	Siliqua alta
+7158	MP_E716	Maculaura
+1	MP_E716	Metacarcinus magister
+7	MP_E716	Venerida
+1	MP_E716	Macoma nasuta
+8834	MP_E716	Myida
+32	MP_E716	Farrellidae
+14	MP_E716	Spionida
+68061	MP_E716	Nitidotellina
+9	MP_E716	Carinoma sp_ 5 TCH_2015
+1	MP_E716	Carinoma sp_ yellowback
+9	MP_E716	Maculaura magna
+635	MP_E716	Cardiida
+552	MP_E716	Acartia tonsa
+738	MP_E716	Pseudocardium sachalinense
+52	MP_E716	Siliqua
+202	MP_E716	Arcuatula senhousia
+249	MP_E716	Phoronida
+1192	MP_E716	Conopeum reticulum
+233	MP_E716	Myliobatidae
+7	MP_E716	Synchaeta
+5	MP_E716	Anguinella palmata
+2	MP_E716	Thalassiosirales
+7	MP_E716	Leptopecten latiauratus
+18857	MP_E721	Eukaryota
+1028	MP_E721	Unknown
+2335	MP_E721	Picozoa
+2304	MP_E721	Candidatus Karelsulcia__f
+5471	MP_E721	Poecilosclerida
+57	MP_E721	Cheilostomatida
+201	MP_E721	Echinoidea
+59	MP_E721	Dendroceratida
+582	MP_E721	Axinellida
+310	MP_E721	Ctenostomatida
+331	MP_E721	Pseudocalanus elongatus
+358	MP_E721	Acartia longiremis
+760	MP_E721	Balanomorpha
+22	MP_E721	Carybdeida
+14	MP_E721	Amphimedon compressa
+3	MP_E721	Siphonophorae
+1	MP_E721	Environmental Unknown
+35093	MP_E721	Actinopteri
+467	MP_E721	Euphausia pacifica
+5	MP_E721	Gemmatimonadales
+106	MP_E721	Anthozoa
+3	MP_E721	Candidatus Woesebacteria
+9	MP_E721	Candidatus Pseudothioglobus__f
+405	MP_E721	Sagittidae
+13663	MP_E721	Chordata
+4	MP_E721	Amphipoda
+129	MP_E721	Pinnixa
+3	MP_E721	Neogastropoda
+4525	MP_E721	Phocoena phocoena
+449	MP_E721	Calanoida
+653	MP_E721	Luidia foliolata
+13	MP_E721	Phoronidae__o
+371	MP_E721	Tellinidae
+958	MP_E721	Cephalopoda
+97	MP_E721	Cerebratulus
+600	MP_E721	Alcyonidiidae
+1	MP_E721	Chaetopteridae__o
+8	MP_E721	Decapoda
+38	MP_E721	Lampropidae
+7	MP_E721	Nassariidae
+87	MP_E721	Tubulaniformes
+481	MP_E721	Venerida
+209	MP_E721	Macoma nasuta
+19	MP_E721	Neotrypaea
+148	MP_E721	Cerebratulus albifrons
+51	MP_E721	Citharichthys xanthostigma
+270	MP_E721	Maculaura magna
+220	MP_E721	Cardiida
+661	MP_E721	Hemichordata
+169	MP_E721	Amphilepidida
+196	MP_E721	Acartia tonsa
+13	MP_E721	Cephalaspidea
+92	MP_E721	Olindiasidae
+8378	MP_E721	Ptychoderidae
+68	MP_E721	Pseudocardium sachalinense
+3719	MP_E721	Amphipholis squamata
+2	MP_E721	Phoronida
+34	MP_E721	Maliibacteriaceae
+7	MP_E721	Pantopoda
+224	MP_E721	Ennucula
+203	MP_E721	Gymnothorax eurostus
+535	MP_E725_1B	Eukaryota
+9	MP_E725_1B	Homo sapiens
+3532	MP_E725_1B	Unknown
+1618	MP_E725_1B	Picozoa
+3045	MP_E725_1B	Candidatus Karelsulcia__f
+3172	MP_E725_1B	Poecilosclerida
+149	MP_E725_1B	Echinoidea
+52	MP_E725_1B	Dendroceratida
+337	MP_E725_1B	Axinellida
+440	MP_E725_1B	Pseudocalanus elongatus
+2009	MP_E725_1B	Acartia longiremis
+373	MP_E725_1B	Thysanoessa
+38	MP_E725_1B	Carybdeida
+41	MP_E725_1B	Amphimedon compressa
+2930	MP_E725_1B	Perciformes
+12	MP_E725_1B	Suberitida
+363	MP_E725_1B	Demospongiae
+13	MP_E725_1B	Tethyidae
+328	MP_E725_1B	Spatangoida
+114	MP_E725_1B	Bacillota
+2	MP_E725_1B	Siphonophorae
+46276	MP_E725_1B	Actinopteri
+1	MP_E725_1B	Actinomycetaceae
+19	MP_E725_1B	Anthozoa
+121	MP_E725_1B	Monostilifera
+3	MP_E725_1B	Candidatus Woesebacteria
+5	MP_E725_1B	Candidatus Pseudothioglobus__f
+87	MP_E725_1B	Sagittidae
+4216	MP_E725_1B	Chordata
+3	MP_E725_1B	Clausocalanidae
+1872	MP_E725_1B	Modiolus
+2756	MP_E725_1B	Phocoena phocoena
+124	MP_E725_1B	Flustridae
+49	MP_E725_1B	Calanoida
+433	MP_E725_1B	Luidia foliolata
+441	MP_E725_1B	Cephalopoda
+7	MP_E725_1B	Compsomyax subdiaphana
+9	MP_E725_1B	Cerebratulus
+11	MP_E725_1B	Ophiura luetkenii
+22	MP_E725_1B	Chaetopteridae__o
+14	MP_E725_1B	Ophiuroidea
+246	MP_E725_1B	Maculaura
+19	MP_E725_1B	Lampropidae
+126	MP_E725_1B	Maculaura alaskensis
+76	MP_E725_1B	Macoma nasuta
+77	MP_E725_1B	Cerebratulus albifrons
+404	MP_E725_1B	Carinoma sp_ yellowback
+660	MP_E725_1B	Schizocardium
+2396	MP_E725_1B	Amphilepidida
+24	MP_E725_1B	Acartia tonsa
+327	MP_E725_1B	Frigidocardium
+3369	MP_E725_1B	Amphipholis squamata
+9	MP_E725_1B	Balaenoptera acutorostrata
+3	MP_E725_1B	Nicippe
+772	MP_E750	Unknown
+781	MP_E750	Picozoa
+5148	MP_E750	Candidatus Karelsulcia__f
+288	MP_E750	Poecilosclerida
+79	MP_E750	Chuniphyes multidentata
+269	MP_E750	Cheilostomatida
+73	MP_E750	Echinoidea
+66	MP_E750	Dendroceratida
+280	MP_E750	Axinellida
+5	MP_E750	Porifera
+61	MP_E750	Thysanoessa
+59	MP_E750	Carybdeida
+42210	MP_E750	Perciformes
+72	MP_E750	Suberitida
+31	MP_E750	Demospongiae
+7530	MP_E750	Spatangoida
+29	MP_E750	Antedonidae
+871	MP_E750	Amphipholis torelli
+11	MP_E750	Spongillida
+23698	MP_E750	Actinopteri
+83	MP_E750	Heteronemertea
+6	MP_E750	Actinomycetaceae
+24	MP_E750	Anthozoa
+160	MP_E750	Chordata
+22	MP_E750	Elusimicrobiota
+418	MP_E750	Cephalopoda
+349	MP_E750	Lyonsiidae__o
+290	MP_E750	Insecta
+7646	MP_E750	Merluccius
+7	MP_E750	Candidatus Pseudothioglobus__f__o
+19	MP_E750	Chaetopteridae__o
+4	MP_E750	Mariniblastus
+586	MP_E750	Breviturma doederleini
+71	MP_E750	Breviturma
+38	MP_E750	Mycoplasmatales
+62	MP_E750	Architaenioglossa
+44	MP_E750	Luidia neozelanica
+281	MP_E750	Gymnothorax meleagris
+14	MP_E750	Pachycerianthus
+2326	MP_E750	Porichthys notatus
+2	MP_E750	Ophidiasteridae
+206	MP_E750	Leptasterias hexactis
+4129	MP_E758	Eukaryota
+3441	MP_E758	Unknown
+1128	MP_E758	Picozoa
+282	MP_E758	Candidatus Karelsulcia__f
+192	MP_E758	Poecilosclerida
+2	MP_E758	Chuniphyes multidentata
+27410	MP_E758	Lineidae
+26	MP_E758	Cheilostomatida
+590	MP_E758	Echinoidea
+50	MP_E758	Dendroceratida
+319	MP_E758	Axinellida
+3	MP_E758	Adapedonta
+12	MP_E758	Carybdeida
+6911	MP_E758	Perciformes
+6	MP_E758	Suberitida
+3	MP_E758	Spongillida
+53569	MP_E758	Actinopteri
+2	MP_E758	Actinomycetaceae
+9	MP_E758	Coleoptera
+188	MP_E758	Euphausia pacifica
+1576	MP_E758	Suidae
+94	MP_E758	Tubulanidae
+23	MP_E758	Anthozoa
+3	MP_E758	Candidatus Woesebacteria
+2	MP_E758	Candidatus Pseudothioglobus__f
+2428	MP_E758	Chordata
+18	MP_E758	Bugulidae
+49	MP_E758	Tubulanus sp_ 3 TCH_2015
+109	MP_E758	Luidia foliolata
+28	MP_E758	Tellinidae
+12	MP_E758	Celleporella hyalina
+146	MP_E758	Cerebratulus
+13	MP_E758	Octopodidae
+2	MP_E758	Chaetopteridae__o
+18	MP_E758	Heteromolpadia tridens
+2	MP_E758	Ophiuroidea
+62	MP_E758	Molpadida
+2	MP_E758	Alphaproteobacteria
+35	MP_E758	Siliqua alta
+85	MP_E758	Maculaura
+608	MP_E758	Phoca
+40	MP_E758	Lampropidae
+38	MP_E758	Maculaura alaskensis
+42	MP_E758	Macoma nasuta
+1201	MP_E758	Myida
+11	MP_E758	Farrellidae
+13	MP_E758	Mycoplasmatales
+49	MP_E758	Littorinimorpha
+133	MP_E758	Citharichthys xanthostigma
+1068	MP_E758	Schizocardium
+23	MP_E758	Plakinidae
+3	MP_E758	Acartia tonsa
+202	MP_E758	Gymnothorax meleagris
+3	MP_E758	Paracalanidae
+10	MP_E758	Cerebratulus cf_ marginatus 7 MBA_2020
+1179	MP_E758	Amphipholis squamata
+716	MP_E758	Porichthys notatus
+301	MP_E758	Tubulanus sp_ 1 TCH_2015
+52	MP_E758	Leptopecten latiauratus
+131	MP_E758	Ennucula
+86	MP_E758	Amphipholis
+4290	MP_E758	Lamna
+27	MP_E758	Caprella californica
+3	MP_E758	Carinomiformes
+3	MP_E758	Glottidia albida
+124	MP_E758	Panopea generosa
+109	MP_E758	Carinoma
+690	MP_E761	Unknown
+594	MP_E761	Picozoa
+1909	MP_E761	Candidatus Karelsulcia__f
+230	MP_E761	Poecilosclerida
+85	MP_E761	Echinoidea
+69	MP_E761	Dendroceratida
+28	MP_E761	Polymastia
+280	MP_E761	Axinellida
+1	MP_E761	Porifera
+31	MP_E761	Carybdeida
+661	MP_E761	Perciformes
+12	MP_E761	Suberitida
+3	MP_E761	Tethyidae
+1970	MP_E761	Spatangoida
+4	MP_E761	Spongillida
+65523	MP_E761	Actinopteri
+2712	MP_E761	Harrimaniidae
+1	MP_E761	Sphaeronectes koellikeri
+5	MP_E761	Actinomycetaceae
+283	MP_E761	Euphausia pacifica
+159	MP_E761	Anthozoa
+95	MP_E761	Sagittidae
+4	MP_E761	Chordata
+94	MP_E761	Amphipoda
+4417	MP_E761	Phocoena phocoena
+353	MP_E761	Cephalopoda
+40	MP_E761	Celleporella hyalina
+96	MP_E761	Hiatellidae
+9	MP_E761	Latrunculiidae
+41	MP_E761	Octopodidae
+2840	MP_E761	Merluccius
+7	MP_E761	Ampithoidae
+341	MP_E761	Nemertea
+11	MP_E761	Ophiopholis sp_ EAC01
+1715	MP_E761	Schizocardium
+879	MP_E761	Amphilepidida
+571	MP_E761	Luidia neozelanica
+8	MP_E761	Acartia tonsa
+227	MP_E761	Amphipholis squamata
+26	MP_E761	Tubulanus sp_ 1 TCH_2015
+15	MP_E761	Cuspidariidae
+2	MP_E761	Candidatus Melainabacteria
+3367	MP_E768_1B	Eukaryota
+1076	MP_E768_1B	Unknown
+666	MP_E768_1B	Picozoa
+2625	MP_E768_1B	Candidatus Karelsulcia__f
+250	MP_E768_1B	Poecilosclerida
+47	MP_E768_1B	Echinoidea
+67	MP_E768_1B	Dendroceratida
+127	MP_E768_1B	Axinellida
+31	MP_E768_1B	Carybdeida
+50	MP_E768_1B	Amphimedon compressa
+39	MP_E768_1B	Suberitida
+1	MP_E768_1B	Dictyodendrillidae
+619	MP_E768_1B	Forcipulatida
+6	MP_E768_1B	Spongillida
+44198	MP_E768_1B	Actinopteri
+5	MP_E768_1B	Anthozoa
+8	MP_E768_1B	Acartia tonsa
+798	MP_E768_1B	Gymnothorax meleagris
+47	MP_E768_1B	Lucicutiidae
+2	MP_E768_1B	Calanus
+70403	MP_E773	Eukaryota
+1981	MP_E773	Unknown
+1245	MP_E773	Picozoa
+3502	MP_E773	Candidatus Karelsulcia__f
+255	MP_E773	Poecilosclerida
+422	MP_E773	Hominidae
+8	MP_E773	Cheilostomatida
+203	MP_E773	Echinoidea
+113	MP_E773	Dendroceratida
+361	MP_E773	Axinellida
+4	MP_E773	Porifera
+361	MP_E773	Thysanoessa
+43	MP_E773	Balanomorpha
+56	MP_E773	Carybdeida
+132	MP_E773	Cyclopecten sp_ DJC_2016
+4500	MP_E773	Perciformes
+81	MP_E773	Suberitida
+25	MP_E773	Demospongiae
+46	MP_E773	Hemiptera
+87	MP_E773	Callyspongia
+223	MP_E773	Forcipulatida
+16	MP_E773	Crella
+90	MP_E773	Antedonidae
+10	MP_E773	Environmental Unknown
+9360	MP_E773	Actinopteri
+4	MP_E773	Sphaeronectes koellikeri
+1	MP_E773	Heteronemertea
+9	MP_E773	Actinomycetaceae
+285	MP_E773	Euphausia pacifica
+167	MP_E773	Anthozoa
+5537	MP_E773	Chordata
+213	MP_E773	Dendrochirotida
+24	MP_E773	Amphipoda
+34	MP_E773	Trochida
+4174	MP_E773	Rajidae
+14	MP_E773	Mytilus californianus
+265	MP_E773	Ophiura luetkenii
+259	MP_E773	Nemertea
+24	MP_E773	Ophiopholis sp_ EAC01
+1639	MP_E773	Heteromolpadia tridens
+4	MP_E773	Terebratulina unguicula
+141	MP_E773	Molpadida
+46	MP_E773	Tubulanus
+1004	MP_E773	Hemichordata
+504	MP_E773	Patiria miniata
+119	MP_E773	Luidia neozelanica
+131	MP_E773	Eualus subtilis
+1080	MP_E773	Amphipholis
+48	MP_E773	Iotrochota birotulata
+45	MP_E773	Oscarella balibaloi
+36	MP_E773	Mytilida
+26	MP_E773	Alvania concinna
+2	MP_E773	Geryoniidae
+3	MP_E773	Premocyathus sp_ IS_2022
+426	MP_E773	Branchiostoma
+4918	MP_E811_1B	Eukaryota
+200	MP_E811_1B	Homo sapiens
+118	MP_E811_1B	Unknown
+340	MP_E811_1B	Picozoa
+1899	MP_E811_1B	Candidatus Karelsulcia__f
+94	MP_E811_1B	Poecilosclerida
+15	MP_E811_1B	Chuniphyes multidentata
+65	MP_E811_1B	Echinoidea
+4	MP_E811_1B	Dendroceratida
+45	MP_E811_1B	Axinellida
+2	MP_E811_1B	Steironepion moniliferum
+25	MP_E811_1B	Carybdeida
+4	MP_E811_1B	Demospongiae
+7734	MP_E811_1B	Actinopteri
+77318	MP_E811_1B	Euphausia pacifica
+2008	MP_E811_1B	Mammalia
+7	MP_E811_1B	Anthozoa
+44	MP_E811_1B	Luidia foliolata
+636	MP_E811_1B	Otariidae
+515	MP_E811_1B	Merluccius
+4	MP_E811_1B	Ophiura luetkenii
+141	MP_E811_1B	Asteroidea
+2	MP_E811_1B	Gastropoda
+1	MP_E811_1B	Magnoliopsida
+230	MP_E811_1B	Luidia neozelanica
+231	MP_E811_1B	Amphipholis squamata
+8	MP_E811_1B	Isarachnanthus nocturnus
+66301	MP_E811_2B	Eukaryota
+551	MP_E811_2B	Homo sapiens
+357	MP_E811_2B	Unknown
+1243	MP_E811_2B	Picozoa
+11528	MP_E811_2B	Candidatus Karelsulcia__f
+379	MP_E811_2B	Poecilosclerida
+1	MP_E811_2B	Chuniphyes multidentata
+128	MP_E811_2B	Lineidae
+264	MP_E811_2B	Echinoidea
+59	MP_E811_2B	Dendroceratida
+220	MP_E811_2B	Axinellida
+448	MP_E811_2B	Thysanoessa
+66	MP_E811_2B	Carybdeida
+48	MP_E811_2B	Cyclopecten sp_ DJC_2016
+9124	MP_E811_2B	Perciformes
+113	MP_E811_2B	Demospongiae
+2065	MP_E811_2B	Chimaeriformes
+71	MP_E811_2B	Sclerodactylidae
+7	MP_E811_2B	Antedonidae
+12	MP_E811_2B	Environmental Unknown
+13771	MP_E811_2B	Actinopteri
+1505	MP_E811_2B	Eptatretus
+2	MP_E811_2B	Heteronemertea
+2	MP_E811_2B	Actinomycetaceae
+638	MP_E811_2B	Sus scrofa
+4309	MP_E811_2B	Chordata
+10	MP_E811_2B	Amphipoda
+6	MP_E811_2B	Calanoida
+513	MP_E811_2B	Cephalopoda
+110	MP_E811_2B	Cellariidae
+38	MP_E811_2B	Cliona patera
+40	MP_E811_2B	Munididae
+8	MP_E811_2B	Ophiura luetkenii
+56	MP_E811_2B	Gallus
+29	MP_E811_2B	Asteroidea
+1	MP_E811_2B	Magnoliopsida
+151	MP_E811_2B	Schizocardium
+8	MP_E811_2B	Chloroflexota
+2788	MP_E811_2B	Diplostraca
+1685	MP_E811_2B	Abbottina rivularis
+9044	MP_E811_3B	Eukaryota
+289	MP_E811_3B	Unknown
+1207	MP_E811_3B	Picozoa
+13419	MP_E811_3B	Candidatus Karelsulcia__f
+435	MP_E811_3B	Poecilosclerida
+950	MP_E811_3B	Echinoidea
+46	MP_E811_3B	Dendroceratida
+232	MP_E811_3B	Axinellida
+105	MP_E811_3B	Thysanoessa
+68	MP_E811_3B	Carybdeida
+1802	MP_E811_3B	Perciformes
+1	MP_E811_3B	Demospongiae
+518	MP_E811_3B	Spatangoida
+4137	MP_E811_3B	Chimaeriformes
+2	MP_E811_3B	Siphonophorae
+12	MP_E811_3B	Environmental Unknown
+47343	MP_E811_3B	Actinopteri
+1	MP_E811_3B	Heteronemertea
+780	MP_E811_3B	Eusergestes arcticus
+4	MP_E811_3B	Actinomycetaceae
+434	MP_E811_3B	Euphausia pacifica
+34	MP_E811_3B	Anthozoa
+386	MP_E811_3B	Sagittidae
+22	MP_E811_3B	Chordata
+359	MP_E811_3B	Cephalopoda
+52	MP_E811_3B	Ophiura luetkenii
+32	MP_E811_3B	Ophiuroidea
+279	MP_E811_3B	Asteroidea
+4	MP_E811_3B	Polymastia littoralis
+85	MP_E811_3B	Flabellidae
+2	MP_E811_3B	Magnoliopsida
+253	MP_E811_3B	Amphilepidida
+703	MP_E811_3B	Luidia neozelanica
+9	MP_E811_3B	Acartia tonsa
+16	MP_E811_3B	Caprellidae
+72	MP_E811_3B	Oerstedia sp_ Simushir 22
+28	MP_E811_3B	Terebratulina
+301	MP_E811_3B	Ophiolepididae
+229	MP_E811_3B	Solemya
+70	MP_E824	Unknown
+61654	MP_E824	Echinoidea
+15	MP_E824	Hemiptera
+120613	MP_E824	Sagittidae
+129	MP_E824	Mytilus californianus
+10329	MP_E824	Podonidae
+1	MP_E824	Acartia tonsa
+170	MP_E824	Lasaeidae
+42	MP_E824	Corambe pacifica
+3071	MP_E829	Eukaryota
+614	MP_E829	Unknown
+326	MP_E829	Picozoa
+13786	MP_E829	Candidatus Karelsulcia__f
+459	MP_E829	Poecilosclerida
+79	MP_E829	Echinoidea
+105	MP_E829	Dendroceratida
+162	MP_E829	Axinellida
+30101	MP_E829	Thysanoessa
+43	MP_E829	Carybdeida
+17	MP_E829	Dictyodendrillidae
+335	MP_E829	Spatangoida
+2	MP_E829	Siphonophorae
+5	MP_E829	Environmental Unknown
+3	MP_E829	Spongillida
+14786	MP_E829	Actinopteri
+20	MP_E829	Sphaeronectes koellikeri
+25	MP_E829	Actinomycetaceae
+203	MP_E829	Euphausia pacifica
+3076	MP_E829	Sus scrofa
+9	MP_E829	Anthozoa
+41	MP_E829	Psammobiidae
+30	MP_E829	Tellinidae
+326	MP_E829	Cephalopoda
+795	MP_E829	Merluccius
+9	MP_E829	Tetractinellida
+1007	MP_E829	Gallus
+28	MP_E829	Merluccius productus
+279	MP_E829	Ophiolepididae
+6	MP_E829	Tepidiformaceae
+440	MP_E829	Lemuridae
+11	MP_E840	Eukaryota
+521	MP_E840	Unknown
+95	MP_E840	Picozoa
+8350	MP_E840	Candidatus Karelsulcia__f
+209	MP_E840	Poecilosclerida
+49	MP_E840	Echinoidea
+4	MP_E840	Dendroceratida
+70	MP_E840	Axinellida
+9	MP_E840	Vazella pourtalesii
+9	MP_E840	Carybdeida
+1	MP_E840	Demospongiae
+9	MP_E840	Dictyodendrillidae
+513	MP_E840	Spatangoida
+14	MP_E840	Actinomycetaceae
+5	MP_E840	Anthozoa
+140	MP_E840	Merluccius
+4	MP_E840	Candidatus Pseudothioglobus__f__o
+7	MP_E840	Candidatus Chazhemtobacteraceae
+459	MP_E840	Amphipholis squamata
+13	MP_E840	Hansarsia megalops
+5454	MP_E846	Eukaryota
+45	MP_E846	Unknown
+49	MP_E846	Picozoa
+1796	MP_E846	Candidatus Karelsulcia__f
+5	MP_E846	Poecilosclerida
+134	MP_E846	Thysanoessa
+48	MP_E846	Spongillida
+23632	MP_E846	Actinopteri
+3	MP_E846	Actinomycetaceae
+32	MP_E846	Euphausia pacifica
+137	MP_E846	Candidatus Woesebacteria
+274	MP_E846	Artiodactyla
+196	MP_E846	Psammobiidae
+42	MP_E846	Tellinidae
+4825	MP_E846	Otariidae
+100	MP_E846	Insecta
+20	MP_E846	Acartia tonsa
+9	MP_E846	Geryoniidae
+4	MP_E846	Propionibacterium
+577	MP_E846	Salvelinus namaycush
+3306	MP_E852	Eukaryota
+1696	MP_E852	Unknown
+181	MP_E852	Picozoa
+24618	MP_E852	Candidatus Karelsulcia__f
+429	MP_E852	Poecilosclerida
+181	MP_E852	Echinoidea
+48	MP_E852	Dendroceratida
+354	MP_E852	Axinellida
+2	MP_E852	Holothuroidea
+62	MP_E852	Carybdeida
+182	MP_E852	Cyclopecten sp_ DJC_2016
+23	MP_E852	Dictyodendrillidae
+417	MP_E852	Spatangoida
+8820	MP_E852	Actinopteri
+9	MP_E852	Heteronemertea
+133	MP_E852	Eusergestes arcticus
+27	MP_E852	Actinomycetaceae
+500	MP_E852	Saccoglossus
+1396	MP_E852	Euphausia pacifica
+4	MP_E852	Candidatus Pseudothioglobus__f
+525	MP_E852	Cephalopoda
+18	MP_E852	Actinomycetes
+807	MP_E852	Hansarsia megalops
+4479	MP_E852	Paralepididae
+58	MP_E852	Moridae
+55	MP_E852	Octopus californicus
+10	MP_E852	Cecidomyiidae
+34	MP_E856	Eukaryota
+2	MP_E856	Picozoa
+52	MP_E856	Candidatus Karelsulcia__f
+3	MP_E856	Poecilosclerida
+13	MP_E856	Echinoidea
+446	MP_E856	Perciformes
+122	MP_E856	Actinopteri
+16	MP_E856	Mammalia
+27	MP_E856	Chordata
+6	MP_E856	Cephalopoda
+2533	MP_E856	Hansarsia megalops
+9	MP_E856	Ophionereis
+89701	MP_E860_1B	Eukaryota
+437	MP_E860_1B	Homo sapiens
+185	MP_E860_1B	Unknown
+1178	MP_E860_1B	Picozoa
+10102	MP_E860_1B	Candidatus Karelsulcia__f
+227	MP_E860_1B	Poecilosclerida
+202	MP_E860_1B	Echinoidea
+66	MP_E860_1B	Dendroceratida
+371	MP_E860_1B	Axinellida
+1	MP_E860_1B	Porifera
+57	MP_E860_1B	Carybdeida
+37	MP_E860_1B	Demospongiae
+54	MP_E860_1B	Trochidae
+5	MP_E860_1B	Dictyodendrillidae
+10	MP_E860_1B	Environmental Unknown
+2	MP_E860_1B	Sphaeronectes koellikeri
+8	MP_E860_1B	Heteronemertea
+100	MP_E860_1B	Eusergestes arcticus
+5	MP_E860_1B	Actinomycetaceae
+144	MP_E860_1B	Euphausia pacifica
+2423	MP_E860_1B	Suidae
+186	MP_E860_1B	Sagittidae
+485	MP_E860_1B	Cephalopoda
+1468	MP_E860_1B	Gallus
+33	MP_E860_1B	Euphausiidae
+521	MP_E860_1B	Schizocardium
+67	MP_E860_1B	Ophiothrix angulata
+4	MP_E860_1B	Proboscidea
+1235	MP_E860_2B	Eukaryota
+536	MP_E860_2B	Unknown
+1335	MP_E860_2B	Picozoa
+14633	MP_E860_2B	Candidatus Karelsulcia__f
+272	MP_E860_2B	Poecilosclerida
+1198	MP_E860_2B	Echinoidea
+76	MP_E860_2B	Dendroceratida
+256	MP_E860_2B	Axinellida
+1	MP_E860_2B	Acartia longiremis
+73	MP_E860_2B	Carybdeida
+3	MP_E860_2B	Suberitida
+2	MP_E860_2B	Demospongiae
+3	MP_E860_2B	Dictyodendrillidae
+4	MP_E860_2B	Tethyidae
+1	MP_E860_2B	Aphragmophora
+26	MP_E860_2B	Environmental Unknown
+3	MP_E860_2B	Spongillida
+11358	MP_E860_2B	Actinopteri
+1	MP_E860_2B	Heteronemertea
+15	MP_E860_2B	Eusergestes arcticus
+13	MP_E860_2B	Actinomycetaceae
+1092	MP_E860_2B	Euphausia pacifica
+15	MP_E860_2B	Chiridota sp_ 2 AKM_2016
+8	MP_E860_2B	Candidatus Pseudothioglobus__f
+4	MP_E860_2B	Calanoida
+1	MP_E860_2B	Tellinidae
+741	MP_E860_2B	Cephalopoda
+31	MP_E860_2B	Pseudocnus
+67	MP_E860_2B	Sapromyza palpella
+5057	MP_E860_2B	Chydoridae
+20	MP_E860_2B	Ophiothrix angulata
+580	MP_E860_2B	Patiria miniata
+71	MP_E860_2B	Fenestrulina sp_ BLEED20
+16079	MP_E860_3B	Eukaryota
+317	MP_E860_3B	Unknown
+1054	MP_E860_3B	Picozoa
+9029	MP_E860_3B	Candidatus Karelsulcia__f
+296	MP_E860_3B	Poecilosclerida
+99	MP_E860_3B	Echinoidea
+42	MP_E860_3B	Dendroceratida
+224	MP_E860_3B	Axinellida
+27	MP_E860_3B	Carybdeida
+44	MP_E860_3B	Demospongiae
+278	MP_E860_3B	Spatangoida
+27	MP_E860_3B	Environmental Unknown
+1	MP_E860_3B	Spongillida
+186	MP_E860_3B	Actinopteri
+222	MP_E860_3B	Eusergestes arcticus
+983	MP_E860_3B	Euphausia pacifica
+1458	MP_E860_3B	Cephalopoda
+247	MP_E860_3B	Sapromyza palpella
+1	MP_E860_3B	Ophiura luetkenii
+4	MP_E860_3B	Tetractinellida
+501	MP_E860_3B	Asteroidea
+7	MP_E860_3B	Ophiothrix angulata
+36	MP_E860_3B	Oscarella balibaloi
+77	MP_E860_3B	Diplostraca
+5	MP_E860_3B	Aspidochirotida
+3	MP_E860_3B	Chelophyes appendiculata
+20531	MP_E872_1B	Eukaryota
+476	MP_E872_1B	Unknown
+350	MP_E872_1B	Picozoa
+2239	MP_E872_1B	Candidatus Karelsulcia__f
+101	MP_E872_1B	Poecilosclerida
+93	MP_E872_1B	Echinoidea
+20	MP_E872_1B	Dendroceratida
+46	MP_E872_1B	Axinellida
+32	MP_E872_1B	Carybdeida
+5	MP_E872_1B	Environmental Unknown
+2002	MP_E872_1B	Actinopteri
+6	MP_E872_1B	Sphaeronectes koellikeri
+2	MP_E872_1B	Heteronemertea
+1	MP_E872_1B	Chordata
+3	MP_E872_1B	Calanoida
+2	MP_E872_1B	Muggiaea atlantica
+2	MP_E872_1B	Tetractinellida
+139	MP_E872_1B	Nemertea
+4	MP_E872_1B	Magnoliopsida
+554	MP_E872_1B	Acartia tonsa
+497	MP_E872_1B	Hansarsia megalops
+5	MP_E872_1B	Actinomyces
+2	MP_E872_1B	Halieaceae
+2	MP_E872_1B	Eucoccidiorida
+19253	MP_E872_2B	Eukaryota
+261	MP_E872_2B	Unknown
+213	MP_E872_2B	Picozoa
+1546	MP_E872_2B	Candidatus Karelsulcia__f
+73	MP_E872_2B	Poecilosclerida
+42	MP_E872_2B	Lineidae
+57	MP_E872_2B	Echinoidea
+18	MP_E872_2B	Dendroceratida
+16	MP_E872_2B	Axinellida
+8	MP_E872_2B	Carybdeida
+3	MP_E872_2B	Environmental Unknown
+1478	MP_E872_2B	Actinopteri
+23	MP_E872_2B	Heteronemertea
+2	MP_E872_2B	Actinomycetaceae
+304	MP_E872_2B	Chordata
+10	MP_E872_2B	Sapromyza palpella
+83	MP_E872_2B	Podonidae
+19	MP_E872_2B	Magnoliopsida
+163	MP_E872_2B	Acartia tonsa
+2	MP_E872_2B	Calocalanus styliremis
+90713	MP_E872_3B	Eukaryota
+1628	MP_E872_3B	Homo sapiens
+461	MP_E872_3B	Unknown
+297	MP_E872_3B	Picozoa
+1342	MP_E872_3B	Candidatus Karelsulcia__f
+97	MP_E872_3B	Poecilosclerida
+83	MP_E872_3B	Echinoidea
+15	MP_E872_3B	Dendroceratida
+51	MP_E872_3B	Axinellida
+20	MP_E872_3B	Carybdeida
+6	MP_E872_3B	Demospongiae
+2	MP_E872_3B	Environmental Unknown
+1	MP_E872_3B	Actinomycetaceae
+36	MP_E872_3B	Sagittidae
+14	MP_E872_3B	Magnoliopsida
+28	MP_E872_3B	Ophiothrix angulata
+11600	MP_E875	Eukaryota
+46	MP_E875	Homo sapiens
+278	MP_E875	Unknown
+3856	MP_E875	Picozoa
+1	MP_E875	Candidatus Karelsulcia__f
+27	MP_E875	Poecilosclerida
+60	MP_E875	Hominidae
+1	MP_E875	Cheilostomatida
+454	MP_E875	Echinoidea
+24	MP_E875	Dendroceratida
+12	MP_E875	Axinellida
+2	MP_E875	Carybdeida
+5	MP_E875	Demospongiae
+97	MP_E875	Sclerodactylidae
+13296	MP_E875	Actinopteri
+1	MP_E875	Sphaeronectes koellikeri
+42	MP_E875	Saccoglossus
+12	MP_E875	Anthozoa
+346	MP_E875	Sagittidae
+758	MP_E875	Chordata
+438	MP_E875	Modiolus
+57	MP_E875	Tubulanus sp_ 3 TCH_2015
+388	MP_E875	Evadne
+11	MP_E875	Oerstedia sp_ SJ 64
+58	MP_E875	Tellinidae
+28	MP_E875	Cephalopoda
+7	MP_E875	Octopodidae
+452	MP_E875	Ophiuroidea
+15	MP_E875	Asteroidea
+180220	MP_E875	Chthamalus
+326	MP_E875	Podonidae
+1634	MP_E875	Macoma nasuta
+645	MP_E875	Embiotocidae
+1	MP_E875	Magnoliopsida
+16	MP_E875	Hubrechtella
+363	MP_E875	Acartia tonsa
+9	MP_E875	Lucinoma borealis
+71	MP_E875	Leptopecten latiauratus
+15	MP_E875	Ophiolepididae
+55	MP_E875	Thalamoporella californica
+19	MP_E875	Amathia cf_ citrina AW_2014
+7	MP_E875	Ptilocaulis walpersi
+3	MP_E875	Ceriantheopsis americana
+766	MP_E875	Scombridae
+568	MP_E875	Ophidion scrippsae
+145498	MP_POSITIVE	Aves
+49	MP_POSITIVE	Pyrrhura
+17	MP_POSITIVE	Pycnonotidae
+17	MP_POSITIVE	Aenigmachannidae

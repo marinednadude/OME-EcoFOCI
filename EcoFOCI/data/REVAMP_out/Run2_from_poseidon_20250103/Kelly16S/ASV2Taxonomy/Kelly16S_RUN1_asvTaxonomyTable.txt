@@ -1,0 +1,1041 @@
+ASV	Kingdom	Phylum	Class	Order	Family	Genus	Species
+ASV_1	Eukaryota	Mollusca	Bivalvia	Mytilida	Mytilidae	Mytilus	NA
+ASV_10	Eukaryota	Chordata	Actinopteri	Gadiformes	Merlucciidae	Merluccius	NA
+ASV_100	Eukaryota	Chordata	Mammalia	Artiodactyla	NA	NA	NA
+ASV_1000	Unknown	NA	NA	NA	NA	NA	NA
+ASV_1001	Unknown	NA	NA	NA	NA	NA	NA
+ASV_1002	Unknown	NA	NA	NA	NA	NA	NA
+ASV_1003	Unknown	NA	NA	NA	NA	NA	NA
+ASV_1004	Bacteria	NA	NA	NA	NA	NA	NA
+ASV_1005	Unknown	NA	NA	NA	NA	NA	NA
+ASV_1006	Unknown	NA	NA	NA	NA	NA	NA
+ASV_1007	Unknown	NA	NA	NA	NA	NA	NA
+ASV_1008	Unknown	NA	NA	NA	NA	NA	NA
+ASV_1009	Unknown	NA	NA	NA	NA	NA	NA
+ASV_101	Eukaryota	Arthropoda	Thecostraca	Lepadidae__o	Lepadidae	Lepas	NA
+ASV_1010	Unknown	NA	NA	NA	NA	NA	NA
+ASV_1011	Unknown	NA	NA	NA	NA	NA	NA
+ASV_1012	Unknown	NA	NA	NA	NA	NA	NA
+ASV_1013	Unknown	NA	NA	NA	NA	NA	NA
+ASV_1014	Unknown	NA	NA	NA	NA	NA	NA
+ASV_1015	Unknown	NA	NA	NA	NA	NA	NA
+ASV_1016	Unknown	NA	NA	NA	NA	NA	NA
+ASV_1017	Unknown	NA	NA	NA	NA	NA	NA
+ASV_1018	Unknown	NA	NA	NA	NA	NA	NA
+ASV_1019	Unknown	NA	NA	NA	NA	NA	NA
+ASV_102	Eukaryota	Echinodermata	Holothuroidea	Molpadida	NA	NA	NA
+ASV_1020	Unknown	NA	NA	NA	NA	NA	NA
+ASV_1021	Unknown	NA	NA	NA	NA	NA	NA
+ASV_1022	Unknown	NA	NA	NA	NA	NA	NA
+ASV_1023	Unknown	NA	NA	NA	NA	NA	NA
+ASV_1024	Unknown	NA	NA	NA	NA	NA	NA
+ASV_1025	Unknown	NA	NA	NA	NA	NA	NA
+ASV_1026	Unknown	NA	NA	NA	NA	NA	NA
+ASV_1027	Unknown	NA	NA	NA	NA	NA	NA
+ASV_1028	Eukaryota	Chlorophyta	Chlorophyceae	NA	NA	NA	NA
+ASV_1029	Unknown	NA	NA	NA	NA	NA	NA
+ASV_103	Eukaryota	Chordata	Mammalia	Primates	Hominidae	Homo	Homo sapiens
+ASV_1030	Unknown	NA	NA	NA	NA	NA	NA
+ASV_1031	Unknown	NA	NA	NA	NA	NA	NA
+ASV_1032	Unknown	NA	NA	NA	NA	NA	NA
+ASV_1033	Unknown	NA	NA	NA	NA	NA	NA
+ASV_1034	Unknown	NA	NA	NA	NA	NA	NA
+ASV_1035	Unknown	NA	NA	NA	NA	NA	NA
+ASV_1036	Unknown	NA	NA	NA	NA	NA	NA
+ASV_1037	Unknown	NA	NA	NA	NA	NA	NA
+ASV_1038	Unknown	NA	NA	NA	NA	NA	NA
+ASV_1039	Eukaryota	Chordata	Mammalia	Primates	Hominidae	NA	NA
+ASV_104	Eukaryota	Chordata	Actinopteri	Perciformes	NA	NA	NA
+ASV_1040	Eukaryota	Chordata	Mammalia	Primates	Hominidae	NA	NA
+ASV_105	Eukaryota	Chordata	Mammalia	Carnivora	Otariidae	NA	NA
+ASV_106	Eukaryota	Echinodermata	Asteroidea	Valvatida	Poraniidae	Dermasterias	Dermasterias imbricata
+ASV_107	Eukaryota	Chaetognatha	Sagittoidea	Aphragmophora	NA	NA	NA
+ASV_108	Eukaryota	Chaetognatha	Sagittoidea	Aphragmophora	Sagittidae	NA	NA
+ASV_109	Eukaryota	Echinodermata	Holothuroidea	Dendrochirotida	NA	NA	NA
+ASV_11	Eukaryota	Arthropoda	Thecostraca	Balanomorpha	NA	NA	NA
+ASV_110	Eukaryota	Arthropoda	Branchiopoda	Diplostraca	Podonidae	NA	NA
+ASV_111	Eukaryota	Echinodermata	Asteroidea	Paxillosida	Luidiidae	Luidia	Luidia foliolata
+ASV_112	Eukaryota	Chordata	Mammalia	Primates	Hominidae	Homo	Homo sapiens
+ASV_113	Eukaryota	Picozoa	NA	NA	NA	NA	NA
+ASV_114	Eukaryota	NA	NA	NA	NA	NA	NA
+ASV_115	Eukaryota	Chordata	Actinopteri	NA	NA	NA	NA
+ASV_116	Eukaryota	Arthropoda	Malacostraca	Euphausiacea	Euphausiidae	Euphausia	Euphausia pacifica
+ASV_117	Eukaryota	Chordata	Actinopteri	NA	NA	NA	NA
+ASV_118	Eukaryota	Chordata	Mammalia	Artiodactyla	Phocoenidae	Phocoena	Phocoena phocoena
+ASV_119	Unknown	NA	NA	NA	NA	NA	NA
+ASV_12	Eukaryota	Porifera	Demospongiae	Poecilosclerida	NA	NA	NA
+ASV_120	Eukaryota	Chordata	Actinopteri	NA	NA	NA	NA
+ASV_121	Eukaryota	Bryozoa	Gymnolaemata	Cheilostomatida	Flustridae	NA	NA
+ASV_122	Eukaryota	Chordata	Actinopteri	NA	NA	NA	NA
+ASV_123	Eukaryota	NA	NA	NA	NA	NA	NA
+ASV_124	Eukaryota	Mollusca	Bivalvia	Mytilida	Mytilidae	Mytilus	NA
+ASV_125	Eukaryota	NA	NA	NA	NA	NA	NA
+ASV_126	Eukaryota	Echinodermata	Asteroidea	Forcipulatida	NA	NA	NA
+ASV_127	Eukaryota	Nemertea	Palaeonemertea	Carinomiformes	Carinomidae	Carinoma	Carinoma hamanako
+ASV_128	Eukaryota	Echinodermata	Holothuroidea	Aspidochirotida	Stichopodidae	NA	NA
+ASV_129	Eukaryota	Nemertea	Pilidiophora	Heteronemertea	Lineidae	Micrura	Micrura wilsoni
+ASV_13	Eukaryota	Arthropoda	Thecostraca	Balanomorpha	NA	NA	NA
+ASV_130	Eukaryota	Chordata	Actinopteri	NA	NA	NA	NA
+ASV_131	Eukaryota	Chordata	Mammalia	Primates	Hominidae	Homo	Homo sapiens
+ASV_132	Eukaryota	Chordata	Actinopteri	Gadiformes	Merlucciidae	Merluccius	NA
+ASV_133	Eukaryota	Porifera	Calcarea	Clathrinida	NA	NA	NA
+ASV_134	Eukaryota	Mollusca	Bivalvia	Pectinida	Pectinidae	Chlamys	Chlamys hastata
+ASV_135	Eukaryota	Mollusca	Bivalvia	Pectinida	Pectinidae	Crassadoma	Crassadoma gigantea
+ASV_136	Eukaryota	Chordata	Actinopteri	NA	NA	NA	NA
+ASV_137	Eukaryota	Chordata	Actinopteri	NA	NA	NA	NA
+ASV_138	Eukaryota	Porifera	Demospongiae	NA	NA	NA	NA
+ASV_139	Eukaryota	Mollusca	Bivalvia	Mytilida	Mytilidae	Mytilus	NA
+ASV_14	Eukaryota	Chordata	Actinopteri	Perciformes	NA	NA	NA
+ASV_140	Eukaryota	Echinodermata	Asteroidea	Forcipulatida	Asteriidae	NA	NA
+ASV_141	Eukaryota	Chordata	Mammalia	Artiodactyla	NA	NA	NA
+ASV_142	Eukaryota	NA	NA	NA	NA	NA	NA
+ASV_143	Eukaryota	Arthropoda	Malacostraca	Decapoda	Cancridae	Glebocarcinus	Glebocarcinus oregonensis
+ASV_144	Eukaryota	Arthropoda	Thecostraca	Balanomorpha	NA	NA	NA
+ASV_145	Unknown	NA	NA	NA	NA	NA	NA
+ASV_146	Eukaryota	Arthropoda	Insecta	Diptera	Sciaridae	NA	NA
+ASV_147	Eukaryota	NA	NA	NA	NA	NA	NA
+ASV_148	Eukaryota	Mollusca	Bivalvia	Cardiida	Tellinidae	NA	NA
+ASV_149	Eukaryota	NA	NA	NA	NA	NA	NA
+ASV_15	Eukaryota	NA	NA	NA	NA	NA	NA
+ASV_150	Eukaryota	Mollusca	Bivalvia	Mytilida	Mytilidae	Mytilus	Mytilus californianus
+ASV_151	Eukaryota	Porifera	Calcarea	Clathrinida	NA	NA	NA
+ASV_152	Eukaryota	Annelida	Polychaeta	Spionida	NA	NA	NA
+ASV_153	Eukaryota	Cnidaria	Anthozoa	NA	NA	NA	NA
+ASV_154	Eukaryota	NA	NA	NA	NA	NA	NA
+ASV_155	Eukaryota	Chordata	Actinopteri	NA	NA	NA	NA
+ASV_156	Eukaryota	NA	NA	NA	NA	NA	NA
+ASV_157	Eukaryota	Mollusca	Bivalvia	Adapedonta	Pharidae	Siliqua	Siliqua alta
+ASV_158	Eukaryota	NA	NA	NA	NA	NA	NA
+ASV_159	Eukaryota	Annelida	Polychaeta	Spionida	Magelonidae	NA	NA
+ASV_16	Eukaryota	Chordata	Actinopteri	Osmeriformes	NA	NA	NA
+ASV_160	Eukaryota	Mollusca	Bivalvia	Mytilida	Mytilidae	Mytilus	NA
+ASV_161	Eukaryota	Echinodermata	Asteroidea	Forcipulatida	Asteriidae	NA	NA
+ASV_162	Eukaryota	NA	NA	NA	NA	NA	NA
+ASV_163	Eukaryota	NA	NA	NA	NA	NA	NA
+ASV_164	Eukaryota	Nemertea	Enopla	Monostilifera	NA	NA	NA
+ASV_165	Eukaryota	Nemertea	Pilidiophora	Heteronemertea	Lineidae	Micrura	Micrura purpurea
+ASV_166	Eukaryota	Nemertea	Palaeonemertea	Tubulaniformes	NA	NA	NA
+ASV_167	Eukaryota	Arthropoda	Branchiopoda	Diplostraca	Podonidae	Evadne	NA
+ASV_168	Eukaryota	Mollusca	Bivalvia	Cardiida	Tellinidae	NA	NA
+ASV_169	Eukaryota	Chordata	Actinopteri	NA	NA	NA	NA
+ASV_17	Eukaryota	Nemertea	Pilidiophora	Heteronemertea	Riseriellidae	Riserius	Riserius sp_ no eyes
+ASV_170	Eukaryota	Arthropoda	Hexanauplia	Calanoida	Acartiidae	Acartia	Acartia longiremis
+ASV_171	Eukaryota	Chordata	Actinopteri	NA	NA	NA	NA
+ASV_172	Eukaryota	Nemertea	Pilidiophora	Heteronemertea	Lineidae	Cerebratulus	NA
+ASV_173	Eukaryota	Chordata	NA	NA	NA	NA	NA
+ASV_174	Eukaryota	Chordata	Chondrichthyes	Rajiformes	Rajidae	Beringraja	Beringraja inornata
+ASV_175	Eukaryota	Arthropoda	Thecostraca	Balanomorpha	Balanidae	Megabalanus	NA
+ASV_176	Eukaryota	NA	NA	NA	NA	NA	NA
+ASV_177	Eukaryota	Arthropoda	Malacostraca	Decapoda	Callianassidae	Neotrypaea	NA
+ASV_178	Eukaryota	Bryozoa	Gymnolaemata	Cheilostomatida	Umbonulidae	Oshurkovia	Oshurkovia littoralis
+ASV_179	Eukaryota	Chordata	Mammalia	Primates	Hominidae	Homo	Homo sapiens
+ASV_18	Eukaryota	Bryozoa	Gymnolaemata	Ctenostomatida	NA	NA	NA
+ASV_180	Eukaryota	Chordata	Mammalia	Primates	Hominidae	Homo	Homo sapiens
+ASV_181	Eukaryota	Echinodermata	Ophiuroidea	Amphilepidida	Ophiactidae	Ophiopholis	Ophiopholis mirabilis
+ASV_182	Eukaryota	Arthropoda	Malacostraca	Euphausiacea	Euphausiidae	Euphausia	Euphausia pacifica
+ASV_183	Eukaryota	Cnidaria	Anthozoa	NA	NA	NA	NA
+ASV_184	Eukaryota	Mollusca	Bivalvia	Myida	Myidae	Mya	NA
+ASV_185	Unknown	NA	NA	NA	NA	NA	NA
+ASV_186	Eukaryota	Chordata	Actinopteri	NA	NA	NA	NA
+ASV_187	Eukaryota	Chordata	Actinopteri	NA	NA	NA	NA
+ASV_188	Eukaryota	Chaetognatha	Sagittoidea	Aphragmophora	NA	NA	NA
+ASV_189	Eukaryota	Mollusca	Bivalvia	Mytilida	Mytilidae	Mytilus	NA
+ASV_19	Bacteria	Bacteroidota	Flavobacteriia	Flavobacteriales	Candidatus Karelsulcia__f	NA	NA
+ASV_190	Eukaryota	Chordata	Actinopteri	NA	NA	NA	NA
+ASV_191	Eukaryota	NA	NA	NA	NA	NA	NA
+ASV_192	Eukaryota	Chaetognatha	Sagittoidea	Aphragmophora	Sagittidae	NA	NA
+ASV_193	Eukaryota	Chordata	NA	NA	NA	NA	NA
+ASV_194	Eukaryota	Mollusca	Cephalopoda	Octopoda	Octopodidae	Enteroctopus	NA
+ASV_195	Eukaryota	NA	NA	NA	NA	NA	NA
+ASV_196	Eukaryota	NA	NA	NA	NA	NA	NA
+ASV_197	Eukaryota	Chordata	Actinopteri	NA	NA	NA	NA
+ASV_198	Eukaryota	Chordata	NA	NA	NA	NA	NA
+ASV_199	Eukaryota	Chordata	Actinopteri	NA	NA	NA	NA
+ASV_2	Eukaryota	NA	NA	NA	NA	NA	NA
+ASV_20	Bacteria	Bacteroidota	Flavobacteriia	Flavobacteriales	Candidatus Karelsulcia__f	NA	NA
+ASV_200	Eukaryota	Nemertea	Enopla	Monostilifera	Carcinonemertidae	Carcinonemertes	NA
+ASV_201	Eukaryota	Bryozoa	Gymnolaemata	Cheilostomatida	Lepraliellidae	NA	NA
+ASV_202	Eukaryota	Nemertea	Palaeonemertea	Archinemertea	Cephalotrichidae	Cephalothrix	Cephalothrix major
+ASV_203	Eukaryota	Nemertea	Palaeonemertea	Tubulaniformes	Tubulanidae	Tubulanus	NA
+ASV_204	Eukaryota	Arthropoda	Insecta	Diptera	Chironomidae	Limnophyes	Limnophyes sp_ YF_2022
+ASV_205	Eukaryota	Chordata	Actinopteri	Gadiformes	Merlucciidae	Merluccius	NA
+ASV_206	Eukaryota	Echinodermata	Asteroidea	Spinulosida	Echinasteridae	Henricia	NA
+ASV_207	Eukaryota	Arthropoda	Insecta	Diptera	Lauxaniidae	Sapromyza	Sapromyza palpella
+ASV_208	Eukaryota	Mollusca	Bivalvia	Galeommatida	NA	NA	NA
+ASV_209	Eukaryota	Mollusca	Bivalvia	Mytilida	Mytilidae	Mytilus	NA
+ASV_21	Eukaryota	Arthropoda	Malacostraca	Euphausiacea	Euphausiidae	Thysanoessa	NA
+ASV_210	Eukaryota	Bryozoa	Gymnolaemata	Cheilostomatida	Phidoloporidae	Rhynchozoon	Rhynchozoon sp_ MHD_2004
+ASV_211	Eukaryota	Arthropoda	Malacostraca	Euphausiacea	Euphausiidae	Euphausia	Euphausia pacifica
+ASV_212	Eukaryota	Chaetognatha	Sagittoidea	Aphragmophora	Sagittidae	NA	NA
+ASV_213	Eukaryota	Picozoa	NA	NA	NA	NA	NA
+ASV_214	Eukaryota	Mollusca	Bivalvia	Mytilida	Mytilidae	NA	NA
+ASV_215	Eukaryota	Chaetognatha	Sagittoidea	Aphragmophora	Sagittidae	NA	NA
+ASV_216	Eukaryota	Chordata	Actinopteri	Osmeriformes	NA	NA	NA
+ASV_217	Eukaryota	Arthropoda	Malacostraca	Anaspidacea	NA	NA	NA
+ASV_218	Eukaryota	Porifera	Demospongiae	Verongiida	Aplysinidae	NA	NA
+ASV_219	Unknown	NA	NA	NA	NA	NA	NA
+ASV_22	Eukaryota	Picozoa	NA	NA	NA	NA	NA
+ASV_220	Eukaryota	Chaetognatha	Sagittoidea	Aphragmophora	Sagittidae	NA	NA
+ASV_221	Eukaryota	Arthropoda	Insecta	Diptera	Chironomidae	Cricotopus	NA
+ASV_222	Eukaryota	Nemertea	Palaeonemertea	Tubulaniformes	Tubulanidae	Tubulanus	Tubulanus sp_ 3 TCH_2015
+ASV_223	Eukaryota	Mollusca	Bivalvia	Mytilida	Mytilidae	Mytilus	NA
+ASV_224	Eukaryota	NA	NA	NA	NA	NA	NA
+ASV_225	Eukaryota	NA	NA	NA	NA	NA	NA
+ASV_226	Eukaryota	Mollusca	Bivalvia	Lucinida	Thyasiridae	NA	NA
+ASV_227	Eukaryota	Echinodermata	Ophiuroidea	NA	NA	NA	NA
+ASV_228	Unknown	NA	NA	NA	NA	NA	NA
+ASV_229	Eukaryota	Nemertea	Enopla	Monostilifera	Prosorhochmidae	NA	NA
+ASV_23	Eukaryota	Arthropoda	Hexanauplia	Calanoida	NA	NA	NA
+ASV_230	Eukaryota	Arthropoda	Malacostraca	Decapoda	Cancridae	Metacarcinus	Metacarcinus magister
+ASV_231	Eukaryota	Mollusca	Bivalvia	Pectinida	Pectinidae	Patinopecten	Patinopecten caurinus
+ASV_232	Eukaryota	Mollusca	Bivalvia	Mytilida	Mytilidae	NA	NA
+ASV_233	Eukaryota	Porifera	Demospongiae	Dendroceratida	NA	NA	NA
+ASV_234	Eukaryota	Chordata	Actinopteri	NA	NA	NA	NA
+ASV_235	Eukaryota	Chaetognatha	Sagittoidea	Aphragmophora	Sagittidae	NA	NA
+ASV_236	Eukaryota	Chordata	Actinopteri	Osmeriformes	NA	NA	NA
+ASV_237	Eukaryota	Chordata	Mammalia	Primates	Hominidae	Homo	Homo sapiens
+ASV_238	Eukaryota	Chordata	Actinopteri	NA	NA	NA	NA
+ASV_239	Eukaryota	Arthropoda	Insecta	Diptera	Chironomidae	NA	NA
+ASV_24	Eukaryota	Hemichordata	Enteropneusta	Harrimaniidae__o	Harrimaniidae	Saccoglossus	NA
+ASV_240	Eukaryota	NA	NA	NA	NA	NA	NA
+ASV_241	Eukaryota	Arthropoda	Thecostraca	Balanomorpha	NA	NA	NA
+ASV_242	Eukaryota	Chordata	Mammalia	Carnivora	Mustelidae	Enhydra	Enhydra lutris
+ASV_243	Eukaryota	Chordata	Actinopteri	Osmeriformes	NA	NA	NA
+ASV_244	Eukaryota	Bryozoa	Gymnolaemata	Ctenostomatida	NA	NA	NA
+ASV_245	Eukaryota	Porifera	Demospongiae	NA	NA	NA	NA
+ASV_246	Eukaryota	Chaetognatha	Sagittoidea	Aphragmophora	Sagittidae	NA	NA
+ASV_247	Eukaryota	Chordata	Actinopteri	NA	NA	NA	NA
+ASV_248	Unknown	NA	NA	NA	NA	NA	NA
+ASV_249	Eukaryota	Bryozoa	Gymnolaemata	Ctenostomatida	Farrellidae	NA	NA
+ASV_25	Eukaryota	Porifera	Demospongiae	Axinellida	NA	NA	NA
+ASV_250	Eukaryota	Bryozoa	Gymnolaemata	Cheilostomatida	Bitectiporidae	NA	NA
+ASV_251	Eukaryota	Bryozoa	Gymnolaemata	Cheilostomatida	Cellariidae	NA	NA
+ASV_252	Eukaryota	Chaetognatha	Sagittoidea	Aphragmophora	NA	NA	NA
+ASV_253	Eukaryota	Mollusca	Gastropoda	Trochida	Colloniidae	NA	NA
+ASV_254	Eukaryota	NA	NA	NA	NA	NA	NA
+ASV_255	Eukaryota	Chordata	Actinopteri	NA	NA	NA	NA
+ASV_256	Eukaryota	Mollusca	Bivalvia	Cardiida	Semelidae	NA	NA
+ASV_257	Eukaryota	Mollusca	Bivalvia	Periplomatidae__o	Periplomatidae	Cochlodesma	NA
+ASV_258	Eukaryota	Chaetognatha	Sagittoidea	Aphragmophora	NA	NA	NA
+ASV_259	Eukaryota	Porifera	Demospongiae	Haplosclerida	Niphatidae	Amphimedon	Amphimedon compressa
+ASV_26	Eukaryota	Picozoa	NA	NA	NA	NA	NA
+ASV_260	Eukaryota	Mollusca	Polyplacophora	Chitonida	Mopaliidae	Mopalia	NA
+ASV_261	Eukaryota	Bryozoa	Gymnolaemata	Cheilostomatida	Escharinidae	NA	NA
+ASV_262	Eukaryota	Nemertea	Pilidiophora	Heteronemertea	Lineidae	Maculaura	Maculaura alaskensis
+ASV_263	Eukaryota	Chordata	Actinopteri	Osmeriformes	NA	NA	NA
+ASV_264	Eukaryota	Mollusca	Bivalvia	Mytilida	Mytilidae	Mytilus	NA
+ASV_265	Eukaryota	Echinodermata	Asteroidea	NA	NA	NA	NA
+ASV_266	Eukaryota	Arthropoda	Thecostraca	Balanomorpha	NA	NA	NA
+ASV_267	Eukaryota	Chaetognatha	Sagittoidea	Aphragmophora	NA	NA	NA
+ASV_268	Eukaryota	NA	NA	NA	NA	NA	NA
+ASV_269	Eukaryota	Chaetognatha	Sagittoidea	Aphragmophora	NA	NA	NA
+ASV_27	Bacteria	Bacteroidota	Flavobacteriia	Flavobacteriales	Candidatus Karelsulcia__f	NA	NA
+ASV_270	Eukaryota	Arthropoda	Thecostraca	Balanomorpha	NA	NA	NA
+ASV_271	Eukaryota	Nemertea	Palaeonemertea	Tubulaniformes	NA	NA	NA
+ASV_272	Eukaryota	Mollusca	Bivalvia	Mytilida	Mytilidae	Mytilus	NA
+ASV_273	Eukaryota	Chaetognatha	Sagittoidea	Aphragmophora	NA	NA	NA
+ASV_274	Eukaryota	Chordata	Actinopteri	NA	NA	NA	NA
+ASV_275	Eukaryota	Nemertea	Enopla	Monostilifera	NA	NA	NA
+ASV_276	Eukaryota	Arthropoda	Hexanauplia	Calanoida	Acartiidae	Acartia	Acartia longiremis
+ASV_277	Eukaryota	NA	NA	NA	NA	NA	NA
+ASV_278	Eukaryota	Nemertea	Pilidiophora	Heteronemertea	Lineidae	Cerebratulus	NA
+ASV_279	Unknown	NA	NA	NA	NA	NA	NA
+ASV_28	Eukaryota	Echinodermata	Echinoidea	Spatangoida	NA	NA	NA
+ASV_280	Eukaryota	Bryozoa	Gymnolaemata	Cheilostomatida	Celleporidae	Celleporina	Celleporina souleae
+ASV_281	Unknown	NA	NA	NA	NA	NA	NA
+ASV_282	Eukaryota	Chordata	Mammalia	Artiodactyla	Camelidae	Camelus	Camelus dromedarius
+ASV_283	Eukaryota	NA	NA	NA	NA	NA	NA
+ASV_284	Eukaryota	Chaetognatha	Sagittoidea	Aphragmophora	Sagittidae	NA	NA
+ASV_285	Eukaryota	Chordata	Actinopteri	NA	NA	NA	NA
+ASV_286	Eukaryota	Mollusca	Cephalopoda	NA	NA	NA	NA
+ASV_287	Eukaryota	Chordata	Actinopteri	NA	NA	NA	NA
+ASV_288	Eukaryota	Picozoa	NA	NA	NA	NA	NA
+ASV_289	Eukaryota	Arthropoda	Malacostraca	Euphausiacea	Euphausiidae	Euphausia	Euphausia pacifica
+ASV_29	Eukaryota	Chordata	Mammalia	Artiodactyla	Phocoenidae	Phocoena	Phocoena phocoena
+ASV_290	Eukaryota	NA	NA	NA	NA	NA	NA
+ASV_291	Unknown	NA	NA	NA	NA	NA	NA
+ASV_292	Eukaryota	Chaetognatha	Sagittoidea	Aphragmophora	Sagittidae	Parasagitta	Parasagitta elegans
+ASV_293	Eukaryota	Bryozoa	Gymnolaemata	Cheilostomatida	Phidoloporidae	Rhynchozoon	Rhynchozoon sp_ MHD_2004
+ASV_294	Eukaryota	Chordata	Actinopteri	NA	NA	NA	NA
+ASV_295	Eukaryota	NA	NA	NA	NA	NA	NA
+ASV_296	Eukaryota	Nemertea	Enopla	Monostilifera	Oerstediidae	Oerstedia	Oerstedia sp_ Simushir 22
+ASV_297	Eukaryota	NA	NA	NA	NA	NA	NA
+ASV_298	Eukaryota	Chordata	Mammalia	Primates	Hominidae	NA	NA
+ASV_299	Eukaryota	Porifera	Demospongiae	Suberitida	NA	NA	NA
+ASV_3	Eukaryota	Chordata	Actinopteri	NA	NA	NA	NA
+ASV_30	Unknown	NA	NA	NA	NA	NA	NA
+ASV_300	Eukaryota	NA	NA	NA	NA	NA	NA
+ASV_301	Eukaryota	Arthropoda	Thecostraca	Balanomorpha	Balanidae	Megabalanus	NA
+ASV_302	Eukaryota	Chordata	Actinopteri	NA	NA	NA	NA
+ASV_303	Unknown	NA	NA	NA	NA	NA	NA
+ASV_304	Eukaryota	NA	NA	NA	NA	NA	NA
+ASV_305	Unknown	NA	NA	NA	NA	NA	NA
+ASV_306	Eukaryota	Arthropoda	Malacostraca	Euphausiacea	Euphausiidae	Thysanoessa	NA
+ASV_307	Eukaryota	Cnidaria	Cubozoa	Carybdeida	NA	NA	NA
+ASV_308	Eukaryota	NA	NA	NA	NA	NA	NA
+ASV_309	Eukaryota	Chordata	NA	NA	NA	NA	NA
+ASV_31	Eukaryota	Mollusca	Bivalvia	Mytilida	Mytilidae	Mytilus	NA
+ASV_310	Eukaryota	Chaetognatha	Sagittoidea	Aphragmophora	Sagittidae	NA	NA
+ASV_311	Eukaryota	Chaetognatha	Sagittoidea	Aphragmophora	NA	NA	NA
+ASV_312	Eukaryota	Nemertea	Pilidiophora	Heteronemertea	Lineidae	Maculaura	Maculaura magna
+ASV_313	Eukaryota	Chordata	Actinopteri	Osmeriformes	NA	NA	NA
+ASV_314	Eukaryota	Mollusca	Bivalvia	Mytilida	Mytilidae	Mytilus	NA
+ASV_315	Eukaryota	Bryozoa	Gymnolaemata	Cheilostomatida	Candidae	Scrupocellaria	Scrupocellaria varians
+ASV_316	Eukaryota	NA	NA	NA	NA	NA	NA
+ASV_317	Eukaryota	Chaetognatha	Sagittoidea	Aphragmophora	Sagittidae	NA	NA
+ASV_318	Eukaryota	Chaetognatha	Sagittoidea	Aphragmophora	Sagittidae	Parasagitta	NA
+ASV_319	Eukaryota	NA	NA	NA	NA	NA	NA
+ASV_32	Eukaryota	Chaetognatha	Sagittoidea	Aphragmophora	NA	NA	NA
+ASV_320	Eukaryota	Bryozoa	Gymnolaemata	Cheilostomatida	Candidae	NA	NA
+ASV_321	Eukaryota	Porifera	Demospongiae	Tethyida	Tethyidae	NA	NA
+ASV_322	Eukaryota	Porifera	Calcarea	Clathrinida	NA	NA	NA
+ASV_323	Eukaryota	Echinodermata	Ophiuroidea	Amphilepidida	Ophiocomidae	Breviturma	Breviturma doederleini
+ASV_324	Eukaryota	Mollusca	Bivalvia	Mytilida	Mytilidae	Mytilus	NA
+ASV_325	Eukaryota	Echinodermata	Echinoidea	Spatangoida	NA	NA	NA
+ASV_326	Eukaryota	Bryozoa	Gymnolaemata	Cheilostomatida	NA	NA	NA
+ASV_327	Eukaryota	Arthropoda	Thecostraca	Balanomorpha	NA	NA	NA
+ASV_328	Unknown	NA	NA	NA	NA	NA	NA
+ASV_329	Eukaryota	Echinodermata	Crinoidea	Comatulida	Antedonidae	NA	NA
+ASV_33	Eukaryota	NA	NA	NA	NA	NA	NA
+ASV_330	Eukaryota	Annelida	Polychaeta	Chaetopteridae__o	NA	NA	NA
+ASV_331	Eukaryota	Chaetognatha	Sagittoidea	Aphragmophora	NA	NA	NA
+ASV_332	Eukaryota	Chordata	Actinopteri	NA	NA	NA	NA
+ASV_333	Eukaryota	Mollusca	Bivalvia	Mytilida	Mytilidae	Mytilus	NA
+ASV_334	Eukaryota	Mollusca	Bivalvia	Mytilida	Mytilidae	Mytilus	Mytilus californianus
+ASV_335	Eukaryota	Bryozoa	Gymnolaemata	Cheilostomatida	NA	NA	NA
+ASV_336	Eukaryota	Chaetognatha	Sagittoidea	Aphragmophora	Sagittidae	NA	NA
+ASV_337	Eukaryota	Porifera	Demospongiae	Tethyida	Tethyidae	NA	NA
+ASV_338	Eukaryota	Chordata	Mammalia	Carnivora	Phocidae	Phoca	NA
+ASV_339	Eukaryota	Annelida	Polychaeta	Spionida	Magelonidae	NA	NA
+ASV_34	Eukaryota	Chordata	Mammalia	Artiodactyla	Balaenopteridae	Megaptera	Megaptera novaeangliae
+ASV_340	Eukaryota	Porifera	Calcarea	Clathrinida	NA	NA	NA
+ASV_341	Eukaryota	Echinodermata	Holothuroidea	Dendrochirotida	Sclerodactylidae	NA	NA
+ASV_342	Eukaryota	Mollusca	Bivalvia	Pectinida	Pectinidae	Cyclopecten	Cyclopecten sp_ DJC_2016
+ASV_343	Eukaryota	Chaetognatha	Sagittoidea	Aphragmophora	Sagittidae	NA	NA
+ASV_344	Eukaryota	Chordata	Mammalia	NA	NA	NA	NA
+ASV_345	Eukaryota	Porifera	Demospongiae	NA	NA	NA	NA
+ASV_346	Unknown	NA	NA	NA	NA	NA	NA
+ASV_347	Eukaryota	NA	NA	NA	NA	NA	NA
+ASV_348	Unknown	NA	NA	NA	NA	NA	NA
+ASV_349	Eukaryota	Chordata	Actinopteri	NA	NA	NA	NA
+ASV_35	Eukaryota	NA	NA	NA	NA	NA	NA
+ASV_350	Eukaryota	Porifera	Demospongiae	Haplosclerida	Niphatidae	Amphimedon	Amphimedon compressa
+ASV_351	Eukaryota	Chordata	Actinopteri	Osmeriformes	NA	NA	NA
+ASV_352	Eukaryota	Entoprocta	Loxosomatidae__o__c	Loxosomatidae__o	Loxosomatidae	Loxosomella	NA
+ASV_353	Eukaryota	Echinodermata	Ophiuroidea	Amphilepidida	Ophiuridae	Ophiura	Ophiura sarsii
+ASV_354	Eukaryota	Mollusca	Bivalvia	Mytilida	Mytilidae	Mytilus	NA
+ASV_355	Eukaryota	Cnidaria	Hydrozoa	Siphonophorae	NA	NA	NA
+ASV_356	Eukaryota	Chordata	Actinopteri	NA	NA	NA	NA
+ASV_357	Eukaryota	Mollusca	Bivalvia	Cardiida	Psammobiidae	NA	NA
+ASV_358	Eukaryota	Chordata	Actinopteri	NA	NA	NA	NA
+ASV_359	Eukaryota	Chaetognatha	Sagittoidea	Aphragmophora	Sagittidae	NA	NA
+ASV_36	Eukaryota	Annelida	Polychaeta	Chaetopteridae__o	NA	NA	NA
+ASV_360	Unknown	NA	NA	NA	NA	NA	NA
+ASV_361	Eukaryota	Mollusca	Bivalvia	Cardiida	Tellinidae	Moerella	NA
+ASV_362	Eukaryota	Chordata	Actinopteri	Gadiformes	Merlucciidae	Merluccius	NA
+ASV_363	Eukaryota	Chordata	Actinopteri	Notacanthiformes	Halosauridae	Halosaurus	Halosaurus ovenii
+ASV_364	Unknown	NA	NA	NA	NA	NA	NA
+ASV_365	Eukaryota	Mollusca	Bivalvia	Mytilida	Mytilidae	Mytilus	NA
+ASV_366	Eukaryota	Mollusca	Bivalvia	Cardiida	Tellinidae	Macoma	NA
+ASV_367	Eukaryota	NA	NA	NA	NA	NA	NA
+ASV_368	Eukaryota	Chordata	Actinopteri	Perciformes	NA	NA	NA
+ASV_369	Eukaryota	Chordata	Actinopteri	NA	NA	NA	NA
+ASV_37	Eukaryota	Porifera	Demospongiae	Dendroceratida	NA	NA	NA
+ASV_370	Eukaryota	Chordata	Actinopteri	NA	NA	NA	NA
+ASV_371	Eukaryota	Chaetognatha	Sagittoidea	Aphragmophora	NA	NA	NA
+ASV_372	Eukaryota	Arthropoda	Thecostraca	Balanomorpha	NA	NA	NA
+ASV_373	Eukaryota	Echinodermata	Asteroidea	Velatida	NA	NA	NA
+ASV_374	Eukaryota	Porifera	Demospongiae	Poecilosclerida	Latrunculiidae	Negombata	NA
+ASV_375	Eukaryota	Chordata	Actinopteri	NA	NA	NA	NA
+ASV_376	Eukaryota	Nemertea	Enopla	Monostilifera	NA	NA	NA
+ASV_377	Unknown	NA	NA	NA	NA	NA	NA
+ASV_378	Eukaryota	NA	NA	NA	NA	NA	NA
+ASV_379	Unknown	NA	NA	NA	NA	NA	NA
+ASV_38	Eukaryota	Mollusca	Bivalvia	Cardiida	Solecurtidae	Sinonovacula	NA
+ASV_380	Unknown	NA	NA	NA	NA	NA	NA
+ASV_381	Eukaryota	Arthropoda	Malacostraca	Euphausiacea	Euphausiidae	Thysanoessa	NA
+ASV_382	Eukaryota	NA	NA	NA	NA	NA	NA
+ASV_383	Eukaryota	Chordata	Mammalia	Primates	Hominidae	Homo	Homo sapiens
+ASV_384	Unknown	NA	NA	NA	NA	NA	NA
+ASV_385	Eukaryota	Chordata	Actinopteri	Pleuronectiformes	Cyclopsettidae	Citharichthys	Citharichthys xanthostigma
+ASV_386	Unknown	NA	NA	NA	NA	NA	NA
+ASV_387	Eukaryota	Annelida	Polychaeta	Spionida	Magelonidae	NA	NA
+ASV_388	Eukaryota	NA	NA	NA	NA	NA	NA
+ASV_389	Eukaryota	Chaetognatha	Sagittoidea	Aphragmophora	Sagittidae	NA	NA
+ASV_39	Eukaryota	Picozoa	NA	NA	NA	NA	NA
+ASV_390	Eukaryota	Picozoa	NA	NA	NA	NA	NA
+ASV_391	Eukaryota	Nemertea	Pilidiophora	Heteronemertea	Lineidae	Lineus	Lineus flavescens
+ASV_392	Eukaryota	Porifera	Demospongiae	Poecilosclerida	Crellidae	Crella	NA
+ASV_393	Eukaryota	Echinodermata	Ophiuroidea	Amphilepidida	Ophiactidae	Ophiopholis	Ophiopholis sp_ EAC01
+ASV_394	Eukaryota	Bryozoa	Gymnolaemata	Cheilostomatida	NA	NA	NA
+ASV_395	Eukaryota	Nemertea	Pilidiophora	Heteronemertea	Lineidae	Cerebratulus	NA
+ASV_396	Eukaryota	Echinodermata	Echinoidea	Spatangoida	Spatangidae	Spatangus	Spatangus raschi
+ASV_397	Bacteria	Bacillota	NA	NA	NA	NA	NA
+ASV_398	Eukaryota	Arthropoda	Malacostraca	Euphausiacea	Euphausiidae	Euphausia	Euphausia pacifica
+ASV_399	Eukaryota	Arthropoda	Malacostraca	Decapoda	NA	NA	NA
+ASV_4	Eukaryota	Echinodermata	Echinoidea	NA	NA	NA	NA
+ASV_40	Eukaryota	Chordata	Chondrichthyes	Lamniformes	Alopiidae	Lamna	NA
+ASV_400	Eukaryota	Cnidaria	Anthozoa	NA	NA	NA	NA
+ASV_401	Eukaryota	Nemertea	Enopla	Monostilifera	Amphiporidae	Gurjanovella	Gurjanovella littoralis
+ASV_402	Eukaryota	Cnidaria	Anthozoa	Spirularia	Cerianthidae	NA	NA
+ASV_403	Eukaryota	Chordata	Actinopteri	NA	NA	NA	NA
+ASV_404	Eukaryota	Porifera	Demospongiae	Verongiida	NA	NA	NA
+ASV_405	Eukaryota	Nemertea	Palaeonemertea	Carinomiformes	Carinomidae	Carinoma	Carinoma mutabilis
+ASV_406	Eukaryota	Chaetognatha	Sagittoidea	Aphragmophora	Sagittidae	NA	NA
+ASV_407	Unknown	NA	NA	NA	NA	NA	NA
+ASV_408	Eukaryota	Chordata	Actinopteri	NA	NA	NA	NA
+ASV_409	Eukaryota	Echinodermata	Echinoidea	NA	NA	NA	NA
+ASV_41	Eukaryota	Nemertea	Palaeonemertea	Carinomiformes	Carinomidae	Carinoma	Carinoma mutabilis
+ASV_410	Unknown	NA	NA	NA	NA	NA	NA
+ASV_411	Eukaryota	NA	NA	NA	NA	NA	NA
+ASV_412	Eukaryota	Arthropoda	Malacostraca	Euphausiacea	Euphausiidae	Euphausia	Euphausia pacifica
+ASV_413	Eukaryota	Porifera	Demospongiae	Haplosclerida	Callyspongiidae	Callyspongia	NA
+ASV_414	Eukaryota	Bryozoa	Gymnolaemata	Cheilostomatida	NA	NA	NA
+ASV_415	Eukaryota	Chaetognatha	Sagittoidea	Aphragmophora	NA	NA	NA
+ASV_416	Eukaryota	Arthropoda	Insecta	Diptera	Chironomidae	NA	NA
+ASV_417	Bacteria	Pseudomonadota	Gammaproteobacteria	Candidatus Pseudothioglobus__f__o	Candidatus Pseudothioglobus__f	NA	NA
+ASV_418	Eukaryota	Bryozoa	Gymnolaemata	Cheilostomatida	Cellariidae	NA	NA
+ASV_419	Eukaryota	Arthropoda	Malacostraca	Euphausiacea	Euphausiidae	Euphausia	Euphausia pacifica
+ASV_42	Eukaryota	Chordata	Actinopteri	NA	NA	NA	NA
+ASV_420	Eukaryota	Bryozoa	Gymnolaemata	Cheilostomatida	Watersiporidae	NA	NA
+ASV_421	Eukaryota	Chordata	Mammalia	Primates	Hominidae	Homo	Homo sapiens
+ASV_422	Unknown	NA	NA	NA	NA	NA	NA
+ASV_423	Eukaryota	Chordata	Mammalia	Primates	Hominidae	Homo	Homo sapiens
+ASV_424	Eukaryota	Chordata	Actinopteri	Osmeriformes	NA	NA	NA
+ASV_425	Eukaryota	Mollusca	Bivalvia	Mytilida	Mytilidae	Mytilus	NA
+ASV_426	Eukaryota	NA	NA	NA	NA	NA	NA
+ASV_427	Unknown	NA	NA	NA	NA	NA	NA
+ASV_428	Eukaryota	Chordata	Actinopteri	Gadiformes	Merlucciidae	Merluccius	NA
+ASV_429	Eukaryota	Arthropoda	Malacostraca	Euphausiacea	Euphausiidae	Thysanoessa	NA
+ASV_43	Eukaryota	Annelida	Polychaeta	Spionida	Magelonidae	NA	NA
+ASV_430	Eukaryota	Chordata	Actinopteri	NA	NA	NA	NA
+ASV_431	Eukaryota	Arthropoda	Malacostraca	Amphipoda	Aoridae	Aoroides	Aoroides columbiae
+ASV_432	Eukaryota	Mollusca	Bivalvia	Cardiida	Tellinidae	Macoma	Macoma balthica
+ASV_433	Eukaryota	NA	NA	NA	NA	NA	NA
+ASV_434	Eukaryota	Chaetognatha	Sagittoidea	Aphragmophora	NA	NA	NA
+ASV_435	Unknown	NA	NA	NA	NA	NA	NA
+ASV_436	Eukaryota	Chordata	Mammalia	Primates	Hominidae	Homo	Homo sapiens
+ASV_437	Eukaryota	Mollusca	Bivalvia	Mytilida	Mytilidae	Mytilus	NA
+ASV_438	Eukaryota	Bryozoa	Gymnolaemata	Cheilostomatida	NA	NA	NA
+ASV_439	Eukaryota	Chordata	NA	NA	NA	NA	NA
+ASV_44	Eukaryota	Chordata	Mammalia	NA	NA	NA	NA
+ASV_440	Eukaryota	Arthropoda	Insecta	Diptera	Chironomidae	NA	NA
+ASV_441	Eukaryota	Phoronida	Phoronidae__o__c	Phoronidae__o	NA	NA	NA
+ASV_442	Eukaryota	Mollusca	Bivalvia	Cardiida	Tellinidae	Macoma	Macoma nasuta
+ASV_443	Eukaryota	Chaetognatha	Sagittoidea	Aphragmophora	NA	NA	NA
+ASV_444	Eukaryota	Chordata	Mammalia	Primates	Hominidae	Homo	Homo sapiens
+ASV_445	Eukaryota	Chaetognatha	Sagittoidea	Aphragmophora	Sagittidae	NA	NA
+ASV_446	Unknown	NA	NA	NA	NA	NA	NA
+ASV_447	Eukaryota	Arthropoda	Malacostraca	Decapoda	NA	NA	NA
+ASV_448	Eukaryota	NA	NA	NA	NA	NA	NA
+ASV_449	Eukaryota	NA	NA	NA	NA	NA	NA
+ASV_45	Eukaryota	NA	NA	NA	NA	NA	NA
+ASV_450	Eukaryota	Mollusca	Bivalvia	Lucinida	Thyasiridae	NA	NA
+ASV_451	Eukaryota	Arthropoda	Thecostraca	Balanomorpha	NA	NA	NA
+ASV_452	Eukaryota	Chordata	Actinopteri	NA	NA	NA	NA
+ASV_453	Eukaryota	Picozoa	NA	NA	NA	NA	NA
+ASV_454	Eukaryota	Echinodermata	Holothuroidea	Dendrochirotida	Psolidae	Psolidium	NA
+ASV_455	Eukaryota	NA	NA	NA	NA	NA	NA
+ASV_456	Eukaryota	Chaetognatha	Sagittoidea	Aphragmophora	NA	NA	NA
+ASV_457	Eukaryota	Arthropoda	Malacostraca	Euphausiacea	Euphausiidae	Euphausia	Euphausia pacifica
+ASV_458	Eukaryota	Chordata	Mammalia	NA	NA	NA	NA
+ASV_459	Eukaryota	NA	NA	NA	NA	NA	NA
+ASV_46	Eukaryota	Chordata	Chondrichthyes	Rajiformes	Rajidae	NA	NA
+ASV_460	Eukaryota	Chordata	Mammalia	Primates	Hominidae	Homo	Homo sapiens
+ASV_461	Eukaryota	Chordata	Mammalia	Artiodactyla	NA	NA	NA
+ASV_462	Eukaryota	Arthropoda	Thecostraca	Lepadidae__o	NA	NA	NA
+ASV_463	Eukaryota	Arthropoda	Thecostraca	Balanomorpha	Chthamalidae	Chthamalus	NA
+ASV_464	Unknown	NA	NA	NA	NA	NA	NA
+ASV_465	Eukaryota	Mollusca	Bivalvia	Mytilida	Mytilidae	Mytilus	NA
+ASV_466	Unknown	NA	NA	NA	NA	NA	NA
+ASV_467	Eukaryota	Echinodermata	Holothuroidea	Dendrochirotida	Cucumariidae	Cucumaria	NA
+ASV_468	Eukaryota	Chordata	Actinopteri	Osmeriformes	NA	NA	NA
+ASV_469	Eukaryota	Arthropoda	Malacostraca	Decapoda	NA	NA	NA
+ASV_47	Eukaryota	Annelida	Polychaeta	Spionida	Magelonidae	NA	NA
+ASV_470	Eukaryota	Arthropoda	Malacostraca	Euphausiacea	Euphausiidae	Thysanoessa	NA
+ASV_471	Unknown	NA	NA	NA	NA	NA	NA
+ASV_472	Eukaryota	Arthropoda	Malacostraca	Euphausiacea	Euphausiidae	Thysanoessa	NA
+ASV_473	Eukaryota	Chordata	Chondrichthyes	Lamniformes	Alopiidae	Lamna	Lamna ditropis
+ASV_474	Eukaryota	Brachiopoda	Rhynchonellata	Terebratulida	Cancellothyrididae	Terebratulina	Terebratulina unguicula
+ASV_475	Eukaryota	Bryozoa	Gymnolaemata	Ctenostomatida	NA	NA	NA
+ASV_476	Eukaryota	NA	NA	NA	NA	NA	NA
+ASV_477	Eukaryota	Arthropoda	Malacostraca	Decapoda	Paguridae	Pagurus	NA
+ASV_478	Eukaryota	Arthropoda	Insecta	Diptera	Chironomidae	NA	NA
+ASV_479	Eukaryota	Chordata	Actinopteri	NA	NA	NA	NA
+ASV_48	Eukaryota	NA	NA	NA	NA	NA	NA
+ASV_480	Eukaryota	Arthropoda	Malacostraca	Euphausiacea	Euphausiidae	Thysanoessa	NA
+ASV_481	Eukaryota	Mollusca	Bivalvia	Cardiida	Tellinidae	NA	NA
+ASV_482	Eukaryota	Arthropoda	Insecta	Diptera	Chironomidae	NA	NA
+ASV_483	Eukaryota	Chordata	Mammalia	Primates	Hominidae	Homo	NA
+ASV_484	Eukaryota	Mollusca	Bivalvia	Venerida	Veneridae	NA	NA
+ASV_485	Eukaryota	Nemertea	Pilidiophora	Heteronemertea	Lineidae	Maculaura	NA
+ASV_486	Eukaryota	Chaetognatha	Sagittoidea	Aphragmophora	NA	NA	NA
+ASV_487	Eukaryota	Mollusca	Bivalvia	Adapedonta	NA	NA	NA
+ASV_488	Eukaryota	Mollusca	Bivalvia	Venerida	Mactridae	Tresus	NA
+ASV_489	Eukaryota	Mollusca	Bivalvia	Cardiida	Psammobiidae	Nuttallia	NA
+ASV_49	Eukaryota	Nemertea	Palaeonemertea	Archinemertea	Cephalotrichidae	Cephalothrix	NA
+ASV_490	Eukaryota	Chaetognatha	Sagittoidea	Aphragmophora	NA	NA	NA
+ASV_491	Eukaryota	Mollusca	Bivalvia	Cardiida	Tellinidae	Moerella	NA
+ASV_492	Unknown	NA	NA	NA	NA	NA	NA
+ASV_493	Eukaryota	Mollusca	Bivalvia	Cardiida	NA	NA	NA
+ASV_494	Bacteria	Pseudomonadota	Gammaproteobacteria	Aeromonadales	NA	NA	NA
+ASV_495	Eukaryota	Echinodermata	Asteroidea	Spinulosida	Echinasteridae	Henricia	NA
+ASV_496	Eukaryota	Mollusca	Gastropoda	Neogastropoda	Columbellidae	NA	NA
+ASV_497	Unknown	NA	NA	NA	NA	NA	NA
+ASV_498	Eukaryota	NA	NA	NA	NA	NA	NA
+ASV_499	Eukaryota	Porifera	Demospongiae	Dendroceratida	Dictyodendrillidae	NA	NA
+ASV_5	Eukaryota	Arthropoda	Hexanauplia	Calanoida	Acartiidae	Acartia	Acartia longiremis
+ASV_50	Eukaryota	Chaetognatha	Sagittoidea	Aphragmophora	Sagittidae	NA	NA
+ASV_500	Unknown	NA	NA	NA	NA	NA	NA
+ASV_501	Eukaryota	Porifera	Demospongiae	Axinellida	Axinellidae	Acanthella	Acanthella acuta
+ASV_502	Eukaryota	Arthropoda	Malacostraca	Amphipoda	NA	NA	NA
+ASV_503	Bacteria	Pseudomonadota	Gammaproteobacteria	Candidatus Pseudothioglobus__f__o	Candidatus Pseudothioglobus__f	NA	NA
+ASV_504	Eukaryota	Arthropoda	Malacostraca	Euphausiacea	Euphausiidae	Euphausia	Euphausia pacifica
+ASV_505	Bacteria	Bacteroidota	Flavobacteriia	Flavobacteriales	Candidatus Karelsulcia__f	NA	NA
+ASV_506	Unknown	NA	NA	NA	NA	NA	NA
+ASV_507	Eukaryota	Chordata	Mammalia	Primates	Hominidae	Homo	Homo sapiens
+ASV_508	Unknown	NA	NA	NA	NA	NA	NA
+ASV_509	Bacteria	Bacteroidota	Flavobacteriia	Flavobacteriales	Candidatus Karelsulcia__f	NA	NA
+ASV_51	Eukaryota	Echinodermata	Ophiuroidea	NA	NA	NA	NA
+ASV_510	Eukaryota	Mollusca	Bivalvia	Mytilida	Mytilidae	Mytilus	NA
+ASV_511	Eukaryota	NA	NA	NA	NA	NA	NA
+ASV_512	Bacteria	Bacillota	NA	NA	NA	NA	NA
+ASV_513	Eukaryota	Arthropoda	Malacostraca	Decapoda	Porcellanidae	Pachycheles	NA
+ASV_514	Eukaryota	Mollusca	Bivalvia	Cardiida	Tellinidae	Macoma	Macoma nasuta
+ASV_515	Eukaryota	Mollusca	Bivalvia	Mytilida	Mytilidae	Mytilus	NA
+ASV_516	Eukaryota	Chaetognatha	Sagittoidea	Aphragmophora	Sagittidae	NA	NA
+ASV_517	Unknown	NA	NA	NA	NA	NA	NA
+ASV_518	Eukaryota	Chordata	Actinopteri	NA	NA	NA	NA
+ASV_519	Eukaryota	Nemertea	Enopla	Monostilifera	Cratenemertidae	Nipponnemertes	Nipponnemertes arenaria
+ASV_52	Eukaryota	Nemertea	Palaeonemertea	Archinemertea	Cephalotrichidae	Cephalothrix	NA
+ASV_520	Eukaryota	Chordata	Actinopteri	Notacanthiformes	Halosauridae	Halosaurus	Halosaurus carinicauda
+ASV_521	Eukaryota	Chlorophyta	Chlorophyceae	Sphaeropleales	Chromochloridaceae	NA	NA
+ASV_522	Unknown	NA	NA	NA	NA	NA	NA
+ASV_523	Eukaryota	Echinodermata	Ophiuroidea	NA	NA	NA	NA
+ASV_524	Eukaryota	Bryozoa	Gymnolaemata	Cheilostomatida	NA	NA	NA
+ASV_525	Eukaryota	Mollusca	Bivalvia	Mytilida	Mytilidae	NA	NA
+ASV_526	Eukaryota	Mollusca	Gastropoda	Trochida	NA	NA	NA
+ASV_527	Eukaryota	Arthropoda	Thecostraca	Balanomorpha	NA	NA	NA
+ASV_528	Unknown	NA	NA	NA	NA	NA	NA
+ASV_529	Eukaryota	Arthropoda	Hexanauplia	Calanoida	NA	NA	NA
+ASV_53	Eukaryota	Chordata	Actinopteri	Anabantiformes	Anabantidae	Microctenopoma	Microctenopoma nanum
+ASV_530	Eukaryota	NA	NA	NA	NA	NA	NA
+ASV_531	Eukaryota	Bryozoa	Gymnolaemata	Cheilostomatida	Candidae	Scrupocellaria	Scrupocellaria varians
+ASV_532	Unknown	NA	NA	NA	NA	NA	NA
+ASV_533	Unknown	NA	NA	NA	NA	NA	NA
+ASV_534	Eukaryota	Mollusca	Bivalvia	Mytilida	Mytilidae	Mytilus	Mytilus coruscus
+ASV_535	Eukaryota	Arthropoda	Malacostraca	Decapoda	Pandalidae	Pandalus	NA
+ASV_536	Unknown	NA	NA	NA	NA	NA	NA
+ASV_537	Eukaryota	Mollusca	Cephalopoda	Octopoda	Octopodidae	NA	NA
+ASV_538	Unknown	NA	NA	NA	NA	NA	NA
+ASV_539	Eukaryota	Porifera	Demospongiae	Poecilosclerida	NA	NA	NA
+ASV_54	Eukaryota	Chordata	Actinopteri	NA	NA	NA	NA
+ASV_540	Eukaryota	Porifera	Demospongiae	Haplosclerida	Callyspongiidae	Callyspongia	NA
+ASV_541	Eukaryota	Chordata	Aves	NA	NA	NA	NA
+ASV_542	Eukaryota	Chordata	Actinopteri	Anguilliformes	Muraenidae	Gymnothorax	Gymnothorax zonipectis
+ASV_543	Eukaryota	Porifera	Demospongiae	Poecilosclerida	Latrunculiidae	Negombata	NA
+ASV_544	Bacteria	Bacillota	NA	NA	NA	NA	NA
+ASV_545	Eukaryota	NA	NA	NA	NA	NA	NA
+ASV_546	Eukaryota	Mollusca	Bivalvia	Cardiida	Tellinidae	NA	NA
+ASV_547	Unknown	NA	NA	NA	NA	NA	NA
+ASV_548	Eukaryota	Chordata	Actinopteri	Osmeriformes	NA	NA	NA
+ASV_549	Eukaryota	Picozoa	NA	NA	NA	NA	NA
+ASV_55	Eukaryota	Chordata	Actinopteri	NA	NA	NA	NA
+ASV_550	Eukaryota	Echinodermata	Echinoidea	NA	NA	NA	NA
+ASV_551	Eukaryota	Porifera	Demospongiae	Haplosclerida	Callyspongiidae	Callyspongia	NA
+ASV_552	Eukaryota	Mollusca	Bivalvia	Cardiida	Tellinidae	Macoma	Macoma balthica
+ASV_553	Eukaryota	Chordata	Actinopteri	Gadiformes	Merlucciidae	Merluccius	NA
+ASV_554	Eukaryota	Chordata	Actinopteri	Osmeriformes	NA	NA	NA
+ASV_555	Unknown	NA	NA	NA	NA	NA	NA
+ASV_556	Unknown	NA	NA	NA	NA	NA	NA
+ASV_557	Unknown	NA	NA	NA	NA	NA	NA
+ASV_558	Unknown	NA	NA	NA	NA	NA	NA
+ASV_559	Eukaryota	Arthropoda	Hexanauplia	Calanoida	Clausocalanidae	Pseudocalanus	Pseudocalanus elongatus
+ASV_56	Eukaryota	Arthropoda	Hexanauplia	Calanoida	Centropagidae	NA	NA
+ASV_560	Eukaryota	Echinodermata	Holothuroidea	Dendrochirotida	Cucumariidae	Cucumaria	NA
+ASV_561	Eukaryota	NA	NA	NA	NA	NA	NA
+ASV_562	Eukaryota	Chordata	Mammalia	Primates	Hominidae	Homo	Homo sapiens
+ASV_563	Eukaryota	Arthropoda	Malacostraca	Euphausiacea	Euphausiidae	Euphausia	NA
+ASV_564	Eukaryota	Arthropoda	Malacostraca	Euphausiacea	Euphausiidae	Euphausia	Euphausia pacifica
+ASV_565	Eukaryota	Porifera	Demospongiae	NA	NA	NA	NA
+ASV_566	Eukaryota	Mollusca	Gastropoda	Littorinimorpha	Rissoidae	Alvania	NA
+ASV_567	Unknown	NA	NA	NA	NA	NA	NA
+ASV_568	Eukaryota	Chaetognatha	Sagittoidea	Aphragmophora	Sagittidae	NA	NA
+ASV_569	Eukaryota	Echinodermata	Echinoidea	Spatangoida	Spatangidae	Spatangus	Spatangus raschi
+ASV_57	Eukaryota	Picozoa	NA	NA	NA	NA	NA
+ASV_570	Eukaryota	Nemertea	Pilidiophora	Heteronemertea	Lineidae	Maculaura	Maculaura magna
+ASV_571	Eukaryota	Arthropoda	Ostracoda	Myodocopida	Philomedidae	Euphilomedes	Euphilomedes japonica
+ASV_572	Eukaryota	NA	NA	NA	NA	NA	NA
+ASV_573	Eukaryota	Chaetognatha	Sagittoidea	Aphragmophora	NA	NA	NA
+ASV_574	Eukaryota	Chordata	Actinopteri	Anguilliformes	Congridae	Uroconger	Uroconger syringinus
+ASV_575	Eukaryota	Bryozoa	Gymnolaemata	Ctenostomatida	Farrellidae	Farrella	NA
+ASV_576	Eukaryota	Chaetognatha	Sagittoidea	Aphragmophora	NA	NA	NA
+ASV_577	Eukaryota	Chordata	Actinopteri	NA	NA	NA	NA
+ASV_578	Eukaryota	Porifera	Demospongiae	Axinellida	NA	NA	NA
+ASV_579	Eukaryota	Porifera	Demospongiae	Spongillida	NA	NA	NA
+ASV_58	Eukaryota	NA	NA	NA	NA	NA	NA
+ASV_580	Bacteria	Bacillota	NA	NA	NA	NA	NA
+ASV_581	Unknown	NA	NA	NA	NA	NA	NA
+ASV_582	Eukaryota	Mollusca	Gastropoda	Trochida	Margaritidae	Margarites	NA
+ASV_583	Eukaryota	Mollusca	Bivalvia	Adapedonta	Pharidae	Siliqua	Siliqua alta
+ASV_584	Eukaryota	Arthropoda	Malacostraca	Cumacea	Lampropidae	NA	NA
+ASV_585	Eukaryota	Porifera	Demospongiae	Poecilosclerida	Latrunculiidae	Negombata	Negombata magnifica
+ASV_586	Bacteria	Gemmatimonadota	Gemmatimonadetes	Gemmatimonadales	NA	NA	NA
+ASV_587	Eukaryota	Chordata	Actinopteri	NA	NA	NA	NA
+ASV_588	Eukaryota	Mollusca	Bivalvia	Cardiida	Tellinidae	Macoma	NA
+ASV_589	Eukaryota	Porifera	Demospongiae	Poecilosclerida	NA	NA	NA
+ASV_59	Eukaryota	Picozoa	NA	NA	NA	NA	NA
+ASV_590	Eukaryota	Chordata	Actinopteri	NA	NA	NA	NA
+ASV_591	Eukaryota	Nemertea	Palaeonemertea	Archinemertea	Cephalotrichidae	Cephalothrix	Cephalothrix sp_ 4 TCH_2015
+ASV_592	Bacteria	Bacteroidota	Flavobacteriia	Flavobacteriales	Candidatus Karelsulcia__f	NA	NA
+ASV_593	Bacteria	Mycoplasmatota	Mollicutes	Mycoplasmatales	NA	NA	NA
+ASV_594	Eukaryota	Arthropoda	Malacostraca	Decapoda	NA	NA	NA
+ASV_595	Eukaryota	Annelida	Polychaeta	Spionida	NA	NA	NA
+ASV_596	Unknown	NA	NA	NA	NA	NA	NA
+ASV_597	Eukaryota	Picozoa	NA	NA	NA	NA	NA
+ASV_598	Eukaryota	Bryozoa	Gymnolaemata	Cheilostomatida	Bugulidae	NA	NA
+ASV_599	Eukaryota	Chordata	Actinopteri	NA	NA	NA	NA
+ASV_6	Eukaryota	NA	NA	NA	NA	NA	NA
+ASV_60	Eukaryota	Chordata	Mammalia	Artiodactyla	Suidae	NA	NA
+ASV_600	Unknown	NA	NA	NA	NA	NA	NA
+ASV_601	Eukaryota	Chordata	Actinopteri	Anguilliformes	Muraenidae	Gymnothorax	Gymnothorax zonipectis
+ASV_602	Eukaryota	Mollusca	Bivalvia	Mytilida	Mytilidae	Mytilus	NA
+ASV_603	Eukaryota	Bryozoa	Gymnolaemata	Cheilostomatida	Microporellidae	Microporella	Microporella cf_ ciliata AW214
+ASV_604	Eukaryota	Chaetognatha	Sagittoidea	Aphragmophora	NA	NA	NA
+ASV_605	Eukaryota	Porifera	Demospongiae	Poecilosclerida	Latrunculiidae	Negombata	Negombata magnifica
+ASV_606	Unknown	NA	NA	NA	NA	NA	NA
+ASV_607	Eukaryota	Arthropoda	Malacostraca	Decapoda	Hippolytidae	Heptacarpus	Heptacarpus sp_ A KMH_2021a
+ASV_608	Eukaryota	Mollusca	Bivalvia	Mytilida	Mytilidae	Mytilus	Mytilus californianus
+ASV_609	Bacteria	Synergistota	Synergistia	Synergistales	NA	NA	NA
+ASV_61	Eukaryota	Chordata	Actinopteri	Pleuronectiformes	Cyclopsettidae	Citharichthys	Citharichthys xanthostigma
+ASV_610	Eukaryota	Mollusca	Polyplacophora	Chitonida	Mopaliidae	Mopalia	Mopalia vespertina
+ASV_611	Unknown	NA	NA	NA	NA	NA	NA
+ASV_612	Eukaryota	NA	NA	NA	NA	NA	NA
+ASV_613	Eukaryota	Mollusca	Gastropoda	NA	NA	NA	NA
+ASV_614	Unknown	NA	NA	NA	NA	NA	NA
+ASV_615	Unknown	NA	NA	NA	NA	NA	NA
+ASV_616	Eukaryota	NA	NA	NA	NA	NA	NA
+ASV_617	Eukaryota	Nemertea	Pilidiophora	Heteronemertea	Lineidae	Lineus	Lineus sp_ 1 TCH_2015
+ASV_618	Unknown	NA	NA	NA	NA	NA	NA
+ASV_619	Bacteria	Pseudomonadota	Gammaproteobacteria	Candidatus Pseudothioglobus__f__o	NA	NA	NA
+ASV_62	Eukaryota	Annelida	Polychaeta	Sabellida	Oweniidae	NA	NA
+ASV_620	Eukaryota	Porifera	Demospongiae	Poecilosclerida	Latrunculiidae	NA	NA
+ASV_621	Unknown	NA	NA	NA	NA	NA	NA
+ASV_622	Eukaryota	Arthropoda	Malacostraca	Decapoda	NA	NA	NA
+ASV_623	Eukaryota	Arthropoda	Thecostraca	Balanomorpha	NA	NA	NA
+ASV_624	Unknown	NA	NA	NA	NA	NA	NA
+ASV_625	Bacteria	Candidatus Woesebacteria	NA	NA	NA	NA	NA
+ASV_626	Eukaryota	Cnidaria	Anthozoa	Actiniaria	NA	NA	NA
+ASV_627	Unknown	NA	NA	NA	NA	NA	NA
+ASV_628	Eukaryota	Echinodermata	Holothuroidea	NA	NA	NA	NA
+ASV_629	Unknown	NA	NA	NA	NA	NA	NA
+ASV_63	Eukaryota	Echinodermata	Echinoidea	NA	NA	NA	NA
+ASV_630	Eukaryota	Hemichordata	Enteropneusta	Harrimaniidae__o	NA	NA	NA
+ASV_631	Eukaryota	Chordata	NA	NA	NA	NA	NA
+ASV_632	Eukaryota	Echinodermata	Holothuroidea	Molpadida	NA	NA	NA
+ASV_633	Eukaryota	Nemertea	Palaeonemertea	Archinemertea	Cephalotrichidae	Cephalothrix	Cephalothrix major
+ASV_634	Eukaryota	Echinodermata	Holothuroidea	Dendrochirotida	Sclerodactylidae	NA	NA
+ASV_635	Eukaryota	Echinodermata	Echinoidea	NA	NA	NA	NA
+ASV_636	Unknown	NA	NA	NA	NA	NA	NA
+ASV_637	Unknown	NA	NA	NA	NA	NA	NA
+ASV_638	Bacteria	Pseudomonadota	Gammaproteobacteria	Candidatus Pseudothioglobus__f__o	Candidatus Pseudothioglobus__f	NA	NA
+ASV_639	Eukaryota	Arthropoda	Malacostraca	Amphipoda	NA	NA	NA
+ASV_64	Eukaryota	NA	NA	NA	NA	NA	NA
+ASV_640	Eukaryota	Chaetognatha	Sagittoidea	Aphragmophora	Sagittidae	NA	NA
+ASV_641	Eukaryota	Picozoa	NA	NA	NA	NA	NA
+ASV_642	Eukaryota	Arthropoda	Insecta	Diptera	Cecidomyiidae	NA	NA
+ASV_643	Eukaryota	Echinodermata	Holothuroidea	Dendrochirotida	Cucumariidae	Pseudocnus	NA
+ASV_644	Eukaryota	Arthropoda	Malacostraca	Euphausiacea	Euphausiidae	NA	NA
+ASV_645	Unknown	NA	NA	NA	NA	NA	NA
+ASV_646	Eukaryota	Mollusca	Bivalvia	Cardiida	Tellinidae	Macoma	Macoma nasuta
+ASV_647	Bacteria	candidate division WOR_3	NA	NA	NA	NA	NA
+ASV_648	Unknown	NA	NA	NA	NA	NA	NA
+ASV_649	Eukaryota	NA	NA	NA	NA	NA	NA
+ASV_65	Eukaryota	Chordata	Actinopteri	NA	NA	NA	NA
+ASV_650	Unknown	NA	NA	NA	NA	NA	NA
+ASV_651	Unknown	NA	NA	NA	NA	NA	NA
+ASV_652	Bacteria	Actinomycetota	Actinomycetes	Actinomycetales	Actinomycetaceae	NA	NA
+ASV_653	Eukaryota	Chaetognatha	Sagittoidea	Aphragmophora	Sagittidae	NA	NA
+ASV_654	Unknown	NA	NA	NA	NA	NA	NA
+ASV_655	Eukaryota	Porifera	Demospongiae	Poecilosclerida	Crellidae	NA	NA
+ASV_656	Eukaryota	Arthropoda	Thecostraca	Balanomorpha	NA	NA	NA
+ASV_657	Bacteria	Candidatus Woesebacteria	NA	NA	NA	NA	NA
+ASV_658	Unknown	NA	NA	NA	NA	NA	NA
+ASV_659	Bacteria	Bacteroidota	Flavobacteriia	Flavobacteriales	Candidatus Karelsulcia__f	NA	NA
+ASV_66	Eukaryota	Chordata	Actinopteri	NA	NA	NA	NA
+ASV_660	Eukaryota	Arthropoda	Insecta	Hemiptera	Aphididae	NA	NA
+ASV_661	Eukaryota	Picozoa	NA	NA	NA	NA	NA
+ASV_662	Eukaryota	Arthropoda	Malacostraca	Amphipoda	NA	NA	NA
+ASV_663	Unknown	NA	NA	NA	NA	NA	NA
+ASV_664	Eukaryota	Mollusca	Gastropoda	Neogastropoda	Nassariidae	NA	NA
+ASV_665	Eukaryota	Mollusca	Bivalvia	Cardiida	Semelidae	NA	NA
+ASV_666	Eukaryota	Echinodermata	Ophiuroidea	Amphilepidida	Amphiuridae	NA	NA
+ASV_667	Unknown	NA	NA	NA	NA	NA	NA
+ASV_668	Unknown	NA	NA	NA	NA	NA	NA
+ASV_669	Unknown	NA	NA	NA	NA	NA	NA
+ASV_67	Eukaryota	Chordata	Actinopteri	Gadiformes	Merlucciidae	Merluccius	NA
+ASV_670	Bacteria	Pseudomonadota	Gammaproteobacteria	Candidatus Pseudothioglobus__f__o	Candidatus Pseudothioglobus__f	NA	NA
+ASV_671	Eukaryota	Echinodermata	Asteroidea	Spinulosida	Echinasteridae	Henricia	NA
+ASV_672	Eukaryota	Mollusca	Bivalvia	Venerida	NA	NA	NA
+ASV_673	Eukaryota	Bryozoa	Gymnolaemata	Cheilostomatida	Smittinidae	NA	NA
+ASV_674	Unknown	NA	NA	NA	NA	NA	NA
+ASV_675	Unknown	NA	NA	NA	NA	NA	NA
+ASV_676	Unknown	NA	NA	NA	NA	NA	NA
+ASV_677	Eukaryota	Bryozoa	Gymnolaemata	Cheilostomatida	NA	NA	NA
+ASV_678	Eukaryota	Arthropoda	Malacostraca	Decapoda	Paguridae	Pagurus	NA
+ASV_679	Eukaryota	Mollusca	Bivalvia	Mytilida	Mytilidae	Mytilus	NA
+ASV_68	Eukaryota	NA	NA	NA	NA	NA	NA
+ASV_680	Eukaryota	Chaetognatha	Sagittoidea	Aphragmophora	Sagittidae	NA	NA
+ASV_681	Unknown	NA	NA	NA	NA	NA	NA
+ASV_682	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Pedinellales	Apedinella__f	Apedinella	Apedinella radians
+ASV_683	Eukaryota	Porifera	Demospongiae	Poecilosclerida	NA	NA	NA
+ASV_684	Bacteria	Candidatus Woesebacteria	NA	NA	NA	NA	NA
+ASV_685	Unknown	NA	NA	NA	NA	NA	NA
+ASV_686	Eukaryota	Bryozoa	Gymnolaemata	Cheilostomatida	Smittinidae	Parasmittina	Parasmittina jeffreysi
+ASV_687	Eukaryota	Bryozoa	Gymnolaemata	Cheilostomatida	Bugulidae	NA	NA
+ASV_688	Unknown	NA	NA	NA	NA	NA	NA
+ASV_689	Unknown	NA	NA	NA	NA	NA	NA
+ASV_69	Unknown	NA	NA	NA	NA	NA	NA
+ASV_690	Eukaryota	Chordata	Mammalia	Primates	Hominidae	Homo	Homo sapiens
+ASV_691	Eukaryota	Arthropoda	Malacostraca	Decapoda	Crangonidae	Crangon	Crangon sp_ UF_53625
+ASV_692	Unknown	NA	NA	NA	NA	NA	NA
+ASV_693	Unknown	NA	NA	NA	NA	NA	NA
+ASV_694	Eukaryota	Cnidaria	Hydrozoa	Limnomedusae	Olindiasidae	NA	NA
+ASV_695	Eukaryota	Mollusca	Gastropoda	Trochida	NA	NA	NA
+ASV_696	Unknown	NA	NA	NA	NA	NA	NA
+ASV_697	Eukaryota	Bryozoa	Gymnolaemata	NA	NA	NA	NA
+ASV_698	Eukaryota	Bryozoa	Gymnolaemata	Cheilostomatida	Hippothoidae	Celleporella	Celleporella hyalina
+ASV_699	Unknown	NA	NA	NA	NA	NA	NA
+ASV_7	Eukaryota	Chordata	Actinopteri	NA	NA	NA	NA
+ASV_70	Eukaryota	Nemertea	Pilidiophora	Heteronemertea	Lineidae	Maculaura	Maculaura alaskensis
+ASV_700	Unknown	NA	NA	NA	NA	NA	NA
+ASV_701	Eukaryota	Porifera	Demospongiae	NA	NA	NA	NA
+ASV_702	Eukaryota	Arthropoda	Branchiopoda	Diplostraca	NA	NA	NA
+ASV_703	Eukaryota	Arthropoda	Malacostraca	Decapoda	Crangonidae	Crangon	Crangon sp_ UF_53625
+ASV_704	Unknown	NA	NA	NA	NA	NA	NA
+ASV_705	Eukaryota	Mollusca	Bivalvia	Adapedonta	NA	NA	NA
+ASV_706	Eukaryota	Chordata	Actinopteri	Perciformes	Cottidae	Cottus	NA
+ASV_707	Unknown	NA	NA	NA	NA	NA	NA
+ASV_708	Unknown	NA	NA	NA	NA	NA	NA
+ASV_709	Bacteria	Candidatus Woesebacteria	NA	NA	NA	NA	NA
+ASV_71	Eukaryota	NA	NA	NA	NA	NA	NA
+ASV_710	Unknown	NA	NA	NA	NA	NA	NA
+ASV_711	Eukaryota	Cnidaria	Cubozoa	Carybdeida	NA	NA	NA
+ASV_712	Unknown	NA	NA	NA	NA	NA	NA
+ASV_713	Eukaryota	Nemertea	Enopla	Monostilifera	Emplectonematidae	Paranemertes	Paranemertes californica
+ASV_714	Unknown	NA	NA	NA	NA	NA	NA
+ASV_715	Unknown	NA	NA	NA	NA	NA	NA
+ASV_716	Unknown	NA	NA	NA	NA	NA	NA
+ASV_717	Eukaryota	Chordata	Mammalia	Primates	Hominidae	Homo	Homo sapiens
+ASV_718	Unknown	NA	NA	NA	NA	NA	NA
+ASV_719	Eukaryota	Arthropoda	Malacostraca	Amphipoda	NA	NA	NA
+ASV_72	Eukaryota	NA	NA	NA	NA	NA	NA
+ASV_720	Unknown	NA	NA	NA	NA	NA	NA
+ASV_721	Unknown	NA	NA	NA	NA	NA	NA
+ASV_722	Bacteria	Bacillota	Clostridia	Eubacteriales	NA	NA	NA
+ASV_723	Bacteria	Candidatus Beckwithbacteria	NA	NA	NA	NA	NA
+ASV_724	Unknown	NA	NA	NA	NA	NA	NA
+ASV_725	Unknown	NA	NA	NA	NA	NA	NA
+ASV_726	Bacteria	Candidatus Woesebacteria	NA	NA	NA	NA	NA
+ASV_727	Unknown	NA	NA	NA	NA	NA	NA
+ASV_728	Eukaryota	Arthropoda	Malacostraca	Amphipoda	NA	NA	NA
+ASV_729	Eukaryota	Bryozoa	Gymnolaemata	Cheilostomatida	Bugulidae	Bugulina	Bugulina turbinata
+ASV_73	Eukaryota	NA	NA	NA	NA	NA	NA
+ASV_730	Eukaryota	Porifera	Demospongiae	Clionaida	Clionaidae	Cliona	Cliona patera
+ASV_731	Eukaryota	Porifera	Demospongiae	Suberitida	Suberitidae	Suberites	Suberites domuncula
+ASV_732	Unknown	NA	NA	NA	NA	NA	NA
+ASV_733	Unknown	NA	NA	NA	NA	NA	NA
+ASV_734	Unknown	NA	NA	NA	NA	NA	NA
+ASV_735	Unknown	NA	NA	NA	NA	NA	NA
+ASV_736	Unknown	NA	NA	NA	NA	NA	NA
+ASV_737	Unknown	NA	NA	NA	NA	NA	NA
+ASV_738	Unknown	NA	NA	NA	NA	NA	NA
+ASV_739	Unknown	NA	NA	NA	NA	NA	NA
+ASV_74	Eukaryota	NA	NA	NA	NA	NA	NA
+ASV_740	Eukaryota	Chaetognatha	Sagittoidea	Aphragmophora	Sagittidae	NA	NA
+ASV_741	Eukaryota	Chaetognatha	Sagittoidea	Aphragmophora	Sagittidae	Parasagitta	Parasagitta elegans
+ASV_742	Unknown	NA	NA	NA	NA	NA	NA
+ASV_743	Unknown	NA	NA	NA	NA	NA	NA
+ASV_744	Bacteria	Candidatus Woesebacteria	NA	NA	NA	NA	NA
+ASV_745	Unknown	NA	NA	NA	NA	NA	NA
+ASV_746	Unknown	NA	NA	NA	NA	NA	NA
+ASV_747	Unknown	NA	NA	NA	NA	NA	NA
+ASV_748	Eukaryota	Brachiopoda	Rhynchonellata	Terebratulida	Laqueidae	Terebratalia	Terebratalia transversa
+ASV_749	Eukaryota	Arthropoda	Thecostraca	Balanomorpha	Balanidae	Amphibalanus	NA
+ASV_75	Eukaryota	Nemertea	Pilidiophora	Heteronemertea	Lineidae	Maculaura	NA
+ASV_750	Eukaryota	Arthropoda	Malacostraca	Amphipoda	NA	NA	NA
+ASV_751	Bacteria	Candidatus Woesebacteria	NA	NA	NA	NA	NA
+ASV_752	Unknown	NA	NA	NA	NA	NA	NA
+ASV_753	Unknown	NA	NA	NA	NA	NA	NA
+ASV_754	Unknown	NA	NA	NA	NA	NA	NA
+ASV_755	Unknown	NA	NA	NA	NA	NA	NA
+ASV_756	Unknown	NA	NA	NA	NA	NA	NA
+ASV_757	Unknown	NA	NA	NA	NA	NA	NA
+ASV_758	Unknown	NA	NA	NA	NA	NA	NA
+ASV_759	Eukaryota	Porifera	Demospongiae	Suberitida	NA	NA	NA
+ASV_76	Eukaryota	Nemertea	Palaeonemertea	Tubulaniformes	Tubulanidae	Carinina	Carinina sp_ chocolate
+ASV_760	Unknown	NA	NA	NA	NA	NA	NA
+ASV_761	Unknown	NA	NA	NA	NA	NA	NA
+ASV_762	Unknown	NA	NA	NA	NA	NA	NA
+ASV_763	Eukaryota	Synurophyceae__p	Synurophyceae	Synurales	NA	NA	NA
+ASV_764	Unknown	NA	NA	NA	NA	NA	NA
+ASV_765	Unknown	NA	NA	NA	NA	NA	NA
+ASV_766	Eukaryota	Synurophyceae__p	Synurophyceae	Synurales	Mallomonadaceae	NA	NA
+ASV_767	Unknown	NA	NA	NA	NA	NA	NA
+ASV_768	Unknown	NA	NA	NA	NA	NA	NA
+ASV_769	Unknown	NA	NA	NA	NA	NA	NA
+ASV_77	Eukaryota	Chordata	Actinopteri	NA	NA	NA	NA
+ASV_770	Unknown	NA	NA	NA	NA	NA	NA
+ASV_771	Unknown	NA	NA	NA	NA	NA	NA
+ASV_772	Bacteria	Pseudomonadota	Alphaproteobacteria	Rhodobacterales	NA	NA	NA
+ASV_773	Eukaryota	Porifera	Demospongiae	Poecilosclerida	Latrunculiidae	NA	NA
+ASV_774	Eukaryota	Arthropoda	Malacostraca	Decapoda	Porcellanidae	Pachycheles	NA
+ASV_775	Unknown	NA	NA	NA	NA	NA	NA
+ASV_776	Eukaryota	Picozoa	NA	NA	NA	NA	NA
+ASV_777	Unknown	NA	NA	NA	NA	NA	NA
+ASV_778	Unknown	NA	NA	NA	NA	NA	NA
+ASV_779	Unknown	NA	NA	NA	NA	NA	NA
+ASV_78	Eukaryota	Chordata	Actinopteri	NA	NA	NA	NA
+ASV_780	Unknown	NA	NA	NA	NA	NA	NA
+ASV_781	Unknown	NA	NA	NA	NA	NA	NA
+ASV_782	Unknown	NA	NA	NA	NA	NA	NA
+ASV_783	Unknown	NA	NA	NA	NA	NA	NA
+ASV_784	Unknown	NA	NA	NA	NA	NA	NA
+ASV_785	Unknown	NA	NA	NA	NA	NA	NA
+ASV_786	Eukaryota	Arthropoda	Malacostraca	Amphipoda	NA	NA	NA
+ASV_787	Unknown	NA	NA	NA	NA	NA	NA
+ASV_788	Unknown	NA	NA	NA	NA	NA	NA
+ASV_789	Eukaryota	Chordata	Actinopteri	Anabantiformes	Osphronemidae	Betta	Betta midas
+ASV_79	Eukaryota	Chordata	Actinopteri	Osmeriformes	NA	NA	NA
+ASV_790	Unknown	NA	NA	NA	NA	NA	NA
+ASV_791	Unknown	NA	NA	NA	NA	NA	NA
+ASV_792	Unknown	NA	NA	NA	NA	NA	NA
+ASV_793	Unknown	NA	NA	NA	NA	NA	NA
+ASV_794	Eukaryota	Arthropoda	Malacostraca	Amphipoda	Ischyroceridae	NA	NA
+ASV_795	Eukaryota	Arthropoda	Malacostraca	Amphipoda	NA	NA	NA
+ASV_796	Unknown	NA	NA	NA	NA	NA	NA
+ASV_797	Eukaryota	Arthropoda	Hexanauplia	Calanoida	Temoridae	Eurytemora	NA
+ASV_798	Unknown	NA	NA	NA	NA	NA	NA
+ASV_799	Unknown	NA	NA	NA	NA	NA	NA
+ASV_8	Eukaryota	Chordata	NA	NA	NA	NA	NA
+ASV_80	Eukaryota	Mollusca	Bivalvia	Cardiida	Tellinidae	Macoma	NA
+ASV_800	Eukaryota	Echinodermata	Echinoidea	NA	NA	NA	NA
+ASV_801	Eukaryota	Echinodermata	Crinoidea	Comatulida	NA	NA	NA
+ASV_802	Unknown	NA	NA	NA	NA	NA	NA
+ASV_803	Bacteria	Bacteroidota	Bacteroidia	Bacteroidales	NA	NA	NA
+ASV_804	Unknown	NA	NA	NA	NA	NA	NA
+ASV_805	Unknown	NA	NA	NA	NA	NA	NA
+ASV_806	Unknown	NA	NA	NA	NA	NA	NA
+ASV_807	Unknown	NA	NA	NA	NA	NA	NA
+ASV_808	Unknown	NA	NA	NA	NA	NA	NA
+ASV_809	Unknown	NA	NA	NA	NA	NA	NA
+ASV_81	Eukaryota	Echinodermata	Echinoidea	NA	NA	NA	NA
+ASV_810	Unknown	NA	NA	NA	NA	NA	NA
+ASV_811	Eukaryota	Porifera	Demospongiae	Agelasida	NA	NA	NA
+ASV_812	Unknown	NA	NA	NA	NA	NA	NA
+ASV_813	Unknown	NA	NA	NA	NA	NA	NA
+ASV_814	Unknown	NA	NA	NA	NA	NA	NA
+ASV_815	Eukaryota	Porifera	Homoscleromorpha	NA	NA	NA	NA
+ASV_816	Unknown	NA	NA	NA	NA	NA	NA
+ASV_817	Unknown	NA	NA	NA	NA	NA	NA
+ASV_818	Unknown	NA	NA	NA	NA	NA	NA
+ASV_819	Eukaryota	Mollusca	Bivalvia	Cardiida	Tellinidae	Macoma	NA
+ASV_82	Eukaryota	Chordata	Actinopteri	Pleuronectiformes	Cyclopsettidae	Citharichthys	NA
+ASV_820	Unknown	NA	NA	NA	NA	NA	NA
+ASV_821	Unknown	NA	NA	NA	NA	NA	NA
+ASV_822	Eukaryota	Nemertea	Pilidiophora	NA	NA	NA	NA
+ASV_823	Bacteria	Bacteroidota	Bacteroidia	Bacteroidales	NA	NA	NA
+ASV_824	Unknown	NA	NA	NA	NA	NA	NA
+ASV_825	Eukaryota	Arthropoda	Insecta	Diptera	Chironomidae	NA	NA
+ASV_826	Eukaryota	Rotifera	Eurotatoria	Ploima	Synchaetidae	NA	NA
+ASV_827	Bacteria	Bacteroidota	Bacteroidia	NA	NA	NA	NA
+ASV_828	Unknown	NA	NA	NA	NA	NA	NA
+ASV_829	Eukaryota	Chordata	Mammalia	Primates	Hominidae	NA	NA
+ASV_83	Unknown	NA	NA	NA	NA	NA	NA
+ASV_830	Unknown	NA	NA	NA	NA	NA	NA
+ASV_831	Unknown	NA	NA	NA	NA	NA	NA
+ASV_832	Unknown	NA	NA	NA	NA	NA	NA
+ASV_833	Bacteria	Pseudomonadota	Gammaproteobacteria	Candidatus Pseudothioglobus__f__o	Candidatus Pseudothioglobus__f	NA	NA
+ASV_834	Eukaryota	Bryozoa	Gymnolaemata	Cheilostomatida	NA	NA	NA
+ASV_835	Eukaryota	Bryozoa	Gymnolaemata	Cheilostomatida	Smittinidae	Parasmittina	Parasmittina jeffreysi
+ASV_836	Bacteria	Bacteroidota	Flavobacteriia	Flavobacteriales	Candidatus Karelsulcia__f	NA	NA
+ASV_837	Bacteria	Elusimicrobiota	NA	NA	NA	NA	NA
+ASV_838	Eukaryota	Nemertea	Pilidiophora	Heteronemertea	Lineidae	Cerebratulus	Cerebratulus albifrons
+ASV_839	Eukaryota	Nemertea	Pilidiophora	Heteronemertea	Lineidae	Cerebratulus	NA
+ASV_84	Eukaryota	Picozoa	NA	NA	NA	NA	NA
+ASV_840	Unknown	NA	NA	NA	NA	NA	NA
+ASV_841	Eukaryota	Bryozoa	Gymnolaemata	Cheilostomatida	Candidae	NA	NA
+ASV_842	Eukaryota	Arthropoda	Malacostraca	Decapoda	Porcellanidae	Pachycheles	Pachycheles haigae
+ASV_843	Unknown	NA	NA	NA	NA	NA	NA
+ASV_844	Eukaryota	Cnidaria	Scyphozoa	Semaeostomeae	Pelagiidae	Chrysaora	NA
+ASV_845	Eukaryota	Streptophyta	Magnoliopsida	Solanales	Solanaceae	NA	NA
+ASV_846	Eukaryota	Chordata	Actinopteri	NA	NA	NA	NA
+ASV_847	Unknown	NA	NA	NA	NA	NA	NA
+ASV_848	Unknown	NA	NA	NA	NA	NA	NA
+ASV_849	Unknown	NA	NA	NA	NA	NA	NA
+ASV_85	Eukaryota	NA	NA	NA	NA	NA	NA
+ASV_850	Unknown	NA	NA	NA	NA	NA	NA
+ASV_851	Unknown	NA	NA	NA	NA	NA	NA
+ASV_852	Unknown	NA	NA	NA	NA	NA	NA
+ASV_853	Eukaryota	Annelida	Polychaeta	Chaetopteridae__o	NA	NA	NA
+ASV_854	Unknown	NA	NA	NA	NA	NA	NA
+ASV_855	Unknown	NA	NA	NA	NA	NA	NA
+ASV_856	Unknown	NA	NA	NA	NA	NA	NA
+ASV_857	Unknown	NA	NA	NA	NA	NA	NA
+ASV_858	Unknown	NA	NA	NA	NA	NA	NA
+ASV_859	Eukaryota	Porifera	Demospongiae	Dendroceratida	Dictyodendrillidae	NA	NA
+ASV_86	Eukaryota	Chaetognatha	Sagittoidea	Aphragmophora	NA	NA	NA
+ASV_860	Unknown	NA	NA	NA	NA	NA	NA
+ASV_861	Unknown	NA	NA	NA	NA	NA	NA
+ASV_862	Unknown	NA	NA	NA	NA	NA	NA
+ASV_863	Unknown	NA	NA	NA	NA	NA	NA
+ASV_864	Bacteria	Candidatus Woesebacteria	NA	NA	NA	NA	NA
+ASV_865	Unknown	NA	NA	NA	NA	NA	NA
+ASV_866	Unknown	NA	NA	NA	NA	NA	NA
+ASV_867	Unknown	NA	NA	NA	NA	NA	NA
+ASV_868	Unknown	NA	NA	NA	NA	NA	NA
+ASV_869	Unknown	NA	NA	NA	NA	NA	NA
+ASV_87	Eukaryota	Bryozoa	Gymnolaemata	Cheilostomatida	Celleporidae	Celleporina	Celleporina souleae
+ASV_870	Unknown	NA	NA	NA	NA	NA	NA
+ASV_871	Eukaryota	Chordata	Actinopteri	Perciformes	Scorpaenidae	Taenianotus	NA
+ASV_872	Unknown	NA	NA	NA	NA	NA	NA
+ASV_873	Eukaryota	Mollusca	Gastropoda	Neogastropoda	NA	NA	NA
+ASV_874	Eukaryota	Arthropoda	Insecta	Diptera	Chironomidae	NA	NA
+ASV_875	Bacteria	Elusimicrobiota	NA	NA	NA	NA	NA
+ASV_876	Unknown	NA	NA	NA	NA	NA	NA
+ASV_877	Unknown	NA	NA	NA	NA	NA	NA
+ASV_878	Bacteria	Pseudomonadota	Alphaproteobacteria	Rhodobacterales	NA	NA	NA
+ASV_879	Unknown	NA	NA	NA	NA	NA	NA
+ASV_88	Eukaryota	Chordata	Actinopteri	NA	NA	NA	NA
+ASV_880	Unknown	NA	NA	NA	NA	NA	NA
+ASV_881	Unknown	NA	NA	NA	NA	NA	NA
+ASV_882	Unknown	NA	NA	NA	NA	NA	NA
+ASV_883	Unknown	NA	NA	NA	NA	NA	NA
+ASV_884	Eukaryota	Chlorophyta	Chlorophyceae	Sphaeropleales	NA	NA	NA
+ASV_885	Bacteria	Candidatus Chazhemtobacteraceae__o__c__p	Candidatus Chazhemtobacteraceae__o__c	Candidatus Chazhemtobacteraceae__o	Candidatus Chazhemtobacteraceae	NA	NA
+ASV_886	Unknown	NA	NA	NA	NA	NA	NA
+ASV_887	Unknown	NA	NA	NA	NA	NA	NA
+ASV_888	Unknown	NA	NA	NA	NA	NA	NA
+ASV_889	Eukaryota	Porifera	Demospongiae	Poecilosclerida	Crellidae	NA	NA
+ASV_89	Eukaryota	Chordata	Mammalia	Primates	Hominidae	Homo	Homo sapiens
+ASV_890	Unknown	NA	NA	NA	NA	NA	NA
+ASV_891	Eukaryota	Nemertea	Palaeonemertea	Tubulaniformes	Tubulanidae	Tubulanus	Tubulanus sexlineatus
+ASV_892	Unknown	NA	NA	NA	NA	NA	NA
+ASV_893	Unknown	NA	NA	NA	NA	NA	NA
+ASV_894	Unknown	NA	NA	NA	NA	NA	NA
+ASV_895	Eukaryota	Arthropoda	Malacostraca	Decapoda	Pinnotheridae	NA	NA
+ASV_896	Unknown	NA	NA	NA	NA	NA	NA
+ASV_897	Eukaryota	Chordata	Actinopteri	NA	NA	NA	NA
+ASV_898	Eukaryota	Nemertea	Pilidiophora	Heteronemertea	Lineidae	Evelineus	NA
+ASV_899	Unknown	NA	NA	NA	NA	NA	NA
+ASV_9	Eukaryota	Arthropoda	Malacostraca	Euphausiacea	Euphausiidae	Euphausia	Euphausia pacifica
+ASV_90	Eukaryota	NA	NA	NA	NA	NA	NA
+ASV_900	Unknown	NA	NA	NA	NA	NA	NA
+ASV_901	Unknown	NA	NA	NA	NA	NA	NA
+ASV_902	Unknown	NA	NA	NA	NA	NA	NA
+ASV_903	Unknown	NA	NA	NA	NA	NA	NA
+ASV_904	Unknown	NA	NA	NA	NA	NA	NA
+ASV_905	Unknown	NA	NA	NA	NA	NA	NA
+ASV_906	Unknown	NA	NA	NA	NA	NA	NA
+ASV_907	Unknown	NA	NA	NA	NA	NA	NA
+ASV_908	Unknown	NA	NA	NA	NA	NA	NA
+ASV_909	Unknown	NA	NA	NA	NA	NA	NA
+ASV_91	Eukaryota	Chordata	Mammalia	Artiodactyla	Balaenopteridae	Megaptera	Megaptera novaeangliae
+ASV_910	Unknown	NA	NA	NA	NA	NA	NA
+ASV_911	Unknown	NA	NA	NA	NA	NA	NA
+ASV_912	Unknown	NA	NA	NA	NA	NA	NA
+ASV_913	Bacteria	Pseudomonadota	Gammaproteobacteria	Candidatus Pseudothioglobus__f__o	NA	NA	NA
+ASV_914	Eukaryota	Chlorophyta	Chlorophyceae	Sphaeropleales	NA	NA	NA
+ASV_915	Unknown	NA	NA	NA	NA	NA	NA
+ASV_916	Unknown	NA	NA	NA	NA	NA	NA
+ASV_917	Unknown	NA	NA	NA	NA	NA	NA
+ASV_918	Unknown	NA	NA	NA	NA	NA	NA
+ASV_919	Eukaryota	Arthropoda	Malacostraca	Decapoda	Callianassidae	NA	NA
+ASV_92	Eukaryota	Arthropoda	Hexanauplia	Calanoida	Clausocalanidae	Pseudocalanus	Pseudocalanus elongatus
+ASV_920	Unknown	NA	NA	NA	NA	NA	NA
+ASV_921	Unknown	NA	NA	NA	NA	NA	NA
+ASV_922	Bacteria	Candidatus Woesebacteria	NA	NA	NA	NA	NA
+ASV_923	Eukaryota	Mollusca	NA	NA	NA	NA	NA
+ASV_924	Unknown	NA	NA	NA	NA	NA	NA
+ASV_925	Unknown	NA	NA	NA	NA	NA	NA
+ASV_926	Bacteria	Bacteroidota	Bacteroidia	Bacteroidales	NA	NA	NA
+ASV_927	Unknown	NA	NA	NA	NA	NA	NA
+ASV_928	Eukaryota	Mollusca	NA	NA	NA	NA	NA
+ASV_929	Unknown	NA	NA	NA	NA	NA	NA
+ASV_93	Eukaryota	Echinodermata	Echinoidea	NA	NA	NA	NA
+ASV_930	Unknown	NA	NA	NA	NA	NA	NA
+ASV_931	Eukaryota	Cnidaria	Hydrozoa	Trachymedusae	Rhopalonematidae	Aglantha	Aglantha digitale
+ASV_932	Unknown	NA	NA	NA	NA	NA	NA
+ASV_933	Unknown	NA	NA	NA	NA	NA	NA
+ASV_934	Unknown	NA	NA	NA	NA	NA	NA
+ASV_935	Unknown	NA	NA	NA	NA	NA	NA
+ASV_936	Unknown	NA	NA	NA	NA	NA	NA
+ASV_937	Unknown	NA	NA	NA	NA	NA	NA
+ASV_938	Unknown	NA	NA	NA	NA	NA	NA
+ASV_939	Unknown	NA	NA	NA	NA	NA	NA
+ASV_94	Eukaryota	Arthropoda	Malacostraca	Decapoda	Cancridae	Metacarcinus	Metacarcinus gracilis
+ASV_940	Unknown	NA	NA	NA	NA	NA	NA
+ASV_941	Unknown	NA	NA	NA	NA	NA	NA
+ASV_942	Unknown	NA	NA	NA	NA	NA	NA
+ASV_943	Unknown	NA	NA	NA	NA	NA	NA
+ASV_944	Unknown	NA	NA	NA	NA	NA	NA
+ASV_945	Unknown	NA	NA	NA	NA	NA	NA
+ASV_946	Unknown	NA	NA	NA	NA	NA	NA
+ASV_947	Unknown	NA	NA	NA	NA	NA	NA
+ASV_948	Unknown	NA	NA	NA	NA	NA	NA
+ASV_949	Unknown	NA	NA	NA	NA	NA	NA
+ASV_95	Eukaryota	Chordata	Actinopteri	NA	NA	NA	NA
+ASV_950	Eukaryota	Porifera	Demospongiae	Dendroceratida	Dictyodendrillidae	NA	NA
+ASV_951	Unknown	NA	NA	NA	NA	NA	NA
+ASV_952	Unknown	NA	NA	NA	NA	NA	NA
+ASV_953	Unknown	NA	NA	NA	NA	NA	NA
+ASV_954	Unknown	NA	NA	NA	NA	NA	NA
+ASV_955	Unknown	NA	NA	NA	NA	NA	NA
+ASV_956	Unknown	NA	NA	NA	NA	NA	NA
+ASV_957	Unknown	NA	NA	NA	NA	NA	NA
+ASV_958	Unknown	NA	NA	NA	NA	NA	NA
+ASV_959	Unknown	NA	NA	NA	NA	NA	NA
+ASV_96	Eukaryota	Arthropoda	Hexanauplia	Calanoida	NA	NA	NA
+ASV_960	Eukaryota	Arthropoda	Malacostraca	Decapoda	NA	NA	NA
+ASV_961	Bacteria	Pseudomonadota	Gammaproteobacteria	Candidatus Pseudothioglobus__f__o	Candidatus Pseudothioglobus__f	NA	NA
+ASV_962	Unknown	NA	NA	NA	NA	NA	NA
+ASV_963	Unknown	NA	NA	NA	NA	NA	NA
+ASV_964	Archaea	Nitrososphaerota	NA	NA	NA	NA	NA
+ASV_965	Unknown	NA	NA	NA	NA	NA	NA
+ASV_966	Eukaryota	Cnidaria	Hydrozoa	Siphonophorae	Clausophyidae	Chuniphyes	Chuniphyes multidentata
+ASV_967	Unknown	NA	NA	NA	NA	NA	NA
+ASV_968	Unknown	NA	NA	NA	NA	NA	NA
+ASV_969	Unknown	NA	NA	NA	NA	NA	NA
+ASV_97	Eukaryota	Arthropoda	Malacostraca	Decapoda	Pinnotheridae	Pinnixa	NA
+ASV_970	Unknown	NA	NA	NA	NA	NA	NA
+ASV_971	Unknown	NA	NA	NA	NA	NA	NA
+ASV_972	Unknown	NA	NA	NA	NA	NA	NA
+ASV_973	Eukaryota	Chlorophyta	Mamiellophyceae	Mamiellales	Bathycoccaceae	Ostreococcus	Ostreococcus sp_ _lucimarinus_
+ASV_974	Unknown	NA	NA	NA	NA	NA	NA
+ASV_975	Unknown	NA	NA	NA	NA	NA	NA
+ASV_976	Eukaryota	Chlorophyta	Chlorophyceae	Sphaeropleales	Chromochloridaceae	NA	NA
+ASV_977	Eukaryota	Nemertea	Palaeonemertea	Tubulaniformes	Tubulanidae	Carinina	Carinina sp_ chocolate
+ASV_978	Unknown	NA	NA	NA	NA	NA	NA
+ASV_979	Unknown	NA	NA	NA	NA	NA	NA
+ASV_98	Eukaryota	NA	NA	NA	NA	NA	NA
+ASV_980	Unknown	NA	NA	NA	NA	NA	NA
+ASV_981	Unknown	NA	NA	NA	NA	NA	NA
+ASV_982	Unknown	NA	NA	NA	NA	NA	NA
+ASV_983	Unknown	NA	NA	NA	NA	NA	NA
+ASV_984	Unknown	NA	NA	NA	NA	NA	NA
+ASV_985	Unknown	NA	NA	NA	NA	NA	NA
+ASV_986	Unknown	NA	NA	NA	NA	NA	NA
+ASV_987	Unknown	NA	NA	NA	NA	NA	NA
+ASV_988	Unknown	NA	NA	NA	NA	NA	NA
+ASV_989	Unknown	NA	NA	NA	NA	NA	NA
+ASV_99	Eukaryota	Chordata	Aves	Galliformes	Phasianidae	Gallus	NA
+ASV_990	Eukaryota	Chordata	Thaliacea	Doliolida	Doliolidae	Doliolum	Doliolum nationalis
+ASV_991	Unknown	NA	NA	NA	NA	NA	NA
+ASV_992	Unknown	NA	NA	NA	NA	NA	NA
+ASV_993	Unknown	NA	NA	NA	NA	NA	NA
+ASV_994	Unknown	NA	NA	NA	NA	NA	NA
+ASV_995	Unknown	NA	NA	NA	NA	NA	NA
+ASV_996	Unknown	NA	NA	NA	NA	NA	NA
+ASV_997	Unknown	NA	NA	NA	NA	NA	NA
+ASV_998	Unknown	NA	NA	NA	NA	NA	NA
+ASV_999	Unknown	NA	NA	NA	NA	NA	NA
