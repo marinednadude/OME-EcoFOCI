@@ -1,0 +1,869 @@
+---
+title: "SKQ21_Alaska_HABs_maps"
+author: "Sam Setta"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+# Goal of Analysis
+
+Plot the distribution of HABs for the Alaska/Arctic region.
+
+Note: Was going to use satellite measurements from ERDDAP, but I actually could not pull data from this region for November (SKQ_Alaska cruise, makes sense bc of sea ice), will just use the measurements that were made on the same cruise.
+
+### Load libraries
+
+```{r warning=FALSE, echo=FALSE}
+# load libraries
+library("readr")
+library("here")
+library("sf")
+library("devtools")
+library("rerddap")
+library("lubridate")
+library("dplyr")
+library("reshape2")
+library("ggplot2")
+library("vegan")
+library("tidyverse")
+library("knitr")
+library("rnaturalearth")
+library("rnaturalearthdata")
+library("readxl")
+library("NatParksPalettes")
+library("RColorBrewer")
+library("maps")
+library("mapdata")
+library("measurements")
+library("raster")
+library("rasterVis")
+library("marmap")
+library("phyloseq")
+library("microViz")
+# BiocManager::install("scatterpie")
+library("scatterpie")
+
+# load map data:
+# Deactivate s2 (spherical geometry for Alaska/Arctic)
+sf::sf_use_s2(FALSE)
+world <- ne_countries(scale = "medium", returnclass = "sf")
+state_prov <- rnaturalearth::ne_states(c("united states of america", "canada","russia"))
+
+here()
+```
+
+### Read in the data and format:
+
+```{r,echo=FALSE, hide=TRUE, warning=FALSE, include=FALSE}
+# load metabarcoding data (ITS1, 18Sv4, 18Sv9)
+SKQ_18S_ITS_df<-readRDS(here("ITS_vs_18S","JonahVentures_RUN2","SKQ_ITS1_18S_all.rds"))
+
+# read environmental csv data:
+SKQ_env<-read_csv(here("SKQ_Alaska_Analysis","SKQ_Alaska_data","SKQ21_sample_data_20240627.csv"))
+
+# read environmental csv data:
+# Longitude
+SKQ_lon.min<-min(SKQ_env$longitude, na.rm = TRUE)
+SKQ_lon.max<-max(SKQ_env$longitude, na.rm = TRUE)
+# Latitude
+SKQ_lat.min<-min(SKQ_env$latitude, na.rm = TRUE)
+SKQ_lat.max<-max(SKQ_env$latitude, na.rm = TRUE)
+# start date
+SKQ_date.start<-as.Date(min(SKQ_env$Date_local, na.rm = TRUE))
+# end date
+SKQ_date.end<-as.Date(max(SKQ_env$Date_local, na.rm = TRUE))
+
+```
+
+
+## Map of samples:
+
+### Chlorophyll a along coastline for samples above 100 m
+
+```{r fig1,echo=FALSE, warning=FALSE, fig.height= 12, fig.width= 8}
+# ggplot map
+SKQ_env_chla<-
+  ggplot(data = state_prov) +
+    geom_sf(border=1) +
+    geom_point(data = SKQ_env , aes(x = longitude, y = latitude, fill=chlor_fluorescence), 
+               size=4, shape=21, color="black") +
+    # geom_text(data = WCOA_meta_seq %>% filter(Depth < 100), aes(x = Longitude, y = Latitude, label=Section_ID)) +
+    coord_sf(xlim = c(-178,-150), ylim = c(55, 72), expand = FALSE) +
+    scale_fill_continuous(high = "#284326", low = "#d4e5d2",
+                          guide = guide_colorbar(frame.colour = "black", ticks.colour = "black")) +
+    theme_bw() +
+    xlab("Longitude") +
+    ylab("Latitude") +
+    labs(fill=expression('Chlorophyll '~italic(a)~''))
+    # geom_text(data = summed_station, aes(x = Longitude, y = Latitude, label=Line_ID)) 
+
+SKQ_env_chla
+
+ggsave(
+  file = here::here("SKQ_Alaska_Analysis", "SKQ_Alaska_Figures", "SKQ_Chla_map.pdf"),
+  width = 8,
+  height = 12, limitsize = FALSE
+)
+```
+
+
+## Bathymetric map with transect IDs:
+
+Load in depth data from the region:
+
+```{r fig2, echo=FALSE}
+# Try adding depth contours:
+ylim <- c(-180,-150)
+xlim <- c(50, 78)
+
+depth <- 
+  getNOAA.bathy(lat1 = xlim[1], lat2 = xlim[2], lon1 = ylim[1], lon2 = ylim[2], resolution = 1) %>% 
+  fortify()
+# take a look at depth data:
+glimpse(depth)
+# take a look at depth map:
+depth %>% 
+  filter(z <= 0) %>% 
+  ggplot() +
+  geom_raster(aes(x, y, fill = z))
+# depth below sea level:
+depth_f <- depth %>% filter(z <= 0)
+```
+
+
+```{r fig3, echo=FALSE, warning=FALSE, fig.height= 12, fig.width= 8}
+# environmental data only:
+# Phyto_env_data<-sample_data(WCOA_18Sv4_phyto_orig) %>% data.frame()
+# For Transect ID's:
+# Phyto_env_data_transectID<-Phyto_env_data %>% group_by(Transect_ID) %>%
+#   mutate(Lat=min(Latitude), Lon=min(Longitude)) %>%
+#  dplyr::select(-c("Latitude","Longitude")) %>%
+#  filter(Transect_ID!="Anacapa" & Transect_ID!="CMAP")
+
+
+# ggplot map
+gmap<-ggplot(data = state_prov) +
+    geom_sf(border=1, fill="#999999", lwd=0.5) +
+    geom_raster(data=depth_f, aes(x, y, fill = z)) +
+    geom_point(data = SKQ_env , aes(x = longitude, y = latitude), 
+               size=4, shape=21, color="black", fill="white") +
+    coord_sf(xlim = c(-178, -150), ylim = c(52, 75), expand=FALSE) +
+    theme_bw() +
+    xlab("Longitude") +
+    ylab("Latitude") +
+    theme(axis.text=element_text(size=14, face="bold"),
+        axis.title=element_text(size=14, face="bold"),
+        legend.title=element_text(size=14),
+        legend.text=element_text(size=14),
+        legend.key=element_rect(fill=NA),
+        text = element_text(size=14))
+
+gmap +
+  geom_point(data = SKQ_env , aes(x = longitude, y = latitude, color=chlor_fluorescence), 
+               size=3, shape=19) +
+  scale_color_continuous(high = "#284326", low = "#d4e5d2",
+                          guide = guide_colorbar(frame.colour = "black", ticks.colour = "black")) +
+  guides(color=guide_legend(title="Chlorophyll a (ug/L)",reverse=T),
+         fill=guide_legend(title="Depth (m)",reverse=T))
+
+ggsave(
+  file = here::here("SKQ_Alaska_Analysis", "SKQ_Alaska_Figures", "SKQ_Chla_Bathy_map.pdf"),
+  width = 8,
+  height = 10, limitsize = FALSE
+)
+```
+
+Combine environmental data to get map of abundance and chlorophyll a
+
+```{r,echo=FALSE, hide=TRUE, warning=FALSE, include=FALSE}
+# Load dataframe with information on phytoplankton vs protist groups:
+Protist_phyto_gp<-read_csv(here("ITS_vs_18S","Class_filtering.csv"))
+# keep list of only phytoplankton:
+Phyto_gp_only<-Protist_phyto_gp %>% filter(phytoplankton=="yes") %>% dplyr::select("Class")
+
+# read environmental csv data:
+SKQ_env<-read_csv(here("SKQ_Alaska_Analysis","SKQ_Alaska_data","SKQ21_sample_data_20240627.csv"))
+SKQ_env2 <- SKQ_env %>% 
+  filter(Sample_Name!="END.NC.SKQ2021" & Sample_Name!="START.NC.SKQ2021") %>%
+  rename(Sample_ID=Sample_Name) %>%
+  mutate(Sample_ID = str_replace_all(Sample_ID, "\\.", "_")) %>%
+  dplyr::select("Sample_ID","latitude","longitude")
+
+# load metabarcoding data (ITS1, 18Sv4, 18Sv9)
+SKQ_18S_ITS_df<-readRDS(here("ITS_vs_18S","JonahVentures_RUN2","SKQ_ITS1_18S_all.rds"))
+
+# filter out phytos from dataset:
+SKQ_metabar<-SKQ_18S_ITS_df %>%
+  dplyr::select(-c("MP_E610_NC","MP_POSITIVE","Feature_ID")) %>%
+  # filter out samples that were sequenced for all three regions (ITS & 18S)
+  pivot_longer(cols = MP_E1032_OC0821_PCR1:MP_E600_3B_PCR3, names_to = "Sample_ID", values_to = "counts") %>%
+  filter(Class %in% Phyto_gp_only$Class) %>%
+  mutate(Sample_ID = str_replace_all(Sample_ID, c("MP_"="","_PCR*"=""))) %>%
+  filter(Sample_ID %in% SKQ_env2$Sample_ID) %>%
+  # Correct Pseudo-nitzschia spelling variations
+  mutate_if(is.character, str_replace_all, pattern="Pseudo_nitzschia", replacement = "Pseudo-nitzschia") %>%
+  mutate(Species = str_replace_all(Species, " ", "_")) %>%
+  mutate(Species = sub("^(([^_]*_){1}[^_]*).*", "\\1", Species),
+         pres=if_else(counts>0, 1, 0))
+
+# Presence/absence of Pseudo-nitzschia/Alexandrium/Karenia
+SKQ_metabar2<-SKQ_metabar %>%
+  filter(Genus %in% c("Alexandrium","Karenia","Pseudo-nitzschia")) %>%
+  dplyr::select(c("Species","region","Sample_ID","counts","pres"))
+
+# Join metabarcoding and environment for mapping:
+SKQ_env_metabar<-left_join(SKQ_metabar2,SKQ_env2,by="Sample_ID") %>%
+  drop_na(Species)
+
+# read in presence as factor:
+SKQ_env_metabar$pres <-as.factor(SKQ_env_metabar$pres)
+
+```
+
+## Map of species distribution
+
+### Species presence/absence along transect
+
+#### Karenia brevis
+
+```{r fig4, echo=FALSE, warning=FALSE, fig.height= 12, fig.width= 8}
+# save subset of data to plot:
+SKQ_env_Karenia_df <- SKQ_env_metabar %>% filter(Species=="Karenia_brevis" & region=="18Sv9")
+
+# ggplot map
+SKQ_env_Karenia<-
+  ggplot(data = state_prov) +
+    geom_sf(border=1) +
+    geom_point(data = SKQ_env_Karenia_df %>% filter(pres=="1"), 
+               aes(x = longitude, y = latitude, fill=pres), 
+               size=4, shape=21, color="black") +
+    coord_sf(xlim = c(-178,-150), ylim = c(55, 72), expand = FALSE) +
+    scale_fill_manual(breaks = c("0", "1"), 
+                       values=c("white", "#bc8a31"),
+                       labels=c("Absent","Present")) +
+   annotate("text", x=-167.5, y=69, label= "n=6", size=5) + 
+   facet_grid(. ~ Species) +
+    theme_bw() +
+    xlab("Longitude") +
+    ylab("Latitude") +
+    labs(fill=expression(paste("Presence of ", italic("Karenia brevis")))) +
+    # geom_text(data = summed_station, aes(x = Longitude, y = Latitude, label=Line_ID)) 
+    theme(axis.text=element_text(size=14, face="bold"),
+        axis.title=element_text(size=14, face="bold"),
+        legend.position = "none",
+        text = element_text(size=14),
+        strip.background=element_rect(fill="white"))
+
+SKQ_env_Karenia
+
+ggsave(
+  file = here::here("SKQ_Alaska_Analysis", "SKQ_Alaska_Figures", "SKQ_Karenia_map.pdf"),
+  width = 8,
+  height = 10, limitsize = FALSE
+)
+```
+
+#### Alexandrium catenella, another HAB species
+
+```{r fig5, echo=FALSE, warning=FALSE, fig.height= 12, fig.width= 8}
+# save subset of data to plot:
+SKQ_env_alex_df <- SKQ_env_metabar %>% filter(Species=="Alexandrium_catenella" & region=="18Sv4")
+
+
+# count the number of samples with pseudo-nitzschia:
+SKQ_env_alex_df %>% filter(pres=="1") %>% nrow()
+
+# ggplot map
+SKQ_env_Alex<-
+  ggplot(data = state_prov) +
+    geom_sf(border=1) +
+    geom_point(data = SKQ_env_alex_df %>% filter(pres=="1"), 
+               aes(x = longitude, y = latitude, fill=pres), 
+               size=4, shape=21, color="black") +
+    coord_sf(xlim = c(-178,-150), ylim = c(55, 72), expand = FALSE) +
+    scale_fill_manual(breaks = c("0", "1"), 
+                       values=c("white", "#bc8a31"),
+                       labels=c("Absent","Present")) +
+   annotate("text", x=-167.5, y=69, label= "n=20", size=5) + 
+   facet_grid(. ~ Species) +
+    theme_bw() +
+    xlab("Longitude") +
+    ylab("Latitude") +
+    # labs(fill=expression(paste("Presence of ", italic("Karenia brevis")))) +
+    # geom_text(data = summed_station, aes(x = Longitude, y = Latitude, label=Line_ID)) 
+    theme(axis.text=element_text(size=14, face="bold"),
+        axis.title=element_text(size=14, face="bold"),
+        legend.position = "none",
+        text = element_text(size=14),
+        strip.background=element_rect(fill="white"))
+
+SKQ_env_Alex
+
+ggsave(
+  file = here::here("SKQ_Alaska_Analysis", "SKQ_Alaska_Figures", "SKQ_Alex_map.pdf"),
+  width = 8,
+  height = 10, limitsize = FALSE
+)
+```
+
+#### Species presence/absence along transect of Pseudo-nitzschia species:
+Pseudo-nitzschia_australis (18Sv9 only)
+Pseudo-nitzschia_heimii (18Sv9 only)
+Pseudo-nitzschia_delicatissima
+Pseudo-nitzschia_pungens
+Pseudo-nitzschia_seriata
+Pseudo-nitzschia_granii
+Pseudo-nitzschia_turgidula
+Pseudo-nitzschia_fryxelliana
+Pseudo-nitzschia_pseudodelicatissima (NOT IN ANY SAMPLES)
+
+
+Pseudo-nitzschia_sp.
+
+
+```{r fig6, echo=FALSE, warning=FALSE, fig.height= 12, fig.width= 8}
+# save subset of data to plot:
+SKQ_env_Paus_df <- SKQ_env_metabar %>% filter(region=="18Sv9" & Species=="Pseudo-nitzschia_australis")
+
+# count the number of samples with pseudo-nitzschia:
+SKQ_env_Paus_df %>% filter(pres=="1") %>% nrow()
+
+# ggplot map
+SKQ_env_Paus <- ggplot(data = state_prov) +
+    geom_sf(border=1) +
+    geom_point(data = SKQ_env_Paus_df %>% filter(pres=="1"), 
+               aes(x = longitude, y = latitude, fill=pres), 
+               size=4, shape=21, color="black") +
+    coord_sf(xlim = c(-178,-150), ylim = c(55, 72), expand = FALSE) +
+    scale_fill_manual(breaks = c("0", "1"), 
+                       values=c("white", "#bc8a31"),
+                       labels=c("Absent","Present")) +
+   annotate("text", x=-167.5, y=69, label="n=57", size=5) + 
+   facet_grid(. ~ Species) +
+    theme_bw() +
+    xlab("Longitude") +
+    ylab("Latitude") +
+    theme(axis.text=element_text(size=14, face="bold"),
+        axis.title=element_text(size=14, face="bold"),
+        legend.position = "none",
+        text = element_text(size=14),
+        strip.background=element_rect(fill="white"))
+
+SKQ_env_Paus
+
+ggsave(
+  file = here::here("SKQ_Alaska_Analysis", "SKQ_Alaska_Figures", "SKQ_Paus_map.pdf"),
+  width = 8,
+  height = 10, limitsize = FALSE
+)
+```
+
+
+```{r fig7, echo=FALSE, warning=FALSE, fig.height= 12, fig.width= 8}
+# save subset of data to plot:
+SKQ_env_Pheimii_df <- SKQ_env_metabar %>% filter(region=="18Sv9" & Species=="Pseudo-nitzschia_heimii")
+
+# count the number of samples with pseudo-nitzschia:
+SKQ_env_Pheimii_df %>% filter(pres=="1") %>% nrow()
+
+# ggplot map
+SKQ_env_Pheimii <- ggplot(data = state_prov) +
+    geom_sf(border=1) +
+    geom_point(data = SKQ_env_Pheimii_df %>% filter(pres=="1"), 
+               aes(x = longitude, y = latitude, fill=pres), 
+               size=4, shape=21, color="black") +
+    coord_sf(xlim = c(-178,-150), ylim = c(55, 72), expand = FALSE) +
+    scale_fill_manual(breaks = c("0", "1"), 
+                       values=c("white", "#bc8a31"),
+                       labels=c("Absent","Present")) +
+   annotate("text", x=-167.5, y=69, label="n=2", size=5) + 
+   facet_grid(. ~ Species) +
+    theme_bw() +
+    xlab("Longitude") +
+    ylab("Latitude") +
+    theme(axis.text=element_text(size=14, face="bold"),
+        axis.title=element_text(size=14, face="bold"),
+        legend.position = "none",
+        text = element_text(size=14),
+        strip.background=element_rect(fill="white"))
+
+SKQ_env_Pheimii
+
+ggsave(
+  file = here::here("SKQ_Alaska_Analysis", "SKQ_Alaska_Figures", "SKQ_Pheimii_map.pdf"),
+  width = 8,
+  height = 10, limitsize = FALSE
+)
+```
+
+
+```{r fig8, echo=FALSE, warning=FALSE, fig.height= 12, fig.width= 8}
+# save subset of data to plot:
+SKQ_env_Pdelact_df <- SKQ_env_metabar %>% filter(region=="ITS" & Species=="Pseudo-nitzschia_delicatissima")
+
+# count the number of samples with pseudo-nitzschia:
+Pdelact_samples<-SKQ_env_Pdelact_df %>% filter(pres=="1") %>% nrow()
+
+# ggplot map
+SKQ_env_Pdelact <- ggplot(data = state_prov) +
+    geom_sf(border=1) +
+    geom_point(data = SKQ_env_Pdelact_df %>% filter(pres=="1"), 
+               aes(x = longitude, y = latitude, fill=pres), 
+               size=4, shape=21, color="black") +
+    coord_sf(xlim = c(-178,-150), ylim = c(55, 72), expand = FALSE) +
+    scale_fill_manual(breaks = c("0", "1"), 
+                       values=c("white", "#bc8a31"),
+                       labels=c("Absent","Present")) +
+   annotate("text", x=-167.5, y=69, label="n=874", size=5) + 
+   facet_grid(. ~ Species) +
+    theme_bw() +
+    xlab("Longitude") +
+    ylab("Latitude") +
+    theme(axis.text=element_text(size=14, face="bold"),
+        axis.title=element_text(size=14, face="bold"),
+        legend.position = "none",
+        text = element_text(size=14),
+        strip.background=element_rect(fill="white"))
+
+SKQ_env_Pdelact
+
+ggsave(
+  file = here::here("SKQ_Alaska_Analysis", "SKQ_Alaska_Figures", "SKQ_Pdelicat_map.pdf"),
+  width = 8,
+  height = 10, limitsize = FALSE
+)
+```
+
+
+```{r fig9, echo=FALSE, warning=FALSE, fig.height= 12, fig.width= 8}
+# save subset of data to plot:
+SKQ_env_Ppung_df <- SKQ_env_metabar %>% filter(region=="ITS" & Species=="Pseudo-nitzschia_pungens")
+
+# count the number of samples with pseudo-nitzschia:
+SKQ_env_Ppung_df %>% filter(pres=="1") %>% nrow()
+
+# ggplot map
+SKQ_env_Ppung <- ggplot(data = state_prov) +
+    geom_sf(border=1) +
+    geom_point(data = SKQ_env_Ppung_df %>% filter(pres=="1"), 
+               aes(x = longitude, y = latitude, fill=pres), 
+               size=4, shape=21, color="black") +
+    coord_sf(xlim = c(-178,-150), ylim = c(55, 72), expand = FALSE) +
+    scale_fill_manual(breaks = c("0", "1"), 
+                       values=c("white", "#bc8a31"),
+                       labels=c("Absent","Present")) +
+   annotate("text", x=-167.5, y=69, label="n=209", size=5) + 
+   facet_grid(. ~ Species) +
+    theme_bw() +
+    xlab("Longitude") +
+    ylab("Latitude") +
+    theme(axis.text=element_text(size=14, face="bold"),
+        axis.title=element_text(size=14, face="bold"),
+        legend.position = "none",
+        text = element_text(size=14),
+        strip.background=element_rect(fill="white"))
+
+SKQ_env_Ppung
+
+ggsave(
+  file = here::here("SKQ_Alaska_Analysis", "SKQ_Alaska_Figures", "SKQ_Ppung_map.pdf"),
+  width = 8,
+  height = 10, limitsize = FALSE
+)
+```
+
+
+
+```{r fig10, echo=FALSE, warning=FALSE, fig.height= 12, fig.width= 8}
+# save subset of data to plot:
+SKQ_env_Pser_df <- SKQ_env_metabar %>% filter(region=="ITS" & Species=="Pseudo-nitzschia_seriata")
+
+# count the number of samples with pseudo-nitzschia:
+SKQ_env_Pser_df %>% filter(pres=="1") %>% nrow()
+
+# ggplot map
+SKQ_env_Pser <- ggplot(data = state_prov) +
+    geom_sf(border=1) +
+    geom_point(data = SKQ_env_Pser_df %>% filter(pres=="1"), 
+               aes(x = longitude, y = latitude, fill=pres), 
+               size=4, shape=21, color="black") +
+    coord_sf(xlim = c(-178,-150), ylim = c(55, 72), expand = FALSE) +
+    scale_fill_manual(breaks = c("0", "1"), 
+                       values=c("white", "#bc8a31"),
+                       labels=c("Absent","Present")) +
+   annotate("text", x=-167.5, y=69, label="n=82", size=5) + 
+   facet_grid(. ~ Species) +
+    theme_bw() +
+    xlab("Longitude") +
+    ylab("Latitude") +
+    theme(axis.text=element_text(size=14, face="bold"),
+        axis.title=element_text(size=14, face="bold"),
+        legend.position = "none",
+        text = element_text(size=14),
+        strip.background=element_rect(fill="white"))
+
+SKQ_env_Pser
+
+ggsave(
+  file = here::here("SKQ_Alaska_Analysis", "SKQ_Alaska_Figures", "SKQ_Pser_map.pdf"),
+  width = 8,
+  height = 10, limitsize = FALSE
+)
+```
+
+
+```{r fig11, echo=FALSE, warning=FALSE, fig.height= 12, fig.width= 8}
+# save subset of data to plot:
+SKQ_env_Pgran_df <- SKQ_env_metabar %>% filter(region=="ITS" & Species=="Pseudo-nitzschia_granii")
+
+# count the number of samples with pseudo-nitzschia:
+SKQ_env_Pgran_df %>% filter(pres=="1") %>% nrow()
+
+# ggplot map
+SKQ_env_Pgran <- ggplot(data = state_prov) +
+    geom_sf(border=1) +
+    geom_point(data = SKQ_env_Pgran_df %>% filter(pres=="1"), 
+               aes(x = longitude, y = latitude, fill=pres), 
+               size=4, shape=21, color="black") +
+    coord_sf(xlim = c(-178,-150), ylim = c(55, 72), expand = FALSE) +
+    scale_fill_manual(breaks = c("0", "1"), 
+                       values=c("white", "#bc8a31"),
+                       labels=c("Absent","Present")) +
+   annotate("text", x=-167.5, y=69, label="n=127", size=5) + 
+   facet_grid(. ~ Species) +
+    theme_bw() +
+    xlab("Longitude") +
+    ylab("Latitude") +
+    theme(axis.text=element_text(size=14, face="bold"),
+        axis.title=element_text(size=14, face="bold"),
+        legend.position = "none",
+        text = element_text(size=14),
+        strip.background=element_rect(fill="white"))
+
+SKQ_env_Pgran
+
+ggsave(
+  file = here::here("SKQ_Alaska_Analysis", "SKQ_Alaska_Figures", "SKQ_Pgran_map.pdf"),
+  width = 8,
+  height = 10, limitsize = FALSE
+)
+```
+
+
+```{r fig12, echo=FALSE, warning=FALSE, fig.height= 12, fig.width= 8}
+# save subset of data to plot:
+SKQ_env_Pturg_df <- SKQ_env_metabar %>% filter(region=="ITS" & Species=="Pseudo-nitzschia_turgidula")
+
+# count the number of samples with pseudo-nitzschia:
+SKQ_env_Pturg_df %>% filter(pres=="1") %>% nrow()
+
+# ggplot map
+SKQ_env_Pturg <- ggplot(data = state_prov) +
+    geom_sf(border=1) +
+    geom_point(data = SKQ_env_Pturg_df %>% filter(pres=="1"), 
+               aes(x = longitude, y = latitude, fill=pres), 
+               size=4, shape=21, color="black") +
+    coord_sf(xlim = c(-178,-150), ylim = c(55, 72), expand = FALSE) +
+    scale_fill_manual(breaks = c("0", "1"), 
+                       values=c("white", "#bc8a31"),
+                       labels=c("Absent","Present")) +
+   annotate("text", x=-167.5, y=69, label="n=18", size=5) + 
+   facet_grid(. ~ Species) +
+    theme_bw() +
+    xlab("Longitude") +
+    ylab("Latitude") +
+    theme(axis.text=element_text(size=14, face="bold"),
+        axis.title=element_text(size=14, face="bold"),
+        legend.position = "none",
+        text = element_text(size=14),
+        strip.background=element_rect(fill="white"))
+
+SKQ_env_Pturg
+
+ggsave(
+  file = here::here("SKQ_Alaska_Analysis", "SKQ_Alaska_Figures", "SKQ_Pturg_map.pdf"),
+  width = 8,
+  height = 10, limitsize = FALSE
+)
+```
+
+Pseudo-nitzschia_fryxelliana
+
+```{r fig13, echo=FALSE, warning=FALSE, fig.height= 12, fig.width= 8}
+# save subset of data to plot:
+SKQ_env_Pfryx_df <- SKQ_env_metabar %>% filter(region=="ITS" & Species=="Pseudo-nitzschia_fryxelliana")
+
+# count the number of samples with pseudo-nitzschia:
+SKQ_env_Pfryx_df %>% filter(pres=="1") %>% nrow()
+
+# ggplot map
+SKQ_env_Pfryx <- ggplot(data = state_prov) +
+    geom_sf(border=1) +
+    geom_point(data = SKQ_env_Pfryx_df %>% filter(pres=="1"), 
+               aes(x = longitude, y = latitude, fill=pres), 
+               size=4, shape=21, color="black") +
+    coord_sf(xlim = c(-178,-150), ylim = c(55, 72), expand = FALSE) +
+    scale_fill_manual(breaks = c("0", "1"), 
+                       values=c("white", "#bc8a31"),
+                       labels=c("Absent","Present")) +
+   annotate("text", x=-167.5, y=69, label="n=7", size=5) + 
+   facet_grid(. ~ Species) +
+    theme_bw() +
+    xlab("Longitude") +
+    ylab("Latitude") +
+    theme(axis.text=element_text(size=14, face="bold"),
+        axis.title=element_text(size=14, face="bold"),
+        legend.position = "none",
+        text = element_text(size=14),
+        strip.background=element_rect(fill="white"))
+
+SKQ_env_Pfryx
+
+ggsave(
+  file = here::here("SKQ_Alaska_Analysis", "SKQ_Alaska_Figures", "SKQ_Pfryx_map.pdf"),
+  width = 8,
+  height = 10, limitsize = FALSE
+)
+```
+
+## Do we see any obvious blooms of Pn or other HABs?
+
+Center log ratio transformation of phyto community data along transect
+
+```{r,echo=FALSE, hide=TRUE, warning=FALSE}
+# Load dataframe with information on phytoplankton vs protist groups:
+Protist_phyto_gp<-read_csv(here("ITS_vs_18S","Class_filtering.csv"))
+# keep list of only phytoplankton:
+Phyto_gp_only<-Protist_phyto_gp %>% filter(phytoplankton=="yes") %>% dplyr::select("Class")
+
+# read environmental csv data:
+SKQ_env<-read_csv(here("SKQ_Alaska_Analysis","SKQ_Alaska_data","SKQ21_sample_data_20240627.csv"))
+SKQ_env2 <- SKQ_env %>% 
+  filter(Sample_Name!="END.NC.SKQ2021" & Sample_Name!="START.NC.SKQ2021") %>%
+  rename(Sample_ID=Sample_Name) %>%
+  mutate(Sample_ID = str_replace_all(Sample_ID, "\\.", "_")) %>%
+  dplyr::select("Sample_ID","latitude","longitude")
+# save as sample_data:
+SKQ_env2_meta<-SKQ_env2 %>% column_to_rownames("Sample_ID") %>% sample_data()
+
+# load metabarcoding data (ITS1, 18Sv4, 18Sv9)
+SKQ_18S_ITS_df<-readRDS(here("ITS_vs_18S","JonahVentures_RUN2","SKQ_ITS1_18S_all.rds"))
+
+# filter out phytos from dataset:
+SKQ_metabar<-SKQ_18S_ITS_df %>%
+  dplyr::select(-c("MP_E610_NC","MP_POSITIVE")) %>%
+  # filter out samples that were sequenced for all three regions (ITS & 18S)
+  pivot_longer(cols = MP_E1032_OC0821_PCR1:MP_E600_3B_PCR3, names_to = "Sample_ID", values_to = "counts") %>%
+  filter(Class %in% Phyto_gp_only$Class) %>%
+  mutate(Sample_ID = str_replace_all(Sample_ID, c("MP_"="","_PCR*"=""))) %>%
+  filter(Sample_ID %in% SKQ_env2$Sample_ID)
+
+# Save taxonomy for phyloseq object:
+SKQ_ITS_taxa<- SKQ_metabar %>% as.data.frame() %>%
+  filter(region=="ITS") %>%
+  dplyr::select(c("Feature_ID":"Species","Kingdom","Phylum")) %>%
+  unique() %>%
+  remove_rownames() %>%
+  column_to_rownames("Feature_ID") %>%
+  dplyr::select("Kingdom","Phylum","Class","Order","Family","Genus","Species") %>%
+  as.matrix()
+# save as taxonomy table:
+SKQ_ITS_taxa_ps<-tax_table(SKQ_ITS_taxa)
+
+# Save counts for phyloseq object:
+SKQ_ITS_counts<- SKQ_metabar %>% 
+  filter(region=="ITS") %>%
+  dplyr::select(c("Feature_ID","Sample_ID","counts")) %>%
+  pivot_wider(names_from = "Sample_ID",values_from = "counts") %>%
+  column_to_rownames("Feature_ID") %>%
+  as.matrix()
+# save as otu table:
+SKQ_ITS_counts_ps<-otu_table(SKQ_ITS_counts, taxa_are_rows = TRUE)
+
+# save ITS as phyloseq object:
+SKQ_ITS_physeq<-phyloseq(SKQ_env2_meta,SKQ_ITS_taxa_ps,SKQ_ITS_counts_ps)
+
+```
+
+### Community Composition Bargraph
+
+```{r fig14, warning=FALSE, message=FALSE}
+# check out sample data to group by
+sample_data(SKQ_ITS_physeq)
+# add column to sample data for depth grouping:
+SKQ_ITS_physeq2<-SKQ_ITS_physeq %>%
+  ps_mutate(Latitude=round(as.numeric(latitude)),
+            Longitude=round(as.numeric(longitude)))
+
+# plot 
+SKQ_ITS_physeq2 %>%
+  tax_fix() %>%
+   # tax_transform(trans = "rclr", rank = "unique") %>%
+  # ps_arrange(desc("Latitude")) %>%
+  comp_barplot(
+    tax_level = "Species", n_taxa = 21, other_name = "Other",
+    # label="Latitude",
+    taxon_renamer = function(x) stringr::str_remove(x, " [ae]t rel."),
+    palette = distinct_palette(n = 21, add = "grey90"),
+    merge_other = FALSE, bar_outline_colour = "black"
+  ) +
+  coord_flip() +
+   facet_grid(
+    cols = vars(Longitude), rows = vars(Latitude),
+    scales = "free_y", # this only frees y scale per row in grid faceting
+    space = "free_y" # allows bars to be same size by freeing facet heights
+  ) +
+  # facet_wrap("Longitude", nrow = 1, scales = "free") +
+  labs(x = NULL, y = NULL)
+
+ggsave(
+  file = here::here("SKQ_Alaska_Analysis", "SKQ_Alaska_Figures", "SKQ_CommunityComp_bargraph_ITS1.pdf"),
+  width = 25,
+  height = 15, limitsize = FALSE
+)
+```
+
+### Stacked bargraphs on map of sites
+
+```{r fig15, echo=FALSE, warning=FALSE, fig.height= 12, fig.width= 8}
+# create variable to merge samples by in R
+variable1 = as.character(get_variable(SKQ_ITS_physeq2, "Latitude"))
+variable2 = as.character(get_variable(SKQ_ITS_physeq2, "Longitude"))
+sample_data(SKQ_ITS_physeq2)$Lat_Lon <- mapply(paste0, variable1, variable2, collapse = "_")
+merge_samples(SKQ_ITS_physeq2, "Lat_Lon")
+
+
+# Create bargraph of community composition can we see HABs abundance change with sites
+SKQ_ITS_physeq2_species<-SKQ_ITS_physeq2 %>%
+  tax_fix() %>%
+  tax_agg("Species") %>%
+#  ps_mutate(Sample_ID= rownames(sample_data(SKQ_ITS_physeq2))) %>%
+  merge_samples("Lat_Lon") %>%
+  tax_transform("compositional") %>%
+  psmelt()
+
+# Filter for abundances greater than 1:
+SKQ_ITS_physeq2_species_gt1<- SKQ_ITS_physeq2_species %>%
+  group_by(Sample, Latitude, Longitude) %>%
+filter(Abundance > 0.01)
+
+# Sum remaining taxa with a relative abundance < 1% and make a new dataframe
+Remainders_sed <- (SKQ_ITS_physeq2_species_gt1) %>%
+  summarise(Abundance = (1-sum(Abundance))) %>% 
+  as.data.frame()
+Remainders_sed$Species<-"Species < 1%"
+Remainders_sed$Phylum<-"_Species < 1%"
+Remainders_sed$Class<-"_Species < 1%"
+Remainders_sed$Order<-"_Species < 1%"
+Remainders_sed$Genus<-"_Species < 1%"
+
+# Join dataframes
+SKQ_ITS_physeq2_species_bar <- full_join(SKQ_ITS_physeq2_species_gt1, Remainders_sed)
+
+# Plot 
+ggplot(data=SKQ_ITS_physeq2_species_bar , aes(x = Sample, y = Abundance, fill = Species)) + 
+  geom_bar(stat = "identity", color='black') +
+  scale_fill_manual(values=colorRampPalette(brewer.pal(12, "Paired"))(19)) +
+  # Remove x axis title
+  theme() +
+  guides() +
+  ylab("% Relative Abundance") +
+  xlab("Lat_Lon") +
+  theme_classic() +
+  scale_y_continuous(expand = c(0,0)) +
+  theme(plot.title = element_text(hjust=0.5, size=14),
+        axis.text.x=element_text(angle=45, hjust=1))
+
+ggsave(
+  file = here::here("SKQ_Alaska_Analysis", "SKQ_Alaska_Figures", "SKQ_CommunityComp_bargraph3_ITS1.pdf"),
+  width = 25,
+  height = 15, limitsize = FALSE
+)
+```
+
+### Add piechart to maps:
+
+```{r fig16, echo=FALSE, warning=FALSE, fig.height= 12, fig.width= 8}
+# Species color palette
+Species_cols<-c("#d6c300","#3032b2","#91da4a","#00238e","#7ddb7c","#cf7cfe","#019257","#cc003e","#00a0e6","#f88c10","#220358","#ff8941","#7499ff","#b60304","#0b3500","#ff5a4e","#666d00","#b7384d","#935f44")
+
+# Formatting rel abnd data:
+SKQ_ITS_physeq2_species_bar2<-SKQ_ITS_physeq2_species_bar %>% 
+  mutate(value=Abundance)
+# Alaska map
+Alaska_map<-ggplot(data = state_prov) +
+    geom_sf(border=1) +
+    coord_sf(xlim = c(-178,-152), ylim = c(55, 75))
+
+# map with bargraphs:
+Alaska_map + 
+  # ggplot() +
+  geom_scatterpie(aes(x=Longitude, y=Latitude, r=0.8), data=as.data.frame(SKQ_ITS_physeq2_species_bar2), 
+                  cols="Species", color="black", long_format = TRUE) +
+  scale_fill_manual(values=colorRampPalette(brewer.pal(12, "Paired"))(19)) +
+  # scale_fill_manual(values=Species_cols) +
+  theme_bw() +
+  labs(fill="Species") +
+  # scale_y_continuous(expand = c(0,0)) +
+  theme(plot.title = element_text(hjust=0.5, size=14),
+        axis.text.x=element_text(angle=45, hjust=1))
+
+ggsave(
+ file = here::here("SKQ_Alaska_Analysis", "SKQ_Alaska_Figures", "SKQ_ITS1_SpComp_map.pdf"),
+ width = 12,
+ height = 10, limitsize = FALSE
+)
+```
+
+Separate grid of just pie charts:
+
+```{r fig17, echo=FALSE, warning=FALSE, fig.height= 12, fig.width= 8}
+# map with bargraphs:
+ggplot() +
+  geom_scatterpie(aes(x=Longitude, y=Latitude, r=0.8), data=as.data.frame(SKQ_ITS_physeq2_species_bar2), 
+                  cols="Species", color="black", long_format = TRUE) +
+  scale_fill_manual(values=colorRampPalette(brewer.pal(12, "Paired"))(19)) +
+  coord_fixed() +
+  # scale_fill_manual(values=Species_cols) +
+  theme_bw() +
+  labs(fill="Species") +
+  # scale_y_continuous(expand = c(0,0)) +
+  theme(plot.title = element_text(hjust=0.5, size=14),
+        axis.text.x=element_text(angle=45, hjust=1))
+
+ggsave(
+ file = here::here("SKQ_Alaska_Analysis", "SKQ_Alaska_Figures", "SKQ_ITS1_SpComp_Piecharts.pdf"),
+ width = 15,
+ height = 10, limitsize = FALSE
+)
+```
+
+
+Composition heatmap:
+
+```{r fig18, warning=FALSE, message=FALSE}
+SKQ_ITS_physeq2 %>%
+    tax_fix() %>%
+  tax_transform(trans = "rclr", rank = "Genus") %>%
+  tax_filter(min_prevalence = 0.1, use_counts = TRUE) %>%
+  comp_heatmap(
+    colors = heat_palette(sym = TRUE), grid_col = NA,
+    sample_side = "bottom", name = "Robust\nCLR",
+    sample_anno = sampleAnnotation(
+      "Latitude" = anno_sample("Latitude")
+       # col = list("Birth mode" = c(
+     #   "CS Elective" = "black", "CS Emergency" = "orange", "Vaginal" = "lightgrey"
+     # ))
+    )
+  )
+```
+
+#### Software and package versions used for file:
+
+```{r warning=FALSE}
+print(sessionInfo(), locale = FALSE)
+```
+
+
+
+
