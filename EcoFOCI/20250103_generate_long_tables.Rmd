@@ -17,7 +17,7 @@ library(Biostrings)
 run1_4_revamp_formatted_metadata <- read.csv(here("run1_4_revamp_formatted_metadata.csv"))
 
 run1_4_revamp_formatted_metadata %>% 
-  filter(., str_detect(Sample, "E373"))
+  filter(., str_detect(Sample, "E2084_SKQ23_12S"))
 ```
 
 # 18Sv4 - REVAMP
@@ -437,7 +437,7 @@ run3_COI_asv <- read.table(here("data","REVAMP_out","Run3_from_poseidon_20250103
   dplyr::rename(ASV=x)
 
 run3_COI_asv %>% 
-   dplyr::rename(`Run2:ASV`=ASV) %>% 
+   dplyr::rename(`Run3:ASV`=ASV) %>% 
   left_join(run2_3_COI_united_ASV_tables) %>% 
    rename_at(vars(starts_with("MP_")), funs(str_replace(., "MP_", ""))) -> run3_COI_merge
 
@@ -452,7 +452,6 @@ run3_COI_merge %>%
     mutate (Colmax = max(Prop.abund),
             eDNA.Index = Prop.abund / Colmax) %>%
   dplyr::select(-Tot,-Colmax) -> run3_COI_long
-  
   
 ```
 
@@ -543,7 +542,7 @@ run3_MiFish_asv <- read.table(here("data","REVAMP_out","Run3_from_poseidon_20250
   dplyr::rename(ASV=x)
 
 run3_MiFish_asv %>% 
-    dplyr::rename(`Run2:ASV`=ASV) %>% 
+    dplyr::rename(`Run3:ASV`=ASV) %>% 
   left_join(run2_3_MiFish_united_ASV_tables) %>% 
    rename_at(vars(starts_with("MP_")), funs(str_replace(., "MP_", ""))) -> run3_MiFish_merge
 

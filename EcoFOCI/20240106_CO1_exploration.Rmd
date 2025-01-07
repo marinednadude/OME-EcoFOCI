@@ -7,6 +7,7 @@ output: html_document
 
 
 ```{r}
+library(ggpmisc)
 
 library(tidyverse)
 library(here)
@@ -18,6 +19,17 @@ library(sf)
 library("rnaturalearth")
 library("rnaturalearthdata")
 library(cmocean)
+library(phyloseq)
+
+library(tidyverse)
+library(phyloseq)
+library(metagMisc)
+library(iNEXT)
+library(vegan)
+library('phyloseq')
+library(ranacapa)
+library(here)
+library(patchwork)
 
 ```
 
@@ -28,7 +40,317 @@ long_COI_EcoFOCI <- readRDS(here("data","long_data","long_COI_EcoFOCI.RDS"))
 
 ```
 
+# Site Mapping
 
+
+
+```{r}
+
+sample_metadata %>% 
+  ggplot(aes(x=Depth_m)) +   geom_histogram(aes(x=Depth_m,y=..density..), position="identity") + 
+  geom_density(aes(x=Depth_m,y=..density..))
+```
+
+## Temp Map
+```{r}
+
+min_lat <- min(long_COI_EcoFOCI$lat, na.rm = T)
+max_lat <- max(long_COI_EcoFOCI$lat, na.rm = T)
+
+min_lon <- min(long_COI_EcoFOCI$lon, na.rm = T)
+max_lon <- max(long_COI_EcoFOCI$lon, na.rm = T)
+
+world <- ne_countries(scale = "medium", returnclass = "sf")
+
+colnames(long_COI_EcoFOCI)
+
+sample_metadata %>% 
+  dplyr::select(Station, lat, lon) %>%  
+  mutate(., lat=round(lat,1),
+         lon=round(lon,1)) %>% 
+  distinct() %>% 
+  filter(., Station %in% c("M5","M8","DBO3.4")) -> sites_to_label
+
+library(ggrepel)
+ggplot(data = world) +
+    geom_sf() +
+    geom_point(data = sample_metadata, aes(x = lon, y = lat, colour=Temp_C), size=2) +scale_colour_cmocean(name="thermal") +
+    coord_sf(xlim = c(min_lon-1, max_lon+1), ylim = c(min_lat-1, max_lat+1), expand = FALSE) +theme_bw() +xlab("Longitude") +ylab("Latitude") + facet_wrap(Depth_bin~Cruise_ID_short)+ geom_text_repel(data = sites_to_label, aes(x = lon, y = lat, label=Station),size =3,min.segment.length = unit(0, 'lines'), nudge_x = 4, nudge_y =  0.2)
+
+
+```
+
+## Salinity
+
+```{r}
+ggplot(data = world) +
+    geom_sf() +
+    geom_point(data = sample_metadata, aes(x = lon, y = lat, colour=PSU_ppt), size=2) +scale_colour_cmocean(name="haline") +
+    coord_sf(xlim = c(min_lon-1, max_lon+1), ylim = c(min_lat-1, max_lat+1), expand = FALSE) +theme_bw() +xlab("Longitude") +ylab("Latitude") + facet_wrap(Depth_bin~Cruise_ID_short)+ geom_text_repel(data = sites_to_label, aes(x = lon, y = lat, label=Station),size =3,min.segment.length = unit(0, 'lines'), nudge_x = 4, nudge_y =  0.2)
+
+```
+
+## Chla
+```{r}
+ggplot(data = world) +
+    geom_sf() +
+    geom_point(data = sample_metadata, aes(x = lon, y = lat, colour=Chla_ugrams.per.l), size=2) +scale_colour_cmocean(name="algae", limits= c(0,15)) +
+    coord_sf(xlim = c(min_lon-1, max_lon+1), ylim = c(min_lat-1, max_lat+1), expand = FALSE) +theme_bw() +xlab("Longitude") +ylab("Latitude") + facet_wrap(Depth_bin~Cruise_ID_short)+ geom_text_repel(data = sites_to_label, aes(x = lon, y = lat, label=Station),size =3,min.segment.length = unit(0, 'lines'), nudge_x = 4, nudge_y =  0.2)
+
+```
+
+## Oxy. Sat.
+
+```{r}
+ggplot(data = world) +
+    geom_sf() +
+    geom_point(data = sample_metadata, aes(x = lon, y = lat, colour=OxySatPerc_percent), size=2) +scale_colour_cmocean(name="oxy") +
+    coord_sf(xlim = c(min_lon-1, max_lon+1), ylim = c(min_lat-1, max_lat+1), expand = FALSE) +theme_bw() +xlab("Longitude") +ylab("Latitude") + facet_wrap(Depth_bin~Cruise_ID_short)+ geom_text_repel(data = sites_to_label, aes(x = lon, y = lat, label=Station),size =3,min.segment.length = unit(0, 'lines'), nudge_x = 4, nudge_y =  0.2)
+
+```
+
+
+## Ammonium
+```{r}
+ggplot(data = world) +
+    geom_sf() +
+    geom_point(data = sample_metadata, aes(x = lon, y = lat, colour=NH4_umol.per.l), size=2) +scale_colour_cmocean(name="haline") +
+    coord_sf(xlim = c(min_lon-1, max_lon+1), ylim = c(min_lat-1, max_lat+1), expand = FALSE) +theme_bw() +xlab("Longitude") +ylab("Latitude") + facet_wrap(Depth_bin~Cruise_ID_short)+ geom_text_repel(data = sites_to_label, aes(x = lon, y = lat, label=Station),size =3,min.segment.length = unit(0, 'lines'), nudge_x = 4, nudge_y =  0.2)
+```
+
+
+
+```{r}
+long_COI_EcoFOCI %>% 
+  filter(., !is.na(Species)) %>% 
+  filter(., nReads >0) %>% 
+  dplyr::group_by(ASV_combo, Kingdom, Phylum, Class, Order, Family, Genus, Species) %>% 
+  dplyr::summarise(sum_reads=sum(nReads)) %>% 
+  arrange(desc(sum_reads))
+
+```
+
+# CO1 Data Exploration
+# Beta Diversity
+
+#### Build All Method Phyloseq Object
+
+##### ASV Reads
+
+```{r}
+
+long_COI_EcoFOCI %>% ungroup() %>% 
+  dplyr::select( Sample  ,         replicates   ,        group1   ,           
+group2   ,            Sample_Name  ,        Biological_Replicate,
+Technical_Replicate , Negative_control,     Cruise_ID_short  ,   
+Cruise_ID_long ,      Cast_No.   ,          Rosette_position   , 
+Station   ,           Sample_volume_ml ,    Time  ,              
+Depth_m  ,            lat  ,                lon  ,               
+Temp_C  ,             PSU_ppt  ,            OxySatPerc_percent  ,
+OxyConc_umol.per.l ,  Chla_ugrams.per.l ,   PO4_umol.per.l  ,    
+NO2_umol.per.l  ,     NO3_umol.per.l   ,    NH4_umol.per.l     , 
+sites) %>% distinct() %>% 
+  filter(., Cruise_ID_short !="SKQ23-12S") %>% 
+    mutate(., Depth_bin = if_else(Depth_m >29, "Below 30m","Above 30m" )) -> sample_metadata
+
+```
+
+
+```{r}
+
+varnames <- colnames(long_COI_EcoFOCI)
+to_remove <- c("Run2:ASV","Run3:ASV","ASV_combo","Sequence","nReads","Prop.abund","eDNA.Index")
+
+
+sample_metadata -> co1_sample_data
+
+#Metadata
+co1_sample_data %>%  as.data.frame() -> sampledata
+rownames(sampledata) <- sampledata$Sample
+sample_data(sampledata) -> sampledata
+
+#ASV Reads
+
+long_COI_EcoFOCI %>% 
+  dplyr::select(ASV_combo,Sample, eDNA.Index) %>% 
+  mutate(., eDNA.Index=as.numeric(eDNA.Index)) %>% 
+  mutate(., eDNA.Index=if_else(eDNA.Index=="NaN", 0, eDNA.Index)) %>%
+  pivot_wider(names_from = Sample, values_from = eDNA.Index, values_fill  =0) -> wide_PA
+
+long_COI_EcoFOCI %>% 
+  dplyr::select(ASV_combo, Kingdom,Phylum,Class, Order,Family, Genus, Species) %>% 
+  distinct() %>% as.matrix() -> taxonomy_table
+
+rownames(taxonomy_table) <- wide_PA$ASV_combo
+
+TAX = tax_table(taxonomy_table)
+
+wide_PA %>% 
+  ungroup() %>% 
+  dplyr::select(-ASV_combo) %>% as.matrix() -> otu_table
+rownames(otu_table) <- wide_PA$ASV_combo
+
+OTU = otu_table(otu_table, taxa_are_rows = TRUE)
+physeq_obj._CO1 = phyloseq(OTU, TAX, sampledata)
+
+subsurface_co1 <- subset_samples(physeq_obj._CO1, Depth_bin == "Below 30m")
+surface_co1 <- subset_samples(physeq_obj._CO1, Depth_bin == "Above 30m")
+```
+
+# PERMANOVA
+
+## surface_co1 Jaccard
+```{r}
+surface_co1_c = subset_samples(surface_co1, !is.na(Temp_C) & !is.na(lat) & !is.na(Depth_m))
+
+ 
+
+#Betadiversity
+#Generate Vegan formatted data table
+method.sampledf <- data.frame(sample_data(surface_co1_c))
+method.rel_abun<- vegan_otu(surface_co1_c)
+
+#Jaccard dissimilarity matrix
+method.d_carn <- vegdist(method.rel_abun, method="bray", binary=TRUE)
+
+method.sampledf$Cruise_ID_short %>%  unique()
+method.d_carn
+#PERMANOVA: Method+Site
+
+method.adonis_results <- adonis2(method.rel_abun~ Depth_m+lat+Temp_C+PSU_ppt+OxySatPerc_percent+OxyConc_umol.per.l+Chla_ugrams.per.l+PO4_umol.per.l+NO2_umol.per.l+NO3_umol.per.l+NH4_umol.per.l
+, data=method.sampledf,  na.action =na.exclude, by = "margin")
+
+method.adonis_results
+
+method.adonis_results_simple <- adonis2(method.rel_abun~Depth_m+lat+Temp_C+PSU_ppt+OxyConc_umol.per.l+Chla_ugrams.per.l+lon, data=method.sampledf, by = "terms")
+
+method.adonis_results_simple
+
+summary(method.adonis_results_simple)
+```
+
+## surface_co1 Bray
+```{r}
+surface_co1_c = subset_samples(surface_co1, !is.na(Temp_C) & !is.na(lat) & !is.na(Depth_m))
+
+ 
+
+#Betadiversity
+#Generate Vegan formatted data table
+method.sampledf <- data.frame(sample_data(surface_co1_c))
+method.rel_abun<- vegan_otu(surface_co1_c)
+
+#Jaccard dissimilarity matrix
+method.d_carn <- vegdist(method.rel_abun, method="bray")
+
+#PERMANOVA: Method+Site
+
+method.adonis_results <- adonis2(method.rel_abun~ Depth_m+lat+Temp_C+PSU_ppt+OxySatPerc_percent+OxyConc_umol.per.l+Chla_ugrams.per.l+PO4_umol.per.l+NO2_umol.per.l+NO3_umol.per.l+NH4_umol.per.l
+, data=method.sampledf,  na.action =na.exclude, by = "margin")
+
+method.adonis_results
+
+method.adonis_results_simple <- adonis2(method.rel_abun~Depth_m+lat+Temp_C+PSU_ppt+OxyConc_umol.per.l+Chla_ugrams.per.l+lon, data=method.sampledf, by = "terms")
+
+method.adonis_results_simple
+
+summary(method.adonis_results_simple)
+```
+
+```{r}
+ord <- ordinate(surface_co1_c, method = "NMDS", distance = ("bray"))
+```
+
+### NMDS Temp
+```{r}
+##Plot_Ordination
+plot_ordination(surface_co1_c, ord, "samples", color = "Temp_C") +
+  ggtitle("NMDS - Stress 0.2051166") + 
+  geom_point(size = 4) + 
+  theme_bw()+ 
+  theme(plot.title = element_text(hjust = 0.5,size = 20, face = "bold"),
+        plot.subtitle = element_text(hjust = 0.5,size = 18, face = "bold"),
+        panel.grid.major = element_blank(), 
+        panel.grid.minor = element_blank(),
+        panel.background = element_blank(), 
+        axis.text=element_text(size=16), 
+        axis.title=element_text(size=16,face="bold"),
+        legend.title = element_text( size=16, face="bold"),
+        legend.text = element_text(size=14)
+        ) + 
+  labs(color = "Temp ˚C") +scale_colour_cmocean() 
+
+
+```
+
+
+### NMDS Cruise
+```{r}
+##Plot_Ordination
+plot_ordination(surface_co1_c, ord, "samples", color = "Cruise_ID_short") +
+  ggtitle("NMDS - Stress 0.2051166") + 
+  geom_point(size = 4) + 
+  theme_bw()+ 
+  theme(plot.title = element_text(hjust = 0.5,size = 20, face = "bold"),
+        plot.subtitle = element_text(hjust = 0.5,size = 18, face = "bold"),
+        panel.grid.major = element_blank(), 
+        panel.grid.minor = element_blank(),
+        panel.background = element_blank(), 
+        axis.text=element_text(size=16), 
+        axis.title=element_text(size=16,face="bold"),
+        legend.title = element_text( size=16, face="bold"),
+        legend.text = element_text(size=14)
+        ) + 
+  labs(color = "Cruise")
+
+```
+
+```{r}
+
+#Betadiversity
+#Generate Vegan formatted data table
+method.sampledf <- data.frame(sample_data(benthic_co1))
+method.rel_abun<- vegan_otu(benthic_co1)
+
+#Jaccard dissimilarity matrix
+method.d_carn <- vegdist(method.rel_abun, method="bray", binary=TRUE)
+
+#PERMANOVA: Method+Site
+method.adonis_results <- adonis2(method.rel_abun~group3+degLat, data=method.sampledf)
+method.adonis_results
+```
+
+```{r}
+ord <- ordinate(benthic_co1, method = "NMDS", distance = ("bray"))
+
+##Plot_Ordination
+plot_ordination(benthic_co1, ord, "samples", color = "aragonite_sat") +
+  ggtitle("NMDS - Stress 0.229") + 
+  geom_point(size = 4) + 
+  theme_bw()+ 
+  theme(plot.title = element_text(hjust = 0.5,size = 20, face = "bold"),
+        plot.subtitle = element_text(hjust = 0.5,size = 18, face = "bold"),
+        panel.grid.major = element_blank(), 
+        panel.grid.minor = element_blank(),
+        panel.background = element_blank(), 
+        axis.text=element_text(size=16), 
+        axis.title=element_text(size=16,face="bold"),
+        legend.title = element_text( size=16, face="bold"),
+        legend.text = element_text(size=14)
+        ) + 
+  labs(color = "Aragonite Saturation") +scale_color_viridis_c(option="B")  -> co1_benthic_plot
+
+co1_benthic_plot
+
+ggsave(
+  file = here::here("analysis", "figures", "co1_benthic_plot.jpeg"),
+  width = 12,
+  height = 8, limitsize = FALSE
+)
+
+
+```
+## Calanus
 ```{r}
 
 long_COI_EcoFOCI %>% 
@@ -36,34 +358,132 @@ long_COI_EcoFOCI %>%
   distinct() %>% 
   filter(., Genus=="Calanus")
 
-
 long_COI_EcoFOCI %>% 
   filter(., Genus=="Calanus") %>% 
   dplyr::group_by(ASV_combo, Kingdom, Phylum, Class, Order, Family, Genus, Species) %>% 
   dplyr::summarise(sum_reads=sum(nReads)) %>% 
   arrange(desc(sum_reads))
 
-  
+
+```
+
+## Pseudocalanus
+```{r}
+
+long_COI_EcoFOCI %>% 
+  dplyr::select(ASV_combo, Kingdom, Phylum, Class, Order, Family, Genus, Species) %>% 
+  distinct() %>% 
+  filter(., Genus=="Pseudocalanus")
+
+long_COI_EcoFOCI %>% 
+  filter(., Genus=="Pseudocalanus") %>% 
+  dplyr::group_by(ASV_combo, Kingdom, Phylum, Class, Order, Family, Genus, Species) %>%
+  dplyr::summarise(sum_reads=sum(nReads)) %>% 
+  arrange(desc(sum_reads)) -> Pseudocalanus_tot
+
+Pseudocalanus_tot %>% 
+  filter(., sum_reads > 5000) -> Pseudocalanus_to_keep
+  # Pseudocalanus mimus versus Pseudocalanus minutus	
+
+```
+
+```{r}
+
+c(setdiff(varnames,to_remove),"Tot") -> varnames_to_group
+
+long_COI_EcoFOCI %>% 
+ group_by(Sample) %>%
+    mutate(Tot = sum(nReads)) %>% 
+    filter(., Genus=="Pseudocalanus") %>% 
+    filter(., !is.na(Species)) %>% 
+    group_by(!!!syms(varnames_to_group)) %>% 
+    dplyr::summarise(nReads=sum(nReads)) %>% 
+    mutate (Prop.abund = nReads / Tot) %>% 
+      ungroup() %>% 
+    group_by (Species) %>%
+    mutate (Colmax = max(Prop.abund),
+            eDNA.Index = Prop.abund / Colmax) %>% 
+  mutate(., Type = case_when(Species == "Pseudocalanus mimus" ~ "Temperate",
+                             Species == "Pseudocalanus newmani"~ "Temperate",
+                             Species ==  "Pseudocalanus minutus" ~"Arctic",
+                             Species ==  "Pseudocalanus acuspes" ~"Arctic",
+                             Species ==  "Pseudocalanus moultoni" ~"Temperate",
+                             TRUE ~"Unknown"))-> Pseudocalanus_Df
+
+```
+
+```{r}
+
+Pseudocalanus_Df %>% 
+  filter(., Species =="Pseudocalanus mimus") %>% 
+  ggplot(., aes(y=eDNA.Index, x=Temp_C)) +geom_point() + facet_wrap(Species~.) +
+  stat_poly_line() +
+  stat_poly_eq() +
+  geom_point()
+```
+```{r}
+
+
+Pseudocalanus_Df %>% 
+  ggplot(., aes(y=log10(nReads), x=Temp_C, color=Cruise_ID_short)) +geom_point() + facet_wrap(Species~Type)
 ```
 
 
 ```{r}
 
-min_lat <- min(QAQCMRE_CruiseSampleMetadata_DY20_12$Lat_dec, na.rm = T)
-max_lat <- max(QAQCMRE_CruiseSampleMetadata_DY20_12$Lat_dec, na.rm = T)
+Pseudocalanus_Df %>% 
+  mutate(., PA = if_else(nReads >0, 1,0)) %>% 
+  ggplot(., aes(y=PA, x=Temp_C)) +geom_point() + facet_wrap(Species~Type) +
+  geom_smooth(method = "glm", 
+    method.args = list(family = "binomial"), 
+    se = FALSE) 
+```
 
-min_lon <- min(QAQCMRE_CruiseSampleMetadata_DY20_12$Lon_dec, na.rm = T)
-max_lon <- max(QAQCMRE_CruiseSampleMetadata_DY20_12$Lon_dec, na.rm = T)
+```{r}
+Pseudocalanus_Df %>% 
+  mutate(., PA = if_else(nReads >0, 1,0)) %>% 
+  mutate(., Depth_bin = if_else(Depth_m >29, "bottom","surface" )) %>% 
+  ggplot(., aes(y=lat, x=Temp_C, colour = PA)) +geom_point() + facet_wrap(Species~Type~Depth_bin)
+```
 
-world <- ne_countries(scale = "medium", returnclass = "sf")
-QAQCMRE_CruiseSampleMetadata_DY20_12$Date_UTC %>% as.Date() -> dates
+```{r}
+Pseudocalanus_Df %>% 
+  mutate(., PA = if_else(nReads >0, 1,0)) %>% 
+  ggplot(., aes(y=log10(Chla_ugrams.per.l), x=Temp_C, colour = eDNA.Index)) +geom_point() + facet_wrap(Species~Type) +    scale_color_gradientn(colours = c("black", "#C6DBEF", 'dodgerblue4'),
+                       values = c(0, .Machine$double.eps, 1))
+```
 
+```{r}
+Pseudocalanus_Df %>% 
+  mutate(., PA = if_else(nReads >0, 1,0)) %>% 
+  mutate(., Time2 = as.POSIXct(Time)) %>% 
+  ggplot(., aes(x=Time2, y=Temp_C, colour = eDNA.Index)) +geom_point() + facet_wrap(Species~Type) +    scale_color_gradientn(colours = c("grey80", "lightyellow", 'red'),
+                       values = c(0, .Machine$double.eps, 1)) +theme_bw()
+```
 
-ggplot(data = world) +
-    geom_sf() +
-    geom_point(data = QAQCMRE_CruiseSampleMetadata_DY20_12, aes(x = Lon_dec, y = Lat_dec, colour=as.Date(Date_UTC)), size=2) +
-    coord_sf(xlim = c(min_lon-1, max_lon+1), ylim = c(min_lat-1, max_lat+1), expand = FALSE) +theme_bw() +xlab("Longitude") +ylab("Latitude") +
-  geom_text(data = QAQCMRE_CruiseSampleMetadata_DY20_12, aes(x = Lon_dec, y = Lat_dec, label=Station),size = 2, colour="black") + scale_color_cmocean(labels=dates, breaks=dates, name ="tempo", start = 0.1, end=0.5) +labs(colour="Date")
-
+```{r}
+Pseudocalanus_Df %>% 
+  mutate(., PA = if_else(nReads >0, 1,0)) %>% 
+  filter(., PA >0) %>% 
+  ggplot(., aes(, x=Temp_C)) +geom_density() + facet_wrap(Species~Type)
 
 ```
+
+```{r}
+Pseudocalanus_Df %>% 
+  mutate(., PA = if_else(nReads > 0, "Present","Absent")) %>% 
+  mutate(., Temp_bin = if_else(Temp_C > 2, "Warm","Cold")) %>% 
+  group_by(Species, Temp_bin, PA) %>% 
+  dplyr::summarise(N=n()) %>% 
+  mutate(freq = N / sum(N)) %>% 
+  filter(., !is.na(Temp_bin)) %>% 
+  mutate(., Type = case_when(Species == "Pseudocalanus mimus" ~ "Temperate",
+                             Species == "Pseudocalanus newmani"~ "Temperate",
+                             Species ==  "Pseudocalanus minutus" ~"Arctic",
+                             Species ==  "Pseudocalanus acuspes" ~"Arctic",
+                             Species ==  "Pseudocalanus moultoni" ~"Temperate",
+                             TRUE ~"Unknown")) %>% 
+ggplot(., aes(x=PA, y =freq)) + geom_col() + facet_wrap(Species~Type ~Temp_bin)
+```
+
+
