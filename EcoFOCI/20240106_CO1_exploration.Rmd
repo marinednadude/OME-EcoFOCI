@@ -35,13 +35,29 @@ library(patchwork)
 
 # Load Data
 ```{r}
-long_MiFish_EcoFOCI <- readRDS(here("data","long_data","long_MiFish_EcoFOCI.RDS"))
 long_COI_EcoFOCI <- readRDS(here("data","long_data","long_COI_EcoFOCI.RDS"))
 
 ```
 
 # Site Mapping
 
+```{r}
+
+long_COI_EcoFOCI %>% ungroup() %>% 
+  dplyr::select( Sample  ,         replicates   ,        group1   ,           
+group2   ,            Sample_Name  ,        Biological_Replicate,
+Technical_Replicate , Negative_control,     Cruise_ID_short  ,   
+Cruise_ID_long ,      Cast_No.   ,          Rosette_position   , 
+Station   ,           Sample_volume_ml ,    Time  ,              
+Depth_m  ,            lat  ,                lon  ,               
+Temp_C  ,             PSU_ppt  ,            OxySatPerc_percent  ,
+OxyConc_umol.per.l ,  Chla_ugrams.per.l ,   PO4_umol.per.l  ,    
+NO2_umol.per.l  ,     NO3_umol.per.l   ,    NH4_umol.per.l     , 
+sites) %>% distinct() %>% 
+  filter(., Cruise_ID_short !="SKQ23-12S") %>% 
+    mutate(., Depth_bin = if_else(Depth_m >29, "Below 30m","Above 30m" )) -> sample_metadata
+
+```
 
 
 ```{r}
@@ -137,23 +153,6 @@ long_COI_EcoFOCI %>%
 
 ##### ASV Reads
 
-```{r}
-
-long_COI_EcoFOCI %>% ungroup() %>% 
-  dplyr::select( Sample  ,         replicates   ,        group1   ,           
-group2   ,            Sample_Name  ,        Biological_Replicate,
-Technical_Replicate , Negative_control,     Cruise_ID_short  ,   
-Cruise_ID_long ,      Cast_No.   ,          Rosette_position   , 
-Station   ,           Sample_volume_ml ,    Time  ,              
-Depth_m  ,            lat  ,                lon  ,               
-Temp_C  ,             PSU_ppt  ,            OxySatPerc_percent  ,
-OxyConc_umol.per.l ,  Chla_ugrams.per.l ,   PO4_umol.per.l  ,    
-NO2_umol.per.l  ,     NO3_umol.per.l   ,    NH4_umol.per.l     , 
-sites) %>% distinct() %>% 
-  filter(., Cruise_ID_short !="SKQ23-12S") %>% 
-    mutate(., Depth_bin = if_else(Depth_m >29, "Below 30m","Above 30m" )) -> sample_metadata
-
-```
 
 
 ```{r}
@@ -214,7 +213,6 @@ method.rel_abun<- vegan_otu(surface_co1_c)
 method.d_carn <- vegdist(method.rel_abun, method="bray", binary=TRUE)
 
 method.sampledf$Cruise_ID_short %>%  unique()
-method.d_carn
 #PERMANOVA: Method+Site
 
 method.adonis_results <- adonis2(method.rel_abun~ Depth_m+lat+Temp_C+PSU_ppt+OxySatPerc_percent+OxyConc_umol.per.l+Chla_ugrams.per.l+PO4_umol.per.l+NO2_umol.per.l+NO3_umol.per.l+NH4_umol.per.l
@@ -305,27 +303,33 @@ plot_ordination(surface_co1_c, ord, "samples", color = "Cruise_ID_short") +
 
 ```
 
+## subsurface Bray
 ```{r}
 
 #Betadiversity
 #Generate Vegan formatted data table
-method.sampledf <- data.frame(sample_data(benthic_co1))
-method.rel_abun<- vegan_otu(benthic_co1)
+method.sampledf <- data.frame(sample_data(subsurface_co1))
+method.rel_abun<- vegan_otu(subsurface_co1)
 
 #Jaccard dissimilarity matrix
-method.d_carn <- vegdist(method.rel_abun, method="bray", binary=TRUE)
+method.d_carn <- vegdist(method.rel_abun, method="bray")
 
-#PERMANOVA: Method+Site
-method.adonis_results <- adonis2(method.rel_abun~group3+degLat, data=method.sampledf)
+method.adonis_results <- adonis2(method.rel_abun~ Depth_m+lat+Temp_C+PSU_ppt+OxySatPerc_percent+OxyConc_umol.per.l+Chla_ugrams.per.l+PO4_umol.per.l+NO2_umol.per.l+NO3_umol.per.l+NH4_umol.per.l
+, data=method.sampledf,  na.action =na.exclude, by = "margin")
+
 method.adonis_results
+
 ```
 
 ```{r}
-ord <- ordinate(benthic_co1, method = "NMDS", distance = ("bray"))
+ord <- ordinate(subsurface_co1, method = "NMDS", distance = ("bray"))
+```
 
+
+```{r}
 ##Plot_Ordination
-plot_ordination(benthic_co1, ord, "samples", color = "aragonite_sat") +
-  ggtitle("NMDS - Stress 0.229") + 
+plot_ordination(subsurface_co1, ord, "samples", color = "Cruise_ID_short") +
+  ggtitle("NMDS - Stress 0.2051166") + 
   geom_point(size = 4) + 
   theme_bw()+ 
   theme(plot.title = element_text(hjust = 0.5,size = 20, face = "bold"),
@@ -338,15 +342,7 @@ plot_ordination(benthic_co1, ord, "samples", color = "aragonite_sat") +
         legend.title = element_text( size=16, face="bold"),
         legend.text = element_text(size=14)
         ) + 
-  labs(color = "Aragonite Saturation") +scale_color_viridis_c(option="B")  -> co1_benthic_plot
-
-co1_benthic_plot
-
-ggsave(
-  file = here::here("analysis", "figures", "co1_benthic_plot.jpeg"),
-  width = 12,
-  height = 8, limitsize = FALSE
-)
+  labs(color = "Cruise")
 
 
 ```
@@ -357,7 +353,10 @@ long_COI_EcoFOCI %>%
   dplyr::select(ASV_combo, Kingdom, Phylum, Class, Order, Family, Genus, Species) %>% 
   distinct() %>% 
   filter(., Genus=="Calanus")
+```
 
+
+```{r}
 long_COI_EcoFOCI %>% 
   filter(., Genus=="Calanus") %>% 
   dplyr::group_by(ASV_combo, Kingdom, Phylum, Class, Order, Family, Genus, Species) %>% 
@@ -374,7 +373,9 @@ long_COI_EcoFOCI %>%
   dplyr::select(ASV_combo, Kingdom, Phylum, Class, Order, Family, Genus, Species) %>% 
   distinct() %>% 
   filter(., Genus=="Pseudocalanus")
+```
 
+```{r}
 long_COI_EcoFOCI %>% 
   filter(., Genus=="Pseudocalanus") %>% 
   dplyr::group_by(ASV_combo, Kingdom, Phylum, Class, Order, Family, Genus, Species) %>%
@@ -421,6 +422,8 @@ Pseudocalanus_Df %>%
   stat_poly_eq() +
   geom_point()
 ```
+
+
 ```{r}
 
 
