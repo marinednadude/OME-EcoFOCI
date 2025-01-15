@@ -1,0 +1,221 @@
+---
+title: "AMSS Analysis Metabarcoding resolution Heatmap"
+author: "Sam Setta"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+# Analysis Goal:
+
+Combine 18Sv4, 18Sv9, ITS1 from all data we have so far...
+
+## Load libraries
+
+```{r setup, warning=FALSE, message=FALSE}
+# install libraries
+# BiocManager::install(c("tidyverse", "lubridate", "RColorBrewer", "ggsci", "dplyr", "phyloseq", "knitr", "readxl","ggplot2","NatParksPalettes","purrr", "ggvenn", "zetadiv"))
+# BiocManager::install("iNEXT")
+# BiocManager::install(c("phyloseq", "microbiome", "ComplexHeatmap"), update = FALSE)
+library("tidyverse")
+library("vegan")
+library("phyloseq")
+library("ape")
+library("RColorBrewer")
+library("ggsci")
+library("knitr")
+library("readxl")
+library("here")
+library("ggplot2")
+library("NatParksPalettes")
+library("gt")
+library("microbiome")
+library("ComplexHeatmap")
+library("ggtext")
+library("ggraph")
+library("microViz")
+
+# where data should be saved
+here()
+
+```
+
+## Load data:
+
+### Load in ITS1 data:
+
+```{r echo=FALSE, hide=TRUE, warning=FALSE, include=FALSE}
+# load ITS asv table:
+ SKQ_ITS_asv_counts<-read_delim(here("ITS_vs_18S","JonahVentures_RUN2","ITS1_revamp_ASVs_counts.tsv"), col_names = TRUE) %>%
+  rename(ASV=x) %>% 
+  pivot_longer(-ASV, names_to = "Sample", values_to = "count")
+# load ITS taxonomy table
+SKQ_ITS_tax_table<-read_delim(here("ITS_vs_18S","JonahVentures_RUN2","ITS1_revamp_asvTaxonomyTable_sps.txt"), col_names = TRUE)
+
+# combo taxa and otu table:
+All_ITS <- SKQ_ITS_asv_counts %>% left_join(SKQ_ITS_tax_table) %>% mutate(region="ITS")
+
+```
+
+### Load in 18Sv4 data:
+
+```{r echo=FALSE, hide=TRUE, warning=FALSE, include=FALSE}
+# Zack long format files:
+# long_18Sv4_pr2<-readRDS(here("SKQ_Alaska_Analysis","SKQ_Alaska_data","long_18Sv4_EcoFOCI_pr2.RDS")) %>% ungroup()
+
+## create phyloseq object out of long format data:
+# otu_table: (raw reads)
+ All_18Sv4_pr2<-
+   long_18Sv4_pr2 %>%
+   dplyr::select(c("ASV_combo","Domain":"Species","Sample","nReads")) %>%
+   rename(ASV=ASV_combo, count=nReads) %>%
+   mutate(region="18Sv4")
+
+```
+
+### Load in 18Sv4 and 18Sv9 data
+
+```{r echo=FALSE, hide=TRUE, warning=FALSE, include=FALSE}
+# Zack long format files:
+# long_18Sv9_pr2<-readRDS(here("SKQ_Alaska_Analysis","SKQ_Alaska_data","long_18Sv9_EcoFOCI_pr2.RDS")) %>% ungroup()
+
+## create phyloseq object out of long format data:
+# otu_table: (raw reads)
+All_18Sv9_pr2<-
+  long_18Sv9_pr2 %>%
+  dplyr::select(c("ASV_combo","Domain":"Species","Sample","nReads")) %>%
+  rename(ASV=ASV_combo, count=nReads) %>%
+  mutate(region="18Sv9")
+
+```
+
+### Combine all data
+
+```{r warning=FALSE}
+# join dataframes for each region:
+All_AkArctic<-All_18Sv4_pr2 %>% full_join(All_18Sv9_pr2) %>% full_join(All_ITS)
+
+# go from long to wide:
+# All_AkArctic_long<- All_AkArctic %>% 
+#   pivot_wider(names_from = "Sample", values_from = "count")
+
+# Save combined data frame as rds:
+# saveRDS(All_AkArctic, here("SKQ_Alaska_Analysis","SKQ_Alaska_data","All_AkArctic_regions.rds"))
+All_AkArctic <- readRDS(here("SKQ_Alaska_Analysis","SKQ_Alaska_data","All_AkArctic_regions.rds"))
+```
+
+## Presence and absence of Species for each region:
+
+```{r fig1, warning=FALSE}
+# format df:
+All_AkArctic2 <- All_AkArctic %>%
+  dplyr::select(-c("Domain":"Family","Kingdom","Phylum","Sample")) %>%
+    filter(!is.na(Genus)) %>%
+  mutate(Genus=str_replace(Genus,"Pseudo_nitzschia","Pseudo-nitzschia"),
+         Species=str_replace(Species,"Pseudo_nitzschia","Pseudo-nitzschia")) %>%
+  mutate(Species=if_else(is.na(Species),paste0(Genus," sp."),Species))
+# count the number of ASVs in each sample, grouped by region:
+All_AkArctic3 <- All_AkArctic2 %>%
+  mutate(Species=str_replace(Species,"^(\\S* \\S*).*", "\\1")) %>%
+  mutate(Species=str_replace(Species,"_", " ")) %>%
+  group_by(Genus, Species, region) %>%
+  summarise(sum=sum(count)) %>%
+  mutate(pres=as.factor(if_else(sum>0, 1, 0))) %>%
+  dplyr::select(-sum) %>%
+  pivot_wider(names_from = region, values_from = pres) %>%
+  mutate_at(c("18Sv4","18Sv9","ITS"), ~replace_na(.,"0")) %>%
+  pivot_longer(cols=c("18Sv4","18Sv9","ITS"), names_to = "Region", values_to = "pres")
+
+```
+
+## Pseudo-nitzschia spp.
+
+```{r fig1, warning=FALSE}
+# Change the order of Species:
+All_AkArctic3_Pn <- All_AkArctic3 %>% filter(Genus=="Pseudo-nitzschia") %>%
+  mutate(Species=as.factor(Species)) %>%
+  mutate(Species=fct_relevel(Species,c("Pseudo-nitzschia australis","Pseudo-nitzschia delicatissima",
+                                       "Pseudo-nitzschia fryxelliana","Pseudo-nitzschia granii",
+                                       "Pseudo-nitzschia heimii","Pseudo-nitzschia pseudodelicatissima",
+                                       "Pseudo-nitzschia pungens","Pseudo-nitzschia seriata",
+                                       "Pseudo-nitzschia turgidula","Pseudo-nitzschia sp.")))
+
+# Heatmap of presence/absence of each HAB by metabarcoding region:
+All_AkArctic3_Pn_geomtile<-ggplot(All_AkArctic3_Pn %>% filter(Species!="Pseudo-nitzschia pseudodelicatissima"), aes(x = Region, y = reorder(Species, desc(Species)), fill = pres)) +
+  geom_tile(color = "black", size=1) +
+  scale_fill_manual(breaks = c( "1","0"), 
+                       values=c("#e58a0d", "white"),
+                       labels=c("Present","Absent")) +
+  labs(fill="Occurence",y="Species") +
+  theme_classic() +
+  theme(axis.text.y = element_text(face = "italic"),
+        text=element_text(size=20)
+  )
+
+All_AkArctic3_Pn_geomtile
+
+ggsave(
+  file = here::here("SKQ_Alaska_Analysis","SKQ_Alaska_Figures","AMSS_geomtile_Pn.pdf"),
+  width = 8,
+  height = 7, limitsize = FALSE
+)
+
+```
+
+## Alexandrium
+
+```{r fig2, warning=FALSE}
+# Change the order of Species:
+All_AkArctic3_Alex <- All_AkArctic3 %>% filter(Genus=="Alexandrium") %>%
+  mutate(Species=as.factor(Species)) %>%
+  mutate(Species=fct_relevel(Species,c("Alexandrium andersonii","Alexandrium catenella",
+                                       "Alexandrium cohorticula","Alexandrium hiranoi",
+                                       "Alexandrium margalefii","Alexandrium ostenfeldii",
+                                       "Alexandrium pseudogonyaulax","Alexandrium tamarense",
+                                       "Alexandrium tamiyavanichii","Alexandrium sp.")))
+
+# Heatmap of presence/absence of each HAB by metabarcoding region:
+All_AkArctic3_Alex_geomtile <- ggplot(All_AkArctic3_Alex %>% filter(Species!="Alexandrium hiranoi" & Species!="Alexandrium cohorticula" & 
+                                       Species!="Alexandrium andersonii" & Species!="Alexandrium tamiyavanichii"), 
+       aes(x = Region, y = reorder(Species, desc(Species)), fill = pres)) +
+  geom_tile(color = "black", size=1) +
+  scale_fill_manual(breaks = c( "1","0"), 
+                       values=c("#e58a0d", "white"),
+                       labels=c("Present","Absent")) +
+  labs(fill="Occurence", y="Species") +
+  theme_classic() +
+  theme(axis.text.y = element_text(face = "italic"),
+        text=element_text(size=20)
+  )
+
+All_AkArctic3_Alex_geomtile
+
+ggsave(
+  file = here::here("SKQ_Alaska_Analysis","SKQ_Alaska_Figures","AMSS_geomtile_Alex.pdf"),
+  width = 8,
+  height = 6, limitsize = FALSE
+)
+
+```
+
+Combine heatmap plots:
+
+```{r fig3, echo=FALSE, warning=FALSE}
+# Combo plot
+All_AkArctic3_geomtile<-All_AkArctic3_Alex_geomtile + All_AkArctic3_Pn_geomtile
+
+All_AkArctic3_geomtile
+
+ggsave(
+  file = here::here("SKQ_Alaska_Analysis", "SKQ_Alaska_Figures", "AMSS_geomtile_Alex_Pn.pdf"),
+  width = 15,
+  height = 10, limitsize = FALSE
+)
+
+```
+
+
+#### Software and package versions used for file:
+
+```{r warning=FALSE}
+print(sessionInfo(), locale = FALSE)
+```

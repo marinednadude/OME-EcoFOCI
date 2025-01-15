@@ -1,0 +1,1180 @@
+---
+title: "Alaska Marine Science Symposium Analysis"
+author: "Sam Setta"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+# Goal of Analysis
+
+Here, we explore the variation in phytoplankton species distribution across the eastern Bering and Chukchi Seas. Alexandrium catenella and several species of toxic Pseudo-nitzschia were identified in the region and their distribution varied from north to south. Using these methods, we explore the distribution and prevalence of phytoplankton in areas that are difficult to sample, and focus on particular HABs found in the region that impact other organisms and communities in the region. 
+
+#### Notes from previous analysis:
+
+Plot the distribution of Pseudo-nitzschia with chlorophyll a satellite data, to see if using ITS1 region is useful in the Alaska/Arctic for our projects. After pivot, use chlorophyll a measurements with distribution of Pn
+
+Note: Was going to use satellite measurements from ERDDAP, but I actually could not pull data from this region for November (SKQ_Alaska cruise, makes sense bc of sea ice), will just use the measurements that were made on the same cruise.
+
+Use surface samples: < 30 m, deep samples considered gt 30 m.
+
+Previously found: high diversity in straight.
+
+### Load libraries
+
+```{r warning=FALSE, echo=FALSE}
+# install packages as needed:
+# BiocManager::install(c("rnaturalearth","rnaturalearthdata","mapdata","measurements","raster","rasterVis","marmap"))
+
+# load libraries
+library("tidyverse")
+library("readr")
+library("here")
+library("devtools")
+# BiocManager::install("scatterpie")
+library("scatterpie")
+library("rerddap")
+library("lubridate")
+library("reshape2")
+library("vegan")
+library("knitr")
+library("readxl")
+library("NatParksPalettes")
+library("RColorBrewer")
+library("phyloseq")
+library("microViz")
+library("gt")
+library("sf")
+library("rnaturalearth")
+library("rnaturalearthdata")
+library("maps")
+library("mapdata")
+library("measurements")
+library("raster")
+library("rasterVis")
+library("marmap")
+#BiocManager::install("ggOceanMaps")
+library("ggOceanMaps")
+library("ggspatial")
+library("patchwork")
+
+here()
+
+```
+
+### Read in the data and format:
+
+```{r echo=FALSE, hide=TRUE, warning=FALSE, include=FALSE}
+# Zack long format files:
+long_18Sv4_pr2<-readRDS(here("SKQ_Alaska_Analysis","SKQ_Alaska_data","long_18Sv4_EcoFOCI_pr2.RDS")) %>% ungroup()
+# long_18Sv9_revamp<-readRDS(here("SKQ_Alaska_Analysis","SKQ_Alaska_data","long_18Sv9_EcoFOCI.RDS"))
+
+## create phyloseq object out of long format data:
+# otu_table: (raw reads)
+# otu_18Sv4_pr2<-
+#  long_18Sv4_pr2 %>%
+#  dplyr::select(c("ASV_combo","Sample","nReads")) %>%
+#  pivot_wider(names_from = "Sample", values_from = "nReads") %>%
+#  column_to_rownames(var = "ASV_combo") %>%
+#  otu_table(taxa_are_rows = TRUE)  %>%
+#  replace(is.na(.), 0)
+
+# otu_table: (eDNA index)
+# otu_18Sv4_pr2_eDNA<-
+#  long_18Sv4_pr2 %>%
+#  dplyr::select(c("ASV_combo","Sample","eDNA.Index")) %>%
+#  pivot_wider(names_from = "Sample", values_from = "eDNA.Index") %>%
+#  column_to_rownames(var = "ASV_combo") %>%
+#  otu_table(taxa_are_rows = TRUE)  %>%
+#  replace(is.na(.), 0)
+
+# taxa table:
+# tax_18Sv4_pr2<-
+#  long_18Sv4_pr2 %>%
+#   dplyr::select(c("ASV_combo","Domain":"Species")) %>%
+#   unique() %>%
+#   column_to_rownames(var = "ASV_combo") %>%
+#   as.matrix() %>%
+#   tax_table()
+
+# sample data:
+# sam_18Sv4_pr2<-
+#  long_18Sv4_pr2 %>%
+#   dplyr::select(-c("Run2:ASV":"Species","nReads","Sample_Name","Prop.abund","eDNA.Index","Colmax","Tot")) %>%
+#   mutate(Log_chla=log10(Chla_ugrams.per.l)) %>%
+#   unique() %>%
+#   column_to_rownames(var = "Sample") %>%
+#   sample_data()
+
+# final phyloseq object:
+# physeq_18Sv4_pr2 <-phyloseq(otu_18Sv4_pr2, tax_18Sv4_pr2, sam_18Sv4_pr2)
+# physeq_18Sv4_pr2_DNAindex <-phyloseq(otu_18Sv4_pr2_eDNA, tax_18Sv4_pr2, sam_18Sv4_pr2)
+
+# save phyloseq object for use later:
+# saveRDS(physeq_18Sv4_pr2, here("SKQ_Alaska_Analysis","SKQ_Alaska_data","physeq_18Sv4_EcoFOCI_pr2.rds"))
+# saveRDS(physeq_18Sv4_pr2_DNAindex, here("SKQ_Alaska_Analysis","SKQ_Alaska_data","physeq_18Sv4_EcoFOCI_pr2_DNAindex.rds"))
+
+# load rds object:
+physeq_18Sv4_pr2<-readRDS(here("SKQ_Alaska_Analysis","SKQ_Alaska_data","physeq_18Sv4_EcoFOCI_pr2.rds"))
+# physeq_18Sv4_pr2_DNAindex<-readRDS(here("SKQ_Alaska_Analysis","SKQ_Alaska_data","physeq_18Sv4_EcoFOCI_pr2_DNAindex.rds"))
+# read in HAB species data:
+HABs_list<-read_csv(here("SKQ_Alaska_Analysis","SKQ_Alaska_data","HABs_taxlist_IOC_UNESCO_20240817.csv"))
+
+## Filter and subset data:
+# subset taxa where Genus is unknown (so we can keep HAB species):
+physeq_18Sv4_pr2_Genus<-subset_taxa(physeq_18Sv4_pr2, !is.na(Genus))
+# subset only HABs:
+physeq_18Sv4_pr2_HABs<-subset_taxa(physeq_18Sv4_pr2_Genus, Genus %in% HABs_list$GenusName_accepted) %>%
+  ps_mutate(Depth_gp=if_else(Depth_m>=30,"Deep","Surface"))
+  # subset_samples()
+
+# subset taxa where Genus is unknown (so we can keep HAB species):
+# physeq_18Sv4_pr2_DNAindex_Genus<-subset_taxa(physeq_18Sv4_pr2_DNAindex, !is.na(Genus))
+# subset only HABs:
+# physeq_18Sv4_pr2_HABs_DNAindex<-subset_taxa(physeq_18Sv4_pr2_DNAindex_Genus, Genus %in% HABs_list$GenusName_accepted) %>%
+  # ps_mutate(Depth_gp=if_else(Depth_m>=30,"Deep","Surface"))
+  # subset_samples()
+
+```
+
+In case it's helpful to explore all samples (to see if there is a bloom!)
+
+```{r echo=FALSE, hide=TRUE, warning=FALSE, include=FALSE}
+# Interactive Microviz exploration:
+# ord_explore(
+#  physeq_18Sv4_pr2 %>%
+#  ps_mutate(Depth_gp=if_else(Depth_m>=30,"Deep","Surface")) %>%
+#  phyloseq_validate(remove_undetected = TRUE) %>%
+#  tax_fix()
+# )
+```
+
+Use microviz to explore data:
+
+```{r echo=FALSE, hide=TRUE, warning=FALSE, include=FALSE}
+# filter out by cruise:
+physeq_18Sv4_pr2_SKQ2021 <- physeq_18Sv4_pr2_HABs %>% 
+              subset_samples(group2=="SKQ2021") %>%
+              phyloseq_validate(remove_undetected = TRUE)
+
+physeq_18Sv4_pr2_DY20 <- physeq_18Sv4_pr2_HABs %>% 
+              subset_samples(group2=="DY20") %>%
+              phyloseq_validate(remove_undetected = TRUE)
+
+physeq_18Sv4_pr2_NO20 <- physeq_18Sv4_pr2_HABs %>% 
+              subset_samples(group2=="NO20") %>%
+              phyloseq_validate(remove_undetected = TRUE)
+
+# All 2020 data:
+physeq_18Sv4_pr2_2020 <- physeq_18Sv4_pr2_HABs %>% 
+              subset_samples(group2!="SKQ2021") %>%
+              phyloseq_validate(remove_undetected = TRUE)
+
+```
+
+## Ordination plot:
+
+Q's to answer: 
+  1) Are environmental drivers significant?
+  2) Is RDA significant
+  3) Edit plot so size of labels bigger and species indicated, change color of arrows etc.
+
+```{r fig1, echo=FALSE, hide=TRUE, warning=FALSE, include=FALSE}
+# Data exploration
+# ord_explore(physeq_18Sv4_pr2_2020 %>% tax_fix())
+
+# Create a species list from physeq object:
+HABs_18Sv4_2020_RDA_Sp_list <- physeq_18Sv4_pr2_2020 %>% 
+  tax_table() %>% 
+  data.frame() %>% 
+  rownames_to_column("ASV_combo") %>%
+  dplyr::select(c("ASV_combo","Species")) %>%
+  unique()
+
+# Create a vector list to replace environmnetal variables:
+constraint_var<-data.frame(original=c("Temp_C","Log_chla","PSU_ppt","Depth_m","lat"),
+                                   replacement=c("Temperature","Log(Chla)","Salinity","Depth","Latitude"))
+
+# Ordination plot
+HABs_18Sv4_2020_RDA<-
+physeq_18Sv4_pr2_2020 %>%
+ tax_transform(rank = "unique", trans = "binary") %>%
+ ord_calc(
+  constraints = c("Depth_m", "lat", "Temp_C","PSU_ppt","Log_chla"),
+  method = "RDA"
+ ) %>% 
+ ord_plot(
+  axes = c(1, 2),
+  plot_taxa = 1:10,
+  colour = "black", fill = "group2",
+  shape = "Depth_gp",
+  size = 3,
+  # taxon_renamer = function(x) x=stringr::str_replace(HABs_18Sv4_2020_RDA_Sp_list$Species[match(x, HABs_18Sv4_2020_RDA_Sp_list$ASV_combo)],"_"," "),
+  taxon_renamer = function(x) x=" ",
+  tax_lab_style = tax_lab_style(
+      type = "text", size = 5, fontface = "bold.italic",
+    check_overlap = TRUE
+    ),
+  constraint_lab_style = constraint_lab_style(
+    type="label", size=5, colour="darkblue",
+    check_overlap = TRUE
+  ),
+  constraint_vec_style = c(colour="darkblue", size=2),
+  var_renamer = function(x) x=constraint_var$replacement[match(x, constraint_var$original)],
+) + 
+  scale_shape_manual(values=c(21,22),
+                     breaks=c("Surface","Deep"),
+                     labels=c("Surface < 30m","Deep ≥ 30m")) +
+  scale_fill_manual(values=c("#8A9A5B","#014421"),
+                    breaks=c("DY20","NO20"),
+                    labels=c("Sep 2020","Oct 2020")) +
+  guides(fill=guide_legend(override.aes = list(shape=21, color="black"))) +
+  labs(fill = "Cruise Timing", shape="Depth") +
+  theme_bw()
+
+HABs_18Sv4_2020_RDA
+
+ ggsave(
+ file = here("SKQ_Alaska_Analysis","SKQ_Alaska_Figures","HABs_18Sv4_2020_tbRDA_noSp.pdf"),
+ width = 8,
+ height = 6, limitsize = FALSE
+)
+```
+
+### Stats associated with RDA:
+
+```{r echo=FALSE, hide=TRUE, warning=FALSE, include=FALSE}
+# save otu table:
+physeq_18Sv4_pr2_2020_otu<-t(otu_table(physeq_18Sv4_pr2_2020)) %>% data.frame()
+
+# save environmental data:
+  dplyr::select("Depth_m", "lat", "Temp_C","PSU_ppt","Log_chla")
+
+# save taxonomy table:
+physeq_18Sv4_pr2_2020_tax<-tax_table(physeq_18Sv4_pr2_2020) %>% data.frame()
+
+# Use decostand to transform sample counts to presence/absence (pa):
+physeq_18Sv4_pr2_2020_presabs <- decostand(physeq_18Sv4_pr2_2020_otu, "pa")
+
+# Run a decorona analysis to determine if species distribution is linear or uni-modal:
+dca_raw_18Sv4<-decorana(physeq_18Sv4_pr2_2020_presabs)
+dca_raw_18Sv4
+
+# RDA analysis:
+RDA_18Sv4_pr2_2020_calc<-rda(physeq_18Sv4_pr2_2020_presabs ~ Depth_m + lat + Temp_C + Log_chla, data=physeq_18Sv4_pr2_2020_env, na.action=na.omit)
+
+# Overall test of the significance of the analysis
+anova(RDA_18Sv4_pr2_2020_calc) 
+# test axes for sig. Or, we may calculate the significance of each constrained axis independently. This can be done by adding argument by = “axis” (by default, the argument by is set to NULL, see the helpfile ?anova.cca). The calculation takes rather long (there are 14 constrained axes, each tested separately); you may speed it up using parallel calculation if your computer has more than one core (use the argument parallel with the number of available cores, four in the case of my computer). Also, we will directly store the results into an object (test_axis) so as we can call it later for further processing: 
+# test_axis<- anova(RDA_18Sv4_pr2_2020_calc, by = "axis", perm.max = 999)
+# Adjust p-values for multiple tests:
+test_axis.adj <- test_axis
+test_axis.adj$`Pr(>F)` <- p.adjust (test_axis$`Pr(>F)`, method = 'holm')
+test_axis.adj
+
+# by = “margin”, testing the variance explained by each explanatory variable with all the others used as covariables (independently from their order in the model): 
+anova(RDA_18Sv4_pr2_2020_calc, by = "margin", permu = 999)
+```
+
+
+## Composition and distribution:
+
+```{r fig2, echo=FALSE, hide=TRUE, warning=FALSE, include=FALSE}
+# add column to sample data for lat/lon grouping:
+physeq_18Sv4_pr2_2020_v2<-physeq_18Sv4_pr2_2020 %>%
+  ps_mutate(Latitude=round(as.numeric(lat)),
+            Longitude=round(as.numeric(lon)))
+
+# plot 
+physeq_18Sv4_pr2_2020_v2 %>%
+  tax_fix() %>%
+   # tax_transform(trans = "rclr", rank = "unique") %>%
+  # ps_arrange(desc("Latitude")) %>%
+  comp_barplot(
+    tax_level = "Genus", n_taxa = 14, other_name = "Other",
+    label="Station",
+    # label="Latitude",
+    # taxon_renamer = function(x) stringr::str_remove(x, " [ae]t rel."),
+    palette = distinct_palette(n = 14, add = "grey90"),
+    merge_other = FALSE, bar_outline_colour = "black"
+  ) +
+  coord_flip() +
+   facet_grid(Latitude~group2,
+    scales = "free_y", # this only frees y scale per row in grid faceting
+    space = "free_y" # allows bars to be same size by freeing facet heights
+  ) +
+  # facet_wrap("Longitude", nrow = 1, scales = "free") +
+  labs(x = NULL, y = NULL)
+
+ggsave(
+  file = here::here("SKQ_Alaska_Analysis", "SKQ_Alaska_Figures", "HABs_18Sv4_CommunityComp_bargraph_genus.pdf"),
+  width = 15,
+  height = 25, limitsize = FALSE
+)
+
+```
+
+### Stacked bargraphs & pie charts on map of sites
+
+Blank map of Alaska (without pie chart)
+
+```{r fig3, echo=FALSE, hide=TRUE, warning=FALSE, include=FALSE}
+# load map data
+world <- ne_countries(scale = "medium", returnclass = "sf")
+state_prov <- rnaturalearth::ne_states(c("united states of america", "canada","russia")) %>% st_transform(3338)
+
+# long/lat without projection:
+crsLONGLAT <- "+proj=longlat +datum=WGS84 +no_defs"
+
+# the bouding box polygon in long/lat projection, i.e. axis-aligned
+bb <- st_sfc(
+  st_polygon(list(cbind(
+    c(-175,-148,-148,-175,-175), # x-coordinates (longitudes) of points A,B,C,D
+    c(55,55,75,75,55)     # y-coordinates (latitudes) of points A,B,C,D
+    ))),
+  crs = crsLONGLAT)
+
+# now in in LAEA projection
+map_limits <- st_transform(bb, crs = 3338)
+map_limits_box <- st_bbox(map_limits)
+
+## Alaska map
+Alaska_map<-ggplot(data = state_prov) +
+            geom_sf(border=1) +
+  coord_sf(crs = 3338, 
+           xlim = c(map_limits_box["xmin"], map_limits_box["xmax"]), 
+           ylim = c(map_limits_box["ymin"], map_limits_box["ymax"]),
+           expand=FALSE) +
+  scale_x_continuous(breaks=seq(round(map_limits_box["xmin"]), round(map_limits_box["xmax"]), by=10)) +
+  ggspatial::annotation_north_arrow(location = "tr", which_north = "true") +
+   theme_bw() +
+   theme(test=element_text(size=20))
+
+Alaska_map
+
+ggsave(
+  file = here::here("SKQ_Alaska_Analysis", "SKQ_Alaska_Figures", "Alaska_blank_map.pdf"),
+  width = 12,
+  height = 10, limitsize = FALSE
+)
+
+
+```
+
+### NO2020 cruise bargraphs
+
+```{r fig4, echo=FALSE, hide=TRUE, warning=FALSE, include=FALSE}
+# add column to sample data for lat/lon grouping:
+physeq_18Sv4_pr2_DY20_v2<-physeq_18Sv4_pr2_DY20 %>%
+  subset_samples(Depth_gp=="Surface") %>%
+  ps_mutate(Latitude=round(as.numeric(lat)),
+            Longitude=round(as.numeric(lon))) %>%
+  tax_fix()
+
+# Fix all unknown species id:
+tax_table(physeq_18Sv4_pr2_DY20_v2)[,"Species"] <- gsub(' Genus', '_sp.', tax_table(physeq_18Sv4_pr2_DY20_v2)[,"Species"])
+
+# create variable to merge samples by in R
+variable1 = as.character(get_variable(physeq_18Sv4_pr2_DY20_v2, "Latitude"))
+variable2 = as.character(get_variable(physeq_18Sv4_pr2_DY20_v2, "Longitude"))
+sample_data(physeq_18Sv4_pr2_DY20_v2)$Lat_Lon <- mapply(paste0, variable1, variable2, collapse = "_")
+merge_samples(physeq_18Sv4_pr2_DY20_v2, "Lat_Lon")
+
+
+# Create bargraph of community composition can we see HABs abundance change with sites
+df_18Sv4_pr2_DY20_v3<-physeq_18Sv4_pr2_DY20_v2 %>%
+  tax_agg("Species") %>%
+#  ps_mutate(Sample_ID= rownames(sample_data(SKQ_ITS_physeq2))) %>%
+  merge_samples("Lat_Lon") %>%
+  tax_transform("compositional") %>%
+  psmelt()
+
+# Filter for abundances greater than 1:
+df_18Sv4_pr2_DY20_v3_species_gt1<- df_18Sv4_pr2_DY20_v3 %>%
+  group_by(Sample, Latitude, Longitude) %>%
+filter(Abundance > 0.01)
+
+# Sum remaining taxa with a relative abundance < 1% and make a new dataframe
+Remainders_sed_DY20 <- df_18Sv4_pr2_DY20_v3_species_gt1 %>%
+  summarise(Abundance = (1-sum(Abundance))) %>% 
+  as.data.frame()
+Remainders_sed_DY20$Species<-"Species < 1%"
+Remainders_sed_DY20$Phylum<-"_Species < 1%"
+Remainders_sed_DY20$Class<-"_Species < 1%"
+Remainders_sed_DY20$Order<-"_Species < 1%"
+Remainders_sed_DY20$Genus<-"_Species < 1%"
+
+# Join dataframes
+df_18Sv4_pr2_DY20_v3_species_bar <- full_join(df_18Sv4_pr2_DY20_v3_species_gt1, Remainders_sed_DY20)
+
+# Plot 
+ggplot(data=df_18Sv4_pr2_DY20_v3_species_bar , aes(x = Sample, y = Abundance, fill = Species)) + 
+  geom_bar(stat = "identity", color='black') +
+  scale_fill_manual(values=colorRampPalette(brewer.pal(12, "Paired"))(18)) +
+  # Remove x axis title
+  theme() +
+  guides() +
+  ylab("% Relative Abundance") +
+  xlab("Lat_Lon") +
+  theme_classic() +
+  scale_y_continuous(expand = c(0,0)) +
+  theme(plot.title = element_text(hjust=0.5, size=14),
+        axis.text.x=element_text(angle=45, hjust=1))
+
+```
+
+### NO2020 cruise pie charts
+
+Calculate eDNA index for different species:
+
+```{r echo=FALSE, hide=TRUE, warning=FALSE, include=FALSE}
+# Species color palette
+# Species_cols<-c("#d6c300","#3032b2","#91da4a","#00238e","#7ddb7c","#cf7cfe","#019257","#cc003e","#00a0e6","#f88c10","#220358","#ff8941","#7499ff","#b60304","#0b3500","#ff5a4e","#666d00","#b7384d","#935f44")
+# Sample IDs from NO20:
+DY20_SampleIDs<-physeq_18Sv4_pr2_DY20_v2 %>% sample_data() %>% data.frame() %>% row.names()
+# Sample data 
+Sample_tot<-long_18Sv4_pr2 %>% dplyr::select("Sample","nReads", "lat","lon") %>% 
+  filter(Sample %in% DY20_SampleIDs) %>%
+  unique() %>%
+  mutate(Latitude=round(as.numeric(lat)),
+         Longitude=round(as.numeric(lon)),
+         Lat_Lon=paste0(Latitude,Longitude)) %>%
+  dplyr::select(Lat_Lon, nReads) %>%
+  group_by(Lat_Lon) %>%
+  summarise(Total_reads=sum(nReads)) %>%
+  rename(Sample=Lat_Lon)
+
+# Use tax_glom to merge counts for species:
+physeq_18Sv4_pr2_DY20_species<-physeq_18Sv4_pr2_DY20_v2 %>% 
+  tax_glom(taxrank = "Species")
+
+# create variable to merge samples by location for NO2020 cruise
+variable1 = as.character(get_variable(physeq_18Sv4_pr2_DY20_species, "Latitude"))
+variable2 = as.character(get_variable(physeq_18Sv4_pr2_DY20_species, "Longitude"))
+sample_data(physeq_18Sv4_pr2_DY20_species)$Lat_Lon <- mapply(paste0, variable1, variable2, collapse = "_")
+Species_18Sv4_pr2_DY20<-merge_samples(physeq_18Sv4_pr2_DY20_species, "Lat_Lon") %>% psmelt()
+
+## Calculate eDNA index:
+# Calculate eDNA
+Species_18Sv4_pr2_DY20_v2<- Species_18Sv4_pr2_DY20 %>%
+  # left_join(Sample_tot) %>%
+  group_by(Sample) %>%
+  mutate(Total_reads=sum(Abundance)) %>%
+  ungroup() %>%
+  group_by(Sample, Latitude, Longitude, Species, Total_reads) %>%
+  summarise(Prop_abund=Abundance/Total_reads) %>%
+  ungroup() %>%
+  group_by(Species) %>%
+  mutate(Colmax = max(Prop_abund),
+            eDNA_Index = Prop_abund / Colmax) %>%
+  replace(is.na(.), 0) %>%
+  separate(Species, c("Genus", "second_part"), sep = "_", remove = FALSE) %>%
+  dplyr::select(-second_part)
+
+```
+
+#### Look at Gyrodinium helveticum
+
+```{r echo=FALSE, hide=TRUE, warning=FALSE, include=FALSE}
+# Filter species of interest
+DY20_Ghelveticum<- Species_18Sv4_pr2_DY20_v2 %>%
+  ungroup() %>%
+  filter(Species=="Gyrodinium_helveticum") %>%
+  group_by(Sample, Species, Latitude, Longitude) %>%
+  mutate(eDNA_Index = sum(eDNA_Index))
+
+# Sum remaining taxa with a relative abundance < 1% and make a new dataframe
+Remainders_DY20_Ghelveticum<- DY20_Ghelveticum %>% ungroup() %>%
+  mutate(eDNA_Index = (1-eDNA_Index))
+
+Remainders_DY20_Ghelveticum$Species<-"Remaining"
+
+# Join dataframes
+DY20_Ghelveticum_pie <- # df_18Sv4_pr2_NO20_v3_species_bar %>%
+  full_join(DY20_Ghelveticum, Remainders_DY20_Ghelveticum) %>% 
+  rename(value=eDNA_Index) %>% group_by(Sample, Latitude, Longitude)
+```
+
+Map scatterplot onto map
+
+```{r fig5, echo=FALSE, hide=TRUE, warning=FALSE, include=FALSE}
+convert_ant = function(data,
+                    src.proj = CRS("+init=epsg:4326"),
+                    ant.proj = CRS("+init=epsg:3338")) {
+        require(sp)
+        as.data.frame(
+                spTransform(
+                        SpatialPointsDataFrame(
+                                coords = data.frame(Lon_crs = DY20_Ghelveticum_pie$Longitude,
+                                                    Lat_crs = DY20_Ghelveticum_pie$Latitude),
+                                data = data.frame(Sample = DY20_Ghelveticum_pie$Sample,
+                                                  Longitude = DY20_Ghelveticum_pie$Longitude,
+                                                  Latitude = DY20_Ghelveticum_pie$Latitude),
+                                proj4string = src.proj), ant.proj))
+
+}
+Lat_Lon_converted<- convert_ant(data = DY20_Ghelveticum_pie) %>% dplyr::select(-c("Latitude","Longitude"))
+
+
+# join converted data with map:
+DY20_Ghelveticum_pie2 <- DY20_Ghelveticum_pie %>% left_join(Lat_Lon_converted) %>% unique()
+
+# map with bargraphs:
+Alaska_map + 
+# ggplot() +
+  geom_scatterpie(aes(x=coords.x1, y=coords.x2, r=60000), data=as.data.frame(DY20_Ghelveticum_pie2), 
+                  cols="Species", color="black", alpha=0.5, long_format = TRUE) +
+  # scale_fill_manual(values=colorRampPalette(brewer.pal(12, "Paired"))(16)) +
+  scale_fill_manual(values=c("goldenrod","#283447"),
+                    breaks=c("Gyrodinium_helveticum","All_other_taxa"),
+                    labels=c(expression(italic("Gyrodinium helveticum")),"All other Species")) +
+  theme_bw() +
+  labs(fill="Species", y="Latitude",x="Longitude") +
+  # scale_y_continuous(expand = c(0,0)) +
+  # xlim(-178,-152) +
+  # ylim(55, 75) +
+  theme(plot.title = element_text(hjust=0.5, size=14),
+        axis.text.x=element_text(angle=45, hjust=1),
+        text=element_text(size=20),
+        legend.position = c(0.75,0.35),
+        legend.background = element_rect(size = 0.5, colour = 1))
+
+
+ggsave(
+ file = here::here("SKQ_Alaska_Analysis", "SKQ_Alaska_Figures", "DY2020_18Sv4_HABs_GHelveticum_map.pdf"),
+ width = 12,
+ height = 10, limitsize = FALSE
+)
+
+```
+
+
+##### pie chart to add to pa figure:
+
+```{r fig6, echo=FALSE, hide=TRUE, warning=FALSE, include=FALSE}
+# map with bargraphs:
+ggplot() +
+  geom_scatterpie(aes(x=Longitude, y=Latitude, r=1), data=as.data.frame(DY20_Ghelveticum_pie2 %>% filter(Latitude==71)), 
+                  cols="Species", color="black", alpha=0.5, long_format = TRUE) +
+  # scale_fill_manual(values=colorRampPalette(brewer.pal(12, "Paired"))(16)) +
+  scale_fill_manual(values=c("goldenrod","#283447"),
+                    breaks=c("Gyrodinium_helveticum","All_other_taxa"),
+                    labels=c(expression(italic("Gyrodinium helveticum")),"All other Species")) +
+  theme_bw() +
+  labs(fill="Species", y="Latitude",x="Longitude") +
+  # scale_y_continuous(expand = c(0,0)) +
+  xlim(-175,-145) +
+  ylim(55, 75) +
+  theme(plot.title = element_text(hjust=0.5, size=14),
+        axis.text.x=element_text(angle=45, hjust=1),
+        text=element_text(size=20),
+        legend.position = "none",
+        panel.background = element_rect(fill='transparent'),
+         plot.background = element_rect(fill='transparent', color=NA),
+         panel.grid.major = element_blank(),
+         panel.grid.minor = element_blank(),
+         legend.background = element_rect(fill='transparent'),
+         legend.box.background = element_rect(fill='transparent'))
+
+
+ggsave(
+ file = here::here("SKQ_Alaska_Analysis", "SKQ_Alaska_Figures", "DY2020_18Sv4_HABs_GHelveticum_eDNA_eq71lat.pdf"),
+ width = 10,
+ height = 10, limitsize = FALSE
+)
+
+```
+
+
+#### Look at A. catenella (sp. of interest):
+
+```{r echo=FALSE, hide=TRUE, warning=FALSE, include=FALSE}
+# Filter species of interest
+DY20_Acat<- Species_18Sv4_pr2_DY20_v2 %>%
+  ungroup() %>%
+  filter(Species=="Alexandrium_catenella") %>%
+  # mutate(Species=case_when(Species=="Gymnodinium_sp."~"Gymnodinium Genus",
+  #                         Species!="Gymnodinium_sp."~Species)) %>%
+  group_by(Sample, Species, Latitude, Longitude) %>%
+  summarise(eDNA_Index = sum(eDNA_Index))
+
+Remainders_DY20_Acat<- DY20_Acat %>% ungroup() %>%
+  group_by(Sample, Species, Latitude, Longitude) %>%
+  mutate(eDNA_Index = (1-sum(eDNA_Index)))
+
+Remainders_DY20_Acat$Species<-"Remaining"
+
+# Join dataframes
+DY20_Acat_pie <- # df_18Sv4_pr2_NO20_v3_species_bar %>%
+  full_join(DY20_Acat, Remainders_DY20_Acat) %>% 
+  rename(value=eDNA_Index) %>% group_by(Sample, Latitude, Longitude)
+```
+
+Map scatterplot onto map
+
+```{r fig7, echo=FALSE, hide=TRUE, warning=FALSE, include=FALSE}
+convert_ant = function(data,
+                    src.proj = CRS("+init=epsg:4326"),
+                    ant.proj = CRS("+init=epsg:3338")) {
+        require(sp)
+        as.data.frame(
+                spTransform(
+                        SpatialPointsDataFrame(
+                                coords = data.frame(Lon_crs = DY20_Acat_pie$Longitude,
+                                                    Lat_crs = DY20_Acat_pie$Latitude),
+                                data = data.frame(Sample = DY20_Acat_pie$Sample,
+                                                  Longitude = DY20_Acat_pie$Longitude,
+                                                  Latitude = DY20_Acat_pie$Latitude),
+                                proj4string = src.proj), ant.proj))
+
+}
+Lat_Lon_converted<- convert_ant(data = DY20_Acat_pie) %>% dplyr::select(-c("Latitude","Longitude"))
+
+
+# join converted data with map:
+DY20_Acat_pie2 <- DY20_Acat_pie %>% left_join(Lat_Lon_converted) %>% unique()
+
+# map with bargraphs:
+Alaska_map + 
+# ggplot() +
+  geom_scatterpie(aes(x=coords.x1, y=coords.x2, r=60000), data=as.data.frame(DY20_Acat_pie2), 
+                  cols="Species", color="black", alpha=0.5, long_format = TRUE) +
+  # scale_fill_manual(values=colorRampPalette(brewer.pal(12, "Paired"))(16)) +
+  scale_fill_manual(values=c("#3179b8","#283447"),
+                  breaks=c("Alexandrium_catenella","Remaining"),
+                  labels=c(expression(italic("Alexandrium_catenella")), "Remaining")) +
+  theme_bw() +
+  labs(fill="Genus", y="Latitude",x="Longitude") +
+  # scale_y_continuous(expand = c(0,0)) +
+  # xlim(-178,-152) +
+  # ylim(55, 75) +
+  theme(plot.title = element_text(hjust=0.5, size=14),
+        axis.text.x=element_text(angle=45, hjust=1),
+        text=element_text(size=20),
+        legend.position = c(0.75,0.35),
+        legend.background = element_rect(size = 0.5, colour = 1))
+
+ggsave(
+ file = here::here("SKQ_Alaska_Analysis", "SKQ_Alaska_Figures", "DY2020_18Sv4_HABs_ACat_eDNA_map.pdf"),
+ width = 12,
+ height = 10, limitsize = FALSE
+)
+
+```
+
+##### pie chart to add to pa figure:
+
+```{r fig8, echo=FALSE, hide=TRUE, warning=FALSE, include=FALSE}
+# map with bargraphs:
+ggplot() +
+  geom_scatterpie(aes(x=Longitude, y=Latitude, r=1), data=as.data.frame(DY20_Acat_pie2 %>% filter(Sample=="68-168"|Sample=="65-170"|Sample=="62-175"|Sample=="71-157")), 
+                  cols="Species", color="black", alpha=0.8, long_format = TRUE) +
+  # scale_fill_manual(values=colorRampPalette(brewer.pal(12, "Paired"))(16)) +
+  scale_fill_manual(values=c("#022C6D","#B2B2B2"),
+                    breaks=c("Alexandrium_catenella","Remaining"),
+                    labels=c(expression(italic("Alexandrium catenella")),"Remaining")) +
+  theme_bw() +
+  labs(fill="Species", y="Latitude",x="Longitude") +
+  # scale_y_continuous(expand = c(0,0)) +
+  # xlim(-175,-145) +
+  # ylim(55, 75) +
+  theme(plot.title = element_text(hjust=0.5, size=14),
+        axis.text.x=element_text(angle=45, hjust=1),
+        text=element_text(size=20),
+        legend.position = "none",
+        panel.background = element_rect(fill='transparent'),
+         plot.background = element_rect(fill='transparent', color=NA),
+         panel.grid.major = element_blank(),
+         panel.grid.minor = element_blank(),
+         legend.background = element_rect(fill='transparent'),
+         legend.box.background = element_rect(fill='transparent'))
+
+
+ggsave(
+ file = here::here("SKQ_Alaska_Analysis", "SKQ_Alaska_Figures", "DY2020_18Sv4_HABs_Acat_eDNA_filt.pdf"),
+ width = 10,
+ height = 10, limitsize = FALSE
+)
+
+```
+
+
+#### Look at Alex/Pn
+
+```{r echo=FALSE, hide=TRUE, warning=FALSE, include=FALSE}
+# Filter species of interest
+DY20_Pn<- Species_18Sv4_pr2_DY20_v2 %>%
+  ungroup() %>%
+  filter(Genus=="Pseudo-nitzschia") %>%
+  # mutate(Species=case_when(Species=="Gymnodinium_sp."~"Gymnodinium Genus",
+  #                         Species!="Gymnodinium_sp."~Species)) %>%
+  group_by(Sample, Genus, Latitude, Longitude) %>%
+  summarise(eDNA_Index = sum(eDNA_Index))
+
+Remainders_DY20_Pn<- DY20_Pn %>% ungroup() %>%
+  group_by(Sample, Genus, Latitude, Longitude) %>%
+  mutate(eDNA_Index = (1-sum(eDNA_Index)))
+
+Remainders_DY20_Pn$Genus<-"Remaining"
+
+# Join dataframes
+DY20_Pn_pie <- # df_18Sv4_pr2_NO20_v3_species_bar %>%
+  full_join(DY20_Pn, Remainders_DY20_Pn) %>% 
+  rename(value=eDNA_Index) %>% group_by(Sample, Latitude, Longitude)
+```
+
+Map scatterplot onto map
+
+```{r fig9, echo=FALSE, hide=TRUE, warning=FALSE, include=FALSE}
+convert_ant = function(data,
+                    src.proj = CRS("+init=epsg:4326"),
+                    ant.proj = CRS("+init=epsg:3338")) {
+        require(sp)
+        as.data.frame(
+                spTransform(
+                        SpatialPointsDataFrame(
+                                coords = data.frame(Lon_crs = DY20_Pn_pie$Longitude,
+                                                    Lat_crs = DY20_Pn_pie$Latitude),
+                                data = data.frame(Sample = DY20_Pn_pie$Sample,
+                                                  Longitude = DY20_Pn_pie$Longitude,
+                                                  Latitude = DY20_Pn_pie$Latitude),
+                                proj4string = src.proj), ant.proj))
+
+}
+Lat_Lon_converted<- convert_ant(data = DY20_Pn_pie) %>% dplyr::select(-c("Latitude","Longitude"))
+
+
+# join converted data with map:
+DY20_Pn_pie2 <- DY20_Pn_pie %>% left_join(Lat_Lon_converted) %>% unique()
+
+# map with bargraphs:
+ggplot() +
+  geom_scatterpie(aes(x=Longitude, y=Latitude, r=0.4), data=as.data.frame(DY20_Pn_pie2), # %>% filter(Sample=="66-168" | Sample=="67-168")), 
+                  cols="Genus", color="black", alpha=0.8, long_format = TRUE) +
+  # scale_fill_manual(values=colorRampPalette(brewer.pal(12, "Paired"))(16)) +
+  scale_fill_manual(values=c("#2b8b7c","#B2B2B2"),
+                  breaks=c("Pseudo-nitzschia","All_other_taxa"),
+                  labels=c(expression(italic("Pseudo-nitzschia")), "All other Species")) +
+  theme_bw() +
+  labs(fill="Genus", y="Latitude", x="Longitude") +
+  # scale_y_continuous(expand = c(0,0)) +
+  # xlim(-170,-165) +
+  # ylim(65, 70) +
+  theme(plot.title = element_text(hjust=0.5, size=14),
+        axis.text.x=element_text(angle=45, hjust=1),
+        text=element_text(size=20),
+        panel.background = element_rect(fill='transparent'),
+         plot.background = element_rect(fill='transparent', color=NA),
+         panel.grid.major = element_blank(),
+         panel.grid.minor = element_blank(),
+         legend.background = element_rect(fill='transparent'),
+         legend.box.background = element_rect(fill='transparent'))
+        # legend.position = c(0.75,0.9),)
+
+ggsave(
+ file = here::here("SKQ_Alaska_Analysis", "SKQ_Alaska_Figures", "DY2020_18Sv4_HABs_Pn_pie.pdf"),
+ width = 12,
+ height = 10, limitsize = FALSE
+)
+
+```
+
+##### pie chart to add to pa figure:
+
+```{r fig10, echo=FALSE, hide=TRUE, warning=FALSE, include=FALSE}
+# map with bargraphs:
+ggplot() +
+  geom_scatterpie(aes(x=Longitude, y=Latitude, r=0.4), data=as.data.frame(DY20_Pn_pie2 %>% filter(Sample=="63-173"|Sample=="65-169"|Sample=="68-168"|Sample=="65-170"| Sample=="68-167"| Sample=="71-160")), 
+                  cols="Genus", color="black", alpha=0.8, long_format = TRUE) +
+  # scale_fill_manual(values=colorRampPalette(brewer.pal(12, "Paired"))(16)) +
+  scale_fill_manual(values=c("#2b8b7c","#B2B2B2"),
+                  breaks=c("Pseudo-nitzschia","All_other_taxa"),
+                  labels=c(expression(italic("Pseudo-nitzschia")), "All other Species")) +
+  theme_bw() +
+  labs(fill="Species", y="Latitude",x="Longitude") +
+  # scale_y_continuous(expand = c(0,0)) +
+  # xlim(-175,-145) +
+  # ylim(55, 75) +
+  theme(plot.title = element_text(hjust=0.5, size=14),
+        axis.text.x=element_text(angle=45, hjust=1),
+        text=element_text(size=20),
+        legend.position = "none",
+        panel.background = element_rect(fill='transparent'),
+         plot.background = element_rect(fill='transparent', color=NA),
+         panel.grid.major = element_blank(),
+         panel.grid.minor = element_blank(),
+         legend.background = element_rect(fill='transparent'),
+         legend.box.background = element_rect(fill='transparent'))
+
+
+ggsave(
+ file = here::here("SKQ_Alaska_Analysis", "SKQ_Alaska_Figures", "DY2020_18Sv4_HABs_Pn_eDNA_filt.pdf"),
+ width = 10,
+ height = 10, limitsize = FALSE
+)
+
+```
+
+## Species presence/absence along transect
+
+Calculate Presence/Absence of G. helveticum, Pseudo-nitzschia, Alexandrium etc.
+
+```{r echo=FALSE, hide=TRUE, warning=FALSE, include=FALSE}
+# Create bargraph of community composition can we see HABs abundance change with sites
+physeq_18Sv4_pr2_DY20_pa<-physeq_18Sv4_pr2_DY20_v2 %>%
+#  ps_mutate(Sample_ID= rownames(sample_data(SKQ_ITS_physeq2))) %>%
+  merge_samples("Lat_Lon") %>%
+  tax_transform("binary") %>%
+  psmelt()
+
+# Convert lat/lon for plotting:
+convert_ant = function(data,
+                    src.proj = CRS("+init=epsg:4326"),
+                    ant.proj = CRS("+init=epsg:3338")) {
+        require(sp)
+        as.data.frame(
+                spTransform(
+                        SpatialPointsDataFrame(
+                                coords = data.frame(Lon_crs = physeq_18Sv4_pr2_DY20_pa$Longitude,
+                                                    Lat_crs = physeq_18Sv4_pr2_DY20_pa$Latitude),
+                                data = data.frame(Sample = physeq_18Sv4_pr2_DY20_pa$Sample,
+                                                  Longitude = physeq_18Sv4_pr2_DY20_pa$Longitude,
+                                                  Latitude = physeq_18Sv4_pr2_DY20_pa$Latitude),
+                                proj4string = src.proj), ant.proj))
+
+}
+Lat_Lon_converted<- convert_ant(data = physeq_18Sv4_pr2_DY20_pa) 
+Lat_Lon_converted2<-Lat_Lon_converted %>% dplyr::select(-c("Latitude","Longitude")) %>% unique()
+# join converted data with map:
+physeq_18Sv4_pr2_DY20_pa2 <- physeq_18Sv4_pr2_DY20_pa %>% left_join(Lat_Lon_converted2)
+
+
+```
+
+#### G. helveticum
+
+```{r fig8, echo=FALSE, warning=FALSE}
+# save subset of data to plot:
+DY20_18Sv4_pr2_Ghelv_pa <- physeq_18Sv4_pr2_DY20_pa2 %>% 
+  filter(Species=="Gyrodinium_helveticum") %>%
+  # mutate(Species = replace(Species, Species == 'Pseudo-nitzschia_sp.', 'Pseudo-nitzschia Genus')) %>%
+  group_by(Species, coords.x2, coords.x1, Sample, Log_chla) %>%
+  summarise(pres=as.factor(ifelse(sum(Abundance)>0,1,0))) %>%
+  mutate(chl_gp=if_else(Log_chla > 0.5,"lg_chl","sm_chl"))
+
+# make sure factors of presence are obvious:
+DY20_18Sv4_pr2_Ghelv_pa$pres <- factor(DY20_18Sv4_pr2_Ghelv_pa$pres, levels = c("1", "0"))
+
+# ggplot map
+DY2020_Ghelv_pa_map<-
+  Alaska_map +
+    geom_point(data = DY20_18Sv4_pr2_Ghelv_pa , 
+               aes(x = coords.x1, y = coords.x2, fill=pres, shape=chl_gp), 
+               size=4, color="black", show.legend = TRUE) + #, position=position_jitter(h=0, width=200000)) +
+    scale_fill_manual(breaks = c( "1","0"), 
+                       values=c("goldenrod", "#f5f5f5"),
+                       labels=c("Present","Absent"), drop=FALSE) +
+  scale_shape_manual(values=c(24,21)) +
+   # facet_grid(. ~ Species) +
+    theme_bw() +
+  guides(shape="none", fill=guide_legend(override.aes = c(shape=21))) +
+    labs(x="Longitude", y="Latitude", title=expression(paste("Presence of ", italic("Gyrodinium helveticum")))) +
+    theme(axis.text.x=element_text(angle=45, hjust=1),
+        text=element_text(size=20),
+        legend.position = c(0.85,0.1),
+        legend.background = element_rect(size = 0.5, colour = 1),
+        legend.title=element_blank())
+
+DY2020_Ghelv_pa_map
+
+ggsave(
+  file = here::here("SKQ_Alaska_Analysis", "SKQ_Alaska_Figures", "DY2020_18Sv4_HABs_Ghelv_pa_map.pdf"),
+  width = 8,
+  height = 10, limitsize = FALSE
+)
+```
+
+#### Pseudo-nitzschia
+
+```{r fig9, echo=FALSE, warning=FALSE}
+# save subset of data to plot:
+DY20_18Sv4_pr2_Pn_pa <- physeq_18Sv4_pr2_DY20_pa2 %>% 
+  filter(Genus=="Pseudo-nitzschia") %>%
+  # mutate(Species = replace(Species, Species == 'Pseudo-nitzschia_sp.', 'Pseudo-nitzschia Genus')) %>%
+  group_by(Species, coords.x2, coords.x1, Sample, Log_chla) %>%
+  summarise(pres=as.factor(ifelse(sum(Abundance)>0,1,0))) %>%
+  mutate(chl_gp=if_else(Log_chla > 0.5,"lg_chl","sm_chl"))
+
+# ggplot map
+DY2020_Pn_map<-
+  Alaska_map +
+    geom_point(data = DY20_18Sv4_pr2_Pn_pa %>% filter(Species=="Pseudo-nitzschia_sp."), 
+               aes(x = coords.x1, y = coords.x2, fill=pres, shape=chl_gp), 
+               size=4, color="black") +
+    scale_fill_manual(breaks = c( "1","0"), 
+                       values=c("#2b8b7c", "#f5f5f5"),
+                       labels=c("Present","Absent")) +
+  scale_shape_manual(values=c(24,21)) +
+   # facet_grid(. ~ Species) +
+    theme_bw() +
+  guides(shape="none", fill=guide_legend(override.aes = c(shape=21))) +
+    labs(x="Longitude", y="Latitude", title=expression(paste("Presence of ", italic("Pseudo-nitzschia spp.")))) +
+    theme(axis.text.x=element_text(angle=45, hjust=1),
+        text=element_text(size=20),
+        legend.position = c(0.85,0.1),
+        legend.background = element_rect(size = 0.5, colour = 1),
+        legend.title=element_blank())
+
+DY2020_Pn_map
+
+ggsave(
+  file = here::here("SKQ_Alaska_Analysis", "SKQ_Alaska_Figures", "NO2020_18Sv4_HABs_Pn_pa_map.pdf"),
+  width = 8,
+  height = 10, limitsize = FALSE
+)
+```
+
+#### Alexandrium catenella
+
+```{r fig9, echo=FALSE, warning=FALSE}
+# save subset of data to plot:
+DY20_18Sv4_pr2_Acat_pa <- physeq_18Sv4_pr2_DY20_pa2 %>% 
+  filter(Genus=="Alexandrium") %>%
+  # mutate(Species = replace(Species, Species == 'Pseudo-nitzschia_sp.', 'Pseudo-nitzschia Genus')) %>%
+  group_by(Species, coords.x2, coords.x1, Sample, Log_chla) %>%
+  summarise(pres=as.factor(ifelse(sum(Abundance)>0,1,0))) %>%
+  mutate(chl_gp=if_else(Log_chla > 0.5,"lg_chl","sm_chl"))
+
+# ggplot map
+DY2020_Acat_map<-
+  Alaska_map +
+    geom_point(data = DY20_18Sv4_pr2_Acat_pa %>% filter(Species=="Alexandrium_catenella"), 
+               aes(x = coords.x1, y = coords.x2, fill=pres, shape=chl_gp), 
+               size=4, color="black") +
+    scale_fill_manual(breaks = c( "1","0"), 
+                       values=c("#003d80", "#f5f5f5"),
+                       labels=c("Present","Absent")) +
+  scale_shape_manual(values=c(24,21)) +
+   # facet_grid(. ~ Species) +
+    theme_bw() +
+  guides(shape="none", fill=guide_legend(override.aes = c(shape=21))) +
+    labs(x="Longitude", y="Latitude", title=expression(paste("Presence of ", italic("Alexandrium catenella")))) +
+    theme(axis.text.x=element_text(angle=45, hjust=1),
+        text=element_text(size=20),
+        legend.position = c(0.85,0.1),
+        legend.background = element_rect(size = 0.5, colour = 1),
+        legend.title=element_blank())
+
+DY2020_Acat_map
+
+ggsave(
+  file = here::here("SKQ_Alaska_Analysis", "SKQ_Alaska_Figures", "DY2020_18Sv4_HABs_Acat_pa_map.pdf"),
+  width = 8,
+  height = 10, limitsize = FALSE
+)
+```
+
+
+#### Combine all three:
+
+```{r fig9, echo=FALSE, warning=FALSE}
+# ggplot map
+DY2020_All3_map<- DY2020_Pn_map + DY2020_Acat_map + DY2020_Ghelv_pa_map  +
+  plot_layout(axes="collect")
+
+DY2020_All3_map
+
+ggsave(
+  file = here::here("SKQ_Alaska_Analysis", "SKQ_Alaska_Figures", "DY2020_18Sv4_HABs_pa_All3_map.pdf"),
+  width = 20,
+  height = 10, limitsize = FALSE
+)
+```
+
+
+## Diversity of HABs and all phytos across region (NO20)
+
+Subset data:
+
+```{r echo=FALSE, warning=FALSE}
+# Only keep known Genera:
+physeq_18Sv4_pr2_Genus<-subset_taxa(physeq_18Sv4_pr2, !is.na(Genus))
+# subset only HABs:
+physeq_18Sv4_DY20_HABs<-subset_taxa(physeq_18Sv4_pr2_Genus, Genus %in% HABs_list$GenusName_accepted) %>%
+  ps_mutate(Depth_gp=if_else(Depth_m>=30,"Deep","Surface")) %>%
+  subset_samples(group2=="DY20" & Depth_gp=="Surface") %>%
+              phyloseq_validate(remove_undetected = TRUE)
+  # subset_samples()
+
+# All phytoplankton:
+physeq_18Sv4_DY20_AllPhyto<-subset_taxa(physeq_18Sv4_pr2, !is.na(Domain)) %>%
+  subset_taxa(Supergroup %in% c("TSAR","Obazoa","Cryptista","Amoebozoa","Archaeplastida","Haptista","Excavata")) %>%
+  ps_mutate(Depth_gp=if_else(Depth_m>=30,"Deep","Surface")) %>%
+  subset_samples(group2=="DY20" & Depth_gp=="Surface") %>%
+              phyloseq_validate(remove_undetected = TRUE)
+
+```
+
+### Calculate richness:
+
+```{r echo=FALSE, warning=FALSE}
+# Only keep known Genera:
+rich_18Sv4_DY20_HABs<-estimate_richness(physeq_18Sv4_DY20_HABs, measures=c("Observed")) %>% rownames_to_column(var="Sample")
+rich_18Sv4_DY20_AllPhyto<-estimate_richness(physeq_18Sv4_DY20_AllPhyto, measures=c("Observed")) %>% rownames_to_column(var="Sample")
+
+# get sample data from original phyloseq object
+sam_18Sv4_DY20_HABs <- physeq_18Sv4_DY20_HABs %>% sample_data() %>% data.frame() %>%
+  mutate(Latitude=round(as.numeric(lat)),
+         Longitude=round(as.numeric(lon)),
+         Lat_Lon=paste0(Latitude,Longitude)) %>%
+  rownames_to_column(var="Sample") %>%
+  dplyr::select("Sample","Latitude","Longitude","Lat_Lon", "Log_chla")
+
+sam_18Sv4_DY20_AllPhyto <- physeq_18Sv4_DY20_AllPhyto %>% sample_data() %>% data.frame() %>%
+  mutate(Latitude=round(as.numeric(lat)),
+         Longitude=round(as.numeric(lon)),
+         Lat_Lon=paste0(Latitude,Longitude)) %>%
+  rownames_to_column(var="Sample") %>%
+  dplyr::select("Sample","Latitude","Longitude","Lat_Lon", "Log_chla")
+
+# Now combine richness with sample data I need for plotting:
+rich_18Sv4_DY20_HABs2<-rich_18Sv4_DY20_HABs %>% left_join(sam_18Sv4_DY20_HABs) %>% rename(HABs=Observed)
+rich_18Sv4_DY20_AllPhyto2<-rich_18Sv4_DY20_AllPhyto %>% left_join(sam_18Sv4_DY20_AllPhyto) %>% rename(All_phyto=Observed)
+
+# join the two dataframes:
+All_rich<-rich_18Sv4_DY20_AllPhyto2 %>% full_join(rich_18Sv4_DY20_HABs2) %>% 
+  pivot_longer(cols=c("All_phyto","HABs"), names_to = "Euk_group", values_to = "Richness") %>%
+  mutate(chl_gp=if_else(Log_chla > 0.5,"lg_chl","sm_chl"))
+  
+```
+
+### Boxplot of Richness:
+
+#### HABs richness first:
+
+```{r fig10, echo=FALSE, warning=FALSE}
+# plot richness
+DY20_HAB_rich_plot<-ggplot(All_rich %>% filter(Euk_group=="HABs"), aes(x=Latitude, y=Richness, group=Latitude, shape=chl_gp)) +
+    # geom_boxplot(fill="#9c4242", alpha=0.9) +
+  geom_point(color="black", alpha=0.8, fill="#9c4242",size=4) +
+  scale_shape_manual(values=c(24,21)) +
+    # stat_boxplot(geom = "errorbar", width = 0.5) +
+    # scale_fill_manual(breaks = c("HABs","All_phyto"), 
+    #                   values=c("#014421", "#565656"),
+    #                   labels=c("HABs","All Eukaryotes")) +
+  # facet_grid(~Euk_group, scales="free_x") +
+  xlim(55,73) +
+    theme_bw() +
+    labs(x="Latitude", y="HAB Richness", legend.title="Eukaryotic group") +
+    coord_flip() +
+    theme(text=element_text(size=20),
+        legend.background = element_rect(size = 0.5, colour = 1),
+        legend.position="none")
+
+DY20_HAB_rich_plot
+
+ggsave(
+  file = here::here("SKQ_Alaska_Analysis", "SKQ_Alaska_Figures", "DY2020_18Sv4_HAB_Rich.pdf"),
+  width = 5,
+  height = 10, limitsize = FALSE
+)
+
+```
+
+#### Phyto richness:
+
+```{r fig11, echo=FALSE, warning=FALSE}
+# plot richness
+DY20_Phyto_rich_plot<-ggplot(All_rich %>% filter(Euk_group=="All_phyto"), aes(x=Latitude, y=Richness, group=Latitude, shape=chl_gp)) +
+    # geom_boxplot(fill="#9c4242", alpha=0.9) +
+  geom_point(color="black", alpha=0.8, fill="#41838b", size=4) +
+  scale_shape_manual(values=c(24,21)) +
+    # stat_boxplot(geom = "errorbar", width = 0.5) +
+    # scale_fill_manual(breaks = c("HABs","All_phyto"), 
+    #                   values=c("#014421", "#565656"),
+    #                   labels=c("HABs","All Eukaryotes")) +
+  # facet_grid(~Euk_group, scales="free_x") +
+  xlim(55,73) +
+    theme_bw() +
+    labs(x="Latitude", y="Phytoplankton Richness", legend.title="Eukaryotic group") +
+    coord_flip() +
+    theme(text=element_text(size=20),
+        legend.background = element_rect(size = 0.5, colour = 1),
+        legend.position="none")
+
+DY20_Phyto_rich_plot
+
+ggsave(
+  file = here::here("SKQ_Alaska_Analysis", "SKQ_Alaska_Figures", "DY2020_18Sv4_Phyto_Rich.pdf"),
+  width = 5,
+  height = 10, limitsize = FALSE
+)
+
+```
+
+### Boxplot of Chlorophyll a with latitude
+
+```{r fig12, echo=FALSE, warning=FALSE}
+# Filter out for only surface samples of DY20
+physeq_18Sv4_DY20_Surf<-subset_taxa(physeq_18Sv4_pr2) %>%
+  ps_mutate(Depth_gp=if_else(Depth_m>=30,"Deep","Surface")) %>%
+  subset_samples(group2=="DY20" & Depth_gp=="Surface") %>%
+              phyloseq_validate(remove_undetected = TRUE)
+# Extract sample data (chl a)
+Chla_18Sv4_DY20_Surf <- physeq_18Sv4_DY20_Surf %>% 
+  sample_data() %>% data.frame() %>%
+  mutate(Latitude=round(as.numeric(lat)),
+         Longitude=round(as.numeric(lon)),
+         Lat_Lon=paste0(Latitude,Longitude)) %>%
+  rownames_to_column(var="Sample") %>%
+  dplyr::select("Chla_ugrams.per.l","Latitude","Longitude","Lat_Lon") %>%
+  unique() %>%
+  mutate(Log_chla=log10(Chla_ugrams.per.l),
+         chl_gp=if_else(Log_chla > 0.5,"lg_chl","sm_chl"))
+
+
+DY20_Chla_plot<-ggplot(Chla_18Sv4_DY20_Surf,aes(x=Latitude, y=Log_chla, group=Latitude, shape=chl_gp)) +
+   # geom_boxplot(fill="#014421", alpha=0.9) +
+    geom_point(color="black", alpha=0.8,fill="#014421", size=4) +
+    scale_shape_manual(values=c(24,21)) +
+  xlim(55,73) +
+    theme_bw() +
+    labs(x="Latitude", y=expression(paste("Log10 Chlorophyll ", italic("a"),"(\u03BCg/L)"))) +
+    coord_flip() +
+    theme(text=element_text(size=20),
+        legend.background = element_rect(size = 0.5, colour = 1),
+        legend.position="none")
+
+DY20_Chla_plot
+
+ggsave(
+  file = here::here("SKQ_Alaska_Analysis", "SKQ_Alaska_Figures", "DY2020_18Sv4_LogChla.pdf"),
+  width = 5,
+  height = 10, limitsize = FALSE
+)
+
+```
+
+Combine chla and richness plot for easier visualization:
+
+```{r fig12, echo=FALSE, warning=FALSE}
+# Combo plot
+DY20_Chla_rich_plot<- DY20_Chla_plot + DY20_Phyto_rich_plot + DY20_HAB_rich_plot +
+  plot_layout(axes="collect")
+
+DY20_Chla_rich_plot
+
+ggsave(
+  file = here::here("SKQ_Alaska_Analysis", "SKQ_Alaska_Figures", "DY2020_18Sv4_LogChla_Rich.pdf"),
+  width = 10,
+  height = 10, limitsize = FALSE
+)
+
+```
+
+
+#### Software and package versions used for file:
+
+```{r warning=FALSE}
+print(sessionInfo(), locale = FALSE)
+```
+
