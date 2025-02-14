@@ -1,0 +1,12 @@
+1	Eukaryota	Chordata	Actinopteri	Pleuronectiformes	Pleuronectidae
+1	Bacteria	Pseudomonadota	Alphaproteobacteria
+4	Eukaryota	Chordata	Actinopteri	Gadiformes	Gadidae	Boreogadus	Boreogadus saida
+1	Bacteria	Planctomycetota	Planctomycetia	Planctomycetales	Planctomycetaceae
+1	Bacteria	Pseudomonadota	Gammaproteobacteria
+1	Bacteria	Pseudomonadota	Alphaproteobacteria
+3	Eukaryota	Chordata	Actinopteri	Salmoniformes	Salmonidae	Oncorhynchus	Oncorhynchus kisutch (coho salmon)
+1	Eukaryota
+3	Eukaryota	Chordata	Actinopteri	Gadiformes	Gadidae	Gadus	Gadus chalcogrammus (walleye pollock)
+1	Bacteria	Pseudomonadota	Gammaproteobacteria	Alteromonadales	Alteromonadaceae	Alkalimarinus
+3	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Pseudo_nitzschia
+1	Eukaryota	Dinophyceae__p	Dinophyceae	Dinophysales	Dinophysaceae	Dinophysis

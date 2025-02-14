@@ -120,7 +120,18 @@ bottle_Data$bottle <- as.character(bottle_Data$btl_bottle)
 
 ctd_Data <- read.csv(file =here("CTD_dy2209_final_merged_62b5_4b35_a001.csv"), header=T)
 
+
 ctd_Data %>% 
+  dplyr::group_by(profile_id,pressure)  %>% 
+  filter(n()>1) -> duplicate_bottles
+
+
+duplicate_bottles %>% 
+     filter(., `SI..uM.l.` !="NaN") -> bottles_avg
+
+ctd_Data %>% 
+   filter(., !profile_id %in% bottles_avg$profile_id) %>% 
+  bind_rows(bottles_avg) %>% 
   mutate(., holder1 = str_remove(profile_id,"dy2209c"),
           Cast = as.numeric(holder1)) %>% 
    rename_with(.fn = ~ paste0("ctd_", .x)) -> ctd_Data
@@ -128,6 +139,7 @@ ctd_Data %>%
 
 ctd_Data$Cast <- as.character(ctd_Data$ctd_Cast)
 ctd_Data$pressure <- as.numeric(ctd_Data$ctd_pressure)
+
 
 ```
 

@@ -1,0 +1,18 @@
+7	Eukaryota	Chordata	Actinopteri	Gadiformes	Gadidae	Gadus
+1	Eukaryota	Foraminifera	Rotaliida__c	Rotaliida	Elphidiidae	Elphidium	Elphidium aculeatum
+2	Eukaryota	Chordata	Actinopteri	Argentiniformes	Bathylagidae	Leuroglossus	Leuroglossus schmidti (northern smooth-tongue)
+1	Bacteria	Pseudomonadota	Gammaproteobacteria
+1	Eukaryota	Bacillariophyta	Bacillariophyceae	Naviculales	Pleurosigmataceae	Pleurosigma
+3	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Chaetoceros sp_
+1	Eukaryota	Chlorophyta	Pyramimonadophyceae	Pyramimonadales	Pyramimonadaceae	Pyramimonas	Pyramimonas sp_ F923
+1	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Thalassiosira	Thalassiosira nordenskioeldii
+4	Eukaryota
+2	Eukaryota	Chordata	Actinopteri	Salmoniformes	Salmonidae	Oncorhynchus	Oncorhynchus gorbuscha (pink salmon)
+1	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Pedinellales	Pseudopedinella__f	Pseudopedinella	Pseudopedinella elastica
+2	Eukaryota
+1	Bacteria	Planctomycetota	Planctomycetia	Pirellulales	Pirellulaceae
+1	Eukaryota
+1	Bacteria
+1	Eukaryota	Chordata	Actinopteri	Salmoniformes	Salmonidae	Oncorhynchus	Oncorhynchus kisutch (coho salmon)
+1	Eukaryota
+1	Bacteria

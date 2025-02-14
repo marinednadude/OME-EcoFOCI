@@ -1,0 +1,156 @@
+Bacteria (eubacteria)	2
+Myxococcales (fruiting gliding bacteria)	29
+Rickettsiales (rickettsias)	766
+Cyanobacteriota (blue-green algae)	1117
+Actinomycetes (high G+C Gram-positive bacteria)	1760
+Eukaryota (eucaryotes)	2759
+Rhodophyta (red algae)	2763
+Haptophyta (haptophytes)	2830
+Bacillariophyta (diatoms)	2836
+Dinophyceae (dinoflagellates)	2864
+Phaeophyceae (brown algae)	2870
+Cryptophyceae (cryptomonads)	3027
+Euglenida (euglenids)	3035
+Chlorophyta (green algae)	3041
+Ascomycota (ascomycetes)	4890
+Petromyzontidae (lampreys)	7746
+Osmerus mordax (rainbow smelt)	8014
+Oncorhynchus gorbuscha (pink salmon)	8017
+Oncorhynchus keta (chum salmon)	8018
+Oncorhynchus kisutch (coho salmon)	8019
+Oncorhynchus nerka (sockeye salmon)	8023
+Gadiformes (cods and others)	8043
+Gadidae (cods)	8045
+Eleginus gracilis (saffron cod)	8047
+Gadus morhua (Atlantic cod)	8049
+Cottidae (sculpins)	8092
+Zoarcidae (eelpouts)	8193
+Lycodes polaris (Canadian eelpout)	8197
+Pleuronectidae (righteye flounders)	8256
+Homo sapiens (human)	9606
+Canis lupus (gray wolf)	9612
+Odobenus rosmarus (walrus)	9707
+Pusa hispida (ringed seal)	9718
+Orcinus orca (killer whale)	9733
+Phocoena phocoena (harbor porpoise)	9742
+Phocoenoides dalli (Dall's porpoise)	9744
+Delphinapterus leucas (beluga whale)	9749
+Eschrichtius robustus (grey whale)	9764
+Balaenoptera physalus (Fin whale)	9770
+Megaptera novaeangliae (humpback whale)	9773
+Sus scrofa (pig)	9823
+Bos taurus (domestic cattle)	9913
+Enteropneusta (acorn worms)	10220
+Uria (murres)	13745
+Balaena mysticetus (bowhead whale)	27602
+Carcharias taurus (sand tiger shark)	30501
+Clupea pallasii (Pacific herring)	30724
+Stichaeidae (pricklebacks)	30892
+Mallotus villosus (capelin)	30960
+Oncorhynchus clarkii (cutthroat trout)	30962
+Coscinodiscophyceae (centric diatoms)	33836
+Bacillariophyceae (Raphid, pennate diatoms)	33849
+Enhydra lutris (sea otter)	34882
+Eumetopias jubatus (Steller sea lion)	34886
+Erignathus barbatus (bearded seal)	39304
+Rhodospirillaceae (purple nonsulfur bacteria)	41295
+Acipenser fulvescens (lake sturgeon)	41871
+Mugil cephalus (flathead mullet)	48193
+Scorpaenichthys marmoratus (cabezon)	52273
+Clupeidae (herrings)	55118
+Sphyraena argentea (Pacific barracuda)	55125
+Apodichthys flavidus (penpoint gunnel)	57779
+Hypsoblennius gentilis (bay blenny)	57811
+Hypsoblennius gilberti (rockpool blenny)	57812
+Paraclinus integripinnis (reef finspot)	57845
+Leiostomus xanthurus (spot croaker)	59837
+Rhinichthys atratulus (blacknose dace)	67556
+Histrionicus histrionicus (harlequin duck)	68165
+Myctophiformes (lanternfishes and blackchins)	68514
+Gasterosteus aculeatus (three-spined stickleback)	69293
+Sebastes entomelas (widow rockfish)	72073
+Sebastes zacentrus (sharpchin rockfish)	72108
+Ectothiorhodospiraceae (purple sulfur bacteria)	72276
+Hexagrammos otakii (fat greenling)	72450
+Oncorhynchus tshawytscha (Chinook salmon)	74940
+Sciaenops ocellatus (red drum)	76340
+Gadus macrocephalus (Pacific cod)	80720
+Ammodytidae (sand lances)	84619
+Rhinichthys osculus (speckled dace)	86924
+Microstomus pacificus (Dover sole)	89058
+Artiodactyla (even-toed ungulates & whales)	91561
+Diaphus theta (California headlightfish)	91653
+Stenobrachius leucopsarus (northern lampfish)	91658
+Stenobrachius nannochir (garnet lanternfish)	123240
+Protomyctophum thompsoni (bigeye lanternfish)	123331
+Cololabis saira (Pacific saury)	129043
+Barbatula barbatula (stone loach)	135647
+Typhlogobius californiensis (blind goby)	166768
+Sphoeroides annulatus (bullseye puffer)	168377
+Paralabrax clathratus (kelp bass)	172714
+Heptageniidae (flatheaded mayflies)	178295
+Aptocyclus ventricosus (smooth lumpsucker)	181459
+Liparidae (snailfishes)	183715
+Hexagrammos agrammus (spotbelly greenling)	192376
+Pleurogrammus monopterygius (Atka mackerel)	192379
+Girella nigricans (opaleye)	214657
+Cottus asper (prickly sculpin)	214916
+Leptocottus armatus (Pacific staghorn sculpin)	214925
+Alosa aestivalis (blueback shad)	224703
+Brevoortia patronus (Gulf menhaden)	224707
+Embiotoca lateralis (striped seaperch)	229144
+Anoplopoma fimbria (sablefish)	229290
+Atherinops affinis (topsmelt silverside)	238741
+Engraulis mordax (northern anchovy)	239368
+Thaleichthys pacificus (eulachon)	240832
+Lepomis humilis (orangespotted sunfish)	255468
+Cebidichthys violaceus (monkeyface prickleback)	271503
+Gerreidae (mojarras)	274463
+Hexagrammos decagrammus (kelp greenling)	274741
+Artedius fenestralis (padded sculpin)	274758
+Menticirrhus littoralis (Gulf kingcroaker)	278736
+Pholis laeta (crescent gunnel)	283367
+Seriola lalandi (yellowtail amberjack)	302047
+Chauliodus macouni (Pacific viperfish)	302055
+Clinocottus analis (woolly sculpin)	304258
+Harpagornis moorei (New Zealand giant eagle)	307641
+Citharichthys sordidus (Pacific sanddab)	319774
+Citharichthys stigmaeus (speckled sanddab)	319775
+Paralichthys californicus (California flounder)	319776
+Pleuronichthys ritteri (spotted turbot)	320380
+Cheilotrema saturnum (black croaker)	320392
+Liparis florae (tidepool snailfish)	320618
+Artedius lateralis (smoothhead sculpin)	322683
+Oligocottus maculosus (tidepool sculpin)	328410
+Bairdiella chrysoura (silver perch)	331523
+Bathyraja aleutica (Aleutian skate)	341243
+Leuresthes tenuis (California grunion)	355514
+Melanitta perspicillata (surf scoter)	371863
+Sebastes nebulosus (China rockfish)	394698
+Liparis tunicatus (kelp snailfish)	420949
+Lumpenus sagitta (snake prickleback)	428036
+Lycodes brevipes (shortfin eelpout)	433387
+Icelinus borealis (northern sculpin)	433388
+Hemilepidotus hemilepidotus (red Irish lord)	433390
+Liparis fucensis (slipskin snailfish)	433401
+Nectoliparis pelagicus (tadpole snailfish)	446815
+Clinocottus acuticeps (sharpnose sculpin)	459045
+Oligocottus snyderi (fluffy sculpin)	459052
+Ammodytes hexapterus (Pacific sand lance)	476914
+Lycodes raridens (marbled eelpout)	512206
+Cryptacanthodes aleutensis (dwarf wrymouth)	557343
+Leuroglossus schmidti (northern smooth-tongue)	557346
+Lycodapus mandibularis (pallid eelpout)	557350
+Lipariscus nanus (pygmy snailfish)	557405
+Chrosomus oreas (mountain redbelly dace)	564716
+Blepsias cirrhosus (silverspotted sculpin)	573213
+Encrasicholina punctifer (buccaneer anchovy)	686570
+Synchirus gilli (manacled sculpin)	740936
+Hypsoblennius jenkinsi (mussel blenny)	879500
+Gymnocanthus tricuspis (Arctic staghorn sculpin)	980329
+Gadus chalcogrammus (walleye pollock)	1042646
+Benthosema pterotum (skinnycheek lanternfish)	1069390
+Menticirrhus saxatilis (northern kingfish)	1266879
+Polypera greeni (lobefin snailfish)	1562383
+Lycodapus microchir (obdurate eelpout)	1696856
+Kyphosus azureus (zebra-perch sea chub)	2838349

@@ -1,0 +1,157 @@
+5	Eukaryota	Chordata	Actinopteri	Gadiformes	Gadidae	Gadus
+5	Eukaryota	Chordata	Actinopteri	Pleuronectiformes	Pleuronectidae
+11	Archaea	Methanobacteriota
+11	Bacteria	Acidobacteriota
+11	Bacteria	Acidobacteriota	Vicinamibacteria	Vicinamibacterales	Vicinamibacteraceae
+197	Bacteria	Pseudomonadota	Betaproteobacteria	Candidatus Accumulibacter__f__o	Candidatus Accumulibacter__f	Candidatus Accumulibacter	Candidatus Accumulibacter phosphatis
+5	Bacteria	Planctomycetota	Phycisphaerae	Phycisphaerales	Phycisphaeraceae
+9	Bacteria	Pseudomonadota	Alphaproteobacteria
+9	Bacteria	Thermodesulfobacteriota	Desulfuromonadia	Desulfuromonadales
+8	Bacteria	Candidatus Campbellbacteria
+7	Bacteria
+14	Bacteria	Nitrospinota	Nitrospinia	Nitrospinales	Nitrospinaceae	Candidatus Nitromaritima	Candidatus Nitromaritima sp_ SCGC AAA288_L16
+10	Bacteria
+1210	Bacteria	Planctomycetota
+6	Bacteria	Pseudomonadota	Gammaproteobacteria	Vibrionales	Vibrionaceae	Aliivibrio	Aliivibrio salmonicida
+96	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros
+25	Bacteria	Pseudomonadota	Gammaproteobacteria	Alteromonadales	Alteromonadaceae	Glaciecola
+5	Bacteria	Pseudomonadota	Gammaproteobacteria	Methylococcales	Crenotrichaceae	Crenothrix	Crenothrix polyspora
+5	Bacteria	Acidobacteriota
+5	Bacteria	Fidelibacterota
+26	Bacteria	Candidatus Vogeliibacteriota
+4	Bacteria	Nitrospinota	Nitrospinia	Nitrospinales	Nitrospinaceae
+4	Bacteria
+31	Bacteria	Chloroflexota
+29	Eukaryota
+12	Bacteria	Nitrospinota	Nitrospinia	Nitrospinales	Nitrospinaceae	Nitrospina	Nitrospina sp_ SCGC AAA003_C16
+994	Bacteria
+3	Bacteria
+3	Bacteria	Pseudomonadota	Alphaproteobacteria
+3	Bacteria	Pseudomonadota	Alphaproteobacteria
+3	Bacteria
+3	Eukaryota	Telonemida__c__p	Telonemida__c	Telonemida
+2	Bacteria	Planctomycetota	Phycisphaerae	Phycisphaerales	Phycisphaeraceae
+16	Bacteria	Nitrospinota	Nitrospinia	Nitrospinales	Nitrospinaceae	Nitrospina	Nitrospina sp_ SCGC AAA003_A14
+3	Bacteria	Planctomycetota	Phycisphaerae	Phycisphaerales
+135	Bacteria
+92	Bacteria
+4	Bacteria	Pseudomonadota	Gammaproteobacteria	Thiotrichales
+1	Bacteria	Myxococcota	Myxococcia	Myxococcales
+1	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Rhizosoleniales	Rhizosoleniaceae	Proboscia	Proboscia indica
+95	Bacteria
+403	Bacteria	Planctomycetota	Phycisphaerae	Phycisphaerales
+244	Bacteria	Pseudomonadota	Gammaproteobacteria	Oceanospirillales
+122	Eukaryota	Foraminifera	Rotaliida__c	Rotaliida	Glabratellidae	Planoglabratella	Planoglabratella opercularis
+5	Bacteria	Nitrospinota	Nitrospinia	Nitrospinales	Nitrospinaceae	Nitrospina
+1	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Rhizosoleniales	Rhizosoleniaceae	Proboscia
+342	Bacteria	Acidobacteriota
+449	Bacteria	Acidobacteriota	Vicinamibacteria	Vicinamibacterales
+77	Bacteria	Planctomycetota
+7	Eukaryota
+47	Bacteria	Acidobacteriota	Vicinamibacteria	Vicinamibacterales
+468	Bacteria	Planctomycetota	Phycisphaerae	Phycisphaerales
+279	Bacteria
+3	Bacteria	Planctomycetota	Planctomycetia	Planctomycetales	Planctomycetaceae
+4	Bacteria	Pseudomonadota	Gammaproteobacteria
+335	Bacteria	Chloroflexota	Dehalococcoidia
+29	Bacteria	Acidobacteriota	Vicinamibacteria	Vicinamibacterales
+296	Bacteria	Acidobacteriota
+2	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Thalassiosira	Thalassiosira sp_
+23	Bacteria	Planctomycetota
+395	Bacteria	Chloroflexota
+1	Bacteria
+109	Bacteria	Pseudomonadota	Gammaproteobacteria
+23	Bacteria	Planctomycetota	Planctomycetia
+43	Bacteria	Nitrospinota	Nitrospinia	Nitrospinales	Nitrospinaceae	Nitrospina	Nitrospina sp_ SCGC AAA001_J21
+144	Bacteria
+310	Bacteria	Planctomycetota	Candidatus Brocadiia	Candidatus Brocadiales	Candidatus Brocadiaceae
+2	Eukaryota
+201	Bacteria	Planctomycetota	Planctomycetia	Planctomycetales	Planctomycetaceae
+232	Bacteria	Nitrospinota	Nitrospinia	Nitrospinales	Nitrospinaceae	Candidatus Nitromaritima	Candidatus Nitromaritima sp_ SCGC AAA288_L16
+5	Bacteria	Nitrospinota	Nitrospinia	Nitrospinales	Nitrospinaceae	Nitrospina	Nitrospina sp_ SCGC AAA003_A14
+1	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Chaetoceros sp_
+72	Bacteria
+210	Bacteria	Chloroflexota	Dehalococcoidia
+9	Bacteria	Nitrospinota	Nitrospinia	Nitrospinales	Nitrospinaceae	Nitrospina
+251	Bacteria	Myxococcota	Myxococcia	Myxococcales
+4274	Bacteria	Chloroflexota
+32	Bacteria
+542	Bacteria	Chloroflexota
+28	Bacteria	Pseudomonadota	Gammaproteobacteria
+105	Bacteria	Acidobacteriota	Vicinamibacteria	Vicinamibacterales
+2	Bacteria	Planctomycetota
+13	Bacteria	Planctomycetota	Phycisphaerae	Phycisphaerales
+205	Bacteria	Acidobacteriota
+33	Bacteria	Acidobacteriota
+216	Eukaryota	Dictyochophyceae__p	Dictyochophyceae	Florenciellales	Florenciella__f	Florenciella
+161	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros
+7	Bacteria	Planctomycetota
+14	Bacteria	Deltaproteobacteria__p	Deltaproteobacteria
+165	Bacteria	Chloroflexota
+6	Bacteria	Planctomycetota
+77	Bacteria	Nitrospinota	Nitrospinia	Nitrospinales	Nitrospinaceae	Nitrospina	Nitrospina sp_ SCGC AAA003_E20
+127	Bacteria	Fidelibacterota
+4	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Fragilariopsis	Fragilariopsis cylindrus
+127	Bacteria	Candidatus Kaiserbacteria
+28	Bacteria	Pseudomonadota	Gammaproteobacteria
+15	Bacteria
+114	Bacteria	Planctomycetota
+1836	Bacteria
+3	Bacteria	Planctomycetota
+88	Bacteria	Candidatus Sumerlaeota	Candidatus Sumerlaeia	Candidatus Sumerlaeales	Candidatus Sumerlaeaceae
+1	Eukaryota	Chordata	Actinopteri	Salmoniformes	Salmonidae	Oncorhynchus	Oncorhynchus kisutch (coho salmon)
+19	Bacteria
+76	Bacteria	Planctomycetota	Planctomycetia	Planctomycetales
+42	Bacteria	Acidobacteriota
+5	Bacteria
+1	Bacteria	Bacteroidota
+1	Bacteria
+5	Bacteria	Planctomycetota
+29	Eukaryota	Bacillariophyta	Fragilariophyceae	Fragilariales	Fragilariaceae
+32	Bacteria	Planctomycetota	Phycisphaerae	Phycisphaerales
+6	Bacteria	Nitrospinota	Nitrospinia	Nitrospinales	Nitrospinaceae	Nitrospina	Nitrospina sp_ SCGC AAA001_J21
+64	Bacteria	Pseudomonadota	Alphaproteobacteria
+59	Bacteria
+91	Bacteria	Nitrospinota	Nitrospinia	Nitrospinales	Nitrospinaceae	Nitrospina	Nitrospina sp_ SCGC AAA288_O16
+57	Bacteria	Deltaproteobacteria__p	Deltaproteobacteria
+216	Bacteria
+3	Eukaryota	Bolidophyceae__p	Bolidophyceae
+214	Bacteria	Pseudomonadota	Gammaproteobacteria	Alteromonadales	Shewanellaceae	Psychrobium
+402	Bacteria	Chloroflexota
+51	Bacteria
+50	Bacteria	Chloroflexota
+19	Bacteria	Nitrospinota	Nitrospinia	Nitrospinales	Nitrospinaceae	Nitrospina	Nitrospina sp_ SCGC AAA003_G17
+226	Bacteria	Acidobacteriota	Terriglobia	Terriglobales	Acidobacteriaceae	Acidobacterium	Acidobacterium sp_ SCGC AAA007_P13
+31	Bacteria
+1	Bacteria	Candidatus Azambacteria
+45	Bacteria	Chloroflexota
+490	Bacteria
+3	Eukaryota	Bolidophyceae__p	Bolidophyceae	Parmales	Triparmaceae
+22	Bacteria	Thermodesulfobacteriota	Desulfobacteria	Desulfobacterales	Desulfobacteraceae	Desulfoconvexum	Desulfoconvexum algidum
+38	Bacteria	Acidobacteriota
+80	Bacteria	Pseudomonadota	Alphaproteobacteria
+532	Bacteria
+926	Bacteria	Chloroflexota
+34	Bacteria	Pseudomonadota	Betaproteobacteria	Candidatus Accumulibacter__f__o	Candidatus Accumulibacter__f	Candidatus Accumulibacter	Candidatus Accumulibacter phosphatis
+5	Bacteria	Chloroflexota
+30	Bacteria
+30	Bacteria	Chloroflexota
+2	Bacteria	Pseudomonadota	Gammaproteobacteria
+2	Bacteria	Acidobacteriota	Vicinamibacteria	Vicinamibacterales
+16	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Pseudo_nitzschia
+26	Bacteria	Myxococcota	Myxococcia	Myxococcales
+56	Bacteria	Nitrospinota	Nitrospinia	Nitrospinales	Nitrospinaceae	Nitrospina	Nitrospina sp_ SCGC AAA001_J21
+24	Bacteria	Acidobacteriota	Vicinamibacteria	Vicinamibacterales
+24	Bacteria	Acidobacteriota	Vicinamibacteria	Vicinamibacterales
+24	Bacteria	Planctomycetota
+5	Bacteria
+505	Bacteria	Pseudomonadota	Gammaproteobacteria	Alteromonadales
+254	Bacteria	Acidobacteriota	Terriglobia	Terriglobales	Acidobacteriaceae	Acidobacterium	Acidobacterium sp_ SCGC AAA007_N14
+19	Bacteria	Acidobacteriota	Vicinamibacteria	Vicinamibacterales
+10	Bacteria	Pseudomonadota	Gammaproteobacteria	Oceanospirillales	Hahellaceae	Allohahella
+17	Bacteria
+15	Unknown
+14	Bacteria	Actinomycetota	Actinomycetes
+13	Bacteria	Pseudomonadota	Gammaproteobacteria
+13	Bacteria	Planctomycetota	Candidatus Brocadiia	Candidatus Brocadiales	Candidatus Brocadiaceae
+1	Bacteria

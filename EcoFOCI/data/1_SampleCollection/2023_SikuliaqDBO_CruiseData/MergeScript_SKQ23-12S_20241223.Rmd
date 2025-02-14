@@ -156,6 +156,26 @@ bottle_Data$bottle <- as.character(bottle_Data$btl_Bottle)
 ctd_Data <- read.csv(file =here("CTD_skq202312s_final_merged_3eeb_9b4e_d51f.csv"), header=T)
 
 ctd_Data %>% 
+  dplyr::group_by(profile_id,pressure)  %>% 
+  filter(n()>1) -> duplicate_bottles
+
+duplicate_bottles %>% 
+     dplyr::group_by(profile_id,pressure) %>% 
+       mutate(BTLID = paste0(BTLID, collapse = ";")) %>% 
+  dplyr::select(., profile_id,pressure,BTLID, `SI..uM.l.`,`PO4..uM.l.`,`NO2..uM.l.`,`NO3..uM.l.`,`NH4..uM.l.`) %>% 
+   dplyr::group_by(profile_id,pressure,BTLID) %>% 
+  dplyr::summarise(across(where(is.numeric), mean)) -> bottles_avg
+
+duplicate_bottles %>% 
+  dplyr::select(-`SI..uM.l.`,-`PO4..uM.l.`,-`NO2..uM.l.`,-`NO3..uM.l.`,-`NH4..uM.l.`, -BTLID) %>% 
+  distinct() %>% 
+  left_join(bottles_avg) -> duplicate_bottles_c
+
+
+ctd_Data %>% 
+  mutate(.,BTLID =as.character(BTLID) ) %>% 
+  filter(., !profile_id %in% duplicate_bottles_c$profile_id) %>% 
+  bind_rows(duplicate_bottles_c) %>% 
   mutate(., holder1 = str_remove(profile_id,"skq202312sc"),
           Cast = as.numeric(holder1)) %>% 
    rename_with(.fn = ~ paste0("ctd_", .x)) -> ctd_Data

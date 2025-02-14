@@ -1,0 +1,13 @@
+7	Eukaryota	Chordata	Actinopteri	Gadiformes	Gadidae	Gadus
+2	Eukaryota	Chordata	Actinopteri	Pleuronectiformes	Pleuronectidae
+4	Eukaryota	Chordata	Actinopteri	Gadiformes	Gadidae	Boreogadus	Boreogadus saida
+2	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Coscinodiscales	Hemidiscaceae	Actinocyclus
+1	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae	Thalassiosira	Thalassiosira nordenskioeldii
+1	Eukaryota	Bacillariophyta	Bacillariophyceae	Bacillariales	Bacillariaceae	Cylindrotheca	Cylindrotheca closterium
+1	Bacteria	Pseudomonadota	Gammaproteobacteria	Alteromonadales	Shewanellaceae	Shewanella	Shewanella sp_ J327
+1	Bacteria
+5	Eukaryota
+1	Eukaryota
+1	Eukaryota	Bacillariophyta	Fragilariophyceae	Thalassionemales	Thalassionemataceae	Thalassionema
+1	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Rhizosoleniales	Rhizosoleniaceae	Proboscia
+1	Eukaryota	Bacillariophyta	Mediophyceae	Cymatosirales	Cymatosiraceae	Minutocellus	Minutocellus polymorphus

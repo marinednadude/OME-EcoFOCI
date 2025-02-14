@@ -41,7 +41,7 @@ world <- ne_countries(scale = "medium", returnclass = "sf")
 
 
 ```{r}
-read.csv(here("FinalOME_Merge_RC0083.csv")) -> GOA_OA_2022_Cruise_sample_data
+read.csv(here("data","1_SampleCollection","2022_GOA-OA_CruiseData","FinalOME_Merge_RC0083.csv")) -> GOA_OA_2022_Cruise_sample_data
 
 ```
 
@@ -157,4 +157,783 @@ uc_data %>%
   filter(., Depth_m > 550)
 ```
 
+# Analysis
+```{r}
+
+GOA_OA_2022_Cruise_sample_data
+long_COI_EcoFOCI <- readRDS(here("data","long_data","long_COI_EcoFOCI.RDS"))
+
+
+long_COI_EcoFOCI %>% 
+    filter(., Cruise_ID_short =="RC_GOA_2022") %>%  
+  dplyr::select(ASV_combo, `Run2:ASV`, `Run3:ASV`,`Run4:ASV`, Sequence,Kingdom, Phylum,Class,Order,Family,Genus,Species,Sample,Sample_Name, nReads,eDNA.Index) %>% 
+  left_join(GOA_OA_2022_Cruise_sample_data) -> goa22_long
+
+
+
+```
+
+## Group by Species
+
+#### Build Phyloseq Object
+
+```{r}
+
+varnames <- colnames(goa22_long)
+to_remove <- c("Run2:ASV","Run3:ASV","Run4:ASV","ASV_combo","Sequence","nReads","Prop.abund","eDNA.Index")
+to_remove2 <- c("Kingdom","Phylum","Order","Class","Family","Genus","Species")
+
+
+goa22_long %>% 
+  ungroup() %>% 
+  dplyr::select(c(setdiff(setdiff(varnames,to_remove),to_remove2))) %>% distinct() -> goa_co1_sample_data
+
+#Metadata
+goa_co1_sample_data %>%  as.data.frame() -> sampledata
+rownames(sampledata) <- sampledata$Sample
+sample_data(sampledata) -> sampledata
+
+#ASV Reads
+
+c(setdiff(varnames,to_remove),"Tot") -> varnames_to_group
+
+goa22_long %>% 
+  dplyr::select(-eDNA.Index) %>% 
+  ungroup() %>% 
+ group_by(Sample) %>%
+    mutate(Tot = sum(nReads)) %>% 
+    group_by(!!!syms(varnames_to_group)) %>% 
+    dplyr::summarise(nReads=sum(nReads)) %>% 
+    mutate (Prop.abund = nReads / Tot) %>% 
+      ungroup() %>% 
+    unite(sum.taxonomy, c("Kingdom",              "Phylum",               "Class"               
+,"Order",                "Family",               "Genus",               "Species"), sep=";") %>% 
+    group_by (sum.taxonomy) %>%
+    mutate (Colmax = max(Prop.abund),
+            eDNA.Index = Prop.abund / Colmax) %>% 
+  dplyr::select(sum.taxonomy,Sample, eDNA.Index) %>% 
+  mutate(., eDNA.Index=as.numeric(eDNA.Index)) %>% 
+  mutate(., eDNA.Index=if_else(eDNA.Index=="NaN", 0, eDNA.Index)) %>%
+  pivot_wider(names_from = Sample, values_from = eDNA.Index, values_fill  =0) -> wide_PA_goa
+
+wide_PA_goa %>% 
+  dplyr::select(sum.taxonomy) %>% 
+   separate(sum.taxonomy, into=c("Kingdom",              "Phylum",               "Class"               
+,"Order",                "Family",               "Genus",               "Species"), sep=";", remove=F) %>%  
+  dplyr::select(sum.taxonomy, Kingdom,Phylum,Class, Order,Family, Genus, Species) %>% 
+  distinct() %>% as.matrix() -> taxonomy_table
+dim(taxonomy_table)
+dim(wide_PA_goa)
+
+rownames(taxonomy_table) <- wide_PA_goa$sum.taxonomy
+
+TAX = tax_table(taxonomy_table)
+
+wide_PA_goa %>% 
+  ungroup() %>% 
+  dplyr::select(-sum.taxonomy) %>% as.matrix() -> otu_table
+rownames(otu_table) <- wide_PA_goa$sum.taxonomy
+
+OTU = otu_table(otu_table, taxa_are_rows = TRUE)
+physeq_obj._CO1_sum.tax_goa = phyloseq(OTU, TAX, sampledata)
+
+```
+
+
+##  All Bray
+
+```{r}
+physeq_obj._CO1_sum.tax_goa <- prune_samples(sample_sums(physeq_obj._CO1_sum.tax_goa) > 0, physeq_obj._CO1_sum.tax_goa)
+physeq_obj._CO1_sum.tax_goa = subset_taxa(physeq_obj._CO1_sum.tax_goa, Kingdom!="Bacteria")
+physeq_obj._CO1_sum.tax_goa = subset_taxa(physeq_obj._CO1_sum.tax_goa, Kingdom!="Environmental Unknown")
+
+physeq_obj._CO1_sum.tax_goa = subset_samples(physeq_obj._CO1_sum.tax_goa,
+                                             !is.na(btl_Ph) & 
+                                               !is.na(btl_T090C) & 
+                                               !is.na(btl_OxsatMm.Kg) &
+                                               !is.na(btl_Latitude)&
+                                               !is.na(btl_Longitude) & !is.na(btl_Sal00))
+
+tax_table(physeq_obj._CO1_sum.tax_goa) %>%  as.data.frame()
+```
+
+
+```{r}
+
+#Betadiversity
+#Generate Vegan formatted data table
+method.sampledf <- data.frame(sample_data(physeq_obj._CO1_sum.tax_goa))
+method.rel_abun<- vegan_otu(physeq_obj._CO1_sum.tax_goa)
+
+#Bray dissimilarity matrix
+method.d_carn <- vegdist(method.rel_abun, method="bray")
+
+#PERMANOVA: Method+Site
+
+method.adonis_results_goa <- adonis2(method.rel_abun~btl_Ph+btl_T090C+btl_OxsatMm.Kg+Depth_m_notes+btl_Latitude+btl_Longitude+btl_Sal00, data=method.sampledf, by = "terms",na.action =na.exclude)
+
+method.adonis_results_goa
+
+```
+
+```{r}
+ord <- ordinate(physeq_obj._CO1_sum.tax_goa, method = "NMDS", distance = ("bray"))
+```
+
+### NMDS Temp
+```{r}
+##Plot_Ordination
+plot_ordination(physeq_obj._CO1_sum.tax_goa, ord, "samples",color = "btl_Ph") +
+  ggtitle(paste0("NMDS - Stress ",round(ord$stress,3))) + 
+  geom_point(size = 4) + 
+  theme_bw()+ 
+  theme(plot.title = element_text(hjust = 0.5,size = 20, face = "bold"),
+        plot.subtitle = element_text(hjust = 0.5,size = 18, face = "bold"),
+        panel.grid.major = element_blank(), 
+        panel.grid.minor = element_blank(),
+        panel.background = element_blank(), 
+        axis.text=element_text(size=16), 
+        axis.title=element_text(size=16,face="bold"),
+        legend.title = element_text( size=16, face="bold"),
+        legend.text = element_text(size=14)
+        ) + 
+  labs(color = "pH") +scale_colour_cmocean() 
+
+
+```
+### CAP Analysis
+
+## CAP Species
+
+```{r, results="hide",warning=FALSE}
+#Run CAP analysis to identify predictor species
+vare.cap <- capscale(method.rel_abun ~ btl_Ph+btl_T090C+btl_OxsatMm.Kg+Depth_m_notes+btl_Latitude+btl_Longitude+btl_Sal00,  data=method.sampledf, dist="bray")
+
+#Retain species scores
+sppscores(vare.cap) <- method.rel_abun
+
+as.data.frame(vegan::scores(vare.cap, display="species")) %>% 
+  rownames_to_column(var = "species") %>% 
+  as.tibble %>%
+ mutate(dist = sqrt((CAP1 - 0)^2 + (CAP2 - 0)^2)) -> vare.cap_species_distances
+
+
+as.data.frame(vegan::scores(vare.cap, display="bp")) %>% 
+  rownames_to_column(var = "env") %>% 
+  as.tibble %>%
+ mutate(dist = sqrt((CAP1 - 0)^2 + (CAP2 - 0)^2)) -> vare.cap_env_distances
+
+
+```
+##### Check For Break Point for Top Species
+```{r}
+species_distances <- as.data.frame(vare.cap_species_distances)
+TAXcap = tax_table(physeq_obj._CO1_sum.tax_goa) %>% as.data.frame()
+
+species_distances %>% 
+  mutate(., sum.taxonomy=species) %>% 
+  left_join(TAXcap) -> species_distances
+
+rownames(species_distances) <- species_distances$sum.taxonomy
+
+# Now add the environmental variables as arrows
+arrowmat <- species_distances
+
+#Rename row names to clean up plot
+
+species_distances %>% 
+  filter(., Species!="NA")-> namers
+
+rownames(namers) <- namers$name
+
+
+# Add labels, make a data.frame
+arrowdf <- data.frame(labels = namers$Species, namers)
+
+arrowdf %>% 
+  filter(., !Phylum %in% c("Bacillariophyta","Chlorophyta","Dinophyceae__p","Dictyochophyceae__p","Pelagophyceae__p")) %>% 
+  arrange(desc(dist)) %>% 
+  dplyr::slice(1:100) 
+
+arrowdf %>% 
+arrange(desc(dist)) %>% 
+    filter(., !Phylum %in% c("Bacillariophyta","Chlorophyta","Dinophyceae__p","Dictyochophyceae__p","Pelagophyceae__p")) %>% 
+   dplyr::slice(1:10) %>% 
+ggplot(., aes(x= reorder(labels, -dist), y=dist)) +
+  geom_bar(stat="identity") + theme(axis.text.x = element_text(angle = 90, hjust = 1))
+
+```
+
+```{r}
+arrowdf %>% 
+arrange(desc(dist)) %>% 
+    filter(., !Phylum %in% c("Bacillariophyta","Chlorophyta","Dinophyceae__p","Dictyochophyceae__p","Pelagophyceae__p")) %>% 
+   dplyr::slice(1:10)-> arrowdf
+
+
+summary(vare.cap)$cont %>% as.data.frame() %>% round(3)-> vare.cap_prop
+
+as.tibble(vare.cap_prop,rownames = "rowname") %>% 
+  pivot_longer(., cols=-rowname, values_to = "value", names_to = "name") %>% 
+  filter(., rowname=="Proportion Explained") %>% 
+  filter(., name %in% c("importance.CAP1","importance.CAP2"))-> vare.cap_prop_tib
+
+# Add labels, make a data.frame
+arrowdf_env <- data.frame(labels = vare.cap_env_distances$env, vare.cap_env_distances)
+
+arrowdf_env %>% 
+arrange(desc(dist)) %>% 
+  mutate(., labels = recode(labels,`btl_Latitude`="Lat",
+                            `btl_Longitude`="Lon",
+                            `btl_OxsatMm.Kg`="OxsatMm.Kg",
+                            `btl_Ph`="pH",
+                            `btl_T090C`="˚C",
+                            `Depth_m_notes` = "Depth",
+                            `btl_Sal00`="PSU",
+                            `SeasonSpring`="Season"))-> arrowdf_env
+
+# Define the arrow aesthetic mapping
+arrow_map <- aes(xend = 0.3 *CAP1, 
+                 yend = 0.3 *CAP2, 
+                 x = 0, 
+                 y = 0, 
+                 shape = NULL, 
+                 color = NULL, 
+                 label = labels)
+
+arrow_map2 <- aes(xend = 2.3 *CAP1, 
+                 yend = 2.3 *CAP2, 
+                 x = 0, 
+                 y = 0, 
+                 shape = NULL, 
+                 color = NULL, 
+                 label = labels)
+
+label_map <- aes(x = 2.3 * CAP1, 
+                 y = 2.3 * CAP2, 
+                 shape = NULL, 
+                 color = NULL, 
+                 label = labels,
+                 alpha=0.7,
+                 fontface="italic")
+label_map2 <- aes(x = 0.27 * CAP1, 
+                 y = 0.27 * CAP2, 
+                 shape = NULL, 
+                 color = NULL, 
+                 alpha=0.7,
+                 label = labels)
+
+arrowhead = arrow(length = unit(0.02, "npc"))
+
+method.sampledf$sample <- rownames(method.sampledf)
+# Plot CAP
+as.data.frame(vare.cap$CCA$wa) %>% 
+  rownames_to_column(var = "sample") %>% 
+  as.tibble() %>% 
+  left_join(method.sampledf)-> data_cap
+
+
+data_cap %>% 
+  ggplot(aes(x=CAP1, y=CAP2)) + geom_point(aes(col=btl_Ph), size =3) + geom_segment(
+    mapping = arrow_map2, 
+    size = .5, 
+    data = arrowdf, 
+    color = "dodgerblue3", 
+    arrow = arrowhead
+  ) +
+  geom_label(
+    mapping = label_map, 
+    size = 4,  
+        color = "dodgerblue3", 
+    data = arrowdf, 
+    show.legend = FALSE,
+    position=position_jitter(width=0.03,height=0.03)
+  ) + 
+  geom_segment(
+    mapping = arrow_map, 
+    size = .5, 
+    data = arrowdf_env, 
+    color = "grey", 
+    arrow = arrowhead
+  ) +
+  geom_label(
+    mapping = label_map2, 
+    size = 5, 
+    data = arrowdf_env, 
+    show.legend = FALSE,
+    position=position_jitter(width=0.03,height=0.03)
+  )  +
+  ylab(paste0("CAP2 [",round(vare.cap_prop_tib$value[2]*100,1),"]%"))   + xlab(paste0("CAP1 [",round(vare.cap_prop_tib$value[1]*100,1),"]%")) +   
+  scale_color_gradientn(colours = cmocean('thermal')(256)) + ggpubr::theme_pubr() +labs(colour="pH") + theme(axis.title = element_text(face="bold", size = 16))
+
+
+
+
+```
+
+##  All Surface Bray
+
+```{r}
+physeq_obj._CO1_sum.tax_goa <- subset_samples(physeq_obj._CO1_sum.tax_goa, Depth_m_notes < 30)
+
+physeq_obj._CO1_sum.tax_goa <- prune_samples(sample_sums(physeq_obj._CO1_sum.tax_goa) > 0, physeq_obj._CO1_sum.tax_goa)
+physeq_obj._CO1_sum.tax_goa = subset_taxa(physeq_obj._CO1_sum.tax_goa, Kingdom!="Bacteria")
+physeq_obj._CO1_sum.tax_goa = subset_taxa(physeq_obj._CO1_sum.tax_goa, Kingdom!="Environmental Unknown")
+
+physeq_obj._CO1_sum.tax_goa = subset_samples(physeq_obj._CO1_sum.tax_goa,
+                                             !is.na(btl_Ph) & 
+                                               !is.na(btl_T090C) & 
+                                               !is.na(btl_OxsatMm.Kg) &
+                                               !is.na(btl_Latitude)&
+                                               !is.na(btl_Longitude) & !is.na(btl_Sal00))
+
+tax_table(physeq_obj._CO1_sum.tax_goa) %>%  as.data.frame()
+```
+
+
+```{r}
+
+#Betadiversity
+#Generate Vegan formatted data table
+method.sampledf <- data.frame(sample_data(physeq_obj._CO1_sum.tax_goa))
+method.rel_abun<- vegan_otu(physeq_obj._CO1_sum.tax_goa)
+
+#Bray dissimilarity matrix
+method.d_carn <- vegdist(method.rel_abun, method="bray")
+
+#PERMANOVA: Method+Site
+
+method.adonis_results_goa <- adonis2(method.rel_abun~btl_Ph+btl_T090C+btl_OxsatMm.Kg+Depth_m_notes+btl_Latitude+btl_Longitude+btl_Sal00, data=method.sampledf, by = "terms",na.action =na.exclude)
+
+method.adonis_results_goa
+
+```
+
+```{r}
+ord <- ordinate(physeq_obj._CO1_sum.tax_goa, method = "NMDS", distance = ("bray"))
+```
+
+### NMDS Temp
+```{r}
+##Plot_Ordination
+plot_ordination(physeq_obj._CO1_sum.tax_goa, ord, "samples",color = "btl_OxsatMm.Kg") +
+  ggtitle(paste0("NMDS - Stress ",round(ord$stress,3))) + 
+  geom_point(size = 4) + 
+  theme_bw()+ 
+  theme(plot.title = element_text(hjust = 0.5,size = 20, face = "bold"),
+        plot.subtitle = element_text(hjust = 0.5,size = 18, face = "bold"),
+        panel.grid.major = element_blank(), 
+        panel.grid.minor = element_blank(),
+        panel.background = element_blank(), 
+        axis.text=element_text(size=16), 
+        axis.title=element_text(size=16,face="bold"),
+        legend.title = element_text( size=16, face="bold"),
+        legend.text = element_text(size=14)
+        ) + 
+  labs(color = "O2") +scale_colour_cmocean() 
+
+
+```
+### CAP Analysis
+
+## CAP Species
+
+```{r, results="hide",warning=FALSE}
+#Run CAP analysis to identify predictor species
+vare.cap <- capscale(method.rel_abun ~ btl_Ph+btl_T090C+btl_OxsatMm.Kg+Depth_m_notes+btl_Latitude+btl_Longitude+btl_Sal00,  data=method.sampledf, dist="bray")
+
+#Retain species scores
+sppscores(vare.cap) <- method.rel_abun
+
+as.data.frame(vegan::scores(vare.cap, display="species")) %>% 
+  rownames_to_column(var = "species") %>% 
+  as.tibble %>%
+ mutate(dist = sqrt((CAP1 - 0)^2 + (CAP2 - 0)^2)) -> vare.cap_species_distances
+
+
+as.data.frame(vegan::scores(vare.cap, display="bp")) %>% 
+  rownames_to_column(var = "env") %>% 
+  as.tibble %>%
+ mutate(dist = sqrt((CAP1 - 0)^2 + (CAP2 - 0)^2)) -> vare.cap_env_distances
+
+
+```
+##### Check For Break Point for Top Species
+```{r}
+species_distances <- as.data.frame(vare.cap_species_distances)
+TAXcap = tax_table(physeq_obj._CO1_sum.tax_goa) %>% as.data.frame()
+
+species_distances %>% 
+  mutate(., sum.taxonomy=species) %>% 
+  left_join(TAXcap) -> species_distances
+
+rownames(species_distances) <- species_distances$sum.taxonomy
+
+# Now add the environmental variables as arrows
+arrowmat <- species_distances
+
+#Rename row names to clean up plot
+
+species_distances %>% 
+  filter(., Species!="NA")-> namers
+
+rownames(namers) <- namers$name
+
+
+# Add labels, make a data.frame
+arrowdf <- data.frame(labels = namers$Species, namers)
+
+arrowdf %>% 
+  filter(., !Phylum %in% c("Bacillariophyta","Chlorophyta","Dinophyceae__p","Dictyochophyceae__p","Pelagophyceae__p")) %>% 
+  arrange(desc(dist)) %>% 
+  dplyr::slice(1:100) 
+
+arrowdf %>% 
+arrange(desc(dist)) %>% 
+    filter(., !Phylum %in% c("Bacillariophyta","Chlorophyta","Dinophyceae__p","Dictyochophyceae__p","Pelagophyceae__p")) %>% 
+   dplyr::slice(1:10) %>% 
+ggplot(., aes(x= reorder(labels, -dist), y=dist)) +
+  geom_bar(stat="identity") + theme(axis.text.x = element_text(angle = 90, hjust = 1))
+
+```
+
+```{r}
+arrowdf %>% 
+arrange(desc(dist)) %>% 
+    filter(., !Phylum %in% c("Bacillariophyta","Chlorophyta","Dinophyceae__p","Dictyochophyceae__p","Pelagophyceae__p")) %>% 
+   dplyr::slice(1:10)-> arrowdf
+
+
+summary(vare.cap)$cont %>% as.data.frame() %>% round(3)-> vare.cap_prop
+
+as.tibble(vare.cap_prop,rownames = "rowname") %>% 
+  pivot_longer(., cols=-rowname, values_to = "value", names_to = "name") %>% 
+  filter(., rowname=="Proportion Explained") %>% 
+  filter(., name %in% c("importance.CAP1","importance.CAP2"))-> vare.cap_prop_tib
+
+# Add labels, make a data.frame
+arrowdf_env <- data.frame(labels = vare.cap_env_distances$env, vare.cap_env_distances)
+
+arrowdf_env %>% 
+arrange(desc(dist)) %>% 
+  mutate(., labels = recode(labels,`btl_Latitude`="Lat",
+                            `btl_Longitude`="Lon",
+                            `btl_OxsatMm.Kg`="OxsatMm.Kg",
+                            `btl_Ph`="pH",
+                            `btl_T090C`="˚C",
+                            `Depth_m_notes` = "Depth",
+                            `btl_Sal00`="PSU",
+                            `SeasonSpring`="Season"))-> arrowdf_env
+
+# Define the arrow aesthetic mapping
+arrow_map <- aes(xend = 0.3 *CAP1, 
+                 yend = 0.3 *CAP2, 
+                 x = 0, 
+                 y = 0, 
+                 shape = NULL, 
+                 color = NULL, 
+                 label = labels)
+
+arrow_map2 <- aes(xend = 2.3 *CAP1, 
+                 yend = 2.3 *CAP2, 
+                 x = 0, 
+                 y = 0, 
+                 shape = NULL, 
+                 color = NULL, 
+                 label = labels)
+
+label_map <- aes(x = 2.3 * CAP1, 
+                 y = 2.3 * CAP2, 
+                 shape = NULL, 
+                 color = NULL, 
+                 label = labels,
+                 alpha=0.7,
+                 fontface="italic")
+label_map2 <- aes(x = 0.27 * CAP1, 
+                 y = 0.27 * CAP2, 
+                 shape = NULL, 
+                 color = NULL, 
+                 alpha=0.7,
+                 label = labels)
+
+arrowhead = arrow(length = unit(0.02, "npc"))
+
+method.sampledf$sample <- rownames(method.sampledf)
+# Plot CAP
+as.data.frame(vare.cap$CCA$wa) %>% 
+  rownames_to_column(var = "sample") %>% 
+  as.tibble() %>% 
+  left_join(method.sampledf)-> data_cap
+
+
+data_cap %>% 
+  ggplot(aes(x=CAP1, y=CAP2)) + geom_point(aes(col=btl_OxsatMm.Kg), size =3) + geom_segment(
+    mapping = arrow_map2, 
+    size = .5, 
+    data = arrowdf, 
+    color = "dodgerblue3", 
+    arrow = arrowhead
+  ) +
+  geom_label(
+    mapping = label_map, 
+    size = 4,  
+        color = "dodgerblue3", 
+    data = arrowdf, 
+    show.legend = FALSE,
+    position=position_jitter(width=0.03,height=0.03)
+  ) + 
+  geom_segment(
+    mapping = arrow_map, 
+    size = .5, 
+    data = arrowdf_env, 
+    color = "grey", 
+    arrow = arrowhead
+  ) +
+  geom_label(
+    mapping = label_map2, 
+    size = 5, 
+    data = arrowdf_env, 
+    show.legend = FALSE,
+    position=position_jitter(width=0.03,height=0.03)
+  )  +
+  ylab(paste0("CAP2 [",round(vare.cap_prop_tib$value[2]*100,1),"]%"))   + xlab(paste0("CAP1 [",round(vare.cap_prop_tib$value[1]*100,1),"]%")) +   
+  scale_color_gradientn(colours = cmocean('thermal')(256)) + ggpubr::theme_pubr() +labs(colour="O2 Sat") + theme(axis.title = element_text(face="bold", size = 16))
+
+
+
+
+```
+
+##  All subsurface Bray
+
+```{r}
+physeq_obj._CO1_sum.tax_goa <- subset_samples(physeq_obj._CO1_sum.tax_goa, Depth_m_notes >30)
+
+physeq_obj._CO1_sum.tax_goa <- prune_samples(sample_sums(physeq_obj._CO1_sum.tax_goa) > 0, physeq_obj._CO1_sum.tax_goa)
+physeq_obj._CO1_sum.tax_goa = subset_taxa(physeq_obj._CO1_sum.tax_goa, Kingdom!="Bacteria")
+physeq_obj._CO1_sum.tax_goa = subset_taxa(physeq_obj._CO1_sum.tax_goa, Kingdom!="Environmental Unknown")
+
+physeq_obj._CO1_sum.tax_goa = subset_samples(physeq_obj._CO1_sum.tax_goa,
+                                             !is.na(btl_Ph) & 
+                                               !is.na(btl_T090C) & 
+                                               !is.na(btl_OxsatMm.Kg) &
+                                               !is.na(btl_Latitude)&
+                                               !is.na(btl_Longitude) & !is.na(btl_Sal00))
+
+tax_table(physeq_obj._CO1_sum.tax_goa) %>%  as.data.frame()
+```
+
+
+```{r}
+
+#Betadiversity
+#Generate Vegan formatted data table
+method.sampledf <- data.frame(sample_data(physeq_obj._CO1_sum.tax_goa))
+method.rel_abun<- vegan_otu(physeq_obj._CO1_sum.tax_goa)
+
+#Bray dissimilarity matrix
+method.d_carn <- vegdist(method.rel_abun, method="bray")
+
+#PERMANOVA: Method+Site
+
+method.adonis_results_goa <- adonis2(method.rel_abun~btl_Ph+btl_T090C+btl_OxsatMm.Kg+Depth_m_notes+btl_Latitude+btl_Longitude+btl_Sal00, data=method.sampledf, by = "terms",na.action =na.exclude)
+
+method.adonis_results_goa
+
+```
+
+```{r}
+ord <- ordinate(physeq_obj._CO1_sum.tax_goa, method = "NMDS", distance = ("bray"))
+```
+
+### NMDS Temp
+```{r}
+##Plot_Ordination
+plot_ordination(physeq_obj._CO1_sum.tax_goa, ord, "samples",color = "btl_Ph") +
+  ggtitle(paste0("NMDS - Stress ",round(ord$stress,3))) + 
+  geom_point(size = 4) + 
+  theme_bw()+ 
+  theme(plot.title = element_text(hjust = 0.5,size = 20, face = "bold"),
+        plot.subtitle = element_text(hjust = 0.5,size = 18, face = "bold"),
+        panel.grid.major = element_blank(), 
+        panel.grid.minor = element_blank(),
+        panel.background = element_blank(), 
+        axis.text=element_text(size=16), 
+        axis.title=element_text(size=16,face="bold"),
+        legend.title = element_text( size=16, face="bold"),
+        legend.text = element_text(size=14)
+        ) + 
+  labs(color = "pH") +scale_colour_cmocean() 
+
+
+```
+### CAP Analysis
+
+## CAP Species
+
+```{r, results="hide",warning=FALSE}
+#Run CAP analysis to identify predictor species
+vare.cap <- capscale(method.rel_abun ~ btl_Ph+btl_T090C+btl_OxsatMm.Kg+Depth_m_notes+btl_Latitude+btl_Longitude+btl_Sal00,  data=method.sampledf, dist="bray")
+
+#Retain species scores
+sppscores(vare.cap) <- method.rel_abun
+
+as.data.frame(vegan::scores(vare.cap, display="species")) %>% 
+  rownames_to_column(var = "species") %>% 
+  as.tibble %>%
+ mutate(dist = sqrt((CAP1 - 0)^2 + (CAP2 - 0)^2)) -> vare.cap_species_distances
+
+
+as.data.frame(vegan::scores(vare.cap, display="bp")) %>% 
+  rownames_to_column(var = "env") %>% 
+  as.tibble %>%
+ mutate(dist = sqrt((CAP1 - 0)^2 + (CAP2 - 0)^2)) -> vare.cap_env_distances
+
+
+```
+##### Check For Break Point for Top Species
+```{r}
+species_distances <- as.data.frame(vare.cap_species_distances)
+TAXcap = tax_table(physeq_obj._CO1_sum.tax_goa) %>% as.data.frame()
+
+species_distances %>% 
+  mutate(., sum.taxonomy=species) %>% 
+  left_join(TAXcap) -> species_distances
+
+rownames(species_distances) <- species_distances$sum.taxonomy
+
+# Now add the environmental variables as arrows
+arrowmat <- species_distances
+
+#Rename row names to clean up plot
+
+species_distances %>% 
+  filter(., Species!="NA")-> namers
+
+rownames(namers) <- namers$name
+
+
+# Add labels, make a data.frame
+arrowdf <- data.frame(labels = namers$Species, namers)
+
+arrowdf %>% 
+  filter(., !Phylum %in% c("Bacillariophyta","Chlorophyta","Dinophyceae__p","Dictyochophyceae__p","Pelagophyceae__p")) %>% 
+  arrange(desc(dist)) %>% 
+  dplyr::slice(1:100) 
+
+arrowdf %>% 
+arrange(desc(dist)) %>% 
+    filter(., !Phylum %in% c("Bacillariophyta","Chlorophyta","Dinophyceae__p","Dictyochophyceae__p","Pelagophyceae__p")) %>% 
+   dplyr::slice(1:10) %>% 
+ggplot(., aes(x= reorder(labels, -dist), y=dist)) +
+  geom_bar(stat="identity") + theme(axis.text.x = element_text(angle = 90, hjust = 1))
+
+```
+
+```{r}
+arrowdf %>% 
+arrange(desc(dist)) %>% 
+    filter(., !Phylum %in% c("Bacillariophyta","Chlorophyta","Dinophyceae__p","Dictyochophyceae__p","Pelagophyceae__p")) %>% 
+   dplyr::slice(1:10)-> arrowdf
+
+
+summary(vare.cap)$cont %>% as.data.frame() %>% round(3)-> vare.cap_prop
+
+as.tibble(vare.cap_prop,rownames = "rowname") %>% 
+  pivot_longer(., cols=-rowname, values_to = "value", names_to = "name") %>% 
+  filter(., rowname=="Proportion Explained") %>% 
+  filter(., name %in% c("importance.CAP1","importance.CAP2"))-> vare.cap_prop_tib
+
+# Add labels, make a data.frame
+arrowdf_env <- data.frame(labels = vare.cap_env_distances$env, vare.cap_env_distances)
+
+arrowdf_env %>% 
+arrange(desc(dist)) %>% 
+  mutate(., labels = recode(labels,`btl_Latitude`="Lat",
+                            `btl_Longitude`="Lon",
+                            `btl_OxsatMm.Kg`="OxsatMm.Kg",
+                            `btl_Ph`="pH",
+                            `btl_T090C`="˚C",
+                            `Depth_m_notes` = "Depth",
+                            `btl_Sal00`="PSU",
+                            `SeasonSpring`="Season"))-> arrowdf_env
+
+# Define the arrow aesthetic mapping
+arrow_map <- aes(xend = 0.3 *CAP1, 
+                 yend = 0.3 *CAP2, 
+                 x = 0, 
+                 y = 0, 
+                 shape = NULL, 
+                 color = NULL, 
+                 label = labels)
+
+arrow_map2 <- aes(xend = 2.3 *CAP1, 
+                 yend = 2.3 *CAP2, 
+                 x = 0, 
+                 y = 0, 
+                 shape = NULL, 
+                 color = NULL, 
+                 label = labels)
+
+label_map <- aes(x = 2.3 * CAP1, 
+                 y = 2.3 * CAP2, 
+                 shape = NULL, 
+                 color = NULL, 
+                 label = labels,
+                 alpha=0.7,
+                 fontface="italic")
+label_map2 <- aes(x = 0.27 * CAP1, 
+                 y = 0.27 * CAP2, 
+                 shape = NULL, 
+                 color = NULL, 
+                 alpha=0.7,
+                 label = labels)
+
+arrowhead = arrow(length = unit(0.02, "npc"))
+
+method.sampledf$sample <- rownames(method.sampledf)
+# Plot CAP
+as.data.frame(vare.cap$CCA$wa) %>% 
+  rownames_to_column(var = "sample") %>% 
+  as.tibble() %>% 
+  left_join(method.sampledf)-> data_cap
+
+
+data_cap %>% 
+  ggplot(aes(x=CAP1, y=CAP2)) + geom_point(aes(col=btl_Ph), size =3) + geom_segment(
+    mapping = arrow_map2, 
+    size = .5, 
+    data = arrowdf, 
+    color = "dodgerblue3", 
+    arrow = arrowhead
+  ) +
+  geom_label(
+    mapping = label_map, 
+    size = 4,  
+        color = "dodgerblue3", 
+    data = arrowdf, 
+    show.legend = FALSE,
+    position=position_jitter(width=0.03,height=0.03)
+  ) + 
+  geom_segment(
+    mapping = arrow_map, 
+    size = .5, 
+    data = arrowdf_env, 
+    color = "grey", 
+    arrow = arrowhead
+  ) +
+  geom_label(
+    mapping = label_map2, 
+    size = 5, 
+    data = arrowdf_env, 
+    show.legend = FALSE,
+    position=position_jitter(width=0.03,height=0.03)
+  )  +
+  ylab(paste0("CAP2 [",round(vare.cap_prop_tib$value[2]*100,1),"]%"))   + xlab(paste0("CAP1 [",round(vare.cap_prop_tib$value[1]*100,1),"]%")) +   
+  scale_color_gradientn(colours = cmocean('thermal')(256)) + ggpubr::theme_pubr() +labs(colour="O2 Sat") + theme(axis.title = element_text(face="bold", size = 16))
+
+
+
+
+```
 

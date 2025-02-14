@@ -1,1 +1,0 @@
-{"frames":[{"func":"read.ctd.sbe(files[i], btl = T)","file":"","line_number":0,"end_line_number":0,"character_number":0,"end_character_number":0},{"func":"stop(\"cannot find file \\\"\", file, \"\\\"\")","file":"","line_number":0,"end_line_number":0,"character_number":0,"end_character_number":0}],"message":"Error in read.ctd.sbe(files[i], btl = T) : cannot find file \"NA\"\n"}

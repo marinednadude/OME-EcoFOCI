@@ -1,0 +1,110 @@
+---
+title: "Map of Cruises"
+author: "Zack Gold"
+date: "2025-01-08"
+output: html_document
+---
+
+```{r}
+library(tidyverse)
+library(here)
+library(lubridate)
+library(measurements)
+library(sp)
+library(readr)
+library(sf)
+library("rnaturalearth")
+library("rnaturalearthdata")
+```
+
+```{r}
+run1_4_revamp_formatted_metadata <- read.csv(here("run1_4_revamp_formatted_metadata.csv"))
+
+
+run1_4_revamp_formatted_metadata %>% 
+  filter(., Cruise_ID_short !="RC_GOA_2022") %>% 
+  filter(., !is.na(Temp_C)) %>% 
+  count()
+
+run1_4_revamp_formatted_metadata %>% 
+  filter(., Cruise_ID_short !="RC_GOA_2022") %>% 
+    mutate(., Depth_bin = if_else(Depth_m >29, "Below 30m","Above 30m" )) %>% 
+     mutate(across(Cruise_ID_short, ~factor(., levels=c("DY2012","NO20","SKQ2021","DY2206","DY2209","DY2306","SKQ23-12S")))) %>% 
+  filter(., Sample !="E2084_SKQ23_12S") %>% 
+  filter(., !is.na(Temp_C)) %>% 
+  filter(., Depth_m <29)  -> run1_4_revamp_formatted_metadata
+
+
+run1_4_revamp_formatted_metadata %>% 
+  mutate(., Time = as.Date(Time)) %>% 
+  group_by(Cruise_ID_short) %>% 
+    mutate(., Year =year(Time),
+         Month = month(Time),
+         Range = str_c(Month,"/",Year)) %>% 
+    mutate(., Range = recode(Range, `10/2023`="9/2023"))-> run1_4_revamp_formatted_metadata
+```
+
+## Temp Map
+```{r}
+
+min_lat <- min(run1_4_revamp_formatted_metadata$lat, na.rm = T)
+max_lat <- max(run1_4_revamp_formatted_metadata$lat, na.rm = T)
+
+min_lon <- min(run1_4_revamp_formatted_metadata$lon, na.rm = T)-0.5
+max_lon <- max(run1_4_revamp_formatted_metadata$lon, na.rm = T)
+
+world <- ne_countries(scale = "medium", returnclass = "sf")
+
+
+
+library(ggrepel)
+ggplot(data = world) +
+    geom_sf() +
+    geom_point(data = run1_4_revamp_formatted_metadata, aes(x = lon, y = lat, colour=Temp_C), size=2) +scale_colour_cmocean(name="thermal") +
+    coord_sf(xlim = c(min_lon-1, max_lon+1), ylim = c(min_lat-1, max_lat+1), expand = FALSE) +theme_bw()+theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank()) +xlab("Longitude") +ylab("Latitude") + facet_wrap(Cruise_ID_short~Range, nrow=2) + 
+  labs(color = "SST ˚C") + scale_x_continuous(breaks = c(-170,-160)) +theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),panel.background = element_blank(), axis.text=element_text(size=14),
+        axis.title=element_text(size=20,face="bold"),legend.title = element_text( size=12, face="bold"),legend.text = element_text(size=10, 
+                                     face="bold"), title = element_text(size=20, face="bold") ) + theme(legend.text=element_text(size=16), legend.title=element_text(size=20))
+
+
+
+
+ggsave(filename = here("gold_out","map_temp.png"),
+       width=12,
+       height = 8,
+       dpi = 400,
+      units = c("in"))
+
+
+```
+
+
+```{r}
+
+
+run1_4_revamp_formatted_metadata %>% 
+  dplyr::select(Station, lat, lon) %>%  
+  mutate(., lat=round(lat,0),
+         lon=round(lon,0)) %>% 
+  distinct() %>% 
+  filter(., Station %in% c("M2","M5","M8","C2","DBO2.4","DBO3.4", "DBO4.4"))  -> sites_to_label
+
+
+
+library(ggrepel)
+ggplot(data = world) +
+    geom_sf()  +
+    geom_point(data = sites_to_label, aes(x = lon, y = lat), color="skyblue3", shape = 2, size=2)+
+    coord_sf(xlim = c(min_lon-1, max_lon+1), ylim = c(min_lat-1, max_lat+1), expand = FALSE) +theme_bw()+theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank()) + geom_text_repel(data = sites_to_label, aes(x = lon, y = lat, label=Station),size =4, fontface="bold", color="skyblue3", min.segment.length = unit(0, 'lines'), nudge_x = 4, nudge_y =  0.2)  + scale_x_continuous(breaks = c(-170,-160)) +theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),panel.background = element_blank(), axis.text.x=element_text(size=14), axis.text.y=element_blank(),legend.title = element_text( size=12, face="bold"),legend.text = element_text(size=10, 
+                                     face="bold"), title = element_text(size=20, face="bold") ) + theme(legend.text=element_text(size=16), axis.title = element_blank()) +   geom_text(aes(x=-171, y=70, label="Chukchi Sea", ), color="navy",size=3, fontface = "italic")+geom_text(aes(x=-171, y=56, label="Bering Sea", ), color="navy",size=3, fontface = "italic")
+
+
+
+
+ggsave(filename = here("gold_out","map_temp_mini.png"),
+       width=8,
+       height = 4,
+       dpi = 400,
+      units = c("in"))
+
+```

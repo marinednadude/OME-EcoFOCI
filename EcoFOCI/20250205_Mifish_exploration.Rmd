@@ -1,0 +1,451 @@
+---
+title: "EcoFOCI Analysis Run 1-4"
+author: "Zack Gold"
+date: "2025-02-06"
+output: html_document
+---
+
+
+```{r}
+library(ggpmisc)
+
+library(tidyverse)
+library(here)
+library(lubridate)
+library(measurements)
+library(sp)
+library(readr)
+library(sf)
+library("rnaturalearth")
+library("rnaturalearthdata")
+library(cmocean)
+library(phyloseq)
+
+library(tidyverse)
+library(phyloseq)
+library(metagMisc)
+library(iNEXT)
+library(vegan)
+library('phyloseq')
+library(ranacapa)
+library(here)
+library(patchwork)
+
+```
+
+# Load Data
+```{r}
+long_MiFish_EcoFOCI<- readRDS(here("data","long_data","long_MiFish_EcoFOCI.RDS"))
+
+```
+
+# Site Mapping
+
+```{r}
+long_MiFish_EcoFOCI %>% ungroup() %>% 
+  dplyr::select( Sample  ,         replicates   ,        group1   ,           
+group2   ,            Sample_Name  ,        Biological_Replicate,
+Technical_Replicate , Negative_control,     Cruise_ID_short  ,   
+Cruise_ID_long ,      Cast_No.   ,          Rosette_position   , 
+Station   ,           Sample_volume_ml ,    Time  ,              
+Depth_m  ,            lat  ,                lon  ,               
+Temp_C  ,             PSU_ppt  ,            OxySatPerc_percent  ,
+OxyConc_umol.per.l ,  Chla_ugrams.per.l ,   PO4_umol.per.l  ,    
+NO2_umol.per.l  ,     NO3_umol.per.l   ,    NH4_umol.per.l     , 
+sites) %>% distinct() %>% 
+  filter(., Cruise_ID_short !="RC_GOA_2022") %>% 
+    mutate(., Depth_bin = if_else(Depth_m >29, "Below 30m","Above 30m" )) -> sample_metadata
+
+```
+
+```{r}
+long_MiFish_EcoFOCI %>% 
+  ungroup() %>% 
+  dplyr::select(ASV_combo, Kingdom, Phylum, Class, Order, Family, Genus, Species, nReads, Sample) %>% distinct() -> quick_tax
+
+quick_tax %>% 
+  dplyr::select(ASV_combo, nReads, Sample) %>% 
+  group_by(Sample) %>% 
+  dplyr::summarise(tot_reads=sum(nReads)) -> sample_read_depths
+
+
+sample_read_depths %>% 
+  ggplot(aes(x=tot_reads))+geom_histogram()
+
+sample_read_depths %>% 
+  filter(., tot_reads < 30000) -> samples_to_drop
+```
+
+
+```{r}
+
+sample_metadata %>% 
+  ggplot(aes(x=Depth_m)) +   geom_histogram(aes(x=Depth_m,y=..density..), position="identity") + 
+  geom_density(aes(x=Depth_m,y=..density..))
+```
+
+## Temp Map
+```{r}
+
+min_lat <- min(long_MiFish_EcoFOCI$lat, na.rm = T)
+max_lat <- max(long_MiFish_EcoFOCI$lat, na.rm = T)
+
+min_lon <- min(long_MiFish_EcoFOCI$lon, na.rm = T)
+max_lon <- max(long_MiFish_EcoFOCI$lon, na.rm = T)
+
+world <- ne_countries(scale = "medium", returnclass = "sf")
+
+sample_metadata %>% 
+  dplyr::select(Station, lat, lon) %>%  
+  mutate(., lat=round(lat,1),
+         lon=round(lon,1)) %>% 
+  distinct() %>% 
+  filter(., Station %in% c("M5","M8","DBO3.4")) -> sites_to_label
+
+library(ggrepel)
+ggplot(data = world) +
+    geom_sf() +
+    geom_point(data = sample_metadata, aes(x = lon, y = lat, colour=Temp_C), size=2) +scale_colour_cmocean(name="thermal") +
+    coord_sf(xlim = c(min_lon-1, max_lon+1), ylim = c(min_lat-1, max_lat+1), expand = FALSE) +theme_bw() +xlab("Longitude") +ylab("Latitude") + facet_wrap(Depth_bin~Cruise_ID_short)+ geom_text_repel(data = sites_to_label, aes(x = lon, y = lat, label=Station),size =3,min.segment.length = unit(0, 'lines'), nudge_x = 4, nudge_y =  0.2)
+
+
+```
+
+## Salinity
+
+```{r}
+ggplot(data = world) +
+    geom_sf() +
+    geom_point(data = sample_metadata, aes(x = lon, y = lat, colour=PSU_ppt), size=2) +scale_colour_cmocean(name="haline") +
+    coord_sf(xlim = c(min_lon-1, max_lon+1), ylim = c(min_lat-1, max_lat+1), expand = FALSE) +theme_bw() +xlab("Longitude") +ylab("Latitude") + facet_wrap(Depth_bin~Cruise_ID_short)+ geom_text_repel(data = sites_to_label, aes(x = lon, y = lat, label=Station),size =3,min.segment.length = unit(0, 'lines'), nudge_x = 4, nudge_y =  0.2)
+
+```
+
+## Chla
+```{r}
+ggplot(data = world) +
+    geom_sf() +
+    geom_point(data = sample_metadata, aes(x = lon, y = lat, colour=Chla_ugrams.per.l), size=2) +scale_colour_cmocean(name="algae", limits= c(0,15)) +
+    coord_sf(xlim = c(min_lon-1, max_lon+1), ylim = c(min_lat-1, max_lat+1), expand = FALSE) +theme_bw() +xlab("Longitude") +ylab("Latitude") + facet_wrap(Depth_bin~Cruise_ID_short)+ geom_text_repel(data = sites_to_label, aes(x = lon, y = lat, label=Station),size =3,min.segment.length = unit(0, 'lines'), nudge_x = 4, nudge_y =  0.2)
+
+
+sample_metadata 
+```
+
+## Oxy. Sat.
+
+```{r}
+ggplot(data = world) +
+    geom_sf() +
+    geom_point(data = sample_metadata, aes(x = lon, y = lat, colour=OxySatPerc_percent), size=2) +scale_colour_cmocean(name="oxy") +
+    coord_sf(xlim = c(min_lon-1, max_lon+1), ylim = c(min_lat-1, max_lat+1), expand = FALSE) +theme_bw() +xlab("Longitude") +ylab("Latitude") + facet_wrap(Depth_bin~Cruise_ID_short)+ geom_text_repel(data = sites_to_label, aes(x = lon, y = lat, label=Station),size =3,min.segment.length = unit(0, 'lines'), nudge_x = 4, nudge_y =  0.2)
+
+```
+
+
+## Ammonium
+```{r}
+ggplot(data = world) +
+    geom_sf() +
+    geom_point(data = sample_metadata, aes(x = lon, y = lat, colour=NH4_umol.per.l), size=2) +scale_colour_cmocean(name="haline") +
+    coord_sf(xlim = c(min_lon-1, max_lon+1), ylim = c(min_lat-1, max_lat+1), expand = FALSE) +theme_bw() +xlab("Longitude") +ylab("Latitude") + facet_wrap(Depth_bin~Cruise_ID_short)+ geom_text_repel(data = sites_to_label, aes(x = lon, y = lat, label=Station),size =3,min.segment.length = unit(0, 'lines'), nudge_x = 4, nudge_y =  0.2)
+```
+
+
+
+```{r}
+long_MiFish_EcoFOCI %>% 
+  filter(., !is.na(Species)) %>% 
+  filter(., nReads >0) %>% 
+  dplyr::group_by(ASV_combo, Kingdom, Phylum, Class, Order, Family, Genus, Species) %>% 
+  dplyr::summarise(sum_reads=sum(nReads)) %>% 
+  arrange(desc(sum_reads))
+
+```
+
+
+# Alpha Diversity Taxonomic Exploration
+
+
+```{r}
+
+
+quick_tax %>% 
+    group_by(Species) %>% 
+  filter(., nReads >0) %>% 
+  filter(., !is.na(Species)) %>% 
+  dplyr::summarise(tot_ASVs = n_distinct(ASV_combo), tot_reads = sum(nReads), tot_occ= n_distinct(Sample)) %>% 
+  arrange(desc(tot_occ))
+```
+
+```{r}
+quick_tax %>% 
+    group_by(Genus) %>% 
+  filter(., nReads >0) %>% 
+  filter(., !is.na(Genus)) %>% 
+  dplyr::summarise(tot_ASVs = n_distinct(ASV_combo), tot_reads = sum(nReads), tot_occ= n_distinct(Sample)) %>% 
+  arrange(desc(tot_occ))
+```
+
+```{r}
+
+
+long_MiFish_EcoFOCI %>% 
+    filter(, !is.na(Depth_m)) %>% 
+ungroup() %>% 
+   unite(sum.taxonomy, c("Kingdom",              "Phylum",               "Class"               
+,"Order",                "Family",               "Genus",               "Species"), sep=";", remove=F) %>%  
+  dplyr::select(sum.taxonomy, Kingdom,Phylum,Class, Order,Family, Genus, Species) %>% 
+  distinct() -> tax_df_mifish
+```
+
+
+```{r}
+
+tax_df_mifish %>% 
+    filter(., Phylum== "Chordata") %>% 
+  dplyr::select(Species) %>%  distinct()
+```
+
+```{r}
+tax_df_mifish %>% 
+    filter(., Phylum== "Chordata") %>% 
+  filter(., str_detect(sum.taxonomy,"Chondrichthyes"))
+```
+
+```{r}
+
+tax_df_mifish %>% 
+  filter(., str_detect(sum.taxonomy,"Mammalia"))
+
+```
+
+```{r}
+tax_df_mifish %>% 
+  filter(., Phylum== "Chordata") %>% 
+    filter(., Species !="NA") %>% 
+  group_by(Class) %>% 
+  dplyr::summarise(Count = n_distinct(Species)) %>% 
+  arrange(desc(Count)) %>% 
+  dplyr::slice(1:10) %>% 
+  ggplot(aes(x=reorder(Class,-Count), y=Count)) + geom_col(fill="aquamarine4") + theme_pubr() + theme(axis.title = element_text(face="bold", size=16),
+     axis.text.x = element_text(angle = 30, vjust=1, hjust = 1)) +xlab("Class") +ggtitle(label = "MiFish")
+```
+
+# MiFish Data Exploration
+
+#### Build Phyloseq Object
+
+##### ASV Reads
+
+```{r}
+
+varnames <- colnames(long_MiFish_EcoFOCI)
+to_remove <- c("Run2:ASV","Run3:ASV","Run4:ASV","ASV_combo","Sequence","nReads","Prop.abund","eDNA.Index")
+
+sample_metadata -> co1_sample_data
+
+#Metadata
+co1_sample_data %>%  as.data.frame() -> sampledata
+
+sampledata %>% 
+group_by(Sample) %>% 
+  filter(n()>1)
+
+rownames(sampledata) <- sampledata$Sample
+sample_data(sampledata) -> sampledata
+
+#ASV Reads
+
+long_MiFish_EcoFOCI %>% 
+  dplyr::select(ASV_combo,Sample, eDNA.Index) %>% 
+  mutate(., eDNA.Index=as.numeric(eDNA.Index)) %>% 
+  mutate(., eDNA.Index=if_else(eDNA.Index=="NaN", 0, eDNA.Index)) %>%
+  pivot_wider(names_from = Sample, values_from = eDNA.Index, values_fill  =0) -> wide_PA
+
+long_MiFish_EcoFOCI %>% 
+  dplyr::select(ASV_combo, Kingdom,Phylum,Class, Order,Family, Genus, Species) %>% 
+  distinct() %>% as.matrix() -> taxonomy_table
+
+rownames(taxonomy_table) <- wide_PA$ASV_combo
+
+TAX = tax_table(taxonomy_table)
+
+wide_PA %>% 
+  ungroup() %>% 
+  dplyr::select(-ASV_combo) %>% as.matrix() -> otu_table
+rownames(otu_table) <- wide_PA$ASV_combo
+
+OTU = otu_table(otu_table, taxa_are_rows = TRUE)
+physeq_MiFish = phyloseq(OTU, TAX, sampledata)
+
+
+```
+
+
+# Betdiveristy
+
+## All
+```{r}
+physeq_MiFish_c = subset_samples(physeq_MiFish, !is.na(Temp_C) & !is.na(lat) & !is.na(Depth_m))
+
+#Betadiversity
+#Generate Vegan formatted data table
+method.sampledf <- data.frame(sample_data(physeq_MiFish_c))
+
+method.sampledf %>% 
+  mutate(T2=as.Date(Time),
+         month = month(Time)) %>% 
+  mutate(., Season = case_when(month < 3 ~"Winter",
+                               month < 6 ~"Spring",
+                               month < 9~ "Summer",
+                               month < 12 ~"Fall")) -> method.sampledf
+method.rel_abun<- vegan_otu(physeq_MiFish_c)
+
+#Jaccard dissimilarity matrix
+method.d_carn <- vegdist(method.rel_abun, method="jaccard", binary=TRUE)
+
+
+```
+
+### Jaccard Occurrence all variables
+
+```{r}
+#PERMANOVA: Method+Site
+
+method.adonis_results <- adonis2(method.rel_abun~Season+ Depth_m+lat+Temp_C+PSU_ppt+OxySatPerc_percent+OxyConc_umol.per.l+Chla_ugrams.per.l+PO4_umol.per.l+NO2_umol.per.l+NO3_umol.per.l+NH4_umol.per.l
+, data=method.sampledf,  na.action =na.exclude, by = "terms", method="jaccard", binary=TRUE)
+
+method.adonis_results
+```
+
+### Jaccard Occurrence some variables
+
+```{r}
+method.adonis_results_simple <- adonis2(method.rel_abun~Season +Depth_m+lat+Temp_C+PSU_ppt+OxyConc_umol.per.l+Chla_ugrams.per.l+lon, data=method.sampledf, by = "terms", method="jaccard", binary=TRUE)
+
+method.adonis_results_simple
+
+summary(method.adonis_results_simple)
+```
+
+### Bray + eDNA index all variables
+```{r}
+#Bray dissimilarity matrix
+method.d_carn_b <- vegdist(method.rel_abun, method="bray")
+
+#PERMANOVA: Method+Site
+
+method.adonis_results_b <- adonis2(method.rel_abun~ Season + Depth_m+lat+Temp_C+PSU_ppt+OxySatPerc_percent+OxyConc_umol.per.l+Chla_ugrams.per.l+PO4_umol.per.l+NO2_umol.per.l+NO3_umol.per.l+NH4_umol.per.l
+, data=method.sampledf,  na.action =na.exclude, by = "terms", method="bray")
+
+method.adonis_results_b
+```
+
+### Bray + eDNA index some variables
+
+```{r}
+method.adonis_results_simple_b <- adonis2(method.rel_abun~Season +Depth_m+lat+Temp_C+PSU_ppt+OxyConc_umol.per.l+Chla_ugrams.per.l+lon, data=method.sampledf, by = "terms",  method="bray")
+
+method.adonis_results_simple_b
+
+summary(method.adonis_results_simple)
+```
+
+
+```{r}
+ord <- ordinate(physeq_MiFish_c, method = "NMDS", distance = ("jaccard"), binary = TRUE)
+```
+
+### NMDS Temp
+```{r}
+##Plot_Ordination
+plot_ordination(physeq_MiFish_c, ord, "samples", color = "Temp_C") +
+  ggtitle(paste0("NMDS - Stress ",round(ord$stress,3))) + 
+  geom_point(size = 4) + 
+  theme_bw()+ 
+  theme(plot.title = element_text(hjust = 0.5,size = 20, face = "bold"),
+        plot.subtitle = element_text(hjust = 0.5,size = 18, face = "bold"),
+        panel.grid.major = element_blank(), 
+        panel.grid.minor = element_blank(),
+        panel.background = element_blank(), 
+        axis.text=element_text(size=16), 
+        axis.title=element_text(size=16,face="bold"),
+        legend.title = element_text( size=16, face="bold"),
+        legend.text = element_text(size=14)
+        ) + 
+  labs(color = "Temp ˚C") +scale_colour_cmocean() 
+
+
+```
+
+
+### NMDS Cruise
+```{r}
+##Plot_Ordination
+plot_ordination(physeq_MiFish_c, ord, "samples", color = "Cruise_ID_short") +
+  ggtitle(paste0("NMDS - Stress ",round(ord$stress,3))) + 
+  geom_point(size = 4) + 
+  theme_bw()+ 
+  theme(plot.title = element_text(hjust = 0.5,size = 20, face = "bold"),
+        plot.subtitle = element_text(hjust = 0.5,size = 18, face = "bold"),
+        panel.grid.major = element_blank(), 
+        panel.grid.minor = element_blank(),
+        panel.background = element_blank(), 
+        axis.text=element_text(size=16), 
+        axis.title=element_text(size=16,face="bold"),
+        legend.title = element_text( size=16, face="bold"),
+        legend.text = element_text(size=14)
+        ) + 
+  labs(color = "Cruise")
+
+```
+
+
+# Power Analysis
+
+## MiFsih
+```{r}
+#isolate groups
+
+subsurface_MiFish <- subset_samples(physeq_MiFish_c, Depth_bin == "Below 30m")
+subsurface_MiFish <- prune_samples(sample_sums(subsurface_MiFish) > 0, subsurface_MiFish)
+subsurface_MiFish_sp = subset_samples(subsurface_MiFish, !is.na(Temp_C) & !is.na(lat) & !is.na(Depth_m))
+subsurface_MiFish_sp = subset_taxa(subsurface_MiFish_sp, Kingdom!="Bacteria")
+subsurface_MiFish_sp = subset_taxa(subsurface_MiFish_sp, Kingdom!="Environmental Unknown")
+
+surface_MiFish <- subset_samples(physeq_MiFish_c, Depth_bin == "Above 30m")
+surface_MiFish <- prune_samples(sample_sums(surface_MiFish) > 0, surface_MiFish)
+surface_MiFish_sp = subset_samples(surface_MiFish, !is.na(Temp_C) & !is.na(lat) & !is.na(Depth_m))
+surface_MiFish_sp = subset_taxa(surface_MiFish_sp, Kingdom!="Bacteria")
+surface_MiFish_sp = subset_taxa(surface_MiFish_sp, Kingdom!="Environmental Unknown")
+
+#Convert groups into vegan outputs
+veganComm_surface_MiFish <- vegan_otu(surface_MiFish_sp)
+veganComm_benthic_MiFish <- vegan_otu(subsurface_MiFish_sp)
+
+###### iNEXT Species Accumulation Curves
+
+#Create List for iNEXT Species Incidence Frequencies
+mor_inc <-list ("Above 30m" =t(veganComm_surface_MiFish),
+                "Below 30m"=t(veganComm_benthic_MiFish))
+
+species_incidence <-lapply(mor_inc, as.incfreq)
+
+#Convert to iNEXT format
+t <- seq(1, 350, by=1)
+out.inc_fish <- iNEXT(species_incidence, q=0, datatype="incidence_freq", size=t)
+
+#out.inc2$DataInfo
+```
+
+```{r}
+#Sample‐size‐based R/E curves
+ggiNEXT(out.inc_fish, type=1, color.var="Both") + 
+  theme_bw(base_size = 18) + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
+                                                                                                    panel.background = element_blank()) + xlab("Stations") + ylab("Taxa") + scale_colour_manual(values = c("dodgerblue4","#Ed820e"), name = "Group", labels = c("Above 30m", "Below 30m")) + scale_shape_discrete(name = "Group", labels = c("Above 30m", "Below 30m")) + scale_fill_manual(values = c("dodgerblue4","#Ed820e"),name = "Group", labels = c("Above 30m", "Below 30m")) +ggtitle(label = "Accumulation", subtitle="MiFish")  +theme(axis.line = element_line(colour = "black"),panel.grid.major = element_blank(), panel.grid.minor = element_blank(),panel.background = element_blank(), axis.text=element_text(size=16),
+        axis.title=element_text(size=20,face="bold"),legend.title = element_text( size=12, face="bold"),legend.text = element_text(size=10, 
+                                     face="bold"), title = element_text(size=20, face="bold") ) + theme(legend.text=element_text(size=16), legend.title=element_text(size=20), axis.title.x=element_blank())
+```
+
+

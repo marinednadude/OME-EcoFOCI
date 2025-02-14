@@ -187,7 +187,6 @@ tibble_of_columns %>%
 tibble_of_columns %>% 
   filter(., str_detect(value,"pH|PH|ph|Ph"))
 
-FinalOME_Merge_RC0083$
 ```
 
 # Clean for REVAMP
@@ -479,7 +478,7 @@ rbind(REVAMP_DY20_12, REVAMP_DY22_06, REVAMP_DY22_09, REVAMP_DY23_06, REVAMP_NO2
 
 
 revamp_sample_metadata %>% 
-  filter(., str_detect(Sample_Name,"E2084"))
+  filter(., str_detect(Sample_Name,"E1148"))
 ```
 
 ```{r}
@@ -494,8 +493,13 @@ revamp_format_run1_4 %>%
   left_join(revamp_sample_metadata) %>% 
   mutate(., sites = Station) -> run1_4_revamp_formatted_metadata
 
+run1_4_revamp_formatted_metadata %>% 
+  filter(., str_detect(Sample, "DY2206"))
+
 readr::write_excel_csv(run1_4_revamp_formatted_metadata, file="run1_4_revamp_formatted_metadata.csv")
 
 
 ```
+
+
 

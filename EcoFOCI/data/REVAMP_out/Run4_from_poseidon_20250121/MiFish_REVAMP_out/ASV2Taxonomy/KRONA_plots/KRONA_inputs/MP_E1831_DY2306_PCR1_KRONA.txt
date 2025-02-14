@@ -1,0 +1,34 @@
+3	Eukaryota	Chordata	Actinopteri	Gadiformes	Gadidae	Gadus
+9	Bacteria	Pseudomonadota
+5	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae
+5	Bacteria	Pseudomonadota
+4	Eukaryota	Chordata	Mammalia	Artiodactyla	Bovidae
+4	Bacteria	Pseudomonadota	Alphaproteobacteria	Hyphomicrobiales	Methylobacteriaceae	Methylobacterium
+2	Bacteria	Pseudomonadota	Gammaproteobacteria	Oceanospirillales	Oceanospirillaceae	Amphritea	Amphritea japonica
+160	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Chaetoceros sp_
+1412	Eukaryota
+7	Bacteria
+1	Bacteria
+16	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Chaetoceros sp_
+1	Eukaryota	Chordata	Actinopteri	Clupeiformes	Clupeidae	Clupea	Clupea pallasii (Pacific herring)
+5	Bacteria	Deltaproteobacteria__p	Deltaproteobacteria
+1	Bacteria	Planctomycetota
+1805	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Chaetoceros sp_
+218	Bacteria	Candidatus Azambacteria
+76	Eukaryota
+181	Bacteria	Mycoplasmatota	Candidatus Izimaplasma	Candidatus Izemoplasmatales	Candidatus Izemoplasmataceae
+2294	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros
+156	Bacteria	Candidatus Nomurabacteria
+2443	Eukaryota
+126	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Chaetoceros sp_
+122	Bacteria	Pseudomonadota	Gammaproteobacteria	Alteromonadales	Colwelliaceae
+5	Bacteria	Deltaproteobacteria__p	Deltaproteobacteria
+22	Eukaryota
+2302	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Chaetoceros sp_
+1	Bacteria
+2	Eukaryota	Bolidophyceae__p	Bolidophyceae	Parmales	Triparmaceae	Bolidomonas	Bolidomonas mediterranea
+1	Eukaryota	Bolidophyceae__p	Bolidophyceae
+1	Eukaryota	Chordata	Actinopteri	Gadiformes	Gadidae	Gadus	Gadus chalcogrammus (walleye pollock)
+40	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Chaetoceros sp_
+39	Bacteria
+1	Eukaryota	Chordata	Actinopteri	Pleuronectiformes	Pleuronectidae	Hippoglossus

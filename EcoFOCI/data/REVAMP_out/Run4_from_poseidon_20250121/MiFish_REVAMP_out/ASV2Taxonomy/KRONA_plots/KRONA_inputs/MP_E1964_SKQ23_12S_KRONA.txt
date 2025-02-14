@@ -1,0 +1,8 @@
+1	Eukaryota	Chordata	Actinopteri	Perciformes	Sebastidae	Sebastes
+4	Eukaryota	Chordata	Actinopteri	Gadiformes	Gadidae	Gadus
+4	Eukaryota	Chordata	Actinopteri	Perciformes	Cottidae	Oligocottus	Oligocottus maculosus (tidepool sculpin)
+2	Eukaryota	Chordata	Actinopteri	Salmoniformes	Salmonidae	Oncorhynchus	Oncorhynchus keta (chum salmon)
+1	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Thalassiosirales	Thalassiosiraceae
+3	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Chaetoceros sp_
+4	Eukaryota
+1	Eukaryota	Bolidophyceae__p	Bolidophyceae	Parmales	Triparmaceae	Bolidomonas	Bolidomonas mediterranea

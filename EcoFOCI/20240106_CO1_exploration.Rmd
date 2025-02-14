@@ -147,7 +147,6 @@ long_COI_EcoFOCI %>%
 ```
 
 # CO1 Data Exploration
-# Beta Diversity
 
 #### Build All Method Phyloseq Object
 
@@ -192,11 +191,17 @@ rownames(otu_table) <- wide_PA$ASV_combo
 OTU = otu_table(otu_table, taxa_are_rows = TRUE)
 physeq_obj._CO1 = phyloseq(OTU, TAX, sampledata)
 
+physeq_obj._CO1_2020 <- subset_samples(physeq_obj._CO1,Cruise_ID_short != "SKQ2021")
+
 subsurface_co1 <- subset_samples(physeq_obj._CO1, Depth_bin == "Below 30m")
+subsurface_co1_2020 <- subset_samples(subsurface_co1, Cruise_ID_short != "SKQ2021")
+
 surface_co1 <- subset_samples(physeq_obj._CO1, Depth_bin == "Above 30m")
+surface_co1_2020 <- subset_samples(surface_co1, Cruise_ID_short != "SKQ2021")
+
 ```
 
-# PERMANOVA
+# Betdiveristy
 
 ## surface_co1 Jaccard
 ```{r}
@@ -216,7 +221,7 @@ method.sampledf$Cruise_ID_short %>%  unique()
 #PERMANOVA: Method+Site
 
 method.adonis_results <- adonis2(method.rel_abun~ Depth_m+lat+Temp_C+PSU_ppt+OxySatPerc_percent+OxyConc_umol.per.l+Chla_ugrams.per.l+PO4_umol.per.l+NO2_umol.per.l+NO3_umol.per.l+NH4_umol.per.l
-, data=method.sampledf,  na.action =na.exclude, by = "margin")
+, data=method.sampledf,  na.action =na.exclude, by = "terms")
 
 method.adonis_results
 
@@ -263,7 +268,7 @@ ord <- ordinate(surface_co1_c, method = "NMDS", distance = ("bray"))
 ```{r}
 ##Plot_Ordination
 plot_ordination(surface_co1_c, ord, "samples", color = "Temp_C") +
-  ggtitle("NMDS - Stress 0.2051166") + 
+  ggtitle(paste0("NMDS - Stress ",round(ord$stress,3))) + 
   geom_point(size = 4) + 
   theme_bw()+ 
   theme(plot.title = element_text(hjust = 0.5,size = 20, face = "bold"),
@@ -286,7 +291,150 @@ plot_ordination(surface_co1_c, ord, "samples", color = "Temp_C") +
 ```{r}
 ##Plot_Ordination
 plot_ordination(surface_co1_c, ord, "samples", color = "Cruise_ID_short") +
-  ggtitle("NMDS - Stress 0.2051166") + 
+  ggtitle(paste0("NMDS - Stress ",round(ord$stress,3))) + 
+  geom_point(size = 4) + 
+  theme_bw()+ 
+  theme(plot.title = element_text(hjust = 0.5,size = 20, face = "bold"),
+        plot.subtitle = element_text(hjust = 0.5,size = 18, face = "bold"),
+        panel.grid.major = element_blank(), 
+        panel.grid.minor = element_blank(),
+        panel.background = element_blank(), 
+        axis.text=element_text(size=16), 
+        axis.title=element_text(size=16,face="bold"),
+        legend.title = element_text( size=16, face="bold"),
+        legend.text = element_text(size=14)
+        ) + 
+  labs(color = "Cruise")
+
+```
+
+## 2020 surface_co1 Jaccard
+```{r}
+surface_co1_2020 = subset_samples(surface_co1_2020, !is.na(Temp_C) & !is.na(lat) & !is.na(Depth_m))
+
+ 
+
+#Betadiversity
+#Generate Vegan formatted data table
+method.sampledf <- data.frame(sample_data(surface_co1_2020))
+method.rel_abun<- vegan_otu(surface_co1_2020)
+
+#Jaccard dissimilarity matrix
+method.d_carn <- vegdist(method.rel_abun, method="bray", binary=TRUE)
+
+#PERMANOVA: Method+Site
+
+method.adonis_results_simple <- adonis2(method.rel_abun~Depth_m+lat+Temp_C+PSU_ppt+OxyConc_umol.per.l+Chla_ugrams.per.l+lon, data=method.sampledf, by = "terms")
+
+method.adonis_results_simple
+
+```
+## 2020 All Bray
+```{r}
+
+#Betadiversity
+#Generate Vegan formatted data table
+method.sampledf <- data.frame(sample_data(physeq_obj._CO1_2020))
+method.rel_abun<- vegan_otu(physeq_obj._CO1_2020)
+
+#Jaccard dissimilarity matrix
+method.d_carn <- vegdist(method.rel_abun, method="bray")
+
+#PERMANOVA: Method+Site
+
+
+method.adonis_results <- adonis2(method.rel_abun~ Depth_m+lat+Temp_C+PSU_ppt+OxySatPerc_percent+OxyConc_umol.per.l+Chla_ugrams.per.l+PO4_umol.per.l+NO2_umol.per.l+NO3_umol.per.l+NH4_umol.per.l
+, data=method.sampledf,  na.action =na.exclude, by = "terms")
+
+method.adonis_results
+
+
+method.adonis_results_m <- adonis2(method.rel_abun~ Depth_m+lat+Temp_C+PSU_ppt+OxySatPerc_percent+OxyConc_umol.per.l+Chla_ugrams.per.l+PO4_umol.per.l+NO2_umol.per.l+NO3_umol.per.l+NH4_umol.per.l
+, data=method.sampledf,  na.action =na.exclude)
+
+method.adonis_results_m
+
+method.adonis_results_simple <- adonis2(method.rel_abun~Depth_m+lat+Temp_C+PSU_ppt+OxyConc_umol.per.l+Chla_ugrams.per.l+lon, data=method.sampledf, by = "terms")
+
+method.adonis_results_simple
+
+```
+
+## 2020 surface_co1 Bray
+```{r}
+
+#Betadiversity
+#Generate Vegan formatted data table
+method.sampledf <- data.frame(sample_data(surface_co1_2020))
+method.rel_abun<- vegan_otu(surface_co1_2020)
+
+#Jaccard dissimilarity matrix
+method.d_carn <- vegdist(method.rel_abun, method="bray")
+
+#PERMANOVA: Method+Site
+
+method.adonis_results_simple <- adonis2(method.rel_abun~Depth_m+lat+Temp_C+PSU_ppt+OxyConc_umol.per.l+Chla_ugrams.per.l+lon, data=method.sampledf, by = "terms")
+
+method.adonis_results_simple
+
+```
+
+```{r}
+ord <- ordinate(surface_co1_2020, method = "NMDS", distance = ("bray"))
+```
+### NMDS All 2020
+```{r}
+ord <- ordinate(physeq_obj._CO1_2020, method = "NMDS", distance = ("bray"))
+
+##Plot_Ordination
+plot_ordination(physeq_obj._CO1_2020, ord, "samples", color = "Temp_C", shape="Depth_bin") +
+  ggtitle(paste0("NMDS - Stress ",round(ord$stress,3))) + 
+  geom_point(size = 4) + 
+  theme_bw()+ 
+  theme(plot.title = element_text(hjust = 0.5,size = 20, face = "bold"),
+        plot.subtitle = element_text(hjust = 0.5,size = 18, face = "bold"),
+        panel.grid.major = element_blank(), 
+        panel.grid.minor = element_blank(),
+        panel.background = element_blank(), 
+        axis.text=element_text(size=16), 
+        axis.title=element_text(size=16,face="bold"),
+        legend.title = element_text( size=16, face="bold"),
+        legend.text = element_text(size=14)
+        ) + 
+  labs(color = "Temp ˚C") +scale_colour_cmocean() 
+
+
+```
+
+### NMDS Temp
+```{r}
+
+##Plot_Ordination
+plot_ordination(surface_co1_2020, ord, "samples", color = "lat") +
+  ggtitle(paste0("NMDS - Stress ",round(ord$stress,3))) + 
+  geom_point(size = 4) + 
+  theme_bw()+ 
+  theme(plot.title = element_text(hjust = 0.5,size = 20, face = "bold"),
+        plot.subtitle = element_text(hjust = 0.5,size = 18, face = "bold"),
+        panel.grid.major = element_blank(), 
+        panel.grid.minor = element_blank(),
+        panel.background = element_blank(), 
+        axis.text=element_text(size=16), 
+        axis.title=element_text(size=16,face="bold"),
+        legend.title = element_text( size=16, face="bold"),
+        legend.text = element_text(size=14)
+        ) + 
+  labs(color = "Lattitude") +scale_colour_cmocean() 
+
+
+```
+
+
+### NMDS Cruise
+```{r}
+##Plot_Ordination
+plot_ordination(surface_co1_c, ord, "samples", color = "Cruise_ID_short") +
+  ggtitle(paste0("NMDS - Stress ",round(ord$stress,3))) + 
   geom_point(size = 4) + 
   theme_bw()+ 
   theme(plot.title = element_text(hjust = 0.5,size = 20, face = "bold"),
@@ -315,7 +463,7 @@ method.rel_abun<- vegan_otu(subsurface_co1)
 method.d_carn <- vegdist(method.rel_abun, method="bray")
 
 method.adonis_results <- adonis2(method.rel_abun~ Depth_m+lat+Temp_C+PSU_ppt+OxySatPerc_percent+OxyConc_umol.per.l+Chla_ugrams.per.l+PO4_umol.per.l+NO2_umol.per.l+NO3_umol.per.l+NH4_umol.per.l
-, data=method.sampledf,  na.action =na.exclude, by = "margin")
+, data=method.sampledf,  na.action =na.exclude, by = "terms")
 
 method.adonis_results
 
@@ -329,7 +477,7 @@ ord <- ordinate(subsurface_co1, method = "NMDS", distance = ("bray"))
 ```{r}
 ##Plot_Ordination
 plot_ordination(subsurface_co1, ord, "samples", color = "Cruise_ID_short") +
-  ggtitle("NMDS - Stress 0.2051166") + 
+  ggtitle(paste0("NMDS - Stress ",round(ord$stress,3))) + 
   geom_point(size = 4) + 
   theme_bw()+ 
   theme(plot.title = element_text(hjust = 0.5,size = 20, face = "bold"),
@@ -343,6 +491,50 @@ plot_ordination(subsurface_co1, ord, "samples", color = "Cruise_ID_short") +
         legend.text = element_text(size=14)
         ) + 
   labs(color = "Cruise")
+
+
+```
+
+## 2020 subsurface Bray
+```{r}
+
+#Betadiversity
+#Generate Vegan formatted data table
+method.sampledf <- data.frame(sample_data(subsurface_co1_2020))
+method.rel_abun<- vegan_otu(subsurface_co1_2020)
+
+#Jaccard dissimilarity matrix
+method.d_carn <- vegdist(method.rel_abun, method="bray")
+
+method.adonis_results <- adonis2(method.rel_abun~ Depth_m+lat+Temp_C+PSU_ppt+OxySatPerc_percent+OxyConc_umol.per.l+Chla_ugrams.per.l+PO4_umol.per.l+NO2_umol.per.l+NO3_umol.per.l+NH4_umol.per.l
+, data=method.sampledf,  na.action =na.exclude, by = "terms")
+
+method.adonis_results
+
+```
+
+```{r}
+ord <- ordinate(subsurface_co1_2020, method = "NMDS", distance = ("bray"))
+```
+
+
+```{r}
+##Plot_Ordination
+plot_ordination(subsurface_co1_2020, ord, "samples", color = "Temp_C") +
+  ggtitle(paste0("NMDS - Stress ",round(ord$stress,3))) + 
+  geom_point(size = 4) + 
+  theme_bw()+ 
+  theme(plot.title = element_text(hjust = 0.5,size = 20, face = "bold"),
+        plot.subtitle = element_text(hjust = 0.5,size = 18, face = "bold"),
+        panel.grid.major = element_blank(), 
+        panel.grid.minor = element_blank(),
+        panel.background = element_blank(), 
+        axis.text=element_text(size=16), 
+        axis.title=element_text(size=16,face="bold"),
+        legend.title = element_text( size=16, face="bold"),
+        legend.text = element_text(size=14)
+        ) + 
+  labs(color = "Temp ˚C") +scale_colour_cmocean() 
 
 
 ```

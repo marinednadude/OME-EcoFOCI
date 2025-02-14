@@ -1,0 +1,31 @@
+31	Eukaryota	Chordata	Actinopteri	Gadiformes	Gadidae	Gadus
+1	Eukaryota	Chordata	Actinopteri	Pleuronectiformes	Pleuronectidae
+2	Bacteria	Candidatus Vogeliibacteriota
+2	Bacteria	Pseudomonadota	Gammaproteobacteria	Alteromonadales	Psychromonadaceae	Psychromonas	Psychromonas antarctica
+3	Bacteria	Planctomycetota	Planctomycetia	Planctomycetales	Planctomycetaceae
+1	Eukaryota	Chordata	Actinopteri	Gadiformes	Gadidae	Microgadus	Microgadus proximus
+26	Eukaryota	Chordata	Actinopteri	Argentiniformes	Bathylagidae	Leuroglossus	Leuroglossus schmidti (northern smooth-tongue)
+3	Bacteria	Nitrospinota	Nitrospinia	Nitrospinales	Nitrospinaceae
+1	Bacteria
+1	Eukaryota	Chordata	Mammalia	Primates	Hominidae	Homo	Homo sapiens (human)
+5	Bacteria	Planctomycetota
+1	Eukaryota	Chordata	Actinopteri	Uranoscopiformes	Ammodytidae
+1	Bacteria
+11	Bacteria	Planctomycetota
+2	Bacteria	Candidatus Campbellbacteria
+3	Bacteria	Pseudomonadota	Gammaproteobacteria
+1	Eukaryota	Pelagophyceae__p	Pelagophyceae	Pelagomonadales	Pelagomonadaceae	Aureococcus	Aureococcus anophagefferens
+1	Eukaryota	Chlorophyta	Pyramimonadophyceae	Pyramimonadales
+3	Eukaryota
+1	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros	Chaetoceros sp_
+16	Eukaryota	Chordata	Actinopteri	Salmoniformes	Salmonidae	Oncorhynchus	Oncorhynchus kisutch (coho salmon)
+1	Eukaryota	Bolidophyceae__p	Bolidophyceae
+1	Eukaryota
+7	Bacteria
+1	Bacteria	Campylobacterota	Epsilonproteobacteria	Campylobacterales	Sulfurimonadaceae	Sulfurimonas
+3	Bacteria
+2	Eukaryota	Chordata	Actinopteri	Perciformes	Hexagrammidae	Pleurogrammus	Pleurogrammus monopterygius (Atka mackerel)
+1	Bacteria	Candidatus Kaiserbacteria
+2	Bacteria	Pseudomonadota	Gammaproteobacteria	Alteromonadales
+12	Eukaryota	Chordata	Actinopteri	Osmeriformes	Salangidae	Mallotus	Mallotus villosus (capelin)
+1	Bacteria	Candidatus Nomurabacteria

@@ -1,0 +1,9 @@
+1	Unknown
+1	Bacteria	Planctomycetota	Planctomycetia	Planctomycetales	Planctomycetaceae
+2	Eukaryota	Chordata	Actinopteri	Clupeiformes	Clupeidae	Clupea	Clupea pallasii (Pacific herring)
+1	Eukaryota	Bacillariophyta	Coscinodiscophyceae	Chaetocerotales	Chaetocerotaceae	Chaetoceros
+2	Eukaryota
+1	Eukaryota	Pelagophyceae__p	Pelagophyceae	Pelagomonadales	Pelagomonadaceae	Aureococcus	Aureococcus anophagefferens
+1	Eukaryota	Chordata	Actinopteri	Gadiformes	Gadidae	Gadus	Gadus chalcogrammus (walleye pollock)
+3	Eukaryota	Chordata	Actinopteri	Gadiformes	Gadidae	Gadus	Gadus macrocephalus (Pacific cod)
+1	Eukaryota	Chordata	Actinopteri	Perciformes	Hexagrammidae	Hexagrammos

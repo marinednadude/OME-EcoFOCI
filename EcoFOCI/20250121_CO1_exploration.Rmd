@@ -1,0 +1,2638 @@
+---
+title: "EcoFOCI Analysis Run 1-3"
+author: "Zack Gold"
+date: "2025-01-06"
+output: html_document
+---
+
+
+```{r}
+library(ggpmisc)
+
+library(tidyverse)
+library(here)
+library(lubridate)
+library(measurements)
+library(sp)
+library(readr)
+library(sf)
+library("rnaturalearth")
+library("rnaturalearthdata")
+library(cmocean)
+library(phyloseq)
+
+library(tidyverse)
+library(phyloseq)
+library(metagMisc)
+library(iNEXT)
+library(vegan)
+library('phyloseq')
+library(ranacapa)
+library(here)
+library(patchwork)
+
+```
+
+# Load Data
+```{r}
+long_COI_EcoFOCI <- readRDS(here("data","long_data","long_COI_EcoFOCI.RDS"))
+long_MiFish_EcoFOCI<- readRDS(here("data","long_data","long_MiFish_EcoFOCI.RDS"))
+long_Machida_EcoFOCI <- readRDS(here("data","long_data","long_Machida_EcoFOCI.RDS"))
+
+```
+
+# Site Mapping
+
+```{r}
+long_COI_EcoFOCI %>% ungroup() %>% 
+  dplyr::select( Sample  ,         replicates   ,        group1   ,           
+group2   ,            Sample_Name  ,        Biological_Replicate,
+Technical_Replicate , Negative_control,     Cruise_ID_short  ,   
+Cruise_ID_long ,      Cast_No.   ,          Rosette_position   , 
+Station   ,           Sample_volume_ml ,    Time  ,              
+Depth_m  ,            lat  ,                lon  ,               
+Temp_C  ,             PSU_ppt  ,            OxySatPerc_percent  ,
+OxyConc_umol.per.l ,  Chla_ugrams.per.l ,   PO4_umol.per.l  ,    
+NO2_umol.per.l  ,     NO3_umol.per.l   ,    NH4_umol.per.l     , 
+sites) %>% distinct() %>% 
+  filter(., Cruise_ID_short !="RC_GOA_2022") %>% 
+    mutate(., Depth_bin = if_else(Depth_m >29, "Below 30m","Above 30m" )) -> sample_metadata
+
+```
+
+```{r}
+long_COI_EcoFOCI %>% 
+  ungroup() %>% 
+  dplyr::select(ASV_combo, Kingdom, Phylum, Class, Order, Family, Genus, Species, nReads, Sample) %>% distinct() -> quick_tax
+
+quick_tax %>% 
+  dplyr::select(ASV_combo, nReads, Sample) %>% 
+  group_by(Sample) %>% 
+  dplyr::summarise(tot_reads=sum(nReads)) -> sample_read_depths
+
+
+sample_read_depths %>% 
+  ggplot(aes(x=tot_reads))+geom_histogram()
+
+sample_read_depths %>% 
+  filter(., tot_reads < 30000) -> samples_to_drop
+```
+
+
+```{r}
+
+sample_metadata %>% 
+  ggplot(aes(x=Depth_m)) +   geom_histogram(aes(x=Depth_m,y=..density..), position="identity") + 
+  geom_density(aes(x=Depth_m,y=..density..))
+```
+
+## Temp Map
+```{r}
+
+min_lat <- min(long_COI_EcoFOCI$lat, na.rm = T)
+max_lat <- max(long_COI_EcoFOCI$lat, na.rm = T)
+
+min_lon <- min(long_COI_EcoFOCI$lon, na.rm = T)
+max_lon <- max(long_COI_EcoFOCI$lon, na.rm = T)
+
+world <- ne_countries(scale = "medium", returnclass = "sf")
+
+colnames(long_COI_EcoFOCI)
+
+sample_metadata %>% 
+  dplyr::select(Station, lat, lon) %>%  
+  mutate(., lat=round(lat,1),
+         lon=round(lon,1)) %>% 
+  distinct() %>% 
+  filter(., Station %in% c("M5","M8","DBO3.4")) -> sites_to_label
+
+library(ggrepel)
+ggplot(data = world) +
+    geom_sf() +
+    geom_point(data = sample_metadata, aes(x = lon, y = lat, colour=Temp_C), size=2) +scale_colour_cmocean(name="thermal") +
+    coord_sf(xlim = c(min_lon-1, max_lon+1), ylim = c(min_lat-1, max_lat+1), expand = FALSE) +theme_bw() +xlab("Longitude") +ylab("Latitude") + facet_wrap(Depth_bin~Cruise_ID_short)+ geom_text_repel(data = sites_to_label, aes(x = lon, y = lat, label=Station),size =3,min.segment.length = unit(0, 'lines'), nudge_x = 4, nudge_y =  0.2)
+
+
+```
+
+## Salinity
+
+```{r}
+ggplot(data = world) +
+    geom_sf() +
+    geom_point(data = sample_metadata, aes(x = lon, y = lat, colour=PSU_ppt), size=2) +scale_colour_cmocean(name="haline") +
+    coord_sf(xlim = c(min_lon-1, max_lon+1), ylim = c(min_lat-1, max_lat+1), expand = FALSE) +theme_bw() +xlab("Longitude") +ylab("Latitude") + facet_wrap(Depth_bin~Cruise_ID_short)+ geom_text_repel(data = sites_to_label, aes(x = lon, y = lat, label=Station),size =3,min.segment.length = unit(0, 'lines'), nudge_x = 4, nudge_y =  0.2)
+
+```
+
+## Chla
+```{r}
+ggplot(data = world) +
+    geom_sf() +
+    geom_point(data = sample_metadata, aes(x = lon, y = lat, colour=Chla_ugrams.per.l), size=2) +scale_colour_cmocean(name="algae", limits= c(0,15)) +
+    coord_sf(xlim = c(min_lon-1, max_lon+1), ylim = c(min_lat-1, max_lat+1), expand = FALSE) +theme_bw() +xlab("Longitude") +ylab("Latitude") + facet_wrap(Depth_bin~Cruise_ID_short)+ geom_text_repel(data = sites_to_label, aes(x = lon, y = lat, label=Station),size =3,min.segment.length = unit(0, 'lines'), nudge_x = 4, nudge_y =  0.2)
+
+
+sample_metadata 
+```
+
+## Oxy. Sat.
+
+```{r}
+ggplot(data = world) +
+    geom_sf() +
+    geom_point(data = sample_metadata, aes(x = lon, y = lat, colour=OxySatPerc_percent), size=2) +scale_colour_cmocean(name="oxy") +
+    coord_sf(xlim = c(min_lon-1, max_lon+1), ylim = c(min_lat-1, max_lat+1), expand = FALSE) +theme_bw() +xlab("Longitude") +ylab("Latitude") + facet_wrap(Depth_bin~Cruise_ID_short)+ geom_text_repel(data = sites_to_label, aes(x = lon, y = lat, label=Station),size =3,min.segment.length = unit(0, 'lines'), nudge_x = 4, nudge_y =  0.2)
+
+```
+
+
+## Ammonium
+```{r}
+ggplot(data = world) +
+    geom_sf() +
+    geom_point(data = sample_metadata, aes(x = lon, y = lat, colour=NH4_umol.per.l), size=2) +scale_colour_cmocean(name="haline") +
+    coord_sf(xlim = c(min_lon-1, max_lon+1), ylim = c(min_lat-1, max_lat+1), expand = FALSE) +theme_bw() +xlab("Longitude") +ylab("Latitude") + facet_wrap(Depth_bin~Cruise_ID_short)+ geom_text_repel(data = sites_to_label, aes(x = lon, y = lat, label=Station),size =3,min.segment.length = unit(0, 'lines'), nudge_x = 4, nudge_y =  0.2)
+```
+
+
+
+```{r}
+long_COI_EcoFOCI %>% 
+  filter(., !is.na(Species)) %>% 
+  filter(., nReads >0) %>% 
+  dplyr::group_by(ASV_combo, Kingdom, Phylum, Class, Order, Family, Genus, Species) %>% 
+  dplyr::summarise(sum_reads=sum(nReads)) %>% 
+  arrange(desc(sum_reads))
+
+```
+
+# CO1 Data Exploration
+
+#### Build Phyloseq Object
+
+##### ASV Reads
+
+```{r}
+
+varnames <- colnames(long_COI_EcoFOCI)
+to_remove <- c("Run2:ASV","Run3:ASV","Run4:ASV","ASV_combo","Sequence","nReads","Prop.abund","eDNA.Index")
+
+
+sample_metadata -> co1_sample_data
+
+#Metadata
+co1_sample_data %>%  as.data.frame() -> sampledata
+
+
+
+rownames(sampledata) <- sampledata$Sample
+sample_data(sampledata) -> sampledata
+
+#ASV Reads
+
+long_COI_EcoFOCI %>% 
+  dplyr::select(ASV_combo,Sample, eDNA.Index) %>% 
+  mutate(., eDNA.Index=as.numeric(eDNA.Index)) %>% 
+  mutate(., eDNA.Index=if_else(eDNA.Index=="NaN", 0, eDNA.Index)) %>%
+  pivot_wider(names_from = Sample, values_from = eDNA.Index, values_fill  =0) -> wide_PA
+
+long_COI_EcoFOCI %>% 
+  dplyr::select(ASV_combo, Kingdom,Phylum,Class, Order,Family, Genus, Species) %>% 
+  distinct() %>% as.matrix() -> taxonomy_table
+
+rownames(taxonomy_table) <- wide_PA$ASV_combo
+
+TAX = tax_table(taxonomy_table)
+
+wide_PA %>% 
+  ungroup() %>% 
+  dplyr::select(-ASV_combo) %>% as.matrix() -> otu_table
+rownames(otu_table) <- wide_PA$ASV_combo
+
+OTU = otu_table(otu_table, taxa_are_rows = TRUE)
+physeq_obj._CO1 = phyloseq(OTU, TAX, sampledata)
+
+surface_co1 <- subset_samples(physeq_obj._CO1, Depth_bin == "Above 30m")
+subsurface_co1 <- subset_samples(physeq_obj._CO1, Depth_bin == "Below 30m")
+
+physeq_obj._CO1_2020 <- subset_samples(physeq_obj._CO1,Cruise_ID_short != "SKQ2021")
+
+subsurface_co1_2020 <- subset_samples(subsurface_co1, Cruise_ID_short != "SKQ2021")
+
+surface_co1_2020 <- subset_samples(surface_co1, Cruise_ID_short != "SKQ2021")
+
+```
+
+
+# Alpha Diversity
+
+
+```{r}
+
+
+quick_tax %>% 
+    group_by(Species) %>% 
+  filter(., nReads >0) %>% 
+  filter(., !is.na(Species)) %>% 
+  dplyr::summarise(tot_ASVs = n_distinct(ASV_combo), tot_reads = sum(nReads), tot_occ= n_distinct(Sample)) %>% 
+  arrange(desc(tot_occ))
+
+quick_tax %>% 
+    group_by(Genus) %>% 
+  filter(., nReads >0) %>% 
+  filter(., !is.na(Genus)) %>% 
+  dplyr::summarise(tot_ASVs = n_distinct(ASV_combo), tot_reads = sum(nReads), tot_occ= n_distinct(Sample)) %>% 
+  arrange(desc(tot_occ))
+    
+
+quick_tax %>% 
+  filter(., Class=="Hexanauplia") %>% 
+    group_by(Species) %>% 
+  filter(., nReads >0) %>% 
+  filter(., !is.na(Species)) %>% 
+  dplyr::summarise(tot_ASVs = n_distinct(ASV_combo), tot_reads = sum(nReads), tot_occ= n_distinct(Sample)) %>% 
+  arrange(desc(tot_occ))
+
+
+
+quick_tax %>% 
+  filter(., Species %in% c("Pseudocalanus mimus","Oithona similis","Acartia longiremis")) 
+
+```
+
+
+# Betdiveristy
+
+## All
+```{r}
+physeq_obj._CO1_c = subset_samples(physeq_obj._CO1, !is.na(Temp_C) & !is.na(lat) & !is.na(Depth_m))
+
+#Betadiversity
+#Generate Vegan formatted data table
+method.sampledf <- data.frame(sample_data(physeq_obj._CO1_c))
+
+method.sampledf %>% 
+  mutate(T2=as.Date(Time),
+         month = month(Time)) %>% 
+  mutate(., Season = case_when(month < 3 ~"Winter",
+                               month < 6 ~"Spring",
+                               month < 9~ "Summer",
+                               month < 12 ~"Fall")) -> method.sampledf
+method.rel_abun<- vegan_otu(physeq_obj._CO1_c)
+
+#Jaccard dissimilarity matrix
+method.d_carn <- vegdist(method.rel_abun, method="jaccard", binary=TRUE)
+
+method.sampledf$Cruise_ID_short %>%  unique()
+#PERMANOVA: Method+Site
+
+method.adonis_results <- adonis2(method.rel_abun~Season+ Depth_m+lat+Temp_C+PSU_ppt+OxySatPerc_percent+OxyConc_umol.per.l+Chla_ugrams.per.l+PO4_umol.per.l+NO2_umol.per.l+NO3_umol.per.l+NH4_umol.per.l
+, data=method.sampledf,  na.action =na.exclude, by = "terms", method="jaccard", binary=TRUE)
+
+method.adonis_results
+
+method.adonis_results_simple <- adonis2(method.rel_abun~Season +Depth_m+lat+Temp_C+PSU_ppt+OxyConc_umol.per.l+Chla_ugrams.per.l+lon, data=method.sampledf, by = "terms", method="jaccard", binary=TRUE)
+
+method.adonis_results_simple
+
+summary(method.adonis_results_simple)
+```
+
+```{r}
+
+
+#Bray dissimilarity matrix
+method.d_carn_b <- vegdist(method.rel_abun, method="bray")
+
+#PERMANOVA: Method+Site
+
+method.adonis_results_b <- adonis2(method.rel_abun~ Season + Depth_m+lat+Temp_C+PSU_ppt+OxySatPerc_percent+OxyConc_umol.per.l+Chla_ugrams.per.l+PO4_umol.per.l+NO2_umol.per.l+NO3_umol.per.l+NH4_umol.per.l
+, data=method.sampledf,  na.action =na.exclude, by = "terms", method="bray")
+
+method.adonis_results_b
+
+method.adonis_results_simple_b <- adonis2(method.rel_abun~Season +Depth_m+lat+Temp_C+PSU_ppt+OxyConc_umol.per.l+Chla_ugrams.per.l+lon, data=method.sampledf, by = "terms",  method="bray")
+
+method.adonis_results_simple_b
+
+summary(method.adonis_results_simple)
+```
+
+## surface_co1 Jaccard
+```{r}
+surface_co1_c = subset_samples(surface_co1, !is.na(Temp_C) & !is.na(lat) & !is.na(Depth_m))
+
+surface_co1_c = subset_samples(surface_co1_c, !Sample %in% samples_to_drop$Sample)
+
+
+#Betadiversity
+#Generate Vegan formatted data table
+method.sampledf_s_co1_c <- data.frame(sample_data(surface_co1_c))
+
+
+method.sampledf_s_co1_c %>% 
+  mutate(T2=as.Date(Time),
+         month = month(Time)) %>% 
+  mutate(., Season = case_when(month < 3 ~"Winter",
+                               month < 6 ~"Spring",
+                               month < 9~ "Summer",
+                               month < 12 ~"Fall")) -> method.sampledf_s_co1_c
+
+method.rel_abun_s_co1_c<- vegan_otu(surface_co1_c)
+
+#Jaccard dissimilarity matrix
+method.d_carn_s_co1_c <- vegdist(method.rel_abun, method="jaccard", binary = TRUE)
+
+#PERMANOVA: Method+Site
+
+method.adonis_results_s_co1_c <- adonis2(method.rel_abun_s_co1_c~ Season + Depth_m+lat+Temp_C+PSU_ppt+OxySatPerc_percent+OxyConc_umol.per.l+Chla_ugrams.per.l+PO4_umol.per.l+NO2_umol.per.l+NO3_umol.per.l+NH4_umol.per.l
+, data=method.sampledf_s_co1_c,  na.action =na.exclude, by = "terms")
+
+method.adonis_results_s_co1_c
+
+method.adonis_results_simple_s_co1_c <- adonis2(method.rel_abun_s_co1_c~Season + Depth_m+lat+Temp_C+PSU_ppt+OxyConc_umol.per.l+Chla_ugrams.per.l+lon, data=method.sampledf_s_co1_c, by = "terms")
+
+method.adonis_results_simple_s_co1_c
+
+summary(method.adonis_results_simple)
+```
+
+
+```{r}
+ord <- ordinate(surface_co1_c, method = "NMDS", distance = ("jaccard"), binary = TRUE)
+```
+
+### NMDS Temp
+```{r}
+##Plot_Ordination
+plot_ordination(surface_co1_c, ord, "samples", color = "Temp_C") +
+  ggtitle(paste0("NMDS - Stress ",round(ord$stress,3))) + 
+  geom_point(size = 4) + 
+  theme_bw()+ 
+  theme(plot.title = element_text(hjust = 0.5,size = 20, face = "bold"),
+        plot.subtitle = element_text(hjust = 0.5,size = 18, face = "bold"),
+        panel.grid.major = element_blank(), 
+        panel.grid.minor = element_blank(),
+        panel.background = element_blank(), 
+        axis.text=element_text(size=16), 
+        axis.title=element_text(size=16,face="bold"),
+        legend.title = element_text( size=16, face="bold"),
+        legend.text = element_text(size=14)
+        ) + 
+  labs(color = "Temp ˚C") +scale_colour_cmocean() 
+
+
+```
+
+
+### NMDS Cruise
+```{r}
+##Plot_Ordination
+plot_ordination(surface_co1_c, ord, "samples", color = "Cruise_ID_short") +
+  ggtitle(paste0("NMDS - Stress ",round(ord$stress,3))) + 
+  geom_point(size = 4) + 
+  theme_bw()+ 
+  theme(plot.title = element_text(hjust = 0.5,size = 20, face = "bold"),
+        plot.subtitle = element_text(hjust = 0.5,size = 18, face = "bold"),
+        panel.grid.major = element_blank(), 
+        panel.grid.minor = element_blank(),
+        panel.background = element_blank(), 
+        axis.text=element_text(size=16), 
+        axis.title=element_text(size=16,face="bold"),
+        legend.title = element_text( size=16, face="bold"),
+        legend.text = element_text(size=14)
+        ) + 
+  labs(color = "Cruise")
+
+```
+
+## subsurface Jaccard
+```{r}
+subsurface_co1_c = subset_samples(subsurface_co1, !is.na(Temp_C) & !is.na(lat) & !is.na(Depth_m))
+
+subsurface_co1_c = subset_samples(subsurface_co1_c, !Sample %in% samples_to_drop$Sample)
+
+subsurface_co1_c = subset_samples(subsurface_co1_c, !Sample %in% c("E1720_DY2306", "E1723_DY2306", "E1948_SKQ23_12S" ,"E1949_SKQ23_12S"))
+
+
+
+
+#Betadiversity
+#Generate Vegan formatted data table
+method.sampledf_sub_co1_c <- data.frame(sample_data(subsurface_co1_c))
+method.rel_abun_sub_co1_c<- vegan_otu(subsurface_co1_c)
+
+
+method.sampledf_sub_co1_c %>% 
+  mutate(T2=as.Date(Time),
+         month = month(Time)) %>% 
+  mutate(., Season = case_when(month < 3 ~"Winter",
+                               month < 6 ~"Spring",
+                               month < 9~ "Summer",
+                               month < 12 ~"Fall")) -> method.sampledf_sub_co1_c
+
+
+#Jaccard dissimilarity matrix
+method.d_carn_sub_co1_c <- vegdist(method.rel_abun_sub_co1_c, method="jaccard", binary=T)
+
+method.adonis_results_sub_co1_c <- adonis2(method.rel_abun_sub_co1_c~ Season+ Depth_m+lat+Temp_C+PSU_ppt+OxySatPerc_percent+OxyConc_umol.per.l+Chla_ugrams.per.l+PO4_umol.per.l+NO2_umol.per.l+NO3_umol.per.l+NH4_umol.per.l
+, data=method.sampledf_sub_co1_c,  na.action =na.exclude, by = "terms", method="jaccard", binary=T)
+
+method.adonis_results_sub_co1_c
+
+```
+
+```{r}
+ord <- ordinate(subsurface_co1_c, method = "NMDS", distance = ("jaccard"), binary="true")
+```
+
+
+```{r}
+##Plot_Ordination
+plot_ordination(subsurface_co1_c, ord, "samples", color = "Cruise_ID_short") +
+  ggtitle(paste0("NMDS - Stress ",round(ord$stress,3))) + 
+  geom_point(size = 2) + 
+  theme_bw()+ 
+  theme(plot.title = element_text(hjust = 0.5,size = 20, face = "bold"),
+        plot.subtitle = element_text(hjust = 0.5,size = 18, face = "bold"),
+        panel.grid.major = element_blank(), 
+        panel.grid.minor = element_blank(),
+        panel.background = element_blank(), 
+        axis.text=element_text(size=16), 
+        axis.title=element_text(size=16,face="bold"),
+        legend.title = element_text( size=16, face="bold"),
+        legend.text = element_text(size=14)
+        ) + 
+  labs(color = "Cruise")
+
+
+```
+```{r}
+##Plot_Ordination
+ord$points %>% 
+  as.data.frame() %>% 
+  filter(., MDS1 < -4)
+# E1948_SKQ23_12S ,E1949_SKQ23_12S
+
+ord$points %>% 
+  as.data.frame() %>% 
+  filter(., MDS2 > 1.5)
+
+# E1720_DY2306, E1723_DY2306 
+
+sample_data(subsurface_co1_c) <- method.sampledf_sub_co1_c
+
+plot_ordination(subsurface_co1_c, ord, "samples", color = "Temp_C", shape="Season") +
+  ggtitle(paste0("NMDS - Stress ",round(ord$stress,3))) + 
+  geom_point(size = 2) + 
+  scale_colour_cmocean() +
+  theme_bw()+ 
+  theme(plot.title = element_text(hjust = 0.5,size = 20, face = "bold"),
+        plot.subtitle = element_text(hjust = 0.5,size = 18, face = "bold"),
+        panel.grid.major = element_blank(), 
+        panel.grid.minor = element_blank(),
+        panel.background = element_blank(), 
+        axis.text=element_text(size=16), 
+        axis.title=element_text(size=16,face="bold"),
+        legend.title = element_text( size=16, face="bold"),
+        legend.text = element_text(size=14)
+        ) + 
+  labs(color = "Temp ˚C") + 
+  stat_ellipse(type = "norm", linetype = 2) +
+  stat_ellipse(type = "t") 
+
+
+```
+### CAP Analysis
+
+
+## CAP Species
+
+```{r, results="hide",warning=FALSE}
+#Run CAP analysis to identify predictor species
+vare.cap <- capscale(method.rel_abun_sub_co1_c~Season+Depth_m+Temp_C+lat+PSU_ppt+OxyConc_umol.per.l+lon, data=method.sampledf_sub_co1_c, dist="jaccard", binary=T)
+
+#Retain species scores
+sppscores(vare.cap) <- method.rel_abun_sub_co1_c
+
+as.data.frame(vegan::scores(vare.cap, display="species")) %>% 
+  rownames_to_column(var = "species") %>% 
+  as.tibble %>%
+ mutate(dist = sqrt((CAP1 - 0)^2 + (CAP2 - 0)^2)) -> vare.cap_species_distances
+
+
+as.data.frame(vegan::scores(vare.cap, display="bp")) %>% 
+  rownames_to_column(var = "env") %>% 
+  as.tibble %>%
+ mutate(dist = sqrt((CAP1 - 0)^2 + (CAP2 - 0)^2)) -> vare.cap_env_distances
+
+
+```
+##### Check For Break Point for Top Species
+```{r}
+species_distances <- as.data.frame(vare.cap_species_distances)
+TAXcap = tax_table(subsurface_co1_c) %>% as.data.frame()
+
+species_distances %>% 
+  mutate(., ASV_combo=species) %>% 
+  left_join(TAXcap) -> species_distances
+
+rownames(species_distances) <- species_distances$species
+
+# Now add the environmental variables as arrows
+arrowmat <- species_distances
+
+#Rename row names to clean up plot
+
+species_distances %>% 
+  filter(., !is.na(Species)) %>% 
+  mutate(., name=str_c(ASV_combo,":",Species))-> namers
+
+rownames(namers) <- namers$name
+
+
+# Add labels, make a data.frame
+arrowdf <- data.frame(labels = namers$Species, namers)
+
+arrowdf %>% 
+  filter(., !Phylum %in% c("Bacillariophyta","Chlorophyta","Dinophyceae__p","Dictyochophyceae__p","Pelagophyceae__p")) %>% 
+  arrange(desc(dist)) %>% 
+  dplyr::slice(1:100) 
+
+arrowdf %>% 
+arrange(desc(dist)) %>% 
+    filter(., !Phylum %in% c("Bacillariophyta","Chlorophyta","Dinophyceae__p","Dictyochophyceae__p","Pelagophyceae__p")) %>% 
+   dplyr::slice(1:10) %>% 
+ggplot(., aes(x= reorder(labels, -dist), y=dist)) +
+  geom_bar(stat="identity") + theme(axis.text.x = element_text(angle = 90, hjust = 1))
+
+```
+
+```{r}
+arrowdf %>% 
+arrange(desc(dist)) %>% 
+    filter(., !Phylum %in% c("Bacillariophyta","Chlorophyta","Dinophyceae__p","Dictyochophyceae__p","Pelagophyceae__p")) %>% 
+   dplyr::slice(1:6)-> arrowdf
+
+
+summary(vare.cap)$cont %>% as.data.frame() %>% round(3)-> vare.cap_prop
+
+as.tibble(vare.cap_prop,rownames = "rowname") %>% 
+  pivot_longer(., cols=-rowname, values_to = "value", names_to = "name") %>% 
+  filter(., rowname=="Proportion Explained") %>% 
+  filter(., name %in% c("importance.CAP1","importance.CAP2"))-> vare.cap_prop_tib
+
+# Add labels, make a data.frame
+arrowdf_env <- data.frame(labels = vare.cap_env_distances$env, vare.cap_env_distances)
+
+arrowdf_env %>% 
+arrange(desc(dist)) %>% 
+  filter(., env %in% c("SeasonSpring","lat", "Temp_C","Depth_m","PSU_ppt")) %>% 
+  mutate(., labels = recode(labels,`lat`="Lat",
+                            `Temp_C`="˚C",
+                            `Depth_m` = "Depth",
+                            `PSU_ppt`="PSU",
+                            `SeasonSpring`="Season"))-> arrowdf_env
+
+# Define the arrow aesthetic mapping
+arrow_map <- aes(xend = 0.3 *CAP1, 
+                 yend = 0.3 *CAP2, 
+                 x = 0, 
+                 y = 0, 
+                 shape = NULL, 
+                 color = NULL, 
+                 label = labels)
+
+arrow_map2 <- aes(xend = 2.3 *CAP1, 
+                 yend = 2.3 *CAP2, 
+                 x = 0, 
+                 y = 0, 
+                 shape = NULL, 
+                 color = NULL, 
+                 label = labels)
+
+label_map <- aes(x = 2.3 * CAP1, 
+                 y = 2.3 * CAP2, 
+                 shape = NULL, 
+                 color = NULL, 
+                 label = labels,
+                 alpha=0.7,
+                 fontface="italic")
+label_map2 <- aes(x = 0.27 * CAP1, 
+                 y = 0.27 * CAP2, 
+                 shape = NULL, 
+                 color = NULL, 
+                 alpha=0.7,
+                 label = labels)
+
+arrowhead = arrow(length = unit(0.02, "npc"))
+
+method.sampledf$sample <- rownames(method.sampledf)
+# Plot CAP
+as.data.frame(vare.cap$CCA$wa) %>% 
+  rownames_to_column(var = "sample") %>% 
+  as.tibble() %>% 
+  left_join(method.sampledf)-> data_cap
+
+
+data_cap %>% 
+  ggplot(aes(x=CAP1, y=CAP2)) + geom_point(aes(col=Temp_C, shape=Season), size =3) + geom_segment(
+    mapping = arrow_map2, 
+    size = .5, 
+    data = arrowdf, 
+    color = "dodgerblue3", 
+    arrow = arrowhead
+  ) +
+  geom_label(
+    mapping = label_map, 
+    size = 4,  
+        color = "dodgerblue3", 
+    data = arrowdf, 
+    show.legend = FALSE,
+    position=position_jitter(width=0.03,height=0.03)
+  ) + 
+  geom_segment(
+    mapping = arrow_map, 
+    size = .5, 
+    data = arrowdf_env, 
+    color = "grey", 
+    arrow = arrowhead
+  ) +
+  geom_label(
+    mapping = label_map2, 
+    size = 5, 
+    data = arrowdf_env, 
+    show.legend = FALSE,
+    position=position_jitter(width=0.03,height=0.03)
+  )  +
+  ylab(paste0("CAP2 [",round(vare.cap_prop_tib$value[2]*100,1),"]%"))   + xlab(paste0("CAP1 [",round(vare.cap_prop_tib$value[1]*100,1),"]%")) +   
+  scale_color_gradientn(colours = cmocean('thermal')(256), limits=c(-2,8)) + ggpubr::theme_pubr() +labs(colour="Temperature ˚C") + theme(axis.title = element_text(face="bold", size = 16))
+
+
+ggsave(filename = here("gold_out","CAP_benthic_copepods.png"),
+       width=12,
+       height = 8,
+       dpi = 400,
+      units = c("in"))
+
+```
+
+## Copepod NMDS
+```{r}
+copepod_phy = subset_taxa(subsurface_co1_c, Class=="Hexanauplia")
+copepod_phy = subset_samples(copepod_phy, !Sample %in% c("E1720_DY2306", "E1723_DY2306", "E1948_SKQ23_12S" ,"E1949_SKQ23_12S","E1890_SKQ23_12S","E1063_SKQ2021"))
+copepod_phy = filter_taxa(copepod_phy, function(x) sum(x) > 0, TRUE)
+copepod_phy <- prune_samples(sample_sums(copepod_phy) > 0, copepod_phy)
+tax_table(copepod_phy)
+```
+
+## Copepod Bray
+```{r}
+
+#Betadiversity
+#Generate Vegan formatted data table
+method.sampledf_cop <- data.frame(sample_data(copepod_phy))
+method.rel_abun_cop<- vegan_otu(copepod_phy)
+
+
+method.sampledf_cop %>% 
+  mutate(T2=as.Date(Time),
+         month = month(Time)) %>% 
+  mutate(., Season = case_when(month < 3 ~"Winter",
+                               month < 6 ~"Spring",
+                               month < 9~ "Summer",
+                               month < 12 ~"Fall")) -> method.sampledf_cop
+
+
+#Jaccard dissimilarity matrix
+method.d_carn_cop <- vegdist(method.rel_abun_cop, method="jaccard", binary = T)
+
+#PERMANOVA: Method+Site
+
+method.adonis_results_cop <- adonis2(method.rel_abun_cop~Season+ Depth_m+lat+Temp_C+PSU_ppt+OxySatPerc_percent+OxyConc_umol.per.l+Chla_ugrams.per.l+PO4_umol.per.l+NO2_umol.per.l+NO3_umol.per.l+NH4_umol.per.l
+, data=method.sampledf_cop,  na.action =na.exclude, by = "terms", method="jaccard")
+
+method.adonis_results_cop
+
+
+
+```
+
+```{r}
+ord <- ordinate(copepod_phy, method = "NMDS", distance = ("jaccard"), binary=T)
+```
+
+### NMDS Temp
+```{r}
+
+ord$points %>% 
+  as.data.frame() %>% 
+  filter(., MDS1 >0.2 )
+sample_data(copepod_phy) <- method.sampledf_cop
+
+##Plot_Ordination
+plot_ordination(copepod_phy, ord, "samples", color = "Temp_C", shape="Season") +
+  ggtitle(paste0("NMDS - Stress ",round(ord$stress,3))) + 
+  geom_point(size = 4) + 
+  theme_bw()+ 
+  theme(plot.title = element_text(hjust = 0.5,size = 20, face = "bold"),
+        plot.subtitle = element_text(hjust = 0.5,size = 18, face = "bold"),
+        panel.grid.major = element_blank(), 
+        panel.grid.minor = element_blank(),
+        panel.background = element_blank(), 
+        axis.text=element_text(size=16), 
+        axis.title=element_text(size=16,face="bold"),
+        legend.title = element_text( size=16, face="bold"),
+        legend.text = element_text(size=14)
+        ) + 
+  labs(color = "Temp ˚C") +scale_colour_cmocean() 
+
+
+```
+### CAP Analysis
+
+<br />
+```{r}
+#Constrained Analysis of Principle Components
+cap_ord <- ordinate(
+  physeq = copepod_phy, 
+  method = "CAP",
+  distance = method.d_carn_cop,
+  formula = ~ method.sampledf_cop$Season + method.sampledf_cop$Depth_m+method.sampledf_cop$lat+method.sampledf_cop$Temp_C+method.sampledf_cop$PSU_ppt+method.sampledf_cop$OxyConc_umol.per.l+method.sampledf_cop$Chla_ugrams.per.l)
+#Results of model
+anova(cap_ord)
+summary(cap_ord)
+```
+
+
+```{r}
+
+cap_plot <- plot_ordination(
+  physeq = copepod_phy, 
+  ordination = cap_ord, 
+    color = "Temp_C", 
+    axes = c(1,2)
+) + 
+    geom_point(aes(colour = Temp_C), alpha = 0.8, size = 4) + 
+  scale_color_gradientn(colours = cmocean('thermal')(256))+
+    geom_point(colour = "grey90", size = 1.5) +
+  scale_shape_manual(values = c(15,16,17,18))
+
+
+# Now add the environmental variables as arrows
+arrowmat <- vegan::scores(cap_ord, display = "bp")
+arrowmat <- arrowmat[1:6,]
+# Add labels, make a data.frame
+rownames(arrowmat) -> namers
+
+arrowdf <- data.frame(labels = stringr::str_remove(namers, "method.sampledf\\$"), arrowmat)
+
+# Define the arrow aesthetic mapping
+arrow_map <- aes(xend = CAP1, 
+    yend = CAP2, 
+    x = 0, 
+    y = 0, 
+    shape = NULL, 
+    color = NULL, 
+    label = labels)
+
+label_map <- aes(x = 1.3 * CAP1, 
+    y = 1.3 * CAP2, 
+    shape = NULL, 
+    color = NULL, 
+    label = labels)
+
+arrowhead = arrow(length = unit(0.02, "npc"))
+
+# Make a new graphic
+cap_plot + 
+  geom_segment(
+    mapping = arrow_map, 
+    size = .5, 
+    data = arrowdf, 
+    color = "gray", 
+    arrow = arrowhead
+  ) + 
+  geom_text(
+    mapping = label_map, 
+    size = 4,  
+    data = arrowdf, 
+    show.legend = FALSE
+  ) +theme_bw()
+
+
+```
+
+```{r}
+ord <- ordinate(subsurface_co1_2020, method = "NMDS", distance = ("bray"))
+```
+
+
+```{r}
+##Plot_Ordination
+plot_ordination(subsurface_co1_2020, ord, "samples", color = "Temp_C") +
+  ggtitle(paste0("NMDS - Stress ",round(ord$stress,3))) + 
+  geom_point(size = 4) + 
+  theme_bw()+ 
+  theme(plot.title = element_text(hjust = 0.5,size = 20, face = "bold"),
+        plot.subtitle = element_text(hjust = 0.5,size = 18, face = "bold"),
+        panel.grid.major = element_blank(), 
+        panel.grid.minor = element_blank(),
+        panel.background = element_blank(), 
+        axis.text=element_text(size=16), 
+        axis.title=element_text(size=16,face="bold"),
+        legend.title = element_text( size=16, face="bold"),
+        legend.text = element_text(size=14)
+        ) + 
+  labs(color = "Temp ˚C") +scale_colour_cmocean() 
+
+
+```
+
+# To Print
+
+
+
+```{r}
+
+varnames <- colnames(long_COI_EcoFOCI)
+to_remove <- c("Run2:ASV","Run3:ASV","Run4:ASV","ASV_combo","Sequence","nReads","Prop.abund","eDNA.Index")
+c(setdiff(varnames,to_remove),"Tot") -> varnames_to_group
+
+varnames_to_group
+long_COI_EcoFOCI %>% 
+  dplyr::select(-eDNA.Index, -Prop.abund) %>% 
+  ungroup() %>% 
+ group_by(Sample) %>%
+    mutate(Tot = sum(nReads)) %>% 
+    group_by(!!!syms(varnames_to_group)) %>% 
+    dplyr::summarise(nReads=sum(nReads)) %>% 
+    mutate (Prop.abund = nReads / Tot) %>% 
+     unite(sum.taxonomy, c("Kingdom",              "Phylum",               "Class"               
+,"Order",                "Family",               "Genus",               "Species"), sep=";") %>% 
+    group_by (sum.taxonomy) %>%
+    filter(., nReads >0) %>% 
+  group_by(sum.taxonomy) %>% 
+  dplyr::summarise(Total_reads = sum(nReads), Maxprop= max(Prop.abund), N_detections = n_distinct(Sample_Name))  %>% 
+  arrange(sum.taxonomy) -> co1_to_print
+
+
+write_excel_csv(co1_to_print, file = here("co1_2_print"))
+```
+
+```{r}
+
+varnames <- colnames(long_MiFish_EcoFOCI)
+to_remove <- c("Run2:ASV","Run3:ASV","Run4:ASV","ASV_combo","Sequence","nReads","Prop.abund","eDNA.Index")
+c(setdiff(varnames,to_remove),"Tot") -> varnames_to_group
+
+varnames_to_group
+long_MiFish_EcoFOCI %>% 
+  dplyr::select(-eDNA.Index, -Prop.abund) %>% 
+  ungroup() %>% 
+ group_by(Sample) %>%
+    mutate(Tot = sum(nReads)) %>% 
+    group_by(!!!syms(varnames_to_group)) %>% 
+    dplyr::summarise(nReads=sum(nReads)) %>% 
+    mutate (Prop.abund = nReads / Tot) %>% 
+     unite(sum.taxonomy, c("Kingdom",              "Phylum",               "Class"               
+,"Order",                "Family",               "Genus",               "Species"), sep=";") %>% 
+    group_by (sum.taxonomy) %>%
+    filter(., nReads >0) %>% 
+  group_by(sum.taxonomy) %>% 
+  dplyr::summarise(Total_reads = sum(nReads), Maxprop= max(Prop.abund), N_detections = n_distinct(Sample_Name))  %>% 
+  arrange(sum.taxonomy) -> mifish_to_print
+
+
+write_excel_csv(mifish_to_print, file = here("mifish_2_print"))
+```
+
+
+## Group by Species
+
+#### Build Phyloseq Object
+
+```{r}
+
+varnames <- colnames(long_COI_EcoFOCI)
+to_remove <- c("Run2:ASV","Run3:ASV","Run4:ASV","ASV_combo","Sequence","nReads","Prop.abund","eDNA.Index")
+c(setdiff(varnames,to_remove),"Tot") -> varnames_to_group
+
+
+sample_metadata -> co1_sample_data
+
+#Metadata
+co1_sample_data %>%  as.data.frame() -> sampledata
+rownames(sampledata) <- sampledata$Sample
+sample_data(sampledata) -> sampledata
+
+#ASV Reads
+
+
+long_COI_EcoFOCI %>% 
+  dplyr::select(-eDNA.Index, -Prop.abund) %>% 
+  ungroup() %>% 
+ group_by(Sample) %>%
+    mutate(Tot = sum(nReads)) %>% 
+    group_by(!!!syms(varnames_to_group)) %>% 
+    dplyr::summarise(nReads=sum(nReads)) %>% 
+    mutate (Prop.abund = nReads / Tot) %>% 
+      ungroup() %>% 
+    unite(sum.taxonomy, c("Kingdom",              "Phylum",               "Class"               
+,"Order",                "Family",               "Genus",               "Species"), sep=";") %>% 
+    group_by (sum.taxonomy) %>%
+    mutate (Colmax = max(Prop.abund),
+            eDNA.Index = Prop.abund / Colmax) %>% 
+  dplyr::select(sum.taxonomy,Sample, eDNA.Index) %>% 
+  mutate(., eDNA.Index=as.numeric(eDNA.Index)) %>% 
+  mutate(., eDNA.Index=if_else(eDNA.Index=="NaN", 0, eDNA.Index)) %>%
+  pivot_wider(names_from = Sample, values_from = eDNA.Index, values_fill  =0) -> wide_PA
+
+wide_PA %>% 
+  dplyr::select(sum.taxonomy) %>% 
+   separate(sum.taxonomy, into=c("Kingdom",              "Phylum",               "Class"               
+,"Order",                "Family",               "Genus",               "Species"), sep=";", remove=F) %>%  
+  dplyr::select(sum.taxonomy, Kingdom,Phylum,Class, Order,Family, Genus, Species) %>% 
+  distinct() %>% as.matrix() -> taxonomy_table
+dim(taxonomy_table)
+dim(wide_PA)
+rownames(taxonomy_table) <- wide_PA$sum.taxonomy
+
+TAX = tax_table(taxonomy_table)
+
+wide_PA %>% 
+  ungroup() %>% 
+  dplyr::select(-sum.taxonomy) %>% as.matrix() -> otu_table
+rownames(otu_table) <- wide_PA$sum.taxonomy
+
+OTU = otu_table(otu_table, taxa_are_rows = TRUE)
+physeq_obj._CO1_sum.tax = phyloseq(OTU, TAX, sampledata)
+
+subsurface_co1_sum.tax <- subset_samples(physeq_obj._CO1_sum.tax, Depth_bin == "Below 30m")
+
+surface_co1_sum.tax <- subset_samples(physeq_obj._CO1_sum.tax, Depth_bin == "Above 30m")
+
+
+```
+
+
+##  All Surface Bray
+
+```{r}
+
+
+surface_co1_sum.tax <- prune_samples(sample_sums(surface_co1_sum.tax) > 0, surface_co1_sum.tax)
+surface_co1_sum.tax_sp = subset_samples(surface_co1_sum.tax, !is.na(Temp_C) & !is.na(lat) & !is.na(Depth_m))
+surface_co1_sum.tax_sp = subset_taxa(surface_co1_sum.tax_sp, Kingdom!="Bacteria")
+surface_co1_sum.tax_sp = subset_taxa(surface_co1_sum.tax_sp, Kingdom!="Environmental Unknown")
+surface_co1_sum.tax_sp2 = filter_taxa(surface_co1_sum.tax_sp, function(x) sum(x > 0) > (0.1*length(x)), TRUE)
+
+
+tax_table(surface_co1_sum.tax_sp) %>%  as.data.frame()
+```
+
+
+```{r}
+
+#Betadiversity
+#Generate Vegan formatted data table
+method.sampledf <- data.frame(sample_data(surface_co1_2020_sum.tax_sp2))
+method.rel_abun<- vegan_otu(surface_co1_2020_sum.tax_sp2)
+
+#Jaccard dissimilarity matrix
+method.d_carn <- vegdist(method.rel_abun, method="bray")
+
+#PERMANOVA: Method+Site
+
+method.adonis_results_simple <- adonis2(method.rel_abun~Depth_m+Temp_C+lat+PSU_ppt+OxyConc_umol.per.l+lon, data=method.sampledf, by = "terms")
+
+method.adonis_results_simple
+
+```
+
+```{r}
+ord <- ordinate(surface_co1_2020_sum.tax_sp2, method = "NMDS", distance = ("bray"))
+```
+
+### NMDS Temp
+```{r}
+##Plot_Ordination
+plot_ordination(surface_co1_2020_sum.tax_sp2, ord, "samples", shape="Cruise_ID_short",color = "Temp_C") +
+  ggtitle(paste0("NMDS - Stress ",round(ord$stress,3))) + 
+  geom_point(size = 4) + 
+  theme_bw()+ 
+  theme(plot.title = element_text(hjust = 0.5,size = 20, face = "bold"),
+        plot.subtitle = element_text(hjust = 0.5,size = 18, face = "bold"),
+        panel.grid.major = element_blank(), 
+        panel.grid.minor = element_blank(),
+        panel.background = element_blank(), 
+        axis.text=element_text(size=16), 
+        axis.title=element_text(size=16,face="bold"),
+        legend.title = element_text( size=16, face="bold"),
+        legend.text = element_text(size=14)
+        ) + 
+  labs(color = "Temp ˚C") +scale_colour_cmocean() 
+
+
+```
+### CAP Analysis
+
+
+## CAP Species
+
+```{r, results="hide",warning=FALSE}
+#Run CAP analysis to identify predictor species
+vare.cap <- capscale(method.rel_abun~Depth_m+Temp_C+lat+PSU_ppt+OxyConc_umol.per.l+lon, data=method.sampledf, dist="bray")
+
+#Retain species scores
+sppscores(vare.cap) <- method.rel_abun
+
+as.data.frame(vegan::scores(vare.cap, display="species")) %>% 
+  rownames_to_column(var = "species") %>% 
+  as.tibble %>%
+ mutate(dist = sqrt((CAP1 - 0)^2 + (CAP2 - 0)^2)) -> vare.cap_species_distances
+
+
+as.data.frame(vegan::scores(vare.cap, display="bp")) %>% 
+  rownames_to_column(var = "env") %>% 
+  as.tibble %>%
+ mutate(dist = sqrt((CAP1 - 0)^2 + (CAP2 - 0)^2)) -> vare.cap_env_distances
+
+
+```
+##### Check For Break Point for Top Species
+```{r}
+species_distances <- as.data.frame(vare.cap_species_distances)
+rownames(species_distances) <- species_distances$species
+
+# Now add the environmental variables as arrows
+arrowmat <- species_distances
+
+#Rename row names to clean up plot
+
+rownames(species_distances) %>% as.data.frame() -> namers
+colnames(namers) <- c("path")
+namers %>% separate(path, c("D1","P1","C1","O1","F1","G1","Species"), sep=";") %>% replace(is.na(.), "") %>% 
+mutate(., name = ifelse(Species == "NA", G1, Species)) %>% 
+  mutate(., name = ifelse(name == "NA", F1, name)) %>% 
+  mutate(., name = ifelse(name == "NA", O1, name)) %>% 
+  mutate(., name = ifelse(name == "NA", C1, name)) %>% 
+  mutate(., name = ifelse(name == "NA", P1, name)) %>% 
+  mutate(id = row_number(),
+         name=str_c(name,"_",id))-> namers
+
+rownames(arrowmat) <- namers$name
+
+
+# Add labels, make a data.frame
+arrowdf <- data.frame(labels = rownames(arrowmat), arrowmat)
+
+arrowdf %>% 
+arrange(desc(dist)) %>% 
+ggplot(., aes(x= reorder(labels, -dist), y=dist)) +
+  geom_bar(stat="identity") + theme(axis.text.x = element_text(angle = 90, hjust = 1))
+
+```
+
+```{r}
+
+arrowdf %>% 
+arrange(desc(dist)) %>% 
+  slice(1:5) -> arrowdf
+
+
+summary(vare.cap)$cont %>% as.data.frame() %>% round(3)-> vare.cap_prop
+
+as.tibble(vare.cap_prop,rownames = "rowname") %>% 
+  pivot_longer(., cols=-rowname, values_to = "value", names_to = "name") %>% 
+  filter(., rowname=="Proportion Explained") %>% 
+  filter(., name %in% c("importance.CAP1","importance.CAP2"))-> vare.cap_prop_tib
+
+# Add labels, make a data.frame
+arrowdf_env <- data.frame(labels = vare.cap_env_distances$env, vare.cap_env_distances)
+
+arrowdf_env %>% 
+arrange(desc(dist)) %>% 
+  slice(1:5) -> arrowdf_env
+
+# Define the arrow aesthetic mapping
+arrow_map <- aes(xend = 0.5 *CAP1, 
+                 yend = 0.5 *CAP2, 
+                 x = 0, 
+                 y = 0, 
+                 shape = NULL, 
+                 color = NULL, 
+                 label = labels)
+
+label_map <- aes(x = 0.4 * CAP1, 
+                 y = 0.4 * CAP2, 
+                 shape = NULL, 
+                 color = NULL, 
+                 label = labels)
+
+arrowhead = arrow(length = unit(0.02, "npc"))
+
+method.sampledf$sample <- rownames(method.sampledf)
+# Plot CAP
+as.data.frame(vare.cap$CCA$wa) %>% 
+  rownames_to_column(var = "sample") %>% 
+  as.tibble() %>% 
+  left_join(method.sampledf)-> data_cap
+
+data_cap %>% 
+  ggplot(aes(x=CAP1, y=CAP2)) + geom_point(aes(col=Temp_C), size =3) + geom_segment(
+    mapping = arrow_map, 
+    size = .5, 
+    data = arrowdf, 
+    color = "orange", 
+    arrow = arrowhead
+  ) +
+  geom_text(
+    mapping = label_map, 
+    size = 5,  
+        color = "orange", 
+    data = arrowdf, 
+    show.legend = FALSE,
+    position=position_jitter(width=0.08,height=0.08)
+  ) + 
+  geom_segment(
+    mapping = arrow_map, 
+    size = .5, 
+    data = arrowdf_env, 
+    color = "grey", 
+    arrow = arrowhead
+  ) +
+  geom_text(
+    mapping = label_map, 
+    size = 5, 
+    data = arrowdf_env, 
+    show.legend = FALSE,
+    position=position_jitter(width=0.08,height=0.08)
+  )  +
+  ylab(paste0("CAP2 ",round(vare.cap_prop_tib$value[2]*100,1),"%"))   + xlab(paste0("CAP1 ",round(vare.cap_prop_tib$value[1]*100,1),"%")) +   
+  scale_color_gradientn(colours = cmocean('thermal')(256)) + ggpubr::theme_pubr()
+
+
+```
+
+## Benthic Species Copepod NMDS
+```{r}
+
+copepod_phy_sp = subset_taxa(physeq_obj._CO1_sum.tax, Class=="Hexanauplia")
+copepod_phy_sp = subset_samples(copepod_phy_sp, !is.na(Temp_C) & !is.na(lat) & !is.na(Depth_m))
+copepod_phy_sp = subset_samples(copepod_phy_sp, !Sample %in% samples_to_drop$Sample)
+copepod_phy_sp = subset_samples(copepod_phy_sp, !Sample %in% c("E1720_DY2306", "E1723_DY2306", "E1948_SKQ23_12S" ,"E1949_SKQ23_12S","E1890_SKQ23_12S","E1063_SKQ2021"))
+copepod_phy_sp = filter_taxa(copepod_phy_sp, function(x) sum(x > 0) > (0.01*length(x)), TRUE)
+copepod_phy_sp = filter_taxa(copepod_phy_sp, function(x) sum(x) > 0, TRUE)
+copepod_phy_sp <- prune_samples(sample_sums(copepod_phy_sp) > 0, copepod_phy_sp)
+
+copepod_phy_sp <- subset_samples(copepod_phy_sp, Depth_bin == "Below 30m")
+tax_table(copepod_phy_sp)
+```
+
+## Species Copepod Bray
+```{r}
+
+#Betadiversity
+#Generate Vegan formatted data table
+method.sampledf <- data.frame(sample_data(copepod_phy_sp))
+method.rel_abun<- vegan_otu(copepod_phy_sp)
+
+
+method.sampledf %>% 
+  mutate(T2=as.Date(Time),
+         month = month(Time)) %>% 
+  mutate(., Season = case_when(month < 3 ~"Winter",
+                               month < 6 ~"Spring",
+                               month < 9~ "Summer",
+                               month < 12 ~"Fall")) -> method.sampledf
+
+#Jaccard dissimilarity matrix
+method.d_carn <- vegdist(method.rel_abun, method="jaccard", binary=T)
+
+#PERMANOVA: Method+Site
+
+method.adonis_results_simple <- adonis2(method.rel_abun~Season+Depth_m+Temp_C+lat+PSU_ppt+OxyConc_umol.per.l+lon, data=method.sampledf, by = "terms",method="jaccard", binary=T)
+
+method.adonis_results_simple
+
+```
+
+```{r}
+ord <- ordinate(copepod_phy_sp, method = "NMDS", distance = ("jaccard"), binary=T)
+```
+
+### NMDS Temp
+```{r}
+
+sample_data(copepod_phy_sp) <- method.sampledf
+
+##Plot_Ordination
+plot_ordination(copepod_phy_sp, ord, "samples", color = "Temp_C", shape="Season") +
+  ggtitle(paste0("NMDS - Stress ",round(ord$stress,3))) + 
+  geom_point(size = 4) + 
+  theme_bw()+ 
+  theme(plot.title = element_text(hjust = 0.5,size = 20, face = "bold"),
+        plot.subtitle = element_text(hjust = 0.5,size = 18, face = "bold"),
+        panel.grid.major = element_blank(), 
+        panel.grid.minor = element_blank(),
+        panel.background = element_blank(), 
+        axis.text=element_text(size=16), 
+        axis.title=element_text(size=16,face="bold"),
+        legend.title = element_text( size=16, face="bold"),
+        legend.text = element_text(size=14)
+        ) + 
+  labs(color = "Temp ˚C") +scale_colour_cmocean() 
+
+
+```
+### CAP Analysis
+
+
+## CAP Species
+
+```{r, results="hide",warning=FALSE}
+#Run CAP analysis to identify predictor species
+vare.cap <- capscale(method.rel_abun~Depth_m+Temp_C+lat+PSU_ppt+OxyConc_umol.per.l+lon, data=method.sampledf, dist="bray")
+
+#Retain species scores
+sppscores(vare.cap) <- method.rel_abun
+
+as.data.frame(vegan::scores(vare.cap, display="species")) %>% 
+  rownames_to_column(var = "species") %>% 
+  as.tibble %>%
+ mutate(dist = sqrt((CAP1 - 0)^2 + (CAP2 - 0)^2)) -> vare.cap_species_distances
+
+
+as.data.frame(vegan::scores(vare.cap, display="bp")) %>% 
+  rownames_to_column(var = "env") %>% 
+  as.tibble %>%
+ mutate(dist = sqrt((CAP1 - 0)^2 + (CAP2 - 0)^2)) -> vare.cap_env_distances
+
+
+```
+##### Check For Break Point for Top Species
+```{r}
+species_distances <- as.data.frame(vare.cap_species_distances)
+rownames(species_distances) <- species_distances$species
+
+# Now add the environmental variables as arrows
+arrowmat <- species_distances
+
+#Rename row names to clean up plot
+
+rownames(species_distances) %>% as.data.frame() -> namers
+colnames(namers) <- c("path")
+namers %>% separate(path, c("D1","P1","C1","O1","F1","G1","Species"), sep=";") %>% replace(is.na(.), "") %>% 
+mutate(., name = ifelse(Species == "NA", G1, Species)) %>% 
+  mutate(., name = ifelse(name == "NA", F1, name)) %>% 
+  mutate(., name = ifelse(name == "NA", O1, name)) %>% 
+  mutate(., name = ifelse(name == "NA", C1, name)) %>% 
+  mutate(., name = ifelse(name == "NA", P1, name))-> namers
+
+rownames(arrowmat) <- namers$name
+
+
+# Add labels, make a data.frame
+arrowdf <- data.frame(labels = rownames(arrowmat), arrowmat)
+arrowdf %>% 
+  dplyr::slice(1:10) 
+arrowdf %>% 
+arrange(desc(dist)) %>% 
+  filter(., CAP1>0)
+arrowdf %>% 
+arrange(desc(dist)) %>% 
+ggplot(., aes(x= reorder(labels, -dist), y=dist)) +
+  geom_bar(stat="identity") + theme(axis.text.x = element_text(angle = 90, hjust = 1))
+
+```
+
+```{r}
+arrowdf %>% 
+arrange(desc(dist)) %>% 
+  filter(., labels %in% c("Lucicutia flavicornis","Metridia pacifica","Pseudocalanus moultoni","Oithona similis","Pseudocalanus mimus","Calanus glacialis","Calanus pacificus","Pseudocalanus minutus"))-> arrowdf
+
+
+summary(vare.cap)$cont %>% as.data.frame() %>% round(3)-> vare.cap_prop
+
+as.tibble(vare.cap_prop,rownames = "rowname") %>% 
+  pivot_longer(., cols=-rowname, values_to = "value", names_to = "name") %>% 
+  filter(., rowname=="Proportion Explained") %>% 
+  filter(., name %in% c("importance.CAP1","importance.CAP2"))-> vare.cap_prop_tib
+
+# Add labels, make a data.frame
+arrowdf_env <- data.frame(labels = vare.cap_env_distances$env, vare.cap_env_distances)
+
+arrowdf_env %>% 
+arrange(desc(dist)) %>% 
+  filter(., env %in% c("lat", "Temp_C","Depth_m","PSU_ppt")) %>% 
+  mutate(., labels = recode(labels,`lat`="Lat",
+                            `Temp_C`="˚C",
+                            `Depth_m` = "Depth",
+                            `PSU_ppt`="PSU"))-> arrowdf_env
+
+# Define the arrow aesthetic mapping
+arrow_map <- aes(xend = 0.4 *CAP1, 
+                 yend = 0.4 *CAP2, 
+                 x = 0, 
+                 y = 0, 
+                 shape = NULL, 
+                 color = NULL, 
+                 label = labels)
+
+label_map <- aes(x = 0.32 * CAP1, 
+                 y = 0.32 * CAP2, 
+                 shape = NULL, 
+                 color = NULL, 
+                 label = labels,
+                 alpha=0.7,
+                 fontface="italic")
+label_map2 <- aes(x = 0.32 * CAP1, 
+                 y = 0.32 * CAP2, 
+                 shape = NULL, 
+                 color = NULL, 
+                 alpha=0.7,
+                 label = labels)
+
+arrowhead = arrow(length = unit(0.02, "npc"))
+
+method.sampledf$sample <- rownames(method.sampledf)
+# Plot CAP
+as.data.frame(vare.cap$CCA$wa) %>% 
+  rownames_to_column(var = "sample") %>% 
+  as.tibble() %>% 
+  left_join(method.sampledf)-> data_cap
+
+
+data_cap %>% 
+  ggplot(aes(x=CAP1, y=CAP2)) + geom_point(aes(col=Temp_C, shape=Season), size =3) + geom_segment(
+    mapping = arrow_map, 
+    size = .5, 
+    data = arrowdf, 
+    color = "dodgerblue3", 
+    arrow = arrowhead
+  ) +
+  geom_label(
+    mapping = label_map, 
+    size = 5,  
+        color = "dodgerblue3", 
+    data = arrowdf, 
+    show.legend = FALSE,
+    position=position_jitter(width=0.03,height=0.03)
+  ) + 
+  geom_segment(
+    mapping = arrow_map, 
+    size = .5, 
+    data = arrowdf_env, 
+    color = "grey", 
+    arrow = arrowhead
+  ) +
+  geom_label(
+    mapping = label_map2, 
+    size = 5, 
+    data = arrowdf_env, 
+    show.legend = FALSE,
+    position=position_jitter(width=0.03,height=0.03)
+  )  +
+  ylab(paste0("CAP2 [",round(vare.cap_prop_tib$value[2]*100,1),"]%"))   + xlab(paste0("CAP1 [",round(vare.cap_prop_tib$value[1]*100,1),"]%")) +   
+  scale_color_gradientn(colours = cmocean('thermal')(256), limits=c(-2,8)) + ggpubr::theme_pubr() +labs(colour="Temperature ˚C") + theme(axis.title = element_text(face="bold", size = 16))
+
+
+ggsave(filename = here("gold_out","CAP_benthic_copepods.png"),
+       width=12,
+       height = 8,
+       dpi = 400,
+      units = c("in"))
+
+```
+
+
+```{r}
+ord <- ordinate(subsurface_co1_2020, method = "NMDS", distance = ("bray"))
+```
+
+
+```{r}
+##Plot_Ordination
+plot_ordination(subsurface_co1_2020, ord, "samples", color = "Temp_C") +
+  ggtitle(paste0("NMDS - Stress ",round(ord$stress,3))) + 
+  geom_point(size = 4) + 
+  theme_bw()+ 
+  theme(plot.title = element_text(hjust = 0.5,size = 20, face = "bold"),
+        plot.subtitle = element_text(hjust = 0.5,size = 18, face = "bold"),
+        panel.grid.major = element_blank(), 
+        panel.grid.minor = element_blank(),
+        panel.background = element_blank(), 
+        axis.text=element_text(size=16), 
+        axis.title=element_text(size=16,face="bold"),
+        legend.title = element_text( size=16, face="bold"),
+        legend.text = element_text(size=14)
+        ) + 
+  labs(color = "Temp ˚C") +scale_colour_cmocean() 
+
+
+```
+
+# Taxa Plot
+## Taxa Exploration
+
+
+```{r}
+#Chionoecetes opilio, Euphausiacea, Limacina helicina, Pteropoda
+
+long_COI_EcoFOCI %>% 
+    filter(, !is.na(Depth_m)) %>% 
+  ungroup() %>% 
+   unite(sum.taxonomy, c("Kingdom",              "Phylum",               "Class"               
+,"Order",                "Family",               "Genus",               "Species"), sep=";", remove=F) %>%  
+  dplyr::select(sum.taxonomy, Kingdom,Phylum,Class, Order,Family, Genus, Species) %>% 
+  distinct() -> tax_df
+
+
+tax_df %>% 
+  filter(., str_detect(sum.taxonomy,"Echinodermata"))
+
+tax_df %>% 
+  filter(., str_detect(sum.taxonomy,"Mollusca"))
+
+tax_df %>% 
+  filter(., str_detect(sum.taxonomy,"Decapoda"))
+
+tax_df %>% 
+    filter(., Kingdom== "Eukaryota") %>% 
+dplyr::select(Species) %>% distinct()
+```
+
+### CO1
+```{r}
+
+tax_df %>% 
+  filter(., Kingdom== "Eukaryota") %>% 
+  filter(., Species !="NA") %>% 
+  dplyr::select(Phylum) %>%  distinct()
+
+tax_df %>% 
+  filter(., Kingdom== "Eukaryota") %>% 
+  filter(., Species !="NA") %>% 
+  group_by(Phylum) %>% 
+  dplyr::summarise(Count = n_distinct(Species)) %>% 
+  arrange(desc(Count)) %>% 
+  dplyr::slice(1:10) %>% 
+  ggplot(aes(x=reorder(Phylum,-Count), y=Count)) + geom_col(fill="dodgerblue4") + theme_pubr() + theme(axis.title = element_text(face="bold", size=16),
+      axis.text.x = element_text(angle = 30, vjust=1, hjust = 1)) +xlab("Phylum") +ggtitle(label = "Leray CO1") -> co1_phyla_plot
+co1_phyla_plot
+```
+
+```{r}
+#Chionoecetes opilio, Euphausiacea, Limacina helicina, Pteropoda
+
+long_Machida_EcoFOCI %>% 
+    filter(, !is.na(Depth_m)) %>% 
+  ungroup() %>% 
+   unite(sum.taxonomy, c("Kingdom",              "Phylum",               "Class"               
+,"Order",                "Family",               "Genus",               "Species"), sep=";", remove=F) %>%  
+  dplyr::select(sum.taxonomy, Kingdom,Phylum,Class, Order,Family, Genus, Species) %>% 
+  distinct() -> tax_df
+
+tax_df %>% 
+  filter(., str_detect(sum.taxonomy,"Echinodermata"))
+
+tax_df %>% 
+  filter(., str_detect(sum.taxonomy,"Mollusca"))
+
+
+tax_df %>% 
+  filter(., str_detect(sum.taxonomy,"Arthropoda"))
+
+
+```
+
+### Machida
+```{r}
+
+tax_df %>% 
+  filter(., Kingdom== "Eukaryota") %>% 
+  filter(., Species !="NA") %>% 
+  dplyr::select(Species) %>%  distinct()
+
+
+tax_df %>% 
+  filter(., Kingdom== "Eukaryota") %>% 
+  filter(., Species !="NA") %>% 
+  group_by(Phylum) %>% 
+  dplyr::summarise(Count = n_distinct(Species)) %>% 
+  arrange(desc(Count)) %>% 
+  dplyr::slice(1:10) %>% 
+  ggplot(aes(x=reorder(Phylum,-Count), y=Count)) + geom_col(fill="purple4") + theme_pubr() + theme(axis.title = element_text(face="bold", size=16),
+      axis.text.x = element_text(angle = 30, vjust=1, hjust = 1)) +xlab("Phylum") +ggtitle(label = "Machida 18Sv8-9") -> machida_phyla_plot
+machida_phyla_plot
+```
+
+### MiFish
+```{r}
+
+
+long_MiFish_EcoFOCI %>% 
+    filter(, !is.na(Depth_m)) %>% 
+ungroup() %>% 
+   unite(sum.taxonomy, c("Kingdom",              "Phylum",               "Class"               
+,"Order",                "Family",               "Genus",               "Species"), sep=";", remove=F) %>%  
+  dplyr::select(sum.taxonomy, Kingdom,Phylum,Class, Order,Family, Genus, Species) %>% 
+  distinct() -> tax_df_mifish
+
+
+tax_df_mifish %>% 
+    filter(., Phylum== "Chordata") %>% 
+  dplyr::select(Species) %>%  distinct()
+  
+tax_df_mifish %>% 
+    filter(., Phylum== "Chordata") %>% 
+  filter(., str_detect(sum.taxonomy,"Chondrichthyes"))
+
+
+tax_df_mifish %>% 
+  filter(., str_detect(sum.taxonomy,"Mammalia"))
+
+```
+
+```{r}
+tax_df_mifish %>% 
+  filter(., Phylum== "Chordata") %>% 
+    filter(., Species !="NA") %>% 
+  group_by(Class) %>% 
+  dplyr::summarise(Count = n_distinct(Species)) %>% 
+  arrange(desc(Count)) %>% 
+  dplyr::slice(1:10) %>% 
+  ggplot(aes(x=reorder(Class,-Count), y=Count)) + geom_col(fill="aquamarine4") + theme_pubr() + theme(axis.title = element_text(face="bold", size=16),
+     axis.text.x = element_text(angle = 30, vjust=1, hjust = 1)) +xlab("Class") +ggtitle(label = "MiFish") -> mifish_class_plot
+```
+
+```{r}
+mifish_class_plot + co1_phyla_plot  + plot_annotation(tag_levels = 'A')
+
+ggsave(filename = here("gold_out","Total_species.png"),
+       width=16,
+       height = 6,
+       dpi = 400,
+      units = c("in"))
+
+```
+
+
+## Calanus
+```{r}
+
+long_COI_EcoFOCI %>% 
+  dplyr::select(ASV_combo, Kingdom, Phylum, Class, Order, Family, Genus, Species) %>% 
+  distinct() %>% 
+  filter(., Genus=="Calanus")
+```
+
+
+```{r}
+long_COI_EcoFOCI %>% 
+  filter(., Genus=="Calanus") %>% 
+  dplyr::group_by(ASV_combo, Kingdom, Phylum, Class, Order, Family, Genus, Species) %>% 
+  dplyr::summarise(sum_reads=sum(nReads)) %>% 
+  arrange(desc(sum_reads))
+
+
+```
+
+# Machida
+
+#### Build Phyloseq Object
+
+##### ASV Reads
+
+```{r}
+
+varnames <- colnames(long_Machida_EcoFOCI)
+to_remove <- c("Run2:ASV","Run3:ASV","ASV_combo","Sequence","nReads","Prop.abund","eDNA.Index")
+
+
+sample_metadata -> Machida_sample_data
+
+#Metadata
+Machida_sample_data %>%  as.data.frame() -> sampledata
+rownames(sampledata) <- sampledata$Sample
+sample_data(sampledata) -> sampledata
+
+#ASV Reads
+
+long_Machida_EcoFOCI %>% 
+  dplyr::select(ASV_combo,Sample, eDNA.Index) %>% 
+  mutate(., eDNA.Index=as.numeric(eDNA.Index)) %>% 
+  mutate(., eDNA.Index=if_else(eDNA.Index=="NaN", 0, eDNA.Index)) %>%
+  pivot_wider(names_from = Sample, values_from = eDNA.Index, values_fill  =0) -> wide_PA
+
+dim(wide_PA)
+
+long_Machida_EcoFOCI %>% 
+  dplyr::select(ASV_combo, Kingdom,Phylum,Class, Order,Family, Genus, Species) %>% 
+  distinct() %>% as.matrix() -> taxonomy_table
+
+rownames(taxonomy_table) <- wide_PA$ASV_combo
+
+TAX = tax_table(taxonomy_table)
+
+wide_PA %>% 
+  ungroup() %>% 
+  dplyr::select(-ASV_combo) %>% as.matrix() -> otu_table
+rownames(otu_table) <- wide_PA$ASV_combo
+
+OTU = otu_table(otu_table, taxa_are_rows = TRUE)
+physeq_obj._Machida = phyloseq(OTU, TAX, sampledata)
+
+physeq_obj._Machida_2020 <- subset_samples(physeq_obj._Machida,Cruise_ID_short != "SKQ2021")
+
+subsurface_Machida <- subset_samples(physeq_obj._Machida, Depth_bin == "Below 30m")
+subsurface_Machida_2020 <- subset_samples(subsurface_Machida, Cruise_ID_short != "SKQ2021")
+
+surface_Machida <- subset_samples(physeq_obj._Machida, Depth_bin == "Above 30m")
+surface_Machida_2020 <- subset_samples(surface_Machida, Cruise_ID_short != "SKQ2021")
+
+```
+
+#### Build Phyloseq Object
+
+```{r}
+
+varnames <- colnames(long_Machida_EcoFOCI)
+to_remove <- c("Run2:ASV","Run3:ASV","ASV_combo","Sequence","nReads","Prop.abund","eDNA.Index")
+
+
+sample_metadata -> Machida_sample_data
+
+#Metadata
+Machida_sample_data %>%  as.data.frame() -> sampledata
+rownames(sampledata) <- sampledata$Sample
+sample_data(sampledata) -> sampledata
+
+#ASV Reads
+
+c(setdiff(varnames,to_remove),"Tot") -> varnames_to_group
+
+long_Machida_EcoFOCI %>% 
+  dplyr::select(-eDNA.Index, -Prop.abund) %>% 
+  ungroup() %>% 
+ group_by(Sample) %>%
+    mutate(Tot = sum(nReads)) %>% 
+    group_by(!!!syms(varnames_to_group)) %>% 
+    dplyr::summarise(nReads=sum(nReads)) %>% 
+    mutate (Prop.abund = nReads / Tot) %>% 
+      ungroup() %>% 
+    unite(sum.taxonomy, c("Kingdom",              "Phylum",               "Class"               
+,"Order",                "Family",               "Genus",               "Species"), sep=";") %>% 
+    group_by (sum.taxonomy) %>%
+    mutate (Colmax = max(Prop.abund),
+            eDNA.Index = Prop.abund / Colmax) %>% 
+  dplyr::select(sum.taxonomy,Sample, eDNA.Index) %>% 
+  mutate(., eDNA.Index=as.numeric(eDNA.Index)) %>% 
+  mutate(., eDNA.Index=if_else(eDNA.Index=="NaN", 0, eDNA.Index)) %>%
+  pivot_wider(names_from = Sample, values_from = eDNA.Index, values_fill  =0) -> wide_PA
+
+wide_PA %>% 
+  dplyr::select(sum.taxonomy) %>% 
+   separate(sum.taxonomy, into=c("Kingdom",              "Phylum",               "Class"               
+,"Order",                "Family",               "Genus",               "Species"), sep=";", remove=F) %>%  
+  dplyr::select(sum.taxonomy, Kingdom,Phylum,Class, Order,Family, Genus, Species) %>% 
+  distinct() %>% as.matrix() -> taxonomy_table
+dim(taxonomy_table)
+dim(wide_PA)
+rownames(taxonomy_table) <- wide_PA$sum.taxonomy
+
+TAX = tax_table(taxonomy_table)
+
+wide_PA %>% 
+  ungroup() %>% 
+  dplyr::select(-sum.taxonomy) %>% as.matrix() -> otu_table
+rownames(otu_table) <- wide_PA$sum.taxonomy
+
+OTU = otu_table(otu_table, taxa_are_rows = TRUE)
+physeq_obj._Machida_sum.tax = phyloseq(OTU, TAX, sampledata)
+
+physeq_obj._Machida_2020_sum.tax <- subset_samples(physeq_obj._Machida_sum.tax,Cruise_ID_short != "SKQ2021")
+
+subsurface_Machida_sum.tax <- subset_samples(physeq_obj._Machida_sum.tax, Depth_bin == "Below 30m")
+subsurface_Machida_2020_sum.tax <- subset_samples(subsurface_Machida_sum.tax, Cruise_ID_short != "SKQ2021")
+
+surface_Machida_sum.tax <- subset_samples(physeq_obj._Machida_sum.tax, Depth_bin == "Above 30m")
+surface_Machida_2020_sum.tax <- subset_samples(surface_Machida_sum.tax, Cruise_ID_short != "SKQ2021")
+
+```
+
+
+## Benthic Species Copepod NMDS
+```{r}
+copepod_phy_sp_m = subset_taxa(physeq_obj._Machida_sum.tax, Class=="Hexanauplia")
+copepod_phy_sp_m <- prune_samples(sample_sums(copepod_phy_sp_m) > 0, copepod_phy_sp_m)
+copepod_phy_sp_m = filter_taxa(copepod_phy_sp_m, function(x) sum(x > 0) > (0.1*length(x)), TRUE)
+copepod_phy_sp_m = subset_samples(copepod_phy_sp_m, !is.na(Temp_C) & !is.na(lat) & !is.na(Depth_m))
+copepod_phy_sp_m <- subset_samples(copepod_phy_sp_m, Cruise_ID_short != "SKQ2021")
+copepod_phy_sp_m <- subset_samples(copepod_phy_sp_m, Depth_bin == "Below 30m")
+
+tax_table(copepod_phy_sp_m) %>%  as.data.frame()
+```
+
+## Species Copepod Bray
+```{r}
+
+#Betadiversity
+#Generate Vegan formatted data table
+method.sampledf <- data.frame(sample_data(copepod_phy_sp_m))
+method.rel_abun<- vegan_otu(copepod_phy_sp_m)
+
+#Jaccard dissimilarity matrix
+method.d_carn <- vegdist(method.rel_abun, method="bray")
+
+#PERMANOVA: Method+Site
+
+method.adonis_results_simple <- adonis2(method.rel_abun~Depth_m+Temp_C+lat+PSU_ppt+OxyConc_umol.per.l+lon, data=method.sampledf, by = "terms")
+
+method.adonis_results_simple
+
+```
+
+```{r}
+ord <- ordinate(copepod_phy_sp_m, method = "NMDS", distance = ("bray"))
+```
+
+### NMDS Temp
+```{r}
+##Plot_Ordination
+plot_ordination(copepod_phy_sp_m, ord, "samples", color = "Temp_C", shape="Depth_bin") +
+  ggtitle(paste0("NMDS - Stress ",round(ord$stress,3))) + 
+  geom_point(size = 4) + 
+  theme_bw()+ 
+  theme(plot.title = element_text(hjust = 0.5,size = 20, face = "bold"),
+        plot.subtitle = element_text(hjust = 0.5,size = 18, face = "bold"),
+        panel.grid.major = element_blank(), 
+        panel.grid.minor = element_blank(),
+        panel.background = element_blank(), 
+        axis.text=element_text(size=16), 
+        axis.title=element_text(size=16,face="bold"),
+        legend.title = element_text( size=16, face="bold"),
+        legend.text = element_text(size=14)
+        ) + 
+  labs(color = "Temp ˚C") +scale_colour_cmocean() 
+
+
+```
+### CAP Analysis
+
+
+## CAP Species
+
+```{r, results="hide",warning=FALSE}
+#Run CAP analysis to identify predictor species
+vare.cap <- capscale(method.rel_abun~Depth_m+Temp_C+lat+PSU_ppt+OxyConc_umol.per.l+lon, data=method.sampledf, dist="bray")
+
+#Retain species scores
+sppscores(vare.cap) <- method.rel_abun
+
+as.data.frame(vegan::scores(vare.cap, display="species")) %>% 
+  rownames_to_column(var = "species") %>% 
+  as.tibble %>%
+ mutate(dist = sqrt((CAP1 - 0)^2 + (CAP2 - 0)^2)) -> vare.cap_species_distances
+
+
+as.data.frame(vegan::scores(vare.cap, display="bp")) %>% 
+  rownames_to_column(var = "env") %>% 
+  as.tibble %>%
+ mutate(dist = sqrt((CAP1 - 0)^2 + (CAP2 - 0)^2)) -> vare.cap_env_distances
+
+
+```
+##### Check For Break Point for Top Species
+```{r}
+species_distances <- as.data.frame(vare.cap_species_distances)
+rownames(species_distances) <- species_distances$species
+
+# Now add the environmental variables as arrows
+arrowmat <- species_distances
+
+#Rename row names to clean up plot
+
+rownames(species_distances) %>% as.data.frame() -> namers
+colnames(namers) <- c("path")
+namers %>% separate(path, c("D1","P1","C1","O1","F1","G1","Species"), sep=";") %>% replace(is.na(.), "") %>% 
+mutate(., name = ifelse(Species == "NA", G1, Species)) %>% 
+  mutate(., name = ifelse(name == "NA", F1, name)) %>% 
+  mutate(., name = ifelse(name == "NA", O1, name)) %>% 
+  mutate(., name = ifelse(name == "NA", C1, name)) %>% 
+  mutate(., name = ifelse(name == "NA", P1, name))-> namers
+
+rownames(arrowmat) <- namers$name
+
+
+# Add labels, make a data.frame
+arrowdf <- data.frame(labels = rownames(arrowmat), arrowmat)
+
+arrowdf %>% 
+arrange(desc(dist)) %>% 
+ggplot(., aes(x= reorder(labels, -dist), y=dist)) +
+  geom_bar(stat="identity") + theme(axis.text.x = element_text(angle = 90, hjust = 1))
+
+```
+
+```{r}
+
+arrowdf %>% 
+arrange(desc(dist)) %>% 
+  dplyr::slice(1:5) -> arrowdf
+
+
+summary(vare.cap)$cont %>% as.data.frame() %>% round(3)-> vare.cap_prop
+
+as.tibble(vare.cap_prop,rownames = "rowname") %>% 
+  pivot_longer(., cols=-rowname, values_to = "value", names_to = "name") %>% 
+  filter(., rowname=="Proportion Explained") %>% 
+  filter(., name %in% c("importance.CAP1","importance.CAP2"))-> vare.cap_prop_tib
+
+# Add labels, make a data.frame
+arrowdf_env <- data.frame(labels = vare.cap_env_distances$env, vare.cap_env_distances)
+
+arrowdf_env %>% 
+arrange(desc(dist)) %>% 
+  filter(., env %in% c("lat", "Temp_C","Depth_m","PSU_ppt")) %>% 
+  mutate(., labels = recode(labels,`lat`="Lat",
+                            `Temp_C`="˚C",
+                            `Depth_m` = "Depth",
+                            `PSU_ppt`="PSU"))-> arrowdf_env
+
+# Define the arrow aesthetic mapping
+arrow_map <- aes(xend = 0.4 *CAP1, 
+                 yend = 0.4 *CAP2, 
+                 x = 0, 
+                 y = 0, 
+                 shape = NULL, 
+                 color = NULL, 
+                 label = labels)
+
+label_map <- aes(x = 0.32 * CAP1, 
+                 y = 0.32 * CAP2, 
+                 shape = NULL, 
+                 color = NULL, 
+                 label = labels,
+                 fontface="italic")
+label_map2 <- aes(x = 0.32 * CAP1, 
+                 y = 0.32 * CAP2, 
+                 shape = NULL, 
+                 color = NULL, 
+                 label = labels)
+
+arrowhead = arrow(length = unit(0.02, "npc"))
+
+method.sampledf$sample <- rownames(method.sampledf)
+# Plot CAP
+as.data.frame(vare.cap$CCA$wa) %>% 
+  rownames_to_column(var = "sample") %>% 
+  as.tibble() %>% 
+  left_join(method.sampledf)-> data_cap
+
+
+data_cap %>% 
+  ggplot(aes(x=CAP1, y=CAP2)) + geom_point(aes(col=Temp_C), size =3) + geom_segment(
+    mapping = arrow_map, 
+    size = .5, 
+    data = arrowdf, 
+    color = "dodgerblue3", 
+    arrow = arrowhead
+  ) +
+  geom_label(
+    mapping = label_map, 
+    size = 5,  
+        color = "dodgerblue3", 
+    data = arrowdf, 
+    show.legend = FALSE,
+    position=position_jitter(width=0.03,height=0.03)
+  ) + 
+  geom_segment(
+    mapping = arrow_map, 
+    size = .5, 
+    data = arrowdf_env, 
+    color = "grey", 
+    arrow = arrowhead
+  ) +
+  geom_label(
+    mapping = label_map2, 
+    size = 5, 
+    data = arrowdf_env, 
+    show.legend = FALSE,
+    position=position_jitter(width=0.03,height=0.03)
+  )  +
+  ylab(paste0("CAP2 [",round(vare.cap_prop_tib$value[2]*100,1),"]%"))   + xlab(paste0("CAP1 [",round(vare.cap_prop_tib$value[1]*100,1),"]%")) +   
+  scale_color_gradientn(colours = cmocean('thermal')(256), limits=c(-2,8)) + ggpubr::theme_pubr() +labs(colour="Temperature ˚C") + theme(axis.title = element_text(face="bold", size = 16))
+
+
+ggsave(filename = here("gold_out","CAP_benthic_copepods.png"),
+       width=12,
+       height = 8,
+       dpi = 400,
+      units = c("in"))
+
+```
+
+# MiFish
+## Group by Species
+
+#### Build Phyloseq Object
+
+```{r}
+
+varnames <- colnames(long_MiFish_EcoFOCI)
+to_remove <- c("Run2:ASV","Run3:ASV","Run4:ASV","ASV_combo","Sequence","nReads","Prop.abund","eDNA.Index")
+
+
+sample_metadata -> co1_sample_data
+
+#Metadata
+co1_sample_data %>%  as.data.frame() -> sampledata
+rownames(sampledata) <- sampledata$Sample
+sample_data(sampledata) -> sampledata
+
+#ASV Reads
+
+c(setdiff(varnames,to_remove),"Tot") -> varnames_to_group
+
+long_MiFish_EcoFOCI %>% 
+  dplyr::select(-eDNA.Index, -Prop.abund) %>% 
+  ungroup() %>% 
+ group_by(Sample) %>%
+    mutate(Tot = sum(nReads)) %>% 
+    group_by(!!!syms(varnames_to_group)) %>% 
+    dplyr::summarise(nReads=sum(nReads)) %>% 
+    mutate (Prop.abund = nReads / Tot) %>% 
+      ungroup() %>% 
+    unite(sum.taxonomy, c("Kingdom",              "Phylum",               "Class"               
+,"Order",                "Family",               "Genus",               "Species"), sep=";") %>% 
+    group_by (sum.taxonomy) %>%
+    mutate (Colmax = max(Prop.abund),
+            eDNA.Index = Prop.abund / Colmax) %>% 
+  dplyr::select(sum.taxonomy,Sample, eDNA.Index) %>% 
+  mutate(., eDNA.Index=as.numeric(eDNA.Index)) %>% 
+  mutate(., eDNA.Index=if_else(eDNA.Index=="NaN", 0, eDNA.Index)) %>%
+  pivot_wider(names_from = Sample, values_from = eDNA.Index, values_fill  =0) -> wide_PA
+
+wide_PA %>% 
+  dplyr::select(sum.taxonomy) %>% 
+   separate(sum.taxonomy, into=c("Kingdom",              "Phylum",               "Class"               
+,"Order",                "Family",               "Genus",               "Species"), sep=";", remove=F) %>%  
+  dplyr::select(sum.taxonomy, Kingdom,Phylum,Class, Order,Family, Genus, Species) %>% 
+  distinct() %>% as.matrix() -> taxonomy_table
+dim(taxonomy_table)
+dim(wide_PA)
+rownames(taxonomy_table) <- wide_PA$sum.taxonomy
+
+TAX = tax_table(taxonomy_table)
+
+wide_PA %>% 
+  ungroup() %>% 
+  dplyr::select(-sum.taxonomy) %>% as.matrix() -> otu_table
+rownames(otu_table) <- wide_PA$sum.taxonomy
+
+OTU = otu_table(otu_table, taxa_are_rows = TRUE)
+physeq_obj_MiFish_sum.tax = phyloseq(OTU, TAX, sampledata)
+
+subsurface_MiFish_sum.tax <- subset_samples(physeq_obj_MiFish_sum.tax, Depth_bin == "Below 30m")
+
+surface_MiFish_sum.tax <- subset_samples(physeq_obj_MiFish_sum.tax, Depth_bin == "Above 30m")
+
+
+surface_MiFish_sum.tax <- prune_samples(sample_sums(surface_MiFish_sum.tax) > 0, surface_MiFish_sum.tax)
+surface_MiFish_sum.tax_sp = subset_samples(surface_MiFish_sum.tax, !is.na(Temp_C) & !is.na(lat) & !is.na(Depth_m))
+surface_MiFish_sum.tax_sp = subset_taxa(surface_MiFish_sum.tax_sp, Kingdom!="Bacteria")
+surface_MiFish_sum.tax_sp = subset_taxa(surface_MiFish_sum.tax_sp, Kingdom!="Environmental Unknown")
+
+
+subsurface_MiFish_sum.tax <- prune_samples(sample_sums(subsurface_MiFish_sum.tax) > 0, subsurface_MiFish_sum.tax)
+subsurface_MiFish_sum.tax_sp = subset_samples(subsurface_MiFish_sum.tax, !is.na(Temp_C) & !is.na(lat) & !is.na(Depth_m))
+subsurface_MiFish_sum.tax_sp = subset_taxa(subsurface_MiFish_sum.tax_sp, Kingdom!="Bacteria")
+subsurface_MiFish_sum.tax_sp = subset_taxa(subsurface_MiFish_sum.tax_sp, Kingdom!="Environmental Unknown")
+```
+
+
+# Power Analysis
+
+## CO1 
+### iNEXT
+```{r}
+
+subsurface_co1_sum.tax <- subset_samples(subsurface_co1_sum.tax, Cruise_ID_short != "SKQ2021")
+
+subsurface_co1_sum.tax <- prune_samples(sample_sums(subsurface_co1_sum.tax) > 0, subsurface_co1_sum.tax)
+
+subsurface_co1_sum.tax_sp = subset_samples(subsurface_co1_sum.tax, !is.na(Temp_C) & !is.na(lat) & !is.na(Depth_m))
+subsurface_co1_sum.tax_sp = subset_taxa(subsurface_co1_sum.tax_sp, Kingdom!="Bacteria")
+subsurface_co1_sum.tax_sp = subset_taxa(subsurface_co1_sum.tax_sp, Kingdom!="Environmental Unknown")
+
+
+#isolate groups
+
+#Convert groups into vegan outputs
+veganComm_surface_CO1 <- vegan_otu(surface_co1_sum.tax_sp)
+veganComm_benthic_CO1 <- vegan_otu(subsurface_co1_sum.tax_sp)
+
+###### iNEXT Species Accumulation Curves
+
+#Create List for iNEXT Species Incidence Frequencies
+mor_inc <-list ("Above 30m" =t(veganComm_surface_CO1),
+                "Below 30m"=t(veganComm_benthic_CO1))
+
+species_incidence <-lapply(mor_inc, as.incfreq)
+
+#Convert to iNEXT format
+t <- seq(1, 300, by=1)
+out.inc2 <- iNEXT(species_incidence, q=0, datatype="incidence_freq", size=t)
+
+#out.inc2$DataInfo
+```
+
+```{r}
+#Sample‐size‐based R/E curves
+plot_co1 <- ggiNEXT(out.inc2, type=1, color.var="Both") + 
+  theme_bw(base_size = 18) + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
+                                                                                                    panel.background = element_blank()) + xlab("Stations") + ylab("Taxa") + scale_colour_manual(values = c("dodgerblue4","#Ed820e"), name = "Group", labels = c("Above 30m", "Below 30m")) + scale_shape_discrete(name = "Group", labels = c("Above 30m", "Below 30m")) + scale_fill_manual(values = c("dodgerblue4","#Ed820e"),name = "Group", labels = c("Above 30m", "Below 30m")) +ggtitle(label = "Leray CO1")+ggtitle(label = "", subtitle="Leray CO1") +theme(axis.line = element_line(colour = "black"),panel.grid.major = element_blank(), panel.grid.minor = element_blank(),panel.background = element_blank(), axis.text=element_text(size=16),
+        axis.title=element_text(size=20,face="bold"),legend.title = element_text( size=12, face="bold"),legend.text = element_text(size=10, 
+                                     face="bold"), title = element_text(size=20, face="bold") ) + theme(legend.text=element_text(size=16), legend.title=element_text(size=20), axis.title.x=element_blank())
+
+plot_co1
+
+
+```
+
+## MiFsih
+```{r}
+#isolate groups
+
+#Convert groups into vegan outputs
+veganComm_surface_MiFish <- vegan_otu(surface_MiFish_sum.tax_sp)
+veganComm_benthic_MiFish <- vegan_otu(subsurface_MiFish_sum.tax_sp)
+
+###### iNEXT Species Accumulation Curves
+
+#Create List for iNEXT Species Incidence Frequencies
+mor_inc <-list ("Above 30m" =t(veganComm_surface_MiFish),
+                "Below 30m"=t(veganComm_benthic_MiFish))
+
+species_incidence <-lapply(mor_inc, as.incfreq)
+
+#Convert to iNEXT format
+t <- seq(1, 350, by=1)
+out.inc_fish <- iNEXT(species_incidence, q=0, datatype="incidence_freq", size=t)
+
+#out.inc2$DataInfo
+```
+
+```{r}
+#Sample‐size‐based R/E curves
+plot_fish <- ggiNEXT(out.inc_fish, type=1, color.var="Both") + 
+  theme_bw(base_size = 18) + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
+                                                                                                    panel.background = element_blank()) + xlab("Stations") + ylab("Taxa") + scale_colour_manual(values = c("dodgerblue4","#Ed820e"), name = "Group", labels = c("Above 30m", "Below 30m")) + scale_shape_discrete(name = "Group", labels = c("Above 30m", "Below 30m")) + scale_fill_manual(values = c("dodgerblue4","#Ed820e"),name = "Group", labels = c("Above 30m", "Below 30m")) +ggtitle(label = "Accumulation", subtitle="MiFish") + ylim(0,600) +theme(axis.line = element_line(colour = "black"),panel.grid.major = element_blank(), panel.grid.minor = element_blank(),panel.background = element_blank(), axis.text=element_text(size=16),
+        axis.title=element_text(size=20,face="bold"),legend.title = element_text( size=12, face="bold"),legend.text = element_text(size=10, 
+                                     face="bold"), title = element_text(size=20, face="bold") ) + theme(legend.text=element_text(size=16), legend.title=element_text(size=20), axis.title.x=element_blank())
+```
+
+## Machida 
+### iNEXT
+```{r}
+
+subsurface_Machida_2020_sum.tax <- subset_samples(subsurface_Machida_sum.tax, Cruise_ID_short != "SKQ2021")
+
+subsurface_Machida_2020_sum.tax <- prune_samples(sample_sums(subsurface_Machida_2020_sum.tax) > 0, subsurface_Machida_2020_sum.tax)
+
+subsurface_Machida_2020_sum.tax_sp = subset_samples(subsurface_Machida_2020_sum.tax, !is.na(Temp_C) & !is.na(lat) & !is.na(Depth_m))
+subsurface_Machida_2020_sum.tax_sp = subset_taxa(subsurface_Machida_2020_sum.tax_sp, Kingdom!="Bacteria")
+subsurface_Machida_2020_sum.tax_sp = subset_taxa(subsurface_Machida_2020_sum.tax_sp, Kingdom!="Environmental Unknown")
+
+
+surface_Machida_sum.tax <- subset_samples(surface_Machida_sum.tax, Cruise_ID_short != "SKQ2021")
+
+surface_Machida_sum.tax <- prune_samples(sample_sums(surface_Machida_sum.tax) > 0, surface_Machida_sum.tax)
+
+surface_Machida_2020_sum.tax_sp = subset_samples(surface_Machida_sum.tax, !is.na(Temp_C) & !is.na(lat) & !is.na(Depth_m))
+surface_Machida_2020_sum.tax_sp = subset_taxa(surface_Machida_2020_sum.tax_sp, Kingdom!="Bacteria")
+surface_Machida_2020_sum.tax_sp = subset_taxa(surface_Machida_2020_sum.tax_sp, Kingdom!="Environmental Unknown")
+
+
+#isolate groups
+
+#Convert groups into vegan outputs
+veganComm_surface_Machida <- vegan_otu(surface_Machida_2020_sum.tax_sp)
+veganComm_benthic_Machida <- vegan_otu(subsurface_Machida_2020_sum.tax_sp)
+
+###### iNEXT Species Accumulation Curves
+
+#Create List for iNEXT Species Incidence Frequencies
+mor_inc <-list ("Above 30m" =t(veganComm_surface_Machida),
+                "Below 30m"=t(veganComm_benthic_Machida))
+
+species_incidence <-lapply(mor_inc, as.incfreq)
+
+#Convert to iNEXT format
+t <- seq(1, 200, by=1)
+out.inc_machida <- iNEXT(species_incidence, q=0, datatype="incidence_freq", size=t)
+
+#out.inc2$DataInfo
+```
+
+```{r}
+#Sample‐size‐based R/E curves
+plot_machida <- ggiNEXT(out.inc_machida, type=1, color.var="Both") + 
+  theme_bw(base_size = 18) + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
+                                                                                                    panel.background = element_blank()) + xlab("Stations") + ylab("Taxa") + scale_colour_manual(values = c("dodgerblue4","#Ed820e"), name = "Group", labels = c("Above 30m", "Below 30m")) + scale_shape_discrete(name = "Group", labels = c("Above 30m", "Below 30m")) + scale_fill_manual(values = c("dodgerblue4","#Ed820e"),name = "Group", labels = c("Above 30m", "Below 30m")) +ggtitle(label = "Machida 18Sv8-9") +ggtitle(label = "", subtitle="Machida 18Sv8-9") +theme(axis.line = element_line(colour = "black"),panel.grid.major = element_blank(), panel.grid.minor = element_blank(),panel.background = element_blank(), axis.text=element_text(size=16),
+        axis.title=element_text(size=20,face="bold"),legend.title = element_text( size=12, face="bold"),legend.text = element_text(size=10, 
+                                     face="bold"), title = element_text(size=20, face="bold") ) + theme(legend.text=element_text(size=16), legend.title=element_text(size=20))
+
+plot_machida
+
+
+```
+
+
+```{r}
+plot_fish +plot_co1+ plot_machida + plot_annotation(tag_levels = 'A') +
+  plot_layout(guides = 'collect')
+
+
+ggsave(filename = here("gold_out","Species_rarefaction.png"),
+       width=12,
+       height = 8,
+       dpi = 400,
+      units = c("in"))
+```
+
+```{r}
+
+surface_north_2020 = subset_samples(surface_co1_2020_sum.tax_sp, lat > 65.89)
+surface_north_2020 <- prune_taxa(taxa_sums(surface_north_2020) > 0, surface_north_2020)
+
+surface_south_2020 = subset_samples(surface_co1_2020_sum.tax_sp, lat < 65.89)
+surface_south_2020 <- prune_taxa(taxa_sums(surface_south_2020) > 0, surface_south_2020)
+
+subsurface_south_2020 = subset_samples(subsurface_co1_2020_sum.tax_sp, lat < 65.89)
+subsurface_south_2020 <- prune_taxa(taxa_sums(subsurface_south_2020) > 0, subsurface_south_2020)
+
+subsurface_north_2020 = subset_samples(subsurface_co1_2020_sum.tax_sp, lat > 65.89)
+subsurface_north_2020 <- prune_taxa(taxa_sums(subsurface_north_2020) > 0, subsurface_north_2020)
+
+#isolate groups
+
+#Convert groups into vegan outputs
+veganComm_surface_CO1_north <- vegan_otu(surface_north_2020)
+veganComm_surface_CO1_south <- vegan_otu(surface_south_2020)
+
+veganComm_benthic_CO1_south <- vegan_otu(subsurface_south_2020)
+veganComm_benthic_CO1_north <- vegan_otu(subsurface_north_2020)
+
+###### iNEXT Species Accumulation Curves
+
+#Create List for iNEXT Species Incidence Frequencies
+mor_inc <-list ("Above 30m, North of Bering Strait" =t(veganComm_surface_CO1_north),
+                "Above 30m, South of Bering Strait" =t(veganComm_surface_CO1_south),
+                "Below 30m, North of Bering Strait"=t(veganComm_benthic_CO1_north),
+                "Below 30m, South of Bering Strait"=t(veganComm_benthic_CO1_south))
+
+species_incidence <-lapply(mor_inc, as.incfreq)
+
+#Convert to iNEXT format
+t <- seq(1, 100, by=1)
+out.inc_merp <- iNEXT(species_incidence, q=0, datatype="incidence_freq", size=t)
+
+#out.inc2$DataInfo
+
+```
+
+```{r}
+#Sample‐size‐based R/E curves
+plot_north_south <- ggiNEXT(out.inc_merp, type=1, color.var="Both") + 
+  theme_bw(base_size = 18) + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
+                                                                                                    panel.background = element_blank()) + xlab("Stations") + ylab("Taxa") + scale_colour_manual(values = c("dodgerblue4","dodgerblue2","#Ed820e","#Ed8"), name = "Group", labels = c("Above 30m, North of Bering Strait", "Above 30m, South of Bering Strait","Below 30m, North of Bering Strait","Below 30m, South of Bering Strait")) + scale_shape_discrete(name = "Group", labels = c("Above 30m, North of Bering Strait", "Above 30m, South of Bering Strait","Below 30m, North of Bering Strait","Below 30m, South of Bering Strait")) + scale_fill_manual(values = c("dodgerblue4","dodgerblue2","#Ed820e","#Ed8"),name = "Group", labels = c("Above 30m, North of Bering Strait", "Above 30m, South of Bering Strait","Below 30m, North of Bering Strait","Below 30m, South of Bering Strait"))
+
+plot_north_south
+```
+
+# Zeta Diversity
+
+```{r}
+library(zetadiv)
+```
+
+### surface_co1_2020_sum.tax_sp
+```{r}
+
+phyloseq_to_df(surface_co1_sum.tax_sp) %>% 
+  dplyr::select(.,-Kingdom,-Phylum, -Class,-Order,-Family,-Genus, -Species,sum.taxonomy, -OTU) -> surface_co1_2020_sum.tax_sp_df
+```
+
+```{r}
+
+#Read in Read Data
+
+Data_asvs_sites <- surface_co1_2020_sum.tax_sp_df %>%  ungroup()
+
+#Get OTU names
+
+taxa_asvs_sites <- Data_asvs_sites$sum.taxonomy
+
+#Make a presence/absence matrix
+Data_asvs_sites %>% dplyr::select(-sum.taxonomy) %>% 
+mutate_all(., ~replace(., . > 1, 1)) -> DataPA_asvs_sites
+
+DataPA_asvs_sites <- as.data.frame(t(DataPA_asvs_sites))
+colnames(DataPA_asvs_sites) <- taxa_asvs_sites
+
+#Calculate zeta diversity decay parameters and plots.
+surface_co1_2020_sum.tax_zetaDecay.ex_asvs_site <- Zeta.decline.ex(DataPA_asvs_sites,orders=1:20,plot=FALSE)
+
+```
+
+### subsurface_co1_2020_sum.tax_sp
+```{r}
+
+phyloseq_to_df(subsurface_co1_sum.tax_sp) %>% 
+  dplyr::select(.,-Kingdom,-Phylum, -Class,-Order,-Family,-Genus, -Species,-OTU) -> subsurface_co1_2020_sum.tax_sp_df
+```
+
+```{r}
+
+#Read in Read Data
+
+Data_asvs_sites <- subsurface_co1_2020_sum.tax_sp_df %>%  ungroup()
+
+#Get OTU names
+
+taxa_asvs_sites <- Data_asvs_sites$sum.taxonomy
+
+#Make a presence/absence matrix
+Data_asvs_sites %>% dplyr::select(-sum.taxonomy) %>% 
+mutate_all(., ~replace(., . > 1, 1)) -> DataPA_asvs_sites
+
+DataPA_asvs_sites <- as.data.frame(t(DataPA_asvs_sites))
+colnames(DataPA_asvs_sites) <- taxa_asvs_sites
+
+#Calculate zeta diversity decay parameters and plots.
+subsurface_co1_2020_sum.tax_sp_zetaDecay.ex_asvs_site <- Zeta.decline.ex(DataPA_asvs_sites,orders=1:20,plot=FALSE)
+
+```
+
+
+### Zeta Decay Figure
+
+```{r}
+subsurface_co1_2020_sum.tax_sp_zetaDecay.ex_asvs_site[1:4] %>% as.tibble() %>% mutate(Group = "Below 30m")-> subsurface_co1_tib
+
+surface_co1_2020_sum.tax_zetaDecay.ex_asvs_site[1:4] %>% as.tibble() %>% mutate(Group = "Above 30m")-> surface_co1_tib
+
+bind_rows(subsurface_co1_tib,surface_co1_tib) -> zdx_regions
+
+zdv_decay_sites <- zdx_regions %>% 
+ggplot(aes(x= zeta.order, y= zeta.val, group=Group,color=Group, fill=Group)) +geom_point() +geom_line() + geom_ribbon(aes(ymin = zeta.val - zeta.val.sd, ymax = zeta.val + zeta.val.sd),alpha =0.1, colour = NA) + ggtitle(label="")+theme(axis.line = element_line(colour = "black"),panel.grid.major = element_blank(), panel.grid.minor = element_blank(),panel.background = element_blank(), axis.text=element_text(size=16),
+        axis.title=element_text(size=20,face="bold"),legend.position="none",legend.title = element_text( size=12, face="bold"),legend.text = element_text(size=10, 
+                                     face="bold"), title = element_text(size=20, face="bold") ) + theme(axis.title.x=element_blank(),legend.text=element_text(size=16), legend.title=element_text(size=20)) +ylab("Zeta Diversity") + xlab("Zeta Order - Stations") + scale_x_continuous(breaks=seq(1, 10, 1), limits=c(1,10))+ scale_colour_manual(values = c("dodgerblue4","#Ed820e"), name = "Group", labels = c("Above 30m", "Below 30m")) + scale_shape_discrete(name = "Group", labels = c("Above 30m", "Below 30m")) + scale_fill_manual(values = c("dodgerblue4","#Ed820e"),name = "Group", labels = c("Above 30m", "Below 30m")) 
+```
+### Species Retention Figure
+
+```{r}
+
+subsurface_co1_2020_sum.tax_sp_zetaDecay.ex_asvs_site[5] %>% as.tibble() %>% mutate(Group = "Below 30m",zeta.order = 1:n()) -> ret_sub_co1_multi
+
+surface_co1_2020_sum.tax_zetaDecay.ex_asvs_site[5] %>% as.tibble() %>% mutate(Group = "Above 30m",zeta.order = 1:n())-> ret_surf_co1_uni
+
+bind_rows(ret_sub_co1_multi,ret_surf_co1_uni) -> zdx_regions_ret_sites
+
+spec_ret_sites <- zdx_regions_ret_sites %>% 
+ggplot(aes(x= zeta.order, y= ratio, group=Group,color=Group)) +geom_point() +geom_line() + ggtitle(label = "") +
+ theme(axis.line = element_line(colour = "black"),panel.grid.major = element_blank(), panel.grid.minor = element_blank(),panel.background = element_blank(), axis.text=element_text(size=16),
+        axis.title=element_text(size=20,face="bold"),legend.position="none",legend.title = element_text( size=12, face="bold"),legend.text = element_text(size=10, 
+                                     face="bold"), title = element_text(size=20, face="bold"),axis.title.x=element_blank() ) + theme(legend.text=element_text(size=16), legend.title=element_text(size=20)) +ylab("Zeta Ratio") + xlab("Zeta Order - Stations") +ylim(0,1) +scale_colour_manual(values = c("dodgerblue4","#Ed820e"), name = "Group", labels = c("Above 30m", "Below 30m")) + scale_shape_discrete(name = "Group", labels = c("Above 30m", "Below 30m")) + scale_fill_manual(values = c("dodgerblue4","#Ed820e"),name = "Group", labels = c("Above 30m", "Below 30m"))+ xlim(0,20) 
+
+
+```
+
+
+
+### surface_MiFish_2020_sum.tax_sp
+```{r}
+
+phyloseq_to_df(surface_MiFish_sum.tax_sp) %>% 
+  dplyr::select(.,-Kingdom,-Phylum, -Class,-Order,-Family,-Genus, -Species,sum.taxonomy, -OTU) -> surface_MiFish_2020_sum.tax_sp_df
+```
+
+```{r}
+
+#Read in Read Data
+
+Data_asvs_sites <- surface_MiFish_2020_sum.tax_sp_df %>%  ungroup()
+
+#Get OTU names
+
+taxa_asvs_sites <- Data_asvs_sites$sum.taxonomy
+
+#Make a presence/absence matrix
+Data_asvs_sites %>% dplyr::select(-sum.taxonomy) %>% 
+mutate_all(., ~replace(., . > 1, 1)) -> DataPA_asvs_sites
+
+DataPA_asvs_sites <- as.data.frame(t(DataPA_asvs_sites))
+colnames(DataPA_asvs_sites) <- taxa_asvs_sites
+
+#Calculate zeta diversity decay parameters and plots.
+surface_MiFish_2020_sum.tax_sp_zetaDecay.ex_asvs_site <- Zeta.decline.ex(DataPA_asvs_sites,orders=1:20,plot=FALSE)
+
+```
+
+### subsurface_MiFish_2020_sum.tax_sp
+```{r}
+
+phyloseq_to_df(subsurface_MiFish_sum.tax_sp) %>% 
+  dplyr::select(.,-Kingdom,-Phylum, -Class,-Order,-Family,-Genus, -Species,-OTU) -> subsurface_MiFish_2020_sum.tax_sp_df
+```
+
+```{r}
+
+#Read in Read Data
+
+Data_asvs_sites <- subsurface_MiFish_2020_sum.tax_sp_df %>%  ungroup()
+
+#Get OTU names
+
+taxa_asvs_sites <- Data_asvs_sites$sum.taxonomy
+
+#Make a presence/absence matrix
+Data_asvs_sites %>% dplyr::select(-sum.taxonomy) %>% 
+mutate_all(., ~replace(., . > 1, 1)) -> DataPA_asvs_sites
+
+DataPA_asvs_sites <- as.data.frame(t(DataPA_asvs_sites))
+colnames(DataPA_asvs_sites) <- taxa_asvs_sites
+
+#Calculate zeta diversity decay parameters and plots.
+subsurface_MiFish_2020_sum.tax_sp_zetaDecay.ex_asvs_site <- Zeta.decline.ex(DataPA_asvs_sites,orders=1:20,plot=FALSE)
+
+```
+
+
+### Zeta Decay Figure
+
+```{r}
+subsurface_MiFish_2020_sum.tax_sp_zetaDecay.ex_asvs_site[1:4] %>% as.tibble() %>% mutate(Group = "Below 30m")-> subsurface_MiFish_tib
+
+surface_MiFish_2020_sum.tax_sp_zetaDecay.ex_asvs_site[1:4] %>% as.tibble() %>% mutate(Group = "Above 30m")-> surface_MiFish_tib
+
+bind_rows(subsurface_MiFish_tib,surface_MiFish_tib) -> zdx_regions_mifish
+
+zdv_decay_sites_mifish <- zdx_regions_mifish %>% 
+ggplot(aes(x= zeta.order, y= zeta.val, group=Group,color=Group, fill=Group)) +geom_point() +geom_line() + geom_ribbon(aes(ymin = zeta.val - zeta.val.sd, ymax = zeta.val + zeta.val.sd),alpha =0.1, colour = NA) + ggtitle(label = "Turnover")+theme(axis.line = element_line(colour = "black"),panel.grid.major = element_blank(), panel.grid.minor = element_blank(),panel.background = element_blank(), axis.text=element_text(size=16),
+        axis.title=element_text(size=20,face="bold"),legend.position="none",legend.title = element_text( size=12, face="bold"),legend.text = element_text(size=10, 
+                                     face="bold"),axis.title.x=element_blank(), title = element_text(size=20, face="bold") ) + theme(legend.text=element_text(size=16), legend.title=element_text(size=20)) +ylab("Zeta Diversity") + xlab("Zeta Order - Stations") + scale_x_continuous(breaks=seq(1, 10, 1), limits=c(1,10)) +scale_colour_manual(values = c("dodgerblue4","#Ed820e"), name = "Group", labels = c("Above 30m", "Below 30m")) + scale_shape_discrete(name = "Group", labels = c("Above 30m", "Below 30m")) + scale_fill_manual(values = c("dodgerblue4","#Ed820e"),name = "Group", labels = c("Above 30m", "Below 30m")) 
+```
+### Species Retention Figure
+
+```{r}
+
+subsurface_MiFish_2020_sum.tax_sp_zetaDecay.ex_asvs_site[5] %>% as.tibble() %>% mutate(Group = "Below 30m",zeta.order = 1:n()) -> ret_sub_MiFish_multi
+
+surface_MiFish_2020_sum.tax_sp_zetaDecay.ex_asvs_site[5] %>% as.tibble() %>% mutate(Group = "Above 30m",zeta.order = 1:n())-> ret_surf_MiFish_uni
+
+bind_rows(ret_sub_MiFish_multi,ret_surf_MiFish_uni) -> zdx_regions_ret_sites_Mifish
+
+spec_ret_sites_mifish <- zdx_regions_ret_sites_Mifish %>% 
+ggplot(aes(x= zeta.order, y= ratio, group=Group,color=Group)) +geom_point() +geom_line() + ggtitle(label = "Retention") +
+ theme(axis.line = element_line(colour = "black"),panel.grid.major = element_blank(), panel.grid.minor = element_blank(),panel.background = element_blank(), axis.text=element_text(size=16),
+        axis.title=element_text(size=20,face="bold"),legend.position="none",axis.title.x=element_blank(),legend.title = element_text( size=12, face="bold"),legend.text = element_text(size=10, 
+                                     face="bold"), title = element_text(size=20, face="bold") ) + theme(legend.text=element_text(size=16), legend.title=element_text(size=20)) +ylab("Zeta Ratio") + xlab("Zeta Order - Stations") +ylim(0,1) +scale_colour_manual(values = c("dodgerblue4","#Ed820e"), name = "Group", labels = c("Above 30m", "Below 30m")) + scale_shape_discrete(name = "Group", labels = c("Above 30m", "Below 30m")) + scale_fill_manual(values = c("dodgerblue4","#Ed820e"),name = "Group", labels = c("Above 30m", "Below 30m"))+ xlim(0,20) 
+
+
+```
+
+### surface_Machida_2020_sum.tax_sp
+```{r}
+
+phyloseq_to_df(surface_Machida_2020_sum.tax_sp) %>% 
+  dplyr::select(.,-Kingdom,-Phylum, -Class,-Order,-Family,-Genus, -Species,sum.taxonomy, -OTU) -> surface_Machida_2020_sum.tax_sp_df
+```
+
+```{r}
+
+#Read in Read Data
+
+Data_asvs_sites <- surface_Machida_2020_sum.tax_sp_df %>%  ungroup()
+
+#Get OTU names
+
+taxa_asvs_sites <- Data_asvs_sites$sum.taxonomy
+
+#Make a presence/absence matrix
+Data_asvs_sites %>% dplyr::select(-sum.taxonomy) %>% 
+mutate_all(., ~replace(., . > 1, 1)) -> DataPA_asvs_sites
+
+DataPA_asvs_sites <- as.data.frame(t(DataPA_asvs_sites))
+colnames(DataPA_asvs_sites) <- taxa_asvs_sites
+
+#Calculate zeta diversity decay parameters and plots.
+surface_Machida_2020_sum.tax_sp_zetaDecay.ex_asvs_site <- Zeta.decline.ex(DataPA_asvs_sites,orders=1:100,plot=FALSE)
+
+```
+
+### subsurface_MiFish_2020_sum.tax_sp
+```{r}
+
+phyloseq_to_df(subsurface_Machida_2020_sum.tax_sp) %>% 
+  dplyr::select(.,-Kingdom,-Phylum, -Class,-Order,-Family,-Genus, -Species,-OTU) -> subsurface_Machida_2020_sum.tax_sp_df
+```
+
+```{r}
+
+#Read in Read Data
+
+Data_asvs_sites <- subsurface_Machida_2020_sum.tax_sp_df %>%  ungroup()
+
+#Get OTU names
+
+taxa_asvs_sites <- Data_asvs_sites$sum.taxonomy
+
+#Make a presence/absence matrix
+Data_asvs_sites %>% dplyr::select(-sum.taxonomy) %>% 
+mutate_all(., ~replace(., . > 1, 1)) -> DataPA_asvs_sites
+
+DataPA_asvs_sites <- as.data.frame(t(DataPA_asvs_sites))
+colnames(DataPA_asvs_sites) <- taxa_asvs_sites
+
+#Calculate zeta diversity decay parameters and plots.
+subsurface_Machida_2020_sum.tax_sp_zetaDecay.ex_asvs_site <- Zeta.decline.ex(DataPA_asvs_sites,orders=1:100,plot=FALSE)
+
+```
+
+
+### Zeta Decay Figure
+
+```{r}
+subsurface_Machida_2020_sum.tax_sp_zetaDecay.ex_asvs_site[1:4] %>% as.tibble() %>% mutate(Group = "Below 30m")-> subsurface_Machida_tib
+
+surface_Machida_2020_sum.tax_sp_zetaDecay.ex_asvs_site[1:4] %>% as.tibble() %>% mutate(Group = "Above 30m")-> surface_Machida_tib
+
+bind_rows(subsurface_Machida_tib,surface_Machida_tib) -> zdx_regions_machida
+
+zdv_decay_sites_machida <- zdx_regions_machida %>% 
+ggplot(aes(x= zeta.order, y= zeta.val, group=Group,color=Group, fill=Group)) +geom_point() +geom_line() + geom_ribbon(aes(ymin = zeta.val - zeta.val.sd, ymax = zeta.val + zeta.val.sd),alpha =0.1, colour = NA) + ggtitle(label = "")+theme(axis.line = element_line(colour = "black"),panel.grid.major = element_blank(), panel.grid.minor = element_blank(),panel.background = element_blank(), axis.text=element_text(size=16),
+        axis.title=element_text(size=20,face="bold"),legend.position="none",legend.title = element_text( size=12, face="bold"),legend.text = element_text(size=10, 
+                                     face="bold"), title = element_text(size=20, face="bold") ) + theme(legend.text=element_text(size=16), legend.title=element_text(size=20)) +ylab("Zeta Diversity") + xlab("Zeta Order - Stations") + scale_x_continuous(breaks=seq(1, 10, 1), limits=c(1,10)) +scale_colour_manual(values = c("dodgerblue4","#Ed820e"), name = "Group", labels = c("Above 30m", "Below 30m")) + scale_shape_discrete(name = "Group", labels = c("Above 30m", "Below 30m")) + scale_fill_manual(values = c("dodgerblue4","#Ed820e"),name = "Group", labels = c("Above 30m", "Below 30m")) 
+```
+### Species Retention Figure
+
+```{r}
+
+subsurface_Machida_2020_sum.tax_sp_zetaDecay.ex_asvs_site[5] %>% as.tibble() %>% mutate(Group = "Below 30m",zeta.order = 1:n()) -> ret_sub_Machida_multi
+
+surface_Machida_2020_sum.tax_sp_zetaDecay.ex_asvs_site[5] %>% as.tibble() %>% mutate(Group = "Above 30m",zeta.order = 1:n())-> ret_surf_Machida_uni
+
+bind_rows(ret_sub_Machida_multi,ret_surf_Machida_uni) -> zdx_regions_ret_sites_Machida
+
+spec_ret_sites_Machida <- zdx_regions_ret_sites_Machida %>% 
+ggplot(aes(x= zeta.order, y= ratio, group=Group,color=Group)) +geom_point() +geom_line() + ggtitle(label = "") +
+ theme(axis.line = element_line(colour = "black"),panel.grid.major = element_blank(), panel.grid.minor = element_blank(),panel.background = element_blank(), axis.text=element_text(size=16),
+        axis.title=element_text(size=20,face="bold"),legend.position="none",legend.title = element_text( size=12, face="bold"),legend.text = element_text(size=10, 
+                                     face="bold"), title = element_text(size=20, face="bold") ) + theme(legend.text=element_text(size=16), legend.title=element_text(size=20)) +ylab("Zeta Ratio") + xlab("Zeta Order - Stations") +ylim(0,1) +scale_colour_manual(values = c("dodgerblue4","#Ed820e"), name = "Group", labels = c("Above 30m", "Below 30m")) + scale_shape_discrete(name = "Group", labels = c("Above 30m", "Below 30m")) + scale_fill_manual(values = c("dodgerblue4","#Ed820e"),name = "Group", labels = c("Above 30m", "Below 30m"))+ xlim(0,20) 
+
+
+```
+
+```{r}
+(plot_fish + zdv_decay_sites_mifish + spec_ret_sites_mifish)/ (plot_co1 + zdv_decay_sites + spec_ret_sites)  +
+  plot_layout(guides = 'collect')
+
+
+ggsave(filename = here("gold_out","Zeta_diveristy.png"),
+       width=14,
+       height = 10,
+       dpi = 400,
+      units = c("in"))
+```
+
+
+
+## Pseudocalanus
+```{r}
+
+long_COI_EcoFOCI %>% 
+  dplyr::select(ASV_combo, Kingdom, Phylum, Class, Order, Family, Genus, Species) %>% 
+  distinct() %>% 
+  filter(., Genus=="Pseudocalanus")
+```
+
+```{r}
+long_COI_EcoFOCI %>% 
+  filter(., Genus=="Pseudocalanus") %>% 
+  dplyr::group_by(ASV_combo, Kingdom, Phylum, Class, Order, Family, Genus, Species) %>%
+  dplyr::summarise(sum_reads=sum(nReads)) %>% 
+  arrange(desc(sum_reads)) -> Pseudocalanus_tot
+
+Pseudocalanus_tot %>% 
+  filter(., sum_reads > 5000) -> Pseudocalanus_to_keep
+  # Pseudocalanus mimus versus Pseudocalanus minutus	
+
+```
+
+```{r}
+
+c(setdiff(varnames,to_remove),"Tot") -> varnames_to_group
+
+long_COI_EcoFOCI %>% 
+ group_by(Sample) %>%
+    mutate(Tot = sum(nReads)) %>% 
+    filter(., Genus=="Pseudocalanus") %>% 
+    filter(., !is.na(Species)) %>% 
+    group_by(!!!syms(varnames_to_group)) %>% 
+    dplyr::summarise(nReads=sum(nReads)) %>% 
+    mutate (Prop.abund = nReads / Tot) %>% 
+      ungroup() %>% 
+    group_by (Species) %>%
+    mutate (Colmax = max(Prop.abund),
+            eDNA.Index = Prop.abund / Colmax) %>% 
+  mutate(., Type = case_when(Species == "Pseudocalanus mimus" ~ "Temperate",
+                             Species == "Pseudocalanus newmani"~ "Temperate",
+                             Species ==  "Pseudocalanus minutus" ~"Arctic",
+                             Species ==  "Pseudocalanus acuspes" ~"Arctic",
+                             Species ==  "Pseudocalanus moultoni" ~"Temperate",
+                             TRUE ~"Unknown"))-> Pseudocalanus_Df
+
+```
+
+```{r}
+
+Pseudocalanus_Df %>% 
+  filter(., Species =="Pseudocalanus mimus") %>% 
+  ggplot(., aes(y=eDNA.Index, x=Temp_C)) +geom_point() + facet_wrap(Species~.) +
+  stat_poly_line() +
+  stat_poly_eq() +
+  geom_point()
+```
+
+
+```{r}
+
+
+Pseudocalanus_Df %>% 
+  ggplot(., aes(y=log10(nReads), x=Temp_C, color=Cruise_ID_short)) +geom_point() + facet_wrap(Species~Type)
+```
+
+
+```{r}
+
+Pseudocalanus_Df %>% 
+  mutate(., PA = if_else(nReads >0, 1,0)) %>% 
+  ggplot(., aes(y=PA, x=Temp_C)) +geom_point() + facet_wrap(Species~Type) +
+  geom_smooth(method = "glm", 
+    method.args = list(family = "binomial"), 
+    se = FALSE) 
+```
+
+```{r}
+Pseudocalanus_Df %>% 
+  mutate(., PA = if_else(nReads >0, 1,0)) %>% 
+  mutate(., Depth_bin = if_else(Depth_m >29, "bottom","surface" )) %>% 
+  ggplot(., aes(y=lat, x=Temp_C, colour = PA)) +geom_point() + facet_wrap(Species~Type~Depth_bin)
+```
+
+```{r}
+Pseudocalanus_Df %>% 
+  mutate(., PA = if_else(nReads >0, 1,0)) %>% 
+  ggplot(., aes(y=log10(Chla_ugrams.per.l), x=Temp_C, colour = eDNA.Index)) +geom_point() + facet_wrap(Species~Type) +    scale_color_gradientn(colours = c("black", "#C6DBEF", 'dodgerblue4'),
+                       values = c(0, .Machine$double.eps, 1))
+```
+
+```{r}
+Pseudocalanus_Df %>% 
+  mutate(., PA = if_else(nReads >0, 1,0)) %>% 
+  mutate(., Time2 = as.POSIXct(Time)) %>% 
+  ggplot(., aes(x=Time2, y=Temp_C, colour = eDNA.Index)) +geom_point() + facet_wrap(Species~Type) +    scale_color_gradientn(colours = c("grey80", "lightyellow", 'red'),
+                       values = c(0, .Machine$double.eps, 1)) +theme_bw()
+```
+
+```{r}
+Pseudocalanus_Df %>% 
+  mutate(., PA = if_else(nReads >0, 1,0)) %>% 
+  filter(., PA >0) %>% 
+  ggplot(., aes(, x=Temp_C)) +geom_density() + facet_wrap(Species~Type)
+
+```
+
+```{r}
+Pseudocalanus_Df %>% 
+  mutate(., PA = if_else(nReads > 0, "Present","Absent")) %>% 
+  mutate(., Temp_bin = if_else(Temp_C > 2, "Warm","Cold")) %>% 
+  group_by(Species, Temp_bin, PA) %>% 
+  dplyr::summarise(N=n()) %>% 
+  mutate(freq = N / sum(N)) %>% 
+  filter(., !is.na(Temp_bin)) %>% 
+  mutate(., Type = case_when(Species == "Pseudocalanus mimus" ~ "Temperate",
+                             Species == "Pseudocalanus newmani"~ "Temperate",
+                             Species ==  "Pseudocalanus minutus" ~"Arctic",
+                             Species ==  "Pseudocalanus acuspes" ~"Arctic",
+                             Species ==  "Pseudocalanus moultoni" ~"Temperate",
+                             TRUE ~"Unknown")) %>% 
+ggplot(., aes(x=PA, y =freq)) + geom_col() + facet_wrap(Species~Type ~Temp_bin)
+```
+
+
