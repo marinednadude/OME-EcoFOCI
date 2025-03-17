@@ -13,13 +13,14 @@ library(readr)
 ```
 
 ```{r}
-
-
+# Load sample metadata - excel sheet with sample name and run names?
 revamp_format_run1_4 <- read_excel(here("data","20241218_analysis","sample_metadata_smm_20241218.xlsx"))
 
+revamp_format_run1_4
 ```
 
 # Load Data
+
 ```{r}
 
 FinalOME_Merge_DY20_12 <- read.csv(file = here("data","1_SampleCollection","2020_DY20-12_CruiseData","2020_Dyson_CruiseData","FinalOME_Merge_DY20-12.csv"), header=T) 
@@ -45,11 +46,11 @@ FinalOME_Merge_SKQ23_12S <- read.csv(here("data","1_SampleCollection","2023_Siku
 
 FinalOME_Merge_AquaM_23 <- read.csv(here("data","1_SampleCollection","2023_aquamonitor_CruiseData","FinalOME_Merge_AquaM_23.csv"), header=T) 
 
+FinalOME_Merge_AquaM_23
 ```
 
-
 ```{r}
-
+# Gets list of unique column names from all the final merge dfs.
 c(colnames(FinalOME_Merge_DY20_12), 
   colnames(FinalOME_Merge_NO20_01),
   colnames(FinalOME_Merge_SKQ21_12S),
@@ -60,11 +61,15 @@ c(colnames(FinalOME_Merge_DY20_12),
   colnames(FinalOME_Merge_M2_PPS_0523), 
   colnames(FinalOME_Merge_SKQ23_12S),
   colnames(FinalOME_Merge_AquaM_23)) %>% unique() -> all_unique
+
+all_unique
 ```
 
 #Check Salt
+
 ```{r}
-all_unique %>%  as.tibble() %>% 
+# converts all_unique list to a df (as.tibble) so that all the column names from all the merged datasets are a row in the column called "value". Then it creates a df called tibble_of_columns that creates a column for each final merged dataset (eg. SKQ21) with values of the column names each has. It checks if the "value" (aka column name) is in each dataset and if it is, it writes the column name to the row, and if its not it is NA. tibble_of_columns is a df to view which columns are present in which datasets.
+all_unique %>%  as.tibble() %>%
   mutate(., SKQ21 = if_else(value %in% colnames(FinalOME_Merge_SKQ21_12S), value, NA),
          DY2020 = if_else(value %in% colnames(FinalOME_Merge_DY20_12), value, NA),
          DY2206_long = if_else(value %in% colnames(FinalOME_Merge_DY22_06), value, NA),
@@ -81,10 +86,10 @@ tibble_of_columns
 
 We would like to keep temperature, salinity, oxygen, chlorphyll, SI, PO4, NO2, NO3. NH4, pH
 
-
 #Check Temp
-```{r}
 
+```{r}
+# Filters tibble_of_columns df to get only rows that have a string match to those listed
 tibble_of_columns %>% 
   filter(., str_detect(value,"temperature|temp|T090C|T190C|Temp|Temperature"))
 
@@ -96,12 +101,13 @@ tibble_of_columns %>%
 # Salinity
 
 ```{r}
- 
+# filters tibble_of_columns df for rows with values that have a str match of sal or Sal
 tibble_of_columns %>% 
   filter(., str_detect(value,"sal|Sal"))
 
 # Ranking "ctd_salinity_ch1..PSU.", "btl_Sal00",  "btl_Salinity.psu.", "btl_salinity_ch1..PSU."
 
+# select all data from values in the Norseman2020_long column and filter out any values that are NA. So get only rows with columns that are present in the Noresman dataset.
 tibble_of_columns %>% 
   select(value, Norseman2020_long) %>% 
   filter(., !is.na(Norseman2020_long))
@@ -110,7 +116,8 @@ tibble_of_columns %>%
 # Oxygen
 
 ```{r}
- 
+
+# filter for columns that have string matches below 
 tibble_of_columns %>% 
   filter(., str_detect(value,"o2|ox|oxy|Oxy|Ox|O2"))
 
@@ -119,25 +126,26 @@ tibble_of_columns %>%
 
 ```
 
-
 #Check Chlorophyll
-```{r}
 
+```{r}
+# filter for columns with string matches in thr rows listed below
 tibble_of_columns %>% 
   filter(., str_detect(value,"chl|par|chlor|Fluorescence|fluor|PAR|chlorophyll|FlECO.AFL"))
 
 # Ranking Temp "ctd_chlor_fluorescence..ugrams.l."	, "btl_bottle.chlorophyll.µg.L.1", "btl_chlor_fluorescence..ugrams.l.", "btl_FlECO.AFL"	(this is in [mg/m^3] but is the same unit)
 ```
 
-#Check  PO4
+#Check PO4
 
 ```{r}
-
+# String match for phosphorus related row string matches
 tibble_of_columns %>% 
   filter(., str_detect(value,"PO4|phosphate|phos|Phosphate|Phos"))
 
 # Ranking Temp "ctd_PO4..uM.l.", btl_phosphate.µM, btl2_Phosphate.umol.kg.1	(equivalent units)
 
+# select only rows for the DY23_06 column with a value that is not NA
 tibble_of_columns %>% 
   select(value, DY23_06) %>% 
   filter(., !is.na(DY23_06))
@@ -146,23 +154,25 @@ tibble_of_columns %>%
 #Check NO2
 
 ```{r}
-
+# filter for any row string matches for nitrogen related strings
 tibble_of_columns %>% 
   filter(., str_detect(value,"NO2|Nitrite|nitrite|no2"))
 
 # Ranking Temp "ctd_NO2..uM.l.", "btl_nitrate.nitriteµM" *need more info on this, "btl2_Nitrite.umol.kg.1"
 
+# select only the DY23_06 dataset column and filter out an NA rows
 tibble_of_columns %>% 
   select(value, DY23_06) %>% 
   filter(., !is.na(DY23_06))
 
+# Access btl_nitrate.nitriteµM column values from the FinalOME_Merge_NO20_01 df
 FinalOME_Merge_NO20_01$btl_nitrate.nitriteµM
 ```
 
 #Check NO3
 
 ```{r}
-
+# filter for nitrogen related strings in the rows
 tibble_of_columns %>% 
   filter(., str_detect(value,"NO3|Nitrate|nitrate|no3"))
 
@@ -173,7 +183,7 @@ tibble_of_columns %>%
 #Check NH4
 
 ```{r}
-
+# filter for any ammonia related strings in the row values
 tibble_of_columns %>% 
   filter(., str_detect(value,"NH4|ammonia|ammonium|nh4"))
 
@@ -184,20 +194,23 @@ tibble_of_columns %>%
 #Check pH
 
 ```{r}
+# filter for any pH related strings in the row values
 tibble_of_columns %>% 
   filter(., str_detect(value,"pH|PH|ph|Ph"))
 
 ```
 
 # Clean for REVAMP
+
 ## Have EcoFOCI CTD Data
+
 SKQ21, DY2020, DY2206_long, DY2209_long, SKQ202312S_long
 
 ### REVAMP_DY20_12
+
 ```{r}
 
-
-
+# select the specified columns from the Final_OME_Merge_DY20_12 dataset, and rename some of the columns. (e.g. rename the column ctd_pressure to Depth) and save as new df called REVAMP_DY20_12
 FinalOME_Merge_DY20_12 %>% 
   dplyr::select(Sample_Name, Biological_Replicate, Technical_Replicate, Negative_control, Cruise_ID_short, Cruise_ID_long, Cast_No.,Rosette_position, Station, Sample_volume_ml, 
                 Time=ctd_time..UTC., 
@@ -213,11 +226,15 @@ FinalOME_Merge_DY20_12 %>%
                 NO2_umol.per.l=ctd_NO2..uM.l.,
                 NO3_umol.per.l=ctd_NO3..uM.l.,
                 NH4_umol.per.l =ctd_NH4..uM.l.) -> REVAMP_DY20_12
+
+REVAMP_DY20_12
 ```
 
 ### REVAMP_SKQ21_12S
 
 ```{r}
+
+# edites the FinalOME_Merge_SKQ21_12S df columns like ctd_latitude..degrees_north (if the Cast_No. column values =1 then it makes the value in in the ctd_latitude..degreses_north the Lat_Notes, if not, it keeps the existing value). Does similar things to other columns. It does other data cleaning in the ctd time columns. Then it selects all the desired columns, changing some column names (e.g. ctd_pressure becomes Depth) and saves the new df as REVAMP_SKQ21_12S
 
   FinalOME_Merge_SKQ21_12S %>% 
   #For some reason we are missing the first bottle file for this cruise... so taking time and lat/lon data from notes
@@ -247,7 +264,7 @@ FinalOME_Merge_DY20_12 %>%
 ### REVAMP_DY22_09
 
 ```{r}
-  
+# Similar editing as other revamp dfs above.
   FinalOME_Merge_DY22_09 %>% 
   dplyr::select(Sample_Name, Biological_Replicate, Technical_Replicate, Negative_control, Cruise_ID_short, Cruise_ID_long, Cast_No.,Rosette_position, Station, Sample_volume_ml, 
                 Time=ctd_time..UTC., 
@@ -265,10 +282,10 @@ FinalOME_Merge_DY20_12 %>%
                 NH4_umol.per.l =ctd_NH4..uM.l.) -> REVAMP_DY22_09
 ```
 
-
 ### REVAMP_SKQ23_12S
 
-```{r} 
+```{r}
+# Similar editing as before. Edits some columns that contain na as their values to be replaced with corresponding notes column values. If they aren't na, the values stay the same. More data cleaning to time columns. Selects the desired columns, renaming some columns and saving the new df as REVAMP_SKQ23_12S
   FinalOME_Merge_SKQ23_12S %>% 
     mutate(., ctd_latitude..degrees_north. = if_else(is.na(ctd_latitude..degrees_north.), Lat_notes,ctd_latitude..degrees_north.)) %>% 
     mutate(., ctd_longitude..degrees_east. = if_else(is.na(ctd_longitude..degrees_east.), Lon_notes,ctd_longitude..degrees_east.)) %>% 
@@ -296,7 +313,8 @@ FinalOME_Merge_DY20_12 %>%
 
 ### REVAMP_DY22_06 - Unique
 
-```{r}  
+```{r}
+# Similar editing as above. New df is saved as REVAMP_DY22_06
   FinalOME_Merge_DY22_06 %>% 
    mutate(., ctd_latitude..degrees_north. = if_else(is.na(ctd_latitude..degrees_north.), btl_latitude..degrees_north.,ctd_latitude..degrees_north.)) %>% 
     mutate(., ctd_longitude..degrees_east. = if_else(is.na(ctd_longitude..degrees_east.), btl_longitude..degrees_east.,ctd_longitude..degrees_east.)) %>% 
@@ -324,6 +342,7 @@ FinalOME_Merge_DY20_12 %>%
 ### REVAMP_NO20_01
 
 ```{r}
+# Similar editing as above except it also creates a new column called OxySatPerc_percent and sets all values to NA. Selects only desired columns and saves new df as REVAMP_NO20_01
 # Norseman2020_long
     FinalOME_Merge_NO20_01 %>% 
         mutate(., ctd_time..UTC. = str_replace_all(Date_UTC_btl,"\\/", "-")) %>% 
@@ -344,6 +363,7 @@ FinalOME_Merge_DY20_12 %>%
                 NO2_umol.per.l=btl_nitrate.nitriteµM,
                 NO3_umol.per.l=btl_nitrate.nitriteµM,
                 NH4_umol.per.l =btl_ammonia) -> REVAMP_NO20_01
+    
 ```
 
 ### REVAMP_RC0083
@@ -406,6 +426,7 @@ FinalOME_Merge_DY20_12 %>%
 ```
 
 ### REVAMP PPS_0523
+
 ```{r}
   FinalOME_Merge_M2_PPS_0523 %>% 
           mutate(., ctd_time..UTC. = str_replace_all(Date_UTC_notes,"\\/", "-")) %>% 
@@ -439,6 +460,7 @@ FinalOME_Merge_DY20_12 %>%
 ```
 
 ### REVAMP PPS_0523
+
 ```{r}
   FinalOME_Merge_AquaM_23 %>% 
           mutate(., ctd_time..UTC. = str_replace_all(Date_UTC_notes,"\\/", "-")) %>% 
@@ -500,6 +522,3 @@ readr::write_excel_csv(run1_4_revamp_formatted_metadata, file="run1_4_revamp_for
 
 
 ```
-
-
-
