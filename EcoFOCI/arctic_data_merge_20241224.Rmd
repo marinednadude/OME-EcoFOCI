@@ -212,6 +212,8 @@ SKQ21, DY2020, DY2206_long, DY2209_long, SKQ202312S_long
 
 # select the specified columns from the Final_OME_Merge_DY20_12 dataset, and rename some of the columns. (e.g. rename the column ctd_pressure to Depth) and save as new df called REVAMP_DY20_12
 FinalOME_Merge_DY20_12 %>% 
+  mutate(., pH = NA,
+            pH_method = NA)) %>%
   dplyr::select(Sample_Name, Biological_Replicate, Technical_Replicate, Negative_control, Cruise_ID_short, Cruise_ID_long, Cast_No.,Rosette_position, Station, Sample_volume_ml, 
                 Time=ctd_time..UTC., 
                 Depth_m=ctd_pressure, 
@@ -245,6 +247,8 @@ REVAMP_DY20_12
       mutate(., ctd_time..UTC. = str_replace_all(ctd_time..UTC.,"\\/", "-")) %>% 
       mutate(., ctd_time..UTC. = str_replace_all(ctd_time..UTC.,"08 22", "08T22")) %>% 
   mutate(ctd_time..UTC. = if_else(Cast_No.==1, str_c(ctd_time..UTC.,"Z"),ctd_time..UTC.)) %>% 
+  mutate(., pH = NA,
+            pH_method = NA)) %>%
   dplyr::select(Sample_Name, Biological_Replicate, Technical_Replicate, Negative_control, Cruise_ID_short, Cruise_ID_long, Cast_No.,Rosette_position, Station, Sample_volume_ml, 
                 Time=ctd_time..UTC., 
                 Depth_m=ctd_pressure, 
@@ -266,6 +270,8 @@ REVAMP_DY20_12
 ```{r}
 # Similar editing as other revamp dfs above.
   FinalOME_Merge_DY22_09 %>% 
+    mutate(., pH = NA,
+              pH_method = NA)) %>%
   dplyr::select(Sample_Name, Biological_Replicate, Technical_Replicate, Negative_control, Cruise_ID_short, Cruise_ID_long, Cast_No.,Rosette_position, Station, Sample_volume_ml, 
                 Time=ctd_time..UTC., 
                 Depth_m=ctd_pressure, 
@@ -293,6 +299,8 @@ REVAMP_DY20_12
     mutate(., ctd_time..UTC. = if_else(is.na(ctd_time..UTC.), str_c(Date_UTC_notes,"Z"),ctd_time..UTC.)) %>% 
       mutate(., ctd_time..UTC. = str_replace_all(ctd_time..UTC.,"\\/", "-")) %>% 
       mutate(., ctd_time..UTC. = str_replace_all(ctd_time..UTC.," ", "T")) %>% 
+      mutate(., pH = NA,
+              pH_method = NA)) %>%
   dplyr::select(Sample_Name, Biological_Replicate, Technical_Replicate, Negative_control, Cruise_ID_short, Cruise_ID_long, Cast_No.,Rosette_position, Station, Sample_volume_ml, 
                 Time=ctd_time..UTC., 
                 Depth_m=ctd_pressure, 
@@ -321,6 +329,8 @@ REVAMP_DY20_12
     mutate(., ctd_pressure = if_else(is.na(ctd_pressure), btl_pressure..decibar.,ctd_pressure)) %>% 
   mutate(., ctd_pressure = if_else(is.na(ctd_pressure), Depth_m_notes,ctd_pressure)) %>% 
     mutate(., ctd_time..UTC. = if_else(is.na(ctd_time..UTC.), btl_time..UTC.,ctd_time..UTC.)) %>% 
+    mutate(., pH = NA,
+              pH_method = NA)) %>% 
   dplyr::select(Sample_Name, Biological_Replicate, Technical_Replicate, Negative_control, Cruise_ID_short, Cruise_ID_long, Cast_No.,Rosette_position, Station, Sample_volume_ml, 
                 Time=ctd_time..UTC., 
                 Depth_m=ctd_pressure, 
@@ -348,7 +358,9 @@ REVAMP_DY20_12
         mutate(., ctd_time..UTC. = str_replace_all(Date_UTC_btl,"\\/", "-")) %>% 
       mutate(., ctd_time..UTC. = str_replace_all(ctd_time..UTC.," ", "T")) %>% 
   mutate(ctd_time..UTC. = str_c(ctd_time..UTC.,"Z"),ctd_time..UTC.) %>% 
-  mutate(., OxySatPerc_percent= NA) %>% 
+  mutate(., OxySatPerc_percent= NA,
+            pH = NA,
+            pH_method = NA) %>% 
    dplyr::select(Sample_Name, Biological_Replicate, Technical_Replicate, Negative_control, Cruise_ID_short, Cruise_ID_long, Cast_No.,Rosette_position, Station, Sample_volume_ml, 
                 Time=ctd_time..UTC., 
                 Depth_m=btl_Pressure.db., 
@@ -412,7 +424,9 @@ REVAMP_RC0083
   mutate(.,PO4_umol.per.l = NA,
                 NO2_umol.per.l=NA,
                 NO3_umol.per.l=NA,
-                NH4_umol.per.l =NA)%>% 
+                NH4_umol.per.l =NA,
+                pH = NA,
+                pH_method = NA)%>% 
    dplyr::select(Sample_Name, Biological_Replicate, Technical_Replicate, Negative_control, Cruise_ID_short, Cruise_ID_long, Cast_No.,Rosette_position, Station, Sample_volume_ml, 
                 Time=btl_time..UTC., 
                 Depth_m=btl_pressure..decibar., 
@@ -446,7 +460,9 @@ REVAMP_RC0083
                 PO4_umol.per.l = NA,
                 NO2_umol.per.l=NA,
                 NO3_umol.per.l=NA,
-                NH4_umol.per.l =NA)%>% 
+                NH4_umol.per.l =NA,
+                pH = NA,
+                pH_method = NA)%>% 
   dplyr::select(Sample_Name, Biological_Replicate, Technical_Replicate, Negative_control, Cruise_ID_short, Cruise_ID_long, Cast_No.,Rosette_position, Station, Sample_volume_ml, 
                 Time=ctd_time..UTC., 
                 Depth_m=Depth_m_notes, 
@@ -480,7 +496,9 @@ REVAMP_RC0083
                 PO4_umol.per.l = NA,
                 NO2_umol.per.l=NA,
                 NO3_umol.per.l=NA,
-                NH4_umol.per.l =NA)%>% 
+                NH4_umol.per.l =NA,
+                pH = NA,
+                pH_method = NA)%>% 
   dplyr::select(Sample_Name, Biological_Replicate, Technical_Replicate, Negative_control, Cruise_ID_short, Cruise_ID_long, Cast_No.,Rosette_position, Station, Sample_volume_ml, 
                 Time=ctd_time..UTC., 
                 Depth_m=Depth_m_notes, 
