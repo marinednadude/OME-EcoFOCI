@@ -192,13 +192,38 @@ tibble_of_columns %>%
 ```
 
 #Check pH
-
 ```{r}
 # filter for any pH related strings in the row values but disallow characters after the "h" (to avoid phosphate returning.)
 tibble_of_columns %>%
   filter(., str_detect(value,"[//./_][pP][hH](?![a-zA-Z])"))
-
 ```
+
+
+# Check SI
+```{r}
+tibble_of_columns %>%
+  filter(., str_detect(value, "[Ss]ilicate"))
+```
+
+# Check inorganic nitrogen
+```{r}
+tibble_of_columns %>%
+  filter(., str_detect(value, "inroganic.N"))
+```
+
+# Check Turbidity
+```{r}
+tibble_of_columns %>%
+  filter(., str_detect(value, "[Tt]urb"))
+```
+
+
+# check wind_direction and wind_speed
+```{r}
+tibble_of_columns %>%
+  filter(., str_detect(value, "[Ww]ind"))
+```
+
 
 # Clean for REVAMP
 
@@ -374,7 +399,8 @@ REVAMP_DY20_12
                 PO4_umol.per.l = btl_phosphate.µM,
                 NO2_umol.per.l=btl_nitrate.nitriteµM,
                 NO3_umol.per.l=btl_nitrate.nitriteµM,
-                NH4_umol.per.l =btl_ammonia) -> REVAMP_NO20_01
+                NH4_umol.per.l =btl_ammonia,
+                Silicate_umol = btl_silicate.µM) -> REVAMP_NO20_01
     
 ```
 
@@ -402,7 +428,8 @@ REVAMP_DY20_12
                 NO2_umol.per.l=btl2_Nitrite.umol.kg.1,
                 NO3_umol.per.l=btl2_Nitrate.umol.kg.1,
                 NH4_umol.per.l =btl2_Ammonium.umol.kg.1,
-                pH = btl2_SBE.18.pH..BA.) -> REVAMP_RC0083 
+                pH = btl2_SBE.18.pH..BA.,
+                Silicate_umol.per.kg = btl2_Silicate.umol.kg.1) -> REVAMP_RC0083 
 
 REVAMP_RC0083
 ```
