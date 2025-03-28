@@ -46,7 +46,7 @@ FinalOME_Merge_SKQ23_12S <- read.csv(here("data","1_SampleCollection","2023_Siku
 
 FinalOME_Merge_AquaM_23 <- read.csv(here("data","1_SampleCollection","2023_aquamonitor_CruiseData","FinalOME_Merge_AquaM_23.csv"), header=T) 
 
-FinalOME_Merge_NO20_01
+FinalOME_Merge_RC0083
 ```
 
 ```{r}
@@ -194,7 +194,7 @@ tibble_of_columns %>%
 #Check pH
 
 ```{r}
-# filter for any pH related strings in the row values
+# filter for any pH related strings in the row values but disallow characters after the "h" (to avoid phosphate returning.)
 tibble_of_columns %>%
   filter(., str_detect(value,"[//./_][pP][hH](?![a-zA-Z])"))
 
@@ -375,6 +375,7 @@ REVAMP_DY20_12
         mutate(., ctd_time..UTC. = str_replace_all(Date_UTC_btl,"\\/", "-")) %>% 
       mutate(., ctd_time..UTC. = str_replace_all(ctd_time..UTC.," ", "T")) %>% 
   mutate(ctd_time..UTC. = str_c(ctd_time..UTC.,"Z"),ctd_time..UTC.) %>% 
+  mutate(., pH_method= "SBE-18 pH sensor") %>% 
    dplyr::select(Sample_Name, Biological_Replicate, Technical_Replicate, Negative_control, Cruise_ID_short, Cruise_ID_long, Cast_No.,Rosette_position, Station, Sample_volume_ml, 
                 Time=ctd_time..UTC., 
                 Depth_m=btl2_CTDPRES, 
@@ -388,7 +389,11 @@ REVAMP_DY20_12
                 PO4_umol.per.l = btl2_Phosphate.umol.kg.1,
                 NO2_umol.per.l=btl2_Nitrite.umol.kg.1,
                 NO3_umol.per.l=btl2_Nitrate.umol.kg.1,
-                NH4_umol.per.l =btl2_Ammonium.umol.kg.1) -> REVAMP_RC0083 
+                NH4_umol.per.l =btl2_Ammonium.umol.kg.1,
+                pH = btl2_SBE.18.pH..BA.,
+                pH_method = pH_method) -> REVAMP_RC0083 
+
+REVAMP_RC0083
 ```
 
 ### REVAMP_DY23_06
