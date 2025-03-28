@@ -46,7 +46,7 @@ FinalOME_Merge_SKQ23_12S <- read.csv(here("data","1_SampleCollection","2023_Siku
 
 FinalOME_Merge_AquaM_23 <- read.csv(here("data","1_SampleCollection","2023_aquamonitor_CruiseData","FinalOME_Merge_AquaM_23.csv"), header=T) 
 
-FinalOME_Merge_AquaM_23
+FinalOME_Merge_NO20_01
 ```
 
 ```{r}
@@ -195,8 +195,8 @@ tibble_of_columns %>%
 
 ```{r}
 # filter for any pH related strings in the row values
-tibble_of_columns %>% 
-  filter(., str_detect(value,"pH|PH|ph|Ph"))
+tibble_of_columns %>%
+  filter(., str_detect(value,"[//./_][pP][hH](?![a-zA-Z])"))
 
 ```
 
@@ -234,7 +234,7 @@ REVAMP_DY20_12
 
 ```{r}
 
-# edites the FinalOME_Merge_SKQ21_12S df columns like ctd_latitude..degrees_north (if the Cast_No. column values =1 then it makes the value in in the ctd_latitude..degreses_north the Lat_Notes, if not, it keeps the existing value). Does similar things to other columns. It does other data cleaning in the ctd time columns. Then it selects all the desired columns, changing some column names (e.g. ctd_pressure becomes Depth) and saves the new df as REVAMP_SKQ21_12S
+# edits the FinalOME_Merge_SKQ21_12S df columns like ctd_latitude..degrees_north (if the Cast_No. column values =1 then it makes the value in in the ctd_latitude..degreses_north the Lat_Notes, if not, it keeps the existing value). Does similar things to other columns. It does other data cleaning in the ctd time columns. Then it selects all the desired columns, changing some column names (e.g. ctd_pressure becomes Depth) and saves the new df as REVAMP_SKQ21_12S
 
   FinalOME_Merge_SKQ21_12S %>% 
   #For some reason we are missing the first bottle file for this cruise... so taking time and lat/lon data from notes
