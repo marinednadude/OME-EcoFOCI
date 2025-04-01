@@ -51,7 +51,8 @@ setdiff(colnames(ctd_Data),c("Consecutive Cast Number","Bottle","Month","Day","Y
 library(rlang)
 
 NO2020_sample_data %>% 
-  select(Sample_Name, 
+  mutate(., verbatimCoordinateSystem = "degrees minutes seconds") %>%
+  dplyr::select(Sample_Name, 
          Biological_Replicate,
          Technical_Replicate,
          Negative_control, 
@@ -71,6 +72,11 @@ NO2020_sample_data %>%
          Lat_notes = Lat_dec,
          Lon_notes=Lon_dec,
          Date_UTC_btl=Date_UTC, 
+         verbatimEventDate = Collection_Date_local,
+         verbatimEventTime = Collection_Time_local,
+         verbatimLongitude = Lon,
+         verbatimLatitude = Lat,
+         verbatimCoordinateSystem,
          !!!syms(cols_2_keep)) -> NO2020_sample_data
 
 readr::write_excel_csv(NO2020_sample_data, file="FinalOME_Merge_NO20-01.csv")
