@@ -256,8 +256,8 @@ FinalOME_Merge_DY20_12 %>%
             Silicate_umol = NA,
             Silicate_umol.per.kg = NA,
             Tot_Inorganic_N.umol = NA,
-            wind_dirction = convert_degrees_to_cardinal_directions(ctd_wind_direction..degrees.)) %>%
-  dplyr::select(Sample_Name, Biological_Replicate, Technical_Replicate, Negative_control, Cruise_ID_short, Cruise_ID_long, Cast_No.,Rosette_position, Station, Sample_volume_ml, Field_collection_method, Preservation, pH, pH_method, Silicate_umol, Silicate_umol.per.kg, Tot_Inorganic_N.umol, wind_dirction,
+            wind_direction = convert_degrees_to_cardinal_directions(ctd_wind_direction..degrees.)) %>%
+  dplyr::select(Sample_Name, Biological_Replicate, Technical_Replicate, Negative_control, Cruise_ID_short, Cruise_ID_long, Cast_No.,Rosette_position, Station, Sample_volume_ml, Field_collection_method, Preservation, pH, pH_method, Silicate_umol, Silicate_umol.per.kg, Tot_Inorganic_N.umol, wind_direction, verbatimLongitude, verbatimLatitude, verbatimCoordinateSystem, verbatimEventDate, verbatimEventTime,
                 Time=ctd_time..UTC., 
                 Depth_m=ctd_pressure, 
                 lat=ctd_latitude..degrees_north., 
@@ -299,7 +299,7 @@ REVAMP_DY20_12
             Silicate_umol.per.kg = NA,
             Tot_Inorganic_N.umol = NA,
             wind_direction = convert_degrees_to_cardinal_directions(ctd_wind_direction..degrees.)) %>%
-  dplyr::select(Sample_Name, Biological_Replicate, Technical_Replicate, Negative_control, Cruise_ID_short, Cruise_ID_long, Cast_No.,Rosette_position, Station, Sample_volume_ml, Field_collection_method, Preservation, pH, pH_method, Silicate_umol, Silicate_umol.per.kg, Tot_Inorganic_N.umol, wind_direction,
+  dplyr::select(Sample_Name, Biological_Replicate, Technical_Replicate, Negative_control, Cruise_ID_short, Cruise_ID_long, Cast_No.,Rosette_position, Station, Sample_volume_ml, Field_collection_method, Preservation, pH, pH_method, Silicate_umol, Silicate_umol.per.kg, Tot_Inorganic_N.umol, wind_direction, verbatimLongitude, verbatimLatitude, verbatimCoordinateSystem, verbatimEventDate, verbatimEventTime,
                 Time=ctd_time..UTC., 
                 Depth_m=ctd_pressure, 
                 lat=ctd_latitude..degrees_north., 
@@ -313,7 +313,10 @@ REVAMP_DY20_12
                 NO2_umol.per.l=ctd_NO2..uM.l.,
                 NO3_umol.per.l=ctd_NO3..uM.l.,
                 NH4_umol.per.l =ctd_NH4..uM.l.,
+                wind_speed_m.per.s = ctd_wind_speed..m.s.1.,
                 turbidity.NTU = btl_turbidity) -> REVAMP_SKQ21_12S
+
+REVAMP_SKQ21_12S
 ```
 
 ### REVAMP_DY22_09
@@ -325,8 +328,9 @@ REVAMP_DY20_12
               pH_method = NA,
               Silicate_umol = NA,
               Silicate_umol.per.kg = NA,
-              Tot_Inorganic_N.umol = NA) %>%
-  dplyr::select(Sample_Name, Biological_Replicate, Technical_Replicate, Negative_control, Cruise_ID_short, Cruise_ID_long, Cast_No.,Rosette_position, Station, Sample_volume_ml, Field_collection_method, Preservation, pH, pH_method, Silicate_umol, Silicate_umol.per.kg, Tot_Inorganic_N.umol,
+              Tot_Inorganic_N.umol = NA,
+              wind_direction = convert_degrees_to_cardinal_directions(ctd_wind_direction..degrees.)) %>%
+  dplyr::select(Sample_Name, Biological_Replicate, Technical_Replicate, Negative_control, Cruise_ID_short, Cruise_ID_long, Cast_No.,Rosette_position, Station, Sample_volume_ml, Field_collection_method, Preservation, pH, pH_method, Silicate_umol, Silicate_umol.per.kg, Tot_Inorganic_N.umol, wind_direction, verbatimLongitude, verbatimLatitude, verbatimCoordinateSystem, verbatimEventDate, verbatimEventTime,
                 Time=ctd_time..UTC., 
                 Depth_m=ctd_pressure, 
                 lat=ctd_latitude..degrees_north., 
@@ -340,9 +344,10 @@ REVAMP_DY20_12
                 NO2_umol.per.l=ctd_NO2..uM.l.,
                 NO3_umol.per.l=ctd_NO3..uM.l.,
                 NH4_umol.per.l =ctd_NH4..uM.l.,
-                wind_direction.degrees = ctd_wind_direction..degrees.,
                 wind_speed_m.per.s = ctd_wind_speed..m.s.1.,
                 turbidity.NTU = btl_turbidity..NTU.) -> REVAMP_DY22_09
+
+REVAMP_DY22_09
 ```
 
 ### REVAMP_SKQ23_12S
@@ -361,8 +366,9 @@ REVAMP_DY20_12
               Silicate_umol = NA,
               Silicate_umol.per.kg = NA,
               Tot_Inorganic_N.umol = NA,
-              turbidity.NTU = NA) %>%
-  dplyr::select(Sample_Name, Biological_Replicate, Technical_Replicate, Negative_control, Cruise_ID_short, Cruise_ID_long, Cast_No.,Rosette_position, Station, Sample_volume_ml, Field_collection_method, Preservation, pH, pH_method, Silicate_umol, Silicate_umol.per.kg, Tot_Inorganic_N.umol, turbidity.NTU,
+              turbidity.NTU = NA,
+             wind_direction = convert_degrees_to_cardinal_directions(ctd_wind_direction..degrees.)) %>%
+  dplyr::select(Sample_Name, Biological_Replicate, Technical_Replicate, Negative_control, Cruise_ID_short, Cruise_ID_long, Cast_No.,Rosette_position, Station, Sample_volume_ml, Field_collection_method, Preservation, pH, pH_method, Silicate_umol, Silicate_umol.per.kg, Tot_Inorganic_N.umol, turbidity.NTU, wind_direction, verbatimLongitude, verbatimLatitude, verbatimCoordinateSystem, verbatimEventDate, verbatimEventTime,
                 Time=ctd_time..UTC., 
                 Depth_m=ctd_pressure, 
                 lat=ctd_latitude..degrees_north., 
@@ -376,10 +382,10 @@ REVAMP_DY20_12
                 NO2_umol.per.l=ctd_NO2..uM.l.,
                 NO3_umol.per.l=ctd_NO3..uM.l.,
                 NH4_umol.per.l =ctd_NH4..uM.l.,
-                wind_direction.degrees = ctd_wind_direction..degrees.,
                 wind_speed_m.per.s = ctd_wind_speed..m.s.1.) -> REVAMP_SKQ23_12S
 
 
+REVAMP_SKQ23_12S
 ```
 
 ### REVAMP_DY22_06 - Unique
@@ -396,8 +402,9 @@ REVAMP_DY20_12
               pH_method = NA,
               Silicate_umol = NA,
               Silicate_umol.per.kg = NA,
-              Tot_Inorganic_N.umol = NA) %>% 
-  dplyr::select(Sample_Name, Biological_Replicate, Technical_Replicate, Negative_control, Cruise_ID_short, Cruise_ID_long, Cast_No.,Rosette_position, Station, Sample_volume_ml, Field_collection_method, Preservation, pH, pH_method, Silicate_umol, Silicate_umol.per.kg, Tot_Inorganic_N.umol,
+              Tot_Inorganic_N.umol = NA,
+              wind_direction = convert_degrees_to_cardinal_directions(ctd_wind_direction..degrees.)) %>% 
+  dplyr::select(Sample_Name, Biological_Replicate, Technical_Replicate, Negative_control, Cruise_ID_short, Cruise_ID_long, Cast_No.,Rosette_position, Station, Sample_volume_ml, Field_collection_method, Preservation, pH, pH_method, Silicate_umol, Silicate_umol.per.kg, Tot_Inorganic_N.umol, wind_direction, verbatimLongitude, verbatimLatitude, verbatimCoordinateSystem, verbatimEventDate, verbatimEventTime,
                 Time=ctd_time..UTC., 
                 Depth_m=ctd_pressure, 
                 lat=ctd_latitude..degrees_north., 
@@ -411,9 +418,10 @@ REVAMP_DY20_12
                 NO2_umol.per.l=ctd_NO2..uM.l.,
                 NO3_umol.per.l=ctd_NO3..uM.l.,
                 NH4_umol.per.l =ctd_NH4..uM.l.,
-                wind_direction.degrees = ctd_wind_direction..degrees.,
                 wind_speed_m.per.s = ctd_wind_speed..m.s.1.,
                 turbidity.NTU = btl_turbidity..NTU.) -> REVAMP_DY22_06
+
+REVAMP_DY22_06
 ```
 
 ## Unique Cruise File Formats
@@ -431,10 +439,10 @@ REVAMP_DY20_12
             pH = NA,
             pH_method = NA,
             Silicate_umol.per.kg = NA,
-            wind_direction.degrees = NA,
+            wind_direction = NA,
             wind_speed_m.per.s = NA,
             turbidity.NTU = NA) %>% 
-   dplyr::select(Sample_Name, Biological_Replicate, Technical_Replicate, Negative_control, Cruise_ID_short, Cruise_ID_long, Cast_No.,Rosette_position, Station, Sample_volume_ml, Field_collection_method, Preservation, pH, pH_method, Silicate_umol.per.kg, wind_direction.degrees, wind_speed_m.per.s, turbidity.NTU,
+   dplyr::select(Sample_Name, Biological_Replicate, Technical_Replicate, Negative_control, Cruise_ID_short, Cruise_ID_long, Cast_No.,Rosette_position, Station, Sample_volume_ml, Field_collection_method, Preservation, pH, pH_method, Silicate_umol.per.kg, wind_direction, wind_speed_m.per.s, turbidity.NTU, verbatimLongitude, verbatimLatitude, verbatimCoordinateSystem, verbatimEventDate, verbatimEventTime,
                 Time=ctd_time..UTC., 
                 Depth_m=btl_Pressure.db., 
                 lat=btl_Latitude, 
@@ -450,6 +458,8 @@ REVAMP_DY20_12
                 NH4_umol.per.l =btl_ammonia,
                 Silicate_umol = btl_silicate.µM,
                 Tot_Inorganic_N.umol = btl_total.inroganic.N) -> REVAMP_NO20_01
+
+REVAMP_NO20_01
     
 ```
 
@@ -464,11 +474,11 @@ REVAMP_DY20_12
   mutate(ctd_time..UTC. = str_c(ctd_time..UTC.,"Z"),ctd_time..UTC.) %>% 
   mutate(., pH_method= "SBE-18 pH sensor",
             Silicate_umol = NA,
-            wind_direction.degrees = NA,
+            wind_direction = NA,
             wind_speed_m.per.s = NA,
             Tot_Inorganic_N.umol = NA,
             turbidity.NTU = NA) %>% 
-   dplyr::select(Sample_Name, Biological_Replicate, Technical_Replicate, Negative_control, Cruise_ID_short, Cruise_ID_long, Cast_No.,Rosette_position, Station, Sample_volume_ml, Field_collection_method, Preservation, pH_method, Silicate_umol, wind_direction.degrees, wind_speed_m.per.s, Tot_Inorganic_N.umol, turbidity.NTU,
+   dplyr::select(Sample_Name, Biological_Replicate, Technical_Replicate, Negative_control, Cruise_ID_short, Cruise_ID_long, Cast_No.,Rosette_position, Station, Sample_volume_ml, Field_collection_method, Preservation, pH_method, Silicate_umol, wind_direction, wind_speed_m.per.s, Tot_Inorganic_N.umol, turbidity.NTU, verbatimLongitude, verbatimLatitude, verbatimCoordinateSystem, verbatimEventDate, verbatimEventTime,
                 Time=ctd_time..UTC., 
                 Depth_m=btl2_CTDPRES, 
                 lat=btl2_Latitude, 
@@ -509,10 +519,10 @@ REVAMP_RC0083
                 pH_method = NA,
                 Silicate_umol = NA,
                 Silicate_umol.per.kg = NA,
-                wind_direction.degrees = NA,
+                wind_direction = NA,
                 wind_speed_m.per.s = NA,
                 Tot_Inorganic_N.umol = NA)%>% 
-   dplyr::select(Sample_Name, Biological_Replicate, Technical_Replicate, Negative_control, Cruise_ID_short, Cruise_ID_long, Cast_No.,Rosette_position, Station, Sample_volume_ml, Field_collection_method, Preservation, pH, pH_method, Silicate_umol, Silicate_umol.per.kg, wind_direction.degrees, wind_speed_m.per.s, Tot_Inorganic_N.umol,
+   dplyr::select(Sample_Name, Biological_Replicate, Technical_Replicate, Negative_control, Cruise_ID_short, Cruise_ID_long, Cast_No.,Rosette_position, Station, Sample_volume_ml, Field_collection_method, Preservation, pH, pH_method, Silicate_umol, Silicate_umol.per.kg, wind_direction, wind_speed_m.per.s, Tot_Inorganic_N.umol, verbatimLongitude, verbatimLatitude, verbatimCoordinateSystem, verbatimEventDate, verbatimEventTime,
                 Time=btl_time..UTC., 
                 Depth_m=btl_pressure..decibar., 
                 lat=btl_latitude..degrees_north., 
@@ -527,6 +537,8 @@ REVAMP_RC0083
                 NO3_umol.per.l=NO3_umol.per.l,
                 NH4_umol.per.l =NH4_umol.per.l,
                 turbidity.NTU = btl_turbidity..NTU.) -> REVAMP_DY23_06
+
+REVAMP_DY23_06
 
 ```
 
@@ -551,11 +563,11 @@ REVAMP_RC0083
                 pH_method = NA,
                 Silicate_umol = NA,
                 Silicate_umol.per.kg = NA,
-                wind_direction.degrees = NA,
+                wind_direction = NA,
                 wind_speed_m.per.s = NA,
                 Tot_Inorganic_N.umol = NA,
                 turbidity.NTU = NA)%>% 
-  dplyr::select(Sample_Name, Biological_Replicate, Technical_Replicate, Negative_control, Cruise_ID_short, Cruise_ID_long, Cast_No.,Rosette_position, Station, Sample_volume_ml, Field_collection_method, Preservation, pH, pH_method, Silicate_umol, Silicate_umol.per.kg, wind_direction.degrees, wind_speed_m.per.s, Tot_Inorganic_N.umol, turbidity.NTU, 
+  dplyr::select(Sample_Name, Biological_Replicate, Technical_Replicate, Negative_control, Cruise_ID_short, Cruise_ID_long, Cast_No.,Rosette_position, Station, Sample_volume_ml, Field_collection_method, Preservation, pH, pH_method, Silicate_umol, Silicate_umol.per.kg, wind_direction, wind_speed_m.per.s, Tot_Inorganic_N.umol, turbidity.NTU, verbatimLongitude, verbatimLatitude, verbatimCoordinateSystem, verbatimEventDate, verbatimEventTime,
                 Time=ctd_time..UTC., 
                 Depth_m=Depth_m_notes, 
                 lat=Lat_notes, 
@@ -569,6 +581,8 @@ REVAMP_RC0083
                 NO2_umol.per.l=NO2_umol.per.l,
                 NO3_umol.per.l=NO3_umol.per.l,
                 NH4_umol.per.l =NH4_umol.per.l) -> REVAMP_PPS_0523
+
+REVAMP_PPS_0523
   
 ```
 
@@ -593,11 +607,11 @@ REVAMP_RC0083
                 pH_method = NA,
                 Silicate_umol = NA,
                 Silicate_umol.per.kg = NA,
-                wind_direction.degrees = NA,
+                wind_direction = NA,
                 wind_speed_m.per.s = NA,
                 Tot_Inorganic_N.umol = NA,
                 turbidity.NTU = NA)%>% 
-  dplyr::select(Sample_Name, Biological_Replicate, Technical_Replicate, Negative_control, Cruise_ID_short, Cruise_ID_long, Cast_No.,Rosette_position, Station, Sample_volume_ml, Field_collection_method, Preservation, pH, pH_method, Silicate_umol, Silicate_umol.per.kg, wind_direction.degrees, wind_speed_m.per.s, Tot_Inorganic_N.umol, turbidity.NTU,
+  dplyr::select(Sample_Name, Biological_Replicate, Technical_Replicate, Negative_control, Cruise_ID_short, Cruise_ID_long, Cast_No.,Rosette_position, Station, Sample_volume_ml, Field_collection_method, Preservation, pH, pH_method, Silicate_umol, Silicate_umol.per.kg, wind_direction, wind_speed_m.per.s, Tot_Inorganic_N.umol, turbidity.NTU, verbatimLongitude, verbatimLatitude, verbatimCoordinateSystem, verbatimEventDate, verbatimEventTime,
                 Time=ctd_time..UTC., 
                 Depth_m=Depth_m_notes, 
                 lat=Lat_notes, 
@@ -611,14 +625,14 @@ REVAMP_RC0083
                 NO2_umol.per.l=NO2_umol.per.l,
                 NO3_umol.per.l=NO3_umol.per.l,
                 NH4_umol.per.l =NH4_umol.per.l) -> REVAMP_AquaM_23
-  
+
+REVAMP_AquaM_23
 ```
 
 # Merge REVAMP files
 
 ```{r}
 rbind(REVAMP_DY20_12, REVAMP_DY22_06, REVAMP_DY22_09, REVAMP_DY23_06, REVAMP_NO20_01, REVAMP_PPS_0523, REVAMP_RC0083, REVAMP_SKQ21_12S, REVAMP_SKQ23_12S, REVAMP_AquaM_23) -> revamp_sample_metadata
-
 
 revamp_sample_metadata %>% 
   filter(., str_detect(Sample_Name,"E1148"))
