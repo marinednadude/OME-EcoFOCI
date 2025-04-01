@@ -143,8 +143,8 @@ QAQCMRE_CruiseSampleMetadata_DY20_12 %>%
 library(rlang)
 
 DY2012_sample_data %>% 
-  mutate(., verbatimCoordinateSystem = 'degrees minutes seconds') %>%
-  select(Sample_Name, 
+  mutate(., verbatimCoordinateSystem = "degrees minutes seconds") %>%
+  dplyr::select(Sample_Name, 
          Biological_Replicate,
          Technical_Replicate,
          Negative_control, 
@@ -167,6 +167,7 @@ DY2012_sample_data %>%
          verbatimEventTime = Collection_Time_UTC,
          verbatimLongitude = Lon,
          verbatimLatitude = Lat,
+         verbatimCoordinateSystem,
          #!!!syms(cols_2_keep),
                  starts_with("ctd"),
         starts_with("btl")
