@@ -143,6 +143,7 @@ QAQCMRE_CruiseSampleMetadata_DY20_12 %>%
 library(rlang)
 
 DY2012_sample_data %>% 
+  mutate(., verbatimCoordinateSystem = 'degrees minutes seconds') %>%
   select(Sample_Name, 
          Biological_Replicate,
          Technical_Replicate,
@@ -161,12 +162,15 @@ DY2012_sample_data %>%
          Date_UTC_notes=Date_UTC,
          Lat_notes = Lat_dec,
          Lon_notes=Lon_dec,
-         Date_UTC_btl, 
+         Date_UTC_btl,
+         verbatimEventDate = Collection_Date_UTC,
+         verbatimEventTime = Collection_Time_UTC,
+         verbatimLongitude = Lon,
+         verbatimLatitude = Lat,
          #!!!syms(cols_2_keep),
                  starts_with("ctd"),
         starts_with("btl")
          ) -> DY2012_sample_data
-
 
 readr::write_excel_csv(DY2012_sample_data, file="FinalOME_Merge_DY20-12.csv")
 ```
