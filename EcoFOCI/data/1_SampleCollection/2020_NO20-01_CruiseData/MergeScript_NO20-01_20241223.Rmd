@@ -125,7 +125,8 @@ QAQCMRE_CruiseSampleMetadata_NO20_01 %>%
 library(rlang)
 
 NO2020_sample_data %>% 
-  select(Sample_Name, 
+  mutate(., verbatimCoordinateSystem = "degrees minutes seconds") %>%
+  dplyr::select(Sample_Name, 
          Biological_Replicate,
          Technical_Replicate,
          Negative_control, 
@@ -143,7 +144,12 @@ NO2020_sample_data %>%
          Date_UTC_notes=Date_UTC,
          Lat_notes = Lat_dec,
          Lon_notes=Lon_dec,
-         Date_UTC_btl=Date_UTC, 
+         Date_UTC_btl=Date_UTC,
+         verbatimEventDate = Collection_Date_local,
+         verbatimEventTime = Collection_Time_local,
+         verbatimLongitude = Lon,
+         verbatimLatitude = Lat,
+         verbatimCoordinateSystem,
          #!!!syms(cols_2_keep),
           starts_with("btl")) -> NO2020_sample_data
 
