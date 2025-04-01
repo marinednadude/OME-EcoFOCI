@@ -141,7 +141,8 @@ QAQCMRE_CruiseSampleMetadata_SKQ21_12S %>%
 library(rlang)
 
 SKQ21_sample_data %>% 
-  select(Sample_Name, 
+  mutate(., verbatimCoordinateSystem = "degrees minutes seconds") %>%
+  dplyr::select(Sample_Name, 
          Biological_Replicate,
          Technical_Replicate,
          Negative_control, 
@@ -160,6 +161,11 @@ SKQ21_sample_data %>%
          Lat_notes = Lat_dec,
          Lon_notes=Lon_dec,
          Date_UTC_btl,
+         verbatimEventDate = Collection_Date_local,
+         verbatimEventTime = Collection_Time_local,
+         verbatimLongitude = Lon,
+         verbatimLatitude = Lat,
+         verbatimCoordinateSystem,
         # !!!syms(cols_2_keep),
         starts_with("ctd"),
         starts_with("btl")
