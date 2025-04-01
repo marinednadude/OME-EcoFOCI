@@ -206,7 +206,8 @@ PPS_event_data %>%
 
 library(rlang)
 
-PPS_2023_M2_Spring_Summer_sample_data %>% 
+PPS_2023_M2_Spring_Summer_sample_data %>%
+  mutate(., verbatimCoordinateSystem = case_when(!is.na(Lon) & !is.na(Lat) ~ "degrees minutes seconds", TRUE ~ NA_character_)) %>%
   select(Sample_Name, 
          Biological_Replicate,
          Technical_Replicate,
@@ -225,6 +226,11 @@ PPS_2023_M2_Spring_Summer_sample_data %>%
          Date_UTC_notes=Date_UTC,
          Lat_notes = Lat_dec,
          Lon_notes=Lon_dec,
+         verbatimEventDate = Collection_Date_local,
+         verbatimEventTime = Collection_Time_local,
+         verbatimLongitude = Lon,
+         verbatimLatitude = Lat,
+         verbatimCoordinateSystem,
          #!!!syms(cols_2_keep),
                              starts_with("ctd"),
         starts_with("btl")
