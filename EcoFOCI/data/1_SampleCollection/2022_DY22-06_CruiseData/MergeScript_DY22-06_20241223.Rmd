@@ -146,7 +146,8 @@ QAQCMRE_CruiseSampleMetadata_DY22_06 %>%
 library(rlang)
 
 EcoFOCI_Spring_2022_sample_data %>% 
-  select(Sample_Name, 
+  mutate(., verbatimCoordinateSystem = case_when(!is.na(verbatimLongitude) & !is.na(erbatimLatitude) ~ "degrees minutes seconds", TRUE ~ NA_character_) %>%
+  dplyr::select(Sample_Name, 
          Biological_Replicate,
          Technical_Replicate,
          Negative_control, 
@@ -164,6 +165,11 @@ EcoFOCI_Spring_2022_sample_data %>%
          Date_UTC_notes=Date_UTC,
          Lat_notes = Lat_dec,
          Lon_notes=Lon_dec,
+         verbatimEventDate = Collection_Date_UTC,
+         verbatimEventTime = Collection_Time_UTC,
+         verbatimLongitude = Lon,
+         verbatimLatitude = Lat,
+         verbatimCoordinateSystem,
           Date_UTC_btl,
         # !!!syms(cols_2_keep),
            starts_with("ctd"),
