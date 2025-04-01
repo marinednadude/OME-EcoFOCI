@@ -141,7 +141,7 @@ QAQCMRE_CruiseSampleMetadata_SKQ21_12S %>%
 library(rlang)
 
 SKQ21_sample_data %>% 
-  mutate(., verbatimCoordinateSystem = "degrees minutes seconds") %>%
+   mutate(., verbatimCoordinateSystem = case_when(!is.na(Lon) & !is.na(Lat) ~ "degrees minutes seconds", TRUE ~ NA_character_)) %>%
   dplyr::select(Sample_Name, 
          Biological_Replicate,
          Technical_Replicate,

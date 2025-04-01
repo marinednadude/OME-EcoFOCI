@@ -146,7 +146,7 @@ QAQCMRE_CruiseSampleMetadata_DY22_06 %>%
 library(rlang)
 
 EcoFOCI_Spring_2022_sample_data %>% 
-  mutate(., verbatimCoordinateSystem = case_when(!is.na(verbatimLongitude) & !is.na(erbatimLatitude) ~ "degrees minutes seconds", TRUE ~ NA_character_) %>%
+  mutate(., verbatimCoordinateSystem = case_when(!is.na(Lon) & !is.na(Lat) ~ "degrees minutes seconds", TRUE ~ NA_character_)) %>%
   dplyr::select(Sample_Name, 
          Biological_Replicate,
          Technical_Replicate,
