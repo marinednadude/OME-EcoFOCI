@@ -643,13 +643,13 @@ revamp_sample_metadata
 ```{r}
 revamp_format_run1_4 %>% 
   dplyr::select(-sites, -lat, -long) %>% 
-  mutate(., Sample_Name = str_replace(Sample,"_","\\.")) %>% 
-  mutate(.,Sample_Name = str_remove(Sample_Name,"_PCR1|_PCR2|_PCR3")) %>% 
-    mutate(.,Sample_Name = str_replace(Sample_Name,"_NO20",".NO20")) %>% 
-      mutate(.,Sample_Name = str_replace(Sample_Name,"_DY20",".DY2012")) %>% 
-        mutate(.,Sample_Name = str_replace(Sample_Name,"E26.1B.DY2012","E26.1B.NC.DY2012")) %>% 
-          mutate(.,Sample_Name = str_replace(Sample_Name,"E44.DY20","E44.DY2012")) %>% 
-  left_join(revamp_sample_metadata) %>% 
+  mutate(., Sample_Name = str_replace(Sample,"_","\\.")) %>% #replaces all _ with period
+  mutate(.,Sample_Name = str_remove(Sample_Name,"_PCR1|_PCR2|_PCR3")) %>% # removes PCR names
+    mutate(.,Sample_Name = str_replace(Sample_Name,"_NO20",".NO20")) %>%  #unnecessary because the first _ replace with .
+      mutate(.,Sample_Name = str_replace(Sample_Name,"_DY20",".DY2012")) %>% # changes _DY20 to .DY2012
+        mutate(.,Sample_Name = str_replace(Sample_Name,"E26.1B.DY2012","E26.1B.NC.DY2012")) %>% # Why?
+          mutate(.,Sample_Name = str_replace(Sample_Name,"E44.DY20","E44.DY2012")) %>% # is this necessary - 1st step and 3rd step?
+  right_join(revamp_sample_metadata) %>% 
   mutate(., sites = Station) -> run1_4_revamp_formatted_metadata
 
 run1_4_revamp_formatted_metadata %>% 
@@ -659,3 +659,40 @@ readr::write_excel_csv(run1_4_revamp_formatted_metadata, file="run1_4_revamp_for
 
 
 ```
+
+# Reformat Sample_Name of revamp_format_run1_4 (Archived)
+```{r}
+# # Reformat revamp_format_run1_4 so that Sample_Names are structured like sample metadata and create a join_key column that accounts for multiple PCR samples mapping to one sample in the sample metadata
+# revamp_sample_metadata %>%
+#   mutate(., Sample_Name = str_replace_all(Sample_Name,"_","\\.")) -> revamp_sample_metadata
+# 
+# revamp_format_run1_4 %>% 
+#   dplyr::select(-sites, -lat, -long) %>% 
+#   mutate(., Sample_Name = str_replace_all(Sample,"_","\\."),
+#             Sample_Name = str_replace(Sample_Name,".DY20",".DY2012"),
+#             join_key = gsub("\\.(PCR\\d+)?$", "", Sample_Name)) -> revamp_format_run1_4
+```
+
+
+```{r}
+# join and filter
+run1_4_revamp_formatted_metadata <- full_join(
+  revamp_sample_metadata, revamp_format_run1_4, by= c("Sample_Name" = "join_key")) %>%
+            filter(
+              grepl("\\.NC", Sample_Name) |
+              grepl("\\.PCR\\d+", Sample_Name) |
+              (!is.na(Sample_Name) & !is.na(Sample_Name)))
+run1_4_revamp_formatted_metadata
+```
+# Check difference # rows that have na for either Sample_Name (from revamp_sample_metadata) or Sample_Name.y (from revamp_format1_4) should be NC or PCR rows. All of Sample_Name.y is NA, so did not select. Missing samples are samples that have environmental data but not in the sequencing df (e.g. revamp_format_run1_4)
+
+```{r}
+missing_samples <- run1_4_revamp_formatted_metadata %>%
+  filter(is.na(Sample_Name) |
+           is.na(Sample_Name.y)) %>%
+  filter(!grepl("\\.NC", Sample_Name)) %>%
+  select(Sample_Name)
+
+readr::write_excel_csv(missing_samples, file="run1_4_samples_missing_from_revamp.csv")
+```
+
