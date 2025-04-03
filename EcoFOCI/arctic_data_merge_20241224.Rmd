@@ -657,8 +657,8 @@ skq21_extractoin_df <- read_sheet("https://docs.google.com/spreadsheets/d/16Zg1M
 ```{r}
 # adjust sample names in extraction sheet to remove hypehns with periods (in -12S samples)
 alaska_arctic22_23_extraction_df %>% 
-  mutate(., 'FINAL Sample NAME' = gsub("-", ".", 'FINAL Sample NAME')) %>%
-  dplyr::select('FINAL Sample NAME', 
+  rename(final_sample_name = "FINAL Sample NAME") %>%
+  dplyr::select(final_sample_name,
                 qubit_conc_ng.uL = 'Qubit Conc.  (ng/μL)') -> alaska_arctic22_23_extraction_df
 
 # # adjust skq21 sample name field negatives to to remove the E. in the front
@@ -668,7 +668,7 @@ skq21_extractoin_df$'FINAL Sample NAME' <- ifelse(
   skq21_extractoin_df$'FINAL Sample NAME'
 )
 skq21_extractoin_df %>%
-  dplyr::select('FINAL Sample NAME',
+  dplyr::select(final_sample_name = 'FINAL Sample NAME',
                 qubit_conc_ng.uL = 'Qubit Conc. (ng/μL)') -> skq21_extractoin_df
 
 ```
@@ -683,9 +683,9 @@ extractions_df = rbind(alaska_arctic22_23_extraction_df, skq21_extractoin_df)
 # Merge by Sample NAme and keep concentration from alaska extractions
 revamp_sample_metadata <- merge(
   x = revamp_sample_metadata,
-  y = extractions_df[, c("FINAL Sample NAME", "qubit_conc_ng.uL")],
+  y = extractions_df[, c("final_sample_name", "qubit_conc_ng.uL")],
   by.x = "Sample_Name",
-  by.y = "FINAL Sample NAME",
+  by.y = "final_sample_name",
   all.x = TRUE
 )
 ```
@@ -709,7 +709,21 @@ revamp_sample_metadata <- merge(
 # readr::write_excel_csv(run1_4_revamp_formatted_metadata, file="run1_4_revamp_formatted_metadata.csv")
 ```
 
-# Join and filter keeping PCR from revamp_format_run1-4 and NC from sample_metadata
+# Format Sample Names in revamp_format_run1-4 and revamp_sample_metadata to be standardized so they can map
+```{r}
+# Reformat revamp_format_run1_4 so that Sample_Names are structured like sample metadata and create a join_key column that accounts for multiple PCR samples mapping to one sample in the sample metadata
+revamp_sample_metadata %>%
+ mutate(., Sample_Name = str_replace_all(Sample_Name,"_","\\.")) -> revamp_sample_metadata
+
+revamp_format_run1_4 %>% 
+   dplyr::select(-sites, -lat, -long) %>%
+   mutate(., Sample_Name = str_replace_all(Sample,"_","\\."),
+             Sample_Name = str_replace(Sample_Name,".DY20",".DY2012"),
+             join_key = gsub("\\.(PCR\\d+)?$", "", Sample_Name)) -> revamp_format_run1_4
+
+```
+
+# Join revamp_sample_metadata and revamp_format_run1-4
 ```{r}
 # Add PCR_Technical_replicate column to track sample name of all PCR technical replicates
 run1_4_revamp_formatted_metadata <- full_join(
@@ -719,12 +733,18 @@ run1_4_revamp_formatted_metadata <- full_join(
               grepl("\\.PCR\\d+", Sample_Name) |
               (!is.na(Sample_Name) & !is.na(Sample_Name))) %>%
   mutate(., PCR_technical_replicate = NA_character_) %>%
-  mutate(., PCR_technical_replicate = case_when(grepl("\\.PCR", Sample_Name.y) ~ Sample_Name, TRUE ~ PCR_technical_replicate)) %>%
-  mutate(., Sample_Name = case_when(grepl("\\PCR", Sample_Name.y) ~ Sample_Name.y, TRUE ~ Sample_Name)) %>%
-  select(-Sample_Name.y)
+  group_by(base_name = sub("(\\.PCR\\d+).*", "", Sample_Name)) %>%
+  mutate(., PCR_technical_replicate = paste(Sample_Name.y, collapse = " | ")) %>%
+  ungroup() %>%
+  mutate(., PCR_technical_replicate = ifelse(grepl("\\|", PCR_technical_replicate), PCR_technical_replicate, NA_character_)) %>%
+  select(-base_name, -Sample_Name.y, -Sample) %>%
+  distinct() # remove duplicated rows (e.g. PCR replicates)
+
   
 run1_4_revamp_formatted_metadata
 ```
+
+
 # Check difference # rows that have na for either Sample_Name (from revamp_sample_metadata) or Sample_Name.y (from revamp_format1_4) should be NC or PCR rows. All of Sample_Name.y is NA, so did not select. Missing samples are samples that have environmental data but not in the sequencing df (e.g. revamp_format_run1_4)
 
 ```{r}
