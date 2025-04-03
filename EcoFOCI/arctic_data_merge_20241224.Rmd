@@ -10,6 +10,8 @@ library(tidyverse)
 library(readxl)
 library(here)
 library(readr)
+library(googlesheets4)
+library(gargle)
 ```
 
 ```{r}
@@ -639,49 +641,88 @@ revamp_sample_metadata %>%
 
 revamp_sample_metadata
 ```
-
+# Get Arctic Extraction GoogleSheet
 ```{r}
-revamp_format_run1_4 %>% 
-  dplyr::select(-sites, -lat, -long) %>% 
-  mutate(., Sample_Name = str_replace(Sample,"_","\\.")) %>% #replaces all _ with period
-  mutate(.,Sample_Name = str_remove(Sample_Name,"_PCR1|_PCR2|_PCR3")) %>% # removes PCR names
-    mutate(.,Sample_Name = str_replace(Sample_Name,"_NO20",".NO20")) %>%  #unnecessary because the first _ replace with .
-      mutate(.,Sample_Name = str_replace(Sample_Name,"_DY20",".DY2012")) %>% # changes _DY20 to .DY2012
-        mutate(.,Sample_Name = str_replace(Sample_Name,"E26.1B.DY2012","E26.1B.NC.DY2012")) %>% # Why?
-          mutate(.,Sample_Name = str_replace(Sample_Name,"E44.DY20","E44.DY2012")) %>% # is this necessary - 1st step and 3rd step?
-  right_join(revamp_sample_metadata) %>% 
-  mutate(., sites = Station) -> run1_4_revamp_formatted_metadata
+# gs4_auth()
+# or use if that doesn't work:
+googlesheets4::gs4_auth(scopes = c(
+  "https://www.googleapis.com/auth/spreadsheets",
+  "https://www.googleapis.com/auth/drive.readonly"))
+ 
+alaska_arctic22_23_extraction_df <- read_sheet("https://docs.google.com/spreadsheets/d/1KTs7LiITWi4DxmAjevH19HkWzKDY4CSkmd184dKmKxQ/edit?gid=0#gid=0")
+skq21_extractoin_df <- read_sheet("https://docs.google.com/spreadsheets/d/16Zg1MbMupnkXzuypTg4aF37OMyytPd-ZRqfz9QNX2oI/edit?gid=0#gid=0")
+```
 
-run1_4_revamp_formatted_metadata %>% 
-  filter(., str_detect(Sample, "DY2206"))
+# merge FINAL Sample NAME from Extraction with Sample_Name from revamp_sample_metadata
+```{r}
+# adjust sample names in extraction sheet to remove hypehns with periods (in -12S samples)
+alaska_arctic22_23_extraction_df %>% 
+  mutate(., 'FINAL Sample NAME' = gsub("-", ".", 'FINAL Sample NAME')) %>%
+  dplyr::select('FINAL Sample NAME', 
+                qubit_conc_ng.uL = 'Qubit Conc.  (ng/μL)') -> alaska_arctic22_23_extraction_df
 
-readr::write_excel_csv(run1_4_revamp_formatted_metadata, file="run1_4_revamp_formatted_metadata.csv")
-
+# # adjust skq21 sample name field negatives to to remove the E. in the front
+skq21_extractoin_df$'FINAL Sample NAME' <- ifelse(
+  grepl("\\.NC", skq21_extractoin_df$'FINAL Sample NAME'),
+  sub("^E\\.", "", skq21_extractoin_df$'FINAL Sample NAME'),
+  skq21_extractoin_df$'FINAL Sample NAME'
+)
+skq21_extractoin_df %>%
+  dplyr::select('FINAL Sample NAME',
+                qubit_conc_ng.uL = 'Qubit Conc. (ng/μL)') -> skq21_extractoin_df
 
 ```
 
-# Reformat Sample_Name of revamp_format_run1_4 (Archived)
+# Bind extraction dfs
 ```{r}
-# # Reformat revamp_format_run1_4 so that Sample_Names are structured like sample metadata and create a join_key column that accounts for multiple PCR samples mapping to one sample in the sample metadata
-# revamp_sample_metadata %>%
-#   mutate(., Sample_Name = str_replace_all(Sample_Name,"_","\\.")) -> revamp_sample_metadata
-# 
+extractions_df = rbind(alaska_arctic22_23_extraction_df, skq21_extractoin_df)
+```
+
+# Merge extraction concentrations with revamp_sample_metadata
+```{r}
+# Merge by Sample NAme and keep concentration from alaska extractions
+revamp_sample_metadata <- merge(
+  x = revamp_sample_metadata,
+  y = extractions_df[, c("FINAL Sample NAME", "qubit_conc_ng.uL")],
+  by.x = "Sample_Name",
+  by.y = "FINAL Sample NAME",
+  all.x = TRUE
+)
+```
+
+# Old join (Archived)
+```{r}
 # revamp_format_run1_4 %>% 
 #   dplyr::select(-sites, -lat, -long) %>% 
-#   mutate(., Sample_Name = str_replace_all(Sample,"_","\\."),
-#             Sample_Name = str_replace(Sample_Name,".DY20",".DY2012"),
-#             join_key = gsub("\\.(PCR\\d+)?$", "", Sample_Name)) -> revamp_format_run1_4
+#   mutate(., Sample_Name = str_replace(Sample,"_","\\.")) %>% #replaces all _ with period
+#   mutate(.,Sample_Name = str_remove(Sample_Name,"_PCR1|_PCR2|_PCR3")) %>% # removes PCR names
+#     mutate(.,Sample_Name = str_replace(Sample_Name,"_NO20",".NO20")) %>%  #unnecessary because the first _ replace with .
+#       mutate(.,Sample_Name = str_replace(Sample_Name,"_DY20",".DY2012")) %>% # changes _DY20 to .DY2012
+#         mutate(.,Sample_Name = str_replace(Sample_Name,"E26.1B.DY2012","E26.1B.NC.DY2012")) %>% # Why?
+#           mutate(.,Sample_Name = str_replace(Sample_Name,"E44.DY20","E44.DY2012")) %>% # is this necessary - 1st step and 3rd step?
+#   right_join(revamp_sample_metadata) %>% 
+#   mutate(., sites = Station) -> run1_4_revamp_formatted_metadata
+# 
+# run1_4_revamp_formatted_metadata %>% 
+#   filter(., str_detect(Sample, "DY2206"))
+# 
+# readr::write_excel_csv(run1_4_revamp_formatted_metadata, file="run1_4_revamp_formatted_metadata.csv")
 ```
 
-
+# Join and filter keeping PCR from revamp_format_run1-4 and NC from sample_metadata
 ```{r}
-# join and filter
+# Add PCR_Technical_replicate column to track sample name of all PCR technical replicates
 run1_4_revamp_formatted_metadata <- full_join(
   revamp_sample_metadata, revamp_format_run1_4, by= c("Sample_Name" = "join_key")) %>%
             filter(
               grepl("\\.NC", Sample_Name) |
               grepl("\\.PCR\\d+", Sample_Name) |
-              (!is.na(Sample_Name) & !is.na(Sample_Name)))
+              (!is.na(Sample_Name) & !is.na(Sample_Name))) %>%
+  mutate(., PCR_technical_replicate = NA_character_) %>%
+  mutate(., PCR_technical_replicate = case_when(grepl("\\.PCR", Sample_Name.y) ~ Sample_Name, TRUE ~ PCR_technical_replicate)) %>%
+  mutate(., Sample_Name = case_when(grepl("\\PCR", Sample_Name.y) ~ Sample_Name.y, TRUE ~ Sample_Name)) %>%
+  select(-Sample_Name.y)
+  
 run1_4_revamp_formatted_metadata
 ```
 # Check difference # rows that have na for either Sample_Name (from revamp_sample_metadata) or Sample_Name.y (from revamp_format1_4) should be NC or PCR rows. All of Sample_Name.y is NA, so did not select. Missing samples are samples that have environmental data but not in the sequencing df (e.g. revamp_format_run1_4)
@@ -695,4 +736,3 @@ missing_samples <- run1_4_revamp_formatted_metadata %>%
 
 readr::write_excel_csv(missing_samples, file="run1_4_samples_missing_from_revamp.csv")
 ```
-
