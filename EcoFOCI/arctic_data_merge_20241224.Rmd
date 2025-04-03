@@ -736,9 +736,7 @@ run1_4_revamp_formatted_metadata <- full_join(
   group_by(base_name = sub("(\\.PCR\\d+).*", "", Sample_Name)) %>%
   mutate(., PCR_technical_replicate = paste(Sample_Name.y, collapse = " | ")) %>%
   ungroup() %>%
-  mutate(., PCR_technical_replicate = ifelse(grepl("\\|", PCR_technical_replicate), PCR_technical_replicate, NA_character_)) %>%
-  select(-base_name, -Sample_Name.y, -Sample) %>%
-  distinct() # remove duplicated rows (e.g. PCR replicates)
+  mutate(., PCR_technical_replicate = ifelse(grepl("\\|", PCR_technical_replicate), PCR_technical_replicate, NA_character_)) 
 
   
 run1_4_revamp_formatted_metadata
@@ -755,4 +753,11 @@ missing_samples <- run1_4_revamp_formatted_metadata %>%
   select(Sample_Name)
 
 readr::write_excel_csv(missing_samples, file="run1_4_samples_missing_from_revamp.csv")
+```
+
+# After checking missing samples remove unnecessary columns and duplicate rows (need Sample.y for missing samples which is coming from revamp_format_run1_4
+```{r}
+run1_4_revamp_formatted_metadata %>%
+  select(-base_name, -Sample_Name.y, -Sample) %>%
+  distinct() -> run1_4_revamp_formatted_metadata
 ```
