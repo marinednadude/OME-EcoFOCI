@@ -760,4 +760,6 @@ readr::write_excel_csv(missing_samples, file="run1_4_samples_missing_from_revamp
 run1_4_revamp_formatted_metadata %>%
   select(-base_name, -Sample_Name.y, -Sample) %>%
   distinct() -> run1_4_revamp_formatted_metadata
+
+readr::write_excel_csv(run1_4_revamp_formatted_metadata, file="run1_4_revamp_formatted_metadata.csv")
 ```
