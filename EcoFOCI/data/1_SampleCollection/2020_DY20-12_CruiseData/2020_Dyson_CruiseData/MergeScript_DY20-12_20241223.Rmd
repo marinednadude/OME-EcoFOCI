@@ -102,10 +102,10 @@ bottle_Data <- read.csv(file = here("CTD_raw_BottleFile_DY20-12.csv"), header=T)
 
 remove <- c("ctd", "CTD", "a")
 
-bottle_Data %>% 
+bottle_Data %>%
   mutate(., bottle =nb,
-         holder1 = str_remove_all(cast, paste(remove, collapse = "|")) ) %>% 
-           mutate(., Cast = as.numeric(holder1)) %>% 
+         holder1 = str_remove_all(cast, paste(remove, collapse = "|")) ) %>%
+           mutate(., Cast = as.numeric(holder1)) %>%
    rename_with(.fn = ~ paste0("btl_", .x))-> bottle_Data
 
 bottle_Data$Cast <- as.character(bottle_Data$btl_Cast)
@@ -168,6 +168,7 @@ DY2012_sample_data %>%
          verbatimLongitude = Lon,
          verbatimLatitude = Lat,
          verbatimCoordinateSystem,
+         Area.within.region,
          #!!!syms(cols_2_keep),
                  starts_with("ctd"),
         starts_with("btl")
