@@ -678,6 +678,11 @@ skq21_extractoin_df %>%
 ```{r}
 extractions_df = rbind(alaska_arctic22_23_extraction_df, skq21_extractoin_df)
 ```
+# Cast as numeric
+```{r}
+extractions_df$qubit_conc_ng.uL <- as.numeric(as.character(extractions_df$qubit_conc_ng.uL))
+```
+
 
 # Merge extraction concentrations with revamp_sample_metadata
 ```{r}
@@ -689,11 +694,6 @@ extractions_revamp_sample_metadata <- merge(
   by.x = "Sample_Name",
   by.y = "final_sample_name",
   all.x = TRUE)
-```
-
-# Add blanks back in
-```{r}
-
 ```
 
 
@@ -715,15 +715,13 @@ extractions_revamp_sample_metadata <- merge(
 # 
 # readr::write_excel_csv(run1_4_revamp_formatted_metadata, file="run1_4_revamp_formatted_metadata.csv")
 ```
-```{r}
 
-```
 
 # Format Sample Names in revamp_format_run1-4 and revamp_sample_metadata to be standardized so they can map
 ```{r}
 # Reformat revamp_format_run1_4 so that Sample_Names are structured like sample metadata and create a join_key column that accounts for multiple PCR samples mapping to one sample in the sample metadata
-revamp_sample_metadata %>%
- mutate(., Sample_Name = str_replace_all(Sample_Name,"_","\\.")) -> revamp_sample_metadata
+extractions_revamp_sample_metadata %>%
+ mutate(., Sample_Name = str_replace_all(Sample_Name,"_","\\.")) -> revamp_sample_metadata_updated
 
 revamp_format_run1_4 %>% 
    dplyr::select(-sites, -lat, -long) %>%
@@ -737,7 +735,7 @@ revamp_format_run1_4 %>%
 ```{r}
 # Add PCR_Technical_replicate column to track sample name of all PCR technical replicates
 run1_4_revamp_formatted_metadata <- full_join(
-  revamp_sample_metadata, revamp_format_run1_4, by= c("Sample_Name" = "join_key")) %>%
+  revamp_sample_metadata_updated, revamp_format_run1_4, by= c("Sample_Name" = "join_key")) %>%
             filter(
               grepl("\\.NC", Sample_Name) |
               grepl("\\.PCR\\d+", Sample_Name) |
