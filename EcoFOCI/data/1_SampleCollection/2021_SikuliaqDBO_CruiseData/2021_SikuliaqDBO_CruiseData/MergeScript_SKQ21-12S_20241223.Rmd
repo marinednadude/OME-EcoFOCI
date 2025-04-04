@@ -166,6 +166,7 @@ SKQ21_sample_data %>%
          verbatimLongitude = Lon,
          verbatimLatitude = Lat,
          verbatimCoordinateSystem,
+         Area.within.region,
         # !!!syms(cols_2_keep),
         starts_with("ctd"),
         starts_with("btl")
