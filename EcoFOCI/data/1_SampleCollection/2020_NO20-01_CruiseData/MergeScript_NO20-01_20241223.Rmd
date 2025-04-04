@@ -150,6 +150,7 @@ NO2020_sample_data %>%
          verbatimLongitude = Lon,
          verbatimLatitude = Lat,
          verbatimCoordinateSystem,
+         Area.within.region,
          #!!!syms(cols_2_keep),
           starts_with("btl")) -> NO2020_sample_data
 
