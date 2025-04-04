@@ -231,6 +231,7 @@ PPS_2023_M2_Spring_Summer_sample_data %>%
          verbatimLongitude = Lon,
          verbatimLatitude = Lat,
          verbatimCoordinateSystem,
+         Area.within.region,
          #!!!syms(cols_2_keep),
                              starts_with("ctd"),
         starts_with("btl")
