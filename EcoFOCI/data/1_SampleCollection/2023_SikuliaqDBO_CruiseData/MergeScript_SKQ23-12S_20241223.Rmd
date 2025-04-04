@@ -225,6 +225,7 @@ SikuliaqDBO_2023_Cruise_sample_data %>%
          verbatimLongitude = Lon,
          verbatimLatitude = Lat,
          verbatimCoordinateSystem,
+         Area.within.region,
           Date_UTC_btl,
         # !!!syms(cols_2_keep),
            starts_with("ctd"),
