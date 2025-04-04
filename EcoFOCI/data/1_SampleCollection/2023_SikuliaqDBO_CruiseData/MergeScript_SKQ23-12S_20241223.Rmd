@@ -201,6 +201,7 @@ QAQCMRE_CruiseSampleMetadata_SKQ23_12S %>%
 library(rlang)
 
 SikuliaqDBO_2023_Cruise_sample_data %>% 
+  mutate(., verbatimCoordinateSystem = case_when(!is.na(Lon) & !is.na(Lat) ~ "degrees minutes seconds", TRUE ~ NA_character_)) %>%
   select(Sample_Name, 
          Biological_Replicate,
          Technical_Replicate,
@@ -219,6 +220,12 @@ SikuliaqDBO_2023_Cruise_sample_data %>%
          Date_UTC_notes=Date_UTC,
          Lat_notes = Lat_dec,
          Lon_notes=Lon_dec,
+         verbatimEventDate = Collection_Date_local,
+         verbatimEventTime = Collection_Time_local,
+         verbatimLongitude = Lon,
+         verbatimLatitude = Lat,
+         verbatimCoordinateSystem,
+         Area.within.region,
           Date_UTC_btl,
         # !!!syms(cols_2_keep),
            starts_with("ctd"),

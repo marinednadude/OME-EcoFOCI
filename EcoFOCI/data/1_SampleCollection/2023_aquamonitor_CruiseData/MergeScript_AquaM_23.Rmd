@@ -120,6 +120,7 @@ QAQCMRE_CruiseSampleMetadata_AquaM_23 -> AquaM_23_Cruise_sample_data
 library(rlang)
 
 AquaM_23_Cruise_sample_data %>% 
+  mutate(., verbatimCoordinateSystem = case_when(!is.na(Lon) & !is.na(Lat) ~ "degrees minutes seconds", TRUE ~ NA_character_)) %>%
   select(Sample_Name, 
          Biological_Replicate,
          Technical_Replicate,
@@ -137,7 +138,13 @@ AquaM_23_Cruise_sample_data %>%
          Field_Notes,
          Date_UTC_notes=Date_UTC,
          Lat_notes = Lat_dec,
-         Lon_notes=Lon_dec) -> AquaM_23_Cruise_sample_data
+         Lon_notes=Lon_dec,
+         verbatimEventDate = Collection_Date_local,
+         verbatimEventTime = Collection_Time_local,
+         verbatimLongitude = Lon,
+         verbatimLatitude = Lat,
+         verbatimCoordinateSystem,
+         Area.within.region) -> AquaM_23_Cruise_sample_data
 
 readr::write_excel_csv(AquaM_23_Cruise_sample_data, file="FinalOME_Merge_AquaM_23.csv")
 ```
