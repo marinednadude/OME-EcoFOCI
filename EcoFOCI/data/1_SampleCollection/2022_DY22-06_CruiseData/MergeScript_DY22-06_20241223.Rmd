@@ -170,6 +170,7 @@ EcoFOCI_Spring_2022_sample_data %>%
          verbatimLongitude = Lon,
          verbatimLatitude = Lat,
          verbatimCoordinateSystem,
+         Area.within.region,
           Date_UTC_btl,
         # !!!syms(cols_2_keep),
            starts_with("ctd"),
