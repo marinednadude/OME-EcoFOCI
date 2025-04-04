@@ -656,20 +656,24 @@ skq21_extractoin_df <- read_sheet("https://docs.google.com/spreadsheets/d/16Zg1M
 
 # merge FINAL Sample NAME from Extraction with Sample_Name from revamp_sample_metadata
 ```{r}
-# adjust sample names in extraction sheet to remove hypehns with periods (in -12S samples)
+# adjust sample names in extraction sheet to remove hypehns with periods (in -12S samples), and conc_method free text
 alaska_arctic22_23_extraction_df %>% 
   rename(final_sample_name = "FINAL Sample NAME") %>%
+  mutate(., conc_method = 'Qubit Fluorometer v.4 - quantified with High Sensitivity Kit at 2μL DNA/measurement') %>%
   dplyr::select(final_sample_name,
+                conc_method,
                 qubit_conc_ng.uL = 'Qubit Conc.  (ng/μL)') -> alaska_arctic22_23_extraction_df
 
-# # adjust skq21 sample name field negatives to to remove the E. in the front
+# # adjust skq21 sample name field negatives to to remove the E. in the front, add conc_method free text
 skq21_extractoin_df$'FINAL Sample NAME' <- ifelse(
   grepl("\\.NC", skq21_extractoin_df$'FINAL Sample NAME'),
   sub("^E\\.", "", skq21_extractoin_df$'FINAL Sample NAME'),
   skq21_extractoin_df$'FINAL Sample NAME'
 )
 skq21_extractoin_df %>%
+  mutate(., conc_method = 'Qubit Fluorometer v.4 - quantified with High Sensitivity Kit at 2μL DNA/measurement') %>%
   dplyr::select(final_sample_name = 'FINAL Sample NAME',
+                conc_method,
                 qubit_conc_ng.uL = 'Qubit Conc. (ng/μL)') -> skq21_extractoin_df
 
 ```
@@ -690,7 +694,7 @@ extractions_df$qubit_conc_ng.uL <- as.numeric(as.character(extractions_df$qubit_
 # Merge by Sample NAme and keep concentration from alaska extractions
 extractions_revamp_sample_metadata <- merge(
   x = revamp_sample_metadata,
-  y = extractions_df[, c("final_sample_name", "qubit_conc_ng.uL")],
+  y = extractions_df[, c("final_sample_name", "qubit_conc_ng.uL", "conc_method")],
   by.x = "Sample_Name",
   by.y = "final_sample_name",
   all.x = TRUE)
