@@ -144,6 +144,8 @@ library(rlang)
 
 DY2012_sample_data %>% 
   mutate(., verbatimCoordinateSystem = case_when(!is.na(Lon) & !is.na(Lat) ~ "degrees minutes seconds", TRUE ~ NA_character_)) %>%
+  mutate(.,Sample_Name = str_replace(Sample_Name,"E26.1B.NC.DY2012","E26.1B.DY2012")) %>%
+  mutate(., Negative_control = ifelse(Sample_Name == "E26.1B.DY2012", FALSE, Negative_control)) %>%
   dplyr::select(Sample_Name, 
          Biological_Replicate,
          Technical_Replicate,
