@@ -114,12 +114,11 @@ pps_event_header_clean[length(pps_event_header_clean)] <- "Vol2"
 
 PPS_event_data <- read.table(file = here("PPS_Offload_M2_2023_14965-01.txt"), header=F, nrows = 23, skip = 36,stringsAsFactors = FALSE)
 
-PPS_event_data %>% 
+PPS_event_data %>%
   mutate(., V2= str_remove(V2,":"),
           V5= str_remove(V5,"\\|"),
           V6= str_remove(V6,"\\|"),
           V8= str_remove(V8,"\\|")) %>% dplyr::select(-V1) -> PPS_event_data
-  
 
 colnames(PPS_event_data) <- c(pps_event_header_clean)
 
@@ -153,17 +152,16 @@ PPS_deployment_data %>%
   filter(., !is.na(V1)) -> PPS_deployment_data
 
 colnames(PPS_deployment_data) <- c(pps_deployment_header_clean2)
+# PPS_deployment_data %>% 
+#   rename(Cast=Number) %>% 
+#   mutate(., Time=str_trim(Time)) %>% 
+#   separate(Time , into =c("Date_PPS_deployment","Deployment_Sample_Time"), sep=" ") -> PPS_deployment_data
 
-PPS_deployment_data %>% 
-  rename(Cast=Number) %>% 
-  mutate(., Time=str_trim(Time)) %>% 
-  separate(Time , into =c("Date_PPS_deployment","Deployment_Sample_Time"), sep=" ") -> PPS_deployment_data
-
-PPS_deployment_data %>% 
-  mutate(.,  Procedure=str_trim(Procedure),
-         Procedure=str_replace(Procedure," ","_")
-        ) %>% 
-  pivot_wider(names_from = Procedure, values_from = c(Date_PPS_deployment,Deployment_Sample_Time,`Temp.`,`Voltage`, Pumped,Duration,Result), names_glue = "{Procedure}:{.value}") -> PPS_deployment_data
+PPS_deployment_data %>%
+  # mutate(.,  Procedure=str_trim(Procedure),
+  #        Procedure=str_replace(Procedure," ","_")
+  #       ) %>%
+  pivot_wider(names_from = Procedure, values_from = c(Time,`Temp.`,`Voltage`, Pumped,Duration,Result), names_glue = "{Procedure}:{.value}") -> PPS_deployment_data
 
 ```
 
@@ -189,7 +187,7 @@ PPS_pumping_data %>%
   rename(Cast=event) -> PPS_pumping_data
 
 PPS_event_data %>% 
-  left_join(PPS_deployment_data) %>% 
+  left_join(PPS_deployment_data, by = c("Cast" = "Number")) %>% 
    rename_with(.fn = ~ paste0("PPS_", .x)) -> PPS_data_to_append
 ```
 
@@ -201,6 +199,7 @@ PPS_event_data %>%
   left_join(PPS_data_to_append, by=c("Cast" = "PPS_Cast") ) %>% 
     mutate(., Combined_PPS_date = str_c(PPS_Date_PPS_event, " ",`PPS_Sample Time`)) -> PPS_2023_M2_Spring_Summer_sample_data
 
+names(PPS_2023_M2_Spring_Summer_sample_data)
 
 #colnames(PPS_data_to_append)[2:28] -> cols_2_keep
 
@@ -224,6 +223,9 @@ PPS_2023_M2_Spring_Summer_sample_data %>%
          Personnel_responsible_for_Collecting_Sample,
          Field_Notes,
          Date_UTC_notes=Date_UTC,
+         pps_date_time=`PPS_Sample                  :Time`,
+         Temp=`PPS_Sample                  :Temp.`,
+         sample_volume_pumped=`PPS_Sample                  :Pumped`,
          Lat_notes = Lat_dec,
          Lon_notes=Lon_dec,
          verbatimEventDate = Collection_Date_local,
