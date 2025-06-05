@@ -207,6 +207,23 @@ library(rlang)
 
 PPS_2023_M2_Spring_Summer_sample_data %>%
   mutate(., verbatimCoordinateSystem = case_when(!is.na(Lon) & !is.na(Lat) ~ "degrees minutes seconds", TRUE ~ NA_character_)) %>%
+  mutate(
+    alaska_datetime = mdy_hms(`PPS_Sample                  :Time`, tz = "America/Anchorage"),
+    pps_verbatimDate = as.Date(alaska_datetime),
+    pps_verbatimTime = format(alaska_datetime, "%H:%M:%S")) %>%
+  mutate(pps_datetime_utc = mdy_hms(`PPS_Sample                  :Time`, tz = "America/Anchorage")) %>%
+  mutate(pps_datetime_utc = with_tz(pps_datetime_utc, "UTC")) %>%
+  mutate(
+    duration_mins = floor(`PPS_Sample                  :Duration` / 60),
+    duration_secs = `PPS_Sample                  :Duration` %% 60,
+    duration_hours = floor(`PPS_Sample                  :Duration` / 3600),
+    sampling_duration = case_when(
+      is.na(`PPS_Sample                  :Duration`) ~ NA_character_,
+      `PPS_Sample                  :Duration` < 60 ~ paste0(`PPS_Sample                  :Duration`, "S"),
+      `PPS_Sample                  :Duration` < 3600 & duration_secs == 0 ~ paste0(duration_mins, "M"),
+      `PPS_Sample                  :Duration` < 3600 & duration_secs != 0 ~ paste0(duration_mins, "M", duration_secs, "S"),
+      TRUE ~ "Complex duration"
+    )) %>%
   select(Sample_Name, 
          Biological_Replicate,
          Technical_Replicate,
@@ -223,13 +240,13 @@ PPS_2023_M2_Spring_Summer_sample_data %>%
          Personnel_responsible_for_Collecting_Sample,
          Field_Notes,
          Date_UTC_notes=Date_UTC,
-         pps_date_time=`PPS_Sample                  :Time`,
-         Temp=`PPS_Sample                  :Temp.`,
+         pps_date_time_utc=pps_datetime_utc,
          sample_volume_pumped=`PPS_Sample                  :Pumped`,
+         sampling_duration,
          Lat_notes = Lat_dec,
          Lon_notes=Lon_dec,
-         verbatimEventDate = Collection_Date_local,
-         verbatimEventTime = Collection_Time_local,
+         verbatimEventDate = pps_verbatimDate,
+         verbatimEventTime = pps_verbatimTime,
          verbatimLongitude = Lon,
          verbatimLatitude = Lat,
          verbatimCoordinateSystem,
