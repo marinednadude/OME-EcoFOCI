@@ -123,7 +123,8 @@ bottle[[i]]  = read.ctd.sbe(files[i], btl = T)
 ```
 
 ```{r}
-str_remove(files, "/Users/zgold/Documents/PMEL/Science/EcoFOCI/data/1_SampleCollection/2023_SikuliaqDBO_CruiseData/CTD_raw_BottleFile_SKQ23-12S/proc/") %>% 
+#### NEEDED to change this file path to match Brynn's to work and get the correct output. Change back if someone else needs to run this code!!!
+str_remove(files, "/Users/zalmanek/Development/OME-EcoFOCI/EcoFOCI/data/1_SampleCollection/2023_SikuliaqDBO_CruiseData/CTD_raw_BottleFile_SKQ23-12S/proc/skq202312s_") %>% 
   str_remove(., ".btl") -> cast_names
 
 datalist = vector("list", length = length(cast_names))
@@ -140,9 +141,7 @@ bottle_Data = do.call(rbind, datalist)
 
 ```{r}
 bottle_Data %>% 
-  mutate(.,
-         Cast = str_remove(Cast,"skq202312s_")) %>% 
-           mutate(., Cast = as.numeric(Cast)) %>% 
+  mutate(., Cast = as.numeric(Cast)) %>% 
    rename_with(.fn = ~ paste0("btl_", .x)) -> bottle_Data
 
 bottle_Data$Cast <- as.character(bottle_Data$btl_Cast)
@@ -190,23 +189,23 @@ ctd_Data$pressure <- as.numeric(ctd_Data$ctd_pressure)
 # Merge Sample, Bottle, and CTD Data
 
 ```{r}
-QAQCMRE_CruiseSampleMetadata_SKQ23_12S %>% 
-  mutate(pressure= round(Depth_m,0)) %>% 
-    left_join(ctd_Data, by = c("Cast" = "Cast", "pressure" = "pressure")) %>% 
-  left_join(bottle_Data, by = c("Cast" = "Cast", "Bottle" = "bottle")) %>%
-  mutate(., Date_UTC_btl = as.POSIXct(`btl_time`, format="%Y-%m-%d %H:%M:%S", tz="UTC") ) -> SikuliaqDBO_2023_Cruise_sample_data
 
+QAQCMRE_CruiseSampleMetadata_SKQ23_12S %>%
+  mutate(pressure= round(Depth_m,0)) %>%
+    left_join(ctd_Data, by = c("Cast" = "Cast", "pressure" = "pressure")) %>%
+    left_join(bottle_Data, by = c("Cast" = "Cast", "Bottle" = "bottle")) %>%
+  mutate(., Date_UTC_btl = as.POSIXct(`btl_time`, format="%Y-%m-%d %H:%M:%S", tz="UTC") ) -> SikuliaqDBO_2023_Cruise_sample_data
 
 #colnames(ctd_Data)[2:39] -> cols_2_keep
 library(rlang)
 
-SikuliaqDBO_2023_Cruise_sample_data %>% 
+SikuliaqDBO_2023_Cruise_sample_data %>%
   mutate(., verbatimCoordinateSystem = case_when(!is.na(Lon) & !is.na(Lat) ~ "degrees minutes seconds", TRUE ~ NA_character_)) %>%
-  select(Sample_Name, 
+  select(Sample_Name,
          Biological_Replicate,
          Technical_Replicate,
-         Negative_control, 
-         Cruise_ID_short, 
+         Negative_control,
+         Cruise_ID_short,
          Cruise_ID_long,
          Cast_No.,
          Rosette_position,
