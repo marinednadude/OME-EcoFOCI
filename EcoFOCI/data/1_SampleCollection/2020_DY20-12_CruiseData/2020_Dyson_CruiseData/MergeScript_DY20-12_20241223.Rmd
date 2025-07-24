@@ -129,6 +129,20 @@ ctd_Data$pressure <- as.numeric(ctd_Data$ctd_pressure)
 
 ```
 
+
+# Re-Merge Sam and Brynn :)
+```{r}
+bottle_Data %>% 
+  mutate(., btl_pressure = round(btl_PrDM, 0)) %>%
+  left_join(ctd_Data, by = c("Cast" = "Cast", "btl_pressure" = "ctd_pressure")) -> ctd_btl_combined
+
+QAQCMRE_CruiseSampleMetadata_DY20_12 %>%
+  left_join(ctd_btl_combined, by=c("Cast" = "Cast", "Rosette_position" = "btl_nb")) %>%
+  mutate(., Date_btl_comb = str_c(btl_date, " ",btl_time),
+         Date_UTC_btl = as.POSIXct(Date_btl_comb, format="%d-%b-%y %H:%M:%S", tz="UTC") ) -> DY2012_sample_data
+
+```
+
 # Merge Sample, Bottle, and CTD Data
 ```{r}
 
