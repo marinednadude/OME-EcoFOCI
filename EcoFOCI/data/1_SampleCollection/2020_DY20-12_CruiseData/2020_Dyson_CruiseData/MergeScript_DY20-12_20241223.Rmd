@@ -145,13 +145,13 @@ QAQCMRE_CruiseSampleMetadata_DY20_12 %>%
 
 # Merge Sample, Bottle, and CTD Data
 ```{r}
-
-QAQCMRE_CruiseSampleMetadata_DY20_12 %>% 
-  mutate(pressure= round(Depth_m,0)) %>% 
-    left_join(ctd_Data, by = c("Cast" = "Cast", "pressure" = "pressure")) %>% 
-  left_join(bottle_Data, by = c("Cast" = "Cast", "Bottle" = "bottle")) %>% 
-  mutate(., Date_btl_comb = str_c(btl_date, " ",btl_time),
-         Date_UTC_btl = as.POSIXct(Date_btl_comb, format="%d-%b-%y %H:%M:%S", tz="UTC") ) -> DY2012_sample_data
+# Sam and Brynn redid merge cause pressure and depth was whacky
+# QAQCMRE_CruiseSampleMetadata_DY20_12 %>% 
+#   mutate(pressure= round(Depth_m,0)) %>% 
+#     left_join(ctd_Data, by = c("Cast" = "Cast", "pressure" = "pressure")) %>% 
+#   left_join(bottle_Data, by = c("Cast" = "Cast", "Bottle" = "bottle")) %>% 
+#   mutate(., Date_btl_comb = str_c(btl_date, " ",btl_time),
+#          Date_UTC_btl = as.POSIXct(Date_btl_comb, format="%d-%b-%y %H:%M:%S", tz="UTC") ) -> DY2012_sample_data
 
 #colnames(ctd_Data)[5:19] -> cols_2_keep
 library(rlang)

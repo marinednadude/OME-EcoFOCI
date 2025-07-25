@@ -143,13 +143,25 @@ ctd_Data$pressure <- as.numeric(ctd_Data$ctd_pressure)
 
 ```
 
+# Brynn - re-merge
+```{r}
+bottle_Data %>% 
+  mutate(., btl_pressure = round(btl_pressure..decibar., 0)) %>%
+  left_join(ctd_Data, by = c("Cast" = "Cast", "btl_pressure" = "ctd_pressure")) -> ctd_btl_combined
+
+QAQCMRE_CruiseSampleMetadata_DY22_09 %>%
+  left_join(ctd_btl_combined, by=c("Cast" = "Cast", "Rosette_position" = "btl_bottle")) %>%
+  mutate(., Date_UTC_btl = as.POSIXct(`btl_time..UTC.`, format="%Y-%m-%dT%H:%M:%SZ", tz="UTC") ) -> EcoFOCI_Fall_2022_sample_data
+```
+
 # Merge Sample, Bottle, and CTD Data
+# re-did merge above - so merge commented out below - Brynn
 
 ```{r}
- QAQCMRE_CruiseSampleMetadata_DY22_09 %>% 
-    mutate(pressure= round(Depth_m,0)) %>% 
-    left_join(ctd_Data, by = c("Cast" = "Cast", "pressure" = "pressure")) %>% 
-  left_join(bottle_Data, by = c("Cast" = "Cast", "Bottle" = "bottle")) %>%   mutate(., Date_UTC_btl = as.POSIXct(`btl_time..UTC.`, format="%Y-%m-%dT%H:%M:%SZ", tz="UTC") )-> EcoFOCI_Fall_2022_sample_data
+ # QAQCMRE_CruiseSampleMetadata_DY22_09 %>%
+ #    mutate(pressure= round(Depth_m,0)) %>%
+ #    left_join(ctd_Data, by = c("Cast" = "Cast", "pressure" = "pressure")) %>%
+ #  left_join(bottle_Data, by = c("Cast" = "Cast", "Bottle" = "bottle")) %>%   mutate(., Date_UTC_btl = as.POSIXct(`btl_time..UTC.`, format="%Y-%m-%dT%H:%M:%SZ", tz="UTC") )-> EcoFOCI_Fall_2022_sample_data
 
 
 #colnames(ctd_Data)[2:13] -> cols_2_keep
