@@ -184,17 +184,29 @@ ctd_Data$Cast <- as.character(ctd_Data$ctd_Cast)
 ctd_Data$pressure <- as.numeric(ctd_Data$ctd_pressure)
 
 ```
+# Re-Merge Brynn
+```{r}
+QAQCMRE_CruiseSampleMetadata_SKQ23_12S$Rosette_position <- as.character(QAQCMRE_CruiseSampleMetadata_SKQ23_12S$Rosette_position)
+
+bottle_Data %>% 
+  mutate(., btl_pressure = round(btl_PrDM, 0)) %>%
+  left_join(ctd_Data, by = c("Cast" = "Cast", "btl_pressure" = "pressure")) -> ctd_btl_combined
+
+QAQCMRE_CruiseSampleMetadata_SKQ23_12S %>%
+  left_join(ctd_btl_combined, by=c("Cast" = "Cast", "Rosette_position" = "bottle")) %>%
+  mutate(., Date_UTC_btl = as.POSIXct(`btl_time`, format="%Y-%m-%d %H:%M:%S", tz="UTC") ) -> SikuliaqDBO_2023_Cruise_sample_data
+```
 
 
 # Merge Sample, Bottle, and CTD Data
 
 ```{r}
 
-QAQCMRE_CruiseSampleMetadata_SKQ23_12S %>%
-  mutate(pressure= round(Depth_m,0)) %>%
-    left_join(ctd_Data, by = c("Cast" = "Cast", "pressure" = "pressure")) %>%
-    left_join(bottle_Data, by = c("Cast" = "Cast", "Bottle" = "bottle")) %>%
-  mutate(., Date_UTC_btl = as.POSIXct(`btl_time`, format="%Y-%m-%d %H:%M:%S", tz="UTC") ) -> SikuliaqDBO_2023_Cruise_sample_data
+# QAQCMRE_CruiseSampleMetadata_SKQ23_12S %>%
+#   mutate(pressure= round(Depth_m,0)) %>%
+#     left_join(ctd_Data, by = c("Cast" = "Cast", "pressure" = "pressure")) %>%
+#     left_join(bottle_Data, by = c("Cast" = "Cast", "Bottle" = "bottle")) %>%
+#   mutate(., Date_UTC_btl = as.POSIXct(`btl_time`, format="%Y-%m-%d %H:%M:%S", tz="UTC") ) -> SikuliaqDBO_2023_Cruise_sample_data
 
 #colnames(ctd_Data)[2:39] -> cols_2_keep
 library(rlang)
