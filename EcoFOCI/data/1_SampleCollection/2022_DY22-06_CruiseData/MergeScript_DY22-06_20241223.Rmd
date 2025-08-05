@@ -8,6 +8,7 @@ output: html_document
 
 ```{r}
 library(tidyverse)
+library(dplyr)
 library(here)
 library(lubridate)
 library(measurements)
@@ -112,6 +113,14 @@ bottle_Data %>%
 
 bottle_Data$Cast <- as.character(bottle_Data$btl_Cast)
 bottle_Data$bottle <- as.character(bottle_Data$btl_bottle)
+
+
+# Brynn added - if pressure is NA in bottle file, use the depth_m_notes from QAQC file to fill in pressure by matching cast and bottle number
+bottle_Data <- bottle_Data %>%
+  left_join(QAQCMRE_CruiseSampleMetadata_DY22_06 %>% select(Bottle, Cast, Depth_m),
+            by = c("bottle" = "Bottle", "Cast" = "Cast")) %>%
+  mutate(btl_pressure..decibar.=coalesce(btl_pressure..decibar., Depth_m)) %>%
+  select(-Depth_m)
 ```
 
 # Read CTD Downcast Data
@@ -129,6 +138,17 @@ ctd_Data$Cast <- as.character(ctd_Data$ctd_Cast)
 ctd_Data$pressure <- as.numeric(ctd_Data$ctd_pressure)
 ctd_Data$bottle <- as.character(ctd_Data$ctd_BTLID)
 
+```
+
+# Re-Merge -Brynn
+```{r}
+bottle_Data %>% 
+  mutate(., btl_pressure = round(btl_pressure..decibar., 0)) %>%
+  left_join(ctd_Data, by = c("Cast" = "Cast", "btl_pressure" = "ctd_pressure")) -> ctd_btl_combined
+
+QAQCMRE_CruiseSampleMetadata_DY22_06 %>%
+  left_join(ctd_btl_combined, by=c("Cast" = "Cast", "Rosette_position" = "btl_bottle")) %>%
+  mutate(., Date_UTC_btl = as.POSIXct(`btl_time..UTC.`, format="%Y-%m-%dT%H:%M:%SZ", tz="UTC") ) -> EcoFOCI_Spring_2022_sample_data
 ```
 
 
