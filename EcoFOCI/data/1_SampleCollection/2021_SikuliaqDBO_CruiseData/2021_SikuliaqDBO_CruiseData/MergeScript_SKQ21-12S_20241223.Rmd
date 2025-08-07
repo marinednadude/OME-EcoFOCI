@@ -100,14 +100,22 @@ bottle_Data %>%
 bottle_Data %>% 
   slice(-1) -> bottle_Data
 
+bottle_Data$pressure <- as.numeric(bottle_Data$pressure)
+
 bottle_Data %>% 
   mutate(., holder1 = str_remove(profile_id,"SKQ202115Sc"),
          Cast = str_remove(holder1,"_btl")) %>% 
            mutate(., Cast = as.numeric(Cast)) %>% 
-   rename_with(.fn = ~ paste0("btl_", .x))-> bottle_Data
+   rename_with(.fn = ~ paste0("btl_", .x)) %>%
+  mutate(., btl_pressure_rounded = round(btl_pressure, 0)) -> bottle_Data
 
 bottle_Data$Cast <- as.character(bottle_Data$btl_Cast)
-bottle_Data$bottle <- as.character(bottle_Data$btl_bottle)
+bottle_Data$bottle <- as.numeric(bottle_Data$btl_bottle)
+bottle_Data$btl_pressure <- as.numeric(bottle_Data$btl_pressure)
+
+# remove any duplicate rows
+bottle_Data <- bottle_Data %>%
+  distinct()
 ```
 
 # Read CTD Downcast Data
@@ -125,17 +133,86 @@ ctd_Data %>%
 ctd_Data$Cast <- as.character(ctd_Data$ctd_Cast)
 ctd_Data$pressure <- as.numeric(ctd_Data$ctd_pressure)
 
+# remove any duplicate rows
+ctd_Data <- ctd_Data %>%
+  distinct()
+
+# average any rows that have the same cast and pressure
+ctd_Data <- ctd_Data %>%
+  group_by(Cast, pressure, ctd_Cast, ctd_holder1, ctd_pressure, ctd_time..UTC.) %>%
+  summarise(
+    across(where(is.numeric), ~ mean(.x, na.rm = TRUE)),
+    across(where(is.character), first),
+    across(where(is.factor), first),
+    .groups = "drop"
+  )
+
+```
+
+# sleuthing - Brynn
+# There are duplicated Cast and pressure combos in the data frame causing the merge to not work properly
+```{r}
+duplicates_bottle_data <- bottle_Data %>%
+  mutate(., btl_pressure_rounded = round(btl_pressure, 0)) %>%
+  count(Cast, btl_pressure_rounded) %>%
+  filter(n>1)
+
+duplicates_ctd_data <- ctd_Data %>%
+  count(Cast, ctd_pressure) %>%
+  filter(n>1)
+
+common_duplicated_combos <- inner_join(
+  duplicates_bottle_data,
+  duplicates_ctd_data,
+  by = c("Cast" = "Cast", "btl_pressure_rounded" = "ctd_pressure"),
+  suffix = c("_btl", "_ctd")
+)
+
+bottle_Data %>%
+  mutate(., btl_pressure_rounded = round(btl_pressure, 0)) %>%
+  filter(Cast == 15, btl_pressure_rounded == 20) %>%
+  print(n = Inf)
+
+
+ctd_Data %>%
+  filter(Cast == 15, ctd_pressure == 20) %>%
+  print(n = Inf)
+
+btl_Data_problematic <- bottle_Data %>%
+  mutate(., btl_pressure_rounded = round(btl_pressure, 0)) %>%
+  semi_join(common_duplicated_combos, by = c("Cast", "btl_pressure_rounded"))
+
+ctd_Data_problematic <- ctd_Data %>%
+  semi_join(common_duplicated_combos, by = c("Cast" = "Cast", "ctd_pressure" = "btl_pressure_rounded"))
+
+merged_problematic_all_comb <- left_join(btl_Data_problematic, ctd_Data_problematic,
+                                         by = c("Cast" = "Cast", "btl_pressure_rounded" = "ctd_pressure"))
+
+# duplicated rows are Cast 15 pressure 20
+```
+
+# Re-merge -Brynn
+```{r}
+
+## Need to merge problematic rows on btl_id as well
+bottle_Data %>% 
+  mutate(., btl_pressure_rounded = round(btl_pressure, 0)) %>%
+  left_join(ctd_Data, by = c("Cast" = "Cast", "btl_pressure_rounded" = "ctd_pressure")) -> ctd_btl_combined
+
+QAQCMRE_CruiseSampleMetadata_SKQ21_12S %>%
+  left_join(ctd_btl_combined, by=c("Cast" = "Cast", "Rosette_position" = "bottle")) %>%
+  mutate(., Date_UTC_btl = as.POSIXct(btl_time, format="%Y-%m-%dT%H:%M:%SZ", tz="UTC") )-> SKQ21_sample_data
 ```
 
 # Merge Sample, Bottle, and CTD Data
 
 ```{r}
 
-QAQCMRE_CruiseSampleMetadata_SKQ21_12S %>% 
-  mutate(pressure= round(Depth_m,0)) %>% 
-    left_join(ctd_Data, by = c("Cast" = "Cast", "pressure" = "pressure")) %>% 
-  left_join(bottle_Data, by = c("Cast" = "Cast", "Bottle" = "bottle")) %>% 
-  mutate(., Date_UTC_btl = as.POSIXct(btl_time, format="%Y-%m-%dT%H:%M:%SZ", tz="UTC") )-> SKQ21_sample_data
+# QAQCMRE_CruiseSampleMetadata_SKQ21_12S %>% 
+#   mutate(pressure= round(Depth_m,0)) %>% 
+#     left_join(ctd_Data, by = c("Cast" = "Cast", "pressure" = "pressure")) %>% 
+#   left_join(bottle_Data, by = c("Cast" = "Cast", "Bottle" = "bottle")) %>% 
+#   mutate(., Date_UTC_btl = as.POSIXct(btl_time, format="%Y-%m-%dT%H:%M:%SZ", tz="UTC") )-> SKQ21_sample_data
 
 #c(colnames(ctd_Data), colnames(bottle_Data)) -> cols_2_keep
 library(rlang)
