@@ -138,6 +138,7 @@ ctd_Data <- ctd_Data %>%
   distinct()
 
 # average any rows that have the same cast and pressure
+# after adding this bit, ctd_problematic should be empty below
 ctd_Data <- ctd_Data %>%
   group_by(Cast, pressure, ctd_Cast, ctd_holder1, ctd_pressure, ctd_time..UTC.) %>%
   summarise(
