@@ -94,18 +94,18 @@ QAQCMRE_CruiseSampleMetadata_SKQ21_12S %>%
 
 bottle_Data <- read.csv(file =here("CTD_raw_BottleFile_SKQ21-12S.csv"), header=T)
 
-bottle_Data %>% 
+bottle_Data %>%
   slice(1) -> bottle_labels_units
 
-bottle_Data %>% 
+bottle_Data %>%
   slice(-1) -> bottle_Data
 
 bottle_Data$pressure <- as.numeric(bottle_Data$pressure)
 
-bottle_Data %>% 
+bottle_Data %>%
   mutate(., holder1 = str_remove(profile_id,"SKQ202115Sc"),
-         Cast = str_remove(holder1,"_btl")) %>% 
-           mutate(., Cast = as.numeric(Cast)) %>% 
+         Cast = str_remove(holder1,"_btl")) %>%
+           mutate(., Cast = as.numeric(Cast)) %>%
    rename_with(.fn = ~ paste0("btl_", .x)) %>%
   mutate(., btl_pressure_rounded = round(btl_pressure, 0)) -> bottle_Data
 
@@ -124,9 +124,9 @@ bottle_Data <- bottle_Data %>%
 
 ctd_Data <- read.csv(file =here("CTD_skq202115s_final_merged_e10b_3356_5064.csv"), header=T)
 
-ctd_Data %>% 
+ctd_Data %>%
   mutate(., holder1 = str_remove(profile_id,"skq202115sc"),
-          Cast = as.numeric(holder1)) %>% 
+          Cast = as.numeric(holder1)) %>%
    rename_with(.fn = ~ paste0("ctd_", .x)) -> ctd_Data
 
 
